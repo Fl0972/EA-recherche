@@ -18,9 +18,31 @@ compte sans réinstaller.
 ## Utilisation
 
 ```bash
-python scripts/simulate.py       # génération + affichage
-python scripts/reconstruct.py    # + bruit + reconstruction
-pytest                           # tests
+python scripts/simulate.py            # génération standard + affichage
+python scripts/simulate_cluster.py    # simulation avec gros cluster central émetteur
+python scripts/reconstruct.py         # + bruit + reconstruction
+pytest                                # tests
+```
+
+### Simulation avec cluster central
+
+Une configuration prédéfinie est disponible dans `config/experiments/cluster/`.
+Elle place au centre du domaine un cluster dense émettant la grande majorité de la radiation (par défaut 90% de l'intensité sur 80% des sources dans un rayon de 1.5).
+
+```bash
+# Lancer la simulation cluster
+python scripts/simulate_cluster.py
+
+# Modifier la taille spatiale du cluster (rayon r = 0.5 pour un cluster très compact, r = 3.0 pour plus étendu)
+python scripts/simulate_cluster.py --set sources.position_law.params.radius=0.5
+
+# Modifier l'intensité totale ou la part émise par le cluster
+python scripts/simulate_cluster.py --set sources.total_intensity=1000.0
+python scripts/simulate_cluster.py --set sources.intensity_law.params.cluster_share=0.95
+
+# Ou lancer avec simulate.py / reconstruct.py via --config
+python scripts/simulate.py --config config/experiments/cluster
+python scripts/reconstruct.py --config config/experiments/cluster
 ```
 
 ## Configuration

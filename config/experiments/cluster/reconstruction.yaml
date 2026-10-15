@@ -1,0 +1,7 @@
+# Problème inverse
+
+reconstruction:
+  method:
+    name: prony
+    params: {n_sources: null, rank_tol: 0.005}
+

@@ -21,10 +21,14 @@ COUNT_LAWS = {
 INTENSITY_LAWS = {
     "uniform_simplex": lambda: intensity_laws.uniform_simplex,
     "dirichlet": intensity_laws.dirichlet,
+    "cluster_boost": intensity_laws.cluster_boost,
 }
 
 POSITION_LAWS = {
     "uniform_in_box": lambda: position_laws.uniform_in_box,
+    "disk_cluster": position_laws.disk_cluster,
+    "gaussian_cluster": position_laws.gaussian_cluster,
+    "clustered_center": position_laws.clustered_center,
 }
 
 # Les géométries reçoivent le domaine en premier argument

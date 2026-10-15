@@ -1,0 +1,16 @@
+# Capteurs et mesures
+
+sensors:
+  # Géométrie des capteurs
+  layout:
+    name: circumscribed_circle
+    params: {n: 64, t0: 0.0}
+
+  # Bruit de mesure
+  noise:
+    name: gaussian_relative
+    params: {sigma: 0.001}
+
+  # Régularisation de 1/r^2 : I / (r^2 + eps^2). 0 = loi exacte.
+  eps: 0.0
+

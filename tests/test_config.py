@@ -55,3 +55,31 @@ def test_save_and_reload(tmp_path: Path):
 def test_scientific_notation_is_float():
     cfg = load_config(DEFAULT_CONFIG_DIR, ["reconstruction.method.params.rank_tol=1e-8"])
     assert cfg.raw["reconstruction"]["method"]["params"]["rank_tol"] == 1e-8
+
+
+def test_cluster_config_runs_end_to_end():
+    cluster_dir = DEFAULT_CONFIG_DIR / "experiments" / "cluster"
+    cfg = load_config(cluster_dir)
+    rng = cfg.rng()
+    sources = sample_sources(cfg.box, cfg.count_law, cfg.total_intensity, rng,
+                             cfg.intensity_law, cfg.position_law)
+    assert sources.n == 25
+    assert sources.total_intensity == pytest.approx(500.0)
+    y = measure(sources, cfg.sensors, rng, cfg.noise, cfg.eps)
+    assert y.shape == (len(cfg.sensors.positions),)
+
+
+def test_cluster_size_override():
+    cluster_dir = DEFAULT_CONFIG_DIR / "experiments" / "cluster"
+    cfg = load_config(cluster_dir, [
+        "sources.position_law.params.radius=0.5",
+        "sources.total_intensity=1000.0",
+    ])
+    assert cfg.total_intensity == 1000.0
+    rng = cfg.rng()
+    sources = sample_sources(cfg.box, cfg.count_law, cfg.total_intensity, rng,
+                             cfg.intensity_law, cfg.position_law)
+    # Les 20 sources du cluster (80% de 25) doivent être dans le disque de rayon 0.5
+    cluster_dists = np.linalg.norm(sources.positions[:20] - cfg.box.center, axis=-1)
+    assert np.all(cluster_dists <= 0.5 + 1e-12)
+

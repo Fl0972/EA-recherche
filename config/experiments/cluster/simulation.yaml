@@ -1,0 +1,48 @@
+# Simulation avec un gros cluster central émettant une forte radiation
+
+# Graine du générateur aléatoire (null = tirage différent à chaque exécution)
+seed: 1
+
+# Domaine contenant les sources : [[xmin, xmax], [ymin, ymax]]
+domain: [[0, 10], [0, 20]]
+
+sources:
+  # Somme des intensités de toutes les sources
+  total_intensity: 500.0
+
+  # Nombre de sources (cluster + fond)
+  count_law:
+    name: fixed
+    params: {n: 25}
+  at_least_one: true
+
+  # Loi des intensités : favorise fortement les sources du cluster
+  #   cluster_share : part de l'intensité totale émise par le cluster (ex: 0.9 = 90%)
+  #   cluster_ratio : proportion des sources appartenant au cluster (ex: 0.8 = 80%)
+  #   alpha         : homogénéité Dirichlet au sein de chaque groupe
+  intensity_law:
+    name: cluster_boost
+    params:
+      cluster_ratio: 0.8
+      cluster_share: 0.9
+      alpha: 1.0
+
+  # Loi des positions : cluster central + sources d'arrière-plan
+  #
+  # PARAMÈTRES DE TAILLE DU CLUSTER :
+  #   radius        : rayon du cluster (défaut : 1.5). Modifiez cette valeur
+  #                   pour changer la taille spatiale du cluster.
+  #   cluster_ratio : proportion de sources dans le cluster (défaut : 0.8).
+  #   std           : écart-type si profil gaussien souhaité (null = disque uniforme).
+  #   center        : position [x, y] du centre (null = centre du domaine [5, 10]).
+  #
+  # Autres lois de position possibles pour le cluster :
+  #   disk_cluster      {radius: 1.5, center: null}  (100% des sources dans le disque)
+  #   gaussian_cluster  {std: 0.8, center: null}     (100% des sources en loi normale)
+  position_law:
+    name: clustered_center
+    params:
+      radius: 1.5
+      cluster_ratio: 0.8
+      center: null
+

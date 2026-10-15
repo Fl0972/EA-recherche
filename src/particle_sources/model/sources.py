@@ -34,6 +34,18 @@ class Sources:
     def total_intensity(self) -> float:
         return float(self.intensities.sum())
 
+    def __add__(self, other: "Sources") -> "Sources":
+        if self.n == 0:
+            return other
+        if other.n == 0:
+            return self
+        if self.dim != other.dim:
+            raise ValueError(f"dimensions incompatibles : {self.dim} vs {other.dim}")
+        return Sources(
+            np.vstack([self.positions, other.positions]),
+            np.concatenate([self.intensities, other.intensities]),
+        )
+
     def __str__(self) -> str:
         lines = [f"{self.n} sources (intensité totale = {self.total_intensity:.4g})"]
         for x, I in zip(self.positions, self.intensities):

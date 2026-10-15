@@ -24,12 +24,17 @@ sources:
   # Loi des intensités (de somme total_intensity)
   #   uniform_simplex   {}
   #   dirichlet         {alpha}   alpha < 1 : très inégales, alpha > 1 : homogènes
+  #   cluster_boost     {cluster_ratio, cluster_share, alpha}  favorise le cluster
   intensity_law:
     name: uniform_simplex
     params: {}
 
   # Loi des positions
   #   uniform_in_box    {}
+  #   disk_cluster      {radius, center}            cluster circulaire
+  #   gaussian_cluster  {std, center}               cluster gaussien
+  #   clustered_center  {radius, cluster_ratio, center, std}  cluster + fond
   position_law:
     name: uniform_in_box
     params: {}
+

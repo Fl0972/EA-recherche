@@ -1,0 +1,10 @@
+# Affichage
+
+visualization:
+  # Régularisation de 1/r^2 pour la carte (évite les pics infinis)
+  eps: 0.05
+  # Nombre de points par côté de la carte d'intensité
+  resolution: 400
+  # Chemin où enregistrer la figure (null = affichage à l'écran)
+  save_path: null
+
