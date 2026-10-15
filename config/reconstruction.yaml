@@ -1,0 +1,11 @@
+# Problème inverse
+
+reconstruction:
+  # Méthode de reconstruction
+  #   prony  {n_sources, rank_tol}
+  #       n_sources : nombre de sources imposé, ou null pour l'estimer
+  #       rank_tol  : seuil relatif sur les valeurs singulières pour estimer N.
+  #                   À adapter au bruit : ~1e-8 sans bruit, ~5 * sigma sinon.
+  method:
+    name: prony
+    params: {n_sources: null, rank_tol: 0.005}

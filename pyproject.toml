@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "particle-sources"
+version = "0.1.0"
+description = "Localisation de sources de particules à partir de mesures d'intensité"
+requires-python = ">=3.10"
+dependencies = ["numpy", "matplotlib", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

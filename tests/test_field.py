@@ -1,0 +1,25 @@
+import numpy as np
+import pytest
+
+from particle_sources.model import Box, Sources, intensity_at
+
+
+def test_single_source_inverse_square():
+    sources = Sources([[0.0, 0.0]], [4.0])
+    assert intensity_at(sources, [2.0, 0.0]) == pytest.approx(1.0)
+    assert intensity_at(sources, [0.0, 4.0]) == pytest.approx(0.25)
+
+
+def test_superposition_and_shape():
+    a = Sources([[0.0, 0.0]], [1.0])
+    b = Sources([[3.0, 1.0]], [2.0])
+    ab = Sources([[0.0, 0.0], [3.0, 1.0]], [1.0, 2.0])
+    x = np.random.default_rng(0).uniform(5, 6, size=(7, 3, 2))
+    assert intensity_at(ab, x).shape == (7, 3)
+    assert np.allclose(intensity_at(ab, x), intensity_at(a, x) + intensity_at(b, x))
+
+
+def test_circumradius():
+    box = Box.from_bounds([[0, 10], [0, 10]])
+    assert box.circumradius == pytest.approx(5 * np.sqrt(2))
+    assert np.allclose(box.center, [5, 5])

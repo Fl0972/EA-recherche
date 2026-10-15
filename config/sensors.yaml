@@ -1,0 +1,21 @@
+# Capteurs et mesures
+
+sensors:
+  # Géométrie des capteurs
+  #   circumscribed_circle  {n, t0}   n capteurs équirépartis sur le cercle
+  #                                   circonscrit au domaine, t0 = angle du 1er
+  #   circle                {center, radius, n, t0}
+  layout:
+    name: circumscribed_circle
+    params: {n: 64, t0: 0.0}
+
+  # Bruit de mesure
+  #   none               {}
+  #   gaussian_relative  {sigma}      y * (1 + sigma * N(0, 1))
+  #   poisson_counts     {exposure}   comptage de particules pendant `exposure`
+  noise:
+    name: gaussian_relative
+    params: {sigma: 0.001}
+
+  # Régularisation de 1/r^2 : I / (r^2 + eps^2). 0 = loi exacte.
+  eps: 0.0

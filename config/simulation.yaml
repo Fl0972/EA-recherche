@@ -1,0 +1,35 @@
+# Génération des sources synthétiques
+
+# Graine du générateur aléatoire (null = tirage différent à chaque exécution)
+seed: 1
+
+# Domaine contenant les sources : [[xmin, xmax], [ymin, ymax]]
+domain: [[0, 10], [0, 20]]
+
+sources:
+  # Somme des intensités des sources
+  total_intensity: 100.0
+
+  # Loi du nombre de sources N
+  #   poisson           {lam}
+  #   binomial          {n, p}
+  #   negative_binomial {r, p}
+  #   fixed             {n}
+  count_law:
+    name: poisson
+    params: {lam: 1.0}
+  # Conditionne la loi à N >= 1
+  at_least_one: false
+
+  # Loi des intensités (de somme total_intensity)
+  #   uniform_simplex   {}
+  #   dirichlet         {alpha}   alpha < 1 : très inégales, alpha > 1 : homogènes
+  intensity_law:
+    name: uniform_simplex
+    params: {}
+
+  # Loi des positions
+  #   uniform_in_box    {}
+  position_law:
+    name: uniform_in_box
+    params: {}
