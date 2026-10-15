@@ -1,6 +1,10 @@
 # Problème inverse
 
 reconstruction:
+  # Retire des mesures la contribution (connue) des sources fixes, par ex. la
+  # source centrale, avant l'inversion. Le bruit, lui, n'est pas retiré.
+  subtract_fixed_sources: true
+
   # Méthode de reconstruction
   #   prony  {n_sources, rank_tol}
   #       n_sources : nombre de sources imposé, ou null pour l'estimer

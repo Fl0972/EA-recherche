@@ -23,3 +23,13 @@ def test_circumradius():
     box = Box.from_bounds([[0, 10], [0, 10]])
     assert box.circumradius == pytest.approx(5 * np.sqrt(2))
     assert np.allclose(box.center, [5, 5])
+
+
+def test_sources_addition():
+    a = Sources([[0.0, 0.0]], [1.0])
+    b = Sources([[3.0, 1.0], [1.0, 1.0]], [2.0, 5.0])
+    ab = a + b
+    assert ab.n == 3 and ab.total_intensity == pytest.approx(8.0)
+    x = [[5.0, 5.0]]
+    assert np.allclose(intensity_at(ab, x), intensity_at(a, x) + intensity_at(b, x))
+    assert (a + Sources.empty()).n == 1

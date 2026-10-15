@@ -23,11 +23,15 @@ def main():
 
     sources = sample_sources(cfg.box, cfg.count_law, cfg.total_intensity, rng,
                              cfg.intensity_law, cfg.position_law)
-    y = measure(sources, cfg.sensors, rng, cfg.noise, cfg.eps)
+    # Les capteurs voient aussi les sources fixes (source centrale)
+    y = measure(sources + cfg.fixed_sources, cfg.sensors, rng, cfg.noise, cfg.eps)
     print(sources)
+    if cfg.fixed_sources.n:
+        print("Source(s) fixe(s) :", cfg.fixed_sources, sep="\n")
 
     viz = cfg.visualization
     fig = field_and_profile(sources, cfg.box, cfg.sensors, measurements=y,
+                            fixed_sources=cfg.fixed_sources,
                             eps=viz.eps, resolution=viz.resolution)
     if viz.save_path:
         fig.savefig(viz.save_path, dpi=120)

@@ -22,6 +22,11 @@ class Sources:
     def empty(cls, dim: int = 2) -> "Sources":
         return cls(np.empty((0, dim)), np.empty(0))
 
+    def __add__(self, other: "Sources") -> "Sources":
+        """Réunion de deux ensembles de sources."""
+        return Sources(np.concatenate([self.positions, other.positions]),
+                       np.concatenate([self.intensities, other.intensities]))
+
     @property
     def n(self) -> int:
         return len(self.intensities)

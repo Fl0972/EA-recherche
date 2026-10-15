@@ -14,6 +14,7 @@ from typing import Callable
 import numpy as np
 import yaml
 
+from ..generation import central_source
 from ..generation import count_laws as _count_laws
 from ..generation.count_laws import CountLaw
 from ..generation.intensity_laws import IntensityLaw
@@ -39,10 +40,12 @@ class ExperimentConfig:
     count_law: CountLaw
     intensity_law: IntensityLaw
     position_law: PositionLaw
+    fixed_sources: Sources          # sources toujours présentes, hors tirage
     sensors: object                 # objet exposant .positions
     noise: NoiseModel
     eps: float
     invert: Callable[[np.ndarray, object], Sources]
+    subtract_fixed_sources: bool    # retirer les sources fixes avant l'inversion
     visualization: VisualizationConfig
 
     def rng(self) -> np.random.Generator:
@@ -115,22 +118,32 @@ def load_config(config_dir, overrides=()) -> ExperimentConfig:
     if src.get("at_least_one", False):
         count_law = _count_laws.at_least_one(count_law)
 
+    total_intensity = float(_get(src, "total_intensity", "sources."))
+    fixed_sources = Sources.empty(box.dim)
+    central = raw.get("central_source") or {}
+    if central.get("enabled", False):
+        fixed_sources = central_source(
+            box, float(_get(central, "intensity_factor", "central_source.")) * total_intensity,
+            central.get("position"))
+
     return ExperimentConfig(
         raw=raw,
         seed=raw.get("seed"),
         box=box,
-        total_intensity=float(_get(src, "total_intensity", "sources.")),
+        total_intensity=total_intensity,
         count_law=count_law,
         intensity_law=reg.build(reg.INTENSITY_LAWS,
                                 _get(src, "intensity_law", "sources."), "intensity_law"),
         position_law=reg.build(reg.POSITION_LAWS,
                                _get(src, "position_law", "sources."), "position_law"),
+        fixed_sources=fixed_sources,
         sensors=reg.build(reg.SENSOR_LAYOUTS,
                           _get(sens, "layout", "sensors."), "sensors.layout", box),
         noise=reg.build(reg.NOISE_MODELS, _get(sens, "noise", "sensors."), "sensors.noise"),
         eps=float(sens.get("eps", 0.0)),
         invert=reg.build(reg.INVERSION_METHODS,
                          _get(rec, "method", "reconstruction."), "reconstruction.method"),
+        subtract_fixed_sources=bool(rec.get("subtract_fixed_sources", False)),
         visualization=VisualizationConfig(
             eps=float(viz.get("eps", 0.05)),
             resolution=int(viz.get("resolution", 400)),

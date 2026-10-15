@@ -6,6 +6,16 @@ seed: 1
 # Domaine contenant les sources : [[xmin, xmax], [ymin, ymax]]
 domain: [[0, 10], [0, 20]]
 
+# Grosse source fixe, toujours au même endroit. Elle ne fait pas partie du
+# tirage aléatoire (ne compte ni dans N ni dans total_intensity) mais elle
+# contribue aux mesures des capteurs.
+central_source:
+  enabled: true
+  # Intensité = intensity_factor * sources.total_intensity
+  intensity_factor: 50
+  # [x, y], ou null pour le centre du domaine
+  position: null
+
 sources:
   # Somme des intensités des sources
   total_intensity: 100.0

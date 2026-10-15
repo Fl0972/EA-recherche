@@ -23,12 +23,17 @@ def plot_intensity_map(sources: Sources, box: Box, ax, eps: float = 0.05,
     return im
 
 
-def plot_sources(sources: Sources, ax, max_size: float = 200, **style):
-    """Sources en points, taille proportionnelle à l'intensité."""
+def plot_sources(sources: Sources, ax, max_size: float = 200,
+                 ref_intensity: float | None = None, **style):
+    """
+    Sources en points, taille proportionnelle à l'intensité : `ref_intensity`
+    (par défaut l'intensité max) correspond à `max_size`.
+    """
     if sources.n == 0:
         return
     style = {"c": "red", "edgecolors": "white", "label": "sources", **style}
-    sizes = max_size * sources.intensities / sources.intensities.max()
+    ref = ref_intensity or sources.intensities.max()
+    sizes = np.clip(max_size * sources.intensities / ref, 10, 2 * max_size)
     ax.scatter(*sources.positions.T, s=sizes, **style)
 
 
