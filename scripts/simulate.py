@@ -18,6 +18,7 @@ from particle_sources.visualization import field_and_profile
 
 
 def main():
+    """Config -> tirage des sources -> mesures -> figure (affichée ou enregistrée)."""
     cfg = parse_config_args(__doc__)
     rng = cfg.rng()
 

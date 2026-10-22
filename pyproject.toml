@@ -7,7 +7,7 @@ name = "particle-sources"
 version = "0.1.0"
 description = "Localisation de sources de particules à partir de mesures d'intensité"
 requires-python = ">=3.10"
-dependencies = ["numpy", "matplotlib", "pyyaml"]
+dependencies = ["numpy", "scipy", "matplotlib", "pyyaml"]
 
 [project.optional-dependencies]
 dev = ["pytest"]

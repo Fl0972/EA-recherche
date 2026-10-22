@@ -1,3 +1,5 @@
+"""Tests de la reconstruction par la méthode de Prony."""
+
 import numpy as np
 import pytest
 
@@ -10,6 +12,7 @@ BOX = Box.from_bounds([[0, 10], [0, 10]])
 
 
 def _sorted(sources):
+    """Positions et intensités triées, pour comparer deux ensembles de sources."""
     order = np.lexsort(sources.positions.T)
     return sources.positions[order], sources.intensities[order]
 
@@ -17,6 +20,7 @@ def _sorted(sources):
 @pytest.mark.parametrize("seed", [0, 1, 2])
 @pytest.mark.parametrize("t0", [0.0, 0.3])
 def test_exact_recovery_without_noise(seed, t0):
+    """Sans bruit, Prony retrouve exactement nombre, positions et intensités."""
     rng = np.random.default_rng(seed)
     true = sample_sources(BOX, count_laws.fixed(5), 100.0, rng)
     sensors = CircleSensors.circumscribed(BOX, 64, t0)
@@ -33,6 +37,7 @@ def test_exact_recovery_without_noise(seed, t0):
 
 @pytest.mark.parametrize("seed", [0, 1, 2])
 def test_subtracting_central_source_is_as_if_absent(seed):
+    """Retirer la source centrale connue revient à l'inverser comme si elle était absente."""
     from particle_sources.generation import central_source
     from particle_sources.inversion import subtract_known_sources
 

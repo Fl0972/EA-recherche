@@ -17,9 +17,19 @@ def sample_sources(
     position_law: PositionLaw = uniform_in_box,
 ) -> Sources:
     """
+    Tire une configuration aléatoire de sources dans `box` :
+
     1. N ~ count_law
     2. positions ~ position_law dans `box`
     3. intensités ~ intensity_law, de somme total_intensity
+
+    Les sources fixes (source centrale) ne sont pas tirées ici : elles sont
+    ajoutées ensuite par l'appelant (`sources + cfg.fixed_sources`).
+
+    Renvoie
+    -------
+    Sources
+        N sources (éventuellement 0).
     """
     n = count_law(rng)
     positions = position_law(n, box, rng)

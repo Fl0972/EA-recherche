@@ -19,6 +19,11 @@ from particle_sources.visualization import field_and_profile
 
 
 def main():
+    """
+    Config -> tirage des sources -> mesures (sources fixes comprises)
+    -> retrait éventuel des sources fixes -> inversion -> comparaison
+    vraies sources / reconstruction (console + figure).
+    """
     cfg = parse_config_args(__doc__)
     rng = cfg.rng()
 

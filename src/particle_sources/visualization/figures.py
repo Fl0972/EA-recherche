@@ -18,6 +18,27 @@ def field_and_profile(sources: Sources, box: Box, sensors: CircleSensors,
     Gauche : carte de Phi, sources, domaine, capteurs (et reconstruction).
     Droite : profil exact sur le cercle (et mesures des capteurs).
     `fixed_sources` (ex. source centrale) contribue au champ mais est tracée à part.
+
+    Paramètres
+    ----------
+    sources : Sources
+        Sources tirées (vérité terrain).
+    box : Box
+        Domaine des sources.
+    sensors : CircleSensors
+        Capteurs ; la carte couvre le carré contenant leur cercle.
+    measurements : np.ndarray (K,) ou None
+        Mesures à superposer au profil exact.
+    reconstruction : Sources ou None
+        Sources estimées (carrés cyan).
+    fixed_sources : Sources ou None
+        Sources fixes (étoile blanche).
+    eps, resolution
+        Régularisation et finesse de la carte (voir `plot_intensity_map`).
+
+    Renvoie
+    -------
+    matplotlib.figure.Figure
     """
     fig, (ax_map, ax_prof) = plt.subplots(1, 2, figsize=(14, 6))
     fixed_sources = fixed_sources if fixed_sources is not None else Sources.empty(box.dim)
@@ -41,6 +62,7 @@ def field_and_profile(sources: Sources, box: Box, sensors: CircleSensors,
                      f"{sources.total_intensity:.3g}")
     ax_map.legend(loc="upper right", fontsize=8)
 
+    # Profil exact : 1000 points fictifs sur le même cercle
     dense = CircleSensors(sensors.center, sensors.radius, 1000, sensors.t0)
     plot_circle_profile(dense, intensity_at(all_sources, dense.positions), ax_prof,
                         c="orange", label="Phi exacte")

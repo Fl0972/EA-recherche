@@ -14,7 +14,22 @@ from .sources import Sources
 
 def intensity_at(sources: Sources, x, eps: float = 0.0) -> np.ndarray:
     """
-    x : tableau de forme (..., d). Renvoie Phi(x), de forme (...).
+    Évalue Phi en un ou plusieurs points (superposition des contributions).
+
+    Paramètres
+    ----------
+    sources : Sources
+        Sources qui émettent.
+    x : array_like, forme (..., d)
+        Point(s) d'évaluation ; les dimensions de tête sont libres (une liste
+        de capteurs (K, d), une grille (ny, nx, d), ...).
+    eps : float
+        Régularisation de 1/r^2. Avec eps = 0, Phi vaut +inf sur une source.
+
+    Renvoie
+    -------
+    np.ndarray, forme (...)
+        Phi(x). Des zéros si `sources` est vide.
     """
     x = np.asarray(x, dtype=float)
     if sources.n == 0:

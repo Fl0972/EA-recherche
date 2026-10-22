@@ -4,7 +4,8 @@ import numpy as np
 
 from ..sensors import CircleSensors
 
-ANGLE_TICKS = (np.linspace(0, 2 * np.pi, 5),
+# Graduations de l'axe des angles : 0, pi/2, pi, 3pi/2, 2pi
+ANGLE_TICKS =(np.linspace(0, 2 * np.pi, 5),
                ["0", r"$\pi/2$", r"$\pi$", r"$3\pi/2$", r"$2\pi$"])
 
 

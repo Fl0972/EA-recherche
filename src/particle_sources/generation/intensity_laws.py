@@ -13,8 +13,12 @@ IntensityLaw = Callable[[int, float, np.random.Generator], np.ndarray]
 
 
 def dirichlet(alpha: float) -> IntensityLaw:
-    """I = total * Dirichlet(alpha, ..., alpha).
-    alpha < 1 : intensités très inégales ; alpha > 1 : plus homogènes."""
+    """
+    I = total * Dirichlet(alpha, ..., alpha).
+    alpha < 1 : intensités très inégales ; alpha > 1 : plus homogènes.
+
+    La loi renvoyée gère n = 0 (tableau vide).
+    """
     def sample(n, total, rng):
         if n == 0:
             return np.empty(0)

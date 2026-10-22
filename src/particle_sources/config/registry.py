@@ -3,6 +3,11 @@ Correspondance entre les noms utilisés dans les fichiers YAML et le code.
 
 Pour rendre une nouvelle loi / méthode utilisable depuis la config, il suffit
 de l'ajouter au dictionnaire correspondant.
+
+Chaque entrée associe un nom à une fabrique : appelée avec les `params` du
+YAML, elle renvoie l'objet prêt à servir (une loi, un réseau de capteurs, un
+modèle de bruit, une méthode d'inversion). Les objets sans paramètre sont
+enveloppés dans un `lambda:` pour garder la même interface.
 """
 
 from functools import partial
@@ -46,7 +51,23 @@ INVERSION_METHODS = {
 
 
 def build(registry: dict, spec: dict, kind: str, *args):
-    """Construit l'objet décrit par spec = {name: ..., params: {...}}."""
+    """
+    Construit l'objet décrit par spec = {name: ..., params: {...}}.
+
+    Paramètres
+    ----------
+    registry : dict
+        Un des dictionnaires ci-dessus.
+    spec : dict
+        Section du YAML, par ex. {"name": "poisson", "params": {"lam": 1.0}}.
+    kind : str
+        Nom de la section, utilisé uniquement dans les messages d'erreur.
+    *args
+        Arguments passés avant les params (le domaine pour SENSOR_LAYOUTS).
+
+    Lève ValueError, avec la liste des choix possibles, si le nom est inconnu
+    ou si les paramètres ne correspondent pas à la fabrique.
+    """
     name = spec.get("name")
     params = spec.get("params") or {}
     if name not in registry:

@@ -18,6 +18,20 @@ class CircleSensors:
     K capteurs équirépartis sur un cercle :
         s_k = center + radius * (cos t_k, sin t_k),  t_k = t0 + 2 pi k / K
     (t = 0 à l'est, sens trigonométrique).
+
+    C'est la géométrie qu'exige la méthode de Prony (`inversion.prony`), qui
+    utilise la FFT des mesures le long du cercle.
+
+    Attributs
+    ---------
+    center : np.ndarray, forme (2,)
+        Centre c du cercle.
+    radius : float
+        Rayon R du cercle.
+    n : int
+        Nombre de capteurs K.
+    t0 : float
+        Angle du premier capteur (radians).
     """
     center: np.ndarray
     radius: float
@@ -25,6 +39,7 @@ class CircleSensors:
     t0: float = 0.0
 
     def __post_init__(self):
+        """Convertit le centre en tableau numpy."""
         object.__setattr__(self, "center", np.asarray(self.center, dtype=float))
 
     @classmethod
@@ -36,9 +51,11 @@ class CircleSensors:
 
     @property
     def angles(self) -> np.ndarray:
+        """Angles t_k des capteurs, forme (K,)."""
         return self.t0 + 2 * np.pi * np.arange(self.n) / self.n
 
     @property
     def positions(self) -> np.ndarray:
+        """Positions cartésiennes s_k des capteurs, forme (K, 2)."""
         t = self.angles
         return self.center + self.radius * np.stack([np.cos(t), np.sin(t)], axis=-1)

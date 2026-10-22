@@ -1,7 +1,9 @@
 # Génération des sources synthétiques
 
-# Graine du générateur aléatoire (null = tirage différent à chaque exécution)
-seed: 1
+# Graine du générateur aléatoire. null = graine tirée au hasard à chaque
+# exécution ; elle est affichée par les scripts pour pouvoir rejouer un tirage
+# (--set seed=...).
+seed: null
 
 # Domaine contenant les sources : [[xmin, xmax], [ymin, ymax]]
 domain: [[0, 10], [0, 20]]
@@ -27,7 +29,7 @@ sources:
   #   fixed             {n}
   count_law:
     name: poisson
-    params: {lam: 1.0}
+    params: {lam: 20.0}
   # Conditionne la loi à N >= 1
   at_least_one: false
 
