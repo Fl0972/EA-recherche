@@ -1,0 +1,28 @@
+# Banc d'essai des méthodes d'inversion (scripts/benchmark.py)
+# Les sources, capteurs et bruit suivent les autres fichiers de config ;
+# un paramètre est balayé (sweep), les autres restent fixes.
+
+benchmark:
+  # Nombre de situations tirées pour chaque valeur du paramètre balayé
+  n_situations: 200
+
+  # Paramètre de config que l'on fait varier, et ses valeurs. Exemples :
+  #   sensors.noise.params.sigma   niveau de bruit
+  #   sensors.layout.params.n      nombre de capteurs
+  #   sources.count_law.params.lam nombre moyen de sources
+  sweep:
+    key: sensors.noise.params.sigma
+    values: [1.0e-5, 1.0e-4, 1.0e-3, 1.0e-2]
+
+  # Méthodes comparées (noms : voir reconstruction.yaml). `label` = légende.
+  methods:
+    - {label: Prony, name: prony, params: {rank_tol: null}}
+    - {label: Prony + max. vraisemblance, name: prony_mle, params: {max_sources: 6}}
+
+  # Erreur (en unités de longueur) attribuée à une source manquante ou en trop
+  # dans la distance OSPA ; plafonne aussi les erreurs de position.
+  ospa_cutoff: 2.0
+
+  # Dossier de sortie (relatif à la racine du projet) : summary.csv,
+  # benchmark.png et config.yaml
+  output_dir: outputs/benchmark

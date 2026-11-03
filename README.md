@@ -23,6 +23,55 @@ python scripts/reconstruct.py    # + bruit + reconstruction
 pytest                           # tests
 ```
 
+## Jeux de données pour l'apprentissage
+
+```bash
+python scripts/generate_dataset.py --set dataset.n_samples=100000
+```
+
+Paramètres dans `config/dataset.yaml` ; les sources, capteurs et bruit
+suivent les autres fichiers de config. Le dossier de sortie (ignoré par git)
+contient `config.yaml` (config utilisée), `manifest.json` et des fichiers
+`shard_XXXXX.npz`. Lecture :
+
+```python
+from particle_sources.dataset import load_dataset
+data = load_dataset("data/dataset")
+```
+
+| Clé | Forme | Contenu |
+|---|---|---|
+| `measurements` | (M, K) | mesures bruitées (entrée du modèle) |
+| `measurements_clean` | (M, K) | mesures sans bruit (si `store_clean`) |
+| `n_sources` | (M,) | nombre de sources tirées |
+| `positions` | (M, N_max, 2) | positions, triées par intensité décroissante, 0 au-delà de `n_sources` |
+| `intensities` | (M, N_max) | intensités, même ordre, 0 au-delà |
+| `mask` | (M, N_max) | True pour les vraies sources |
+| `sensor_positions` | (K, 2) | positions des capteurs |
+
+Les sources fixes (source centrale) sont dans les mesures mais pas dans les
+labels ; elles sont décrites dans `manifest.json`.
+
+## Banc d'essai des méthodes
+
+```bash
+python scripts/benchmark.py
+```
+
+Paramètres dans `config/benchmark.yaml` : un paramètre de config est balayé
+(niveau de bruit, nombre de capteurs, ...) et chaque méthode est évaluée sur
+les mêmes situations. Sorties dans `outputs/benchmark/` : `summary.csv`,
+`benchmark.png`, `config.yaml`.
+
+Métriques : proportion de N correct, distance OSPA, erreurs médianes de
+position / intensité (situations à N correct), et rapport erreur / borne de
+Cramér-Rao source par source (≈ 0,7-0,8 : la méthode atteint la meilleure
+précision possible à N connu).
+
+Une nouvelle méthode (par ex. un réseau entraîné) s'écrit comme une fonction
+`(y, problem: InverseProblem) -> Sources`, s'enregistre dans
+`config/registry.py`, et s'ajoute à la liste `methods` du banc d'essai.
+
 ## Configuration
 
 Tous les paramètres sont dans le dossier `config/`, un fichier par étape :
@@ -72,8 +121,15 @@ src/particle_sources/
 │   ├── layouts.py       géométries de capteurs (CircleSensors)
 │   ├── noise.py         modèles de bruit (gaussien relatif, comptage Poisson)
 │   └── measurement.py   measure : simule les mesures
-├── inversion/         Problème inverse
-│   └── prony.py         reconstruction par la méthode de Prony
+├── inversion/         Problème inverse : méthodes (y, InverseProblem) -> Sources
+│   ├── problem.py       InverseProblem : ce que l'inversion sait (capteurs, bruit, ...)
+│   ├── prony.py         méthode de Prony (formule directe)
+│   └── likelihood.py    affinage par maximum de vraisemblance, choix de N (BIC)
+├── benchmark/         Évaluation des méthodes
+│   ├── metrics.py       association des sources, OSPA, erreurs
+│   ├── crb.py           borne de Cramér-Rao
+│   └── runner.py        balayage d'un paramètre, comparaison des méthodes
+├── dataset/           Jeux de données pour l'apprentissage
 └── visualization/     Affichage uniquement (matplotlib)
     ├── field_map.py     carte de Phi, sources, domaine
     ├── sensors_plot.py  capteurs et profil sur le cercle

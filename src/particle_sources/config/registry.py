@@ -8,7 +8,7 @@ de l'ajouter au dictionnaire correspondant.
 from functools import partial
 
 from ..generation import count_laws, intensity_laws, position_laws
-from ..inversion import prony_circle
+from ..inversion import prony, prony_mle
 from ..sensors import CircleSensors, noise
 
 COUNT_LAWS = {
@@ -39,9 +39,10 @@ NOISE_MODELS = {
     "poisson_counts": noise.poisson_counts,
 }
 
-# Une méthode construite est une fonction  (y, sensors) -> Sources
+# Une méthode construite est une fonction  (y, problem: InverseProblem) -> Sources
 INVERSION_METHODS = {
-    "prony": lambda **params: partial(prony_circle, **params),
+    "prony": lambda **params: partial(prony, **params),
+    "prony_mle": lambda **params: partial(prony_mle, **params),
 }
 
 

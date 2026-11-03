@@ -1,0 +1,27 @@
+# Génération d'un jeu de données (scripts/generate_dataset.py)
+# Les sources, capteurs et bruit suivent simulation.yaml et sensors.yaml.
+
+dataset:
+  # Nombre de situations (tirages indépendants de sources + mesures)
+  n_samples: 10000
+
+  # Nombre de situations par fichier .npz. Chaque fichier a son propre flux
+  # aléatoire (dérivé de `seed`) : on peut en régénérer un seul à l'identique.
+  shard_size: 10000
+
+  # Dossier de sortie, relatif à la racine du projet
+  output_dir: data/dataset
+
+  # Écraser le dossier s'il existe déjà
+  overwrite: false
+
+  # Enregistrer aussi les mesures sans bruit (utile pour étudier l'effet du bruit)
+  store_clean: true
+
+  # Précision des tableaux enregistrés : float32 (moitié moins lourd) ou float64
+  dtype: float32
+
+  # Taille du rembourrage des tableaux de sources (N_max).
+  # null = nombre max de sources observé dans le jeu. Un entier fixe la taille
+  # (utile pour un modèle à sortie de taille fixe) ; erreur s'il est dépassé.
+  max_sources: null

@@ -13,3 +13,6 @@ venv/
 # Sorties générées
 outputs/
 *.png
+
+# Jeux de données générés
+data/

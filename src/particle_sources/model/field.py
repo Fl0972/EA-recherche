@@ -23,3 +23,16 @@ def intensity_at(sources: Sources, x, eps: float = 0.0) -> np.ndarray:
     r2 = np.sum(diff**2, axis=-1) + eps**2           # (..., N)
     with np.errstate(divide="ignore"):
         return np.sum(sources.intensities / r2, axis=-1)
+
+
+def intensity_jacobian(sources: Sources, x, eps: float = 0.0) -> np.ndarray:
+    """
+    Dérivées de Phi(x_k) par rapport aux paramètres des sources, rangés en
+    theta = [positions.ravel(), intensities]  (N*d + N paramètres).
+    x : (K, d). Renvoie un tableau (K, N*d + N).
+    """
+    x = np.asarray(x, dtype=float)
+    diff = x[:, None, :] - sources.positions                 # (K, N, d)
+    r2 = np.sum(diff**2, axis=-1) + eps**2                   # (K, N)
+    d_pos = 2 * sources.intensities[None, :, None] * diff / r2[..., None] ** 2
+    return np.concatenate([d_pos.reshape(len(x), -1), 1 / r2], axis=1)

@@ -16,7 +16,7 @@ def test_default_config_runs_end_to_end():
     sources = sample_sources(cfg.box, cfg.count_law, cfg.total_intensity, rng,
                              cfg.intensity_law, cfg.position_law)
     y = measure(sources, cfg.sensors, rng, cfg.noise, cfg.eps)
-    estimate = cfg.invert(y, cfg.sensors)
+    estimate = cfg.invert(y, cfg.problem)
     assert y.shape == (len(cfg.sensors.positions),)
     assert estimate.dim == 2
 

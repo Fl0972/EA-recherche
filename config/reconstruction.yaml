@@ -1,15 +1,21 @@
 # Problème inverse
 
 reconstruction:
-  # Retire des mesures la contribution (connue) des sources fixes, par ex. la
-  # source centrale, avant l'inversion. Le bruit, lui, n'est pas retiré.
+  # Les sources fixes (ex. source centrale) sont-elles connues de l'inversion ?
+  # true  : leur contribution est retirée / modélisée (le bruit, lui, reste).
+  # false : l'inversion doit les retrouver comme les autres.
   subtract_fixed_sources: true
 
   # Méthode de reconstruction
-  #   prony  {n_sources, rank_tol}
-  #       n_sources : nombre de sources imposé, ou null pour l'estimer
-  #       rank_tol  : seuil relatif sur les valeurs singulières pour estimer N.
-  #                   À adapter au bruit : ~1e-8 sans bruit, ~5 * sigma sinon.
+  #   prony      {n_sources, rank_tol}
+  #       Formule directe (coefficients de Fourier + matrix pencil).
+  #       n_sources : nombre de sources imposé, ou null pour l'estimer.
+  #       rank_tol  : seuil relatif sur les valeurs singulières pour estimer N,
+  #                   ou null pour un seuil automatique d'après le modèle de bruit.
+  #   prony_mle  {max_sources}
+  #       Prony pour N = 1..max_sources, chacun affiné par maximum de
+  #       vraisemblance (positions dans le domaine, intensités >= 0,
+  #       somme = total_intensity) ; N choisi par critère BIC.
   method:
-    name: prony
-    params: {n_sources: null, rank_tol: 0.005}
+    name: prony_mle
+    params: {max_sources: 6}

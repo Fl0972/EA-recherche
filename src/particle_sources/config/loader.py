@@ -19,6 +19,7 @@ from ..generation import count_laws as _count_laws
 from ..generation.count_laws import CountLaw
 from ..generation.intensity_laws import IntensityLaw
 from ..generation.position_laws import PositionLaw
+from ..inversion import InverseProblem
 from ..model import Box, Sources
 from ..sensors.noise import NoiseModel
 from . import registry as reg
@@ -29,6 +30,17 @@ class VisualizationConfig:
     eps: float
     resolution: int
     save_path: str | None
+
+
+@dataclass(frozen=True)
+class DatasetConfig:
+    n_samples: int
+    shard_size: int
+    output_dir: str
+    overwrite: bool
+    store_clean: bool
+    dtype: str
+    max_sources: int | None
 
 
 @dataclass(frozen=True)
@@ -44,9 +56,11 @@ class ExperimentConfig:
     sensors: object                 # objet exposant .positions
     noise: NoiseModel
     eps: float
-    invert: Callable[[np.ndarray, object], Sources]
-    subtract_fixed_sources: bool    # retirer les sources fixes avant l'inversion
+    invert: Callable[[np.ndarray, InverseProblem], Sources]
+    subtract_fixed_sources: bool    # les sources fixes sont-elles connues de l'inversion
+    problem: InverseProblem         # ce que l'inversion sait (capteurs, bruit, ...)
     visualization: VisualizationConfig
+    dataset: DatasetConfig | None   # section optionnelle (dataset.yaml)
 
     def rng(self) -> np.random.Generator:
         return np.random.default_rng(self.seed)
@@ -126,6 +140,16 @@ def load_config(config_dir, overrides=()) -> ExperimentConfig:
             box, float(_get(central, "intensity_factor", "central_source.")) * total_intensity,
             central.get("position"))
 
+    sensors = reg.build(reg.SENSOR_LAYOUTS, _get(sens, "layout", "sensors."),
+                        "sensors.layout", box)
+    noise = reg.build(reg.NOISE_MODELS, _get(sens, "noise", "sensors."), "sensors.noise")
+    eps = float(sens.get("eps", 0.0))
+    subtract = bool(rec.get("subtract_fixed_sources", False))
+    problem = InverseProblem(
+        sensors=sensors, box=box, noise=noise,
+        known=fixed_sources if subtract else Sources.empty(box.dim),
+        total_intensity=total_intensity, eps=eps)
+
     return ExperimentConfig(
         raw=raw,
         seed=raw.get("seed"),
@@ -137,18 +161,34 @@ def load_config(config_dir, overrides=()) -> ExperimentConfig:
         position_law=reg.build(reg.POSITION_LAWS,
                                _get(src, "position_law", "sources."), "position_law"),
         fixed_sources=fixed_sources,
-        sensors=reg.build(reg.SENSOR_LAYOUTS,
-                          _get(sens, "layout", "sensors."), "sensors.layout", box),
-        noise=reg.build(reg.NOISE_MODELS, _get(sens, "noise", "sensors."), "sensors.noise"),
-        eps=float(sens.get("eps", 0.0)),
+        sensors=sensors,
+        noise=noise,
+        eps=eps,
         invert=reg.build(reg.INVERSION_METHODS,
                          _get(rec, "method", "reconstruction."), "reconstruction.method"),
-        subtract_fixed_sources=bool(rec.get("subtract_fixed_sources", False)),
+        subtract_fixed_sources=subtract,
+        problem=problem,
         visualization=VisualizationConfig(
             eps=float(viz.get("eps", 0.05)),
             resolution=int(viz.get("resolution", 400)),
             save_path=viz.get("save_path"),
         ),
+        dataset=_dataset_config(raw.get("dataset")),
+    )
+
+
+def _dataset_config(ds: dict | None) -> DatasetConfig | None:
+    if ds is None:
+        return None
+    n_samples = int(_get(ds, "n_samples", "dataset."))
+    return DatasetConfig(
+        n_samples=n_samples,
+        shard_size=int(ds.get("shard_size") or n_samples),
+        output_dir=str(_get(ds, "output_dir", "dataset.")),
+        overwrite=bool(ds.get("overwrite", False)),
+        store_clean=bool(ds.get("store_clean", True)),
+        dtype=str(ds.get("dtype", "float32")),
+        max_sources=ds.get("max_sources"),
     )
 
 
