@@ -34,7 +34,7 @@ from scipy.optimize import minimize
 from .common import grid_local_maxima, make_grid, maximize_on_domain
 from .kernel import Setup, resolve
 
-TOL = 1e-6   # η_V < 1 « strictement » : marge > TOL
+TOL_MIN = 1e-9   # seuil minimal pour déclarer η_V < 1 « strictement »
 
 
 def gamma_matrix(z, setup: Setup | None = None) -> np.ndarray:
@@ -109,7 +109,8 @@ def _boundary_max(f, grad, box, z, rho, step, n_starts=3):
 def check_hypotheses(z_sources, lam: float | None = None, sigma=None,
                      grid_step: float | None = None, exclusion_radius: float | None = None,
                      verbose: bool = True, setup: Setup | None = None, plot: bool | None = None,
-                     save_path=None, n_refine: int = 10, estimates=None) -> dict:
+                     save_path=None, n_refine: int = 10, estimates=None,
+                     tol: float | None = None) -> dict:
     """
     Vérifie la condition de source non dégénérée de Duval-Peyré pour les
     sources z_sources (K, 2) (vraies positions en simulation, positions
@@ -131,13 +132,24 @@ def check_hypotheses(z_sources, lam: float | None = None, sigma=None,
     save_path : enregistre la figure (PNG) si donné
     n_refine : nombre de maxima locaux de la grille affinés par L-BFGS-B
     estimates : positions estimées à superposer sur la carte (facultatif)
+    tol : seuil sur la marge pour (H2) ; défaut max(1e-9, 100 × erreur
+        d'interpolation |η_V(z_k) - 1|), c.-à-d. le niveau du bruit numérique.
+
+    Marge relative. La marge 1 - max η_V hors des boules est petite par
+    nature : au bord d'une boule, η_V ≈ 1 - ½ |λ_max(∇²η_V)| ρ². On rapporte
+    donc aussi margin_relative = marge / (½ |λ_max| ρ²) (λ_max : valeur
+    propre de la hessienne la plus proche de 0, toutes sources confondues) :
+    ≈ 1 quand η_V décroît comme le prédit la hessienne, ≪ 1 quand η_V est
+    presque plat (condition « tout juste » vraie, reconstruction fragile),
+    < 0 quand (H2) échoue.
 
     Renvoie un dict
     ---------------
     H1, H2, H3, non_degenerate (= H1 and H2 and H3), interior,
     K, M, rank, n_cols (= 3K), cond, cond_normalized, singular_values,
     interp_error (max |η_V(z_k) - 1|), grad_error (max ||∇η_V(z_k)||, relatif),
-    margin (= 1 - max η_V hors boules), argmax, boundary_max, boundary_argmax,
+    margin (= 1 - max η_V hors boules), margin_relative, tol, argmax,
+    boundary_max, boundary_argmax,
     ball_excess, exclusion_radius, eigenvalues (K, 2), hessians (K, 2, 2),
     min_dist_boundary, p (pré-certificat), noise_over_lambda,
     noise_certificate_bound, figure (si tracée).
@@ -202,19 +214,23 @@ def check_hypotheses(z_sources, lam: float | None = None, sigma=None,
     margin = 1.0 - best_val
     inside = (dist < rho) & (dist > 1e-12)
     ball_excess = float(np.max(vals[inside] - 1)) if inside.any() else -np.inf
-    H2 = bool(margin > TOL and ball_excess <= TOL)
+    if tol is None:
+        tol = max(TOL_MIN, 100 * interp_error)
+    H2 = bool(margin > tol and ball_excess <= tol)
 
     # 4. (H3) hessiennes de η_V aux sources
     hessians = eta_V_hess(p, z, setup)
     eig = np.linalg.eigvalsh(hessians)
     H3 = bool(np.all(eig < 0))
+    curv = 0.5 * abs(float(eig[:, -1].max())) * rho**2
+    margin_rel = margin / curv if curv > 0 else np.nan
 
     res = {
         "H1": H1, "H2": H2, "H3": H3, "non_degenerate": H1 and H2 and H3,
         "interior": interior, "K": K, "M": M, "rank": rank, "n_cols": n_cols,
         "cond": cond, "cond_normalized": cond_n, "singular_values": sv,
         "interp_error": interp_error, "grad_error": grad_error,
-        "margin": margin, "argmax": np.asarray(best_pt), "boundary_max": b_val,
+        "margin": margin, "margin_relative": margin_rel, "tol": tol, "argmax": np.asarray(best_pt), "boundary_max": b_val,
         "boundary_argmax": b_pt, "ball_excess": ball_excess, "exclusion_radius": rho,
         "eigenvalues": eig, "hessians": hessians, "min_dist_boundary": min_dist_boundary,
         "p": p, "z": z, "warnings": warnings,
@@ -259,12 +275,13 @@ def format_report(res: dict) -> str:
              f"cond(Γ) = {res['cond']:.3e} (colonnes normalisées : {res['cond_normalized']:.3e})")
     L.append(f"  Pré-certificat : max |η_V(z_k) - 1| = {res['interp_error']:.1e}, "
              f"max ||∇η_V(z_k)|| (relatif) = {res['grad_error']:.1e}")
-    L.append(f"  (H2) {ok[res['H2']]} : marge 1 - max η_V = {res['margin']:.4g} "
+    L.append(f"  (H2) {ok[res['H2']]} : marge 1 - max η_V = {res['margin']:.4g}, "
+             f"marge relative = {res['margin_relative']:.3g} (seuil {res['tol']:.1e}) "
              f"(atteint en {np.round(res['argmax'], 3)}, boules de rayon "
              f"{res['exclusion_radius']:.3g})")
     L.append(f"       max sur le bord de D : {res['boundary_max']:.4g} "
              f"en {np.round(res['boundary_argmax'], 3)}")
-    if res["ball_excess"] > TOL:
+    if res["ball_excess"] > res["tol"]:
         L.append(f"       η_V dépasse 1 de {res['ball_excess']:.3g} tout près d'une source")
     L.append(f"  (H3) {ok[res['H3']]} : valeurs propres de ∇²η_V(z_k)")
     for zk, ev in zip(res["z"], res["eigenvalues"]):

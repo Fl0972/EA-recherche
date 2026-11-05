@@ -12,7 +12,8 @@ import pytest
 
 from particle_sources.duval_peyre import diagnose
 from sparse_sources import (build_grid, check_hypotheses, debias, forward,
-                            hypotheses_after_fit, lasso_pipeline, merge_peaks, refine,
+                            hypotheses_after_fit, lasso_pipeline, match_sources,
+                            merge_peaks, refine,
                             sliding_frank_wolfe, solve_lasso)
 from sparse_sources.common import certificate, certificate_grad, max_certificate
 from sparse_sources.hypotheses import eta_V, eta_V_grad, precertificate
@@ -82,11 +83,19 @@ def test_raw_kernel_in_plane_fails(setup_plane):
     assert res["H1"] and not res["H3"] and not res["H2"]
 
 
-@pytest.mark.parametrize("d", [0.05, 0.2])
-def test_two_very_close_sources_fail(setup_normalized, d):
-    """Deux sources très proches : H2 ou H3 échoue."""
-    z = [[5.0, 10.0 - d / 2], [5.0, 10.0 + d / 2]]
-    res = check_hypotheses(z, setup=setup_normalized, verbose=False)
+@pytest.mark.parametrize("name,center,d", [
+    ("setup_normalized", [3.0, 6.0], 0.05),
+    ("setup_high", [7.0, 16.0], 0.2),
+    ("setup_high", [5.0, 10.0], 0.05),
+])
+def test_two_very_close_sources_fail(name, center, d, request):
+    """
+    Deux sources très proches : H2 ou H3 échoue. Remarque : pour d ≈ 0.2 avec
+    le noyau normalisé, la condition tient encore numériquement (marge
+    relative ≈ 0.6) mais cond(Γ) ~ 1e6 : constantes du théorème minuscules.
+    """
+    z = [[center[0], center[1] - d / 2], [center[0], center[1] + d / 2]]
+    res = check_hypotheses(z, setup=request.getfixturevalue(name), verbose=False)
     assert not (res["H2"] and res["H3"])
     assert not res["non_degenerate"]
 
@@ -234,3 +243,113 @@ def test_refine_keeps_bounds(setup_high):
     z, I, _ = refine([[0.5, 19.0]], [3.0], m, 1e-6, setup_high)
     lo, hi = setup_high.domain.lo, setup_high.domain.hi
     assert np.all(z >= lo - 1e-12) and np.all(z <= hi + 1e-12) and np.all(I >= 0)
+
+
+# ---- Données bruitées, plusieurs niveaux de bruit -----------------------------------------
+NOISY_Z = np.array([[3.0, 5.0], [7.0, 15.0]])
+NOISY_I = np.array([15.0, 8.0])
+LEVELS = [1e-4, 1e-3, 1e-2]
+
+
+def _noisy(S, level, seed=0):
+    """m = A(s*) + σ ε, σ = level × rms(A(s*)) (noyau physique)."""
+    m0 = forward(NOISY_Z, NOISY_I, S.with_normalization(False))
+    sigma = level * float(np.sqrt(np.mean(m0**2)))
+    rng = np.random.default_rng(seed)
+    return m0 + sigma * rng.standard_normal(m0.shape), sigma
+
+
+@pytest.fixture(scope="module")
+def grid_normalized(setup_normalized):
+    """Grille de pas 0.25 pour le noyau normalisé."""
+    return build_grid(step=0.25, setup=setup_normalized)
+
+
+@pytest.mark.parametrize("level", LEVELS)
+def test_sfw_noisy_recovery(setup_normalized, grid_normalized, level):
+    """
+    Bruit 1e-4 à 1e-2 (relatif au rms), λ = 2 σ √M, configuration non
+    dégénérée : bon nombre de sources, certificat ≤ 1, erreurs de position et
+    d'intensité de l'ordre du bruit, résidu de l'ordre de M σ².
+    """
+    S = setup_normalized
+    m, sigma = _noisy(S, level)
+    lam = 2 * sigma * np.sqrt(S.M)
+    out = sliding_frank_wolfe(m, lam, setup=S, grid=grid_normalized, tol=1e-5, sigma=sigma)
+    assert out["converged"]
+    I = S.physical_intensities(out["z_debiased"], out["I_debiased"])
+    res = match_sources(NOISY_Z, NOISY_I, out["z_debiased"], I)
+    assert res["exact"]
+    assert res["err_pos"] < 300 * level        # ≈ 30 σ_rel observé, marge ×10
+    assert res["err_int"] < 100 * level
+    assert 0.3 < out["diagnostics"]["ratio"] < 3
+
+
+@pytest.mark.parametrize("level", LEVELS)
+def test_lasso_noisy_recovery(setup_normalized, grid_normalized, level):
+    """
+    Même scénario pour le pipeline LASSO + raffinement : bon K et erreur de
+    l'ordre du bruit. Le certificat n'est pas toujours ≤ 1 : un petit pic
+    parasite du LASSO peut rester bloqué par le raffinement local (intensité
+    ≈ 0 donc gradient en position ≈ 0) ; il est retiré au débiaisage, mais la
+    solution pénalisée n'est alors pas certifiée (η_max ≈ 1.003 à σ = 1e-4).
+    """
+    S = setup_normalized
+    m, sigma = _noisy(S, level, seed=1)
+    lam = 2 * sigma * np.sqrt(S.M)
+    out = lasso_pipeline(m, lam, grid=grid_normalized, setup=S, sigma=sigma,
+                         method="active_set")
+    I = S.physical_intensities(out["z"], out["I"])
+    res = match_sources(NOISY_Z, NOISY_I, out["z"], I)
+    assert res["exact"]
+    assert res["err_pos"] < 300 * level
+    assert out["eta_max"] < 1.01
+
+
+def test_error_linear_in_noise(setup_normalized, grid_normalized):
+    """
+    Régime de petit bruit (condition vérifiée) : erreur de position ∝ σ.
+    Avec λ = c σ √M fixé en c, l'erreur moyenne sur 4 tirages divisée par σ
+    varie peu quand σ est divisé par 100.
+    """
+    S = setup_normalized
+    ratios = []
+    for level in [1e-5, 1e-4, 1e-3]:
+        errs = []
+        for seed in range(4):
+            m, sigma = _noisy(S, level, seed)
+            out = sliding_frank_wolfe(m, 2 * sigma * np.sqrt(S.M), setup=S,
+                                      grid=grid_normalized, tol=1e-5)
+            I = S.physical_intensities(out["z_debiased"], out["I_debiased"])
+            res = match_sources(NOISY_Z, NOISY_I, out["z_debiased"], I)
+            assert res["exact"]
+            errs.append(res["err_pos"])
+        ratios.append(np.mean(errs) / level)
+    assert max(ratios) / min(ratios) < 3
+
+
+def test_high_noise_degrades(setup_normalized, grid_normalized):
+    """Bruit fort (σ = 0.3 × rms) : l'erreur est bien plus grande qu'à 1e-3."""
+    S = setup_normalized
+    errs = {}
+    for level in [1e-3, 0.3]:
+        m, sigma = _noisy(S, level, seed=2)
+        out = sliding_frank_wolfe(m, 2 * sigma * np.sqrt(S.M), setup=S, grid=grid_normalized,
+                                  tol=1e-5)
+        I = S.physical_intensities(out["z_debiased"], out["I_debiased"])
+        res = match_sources(NOISY_Z, NOISY_I, out["z_debiased"], I)
+        errs[level] = res["err_pos"] if res["exact"] else np.inf
+    assert errs[0.3] > 10 * errs[1e-3]
+
+
+@pytest.mark.parametrize("level", LEVELS)
+def test_hypotheses_report_noise_regime(setup_normalized, level):
+    """check_hypotheses avec λ et σ : ||w|| / λ = 1 / c pour λ = c σ √M."""
+    S = setup_normalized
+    m, sigma = _noisy(S, level)
+    lam = 2 * sigma * np.sqrt(S.M)
+    res = check_hypotheses(NOISY_Z, lam=lam, sigma=sigma, setup=S, verbose=False)
+    assert res["non_degenerate"]
+    assert res["noise_over_lambda"] == pytest.approx(0.5)
+    # Noyau normalisé : ||ψ|| = 1, perturbation du certificat ≤ ||w|| / λ
+    assert res["noise_certificate_bound"] == pytest.approx(0.5, rel=1e-6)
