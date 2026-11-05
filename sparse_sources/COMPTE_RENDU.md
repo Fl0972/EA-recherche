@@ -36,7 +36,8 @@ ou en PDF avec Pandoc (voir la section 10).
    retirée, bruit relatif), la meilleure méthode est le **maximum de vraisemblance
    glouton + BIC**. Elle bat Prony et le BLASSO dans presque toutes les cases,
    et son erreur est proche de la borne de Cramér–Rao, qui est la meilleure
-   précision possible (section 5.5).
+   précision possible (section 5.5 ; tableau de choix des méthodes en
+   section 11).
 5. **La limite principale est physique, pas algorithmique** : le bruit de la
    source centrale reste dans les mesures après soustraction. Il multiplie
    l'erreur minimale possible par un facteur d'environ 40 par rapport au même
@@ -883,6 +884,50 @@ Pour obtenir une version LaTeX ou PDF du compte rendu :
 pandoc COMPTE_RENDU.md -s -o COMPTE_RENDU.tex
 pandoc COMPTE_RENDU.md -s --pdf-engine=xelatex -o COMPTE_RENDU.pdf
 ```
+
+## 11. Conclusion : quelle méthode utiliser ?
+
+Taux de réussite sur le scénario du projet (section 5.5, source centrale
+comprise, 20 tirages par case) :
+
+| sources | bruit $\sigma$ | Prony | Frank-Wolfe ($\alpha = 1$) | **ML + BIC** |
+|---|---|---|---|---|
+| 1 | $10^{-4}$ (faible) | 100 % | 100 % | **100 %** |
+| 1 | $10^{-3}$ | 15 % | 100 % | **100 %** |
+| 2 | $10^{-4}$ (faible) | 85 % | 90 % | **95 %** |
+| 2 | $3\times 10^{-3}$ | 0 % | 40 % | **75 %** |
+| 3 | $10^{-4}$ (faible) | 55 % | 40 % | **80 %** |
+| 3 | $10^{-3}$ | 10 % | 5 % | **40 %** |
+| 5 | $10^{-4}$ (faible) | 5 % | 0 % | **50 %** |
+
+- **Prony est bon quand le bruit est très faible.** C'est une méthode
+  algébrique, exacte sans bruit. Mais dès que $\sigma$ atteint $10^{-3}$, il
+  trouve trop de sources (4 à 7) et s'effondre, même avec une seule source
+  (15 %).
+- **Frank-Wolfe résiste bien au bruit, mais seulement pour 1 ou 2 sources.** À
+  partir de 3 sources, il bute sur la condition (H2) : sources proches, sources
+  près des capteurs.
+- **Avec beaucoup de sources, les deux sont mauvais.** Prony fait un peu mieux à
+  faible bruit (55 % contre 40 % pour 3 sources), mais avec 5 sources ils sont
+  tous les deux proches de 0 %. Prony n'est donc pas « bon pour beaucoup de
+  sources ».
+- **ML + BIC fait au moins aussi bien que la meilleure des deux dans chaque
+  case**, et nettement mieux dès 2 sources avec du bruit.
+
+**Tableau de conclusion :**
+
+| situation | meilleure méthode classique | méthode à utiliser | ce qui limite |
+|---|---|---|---|
+| bruit très faible | Prony | **ML + BIC** | rien en pratique (1 à 3 sources) |
+| bruit moyen, 1 ou 2 sources | Frank-Wolfe ($\alpha = 1$) | **ML + BIC** | le bruit, au niveau de la borne de Cramér–Rao |
+| 3 sources ou plus | aucune | **ML + BIC** | la condition (H2) pour le BLASSO, le bruit pour le ML |
+| bruit fort, source centrale du projet | aucune | **ML + BIC** | la borne de Cramér–Rao : le problème n'est plus résoluble |
+
+En pratique, la méthode à retenir est `greedy_ml` (maximum de vraisemblance +
+BIC). Son erreur atteint la borne de Cramér–Rao : pour faire mieux, il faut
+changer les données (moins de bruit sur la source centrale, autre géométrie
+de capteurs), pas l'algorithme. Prony et Frank-Wolfe ne servent plus que de
+points de comparaison.
 
 ## Références
 
