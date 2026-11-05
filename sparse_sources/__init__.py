@@ -8,6 +8,7 @@ vérification de la condition de source non dégénérée de Duval-Peyré.
     lasso       LASSO positif sur grille (FISTA / sklearn), regroupement, raffinement
     blasso      Frank-Wolfe glissant
     hypotheses  check_hypotheses (H1, H2, H3)
+    plotting    style des figures
 
 Le noyau est celui du projet : G(x, z) = 1 / (||x - z||² + h²).
 """
@@ -15,7 +16,11 @@ Le noyau est celui du projet : G(x, z) = 1 / (||x - z||² + h²).
 from .kernel import Setup, get_default_setup, make_setup, set_default_setup
 from .common import (Grid, certificate, debias, diagnostics, forward, make_grid,
                      match_sources, max_certificate)
+from .lasso import build_grid, lasso_pipeline, merge_peaks, refine, solve_lasso
+from .blasso import sliding_frank_wolfe
+from .hypotheses import check_hypotheses, hypotheses_after_fit
 
-__all__ = ["Grid", "Setup", "certificate", "debias", "diagnostics", "forward",
-           "get_default_setup", "make_grid", "make_setup", "match_sources",
-           "max_certificate", "set_default_setup"]
+__all__ = ["Grid", "Setup", "build_grid", "certificate", "check_hypotheses", "debias",
+           "diagnostics", "forward", "get_default_setup", "hypotheses_after_fit",
+           "lasso_pipeline", "make_grid", "make_setup", "match_sources", "max_certificate",
+           "merge_peaks", "refine", "set_default_setup", "sliding_frank_wolfe", "solve_lasso"]
