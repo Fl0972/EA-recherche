@@ -39,6 +39,75 @@ from particle_sources.sensors import CircleSensors
 
 
 @dataclass(frozen=True)
+class NormalizedKernel:
+    """
+    Noyau normalisé ψ(z) = φ(z) / ||φ(z)|| (BLASSO « pondéré »).
+
+    Résoudre le BLASSO avec ψ revient à pénaliser Σ_k I_k ||φ(z_k)|| au lieu
+    de Σ_k I_k : les intensités du problème normalisé sont Ĩ_k = I_k ||φ(z_k)||.
+    Sans cette pondération, une source près des capteurs « coûte » beaucoup
+    moins cher (||φ|| grand) et le BLASSO déplace la masse vers le bord de D.
+
+    Dérivées (J = ∇φ (M×2), H_i = ∇²φ_i, S = ||φ||², n = sqrt(S)) :
+        ∇S = 2 J^T φ,      ∇²S = 2 (J^T J + Σ_i φ_i H_i)
+        ∇n = ∇S / (2n),    ∇²n = ∇²S / (2n) - ∇S ∇S^T / (4 n³)
+        u = 1/n :  ∇u = -∇n / n²,   ∇²u = -∇²n / n² + 2 ∇n ∇n^T / n³
+        ∇ψ_i  = u J_i + φ_i ∇u
+        ∇²ψ_i = u H_i + J_i ∇u^T + ∇u J_i^T + φ_i ∇²u
+    """
+    base: object  # noyau de base (phi, grad, hess)
+
+    @property
+    def m(self) -> int:
+        """Nombre de capteurs M."""
+        return self.base.m
+
+    @property
+    def sensors(self) -> np.ndarray:
+        """Positions des capteurs."""
+        return self.base.sensors
+
+    def norm(self, z) -> np.ndarray:
+        """||φ(z)||, forme (...)."""
+        return np.linalg.norm(self.base.phi(z), axis=-1)
+
+    def phi(self, z) -> np.ndarray:
+        """ψ(z), forme (..., M)."""
+        p = self.base.phi(z)
+        return p / np.linalg.norm(p, axis=-1, keepdims=True)
+
+    def _parts(self, z):
+        """φ, J, n, u, ∇u (formes (..., M), (..., M, 2), (...), (...), (..., 2))."""
+        p, J = self.base.phi(z), self.base.grad(z)
+        n = np.linalg.norm(p, axis=-1)
+        grad_n = np.einsum("...ia,...i->...a", J, p) / n[..., None]
+        u = 1.0 / n
+        grad_u = -grad_n / n[..., None] ** 2
+        return p, J, n, u, grad_n, grad_u
+
+    def grad(self, z) -> np.ndarray:
+        """∇ψ(z), forme (..., M, 2)."""
+        p, J, _, u, _, grad_u = self._parts(z)
+        return u[..., None, None] * J + p[..., None] * grad_u[..., None, :]
+
+    def hess(self, z) -> np.ndarray:
+        """∇²ψ(z), forme (..., M, 2, 2)."""
+        p, J, n, u, grad_n, grad_u = self._parts(z)
+        H = self.base.hess(z)
+        hess_S = 2 * (np.einsum("...ia,...ib->...ab", J, J)
+                      + np.einsum("...i,...iab->...ab", p, H))
+        grad_S = 2 * n[..., None] * grad_n
+        hess_n = (hess_S / (2 * n[..., None, None])
+                  - grad_S[..., :, None] * grad_S[..., None, :] / (4 * n[..., None, None] ** 3))
+        hess_u = (-hess_n / n[..., None, None] ** 2
+                  + 2 * grad_n[..., :, None] * grad_n[..., None, :] / n[..., None, None] ** 3)
+        return (u[..., None, None, None] * H
+                + J[..., :, None] * grad_u[..., None, None, :]
+                + grad_u[..., None, :, None] * J[..., None, :]
+                + p[..., None, None] * hess_u[..., None, :, :])
+
+
+@dataclass(frozen=True)
 class Setup:
     """
     Opérateur direct A et domaine D.
@@ -54,11 +123,18 @@ class Setup:
     layout : objet ou None
         Réseau de capteurs d'origine (``CircleSensors``), utile pour les
         méthodes qui en ont besoin (Prony). Facultatif.
+    normalize : bool
+        True : toutes les fonctions utilisent le noyau normalisé
+        ψ = φ / ||φ|| (BLASSO pondéré, voir ``NormalizedKernel``). Les
+        intensités manipulées sont alors Ĩ_k = I_k ||φ(z_k)|| ; utiliser
+        ``physical_intensities`` / ``normalized_intensities`` pour convertir.
+        Les mesures m, elles, sont inchangées (A(s) est le même).
     """
     sensors: np.ndarray
     domain: Box
     h: float = 0.0
     layout: object = field(default=None, compare=False, repr=False)
+    normalize: bool = False
 
     def __post_init__(self):
         """Convertit les capteurs en tableau float (M, 2)."""
@@ -67,9 +143,32 @@ class Setup:
             raise ValueError("sparse_sources travaille en 2D (sources dans un plan)")
 
     @cached_property
-    def kernel(self) -> InverseSquareKernel:
-        """Noyau du projet, avec eps = h."""
+    def base_kernel(self) -> InverseSquareKernel:
+        """Noyau du projet, avec eps = h (jamais normalisé)."""
         return InverseSquareKernel(self.sensors, eps=self.h)
+
+    @cached_property
+    def kernel(self):
+        """Noyau utilisé par les algorithmes : φ, ou ψ = φ/||φ|| si normalize."""
+        return NormalizedKernel(self.base_kernel) if self.normalize else self.base_kernel
+
+    def with_normalization(self, normalize: bool = True) -> "Setup":
+        """Même géométrie, noyau normalisé (ou non)."""
+        return Setup(self.sensors, self.domain, self.h, self.layout, normalize)
+
+    def physical_intensities(self, z, I) -> np.ndarray:
+        """Intensités physiques I_k à partir de celles du noyau utilisé (Ĩ_k / ||φ(z_k)|| si normalize)."""
+        I = np.asarray(I, float)
+        if not self.normalize or len(I) == 0:
+            return I
+        return I / np.linalg.norm(self.base_kernel.phi(np.asarray(z, float).reshape(-1, 2)), axis=-1)
+
+    def normalized_intensities(self, z, I) -> np.ndarray:
+        """Inverse de ``physical_intensities``."""
+        I = np.asarray(I, float)
+        if not self.normalize or len(I) == 0:
+            return I
+        return I * np.linalg.norm(self.base_kernel.phi(np.asarray(z, float).reshape(-1, 2)), axis=-1)
 
     @property
     def M(self) -> int:
@@ -91,7 +190,8 @@ class Setup:
 
 
 def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = None,
-               radius_factor: float = 1.0, domain=None, overrides=()) -> Setup:
+               radius_factor: float = 1.0, domain=None, overrides=(),
+               normalize: bool = False) -> Setup:
     """
     Construit un ``Setup`` à partir de la configuration du projet.
 
@@ -111,6 +211,8 @@ def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = 
         Domaine ; None = celui de la config.
     overrides : itérable de "clé=valeur"
         Surcharges passées à ``load_config``.
+    normalize : bool
+        Noyau normalisé ψ = φ / ||φ|| (BLASSO pondéré), voir ``Setup``.
     """
     cfg = load_config(config_dir or DEFAULT_CONFIG_DIR, overrides)
     box = Box.from_bounds(domain) if domain is not None else cfg.box
@@ -119,7 +221,7 @@ def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = 
         n = n_sensors if n_sensors is not None else layout.n
         t0 = getattr(layout, "t0", 0.0)
         layout = CircleSensors(box.center, radius_factor * box.circumradius, n, t0)
-    return Setup(layout.positions, box, cfg.eps if h is None else float(h), layout)
+    return Setup(layout.positions, box, cfg.eps if h is None else float(h), layout, normalize)
 
 
 _DEFAULT: Setup | None = None
