@@ -33,6 +33,28 @@ def test_derivatives_vs_finite_differences(name, z, request):
     assert err["hess"] < 1e-6
 
 
+@pytest.mark.parametrize("alpha", [0.5, 1.5, 2.0])
+@pytest.mark.parametrize("z", POINTS)
+def test_weighted_kernel_derivatives(alpha, z):
+    """Noyau pondéré φ / ||φ||^α : dérivées analytiques = différences finies."""
+    from sparse_sources import make_setup
+
+    err = check_derivatives(z, make_setup(alpha=alpha))
+    assert err["grad"] < 1e-7
+    assert err["hess"] < 1e-6
+
+
+def test_weighted_intensities_roundtrip():
+    """Ĩ = I ||φ||^α et retour ; A(s) identique avec (ψ, Ĩ) et (φ, I)."""
+    from sparse_sources import make_setup
+
+    S = make_setup(alpha=1.5)
+    z, I = np.array([[2.0, 3.0], [6.0, 15.0]]), np.array([1.5, 4.0])
+    It = S.normalized_intensities(z, I)
+    assert np.allclose(S.physical_intensities(z, It), I)
+    assert np.allclose(forward(z, It, S), forward(z, I, S.with_power(0.0)))
+
+
 def test_kernel_is_project_kernel(setup_plane):
     """φ est bien G = 1/r² du projet (``intensity_at``)."""
     z, I = np.array([[2.0, 3.0], [6.0, 15.0]]), np.array([1.5, 4.0])

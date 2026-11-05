@@ -322,7 +322,12 @@ def exp_sigma(n_seeds, c=2.0):
         ax.set_xlabel("niveau de bruit σ / rms(A(s*))")
         style_axes(ax)
     axes[0].set_ylabel("erreur de position (médiane, K correct)")
-    axes[0].legend(fontsize=8)
+    # Légende commune, avec toutes les configurations (certains panneaux sont vides)
+    handles = [plt.Line2D([], [], color=SERIES[k], marker="o", lw=2, label=name)
+               for k, name in enumerate(CONFIGS)]
+    handles.append(plt.Line2D([], [], color=INK_MUTED, ls="--", lw=1, label="pente 1"))
+    axes[2].legend(handles=handles, fontsize=8, loc="center left", bbox_to_anchor=(1.01, 0.5),
+                   frameon=False)
     fig.suptitle("Frank-Wolfe glissant : erreur de position en fonction du bruit "
                  "(points absents : K faux dans la majorité des tirages)", fontsize=11)
     fig.tight_layout()

@@ -39,23 +39,27 @@ from particle_sources.sensors import CircleSensors
 
 
 @dataclass(frozen=True)
-class NormalizedKernel:
+class WeightedKernel:
     """
-    Noyau normalisé ψ(z) = φ(z) / ||φ(z)|| (BLASSO « pondéré »).
+    Noyau pondéré ψ(z) = φ(z) / ||φ(z)||^α (BLASSO « pondéré »).
 
-    Résoudre le BLASSO avec ψ revient à pénaliser Σ_k I_k ||φ(z_k)|| au lieu
-    de Σ_k I_k : les intensités du problème normalisé sont Ĩ_k = I_k ||φ(z_k)||.
-    Sans cette pondération, une source près des capteurs « coûte » beaucoup
-    moins cher (||φ|| grand) et le BLASSO déplace la masse vers le bord de D.
+    Résoudre le BLASSO avec ψ revient à pénaliser Σ_k I_k ||φ(z_k)||^α au
+    lieu de Σ_k I_k : les intensités du problème pondéré sont
+    Ĩ_k = I_k ||φ(z_k)||^α. Pour α = 0 on retrouve le noyau brut ; α = 1 est
+    le noyau normalisé (||ψ|| = 1). Sans pondération, une source près des
+    capteurs « coûte » beaucoup moins cher (||φ|| grand) et le BLASSO déplace
+    la masse vers le bord de D.
 
-    Dérivées (J = ∇φ (M×2), H_i = ∇²φ_i, S = ||φ||², n = sqrt(S)) :
+    Dérivées (J = ∇φ (M×2), H_i = ∇²φ_i, S = ||φ||², n = sqrt(S), u = n^{-α}) :
         ∇S = 2 J^T φ,      ∇²S = 2 (J^T J + Σ_i φ_i H_i)
         ∇n = ∇S / (2n),    ∇²n = ∇²S / (2n) - ∇S ∇S^T / (4 n³)
-        u = 1/n :  ∇u = -∇n / n²,   ∇²u = -∇²n / n² + 2 ∇n ∇n^T / n³
+        ∇u = -α n^{-α-1} ∇n,
+        ∇²u = -α n^{-α-1} ∇²n + α (α+1) n^{-α-2} ∇n ∇n^T
         ∇ψ_i  = u J_i + φ_i ∇u
         ∇²ψ_i = u H_i + J_i ∇u^T + ∇u J_i^T + φ_i ∇²u
     """
-    base: object  # noyau de base (phi, grad, hess)
+    base: object        # noyau de base (phi, grad, hess)
+    alpha: float = 1.0  # exposant de la pondération
 
     @property
     def m(self) -> int:
@@ -74,15 +78,16 @@ class NormalizedKernel:
     def phi(self, z) -> np.ndarray:
         """ψ(z), forme (..., M)."""
         p = self.base.phi(z)
-        return p / np.linalg.norm(p, axis=-1, keepdims=True)
+        return p * np.linalg.norm(p, axis=-1, keepdims=True) ** (-self.alpha)
 
     def _parts(self, z):
-        """φ, J, n, u, ∇u (formes (..., M), (..., M, 2), (...), (...), (..., 2))."""
+        """φ, J, n, u, ∇n, ∇u."""
+        a = self.alpha
         p, J = self.base.phi(z), self.base.grad(z)
         n = np.linalg.norm(p, axis=-1)
         grad_n = np.einsum("...ia,...i->...a", J, p) / n[..., None]
-        u = 1.0 / n
-        grad_u = -grad_n / n[..., None] ** 2
+        u = n ** (-a)
+        grad_u = -a * (n ** (-a - 1))[..., None] * grad_n
         return p, J, n, u, grad_n, grad_u
 
     def grad(self, z) -> np.ndarray:
@@ -92,19 +97,26 @@ class NormalizedKernel:
 
     def hess(self, z) -> np.ndarray:
         """∇²ψ(z), forme (..., M, 2, 2)."""
+        a = self.alpha
         p, J, n, u, grad_n, grad_u = self._parts(z)
         H = self.base.hess(z)
+        n2 = n[..., None, None]
         hess_S = 2 * (np.einsum("...ia,...ib->...ab", J, J)
                       + np.einsum("...i,...iab->...ab", p, H))
         grad_S = 2 * n[..., None] * grad_n
-        hess_n = (hess_S / (2 * n[..., None, None])
-                  - grad_S[..., :, None] * grad_S[..., None, :] / (4 * n[..., None, None] ** 3))
-        hess_u = (-hess_n / n[..., None, None] ** 2
-                  + 2 * grad_n[..., :, None] * grad_n[..., None, :] / n[..., None, None] ** 3)
+        hess_n = (hess_S / (2 * n2)
+                  - grad_S[..., :, None] * grad_S[..., None, :] / (4 * n2**3))
+        nn = grad_n[..., :, None] * grad_n[..., None, :]
+        hess_u = -a * n2 ** (-a - 1) * hess_n + a * (a + 1) * n2 ** (-a - 2) * nn
         return (u[..., None, None, None] * H
                 + J[..., :, None] * grad_u[..., None, None, :]
                 + grad_u[..., None, :, None] * J[..., None, :]
                 + p[..., None, None] * hess_u[..., None, :, :])
+
+
+def NormalizedKernel(base) -> WeightedKernel:
+    """Noyau normalisé ψ = φ / ||φ|| (WeightedKernel avec α = 1)."""
+    return WeightedKernel(base, 1.0)
 
 
 @dataclass(frozen=True)
@@ -125,16 +137,21 @@ class Setup:
         méthodes qui en ont besoin (Prony). Facultatif.
     normalize : bool
         True : toutes les fonctions utilisent le noyau normalisé
-        ψ = φ / ||φ|| (BLASSO pondéré, voir ``NormalizedKernel``). Les
-        intensités manipulées sont alors Ĩ_k = I_k ||φ(z_k)|| ; utiliser
-        ``physical_intensities`` / ``normalized_intensities`` pour convertir.
-        Les mesures m, elles, sont inchangées (A(s) est le même).
+        ψ = φ / ||φ|| (BLASSO pondéré, voir ``WeightedKernel``) ; raccourci
+        pour alpha = 1.
+    alpha : float ou None
+        Exposant de la pondération ψ = φ / ||φ||^α (prioritaire sur
+        ``normalize`` s'il est donné). Les intensités manipulées sont alors
+        Ĩ_k = I_k ||φ(z_k)||^α ; utiliser ``physical_intensities`` /
+        ``normalized_intensities`` pour convertir. Les mesures m sont
+        inchangées (A(s) est le même : seule la pénalité change).
     """
     sensors: np.ndarray
     domain: Box
     h: float = 0.0
     layout: object = field(default=None, compare=False, repr=False)
     normalize: bool = False
+    alpha: float | None = None
 
     def __post_init__(self):
         """Convertit les capteurs en tableau float (M, 2)."""
@@ -147,28 +164,44 @@ class Setup:
         """Noyau du projet, avec eps = h (jamais normalisé)."""
         return InverseSquareKernel(self.sensors, eps=self.h)
 
+    @property
+    def power(self) -> float:
+        """Exposant effectif α de la pondération (0 : noyau brut)."""
+        if self.alpha is not None:
+            return float(self.alpha)
+        return 1.0 if self.normalize else 0.0
+
     @cached_property
     def kernel(self):
-        """Noyau utilisé par les algorithmes : φ, ou ψ = φ/||φ|| si normalize."""
-        return NormalizedKernel(self.base_kernel) if self.normalize else self.base_kernel
+        """Noyau utilisé par les algorithmes : φ, ou ψ = φ/||φ||^α si α ≠ 0."""
+        return WeightedKernel(self.base_kernel, self.power) if self.power else self.base_kernel
 
     def with_normalization(self, normalize: bool = True) -> "Setup":
-        """Même géométrie, noyau normalisé (ou non)."""
+        """Même géométrie, noyau normalisé (α = 1) ou brut (α = 0)."""
         return Setup(self.sensors, self.domain, self.h, self.layout, normalize)
 
+    def with_power(self, alpha: float) -> "Setup":
+        """Même géométrie, pondération ||φ||^α."""
+        return Setup(self.sensors, self.domain, self.h, self.layout, alpha != 0, float(alpha))
+
+    def _weights(self, z) -> np.ndarray:
+        """||φ(z_k)||^α, forme (K,)."""
+        n = np.linalg.norm(self.base_kernel.phi(np.asarray(z, float).reshape(-1, 2)), axis=-1)
+        return n ** self.power
+
     def physical_intensities(self, z, I) -> np.ndarray:
-        """Intensités physiques I_k à partir de celles du noyau utilisé (Ĩ_k / ||φ(z_k)|| si normalize)."""
+        """Intensités physiques I_k = Ĩ_k / ||φ(z_k)||^α (identité si α = 0)."""
         I = np.asarray(I, float)
-        if not self.normalize or len(I) == 0:
+        if not self.power or len(I) == 0:
             return I
-        return I / np.linalg.norm(self.base_kernel.phi(np.asarray(z, float).reshape(-1, 2)), axis=-1)
+        return I / self._weights(z)
 
     def normalized_intensities(self, z, I) -> np.ndarray:
-        """Inverse de ``physical_intensities``."""
+        """Inverse de ``physical_intensities`` : Ĩ_k = I_k ||φ(z_k)||^α."""
         I = np.asarray(I, float)
-        if not self.normalize or len(I) == 0:
+        if not self.power or len(I) == 0:
             return I
-        return I * np.linalg.norm(self.base_kernel.phi(np.asarray(z, float).reshape(-1, 2)), axis=-1)
+        return I * self._weights(z)
 
     @property
     def M(self) -> int:
@@ -191,7 +224,7 @@ class Setup:
 
 def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = None,
                radius_factor: float = 1.0, domain=None, overrides=(),
-               normalize: bool = False) -> Setup:
+               normalize: bool = False, alpha: float | None = None) -> Setup:
     """
     Construit un ``Setup`` à partir de la configuration du projet.
 
@@ -213,6 +246,8 @@ def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = 
         Surcharges passées à ``load_config``.
     normalize : bool
         Noyau normalisé ψ = φ / ||φ|| (BLASSO pondéré), voir ``Setup``.
+    alpha : float ou None
+        Pondération générale ψ = φ / ||φ||^α (prioritaire sur normalize).
     """
     cfg = load_config(config_dir or DEFAULT_CONFIG_DIR, overrides)
     box = Box.from_bounds(domain) if domain is not None else cfg.box
@@ -221,7 +256,8 @@ def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = 
         n = n_sensors if n_sensors is not None else layout.n
         t0 = getattr(layout, "t0", 0.0)
         layout = CircleSensors(box.center, radius_factor * box.circumradius, n, t0)
-    return Setup(layout.positions, box, cfg.eps if h is None else float(h), layout, normalize)
+    return Setup(layout.positions, box, cfg.eps if h is None else float(h), layout, normalize,
+                 alpha)
 
 
 _DEFAULT: Setup | None = None
