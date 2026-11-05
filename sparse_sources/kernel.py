@@ -114,6 +114,42 @@ class WeightedKernel:
                 + p[..., None, None] * hess_u[..., None, :, :])
 
 
+@dataclass(frozen=True, eq=False)
+class WhitenedKernel:
+    """
+    Noyau blanchi φ_w(z) = (w_i G(x_i, z))_i : chaque capteur est multiplié
+    par un poids w_i > 0, typiquement w_i = 1 / s_i où s_i est l'écart type
+    du bruit du capteur i. Avec les mesures blanchies m_w = w ⊙ m, le terme
+    d'attache aux données devient ½ Σ_i (m_i - A(s)_i)² / s_i² : c'est la
+    log-vraisemblance gaussienne d'un bruit hétéroscédastique.
+    Dérivées : ∇φ_w = w ⊙ ∇φ, ∇²φ_w = w ⊙ ∇²φ (ligne par ligne).
+    """
+    base: object
+    w: np.ndarray
+
+    @property
+    def m(self) -> int:
+        """Nombre de capteurs M."""
+        return self.base.m
+
+    @property
+    def sensors(self) -> np.ndarray:
+        """Positions des capteurs."""
+        return self.base.sensors
+
+    def phi(self, z) -> np.ndarray:
+        """φ_w(z), forme (..., M)."""
+        return self.base.phi(z) * self.w
+
+    def grad(self, z) -> np.ndarray:
+        """∇φ_w(z), forme (..., M, 2)."""
+        return self.base.grad(z) * self.w[:, None]
+
+    def hess(self, z) -> np.ndarray:
+        """∇²φ_w(z), forme (..., M, 2, 2)."""
+        return self.base.hess(z) * self.w[:, None, None]
+
+
 def NormalizedKernel(base) -> WeightedKernel:
     """Noyau normalisé ψ = φ / ||φ|| (WeightedKernel avec α = 1)."""
     return WeightedKernel(base, 1.0)
@@ -145,6 +181,10 @@ class Setup:
         Ĩ_k = I_k ||φ(z_k)||^α ; utiliser ``physical_intensities`` /
         ``normalized_intensities`` pour convertir. Les mesures m sont
         inchangées (A(s) est le même : seule la pénalité change).
+    weights : np.ndarray (M,) ou None
+        Poids par capteur w_i (blanchiment, voir ``WhitenedKernel``). Si
+        donnés, φ est remplacé par w ⊙ φ AVANT la pondération ||φ||^α, et les
+        mesures passées aux algorithmes doivent être w ⊙ m (``whiten``).
     """
     sensors: np.ndarray
     domain: Box
@@ -152,17 +192,24 @@ class Setup:
     layout: object = field(default=None, compare=False, repr=False)
     normalize: bool = False
     alpha: float | None = None
+    weights: np.ndarray | None = field(default=None, compare=False, repr=False)
 
     def __post_init__(self):
         """Convertit les capteurs en tableau float (M, 2)."""
         object.__setattr__(self, "sensors", np.atleast_2d(np.asarray(self.sensors, float)))
+        if self.weights is not None:
+            w = np.asarray(self.weights, float).reshape(-1)
+            if w.shape != (len(self.sensors),) or np.any(w <= 0):
+                raise ValueError("weights : M poids strictement positifs attendus")
+            object.__setattr__(self, "weights", w)
         if self.domain.dim != 2 or self.sensors.shape[1] != 2:
             raise ValueError("sparse_sources travaille en 2D (sources dans un plan)")
 
     @cached_property
-    def base_kernel(self) -> InverseSquareKernel:
-        """Noyau du projet, avec eps = h (jamais normalisé)."""
-        return InverseSquareKernel(self.sensors, eps=self.h)
+    def base_kernel(self):
+        """Noyau du projet, avec eps = h (jamais normalisé), blanchi si ``weights``."""
+        k = InverseSquareKernel(self.sensors, eps=self.h)
+        return WhitenedKernel(k, self.weights) if self.weights is not None else k
 
     @property
     def power(self) -> float:
@@ -178,11 +225,23 @@ class Setup:
 
     def with_normalization(self, normalize: bool = True) -> "Setup":
         """Même géométrie, noyau normalisé (α = 1) ou brut (α = 0)."""
-        return Setup(self.sensors, self.domain, self.h, self.layout, normalize)
+        return Setup(self.sensors, self.domain, self.h, self.layout, normalize,
+                     weights=self.weights)
 
     def with_power(self, alpha: float) -> "Setup":
         """Même géométrie, pondération ||φ||^α."""
-        return Setup(self.sensors, self.domain, self.h, self.layout, alpha != 0, float(alpha))
+        return Setup(self.sensors, self.domain, self.h, self.layout, alpha != 0, float(alpha),
+                     self.weights)
+
+    def with_weights(self, weights) -> "Setup":
+        """Même géométrie et pondération, capteurs blanchis par ``weights`` (None : aucun)."""
+        return Setup(self.sensors, self.domain, self.h, self.layout, self.normalize, self.alpha,
+                     weights)
+
+    def whiten(self, m) -> np.ndarray:
+        """Mesures blanchies w ⊙ m (m inchangé si pas de poids)."""
+        m = np.asarray(m, float)
+        return m * self.weights if self.weights is not None else m
 
     def _weights(self, z) -> np.ndarray:
         """||φ(z_k)||^α, forme (K,)."""

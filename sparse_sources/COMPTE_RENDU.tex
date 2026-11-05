@@ -1,0 +1,1671 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  french,
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Localisation de sources ponctuelles : LASSO{,} BLASSO{,} maximum de vraisemblance et hypothèses de Duval--Peyré},
+  pdflang={fr},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Localisation de sources ponctuelles : LASSO, BLASSO, maximum de
+vraisemblance et hypothèses de Duval--Peyré}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Compte rendu du dossier sparse\_sources}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Compte rendu : localisation de sources
+ponctuelles}\label{compte-rendu-localisation-de-sources-ponctuelles}
+
+Branche \texttt{travail-sur-le-probleme-inverse}, dossier
+\texttt{sparse\_sources/}. Les figures citées sont produites par les
+scripts \texttt{experiments.py}, \texttt{experiments\_1r2.py} et
+\texttt{experiments\_projet.py} dans \texttt{sparse\_sources/results/}.
+Les tableaux chiffrés viennent des fichiers CSV du même dossier.
+
+Les formules sont écrites en LaTeX (\texttt{\$...\$} et
+\texttt{\$\$...\$\$}). Le document se lit directement dans un aperçu
+Markdown (VS Code, GitHub) et se convertit en LaTeX ou en PDF avec
+Pandoc (voir la section 10).
+
+\subsection{0. Résumé}\label{ruxe9sumuxe9}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Outils implémentés} : un LASSO positif sur grille (FISTA,
+  sklearn, ensemble actif), un BLASSO sans grille par Frank-Wolfe
+  glissant, une fonction \texttt{check\_hypotheses} qui vérifie la
+  condition de source non dégénérée de Duval--Peyré, et une méthode de
+  \textbf{maximum de vraisemblance gloutonne} avec choix du nombre de
+  sources par BIC (\texttt{greedy\_ml}), accompagnée de la \textbf{borne
+  de Cramér--Rao} (\texttt{cramer\_rao}). Le code est couvert par 70
+  tests pytest.
+\item
+  \textbf{Le BLASSO standard échoue toujours avec le noyau du projet}
+  \(G(x,z) = 1/\lVert x-z\rVert^2\) (capteurs dans le plan) : la
+  condition de Duval--Peyré est fausse dans 100 \% des tirages. La cause
+  est mathématique : \(G(x,\cdot)\) est sous-harmonique et
+  \(\lVert\varphi\rVert\) varie d'un facteur 215 sur le domaine.
+\item
+  \textbf{Le BLASSO pondéré} (pénalité
+  \(\lambda\sum_k I_k\lVert\varphi(z_k)\rVert^{\alpha}\), avec
+  \(\alpha\approx 1\)) corrige ce défaut : 1 ou 2 sources sont
+  retrouvées dans 95 à 100 \% des tirages, et \texttt{check\_hypotheses}
+  prédit la réussite (94 \% de réussite si la condition est vraie, 2 à 6
+  \% sinon).
+\item
+  \textbf{Dans le scénario réel du projet} (grosse source centrale
+  d'intensité 5000 retirée, bruit relatif), la meilleure méthode est le
+  \textbf{maximum de vraisemblance glouton + BIC}. Elle bat Prony et le
+  BLASSO dans presque toutes les cases, et son erreur est proche de la
+  borne de Cramér--Rao, qui est la meilleure précision possible (section
+  5.5).
+\item
+  \textbf{La limite principale est physique, pas algorithmique} : le
+  bruit de la source centrale reste dans les mesures après soustraction.
+  Il multiplie l'erreur minimale possible par un facteur d'environ 40
+  par rapport au même problème sans source centrale (3 sources,
+  \(\sigma = 10^{-3}\) : 100 \% de réussite sans source centrale, 40 \%
+  avec). Dans la configuration par défaut
+  (\(N\sim\mathrm{Poisson}(20)\), \(\sigma = 1\,\%\)), seules 0 à 4
+  sources par tirage sont détectables, quelle que soit la méthode.
+\end{enumerate}
+
+\subsection{1. Cadre et notations}\label{cadre-et-notations}
+
+\textbf{Domaine et capteurs.} Les sources sont dans
+\(D = [0,10]\times[0,20]\) (\texttt{config/simulation.yaml}). Les
+\(M = 64\) capteurs sont équirépartis sur le cercle circonscrit à \(D\),
+de centre \(c = (5,10)\) et de rayon \(R = \sqrt{125}\approx 11{,}18\),
+dans le plan des sources (\texttt{config/sensors.yaml}). Ce cercle passe
+par les coins de \(D\) : certains capteurs sont à environ \(0{,}3\) d'un
+coin.
+
+\textbf{Sources et mesures.} Les sources forment une mesure positive
+
+\[
+s = \sum_{k=1}^{K} I_k\,\delta_{z_k}, \qquad I_k > 0,\quad z_k \in D,
+\]
+
+avec \(K\) inconnu. Le noyau du projet
+(\texttt{particle\_sources.model.field.intensity\_at}) est
+
+\[
+G(x_i, z) = \frac{1}{\lVert x_i - z\rVert^2 + h^2},
+\qquad
+\varphi(z) = \big(G(x_1,z),\dots,G(x_M,z)\big) \in \mathbb{R}^M .
+\]
+
+On a \(h = 0\) dans le projet (paramètre \texttt{eps}). Un capteur placé
+à la hauteur \(h\) au-dessus du plan voit exactement ce noyau ; \(h\)
+sert donc à étudier des capteurs hors du plan. Les mesures sont
+
+\[
+m = A(s) + w, \qquad A(s) = \sum_{k=1}^{K} I_k\,\varphi(z_k).
+\]
+
+\textbf{Deux modèles de bruit.}
+
+\begin{itemize}
+\tightlist
+\item
+  Bruit additif (études génériques, sections 5.1 à 5.3) :
+  \(w \sim \mathcal{N}(0,\sigma^2 I_M)\), avec
+  \(\sigma = \text{niveau}\times\mathrm{rms}(A(s))\).
+\item
+  Bruit relatif du projet (sections 5.4 et 5.5) :
+  \(y_i = y_i^{\mathrm{exact}}\,(1+\sigma\varepsilon_i)\), avec
+  \(\varepsilon_i\sim\mathcal{N}(0,1)\). Les mesures brutes \(y\)
+  contiennent la source centrale \(I_c\,\varphi(c)\), avec
+  \(I_c = 50\times 100 = 5000\). Le projet la retire :
+  \(m = y - I_c\,\varphi(c)\). Le bruit, lui, reste, avec un écart type
+  par capteur
+\end{itemize}
+
+\[
+s_i = \sigma\, y_i \approx \sigma\Big(\frac{I_c}{R^2} + A(s)_i\Big) = \sigma\,(40 + A(s)_i).
+\]
+
+La source centrale est au centre du cercle des capteurs : elle apporte
+exactement \(I_c/R^2 = 40\) à chaque capteur. Le signal utile vaut
+environ 7 en moyenne quadratique. Le bruit est donc dominé par la source
+centrale.
+
+\subsubsection{1.1 Problèmes
+d'optimisation}\label{probluxe8mes-doptimisation}
+
+\textbf{BLASSO positif} (sans grille) :
+
+\[
+\min_{s\ge 0}\; \tfrac12\,\lVert m - A(s)\rVert_2^2 + \lambda\,\lVert s\rVert_{\mathrm{TV}},
+\qquad \lVert s\rVert_{\mathrm{TV}} = \sum_k I_k .
+\]
+
+\textbf{LASSO positif sur grille} (positions restreintes aux nœuds
+\(y_1,\dots,y_P\)) :
+
+\[
+\min_{c\in\mathbb{R}^P_{+}}\; \tfrac12\,\lVert m - \mathbf{G}c\rVert_2^2 + \lambda\sum_{j=1}^{P} c_j,
+\qquad \mathbf{G}_{ij} = G(x_i, y_j)\in\mathbb{R}^{M\times P}.
+\]
+
+\textbf{BLASSO pondéré} (ajout par rapport à la demande) :
+
+\[
+\min_{K,\,I\ge 0,\,z}\; \tfrac12\,\Big\lVert m - \sum_k I_k\varphi(z_k)\Big\rVert_2^2
++ \lambda\sum_k I_k\,\lVert\varphi(z_k)\rVert^{\alpha}.
+\]
+
+\subsubsection{\texorpdfstring{1.2 Ce que représente
+\(\alpha\)}{1.2 Ce que représente \textbackslash alpha}}\label{ce-que-repruxe9sente-alpha}
+
+\(\alpha \ge 0\) est \textbf{l'exposant de pondération de la pénalité}.
+Le BLASSO pondéré est exactement le BLASSO standard pour le noyau
+modifié
+
+\[
+\psi(z) = \frac{\varphi(z)}{\lVert\varphi(z)\rVert^{\alpha}},
+\qquad \tilde I_k = I_k\,\lVert\varphi(z_k)\rVert^{\alpha},
+\]
+
+car \(\sum_k \tilde I_k\,\psi(z_k) = \sum_k I_k\,\varphi(z_k)\) : le
+modèle physique et les mesures sont inchangés, seule la pénalité change.
+
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha = 0\) : BLASSO standard ; chaque unité d'intensité coûte
+  \(\lambda\), où que soit la source.
+\item
+  \(\alpha = 1\) : noyau normalisé, \(\lVert\psi(z)\rVert = 1\) partout.
+  Une source coûte \(\lambda\) par unité de \textbf{signal} produit, et
+  non par unité de masse.
+\item
+  \(\alpha > 1\) : on favorise encore plus les sources loin des
+  capteurs.
+\end{itemize}
+
+Pourquoi c'est nécessaire avec le noyau en \(1/r^2\) :
+\(\lVert\varphi(z)\rVert\) vaut \(0{,}064\) au centre de \(D\) et
+\(13{,}7\) près d'un coin, soit un rapport de 215. Avec \(\alpha = 0\),
+une source près d'un capteur produit 215 fois plus de signal par unité
+de pénalité ; le BLASSO remplace alors une source centrale par des
+sources parasites au bord. Avec \(\alpha = 1\), on montre par
+Cauchy--Schwarz qu'une source seule est toujours bien identifiée
+(section 5.2). La valeur conseillée est \(\alpha = 1\) (ou \(1{,}25\)).
+Dans le code : \texttt{make\_setup(normalize=True)} (\(\alpha = 1\)) ou
+\texttt{make\_setup(alpha=...)}.
+
+\subsubsection{1.3 Certificat et
+optimalité}\label{certificat-et-optimalituxe9}
+
+Pour le résidu \(r = m - A(s)\), le certificat dual est
+
+\[
+\eta(z) = \frac{1}{\lambda}\sum_{i=1}^{M} r_i\,G(x_i, z) = \frac{\langle\varphi(z), r\rangle}{\lambda}.
+\]
+
+La mesure \(s\) est solution du BLASSO positif \textbf{si et seulement
+si} \(\eta(z)\le 1\) sur \(D\) et \(\eta(z_k) = 1\) en chaque source.
+C'est le critère d'arrêt du Frank-Wolfe et le test « certifié » du
+LASSO.
+
+\subsubsection{1.4 Théorème de Duval--Peyré (2015) et hypothèses
+vérifiées}\label{thuxe9oruxe8me-de-duvalpeyruxe9-2015-et-hypothuxe8ses-vuxe9rifiuxe9es}
+
+On pose
+
+\[
+\Gamma = \big[\varphi(z_1),\dots,\varphi(z_K)\;\big\vert\;\partial_1\varphi(z_1),\dots,\partial_1\varphi(z_K)\;\big\vert\;\partial_2\varphi(z_1),\dots,\partial_2\varphi(z_K)\big] \in \mathbb{R}^{M\times 3K},
+\]
+
+\[
+p_V = (\Gamma^{\top})^{+}\begin{pmatrix}\mathbf{1}_K\\ \mathbf{0}_{2K}\end{pmatrix},
+\qquad \eta_V(z) = \langle\varphi(z), p_V\rangle .
+\]
+
+Le pré-certificat \(\eta_V\) est le certificat de norme minimale qui
+vaut 1 aux sources avec un gradient nul. Les hypothèses sont :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(H1)} \(\operatorname{rang}\Gamma = 3K\) (il faut \(M\ge 3K\))
+  ;
+\item
+  \textbf{(H2)} \(\eta_V(z) < 1\) pour tout
+  \(z\in D\setminus\{z_1,\dots,z_K\}\), bord compris ;
+\item
+  \textbf{(H3)} \(\nabla^2\eta_V(z_k)\prec 0\) pour tout \(k\).
+\end{itemize}
+
+\textbf{Théorème.} Si (H1)--(H3) sont vraies et si les \(z_k\) sont
+intérieurs à \(D\), il existe \(\lambda_0, c_0 > 0\) tels que, pour
+\(\lambda\le\lambda_0\) et \(\lVert w\rVert/\lambda\le c_0\), le BLASSO
+a exactement \(K\) Diracs, à distance \(O(\lVert w\rVert)\) des vraies
+sources. Le théorème est \textbf{qualitatif} : \(\lambda_0\) et \(c_0\)
+ne sont pas calculables. On mesure donc aussi la marge et le
+conditionnement de \(\Gamma\) (section 5.3).
+
+\subsection{2. Méthodes
+implémentées}\label{muxe9thodes-impluxe9mentuxe9es}
+
+\subsubsection{\texorpdfstring{2.1 Noyau
+(\texttt{kernel.py})}{2.1 Noyau (kernel.py)}}\label{noyau-kernel.py}
+
+On réutilise \texttt{InverseSquareKernel} du projet, avec des dérivées
+analytiques. En notant \(q = \lVert z-x\rVert^2 + h^2\) :
+
+\[
+\nabla_z G = -\frac{2(z-x)}{q^2},
+\qquad
+\nabla_z^2 G = -\frac{2\,\mathrm{Id}}{q^2} + \frac{8\,(z-x)(z-x)^{\top}}{q^3}.
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{Setup} regroupe les capteurs, \(h\), \(D\), la pondération
+  \(\alpha\) et des \textbf{poids par capteur} \(w_i\) (blanchiment,
+  section 2.6) ; \texttt{make\_setup()} lit \texttt{config/}.
+\item
+  \texttt{WeightedKernel} calcule
+  \(\psi = \varphi/\lVert\varphi\rVert^{\alpha}\) avec ses dérivées
+  analytiques ; \texttt{WhitenedKernel} calcule \((w_i\,G(x_i,z))_i\).
+\item
+  Toutes les dérivées sont vérifiées contre des différences finies
+  (erreur relative \(\le 10^{-9}\)).
+\end{itemize}
+
+\subsubsection{\texorpdfstring{2.2 Briques communes
+(\texttt{common.py})}{2.2 Briques communes (common.py)}}\label{briques-communes-common.py}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Fonction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rôle
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{forward(z,\ I)} & \(A(s) = \sum_k I_k\,\varphi(z_k)\) \\
+\texttt{certificate}, \texttt{max\_certificate} & \(\eta\) en des points
+; maximum sur \(D\) : grille fine puis L-BFGS-B borné depuis les 5
+meilleurs maxima locaux \\
+\texttt{joint\_descent} &
+\(\min_{I\ge 0,\,z\in D}\tfrac12\lVert m-\sum_k I_k\varphi(z_k)\rVert^2+\lambda\sum_k I_k\)
+par L-BFGS-B, gradient analytique \\
+\texttt{debias} & moindres carrés positifs (NNLS) à positions fixées,
+sans pénalité \\
+\texttt{diagnostics} & \(\lVert r\rVert^2\) comparé à \(M\sigma^2\) \\
+\texttt{match\_sources} & appariement hongrois ; erreurs de position et
+d'intensité \\
+\end{longtable}
+}
+
+\subsubsection{\texorpdfstring{2.3 LASSO positif sur grille
+(\texttt{lasso.py})}{2.3 LASSO positif sur grille (lasso.py)}}\label{lasso-positif-sur-grille-lasso.py}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{build\_grid(D,\ step)} construit la grille et la matrice
+  \(\mathbf{G}\) (\(M\times P\)). Avec un pas de \(0{,}25\),
+  \(P = 3321\) ; avec un pas de \(0{,}1\), \(P = 20\,301\).
+\item
+  \texttt{solve\_lasso} propose trois solveurs.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{FISTA} : pas \(1/L\) avec
+    \(L = \lVert\mathbf{G}\rVert_2^2\), opérateur proximal
+    \(c\mapsto\max(c-\lambda/L, 0)\), redémarrage adaptatif
+    (O'Donoghue--Candès), arrêt sur les conditions KKT. On ajoute un
+    \textbf{polissage} : LASSO exact restreint au support trouvé,
+    accepté seulement s'il vérifie KKT sur toute la grille.
+  \item
+    \textbf{sklearn} :
+    \texttt{Lasso(positive=True,\ fit\_intercept=False)} avec
+    \(\alpha_{\mathrm{sklearn}} = \lambda/M\), car sklearn minimise
+    \(\frac{1}{2M}\lVert m-\mathbf{G}c\rVert^2 + \alpha_{\mathrm{sklearn}}\lVert c\rVert_1\).
+  \item
+    \textbf{Ensemble actif} exact (algorithme du projet), qui sert de
+    référence.
+  \end{itemize}
+\item
+  \texttt{merge\_peaks} regroupe les nœuds actifs voisins (rayon
+  \(1{,}5\) pas) : \(I = \sum_j c_j\) et \(z\) = barycentre pondéré.
+\item
+  \texttt{refine} : à \(K\) fixé, descente conjointe en \((I, z)\) sans
+  grille.
+\item
+  \texttt{lasso\_pipeline} enchaîne grille, LASSO, regroupement,
+  raffinement, test \(\max\eta\le 1\), débiaisage et diagnostics.
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{2.4 Frank-Wolfe glissant
+(\texttt{blasso.py})}{2.4 Frank-Wolfe glissant (blasso.py)}}\label{frank-wolfe-glissant-blasso.py}
+
+Algorithme de Denoyelle, Duval, Peyré et Soubies (2019). On part de
+\(\mu = 0\) (ou d'une initialisation donnée). À chaque itération :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  on calcule le résidu \(r = m - A(\mu)\) ;
+\item
+  on cherche \(z^{\star} = \arg\max_D \eta\) ;
+\item
+  on s'arrête si \(\eta(z^{\star})\le 1 + \mathrm{tol}\) : \(\mu\) est
+  alors certifiée optimale ;
+\item
+  on ajoute un Dirac en \(z^{\star}\) ;
+\item
+  on réajuste les intensités par un LASSO positif exact sur les \(K\)
+  colonnes ;
+\item
+  \textbf{glissement} : optimisation conjointe de \((I, z)\) par
+  L-BFGS-B borné à \(D\) ;
+\item
+  on supprime les Diracs nuls et on fusionne ceux distants de moins de
+  \(10^{-3}\) fois la diagonale de \(D\).
+\end{enumerate}
+
+La sortie contient l'historique (\(K\), \(\max\eta\), objectif) puis le
+résultat débiaisé.
+
+\subsubsection{\texorpdfstring{2.5 Hypothèses
+(\texttt{hypotheses.py})}{2.5 Hypothèses (hypotheses.py)}}\label{hypothuxe8ses-hypotheses.py}
+
+\texttt{check\_hypotheses(z,\ lam,\ sigma,\ ...)} :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  calcule \(\Gamma\), son rang (SVD) et son conditionnement ;
+\item
+  calcule \(p_V\) par pseudo-inverse et contrôle \(\eta_V(z_k) = 1\) et
+  \(\nabla\eta_V(z_k) = 0\) (à \(10^{-15}\) près) ;
+\item
+  teste (H2) sur une grille fine hors de boules de rayon \(\rho\) autour
+  des sources, puis raffine par L-BFGS-B et maximise sur chacun des 4
+  côtés de \(D\) ;
+\item
+  teste (H3) avec les valeurs propres de la hessienne \(2\times 2\) de
+  \(\eta_V\) ;
+\item
+  renvoie H1, H2, H3, \texttt{non\_degenerate}, le rang, le
+  conditionnement, la marge et la \textbf{marge relative}, et trace la
+  carte de \(\eta_V\) si demandé.
+\end{enumerate}
+
+\textbf{Choix numérique pour (H2).} Au bord d'une boule de rayon
+\(\rho\), \(\eta_V\approx 1-\tfrac12\lvert\lambda_{\max}\rvert\rho^2\),
+où \(\lambda_{\max}\) est la valeur propre de \(\nabla^2\eta_V(z_k)\) la
+plus proche de 0. La marge \(1-\max\eta_V\) est donc petite par nature
+(de \(10^{-7}\) à \(10^{-5}\) ici), et un seuil fixe donne des verdicts
+arbitraires. On utilise :
+
+\begin{itemize}
+\tightlist
+\item
+  un seuil au niveau du bruit numérique,
+  \(\max(10^{-9},\,100\times\text{erreur d'interpolation})\) ;
+\item
+  une \textbf{marge relative}
+  \(\dfrac{1-\max\eta_V}{\tfrac12\lvert\lambda_{\max}\rvert\rho^2}\).
+  Elle vaut environ 1 quand \(\eta_V\) décroît comme le prédit la
+  hessienne, elle est \(\ll 1\) quand \(\eta_V\) est presque plat, et
+  elle est négative quand (H2) échoue.
+\end{itemize}
+
+\texttt{hypotheses\_after\_fit(z\_hat,\ I\_hat)} applique la même
+vérification aux positions \textbf{estimées} et renvoie
+\texttt{reliable}.
+
+\subsubsection{\texorpdfstring{2.6 Maximum de vraisemblance glouton et
+choix de \(K\) par BIC
+(\texttt{ml.py})}{2.6 Maximum de vraisemblance glouton et choix de K par BIC (ml.py)}}\label{maximum-de-vraisemblance-glouton-et-choix-de-k-par-bic-ml.py}
+
+Cette méthode a été conçue pour le scénario du projet, où la grosse
+source centrale fixe le niveau de bruit. Le BLASSO y a deux défauts :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  la pénalité \(\lambda\sum_k I_k\) biaise positions et intensités
+  (biais \(O(\lambda)\)), alors qu'il faut \(\lambda\) de l'ordre de
+  \(\lVert w\rVert\) pour éliminer les fausses sources ;
+\item
+  le nombre de sources n'est réglé qu'indirectement, par \(\lambda\).
+\end{enumerate}
+
+Le bruit étant gaussien de variance \(s_i^2\) connue, la
+log-vraisemblance vaut, à une constante près,
+
+\[
+\log L(I, z) = -\frac12\sum_{i=1}^{M}\frac{\big(m_i - A(s)_i\big)^2}{s_i^2}
+= -\frac12\,\big\lVert m_w - A_w(s)\big\rVert_2^2,
+\qquad (m_w)_i = \frac{m_i}{s_i},\quad A_w(s)_i = \frac{A(s)_i}{s_i}.
+\]
+
+C'est le \textbf{blanchiment} : chaque capteur est divisé par l'écart
+type de son bruit (\texttt{Setup.with\_weights(1/s)}). Pour le bruit du
+projet, \(s_i = \sigma\,y_i\) (\texttt{relative\_noise\_std}), calculé
+sur les mesures \textbf{brutes}, source centrale comprise.
+
+\textbf{Algorithme \texttt{greedy\_ml}.} On part de \(K = 0\) et on
+répète :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{ajout} d'un Dirac au maximum de la corrélation
+  \(z\mapsto\langle\psi_w(z), r_w\rangle\) entre le résidu blanchi et le
+  noyau blanchi normalisé (\(\alpha = 1\)). C'est la même étape que dans
+  Frank-Wolfe ;
+\item
+  intensités par moindres carrés positifs, puis \textbf{glissement sans
+  pénalité} (\(\lambda = 0\)) de toutes les positions et intensités. On
+  obtient ainsi l'estimateur du maximum de vraisemblance à \(K\) fixé
+  (un minimum local) ;
+\item
+  calcul du \textbf{critère d'information}
+\end{enumerate}
+
+\[
+C(K) = \big\lVert r_w\big\rVert_2^2 + \kappa\cdot 3K,
+\qquad \kappa = \log M \ (\text{BIC}) \quad\text{ou}\quad \kappa = 2 \ (\text{AIC}),
+\]
+
+où \(3K\) est le nombre de paramètres (deux coordonnées et une intensité
+par source).
+
+On s'arrête quand \(C\) n'a pas diminué depuis deux ajouts, et on garde
+le meilleur \(K\). Une \textbf{étape arrière} essaie ensuite de retirer
+chaque source, tant que \(C\) diminue. Options : \texttt{n\_candidates}
+(plusieurs positions candidates à chaque ajout),
+\texttt{z\_init}/\texttt{I\_init} (départ imposé, par exemple la sortie
+de Prony).
+
+\subsubsection{\texorpdfstring{2.7 Borne de Cramér--Rao
+(\texttt{ml.py})}{2.7 Borne de Cramér--Rao (ml.py)}}\label{borne-de-cramuxe9rrao-ml.py}
+
+La borne de Cramér--Rao (CRB) donne l'erreur minimale de tout estimateur
+sans biais. Avec \(\theta = (I_1,\dots,I_K, z_1,\dots,z_K)\) et
+
+\[
+\mathbf{D} = \Big[\varphi(z_1),\dots,\varphi(z_K)\;\Big\vert\;I_1\nabla\varphi(z_1),\dots,I_K\nabla\varphi(z_K)\Big]\in\mathbb{R}^{M\times 3K},
+\]
+
+la matrice de Fisher vaut
+\(F = \mathbf{D}^{\top}\operatorname{diag}(s_i^{-2})\,\mathbf{D}\), et
+pour tout estimateur sans biais
+
+\[
+\mathbb{E}\,\lVert\hat z_k - z_k\rVert^2 \;\ge\; \big(F^{-1}\big)_{z_k^{(1)} z_k^{(1)}} + \big(F^{-1}\big)_{z_k^{(2)} z_k^{(2)}} =: \mathrm{CRB}_k^2 .
+\]
+
+\texttt{cramer\_rao(z,\ I,\ s)} renvoie \(\mathrm{CRB}_k\) pour chaque
+source. Dans les tableaux, « CRB » désigne \(\max_k \mathrm{CRB}_k\).
+C'est une \textbf{limite physique} : aucun algorithme ne peut faire
+mieux en moyenne.
+
+\subsubsection{\texorpdfstring{2.8 Choix de
+\(\lambda\)}{2.8 Choix de \textbackslash lambda}}\label{choix-de-lambda}
+
+\begin{itemize}
+\tightlist
+\item
+  Expériences génériques : \(\lambda = c\,\sigma\sqrt{M}\), avec
+  \(c = 2\) par défaut (balayage \(c\in[0{,}25;\,16]\)).
+\item
+  Étude du noyau \(1/r^2\) :
+  \(\lambda = c\,\sigma\sqrt{M}\,\lVert\Psi\rVert\) avec
+  \(\lVert\Psi\rVert = \max_D\lVert\psi(z)\rVert\). Avec ce choix, le
+  bruit seul ne peut pas faire dépasser \(1/c\) au certificat, quel que
+  soit \(\alpha\).
+\item
+  Scénario du projet : \(\lambda = 1{,}5\,\sigma\lVert y\rVert\), une
+  estimation de \(1{,}5\,\lVert w\rVert\).
+\end{itemize}
+
+\subsection{3. Structure du code}\label{structure-du-code}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sparse\_sources/}
+\NormalTok{|{-}{-} \_\_init\_\_.py             API publique}
+\NormalTok{|{-}{-} kernel.py               Setup, make\_setup, WeightedKernel, WhitenedKernel, phi et derivees}
+\NormalTok{|{-}{-} common.py               forward, certificat, max\_certificate, descente, debias, diagnostics}
+\NormalTok{|{-}{-} lasso.py                build\_grid, FISTA / sklearn / ensemble actif, merge\_peaks, refine}
+\NormalTok{|{-}{-} blasso.py               sliding\_frank\_wolfe}
+\NormalTok{|{-}{-} hypotheses.py           check\_hypotheses, hypotheses\_after\_fit, format\_report}
+\NormalTok{|{-}{-} ml.py                   greedy\_ml (maximum de vraisemblance + BIC), cramer\_rao}
+\NormalTok{|{-}{-} plotting.py             style des figures}
+\NormalTok{|{-}{-} experiments.py          experiences generales (3 geometries, comparaison Prony)}
+\NormalTok{|{-}{-} experiments\_1r2.py      etude ciblee du noyau 1/r\^{}2}
+\NormalTok{|{-}{-} experiments\_projet.py   scenario du projet (source centrale), Cramer{-}Rao}
+\NormalTok{|{-}{-} tests/                  70 tests pytest}
+\NormalTok{|{-}{-} results/                CSV (versionnes) et PNG (ignores par .gitignore)}
+\NormalTok{|{-}{-} README.md               notice courte}
+\NormalTok{|{-}{-} COMPTE\_RENDU.md         ce document}
+\NormalTok{\textasciigrave{}{-}{-} COMPTE\_RENDU.tex        ce document converti en LaTeX par Pandoc}
+\end{Highlighting}
+\end{Shaded}
+
+\texttt{sparse\_sources} importe \texttt{particle\_sources} (noyau,
+\texttt{Box}, \texttt{CircleSensors}, configuration, Prony, génération).
+\textbf{Aucun fichier existant du projet n'a été modifié.} Toutes les
+fonctions acceptent un argument facultatif \texttt{setup=} ; sans lui,
+elles utilisent la géométrie de \texttt{config/}.
+
+\subsection{4. Validation}\label{validation}
+
+\texttt{pytest\ sparse\_sources/tests} exécute \textbf{70 tests} en
+environ 30 s. Les 67 tests existants du projet passent toujours.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Ce qui est testé
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Résultat
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\nabla\varphi\), \(\nabla^2\varphi\) (brut, \(h = 20\), pondéré,
+blanchi) contre différences finies & erreur \(\le 10^{-6}\) (en pratique
+\(10^{-10}\)) \\
+\(\varphi\) identique au noyau du projet (\texttt{intensity\_at}) &
+oui \\
+\(\eta_V(z_k) = 1\) et \(\nabla\eta_V(z_k) = 0\) & à \(10^{-10}\)
+près \\
+Une source bien vue (\(\alpha = 1\), ou \(h = 20\)) & H1, H2, H3
+vraies \\
+Noyau brut \(1/r^2\) dans le plan, une source & H2 et H3 fausses \\
+Accord avec \texttt{duval\_peyre.diagnose} du projet & mêmes verdicts \\
+FISTA, sklearn, ensemble actif & même objectif (\(10^{-4}\) ;
+\(10^{-3}\) pour sklearn) \\
+Frank-Wolfe sans bruit & positions à moins de \(10^{-4}\) \\
+Bruit \(10^{-4}\), \(10^{-3}\), \(10^{-2}\) (Frank-Wolfe et LASSO) & bon
+\(K\), erreur \(\le 300\,\sigma_{\mathrm{rel}}\) \\
+Erreur proportionnelle au bruit (\(10^{-5}\) à \(10^{-3}\)) & rapport
+constant à un facteur 3 près \\
+\texttt{greedy\_ml}, 2 sources, bruit de la source centrale & bon \(K\),
+erreur \(< 5\times\) CRB, \(\chi^2\) compatible avec le bruit \\
+\texttt{greedy\_ml}, bruit seul & au plus 1 source retenue \\
+Efficacité : erreur rms du ML pour une source (30 tirages) & entre
+\(0{,}6\) et \(1{,}5\) fois la CRB \\
+\end{longtable}
+}
+
+\subsection{5. Résultats}\label{ruxe9sultats}
+
+\subsubsection{\texorpdfstring{5.1 Trois géométries, trois
+configurations
+(\texttt{experiments.py})}{5.1 Trois géométries, trois configurations (experiments.py)}}\label{trois-guxe9omuxe9tries-trois-configurations-experiments.py}
+
+Géométries : \textbf{plan\_brut} (projet : \(h = 0\), \(\alpha = 0\)),
+\textbf{plan\_normalise} (\(h = 0\), \(\alpha = 1\)),
+\textbf{hauteur\_20} (\(h = 20\), \(\alpha = 0\)). Configurations : 3
+sources séparées ; 2 sources à distance 1 ; 2 sources avec des capteurs
+sur un cercle 2 fois plus grand (« loin »).
+
+\textbf{Hypothèses} (\texttt{hypotheses.csv}, cartes
+\texttt{certificat\_*.png}) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+géométrie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+config
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+H1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+H2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+H3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+marge
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+marge relative
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+cond(\(\Gamma\)) normalisé
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+plan\_brut & séparées & oui & non & non & \(-41{,}8\) & \(<0\) & 122 \\
+plan\_brut & proches & oui & non & non & \(-13{,}7\) & \(<0\) & 3 980 \\
+plan\_brut & loin & oui & non & non & \(-0{,}50\) & \(<0\) & 94 \\
+plan\_normalise & séparées & oui & oui & oui & \(8{,}5\times 10^{-6}\) &
+1,24 & 92 \\
+plan\_normalise & proches & oui & oui & oui & \(1{,}1\times 10^{-6}\) &
+0,70 & 3 950 \\
+plan\_normalise & loin & oui & oui & oui & \(6{,}5\times 10^{-6}\) &
+1,32 & 85 \\
+hauteur\_20 & séparées & oui & oui & oui & \(8{,}4\times 10^{-7}\) &
+1,42 & \textbf{127 000} \\
+hauteur\_20 & proches & oui & oui & oui & \(1{,}5\times 10^{-7}\) & 0,70
+& \textbf{293 000} \\
+hauteur\_20 & loin & oui & non & non & \(-0{,}012\) & \(<0\) & 507 \\
+\end{longtable}
+}
+
+\textbf{Comparaison des méthodes} (\(c = 2\), 4 tirages). Taux de
+réussite, défini comme « bon \(K\) et erreur de position inférieure au
+quart de la séparation » :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+géométrie, config
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\sigma/\mathrm{rms}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+LASSO
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+LASSO + raffinement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frank-Wolfe
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+plan\_brut, toutes & \(10^{-4}\) à \(10^{-2}\) & 0 \% (23 à 40 sources)
+& 0 \% & 0 \% \\
+plan\_normalise, séparées & \(10^{-4}\) / \(10^{-3}\) / \(10^{-2}\) & 0
+/ 0 / 25 \% & 50 / 75 / 75 \% & \textbf{100 / 100 / 75 \%} \\
+plan\_normalise, proches & \(10^{-4}\) / \(10^{-3}\) / \(10^{-2}\) & 50
+/ 25 / 0 \% & 100 / 25 / 0 \% & \textbf{100 / 25 / 0 \%} \\
+plan\_normalise, loin & \(10^{-4}\) / \(10^{-3}\) / \(10^{-2}\) & 50 /
+50 / 75 \% & 50 / 100 / 25 \% & \textbf{100 / 100 / 25 \%} \\
+hauteur\_20, séparées et proches & \(10^{-4}\) à \(10^{-2}\) & 0 \% (une
+seule source) & 0 \% & 0 \% \\
+\end{longtable}
+}
+
+Le LASSO seul surestime souvent \(K\), à cause de petits pics voisins
+non fusionnés ; le raffinement corrige la plupart des cas, et le
+Frank-Wolfe est le plus fiable.
+
+\textbf{Erreur en fonction du bruit} (\texttt{erreur\_sigma.png},
+Frank-Wolfe, plan\_normalise) : l'erreur de position est
+\textbf{proportionnelle à \(\sigma\)} de \(10^{-5}\) à \(10^{-2}\), avec
+un rapport \(\text{err}/\sigma_{\mathrm{rel}}\) constant : environ 72
+(séparées), 97 (loin) et 330 (proches). C'est la loi
+\(O(\lVert w\rVert)\) du théorème ; la constante grandit quand les
+sources se rapprochent.
+
+\textbf{Balayage de \(\lambda\)} (\texttt{balayage\_lambda.png}) : avec
+\(\alpha = 1\), \(K\) est exact pour \(c\) entre \(0{,}5\) et \(4\)
+environ. Un \(c\) trop petit ajoute des sources parasites, un \(c\) trop
+grand fusionne les sources proches. Avec le noyau brut, on trouve 20 à
+35 sources de trop pour tout \(c\).
+
+\subsubsection{\texorpdfstring{5.2 Étude ciblée du noyau \(1/r^2\)
+(\texttt{experiments\_1r2.py})}{5.2 Étude ciblée du noyau 1/r\^{}2 (experiments\_1r2.py)}}\label{uxe9tude-cibluxe9e-du-noyau-1r2-experiments_1r2.py}
+
+Sources tirées comme dans \texttt{config/} (positions uniformes,
+intensités uniformes sur le simplexe de somme 100), 20 tirages par
+\(K\), \(\sigma = 10^{-3}\times\mathrm{rms}\),
+\(\lambda = 2\sigma\sqrt{M}\lVert\Psi\rVert\).
+
+\textbf{Effet de la pondération \(\alpha\)} (\texttt{r2\_alpha.png}) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\alpha\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+condition vraie (\(K\) = 1 / 2 / 3 / 4 / 5)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+réussite Frank-Wolfe (\(K\) = 1 / 2 / 3 / 4 / 5)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+temps médian
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 (brut) & 0 / 0 / 0 / 0 / 0 \% & 0 / 0 / 0 / 0 / 0 \% & 0,59 s (non
+convergé) \\
+0,5 & 0 / 0 / 0 / 0 / 0 \% & 0 / 0 / 0 / 0 / 0 \% & 1,29 s \\
+0,75 & 35 / 25 / 0 / 0 / 0 \% & 35 / 25 / 0 / 0 / 0 \% & 0,21 s \\
+\textbf{1} & 100 / 100 / 20 / 20 / 0 \% & \textbf{100 / 95 / 25 / 15 / 5
+\%} & \textbf{0,05 s} \\
+\textbf{1,25} & 100 / 100 / 25 / 25 / 0 \% & \textbf{100 / 95 / 30 / 15
+/ 0 \%} & 0,04 s \\
+1,5 & 100 / 100 / 35 / 30 / 0 \% & 100 / 95 / 25 / 5 / 0 \% & 0,04 s \\
+2 & 100 / 90 / 50 / 30 / 0 \% & 100 / 80 / 20 / 5 / 0 \% & 0,04 s \\
+\end{longtable}
+}
+
+Il faut \(\alpha\ge 1\) pour une seule source. Pour \(\alpha = 1\) et
+une source en \(z_0\), sans bruit et pour \(\lambda\to 0\), le
+certificat vaut
+
+\[
+\eta(z) = \big\langle\psi(z), \psi(z_0)\big\rangle \le \lVert\psi(z)\rVert\,\lVert\psi(z_0)\rVert = 1
+\]
+
+par Cauchy--Schwarz, avec égalité seulement si \(\psi(z) = \psi(z_0)\),
+donc en \(z = z_0\). Au-delà de \(\alpha\approx 1{,}25\), la condition
+est plus souvent vraie, mais avec un conditionnement plus mauvais, et la
+réussite baisse. \textbf{Recommandation : \(\alpha = 1\) (ou
+\(1{,}25\)).}
+
+\textbf{Pouvoir prédictif de \texttt{check\_hypotheses}}
+(\texttt{r2\_prediction.png}, 100 tirages par \(\alpha\)) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+\(\alpha\) & condition vraie & réussite si vraie & réussite si fausse \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0,75 & 12 / 100 & 92 \% & 1 \% \\
+\textbf{1} & 48 / 100 & \textbf{94 \%} & \textbf{6 \%} \\
+1,25 & 50 / 100 & 94 \% & 2 \% \\
+1,5 & 53 / 100 & 83 \% & 2 \% \\
+2 & 54 / 100 & 74 \% & 2 \% \\
+\end{longtable}
+}
+
+Le signe de la marge relative sépare presque parfaitement les réussites
+des échecs : la vérification des hypothèses est un \textbf{outil de
+diagnostic fiable}, utilisable a posteriori avec
+\texttt{hypotheses\_after\_fit}.
+
+\textbf{Limite de résolution} (\texttt{r2\_resolution.png}, paire
+verticale au centre, \(\alpha = 1\), 5 tirages) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\sigma/\mathrm{rms}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+séparation minimale résolue (100 \%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+erreur à \(d = 2\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(10^{-5}\) & 0,5 & \(1{,}3\times 10^{-3}\) \\
+\(10^{-4}\) & 1 & \(1{,}3\times 10^{-2}\) \\
+\(10^{-3}\) & 1,5 & 0,14 \\
+\(10^{-2}\) & 4 & (\(K\) faux à \(d = 2\)) \\
+\end{longtable}
+}
+
+On observe environ \(d^{\star}\propto\sigma^{1/4}\) : le bruit
+admissible décroît comme \(d^4\), ce qui est typique de la
+super-résolution de sources positives proches. À \(d = 0{,}25\), la
+condition est vraie mais
+\(\operatorname{cond}(\Gamma) = 2{,}5\times 10^5\), et aucun niveau de
+bruit testé ne permet la reconstruction.
+
+\textbf{Distance aux capteurs} (paire horizontale de séparation 2,
+\(\alpha = 1\), \(\sigma = 10^{-3}\)) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(y\) (centre = 10)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+distance au capteur le plus proche
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+condition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+réussite
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+10 à 14 & 10,2 à 7,1 & vraie & 100 \% \\
+16 & 5,1 & vraie & 60 \% \\
+17,5 / 18,5 / 19,25 & 3,6 / 2,6 / 1,9 & \textbf{fausse} & \textbf{0
+\%} \\
+\end{longtable}
+}
+
+Une \textbf{source seule} reste reconstructible près des capteurs. C'est
+la \textbf{paire} qui échoue : près d'un capteur, \(\psi(z)\) est dominé
+par ce capteur, et deux sources à la même distance des mêmes capteurs
+ont des signatures presque identiques
+(\texttt{r2\_certificat\_pres\_capteurs.png}).
+
+\textbf{Nombre de capteurs} (\texttt{r2\_capteurs.png}) : passer de
+\(M = 16\) à \(M = 256\) change peu de chose. Les échecs sont
+\textbf{géométriques} ; ajouter des capteurs sur le \textbf{même cercle}
+n'apporte pas d'information nouvelle.
+
+\subsubsection{\texorpdfstring{5.3 La condition est qualitative : le cas
+\(h = 20\)}{5.3 La condition est qualitative : le cas h = 20}}\label{la-condition-est-qualitative-le-cas-h-20}
+
+Avec des capteurs à \(h = 20\) au-dessus du plan, \(G(x,\cdot)\) n'est
+plus sous-harmonique sur \(D\), car
+
+\[
+\Delta_z G = \frac{4\,(r^2-h^2)}{(r^2+h^2)^3} < 0 \quad\text{pour } r < h,
+\]
+
+et la condition est \textbf{vraie} pour les configurations séparées et
+proches. Pourtant \textbf{la reconstruction échoue même sans bruit} : le
+noyau est si lisse que les colonnes sont presque colinéaires, avec
+\(\operatorname{cond}(\Gamma)\approx 10^5\). \textbf{À retenir :
+(H1)--(H3) ne suffisent pas en pratique ; il faut aussi regarder
+\(\operatorname{cond}(\Gamma)\) et la marge relative.}
+
+\subsubsection{\texorpdfstring{5.4 Première comparaison avec
+\texttt{reconstruct.py}
+(Prony)}{5.4 Première comparaison avec reconstruct.py (Prony)}}\label{premiuxe8re-comparaison-avec-reconstruct.py-prony}
+
+Scénario identique à \texttt{scripts/reconstruct.py} : \(n\) sources
+tirées selon \texttt{config/}, source centrale d'intensité 5000 mesurée
+puis retirée, bruit relatif, 8 tirages par case, mêmes mesures pour
+toutes les méthodes. Taux de réussite (et erreur de position médiane) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(n\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\sigma\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prony (config)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prony (\(5\sigma\))
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frank-Wolfe brut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+LASSO normalisé
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frank-Wolfe normalisé
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2 & \(10^{-4}\) & 88 \% (0,02) & 25 \% & 0 \% & \textbf{100 \%} (0,05) &
+88 \% (0,05) \\
+2 & \(10^{-3}\) & 25 \% (0,41) & 25 \% & 0 \% & \textbf{75 \%} (0,50) &
+62 \% (0,50) \\
+2 & \(10^{-2}\) & 0 \% & 12 \% & 0 \% & 12 \% & 12 \% \\
+3 & \(10^{-4}\) & \textbf{62 \%} (0,16) & 25 \% & 0 \% & 25 \% & 25
+\% \\
+3 & \(10^{-3}\) & 25 \% & 25 \% & 0 \% & 0 \% & 0 \% \\
+5 & \(10^{-4}\) & 12 \% & \textbf{25 \%} & 0 \% & 0 \% & 0 \% \\
+\end{longtable}
+}
+
+Prony est meilleur à très faible bruit et pour plus de sources ; le
+BLASSO pondéré est plus robuste à bruit moyen pour 2 sources. Cette
+comparaison a motivé la recherche d'une meilleure méthode (section
+suivante).
+
+\subsubsection{\texorpdfstring{5.5 Scénario du projet : maximum de
+vraisemblance et borne de Cramér--Rao
+(\texttt{experiments\_projet.py})}{5.5 Scénario du projet : maximum de vraisemblance et borne de Cramér--Rao (experiments\_projet.py)}}\label{scuxe9nario-du-projet-maximum-de-vraisemblance-et-borne-de-cramuxe9rrao-experiments_projet.py}
+
+Données identiques à \texttt{scripts/reconstruct.py} : \(n\) sources
+tirées selon \texttt{config/} (intensités uniformes sur le simplexe de
+somme 100, positions uniformes), source centrale \(I_c = 5000\) ajoutée
+puis retirée, bruit relatif \(\sigma\). 20 tirages par case, mêmes
+mesures pour toutes les méthodes :
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{prony} : \texttt{cfg.invert}, exactement comme
+  \texttt{reconstruct.py} ;
+\item
+  \texttt{sfw} : Frank-Wolfe glissant, BLASSO pondéré \(\alpha = 1\),
+  \(\lambda = 1{,}5\,\sigma\lVert y\rVert\) (meilleure méthode des
+  sections précédentes) ;
+\item
+  \texttt{ml\_bic} : maximum de vraisemblance glouton, bruit blanchi,
+  \(K\) par BIC (section 2.6) ;
+\item
+  \texttt{ml\_bic\_multi} : idem avec 3 candidats par ajout et un second
+  départ depuis Prony ; on garde le meilleur critère.
+\end{itemize}
+
+Pour chaque tirage, on calcule aussi la borne de Cramér--Rao (CRB). Un
+tirage est dit \textbf{faisable} si
+\(2\,\mathrm{CRB} < \tfrac14\min(d_{\min}, 4)\), où \(d_{\min}\) est la
+plus petite distance entre deux sources : une méthode optimale a alors
+de bonnes chances de passer le critère de réussite.
+
+\textbf{Taux de réussite} (\texttt{projet\_methodes\_resume.csv},
+\texttt{projet\_methodes.png}) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(n\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\sigma\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prony
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frank-Wolfe
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{ML + BIC}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ML multi
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+tirages faisables
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ML + BIC sur les faisables
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & \(10^{-4}\) & 100 \% & 100 \% & \textbf{100 \%} & 100 \% & 100 \% &
+100 \% \\
+1 & \(10^{-3}\) & 15 \% & 100 \% & \textbf{100 \%} & 100 \% & 100 \% &
+100 \% \\
+1 & \(10^{-2}\) & 0 \% & 100 \% & \textbf{100 \%} & 100 \% & 85 \% & 100
+\% \\
+2 & \(10^{-4}\) & 85 \% & 90 \% & \textbf{95 \%} & 95 \% & 85 \% & 94
+\% \\
+2 & \(3\times 10^{-4}\) & 40 \% & 75 \% & \textbf{85 \%} & 85 \% & 80 \%
+& 94 \% \\
+2 & \(10^{-3}\) & 15 \% & 70 \% & \textbf{75 \%} & 75 \% & 80 \% & 94
+\% \\
+2 & \(3\times 10^{-3}\) & 0 \% & 40 \% & \textbf{75 \%} & 75 \% & 50 \%
+& 90 \% \\
+2 & \(10^{-2}\) & 5 \% & 15 \% & \textbf{30 \%} & 30 \% & 20 \% & 100
+\% \\
+3 & \(10^{-4}\) & 55 \% & 40 \% & \textbf{80 \%} & 75 \% & 75 \% & 100
+\% \\
+3 & \(3\times 10^{-4}\) & 25 \% & 20 \% & \textbf{65 \%} & 65 \% & 35 \%
+& 100 \% \\
+3 & \(10^{-3}\) & 10 \% & 5 \% & \textbf{40 \%} & 35 \% & 25 \% & 100
+\% \\
+3 & \(10^{-2}\) & 0 \% & 0 \% & 0 \% & 0 \% & 0 \% & sans objet \\
+5 & \(10^{-4}\) & 5 \% & 0 \% & \textbf{50 \%} & 50 \% & 20 \% & 100
+\% \\
+5 & \(3\times 10^{-4}\) & 5 \% & 0 \% & \textbf{15 \%} & 15 \% & 5 \% &
+100 \% \\
+5 & \(10^{-3}\) & 0 \% & 0 \% & 5 \% & 5 \% & 5 \% & 100 \% \\
+\end{longtable}
+}
+
+\textbf{Erreur de position médiane comparée à la CRB} (même fichier) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+\(n\) & \(\sigma\) & Prony & Frank-Wolfe & ML + BIC & CRB médiane \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & \(10^{-3}\) & 0,059 & 0,023 & \textbf{0,022} & 0,025 \\
+1 & \(10^{-2}\) & 0,84 & 0,23 & \textbf{0,23} & 0,25 \\
+2 & \(10^{-4}\) & 0,014 & 0,035 & \textbf{0,014} & 0,016 \\
+2 & \(10^{-3}\) & 0,32 & 0,29 & \textbf{0,13} & 0,16 \\
+2 & \(3\times 10^{-3}\) & 1,6 & 0,66 & \textbf{0,36} & 0,49 \\
+3 & \(10^{-4}\) & 0,14 & 0,72 & \textbf{0,15} & 0,22 \\
+3 & \(10^{-3}\) & 4,3 & 0,93 & \textbf{0,42} & 2,2 \\
+5 & \(10^{-4}\) & 0,88 & 1,6 & \textbf{0,60} & 1,04 \\
+\end{longtable}
+}
+
+\textbf{Lecture.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Le maximum de vraisemblance + BIC est la meilleure méthode
+  dans toutes les cases}, ou à égalité avec la meilleure. Le gain est
+  net dès 2 sources : 75 \% contre 15 \% pour Prony à \(n = 2\),
+  \(\sigma = 10^{-3}\) ; 80 \% contre 55 \% à \(n = 3\),
+  \(\sigma = 10^{-4}\) ; 50 \% contre 5 \% à \(n = 5\),
+  \(\sigma = 10^{-4}\).
+\item
+  \textbf{Son erreur atteint la borne de Cramér--Rao.} Pour 1 et 2
+  sources, l'erreur médiane vaut \(0{,}7\) à \(0{,}9\) fois la CRB (la
+  CRB porte sur la pire source, l'erreur médiane sur un tirage typique).
+  La méthode est donc \textbf{efficace} au sens statistique : aucun
+  estimateur sans biais ne peut faire mieux. Le test
+  \texttt{test\_cramer\_rao\_scaling\_and\_efficiency} le vérifie pour
+  une source.
+\item
+  \textbf{Quand le problème est faisable, la méthode réussit} : 90 à 100
+  \% de réussite sur les tirages faisables, dans toutes les cases. Ses
+  échecs correspondent presque tous à des tirages où la CRB dépasse la
+  tolérance : aucune méthode ne pourrait les réussir de manière fiable.
+\item
+  \textbf{D'où vient le gain par rapport au BLASSO} : surtout de la
+  suppression de la pénalité lors du glissement (plus de biais
+  \(O(\lambda)\) sur les positions) et du choix de \(K\) par BIC. Le
+  blanchiment seul apporte peu ici : la source centrale, au centre du
+  cercle, donne presque le même bruit à tous les capteurs (dans le
+  prototype, le Frank-Wolfe blanchi et le non blanchi donnent des
+  résultats très proches).
+\item
+  \textbf{Prony} est excellent pour une source à très faible bruit, mais
+  il surestime \(K\) dès que \(\sigma\ge 10^{-3}\) (4 à 7 sources
+  estimées), car son seuil de rang n'est pas adapté au bruit.
+\item
+  \textbf{Les variantes « multi »} (plusieurs candidats, départ depuis
+  Prony) n'apportent rien : elles trouvent parfois un critère plus bas,
+  mais une reconstruction moins bonne. La méthode simple suffit.
+\item
+  Quand la CRB est très grande (par exemple \(n = 3\),
+  \(\sigma = 10^{-3}\) : CRB \(= 2{,}2\)), l'erreur des méthodes peut
+  être inférieure à la CRB. Elles sont alors biaisées (régularisation
+  implicite), et la borne indique surtout que la position de la pire
+  source n'est pas déterminée par les données.
+\end{enumerate}
+
+\textbf{Choix du nombre de sources : BIC contre AIC}
+(\texttt{projet\_critere.csv}) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(n\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\sigma\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+réussite BIC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+réussite AIC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+trop de sources (BIC / AIC)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+trop peu (BIC / AIC)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2 & \(10^{-4}\) & \textbf{95 \%} & 85 \% & 5 / 15 \% & 0 / 0 \% \\
+2 & \(10^{-3}\) & \textbf{75 \%} & 70 \% & 5 / 15 \% & 15 / 10 \% \\
+3 & \(10^{-4}\) & \textbf{80 \%} & 60 \% & 0 / 20 \% & 0 / 0 \% \\
+3 & \(10^{-3}\) & \textbf{40 \%} & 35 \% & 0 / 10 \% & 50 / 25 \% \\
+5 & \(10^{-4}\) & \textbf{50 \%} & 40 \% & 0 / 20 \% & 35 / 25 \% \\
+\end{longtable}
+}
+
+Le BIC (\(\kappa = \log M\approx 4{,}2\)) est meilleur partout ; l'AIC
+(\(\kappa = 2\)) ajoute des sources parasites. Les erreurs du BIC sont
+surtout des sources \textbf{manquantes} à fort bruit : des sources
+faibles ou proches que les données ne permettent pas de voir.
+
+\textbf{Effet de la source centrale}
+(\texttt{projet\_centrale\_resume.csv}, \texttt{projet\_centrale.png},
+\(n = 3\), \(\sigma = 10^{-3}\), 20 tirages ; le facteur vaut
+\(I_c/100\)) :
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+facteur
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prony
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frank-Wolfe
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ML + BIC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+erreur ML + BIC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CRB médiane
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 (pas de source centrale) & 55 \% & 35 \% & \textbf{100 \%} & 0,034 &
+0,052 \\
+5 & 55 \% & 35 \% & \textbf{70 \%} & 0,22 & 0,30 \\
+50 (projet) & 10 \% & 5 \% & \textbf{40 \%} & 0,42 & 2,2 \\
+500 & 0 \% & 0 \% & 0 \% & 1,2 & 21 \\
+\end{longtable}
+}
+
+\textbf{C'est le résultat principal.} Sans source centrale, le maximum
+de vraisemblance réussit dans 100 \% des cas. Avec la source centrale du
+projet, la CRB est multipliée par environ 42. Le bruit de la source
+centrale, d'écart type \(\sigma I_c/R^2 = 40\,\sigma\) par capteur,
+reste dans les données après soustraction. Il domine le signal des
+petites sources, qui vaut environ 7 en moyenne quadratique : avec
+\(\sigma = 10^{-3}\), le rapport signal sur bruit par capteur n'est que
+d'environ 175.
+
+\textbf{Configuration par défaut du projet}
+(\(N\sim\mathrm{Poisson}(20)\), \(\sigma = 1\,\%\), 10 tirages,
+\texttt{projet\_defaut.csv}) :
+
+\begin{itemize}
+\tightlist
+\item
+  les tirages contiennent 12 à 29 sources, d'intensité maximale 11 à 26
+  ;
+\item
+  la CRB conjointe médiane est comprise entre \(10^4\) et
+  \(5\times 10^5\) : les positions ne sont \textbf{pas déterminées} par
+  les données ;
+\item
+  même en supposant toutes les autres sources connues, une source n'a
+  une CRB inférieure à \(0{,}5\) que dans 0 à 4 cas par tirage ;
+\item
+  ML + BIC retient 1 à 5 sources, Frank-Wolfe 1 à 4, Prony 0 à 9.
+\end{itemize}
+
+Dans cette configuration, on ne peut espérer retrouver que les quelques
+sources les plus intenses et les mieux placées. Il faut soit beaucoup
+moins de bruit, soit beaucoup moins de sources, soit une autre géométrie
+de capteurs (section 8).
+
+\subsection{6. Où ça ne marche pas, et
+pourquoi}\label{ouxf9-uxe7a-ne-marche-pas-et-pourquoi}
+
+\subsubsection{\texorpdfstring{6.1 BLASSO standard avec le noyau
+\(1/r^2\) : échec
+systématique}{6.1 BLASSO standard avec le noyau 1/r\^{}2 : échec systématique}}\label{blasso-standard-avec-le-noyau-1r2-uxe9chec-systuxe9matique}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Constat} : la condition est fausse dans 100 \% des cas, et la
+  réussite est nulle. On obtient 20 à 40 sources parasites collées au
+  bord de \(D\), surtout aux coins.
+\item
+  \textbf{Cause 1 : sous-harmonicité.} En dimension 2,
+  \(\Delta_z\big(1/\lVert x-z\rVert^2\big) = 4/\lVert x-z\rVert^4 > 0\)
+  : chaque \(G(x_i,\cdot)\) est sous-harmonique. Lorsque \(p_V\ge 0\),
+  \(\eta_V\) est sous-harmonique et ne peut pas avoir de maximum strict
+  à l'intérieur de \(D\) : la trace de \(\nabla^2\eta_V(z_k)\) est
+  positive (H3 fausse) et le maximum est au bord (H2 fausse,
+  \(\max\eta_V\) entre 17 et 43 près des coins).
+\item
+  \textbf{Cause 2 : biais de la pénalité.} \(\lVert\varphi(z)\rVert\)
+  varie d'un facteur 215 sur \(D\). Le BLASSO « paie » moins cher pour
+  remplacer une source centrale par plusieurs sources de bord ; la
+  solution du LASSO sur grille est d'ailleurs un anneau de sources de
+  bord, même sans bruit.
+\item
+  \textbf{Remède} : la pondération \(\alpha\approx 1\) (section 1.2).
+\end{itemize}
+
+\subsubsection{6.2 Sources proches}\label{sources-proches}
+
+La séparation minimale résolue va de \(0{,}5\) à \(4\) selon le bruit
+(\(d^{\star}\propto\sigma^{1/4}\)). Le conditionnement de \(\Gamma\)
+explose (environ 4 000 à \(d = 1\) et 250 000 à \(d = 0{,}25\)).
+
+\subsubsection{6.3 Zone aveugle près des
+capteurs}\label{zone-aveugle-pruxe8s-des-capteurs}
+
+Le cercle des capteurs passe par les coins de \(D\). Les \textbf{paires}
+situées à moins de 4 à 5 unités d'un capteur ne sont plus séparables.
+Comme les positions uniformes tombent souvent près du bord, cela
+explique une grande partie des échecs pour \(K\ge 3\).
+
+\subsubsection{6.4 Bruit de la source
+centrale}\label{bruit-de-la-source-centrale}
+
+C'est la limite dominante dans le scénario du projet (section 5.5).
+Retirer la source centrale enlève son signal, mais pas son bruit,
+d'écart type \(40\,\sigma\) par capteur. Aucune méthode ne peut
+descendre sous la borne de Cramér--Rao, qui croît proportionnellement à
+ce bruit.
+
+\subsubsection{6.5 Nombre de sources}\label{nombre-de-sources}
+
+Avec des positions aléatoires, la probabilité d'avoir une paire proche
+ou une paire près des capteurs croît vite avec \(K\). Dans la
+configuration par défaut (\(K\approx 20\), \(\sigma = 1\,\%\)), la borne
+de Cramér--Rao conjointe dépasse \(10^4\) : le problème est hors de
+portée de toute méthode.
+
+\subsubsection{\texorpdfstring{6.6 Noyau trop lisse (capteurs hors du
+plan, \(h\)
+grand)}{6.6 Noyau trop lisse (capteurs hors du plan, h grand)}}\label{noyau-trop-lisse-capteurs-hors-du-plan-h-grand}
+
+La condition est vraie mais \(\operatorname{cond}(\Gamma)\approx 10^5\)
+: c'est inexploitable numériquement (section 5.3).
+
+\subsubsection{6.7 Problèmes numériques
+rencontrés}\label{probluxe8mes-numuxe9riques-rencontruxe9s}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{FISTA est lent} sur une grille fine, car les colonnes voisines
+  sont presque colinéaires : 27 s au pas de \(0{,}1\) contre \(0{,}17\)
+  s pour l'ensemble actif. Le polissage sur le support corrige la
+  non-convergence.
+\item
+  \textbf{sklearn} s'arrête sur son nombre maximal d'itérations (écart
+  d'objectif d'environ \(3\times 10^{-4}\)).
+\item
+  \textbf{LASSO + raffinement} : un petit pic parasite peut rester
+  bloqué dans un minimum local (intensité \(\approx 0\), donc gradient
+  en position \(\approx 0\)).
+\item
+  \textbf{\(\lambda\) très petit} (moins de \(10^{-6}\lambda_{\max}\)) :
+  le critère \(\eta\le 1+10^{-6}\) n'est plus atteignable numériquement.
+\item
+  \textbf{Seuil de (H2)} : un seuil fixe donne des verdicts arbitraires,
+  d'où la marge relative (section 2.5).
+\item
+  \textbf{Maximum de vraisemblance} : le problème à \(K\) fixé n'est pas
+  convexe. Un meilleur critère ne garantit pas une meilleure
+  reconstruction : partir de Prony ou essayer plusieurs candidats trouve
+  parfois un optimum de critère plus bas mais plus loin de la vérité
+  (section 5.5).
+\end{itemize}
+
+\subsection{7. Temps de calcul}\label{temps-de-calcul}
+
+Machine de développement (Windows, Python 3.14, NumPy 2.3, SciPy 1.16),
+un cœur, valeurs médianes.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Brique
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Paramètres
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Temps
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{make\_grid} (matrice \(\mathbf{G}\)) & pas 0,1 (\(P = 20\,301\))
+& 0,07 s \\
+Frank-Wolfe glissant, \(\alpha = 1\) & \(K\) = 1 / 2 / 3 / 5 / 8 & 0,004
+/ 0,017 / 0,045 / 0,10 / 0,44 s \\
+Frank-Wolfe glissant, noyau brut & plafonné à 10 itérations & 0,4 à 1,3
+s \\
+\texttt{lasso\_pipeline}, ensemble actif, \(K = 3\) & pas 0,5 / 0,25 /
+0,1 & 0,03 / 0,04 / 0,17 s \\
+\texttt{lasso\_pipeline}, FISTA, \(K = 3\) & pas 0,5 / 0,25 / 0,1 & 0,86
+/ 2,0 / 27 s \\
+\texttt{lasso\_pipeline}, sklearn, \(K = 3\) & pas 0,5 / 0,25 / 0,1 &
+1,5 / 1,9 / 16 s \\
+\texttt{check\_hypotheses} & grille 0,05, \(K\) = 1 à 8 & 0,25 à 0,30
+s \\
+Prony (\texttt{prony\_circle}) & \(M = 64\) & environ 0,001 s \\
+\texttt{greedy\_ml} (ML + BIC) & \(n\) = 1 / 2 / 3 / 5,
+\(\sigma = 10^{-4}\) & 0,06 / 0,12 / 0,19 / 0,42 s \\
+\texttt{greedy\_ml}, 3 candidats + départ Prony & \(n\) = 1 / 3 / 5 &
+0,24 / 0,65 / 1,4 s \\
+\texttt{cramer\_rao} & \(K\le 30\) & moins de 0,01 s \\
+\texttt{pytest\ sparse\_sources/tests} & 70 tests & environ 30 s \\
+\texttt{experiments.py} & tout & 336 s \\
+\texttt{experiments\_1r2.py} & tout (20 tirages par \(K\)) & 391 s \\
+\texttt{experiments\_projet.py} & tout (20 tirages par case) & 366 s \\
+\end{longtable}
+}
+
+Le Frank-Wolfe glissant est le plus rapide quand la condition tient
+(environ \(K+1\) itérations). Le maximum de vraisemblance glouton est 3
+à 10 fois plus lent : il ajoute en général deux sources de trop avant de
+s'arrêter, puis fait l'étape arrière. Il reste sous la demi-seconde pour
+5 sources.
+
+\subsection{8. Pistes d'amélioration}\label{pistes-damuxe9lioration}
+
+\textbf{Modélisation}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Utiliser le maximum de vraisemblance glouton + BIC}
+  (\texttt{greedy\_ml}) comme méthode par défaut dans le scénario du
+  projet, et le BLASSO pondéré (\(\alpha = 1\)) quand on veut un
+  certificat d'optimalité.
+\item
+  \textbf{Réduire le bruit de la source centrale} plutôt que chercher un
+  meilleur algorithme : mesurer plus longtemps, protéger les capteurs de
+  la source centrale (collimation), ou estimer son intensité
+  conjointement si elle n'est pas connue exactement.
+\item
+  \textbf{Bruit de Poisson} (\texttt{poisson\_counts}) : remplacer
+  l'attache quadratique par la log-vraisemblance de Poisson (divergence
+  de Kullback--Leibler) ; la même méthode gloutonne s'applique.
+\end{enumerate}
+
+\textbf{Géométrie des capteurs} (facteur limitant principal après le
+bruit)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \textbf{Éloigner les capteurs des coins de \(D\)} (cercle plus grand,
+  \texttt{radius\_factor}) pour supprimer la zone aveugle. La borne de
+  Cramér--Rao et \texttt{check\_hypotheses} permettent de comparer des
+  géométries avant de construire quoi que ce soit.
+\item
+  \textbf{Diversifier les capteurs} plutôt que les multiplier sur le
+  même cercle (plusieurs cercles, capteurs à l'intérieur, hauteur
+  modérée \(h\sim 2\) à \(5\)).
+\end{enumerate}
+
+\textbf{Algorithmes}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Choix de \(K\)} : le BIC est un bon compromis ; un test du
+  \(\chi^2\) sur \(\lVert r_w\rVert^2\) ou une validation croisée sur
+  les capteurs sont des alternatives.
+\item
+  \textbf{LASSO sur grille} : remplacer FISTA par l'ensemble actif ou
+  par une descente par coordonnées avec élimination (\emph{screening}).
+\end{enumerate}
+
+\textbf{Théorie}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \textbf{Séparation dans la métrique du noyau} (métrique de
+  Fisher--Rao, Poon--Keriven--Peyré) pour expliquer quantitativement la
+  zone aveugle et la loi \(d^{\star}\propto\sigma^{1/4}\).
+\item
+  \textbf{Constantes quantitatives} : relier \(\lambda_0\) et \(c_0\) à
+  la marge relative et à \(\operatorname{cond}(\Gamma)\).
+\end{enumerate}
+
+\subsection{9. Écarts par rapport à la demande
+initiale}\label{uxe9carts-par-rapport-uxe0-la-demande-initiale}
+
+\begin{itemize}
+\tightlist
+\item
+  Toutes les fonctions acceptent un argument supplémentaire
+  \texttt{setup=} (géométrie, \(h\), \(\alpha\), poids des capteurs).
+\item
+  \texttt{debias(z,\ I\_init,\ m)} prend aussi les mesures \(m\),
+  nécessaires au NNLS.
+\item
+  \texttt{check\_hypotheses} a des paramètres supplémentaires et renvoie
+  en plus la marge relative et des indicateurs de bruit.
+\item
+  Ajouts non demandés, jugés nécessaires : la pondération \(\alpha\), le
+  solveur exact à ensemble actif, le polissage de FISTA, la marge
+  relative de (H2), l'étude ciblée du noyau \(1/r^2\), la comparaison
+  avec Prony, le maximum de vraisemblance glouton, le blanchiment et la
+  borne de Cramér--Rao.
+\item
+  Les \textbf{PNG} ne sont pas versionnés (le \texttt{.gitignore} du
+  dépôt ignore \texttt{*.png}) ; les scripts d'expériences les
+  régénèrent. Les CSV sont versionnés.
+\end{itemize}
+
+\subsection{10. Reproduire}\label{reproduire}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{pip}\NormalTok{ install }\AttributeTok{{-}e} \StringTok{".[dev]"}\NormalTok{ scikit{-}learn}
+\ExtensionTok{pytest}\NormalTok{ sparse\_sources/tests                   }\CommentTok{\# 70 tests, environ 30 s}
+\ExtensionTok{python}\NormalTok{ sparse\_sources/experiments.py          }\CommentTok{\# environ 6 min}
+\ExtensionTok{python}\NormalTok{ sparse\_sources/experiments\_1r2.py      }\CommentTok{\# environ 6,5 min}
+\ExtensionTok{python}\NormalTok{ sparse\_sources/experiments\_projet.py   }\CommentTok{\# scenario du projet}
+\end{Highlighting}
+\end{Shaded}
+
+Toutes les graines sont fixées : les résultats sont reproductibles.
+
+Pour obtenir une version LaTeX ou PDF du compte rendu :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{pandoc}\NormalTok{ COMPTE\_RENDU.md }\AttributeTok{{-}s} \AttributeTok{{-}o}\NormalTok{ COMPTE\_RENDU.tex}
+\ExtensionTok{pandoc}\NormalTok{ COMPTE\_RENDU.md }\AttributeTok{{-}s} \AttributeTok{{-}{-}pdf{-}engine}\OperatorTok{=}\NormalTok{xelatex }\AttributeTok{{-}o}\NormalTok{ COMPTE\_RENDU.pdf}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Références}\label{ruxe9fuxe9rences}
+
+\begin{itemize}
+\tightlist
+\item
+  V. Duval, G. Peyré, \emph{Exact support recovery for sparse spikes
+  deconvolution}, Foundations of Computational Mathematics, 2015.
+\item
+  Q. Denoyelle, V. Duval, G. Peyré, E. Soubies, \emph{The sliding
+  Frank-Wolfe algorithm and its application to super-resolution
+  microscopy}, Inverse Problems, 2019.
+\item
+  Q. Denoyelle, V. Duval, G. Peyré, \emph{Support recovery for sparse
+  super-resolution of positive measures}, Journal of Fourier Analysis
+  and Applications, 2017.
+\item
+  C. Poon, N. Keriven, G. Peyré, \emph{The geometry of off-the-grid
+  compressed sensing}, Foundations of Computational Mathematics, 2023.
+\item
+  A. Beck, M. Teboulle, \emph{A fast iterative shrinkage-thresholding
+  algorithm for linear inverse problems}, SIAM Journal on Imaging
+  Sciences, 2009.
+\item
+  B. O'Donoghue, E. Candès, \emph{Adaptive restart for accelerated
+  gradient schemes}, Foundations of Computational Mathematics, 2015.
+\item
+  G. Schwarz, \emph{Estimating the dimension of a model}, Annals of
+  Statistics, 1978 (critère BIC).
+\item
+  S. M. Kay, \emph{Fundamentals of Statistical Signal Processing:
+  Estimation Theory}, Prentice Hall, 1993 (borne de Cramér--Rao).
+\end{itemize}
+
+\end{document}

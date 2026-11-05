@@ -20,8 +20,11 @@ Aucun fichier existant n'a été modifié ; le noyau et ses dérivées viennent 
 | `lasso.py` | `build_grid`, `solve_lasso` (FISTA / sklearn / ensemble actif), `merge_peaks`, `refine`, `lasso_pipeline` |
 | `blasso.py` | `sliding_frank_wolfe` |
 | `hypotheses.py` | `check_hypotheses`, `hypotheses_after_fit` |
+| `ml.py` | `greedy_ml` (maximum de vraisemblance glouton, K par BIC), `cramer_rao`, `relative_noise_std` |
 | `plotting.py` | style des figures |
 | `experiments.py` | expériences → `results/` (PNG + CSV) |
+| `experiments_1r2.py` | étude du noyau 1/r² → `results/r2_*` |
+| `experiments_projet.py` | scénario du projet (source centrale) → `results/projet_*` |
 | `tests/` | pytest : `pytest sparse_sources/tests` |
 
 ## Appels
@@ -62,7 +65,15 @@ z_hat = fw["z_debiased"]
 I_hat = S.physical_intensities(z_hat, fw["I_debiased"])     # intensités physiques
 fw["history"]          # [{iter, K, eta_max, objective}, ...]
 
-# 4. Fiabilité a posteriori : hypothèses aux positions estimées
+# 4. Scénario du projet (source centrale retirée, bruit relatif) : maximum de
+#    vraisemblance glouton, bruit blanchi, nombre de sources choisi par BIC
+from sparse_sources import greedy_ml, relative_noise_std, cramer_rao
+# y_brut : mesures AVEC la source centrale ; m = y_brut - contribution centrale
+s = relative_noise_std(y_brut, sigma)           # écart type du bruit par capteur
+ml = greedy_ml(m, s, setup=S, grid=grid)         # ml["z"], ml["I"], ml["K"], ml["chi2"]
+cramer_rao(z_true, I_true, s)["pos_std"]         # erreur minimale possible (simulation)
+
+# 5. Fiabilité a posteriori : hypothèses aux positions estimées
 hypotheses_after_fit(z_hat, I_hat, setup=S)["reliable"]
 match_sources(z_true, I_true, z_hat, I_hat)                  # erreurs
 ```
@@ -93,9 +104,10 @@ géométrie du projet (voir Résultats).
 ## Lancer
 
 ```bash
-pytest sparse_sources/tests                  # 62 tests, ~30 s
+pytest sparse_sources/tests                  # 70 tests, ~30 s
 python sparse_sources/experiments.py         # expériences générales (~6 min) → sparse_sources/results/
 python sparse_sources/experiments_1r2.py     # étude du noyau 1/r² (~6,5 min) → results/r2_*
+python sparse_sources/experiments_projet.py  # scénario du projet, Cramér-Rao → results/projet_*
 python sparse_sources/experiments.py --rapide --seulement hypotheses prony
 ```
 
