@@ -39,7 +39,7 @@ def build_grid(D=None, step: float | None = None, setup: Setup | None = None) ->
 # ---- Solveurs ----------------------------------------------------------------------------
 def fista_positive_lasso(G: np.ndarray, m: np.ndarray, lam: float, tol: float = 1e-4,
                          max_iter: int = 20_000, normalize: bool = False,
-                         c0: np.ndarray | None = None):
+                         c0: np.ndarray | None = None, polish: bool = True):
     """
     FISTA (Beck & Teboulle 2009) avec redémarrage adaptatif (O'Donoghue &
     Candès 2015) pour
@@ -72,7 +72,15 @@ def fista_positive_lasso(G: np.ndarray, m: np.ndarray, lam: float, tol: float = 
         c_j > 0 : g_j + λ = 0 ;    c_j = 0 : g_j + λ ≥ 0,
     violation max (relative à λ) < tol.
 
-    Renvoie (c (P,), infos {n_iter, kkt, converged}).
+    Polissage (``polish=True``) : FISTA identifie vite un sur-ensemble du
+    support mais converge très lentement vers la solution parcimonieuse (des
+    nœuds voisins gardent un peu de masse). On résout alors exactement le
+    LASSO restreint aux colonnes actives (ensemble actif, quelques dizaines de
+    colonnes) et on garde ce résultat s'il vérifie les conditions KKT sur
+    TOUTE la grille (il est alors solution du problème complet) et ne dégrade
+    pas l'objectif.
+
+    Renvoie (c (P,), infos {n_iter, kkt, converged, polished}).
     """
     G = np.asarray(G, float)
     m = np.asarray(m, float)
@@ -95,12 +103,32 @@ def fista_positive_lasso(G: np.ndarray, m: np.ndarray, lam: float, tol: float = 
         y = u_new + (t - 1) / t_new * (u_new - u)
         u, t = u_new, t_new
         if k % 50 == 0 or k == max_iter:
-            g = G.T @ (G @ (u / norms) - m) + lam     # ∂/∂c de l'objectif
-            viol = np.where(u > 0, np.abs(g), np.maximum(-g, 0.0))
-            kkt = float(viol.max() / lam)
+            kkt = kkt_violation(G, m, lam, u / norms)
             if kkt < tol:
                 break
-    return u / norms, {"n_iter": k, "kkt": kkt, "converged": kkt < tol}
+    c = u / norms
+    info = {"n_iter": k, "kkt": kkt, "converged": kkt < tol, "polished": False}
+    if polish and np.any(c > 0):
+        S = np.flatnonzero(c > 0)
+        cs, _ = active_set_positive_lasso(G[:, S], m, lam)
+        c2 = np.zeros(P)
+        c2[S] = cs
+        kkt2 = kkt_violation(G, m, lam, c2)
+        if kkt2 < max(tol, kkt) and lasso_objective(G, m, lam, c2) <= lasso_objective(G, m, lam, c) + 1e-12:
+            c = c2
+            info.update(kkt=kkt2, converged=kkt2 < tol, polished=True)
+    return c, info
+
+
+def kkt_violation(G, m, lam, c) -> float:
+    """
+    Violation des conditions KKT du LASSO positif, relative à λ :
+    max_j  |g_j + λ| si c_j > 0,  max(-(g_j + λ), 0) si c_j = 0,
+    avec g = G^T (G c - m).
+    """
+    g = G.T @ (G @ c - m) + lam
+    viol = np.where(c > 0, np.abs(g), np.maximum(-g, 0.0))
+    return float(viol.max() / lam)
 
 
 def sklearn_positive_lasso(G: np.ndarray, m: np.ndarray, lam: float, tol: float = 1e-8,
