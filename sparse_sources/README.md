@@ -93,12 +93,37 @@ géométrie du projet (voir Résultats).
 ## Lancer
 
 ```bash
-pytest sparse_sources/tests                  # 49 tests, ~30 s
-python sparse_sources/experiments.py         # toutes les expériences → sparse_sources/results/
+pytest sparse_sources/tests                  # 62 tests, ~30 s
+python sparse_sources/experiments.py         # expériences générales (~6 min) → sparse_sources/results/
+python sparse_sources/experiments_1r2.py     # étude du noyau 1/r² (~6,5 min) → results/r2_*
 python sparse_sources/experiments.py --rapide --seulement hypotheses prony
 ```
 
 Les PNG sont ignorés par le `.gitignore` du dépôt (`*.png`) : ils sont produits
 localement par `experiments.py` ; les CSV sont versionnés.
 
-<!-- RESULTATS -->
+## Résultats (détails, chiffres et figures : `COMPTE_RENDU.md`)
+
+- **Noyau 1/r², capteurs dans le plan (projet), BLASSO standard : échec
+  systématique.** La condition de Duval–Peyré est fausse dans 100 % des cas
+  et on obtient des dizaines de sources parasites près des capteurs. Cause :
+  Δ(1/r²) = 4/r⁴ > 0 (G sous-harmonique) et ‖φ‖ varie d'un facteur 215 sur D.
+- **BLASSO pondéré** (`make_setup(normalize=True)` ou `alpha=1`) : 1 ou 2
+  sources retrouvées dans 95 à 100 % des tirages à σ = 10⁻³ × rms, en ~0,05 s.
+  L'erreur de position est proportionnelle à σ (pente 1 sur trois décades).
+- **`check_hypotheses` prédit la réussite** : 94 % de réussite si la condition
+  est vraie, 2 à 6 % sinon (100 tirages par α).
+- **Comparaison avec Prony** (`reconstruct.py`, scénario du projet) : Prony
+  est meilleur à σ = 10⁻⁴, le BLASSO pondéré à σ = 10⁻³ pour 2 sources ;
+  tout échoue pour 5 sources ou σ = 10⁻².
+
+## Limites observées
+
+- Séparation minimale ≈ 0,5 (σ = 10⁻⁵) à 4 (σ = 10⁻²), soit environ d* ∝ σ^{1/4}.
+- Zone aveugle : paires à moins de ~4–5 d'un capteur (le cercle de capteurs
+  passe par les coins de D).
+- K ≥ 3 sources tirées au hasard : 25 % de réussite à K = 3, ≤ 5 % à K = 5.
+- Capteurs très hors du plan (h = 20) : condition vraie mais cond(Γ) ≈ 10⁵,
+  inexploitable numériquement. La condition est qualitative.
+- FISTA est lent sur grille fine (27 s au pas de 0,1, contre 0,17 s pour l'ensemble actif).
+- Pour un λ < ~10⁻⁶ λ_max, le critère η ≤ 1 + 10⁻⁶ n'est plus atteignable numériquement.
