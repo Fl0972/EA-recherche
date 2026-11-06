@@ -8,7 +8,10 @@ lang: fr
 
 Branche `travail-sur-le-probleme-inverse`, dossier `sparse_sources/`. Les
 figures citées sont produites par les scripts `experiments.py`,
-`experiments_1r2.py` et `experiments_projet.py` dans `sparse_sources/results/`.
+`experiments_1r2.py`, `experiments_projet.py`, `experiments_cylindre.py`,
+`experiments_ml.py` et `experiments_ml3d.py` dans `sparse_sources/results/`.
+La méthode du maximum de vraisemblance + BIC a son propre rapport détaillé,
+`RAPPORT_ML_BIC.md`.
 Les tableaux chiffrés viennent des fichiers CSV du même dossier.
 
 Les formules sont écrites en LaTeX (`$...$` et `$$...$$`). Le document se lit
@@ -22,7 +25,8 @@ ou en PDF avec Pandoc (voir la section 10).
    `check_hypotheses` qui vérifie la condition de source non dégénérée de
    Duval–Peyré, et une méthode de **maximum de vraisemblance gloutonne** avec
    choix du nombre de sources par BIC (`greedy_ml`), accompagnée de la **borne
-   de Cramér–Rao** (`cramer_rao`). Le code est couvert par 70 tests pytest.
+   de Cramér–Rao** (`cramer_rao`), généralisée en 3D (`ml3d.py`). Le code est
+   couvert par 86 tests pytest.
 2. **Le BLASSO standard échoue toujours avec le noyau du projet**
    $G(x,z) = 1/\lVert x-z\rVert^2$ (capteurs dans le plan) : la condition de
    Duval–Peyré est fausse dans 100 % des tirages. La cause est mathématique :
@@ -379,15 +383,22 @@ sparse_sources/
 |-- blasso.py               sliding_frank_wolfe
 |-- hypotheses.py           check_hypotheses, hypotheses_after_fit, format_report
 |-- ml.py                   greedy_ml (maximum de vraisemblance + BIC), cramer_rao
+|-- ml3d.py                 greedy_ml_nd, cramer_rao_nd : meme methode en dimension d (3D)
+|-- tester_ml.py            tester ML + BIC sur un tirage (2D ou 3D), avec figure
 |-- plotting.py             style des figures
 |-- experiments.py          experiences generales (3 geometries, comparaison Prony)
 |-- experiments_1r2.py      etude ciblee du noyau 1/r^2
 |-- experiments_projet.py   scenario du projet (source centrale), Cramer-Rao
-|-- tests/                  70 tests pytest
+|-- experiments_ml.py       etudes de ML + BIC (sigma faux, detection, resolution, capteurs)
+|-- experiments_cylindre.py capteurs sur la paroi d'un cylindre, K connu
+|-- experiments_ml3d.py     sources en 3D
+|-- tests/                  86 tests pytest
 |-- results/                CSV (versionnes) et PNG (ignores par .gitignore)
 |-- README.md               notice courte
 |-- COMPTE_RENDU.md         ce document
-`-- COMPTE_RENDU.tex        ce document converti en LaTeX par Pandoc
+|-- COMPTE_RENDU.tex        ce document converti en LaTeX par Pandoc
+|-- RAPPORT_ML_BIC.md       rapport complet sur le maximum de vraisemblance + BIC
+`-- RAPPORT_ML_BIC.tex      ce rapport converti en LaTeX par Pandoc
 ```
 
 `sparse_sources` importe `particle_sources` (noyau, `Box`, `CircleSensors`,
@@ -397,7 +408,7 @@ sans lui, elles utilisent la géométrie de `config/`.
 
 ## 4. Validation
 
-`pytest sparse_sources/tests` exécute **70 tests** en environ 30 s. Les 67 tests
+`pytest sparse_sources/tests` exécute **86 tests** en environ 70 s. Les 67 tests
 existants du projet passent toujours.
 
 | Ce qui est testé | Résultat |
@@ -415,6 +426,10 @@ existants du projet passent toujours.
 | `greedy_ml`, 2 sources, bruit de la source centrale | bon $K$, erreur $< 5\times$ CRB, $\chi^2$ compatible avec le bruit |
 | `greedy_ml`, bruit seul | au plus 1 source retenue |
 | Efficacité : erreur rms du ML pour une source (30 tirages) | entre $0{,}6$ et $1{,}5$ fois la CRB |
+| Capteurs à plusieurs hauteurs : noyau, dérivées, symétrie $\pm h$ | exact à $10^{-14}$, dérivées à $10^{-10}$ |
+| `greedy_ml_nd` en 3D (sphère, deux cercles, source centrale) | bon $K$, erreur $< 5	imes$ CRB |
+| `greedy_ml_nd` en 2D contre `greedy_ml` | même solution ($10^{-4}$), même CRB |
+| Un seul cercle de capteurs en 3D | CRB infinie (non identifiable) |
 
 ## 5. Résultats
 
@@ -715,6 +730,105 @@ sources les plus intenses et les mieux placées. Il faut soit beaucoup moins de
 bruit, soit beaucoup moins de sources, soit une autre géométrie de capteurs
 (section 8).
 
+### 5.6 Capteurs sur la paroi d'un cylindre (`experiments_cylindre.py`)
+
+`experiments_cylindre.py` (`cylindre.csv`, `cylindre_resume.csv`,
+`cylindre.png`). Question posée : avec des capteurs répartis sur la paroi
+d'un cylindre (plusieurs étages au-dessus du plan des sources), le
+Frank-Wolfe marche-t-il pour beaucoup de sources et beaucoup de bruit ?
+
+**Protocole.** Même noyau $1/(\lVert x_i - z\rVert^2 + h_i^2)$, avec une
+hauteur $h_i$ par capteur (`make_cylinder_setup`). Le cylindre a pour axe la
+verticale du centre de $D$ et pour rayon celui du cercle du projet. Même
+nombre total de capteurs pour toutes les géométries, $M = 60$ :
+
+| géométrie | étages (hauteurs $h$) |
+|---|---|
+| cercle | 1 étage, $h = 0$ (comme le projet) |
+| cylindre bas | $h = 0$ ; 2,5 ; 5 (20 capteurs par étage) |
+| cylindre haut | $h = 0$ ; 2,5 ; 5 ; 7,5 ; 10 (12 par étage) |
+| cylindre sans plan | $h = 2{,}5$ ; 5 ; 7,5 (aucun capteur dans le plan) |
+
+Comme les sources sont dans le plan, un capteur à $-h$ mesure la même chose
+qu'à $+h$ : un cylindre symétrique de part et d'autre du plan revient à ces
+étages avec deux fois plus de capteurs. Les étages sont décalés en angle.
+
+Sources : $K\in\{3, 5, 8\}$, **$K$ connu à l'avance**, positions uniformes
+mais **espacées** (distance minimale 3), intensités uniformes sur le
+simplexe, source centrale de 5000, bruit relatif, 15 tirages par case. Les
+mêmes sources sont utilisées pour toutes les géométries.
+
+- **Frank-Wolfe à $\lambda$ optimal pour $K$** : BLASSO pondéré ($\alpha = 1$),
+  14 valeurs de $\lambda$ de $0{,}5\,\lambda_{\max}$ à
+  $3\times 10^{-4}\,\lambda_{\max}$ ; parmi celles qui donnent exactement $K$
+  sources, on garde celle de plus petit résidu (après débiaisage). Si aucune
+  ne donne $K$ sources (29 % des cas), on prend la première qui en donne plus
+  et on garde les $K$ plus intenses.
+- **ML à $K$ imposé** : `greedy_ml(k_max=K, criterion=0, backward=False)`.
+
+**Taux de réussite (Frank-Wolfe / ML), condition de Duval–Peyré vraie, CRB
+médiane** :
+
+| $K$ | $\sigma$ | cercle | cylindre bas | cylindre haut | cylindre sans plan |
+|---|---|---|---|---|---|
+| 3 | $10^{-4}$ | **67 %** / 87 % | 53 % / 87 % | 53 % / **93 %** | 53 % / 87 % |
+| 3 | $10^{-3}$ | 20 % / **53 %** | 20 % / 33 % | 20 % / 27 % | 7 % / 27 % |
+| 3 | $10^{-2}$ | 7 % / 7 % | 7 % / 0 % | 0 % / 0 % | 7 % / 0 % |
+| 5 | $10^{-4}$ | 0 % / **33 %** | 7 % / 20 % | 0 % / 7 % | 0 % / 27 % |
+| 5 | $\ge 10^{-3}$ | 0 % / 0 % | 0 % / 0 % | 0 % / 0 % | 0 % / 0 % |
+| 8 | tous | 0 % / 0 % | 0 % / 0 % | 0 % / 0 % | 0 % / 0 % |
+| condition vraie, $K$ = 3 / 5 / 8 | | 47 / 0 / 0 % | 47 / 7 / 0 % | 53 / 7 / 0 % | 47 / 7 / 0 % |
+| CRB médiane, $K$ = 3 / 5 / 8 ($\sigma = 10^{-4}$) | | **0,16** / 4,5 / 19 | 0,20 / **2,5** / **6,8** | 0,29 / 3,6 / 11 | 0,28 / 3,7 / 17 |
+
+**Réponse : non.** Le cylindre n'aide pas le Frank-Wolfe, ni pour beaucoup
+de sources, ni pour beaucoup de bruit.
+
+1. **Le Frank-Wolfe n'est jamais meilleur sur un cylindre que sur le cercle**,
+   même avec le $\lambda$ choisi en connaissant $K$ et des sources espacées.
+   Il plafonne à 67 % pour 3 sources à très faible bruit et tombe à 0 % dès 5
+   sources, quelle que soit la géométrie.
+2. **La condition de Duval–Peyré reste fausse** à partir de 5 sources (0 à
+   7 % des tirages). Les étages en hauteur améliorent un peu la marge (marge
+   relative médiane pour 3 sources : $-40$ pour le cercle, $-17$ pour le
+   cylindre bas, $-9$ sans capteur dans le plan, $+1{,}0$ pour le cylindre
+   haut), car le signal ne peut plus exploser près d'un
+   capteur. Mais ce gain ne se traduit pas en réussite.
+3. **Monter les capteurs dégrade l'information à petit nombre de sources** :
+   un capteur à la hauteur $h$ reçoit moins de signal, et le reçoit plus
+   « flou » (toutes les sources sont à peu près à la distance $h$). Pour
+   3 sources, la CRB passe de 0,16 (cercle) à 0,20, 0,28 et 0,29. À 5 ou
+   8 sources, la diversité des points de vue aide un peu (CRB divisée par 2
+   à 3 avec le cylindre bas), mais la CRB reste très au-dessus de la
+   tolérance : le problème reste insoluble pour toutes les méthodes.
+4. **ML est au moins aussi bon que le Frank-Wolfe dans toutes les cases**
+   (87 à 93 % contre 53 à 67 % pour 3 sources à $\sigma = 10^{-4}$).
+
+Ce qui limite, c'est le bruit de la source centrale et le nombre de sources,
+pas la position des capteurs en hauteur. Pour un vrai gain, il faudrait des
+capteurs **plus proches des sources** (à l'intérieur de $D$) ou un bruit
+plus faible, pas des capteurs plus loin du plan.
+
+### 5.7 Maximum de vraisemblance + BIC : études complémentaires et 3D
+
+Ces résultats sont détaillés dans `RAPPORT_ML_BIC.md` ; en bref :
+
+- **seuil de détection** : une source est vue dès que son rapport signal sur
+  bruit dépasse environ 3, exactement comme le prédit la théorie du BIC, avec
+  2 % de fausses alarmes sur du bruit seul ;
+- **résolution** : deux sources d'intensité 50 sont séparées à partir d'une
+  distance 1 ($\sigma = 10^{-5}$), 2 ($\sigma = 10^{-4}$) ou 4
+  ($\sigma = 10^{-3}$) ;
+- **niveau de bruit mal connu** : le surestimer d'un facteur 2 ne coûte
+  presque rien, le sous-estimer d'un facteur 2 crée des sources parasites ;
+- **nombre de capteurs** : la CRB décroît en $1/\sqrt M$ ; 1024 capteurs au
+  lieu de 64 font passer la réussite de 40 % à 70 % (3 sources,
+  $\sigma = 10^{-3}$) ;
+- **3D** (`ml3d.py`, cube $[0,10]^3$, 160 capteurs) : la méthode se
+  généralise sans modification et reste au niveau de la CRB ; avec des
+  capteurs sur une sphère, 1 à 2 sources sont retrouvées à
+  $\sigma = 10^{-3}$, 2 à 3 à $\sigma = 10^{-4}$ ; le BLASSO 3D du projet
+  échoue partout ; un seul cercle de capteurs ne suffit pas.
+
 ## 6. Où ça ne marche pas, et pourquoi
 
 ### 6.1 BLASSO standard avec le noyau $1/r^2$ : échec systématique
@@ -802,10 +916,14 @@ cœur, valeurs médianes.
 | `greedy_ml` (ML + BIC) | $n$ = 1 / 2 / 3 / 5, $\sigma = 10^{-4}$ | 0,06 / 0,12 / 0,19 / 0,42 s |
 | `greedy_ml`, 3 candidats + départ Prony | $n$ = 1 / 3 / 5 | 0,24 / 0,65 / 1,4 s |
 | `cramer_rao` | $K\le 30$ | moins de 0,01 s |
-| `pytest sparse_sources/tests` | 70 tests | environ 30 s |
+| `greedy_ml_nd` (3D, 160 capteurs) | $K$ = 1 / 2 / 3 / 5 | 0,2 à 0,7 / 1 à 2 / 3 / 7 à 11 s |
+| `pytest sparse_sources/tests` | 86 tests | environ 70 s |
 | `experiments.py` | tout | 336 s |
 | `experiments_1r2.py` | tout (20 tirages par $K$) | 391 s |
 | `experiments_projet.py` | tout (20 tirages par case) | 366 s |
+| `experiments_ml.py` | tout (20 tirages par case) | environ 4 min |
+| `experiments_cylindre.py` | tout (15 tirages par case) | environ 25 min (estimation, calcul interrompu par une mise en veille) |
+| `experiments_ml3d.py` | tout (8 tirages par case) | environ 10 min (estimation, idem) |
 
 Le Frank-Wolfe glissant est le plus rapide quand la condition tient (environ
 $K+1$ itérations). Le maximum de vraisemblance glouton est 3 à 10 fois plus
@@ -870,10 +988,14 @@ l'étape arrière. Il reste sous la demi-seconde pour 5 sources.
 
 ```bash
 pip install -e ".[dev]" scikit-learn
-pytest sparse_sources/tests                   # 70 tests, environ 30 s
+pytest sparse_sources/tests                   # 86 tests, environ 70 s
 python sparse_sources/experiments.py          # environ 6 min
 python sparse_sources/experiments_1r2.py      # environ 6,5 min
 python sparse_sources/experiments_projet.py   # scenario du projet
+python sparse_sources/experiments_ml.py       # etudes de ML + BIC
+python sparse_sources/experiments_cylindre.py # capteurs sur un cylindre
+python sparse_sources/experiments_ml3d.py     # sources en 3D
+python sparse_sources/tester_ml.py --help     # tester ML + BIC sur un tirage
 ```
 
 Toutes les graines sont fixées : les résultats sont reproductibles.
@@ -928,6 +1050,12 @@ BIC). Son erreur atteint la borne de Cramér–Rao : pour faire mieux, il faut
 changer les données (moins de bruit sur la source centrale, autre géométrie
 de capteurs), pas l'algorithme. Prony et Frank-Wolfe ne servent plus que de
 points de comparaison.
+
+Deux pistes testées depuis ne changent pas cette conclusion : des capteurs
+sur la paroi d'un cylindre n'aident pas le Frank-Wolfe, même avec le
+$\lambda$ optimal pour un nombre de sources connu (section 5.6) ; en 3D, ML +
+BIC reste la seule méthode qui fonctionne (section 5.7). Le rapport
+`RAPPORT_ML_BIC.md` détaille la méthode, ses tests et toutes ses limites.
 
 ## Références
 

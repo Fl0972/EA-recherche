@@ -21,10 +21,16 @@ Aucun fichier existant n'a été modifié ; le noyau et ses dérivées viennent 
 | `blasso.py` | `sliding_frank_wolfe` |
 | `hypotheses.py` | `check_hypotheses`, `hypotheses_after_fit` |
 | `ml.py` | `greedy_ml` (maximum de vraisemblance glouton, K par BIC), `cramer_rao`, `relative_noise_std` |
+| `ml3d.py` | `greedy_ml_nd`, `cramer_rao_nd` : la même méthode en dimension quelconque (sources en 3D) |
+| `tester_ml.py` | tester ML + BIC sur un tirage (2D ou 3D) : sources vraies / estimées, CRB, χ², figure |
 | `plotting.py` | style des figures |
 | `experiments.py` | expériences → `results/` (PNG + CSV) |
 | `experiments_1r2.py` | étude du noyau 1/r² → `results/r2_*` |
 | `experiments_projet.py` | scénario du projet (source centrale) → `results/projet_*` |
+| `experiments_ml.py` | études de ML + BIC (σ mal connu, détection, résolution, capteurs) → `results/ml_*` |
+| `experiments_cylindre.py` | capteurs sur la paroi d'un cylindre (`make_cylinder_setup`), K connu → `results/cylindre*` |
+| `experiments_ml3d.py` | sources en 3D → `results/ml3d*` |
+| `RAPPORT_ML_BIC.md` | rapport complet sur le maximum de vraisemblance + BIC |
 | `tests/` | pytest : `pytest sparse_sources/tests` |
 
 ## Appels
@@ -72,6 +78,7 @@ from sparse_sources import greedy_ml, relative_noise_std, cramer_rao
 s = relative_noise_std(y_brut, sigma)           # écart type du bruit par capteur
 ml = greedy_ml(m, s, setup=S, grid=grid)         # ml["z"], ml["I"], ml["K"], ml["chi2"]
 cramer_rao(z_true, I_true, s)["pos_std"]         # erreur minimale possible (simulation)
+# en 3D : from sparse_sources.ml3d import greedy_ml_nd ; greedy_ml_nd(m, s, capteurs, cube)
 
 # 5. Fiabilité a posteriori : hypothèses aux positions estimées
 hypotheses_after_fit(z_hat, I_hat, setup=S)["reliable"]
@@ -104,10 +111,14 @@ géométrie du projet (voir Résultats).
 ## Lancer
 
 ```bash
-pytest sparse_sources/tests                  # 70 tests, ~30 s
+pytest sparse_sources/tests                  # 86 tests, ~70 s
+python sparse_sources/tester_ml.py --comparer  # un tirage : ML + BIC, Prony, Frank-Wolfe
 python sparse_sources/experiments.py         # expériences générales (~6 min) → sparse_sources/results/
 python sparse_sources/experiments_1r2.py     # étude du noyau 1/r² (~6,5 min) → results/r2_*
 python sparse_sources/experiments_projet.py  # scénario du projet, Cramér-Rao → results/projet_*
+python sparse_sources/experiments_ml.py      # études de ML + BIC (~4 min) → results/ml_*
+python sparse_sources/experiments_cylindre.py  # capteurs sur un cylindre (~25 min)
+python sparse_sources/experiments_ml3d.py    # sources en 3D (~10 min)
 python sparse_sources/experiments.py --rapide --seulement hypotheses prony
 ```
 
@@ -128,6 +139,12 @@ localement par `experiments.py` ; les CSV sont versionnés.
 - **Comparaison avec Prony** (`reconstruct.py`, scénario du projet) : Prony
   est meilleur à σ = 10⁻⁴, le BLASSO pondéré à σ = 10⁻³ pour 2 sources ;
   tout échoue pour 5 sources ou σ = 10⁻².
+- **Maximum de vraisemblance + BIC** (`greedy_ml`) : meilleure méthode sur le
+  scénario du projet, erreur au niveau de la borne de Cramér-Rao, détection
+  conforme à la théorie du BIC ; généralisée en 3D (`ml3d.py`). Voir
+  `RAPPORT_ML_BIC.md`.
+- **Capteurs sur un cylindre** : n'aident pas le Frank-Wolfe, même avec le λ
+  optimal pour un K connu et des sources espacées.
 
 ## Limites observées
 
