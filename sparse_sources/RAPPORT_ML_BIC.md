@@ -740,6 +740,65 @@ méthode reste efficace en 3D.**
 5. **Coût** : 0,2 à 0,7 s pour une source, 1 à 2 s pour deux, 3 s pour trois,
    7 à 11 s pour cinq (grille de $21^3$ nœuds, 160 capteurs).
 
+### 6.8 Beaucoup de sources (jusqu'à 50)
+
+Expérience `beaucoup` de `experiments_ml.py` (`ml_beaucoup_directions.csv`,
+`ml_beaucoup_ml.csv`, `ml_beaucoup.png`, 5 tirages par cas). Sources tirées
+comme dans `config/` : positions uniformes, intensités uniformes sur le
+simplexe de somme 100.
+
+**Ce que les mesures contiennent.** Avec $K$ sources, il y a $3K$ paramètres
+à retrouver. On compte combien de « directions » de cet espace de paramètres
+les capteurs mesurent vraiment : ce sont les valeurs singulières de la
+matrice des dérivées du modèle (colonnes normalisées) qui dépassent
+$10^{-6}$ fois la plus grande. Le calcul est fait **sans bruit** : un bruit
+réaliste ($\sigma = 10^{-3}$) en laisserait encore moins.
+
+| sources $K$ | paramètres $3K$ | directions mesurables, 64 capteurs | 1024 capteurs | plus petite distance entre sources |
+|---|---|---|---|---|
+| 1 | 3 | 3 | 3 | |
+| 3 | 9 | 9 | 9 | 4,3 |
+| 5 | 15 | 15 | 15 | 2,7 |
+| 10 | 30 | 29 | 29 | 0,74 |
+| 20 | 60 | 46 | 47 | 0,62 |
+| 30 | 90 | 50 | 56 | 0,24 |
+| 50 | 150 | 56 | 71 | 0,15 |
+
+- Jusqu'à 5 sources, tous les paramètres sont mesurés. Au-delà, le nombre de
+  directions mesurables **plafonne autour de 50 à 70**, même avec 16 fois
+  plus de capteurs.
+- La raison : vu depuis le cercle, le signal en $1/r^2$ est très lisse. Les
+  capteurs voient bien les grandes structures (intensité totale, barycentre,
+  étalement), mais les détails fins sont écrasés. Des capteurs
+  supplémentaires sur le même cercle répètent presque la même information.
+- Avec 50 sources, il y a de plus 150 inconnues pour 64 mesures : le problème
+  n'a pas de solution unique, même sans bruit. Et les sources tirées au
+  hasard sont à environ 0,15 les unes des autres, alors que même deux
+  sources isolées ne sont séparées qu'à partir d'une distance de 2 à 4 avec
+  le bruit du projet.
+
+**Ce que ML + BIC retrouve** (64 capteurs, source centrale, médiane sur
+5 tirages) :
+
+| vraies sources | $\sigma$ | sources estimées | vraies sources retrouvées à moins de 0,5 | temps |
+|---|---|---|---|---|
+| 10 | $10^{-4}$ | 6 | 5 | 1,2 s |
+| 10 | $10^{-3}$ | 4 | 2 | 0,3 s |
+| 20 | $10^{-4}$ | 8 | 4 | 4,6 s |
+| 20 | $10^{-3}$ | 6 | 3 | 0,9 s |
+| 50 | $10^{-4}$ | 10 | 6 | 14 s |
+| 50 | $10^{-3}$ | 7 | 4 | 1,5 s |
+
+La méthode ne s'effondre pas : elle garde **les quelques sources que les
+données permettent de voir** (les plus intenses et les plus isolées) et
+n'invente pas les autres. Mais **aucune méthode ne peut retrouver 50 sources**
+avec ces mesures. Pour s'en approcher, il faudrait changer les mesures :
+capteurs proches des sources (à l'intérieur de $D$), bruit beaucoup plus
+faible, ou information a priori (par exemple des positions possibles
+connues, ce qui ne laisse que les intensités à estimer). On peut aussi viser
+des grandeurs globales (intensité totale, barycentre, carte de densité
+grossière) plutôt que chaque source.
+
 ## 7. Limites
 
 1. **Le bruit doit être connu.** La méthode utilise $s_i = \sigma y_i$. Un
@@ -767,7 +826,11 @@ méthode reste efficace en 3D.**
    à 11 s en 3D pour 5 sources. Pour $K\approx 20$ (configuration par défaut
    du projet), il faudrait limiter le glissement aux sources voisines de la
    nouvelle.
-6. **Configuration par défaut du projet** ($N\sim\mathrm{Poisson}(20)$,
+6. **Beaucoup de sources.** Au-delà d'une dizaine de sources, les capteurs
+   du cercle ne mesurent qu'environ 50 à 70 directions de l'espace des
+   paramètres (section 6.8) : 50 sources sont impossibles à retrouver,
+   quelle que soit la méthode.
+7. **Configuration par défaut du projet** ($N\sim\mathrm{Poisson}(20)$,
    $\sigma = 1\,\%$) : la CRB conjointe est comprise entre $10^4$ et $5\times 10^5$.
    Aucune méthode ne peut retrouver ces sources ; ML + BIC en retient 1 à 5,
    les plus intenses (compte rendu général, section 5.5).

@@ -31,6 +31,7 @@ Aucun fichier existant n'a été modifié ; le noyau et ses dérivées viennent 
 | `experiments_cylindre.py` | capteurs sur la paroi d'un cylindre (`make_cylinder_setup`), K connu → `results/cylindre*` |
 | `experiments_ml3d.py` | sources en 3D → `results/ml3d*` |
 | `RAPPORT_ML_BIC.md` | rapport complet sur le maximum de vraisemblance + BIC |
+| `COMPTE_RENDU_ML.md` | compte rendu court et pédagogique de ML + BIC (méthode, résultats, limites, 50 sources) |
 | `tests/` | pytest : `pytest sparse_sources/tests` |
 
 ## Appels
@@ -116,7 +117,7 @@ python sparse_sources/tester_ml.py --comparer  # un tirage : ML + BIC, Prony, Fr
 python sparse_sources/experiments.py         # expériences générales (~6 min) → sparse_sources/results/
 python sparse_sources/experiments_1r2.py     # étude du noyau 1/r² (~6,5 min) → results/r2_*
 python sparse_sources/experiments_projet.py  # scénario du projet, Cramér-Rao → results/projet_*
-python sparse_sources/experiments_ml.py      # études de ML + BIC (~4 min) → results/ml_*
+python sparse_sources/experiments_ml.py      # études de ML + BIC, dont 50 sources (~6 min) → results/ml_*
 python sparse_sources/experiments_cylindre.py  # capteurs sur un cylindre (~25 min)
 python sparse_sources/experiments_ml3d.py    # sources en 3D (~10 min)
 python sparse_sources/experiments.py --rapide --seulement hypotheses prony

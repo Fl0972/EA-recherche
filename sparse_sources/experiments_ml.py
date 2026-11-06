@@ -17,6 +17,8 @@ Expériences :
     resolution   deux sources d'intensité 50 à distance d : réussite et erreur
                  en fonction de d, comparées à la borne de Cramér-Rao.
     capteurs     nombre M de capteurs sur le cercle du projet (32 à 1024).
+    beaucoup     jusqu'à 50 sources : nombre de directions de l'espace des
+                 paramètres que les capteurs mesurent, et ce que ML retrouve.
 
 Sorties : sparse_sources/results/ml_*.csv et ml_*.png.
 """
@@ -271,15 +273,101 @@ def exp_sensors(n_seeds):
     save(fig, "ml_capteurs.png")
 
 
+def measurable_directions(z, I, sensors, rel=1e-6):
+    """
+    Nombre de directions de l'espace des paramètres (3K) que les capteurs
+    mesurent : valeurs singulières de D (colonnes normalisées, voir
+    ``cramer_rao``) supérieures à rel × la plus grande. Renvoie (n, cond).
+    """
+    from particle_sources.duval_peyre.kernel import InverseSquareKernel
+    k = InverseSquareKernel(sensors)
+    K, M = len(I), len(sensors)
+    D = np.hstack([k.phi(z).T, (k.grad(z) * I[:, None, None]).transpose(1, 0, 2)
+                   .reshape(M, 2 * K)])
+    sv = np.linalg.svd(D / np.linalg.norm(D, axis=0), compute_uv=False)
+    return int(np.sum(sv > rel * sv[0])), float(sv[0] / sv[-1])
+
+
+def found_within(z_true, z_hat, tol=0.5):
+    """Nombre de vraies sources ayant une source estimée à moins de tol (appariement 1-1)."""
+    from scipy.optimize import linear_sum_assignment
+    if len(z_hat) == 0:
+        return 0
+    C = np.linalg.norm(z_true[:, None] - np.asarray(z_hat)[None], axis=-1)
+    a, b = linear_sum_assignment(C)
+    return int(np.sum(C[a, b] < tol))
+
+
+def exp_many(n_seeds):
+    """Beaucoup de sources (jusqu'à 50) : ce que les mesures contiennent, ce que ML retrouve."""
+    print("\n[5] Beaucoup de sources")
+    lo, hi = SETUP.domain.lo, SETUP.domain.hi
+    Ks = [1, 3, 5, 10, 20, 30, 50]
+    rows = []
+    for M in [64, 1024]:
+        S = make_setup(h=0.0, n_sensors=M)
+        for K in Ks:
+            for seed in range(n_seeds):
+                r = np.random.default_rng(seed)
+                z = lo + (hi - lo) * r.random((K, 2))
+                I = 100.0 * r.dirichlet(np.ones(K))
+                n, cond = measurable_directions(z, I, S.sensors)
+                sep = float(np.min(np.linalg.norm(z[:, None] - z[None], axis=-1)
+                                   + np.eye(K) * 1e9)) if K > 1 else np.inf
+                rows.append({"M": M, "K": K, "seed": seed, "parametres": 3 * K,
+                             "directions_mesurables": n, "cond": cond, "sep_min": sep})
+            sel = [x for x in rows if (x["M"], x["K"]) == (M, K)]
+            print(f"  M = {M:4d}, K = {K:2d} : {3 * K:3d} paramètres, directions mesurables "
+                  f"(sv > 1e-6) {np.median([x['directions_mesurables'] for x in sel]):.0f}, "
+                  f"séparation min médiane {np.median([x['sep_min'] for x in sel]):.2f}")
+    write_csv(rows, OUT / "ml_beaucoup_directions.csv")
+
+    print("  ML + BIC (64 capteurs, source centrale, k_max = 60) :")
+    runs = []
+    for K in [10, 20, 50]:
+        for sigma in [1e-4, 1e-3]:
+            for seed in range(n_seeds):
+                r = np.random.default_rng(seed)
+                z = lo + (hi - lo) * r.random((K, 2))
+                I = 100.0 * r.dirichlet(np.ones(K))
+                m, s, _ = synth(z, I, sigma, r)
+                res = greedy_ml(m, s, setup=SETUP, grid=GRID, k_max=60)
+                runs.append({"K": K, "sigma": sigma, "seed": seed, "n_est": res["K"],
+                             "trouvees_a_0_5": found_within(z, res["z"]),
+                             "chi2_sur_M": res["chi2"] / SETUP.M, "temps": res["time"]})
+            sel = [x for x in runs if (x["K"], x["sigma"]) == (K, sigma)]
+            print(f"    K = {K:2d}, σ = {sigma:g} : K estimé {np.median([x['n_est'] for x in sel]):.0f}, "
+                  f"vraies sources retrouvées à 0,5 près "
+                  f"{np.median([x['trouvees_a_0_5'] for x in sel]):.0f}, temps médian "
+                  f"{np.median([x['temps'] for x in sel]):.1f} s")
+    write_csv(runs, OUT / "ml_beaucoup_ml.csv")
+
+    fig, ax = plt.subplots(figsize=(6.8, 4.0))
+    for k, M in enumerate([64, 1024]):
+        g = [[x for x in rows if (x["M"], x["K"]) == (M, K)] for K in Ks]
+        ax.plot(Ks, [np.median([x["directions_mesurables"] for x in y]) for y in g], "-o",
+                color=SERIES[k], lw=2, ms=5, label=f"directions mesurables, M = {M}")
+    ax.plot(Ks, [3 * K for K in Ks], ":", color=INK_MUTED, lw=1.5, label="paramètres 3K")
+    ax.set_xlabel("nombre de sources K")
+    ax.set_ylabel("nombre de directions")
+    ax.legend(fontsize=8, frameon=False)
+    style_axes(ax)
+    ax.set_title("Ce que mesure le cercle de capteurs (sans bruit, seuil 1e-6)", fontsize=10)
+    fig.tight_layout()
+    save(fig, "ml_beaucoup.png")
+
+
 def main():
     """Lance les expériences demandées."""
     sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     p.add_argument("--rapide", action="store_true", help="moins de tirages")
-    p.add_argument("--seulement", nargs="+", choices=["sigma_faux", "detection", "resolution", "capteurs"])
+    p.add_argument("--seulement", nargs="+", choices=["sigma_faux", "detection", "resolution", "capteurs",
+                                                  "beaucoup"])
     args = p.parse_args()
     n = 4 if args.rapide else 20
-    todo = set(args.seulement or ["sigma_faux", "detection", "resolution", "capteurs"])
+    todo = set(args.seulement or ["sigma_faux", "detection", "resolution", "capteurs",
+                                  "beaucoup"])
     OUT.mkdir(exist_ok=True)
     t0 = time.perf_counter()
     if "sigma_faux" in todo:
@@ -290,6 +378,8 @@ def main():
         exp_resolution(n)
     if "capteurs" in todo:
         exp_sensors(n)
+    if "beaucoup" in todo:
+        exp_many(max(n // 4, 2))
     print(f"\nTerminé en {time.perf_counter() - t0:.0f} s.")
 
 
