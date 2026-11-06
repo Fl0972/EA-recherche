@@ -67,9 +67,12 @@ SIGMAS = [1e-4, 3e-4, 1e-3, 3e-3, 1e-2]
 METHODS = ["prony", "sfw", "ml_bic", "ml_bic_multi"]
 
 
-def scenario(n, sigma, seed, central_factor=None, count="fixed"):
-    """Tirage du projet. Renvoie (cfg, sources, y brut, y sans la source centrale)."""
-    over = [f"seed={seed}", f"sensors.noise.params.sigma={sigma}"]
+def scenario(n, sigma, seed, central_factor=None, count="fixed", extra=()):
+    """
+    Tirage du projet. Renvoie (cfg, sources, y brut, y sans la source centrale).
+    ``extra`` : surcharges de config supplémentaires (par ex. nombre de capteurs).
+    """
+    over = [f"seed={seed}", f"sensors.noise.params.sigma={sigma}", *extra]
     if count == "fixed":
         over += ["sources.count_law.name=fixed", f"sources.count_law.params={{n: {n}}}"]
     if central_factor is not None:
