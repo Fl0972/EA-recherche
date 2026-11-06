@@ -185,6 +185,10 @@ class Setup:
         Poids par capteur w_i (blanchiment, voir ``WhitenedKernel``). Si
         donnés, φ est remplacé par w ⊙ φ AVANT la pondération ||φ||^α, et les
         mesures passées aux algorithmes doivent être w ⊙ m (``whiten``).
+    heights : np.ndarray (M,) ou None
+        Hauteur propre à chaque capteur (prioritaire sur ``h``) : capteurs
+        sur plusieurs étages, par exemple sur la paroi d'un cylindre
+        (``make_cylinder_setup``). Même noyau G = 1 / (||x_i - z||² + h_i²).
     """
     sensors: np.ndarray
     domain: Box
@@ -193,10 +197,16 @@ class Setup:
     normalize: bool = False
     alpha: float | None = None
     weights: np.ndarray | None = field(default=None, compare=False, repr=False)
+    heights: np.ndarray | None = field(default=None, compare=False, repr=False)
 
     def __post_init__(self):
-        """Convertit les capteurs en tableau float (M, 2)."""
+        """Convertit les capteurs en tableau float (M, 2) et valide poids et hauteurs."""
         object.__setattr__(self, "sensors", np.atleast_2d(np.asarray(self.sensors, float)))
+        if self.heights is not None:
+            hh = np.asarray(self.heights, float).reshape(-1)
+            if hh.shape != (len(self.sensors),) or np.any(hh < 0):
+                raise ValueError("heights : M hauteurs positives ou nulles attendues")
+            object.__setattr__(self, "heights", hh)
         if self.weights is not None:
             w = np.asarray(self.weights, float).reshape(-1)
             if w.shape != (len(self.sensors),) or np.any(w <= 0):
@@ -207,8 +217,8 @@ class Setup:
 
     @cached_property
     def base_kernel(self):
-        """Noyau du projet, avec eps = h (jamais normalisé), blanchi si ``weights``."""
-        k = InverseSquareKernel(self.sensors, eps=self.h)
+        """Noyau du projet, avec eps = h ou h_i (jamais normalisé), blanchi si ``weights``."""
+        k = InverseSquareKernel(self.sensors, eps=self.h if self.heights is None else self.heights)
         return WhitenedKernel(k, self.weights) if self.weights is not None else k
 
     @property
@@ -226,17 +236,25 @@ class Setup:
     def with_normalization(self, normalize: bool = True) -> "Setup":
         """Même géométrie, noyau normalisé (α = 1) ou brut (α = 0)."""
         return Setup(self.sensors, self.domain, self.h, self.layout, normalize,
-                     weights=self.weights)
+                     weights=self.weights, heights=self.heights)
 
     def with_power(self, alpha: float) -> "Setup":
         """Même géométrie, pondération ||φ||^α."""
         return Setup(self.sensors, self.domain, self.h, self.layout, alpha != 0, float(alpha),
-                     self.weights)
+                     self.weights, self.heights)
 
     def with_weights(self, weights) -> "Setup":
         """Même géométrie et pondération, capteurs blanchis par ``weights`` (None : aucun)."""
         return Setup(self.sensors, self.domain, self.h, self.layout, self.normalize, self.alpha,
-                     weights)
+                     weights, self.heights)
+
+    @property
+    def height_label(self) -> str:
+        """Description courte des hauteurs, pour les titres de figures."""
+        if self.heights is None:
+            return f"h = {self.h:g}"
+        levels = np.unique(np.round(self.heights, 6))
+        return "h ∈ {" + ", ".join(f"{v:g}" for v in levels) + "}"
 
     def whiten(self, m) -> np.ndarray:
         """Mesures blanchies w ⊙ m (m inchangé si pas de poids)."""
@@ -317,6 +335,35 @@ def make_setup(config_dir=None, n_sensors: int | None = None, h: float | None = 
         layout = CircleSensors(box.center, radius_factor * box.circumradius, n, t0)
     return Setup(layout.positions, box, cfg.eps if h is None else float(h), layout, normalize,
                  alpha)
+
+
+def make_cylinder_setup(levels, n_per_level: int, radius_factor: float = 1.0,
+                        stagger: bool = True, config_dir=None, overrides=(),
+                        normalize: bool = False, alpha: float | None = None) -> Setup:
+    """
+    Capteurs sur la paroi d'un cylindre d'axe vertical passant par le centre
+    de D : un cercle de ``n_per_level`` capteurs à chaque hauteur de
+    ``levels``. Le rayon est celui du cercle des capteurs du projet (cercle
+    circonscrit à D) multiplié par ``radius_factor``.
+
+    Les sources étant dans le plan, un capteur à la hauteur -h mesure
+    exactement la même chose qu'à +h : seules les hauteurs |h| comptent.
+    ``stagger`` décale chaque étage d'une fraction de pas angulaire, pour que
+    les capteurs de deux étages ne soient pas à la verticale les uns des autres.
+    Le noyau est inchangé : G = 1 / (||x_i - z||² + h_i²).
+    """
+    cfg = load_config(config_dir or DEFAULT_CONFIG_DIR, overrides)
+    box = cfg.box
+    t0 = getattr(cfg.sensors, "t0", 0.0)
+    levels = np.abs(np.asarray(levels, float).reshape(-1))
+    pos, hh = [], []
+    for j, h in enumerate(levels):
+        shift = 2 * np.pi * j / (n_per_level * len(levels)) if stagger else 0.0
+        ring = CircleSensors(box.center, radius_factor * box.circumradius, n_per_level,
+                             t0 + shift)
+        pos.append(ring.positions)
+        hh.append(np.full(n_per_level, h))
+    return Setup(np.vstack(pos), box, 0.0, None, normalize, alpha, None, np.concatenate(hh))
 
 
 _DEFAULT: Setup | None = None

@@ -254,7 +254,7 @@ def check_hypotheses(z_sources, lam: float | None = None, sigma=None,
         tag = "VÉRIFIÉE" if res["non_degenerate"] else "NON vérifiée"
         weight = f"pondération ||φ||^{setup.power:g}" if setup.power else "noyau brut"
         certificate_map(ax, grid.xs, grid.ys, vals, setup.sensors, z, box,
-                        title=f"Pré-certificat η_V, K = {K}, h = {setup.h:g}, {weight}\n"
+                        title=f"Pré-certificat η_V, K = {K}, {setup.height_label}, {weight}\n"
                               f"condition {tag} (marge = {margin:.3g})",
                         estimates=estimates)
         ax.scatter(*res["argmax"], marker="D", s=40, color="#eda100", zorder=6,
