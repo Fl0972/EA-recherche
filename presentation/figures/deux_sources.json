@@ -1,0 +1,371 @@
+{
+ "fixed": [
+  {
+   "ratio": 1.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 3.0865208377698204e-09,
+   "err_faint": 2.458621466017151e-09,
+   "success": true,
+   "n_iter": 1798,
+   "final_loss": 9.935916912948155e-21,
+   "time_ms": 911.2610000011045,
+   "condition": 251.18480700443757
+  },
+  {
+   "ratio": 1.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 0.0,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 25.722499998664716,
+   "condition": 251.18480700443757
+  },
+  {
+   "ratio": 1.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 4.440892098500626e-16,
+   "err_faint": 0.0,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 32.98999999969965,
+   "condition": 251.18480700443757
+  },
+  {
+   "ratio": 3.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 2.0056307533886377e-09,
+   "err_faint": 5.27814169306792e-09,
+   "success": true,
+   "n_iter": 2702,
+   "final_loss": 9.60424166626083e-21,
+   "time_ms": 1441.0067000026174,
+   "condition": 318.61645699302386
+  },
+  {
+   "ratio": 3.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 4.440892098500626e-16,
+   "err_faint": 0.0,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 14.375499999005115,
+   "condition": 318.61645699302386
+  },
+  {
+   "ratio": 3.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 0.0,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 21.402200000011362,
+   "condition": 318.61645699302386
+  },
+  {
+   "ratio": 10.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 1.3765417339213479e-09,
+   "err_faint": 1.5817333283215973e-08,
+   "success": true,
+   "n_iter": 11059,
+   "final_loss": 9.987135863146295e-21,
+   "time_ms": 5705.564900003083,
+   "condition": 1085.6581679015171
+  },
+  {
+   "ratio": 10.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 9.930136612989092e-16,
+   "err_faint": 8.881784197001252e-16,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 66.50459999946179,
+   "condition": 1085.6581679015171
+  },
+  {
+   "ratio": 10.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 1.7763568394002505e-15,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 17.48349999979837,
+   "condition": 1085.6581679015171
+  },
+  {
+   "ratio": 30.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 0.19203955664100703,
+   "err_faint": 4.718612193447341,
+   "success": false,
+   "n_iter": 20000,
+   "final_loss": 6.278832142456274e-05,
+   "time_ms": 11390.784899998835,
+   "condition": 7657.906584088003
+  },
+  {
+   "ratio": 30.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 4.440892098500626e-16,
+   "err_faint": 2.5121479338940403e-15,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 42.12510000070324,
+   "condition": 7657.906584088003
+  },
+  {
+   "ratio": 30.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 1.7763568394002505e-15,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 21.230399997875793,
+   "condition": 7657.906584088003
+  },
+  {
+   "ratio": 100.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 0.41739103551142714,
+   "err_faint": 8.80202865570736,
+   "success": false,
+   "n_iter": 20000,
+   "final_loss": 1.480955452920812e-05,
+   "time_ms": 10850.631299999804,
+   "condition": 82484.91086079476
+  },
+  {
+   "ratio": 100.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 4.440892098500626e-16,
+   "err_faint": 7.160723346098895e-15,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 72.16960000005201,
+   "condition": 82484.91086079476
+  },
+  {
+   "ratio": 100.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 1.434896150467636e-14,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 16.046500000811648,
+   "condition": 82484.91086079476
+  },
+  {
+   "ratio": 300.0,
+   "method": "Descente de gradient",
+   "n_sources": 2,
+   "err_strong": 0.26762684586543906,
+   "err_faint": 9.214192949496262,
+   "success": false,
+   "n_iter": 20000,
+   "final_loss": 1.7276791352884166e-06,
+   "time_ms": 10926.127999999153,
+   "condition": 740033.6231441941
+  },
+  {
+   "ratio": 300.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_sources": 2,
+   "err_strong": 0.002342635706674725,
+   "err_faint": 0.3140199664957182,
+   "success": false,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 123.52190000092378,
+   "condition": 740033.6231441941
+  },
+  {
+   "ratio": 300.0,
+   "method": "Prony + max. vraisemblance",
+   "n_sources": 2,
+   "err_strong": 0.0,
+   "err_faint": 4.782987168225453e-15,
+   "success": true,
+   "n_iter": null,
+   "final_loss": null,
+   "time_ms": 19.074200001341524,
+   "condition": 740033.6231441941
+  }
+ ],
+ "random": [
+  {
+   "ratio": 1.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.95,
+   "median_err_faint": 7.903707804935868e-09
+  },
+  {
+   "ratio": 1.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 3.3306690738754696e-16
+  },
+  {
+   "ratio": 1.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 4.440892098500626e-16
+  },
+  {
+   "ratio": 3.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.85,
+   "median_err_faint": 7.929654562122248e-08
+  },
+  {
+   "ratio": 3.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 8.881784197001252e-16
+  },
+  {
+   "ratio": 3.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 8.881784197001252e-16
+  },
+  {
+   "ratio": 10.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.55,
+   "median_err_faint": 0.041328805626849756
+  },
+  {
+   "ratio": 10.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 2.9586456219059e-15
+  },
+  {
+   "ratio": 10.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 1.2181286152945455e-15
+  },
+  {
+   "ratio": 30.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.2,
+   "median_err_faint": 2.7759138571418784
+  },
+  {
+   "ratio": 30.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 2.5883415964972078e-15
+  },
+  {
+   "ratio": 30.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 3.0324308063472704e-15
+  },
+  {
+   "ratio": 100.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.05,
+   "median_err_faint": 5.244060832815226
+  },
+  {
+   "ratio": 100.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 0.9,
+   "median_err_faint": 1.7240919448675333e-14
+  },
+  {
+   "ratio": 100.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 1.1426652190578005e-14
+  },
+  {
+   "ratio": 300.0,
+   "method": "Descente de gradient",
+   "n_trials": 20,
+   "success_rate": 0.0,
+   "median_err_faint": 5.813362508030613
+  },
+  {
+   "ratio": 300.0,
+   "method": "Gauss-Newton (m\u00eame init.)",
+   "n_trials": 20,
+   "success_rate": 0.75,
+   "median_err_faint": 3.620660065669435e-14
+  },
+  {
+   "ratio": 300.0,
+   "method": "Prony + max. vraisemblance",
+   "n_trials": 20,
+   "success_rate": 1.0,
+   "median_err_faint": 4.322696136398533e-14
+  }
+ ],
+ "positions": [
+  [
+   3.0,
+   6.0
+  ],
+  [
+   6.5,
+   15.0
+  ]
+ ],
+ "init": [
+  [
+   4.0,
+   9.0
+  ],
+  [
+   6.0,
+   11.0
+  ]
+ ],
+ "max_iter": 20000,
+ "success_tol": 0.1,
+ "n_sensors": 64
+}

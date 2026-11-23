@@ -72,6 +72,20 @@ Une nouvelle méthode (par ex. un réseau entraîné) s'écrit comme une fonctio
 `(y, problem: InverseProblem) -> Sources`, s'enregistre dans
 `config/registry.py`, et s'ajoute à la liste `methods` du banc d'essai.
 
+## Cas test à deux sources (comparaison avec l'industriel)
+
+```bash
+python scripts/two_sources.py
+python scripts/two_sources.py --set two_sources.random_trials.n=0   # cas fixe seul (~1 min)
+```
+
+Deux sources, l'une x fois plus intense que l'autre, reconstruites par
+descente de gradient (méthode de l'industriel : réussite annoncée pour
+x = 10, échec pour x = 100). Comparaison avec Gauss-Newton depuis la même
+initialisation et avec Prony + maximum de vraisemblance. Paramètres dans
+`config/two_sources.yaml` ; sorties dans `outputs/two_sources/` :
+`fixed_case.csv`, `random_trials.csv`, `two_sources.png`, `config.yaml`.
+
 ## Configuration
 
 Tous les paramètres sont dans le dossier `config/`, un fichier par étape :
@@ -82,6 +96,7 @@ Tous les paramètres sont dans le dossier `config/`, un fichier par étape :
 | `sensors.yaml` | géométrie des capteurs, bruit de mesure |
 | `reconstruction.yaml` | méthode d'inversion et ses paramètres |
 | `visualization.yaml` | options d'affichage, chemin d'enregistrement de la figure |
+| `two_sources.yaml` | cas test à deux sources (scripts/two_sources.py) |
 
 Chaque loi ou méthode s'écrit `{name: ..., params: {...}}` ; les noms
 disponibles sont listés en commentaire dans chaque fichier (et dans
@@ -124,16 +139,19 @@ src/particle_sources/
 ├── inversion/         Problème inverse : méthodes (y, InverseProblem) -> Sources
 │   ├── problem.py       InverseProblem : ce que l'inversion sait (capteurs, bruit, ...)
 │   ├── prony.py         méthode de Prony (formule directe)
-│   └── likelihood.py    affinage par maximum de vraisemblance, choix de N (BIC)
+│   ├── likelihood.py    affinage par maximum de vraisemblance, choix de N (BIC)
+│   └── gradient_descent.py descente de gradient (méthode de l'industriel)
 ├── benchmark/         Évaluation des méthodes
 │   ├── metrics.py       association des sources, OSPA, erreurs
 │   ├── crb.py           borne de Cramér-Rao
-│   └── runner.py        balayage d'un paramètre, comparaison des méthodes
+│   ├── runner.py        balayage d'un paramètre, comparaison des méthodes
+│   └── intensity_ratio.py cas test à deux sources de rapport d'intensité x
 ├── dataset/           Jeux de données pour l'apprentissage
 └── visualization/     Affichage uniquement (matplotlib)
     ├── field_map.py     carte de Phi, sources, domaine
     ├── sensors_plot.py  capteurs et profil sur le cercle
-    └── figures.py       figures complètes
+    ├── figures.py       figures complètes
+    └── intensity_ratio_plot.py figures du cas test à deux sources
 scripts/               Points d'entrée : expériences reproductibles
 tests/                 Tests unitaires (pytest)
 ```

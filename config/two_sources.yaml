@@ -1,0 +1,53 @@
+# Cas test de l'industriel (scripts/two_sources.py) : deux sources, la
+# première x fois plus intense que la seconde, reconstruites par descente de
+# gradient. Selon eux : réussite pour x = 10, échec pour x = 100.
+#
+# Le domaine, les capteurs et sources.total_intensity suivent les autres
+# fichiers de config. La source centrale n'est PAS ajoutée (absente de leur cas).
+
+two_sources:
+  # [[x, y] de la source forte, [x, y] de la source faible]
+  # (éviter deux positions symétriques par rapport au centre du domaine : pour
+  # x = 1, les deux sources fusionnées au centre sont alors un point stationnaire)
+  positions: [[3, 6], [6.5, 15]]
+
+  # Rapports d'intensité forte / faible testés
+  ratios: [1, 3, 10, 30, 100, 300]
+
+  # Bruit de mesure (mêmes noms que sensors.yaml). Leur cas : sans bruit.
+  noise:
+    name: none
+    params: {}
+
+  # Initialisation commune de la descente et de Gauss-Newton (cas fixe) :
+  # positions de départ ; intensités égales, de somme total_intensity
+  init:
+    positions: [[4, 9], [6, 11]]
+
+  # Descente de gradient
+  #   max_iter : budget d'itérations
+  #   step     : "armijo" (recherche linéaire) ou un pas fixe (ex. 0.3), en
+  #              paramètres normalisés (positions dans [0, 1], intensités / I_tot)
+  #   loss_tol : arrêt quand la perte relative passe sous ce seuil
+  #   max_move : déplacement max d'un paramètre normalisé par itération
+  descent:
+    max_iter: 20000
+    step: armijo
+    loss_tol: 1.0e-20
+    max_move: 0.05
+
+  # Une méthode réussit si chaque source est retrouvée à moins de success_tol
+  # (unités de longueur ; le domaine fait 10 x 20)
+  success_tol: 0.1
+
+  # Rapports dont on trace les trajectoires de la descente
+  show_ratios: [10, 100]
+
+  # Essais à positions et initialisation aléatoires (n = 0 pour les sauter ;
+  # jusqu'à ~10 s par essai et par rapport pour la descente non convergée)
+  random_trials:
+    n: 20
+    seed: 0
+
+  # Dossier de sortie (relatif à la racine du projet)
+  output_dir: outputs/two_sources

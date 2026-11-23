@@ -1,0 +1,285 @@
+{
+ "central": [
+  null,
+  39.99999999999999,
+  48.33495639629845
+ ],
+ "missed": {
+  "n": 300,
+  "under": 129,
+  "over": 6,
+  "median_missed": 7.372675813525961,
+  "median_all": 22.186396212437558,
+  "frac_small": 0.030107526881720432
+ },
+ "bench": {
+  "1.0": [
+   {
+    "sweep_value": 1e-05,
+    "method": "Prony",
+    "n_accuracy": 0.99,
+    "ospa": 0.01807710843941799,
+    "position_error": 0.0005482370820056696,
+    "intensity_error": 0.006908133079718937,
+    "position_ratio": 1.2681499775777896,
+    "intensity_ratio": 0.9517589580485335,
+    "time_ms": 0.9316864993888885
+   },
+   {
+    "sweep_value": 1e-05,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.99,
+    "ospa": 0.02122868831776138,
+    "position_error": 0.0004800189031207416,
+    "intensity_error": 0.006729660850332664,
+    "position_ratio": 0.8747633756284519,
+    "intensity_ratio": 0.8506871913058716,
+    "time_ms": 123.72004099968763
+   },
+   {
+    "sweep_value": 1e-05,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.0005656829732668832,
+    "intensity_error": 0.0038790416896848545,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Prony",
+    "n_accuracy": 0.95,
+    "ospa": 0.07177441670698148,
+    "position_error": 0.004589877992320081,
+    "intensity_error": 0.05439810695486358,
+    "position_ratio": 1.2130358011351519,
+    "intensity_ratio": 0.8461876658280778,
+    "time_ms": 0.8651695006119553
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.99,
+    "ospa": 0.03924886109045121,
+    "position_error": 0.004313368146255679,
+    "intensity_error": 0.053204309634239166,
+    "position_ratio": 0.8213215276484083,
+    "intensity_ratio": 0.671405913963694,
+    "time_ms": 118.72556050038838
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.00565682967666622,
+    "intensity_error": 0.038790416512823826,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Prony",
+    "n_accuracy": 0.895,
+    "ospa": 0.17278671314754263,
+    "position_error": 0.037485046114129734,
+    "intensity_error": 0.46004650864551877,
+    "position_ratio": 1.161620147495492,
+    "intensity_ratio": 0.6963781929820054,
+    "time_ms": 0.8487479999894276
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.935,
+    "ospa": 0.12641626474995266,
+    "position_error": 0.030284657299527257,
+    "intensity_error": 0.03194207796619253,
+    "position_ratio": 0.8168392369517932,
+    "intensity_ratio": 0.5356948728479239,
+    "time_ms": 118.1042399998114
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.056568240764132686,
+    "intensity_error": 0.3879037811037017,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Prony",
+    "n_accuracy": 0.775,
+    "ospa": 0.5273518340987757,
+    "position_error": 0.3002601590568738,
+    "intensity_error": 4.238532329830917,
+    "position_ratio": 1.2800730983179107,
+    "intensity_ratio": 7202617.477568239,
+    "time_ms": 0.8304639992275042
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.865,
+    "ospa": 0.3817938113635334,
+    "position_error": 0.25280541168961584,
+    "intensity_error": 0.0019879486591278805,
+    "position_ratio": 0.7827848929769998,
+    "intensity_ratio": 0.49501781064578904,
+    "time_ms": 124.65803050028626
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.5656264135099497,
+    "intensity_error": 3.878653844079729,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   }
+  ],
+  "3.0": [
+   {
+    "sweep_value": 1e-05,
+    "method": "Prony",
+    "n_accuracy": 0.805,
+    "ospa": 0.2464336330869226,
+    "position_error": 0.0038107884212934652,
+    "intensity_error": 0.03514624619906925,
+    "position_ratio": 1.6455803340881618,
+    "intensity_ratio": 1.378820448860997,
+    "time_ms": 1.024576000563684
+   },
+   {
+    "sweep_value": 1e-05,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.88,
+    "ospa": 0.18956458817587127,
+    "position_error": 0.0022719079519248784,
+    "intensity_error": 0.02454592059181948,
+    "position_ratio": 0.8649465070388939,
+    "intensity_ratio": 0.8481765862837227,
+    "time_ms": 87.6894960005302
+   },
+   {
+    "sweep_value": 1e-05,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.005301643257705237,
+    "intensity_error": 0.06090864936423558,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Prony",
+    "n_accuracy": 0.615,
+    "ospa": 0.5297800934878997,
+    "position_error": 0.018395723770765336,
+    "intensity_error": 0.18128888767541795,
+    "position_ratio": 1.4235194164387879,
+    "intensity_ratio": 1.1487528256115094,
+    "time_ms": 1.0102734989777673
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.78,
+    "ospa": 0.35277415049664007,
+    "position_error": 0.016792623649585024,
+    "intensity_error": 0.15474310551154602,
+    "position_ratio": 0.8103868652797304,
+    "intensity_ratio": 0.7209352179491769,
+    "time_ms": 106.30404700059444
+   },
+   {
+    "sweep_value": 0.0001,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.05301643205218935,
+    "intensity_error": 0.6090864876123839,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Prony",
+    "n_accuracy": 0.365,
+    "ospa": 0.9610636951572809,
+    "position_error": 0.04677976374407345,
+    "intensity_error": 0.7613967330142444,
+    "position_ratio": 1.1735632083579919,
+    "intensity_ratio": 0.9898884409828662,
+    "time_ms": 0.9884240000974387
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.59,
+    "ospa": 0.6618608243971211,
+    "position_error": 0.09105632930965389,
+    "intensity_error": 0.664115931944194,
+    "position_ratio": 0.7264539904634961,
+    "intensity_ratio": 0.6101750349750433,
+    "time_ms": 105.24181899985706
+   },
+   {
+    "sweep_value": 0.001,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 0.5301637956599589,
+    "intensity_error": 6.090858846176763,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Prony",
+    "n_accuracy": 0.22,
+    "ospa": 1.4121991240459215,
+    "position_error": 0.1531373311686346,
+    "intensity_error": 3.621132801362762,
+    "position_ratio": 1.0871651078259315,
+    "intensity_ratio": 3.504980375231464,
+    "time_ms": 0.9635410005284939
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Prony + max. vraisemblance",
+    "n_accuracy": 0.335,
+    "ospa": 1.16921615399908,
+    "position_error": 0.2095031318604849,
+    "intensity_error": 2.078484022577328,
+    "position_ratio": 0.7320350550019297,
+    "intensity_ratio": 0.7666977411997912,
+    "time_ms": 133.0898655000783
+   },
+   {
+    "sweep_value": 0.01,
+    "method": "Borne de Cram\u00e9r-Rao",
+    "n_accuracy": NaN,
+    "ospa": NaN,
+    "position_error": 5.301113173420749,
+    "intensity_error": 60.90255941886443,
+    "position_ratio": NaN,
+    "intensity_ratio": NaN,
+    "time_ms": NaN
+   }
+  ]
+ }
+}

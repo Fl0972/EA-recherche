@@ -8,7 +8,7 @@ de l'ajouter au dictionnaire correspondant.
 from functools import partial
 
 from ..generation import count_laws, intensity_laws, position_laws
-from ..inversion import prony, prony_mle
+from ..inversion import gradient_descent_method, prony, prony_mle
 from ..sensors import CircleSensors, noise
 
 COUNT_LAWS = {
@@ -43,6 +43,7 @@ NOISE_MODELS = {
 INVERSION_METHODS = {
     "prony": lambda **params: partial(prony, **params),
     "prony_mle": lambda **params: partial(prony_mle, **params),
+    "gradient_descent": lambda **params: partial(gradient_descent_method, **params),
 }
 
 

@@ -16,6 +16,11 @@ reconstruction:
   #       Prony pour N = 1..max_sources, chacun affiné par maximum de
   #       vraisemblance (positions dans le domaine, intensités >= 0,
   #       somme = total_intensity) ; N choisi par critère BIC.
+  #   gradient_descent  {n_sources, max_iter, step, seed}
+  #       Descente de gradient projetée sur les moindres carrés (méthode de
+  #       l'industriel), N imposé, initialisation aléatoire (graine `seed`).
+  #       step : "armijo" (recherche linéaire) ou pas fixe. Lente quand les
+  #       intensités sont très inégales (voir scripts/two_sources.py).
   method:
     name: prony_mle
     params: {max_sources: 6}
