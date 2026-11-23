@@ -1,0 +1,6 @@
+   cercle (projet) | ML + BIC                       moyenne 0.494   1.00 0.87 0.63 0.30 0.17 0.00
+   cercle (projet) | ML + BIC + division            moyenne 0.511   1.00 0.87 0.63 0.33 0.23 0.00
+   bord de D (marge 0,5) | ML + BIC                 moyenne 0.650   0.93 0.93 0.80 0.60 0.50 0.13
+   bord de D (marge 0,5) | ML + BIC + division      moyenne 0.639   0.90 0.93 0.80 0.60 0.47 0.13
+   D-optimal hors de D | ML + BIC                   moyenne 0.694   1.00 0.93 0.90 0.57 0.53 0.23
+   D-optimal hors de D | ML + BIC + division        moyenne 0.700   1.00 0.93 0.90 0.57 0.57 0.23

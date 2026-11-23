@@ -1,0 +1,1081 @@
+geometrie,n,sigma,methode,n_est,exact,err_pos,err_int,reussite,sep_min,cle
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00653924,0.000777456,True,5.3067,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00653924,0.000777453,True,5.3067,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0017848,0.00109151,True,10.8337,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0017848,0.00109151,True,10.8337,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0177334,0.0092679,True,9.65745,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0177334,0.0092679,True,9.65745,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0290066,0.00782272,True,9.78972,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0290066,0.00782272,True,9.78972,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0138817,0.00743927,True,2.72439,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0138817,0.00743927,True,2.72439,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00606184,0.000671199,True,12.6363,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00606184,0.000671199,True,12.6363,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.169552,0.0535955,True,4.89122,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.169552,0.0535955,True,4.89122,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0902577,0.0523302,True,6.29362,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0902577,0.0523302,True,6.29362,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.125012,0.275203,True,0.844288,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.125012,0.275203,True,0.844288,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.115762,0.00994557,True,8.3758,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.115762,0.00994557,True,8.3758,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0975975,0.00571915,True,7.83433,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0975975,0.00571915,True,7.83433,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00267669,0.000710381,True,12.3961,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00267669,0.000710381,True,12.3961,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00924608,0.00207232,True,7.91402,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00924608,0.00207232,True,7.91402,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0186908,0.00532031,True,6.80128,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0186908,0.00532031,True,6.80128,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0147667,0.00255779,True,6.17826,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0147667,0.00255779,True,6.17826,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00541164,0.00509267,True,5.1826,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00541164,0.00509267,True,5.1826,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0819719,0.030845,True,5.80939,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0819719,0.030845,True,5.80939,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.131044,0.108728,True,2.74467,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.131044,0.108728,True,2.74467,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0240007,0.00125979,True,6.67872,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0240007,0.00125979,True,6.67872,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0107481,0.00351727,True,9.59565,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0107481,0.00351727,True,9.59565,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0706825,0.00872976,True,9.62921,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0706825,0.00872976,True,9.62921,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00420357,0.00035381,True,12.7839,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00420357,0.00035381,True,12.7839,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0240873,0.0102386,True,6.41878,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0240873,0.0102386,True,6.41878,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.000454535,0.000362055,True,8.17382,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.000454535,0.000362055,True,8.17382,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00202518,0.000960525,True,8.5532,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00202518,0.000960525,True,8.5532,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00543082,0.00495716,True,19.8663,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00543082,0.00495715,True,19.8663,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.00932569,0.00650479,True,5.13793,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.00932569,0.00650479,True,5.13793,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0754632,0.0317651,True,2.2508,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0754632,0.0317651,True,2.2508,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.029706,0.00795279,True,4.99479,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.029706,0.00795279,True,4.99479,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.0001,ML + BIC,2,True,0.0956943,0.016477,True,3.76354,cercle (projet) | ML + BIC
+cercle (projet),2,0.0001,ML + BIC + division,2,True,0.0956943,0.016477,True,3.76354,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.118404,0.0412037,True,11.8143,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.118404,0.0412037,True,11.8143,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.238387,0.0185581,True,6.35529,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.238387,0.0185581,True,6.35529,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.252098,0.0121757,True,7.86007,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.252098,0.0121757,True,7.86007,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.544464,0.101974,True,7.90771,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.544464,0.101974,True,7.90771,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.156483,0.0131898,True,4.37814,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.156483,0.0131898,True,4.37814,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.337024,0.134181,True,2.78521,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.337024,0.134181,True,2.78521,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.0426386,0.00639133,True,16.4811,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.0426386,0.00639132,True,16.4811,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.454163,0.191024,True,4.15234,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.454163,0.191024,True,4.15234,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.184516,0.0935332,True,5.08639,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.184516,0.0935332,True,5.08639,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.0920198,0.0516141,True,2.50518,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.0920198,0.0516141,True,2.50518,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.200894,0.0450065,True,10.1023,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.200894,0.0450065,True,10.1023,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.118188,0.0357337,True,4.40909,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.118188,0.0357337,True,4.40909,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,1.03089,0.362329,False,3.46065,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,1.03089,0.362329,False,3.46065,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.307503,0.0589784,True,7.18131,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.307503,0.0589784,True,7.18131,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.307858,0.196688,True,7.39959,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.307858,0.196688,True,7.39959,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.177008,0.00918503,True,11.3777,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.177008,0.00918503,True,11.3777,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,1,False,0.170938,0.112336,False,2.24204,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,1,False,0.170938,0.112336,False,2.24204,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.139662,0.0114374,True,11.3128,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.139662,0.0114374,True,11.3128,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,1,False,0.0704334,0.0133301,False,4.79829,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,1,False,0.0704334,0.0133301,False,4.79829,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.0145818,0.00149891,True,18.17,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.0145818,0.00149891,True,18.17,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.126181,0.066953,True,2.52043,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.126181,0.066953,True,2.52043,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.568341,0.21527,True,4.50066,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.568342,0.21527,True,4.50066,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,1.21491,0.335452,False,12.8193,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,1.21491,0.335452,False,12.8193,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.12845,0.00783444,True,6.30592,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.12845,0.00783444,True,6.30592,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.160658,0.0502477,True,9.74221,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.160658,0.0502477,True,9.74221,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.0517676,0.0186196,True,9.91452,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.0517676,0.0186196,True,9.91452,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.420742,0.377576,True,7.7567,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.420742,0.377576,True,7.7567,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.143721,0.0213163,True,11.9197,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.143721,0.0213163,True,11.9197,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.167594,0.067955,True,4.50236,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.167594,0.067955,True,4.50236,cercle (projet) | ML + BIC + division
+cercle (projet),2,0.001,ML + BIC,2,True,0.154699,0.00473619,True,10.0119,cercle (projet) | ML + BIC
+cercle (projet),2,0.001,ML + BIC + division,2,True,0.154699,0.00473619,True,10.0119,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,1.0977,0.261764,False,6.81582,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,1.0977,0.261764,False,6.81582,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.614614,0.923646,False,1.92701,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.614614,0.923646,False,1.92701,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,2,False,0.0183936,0.0381536,False,0.737589,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,2,False,0.0183936,0.0381536,False,0.737589,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.114867,0.0226841,True,3.42333,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.114867,0.0226841,True,3.42333,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.803939,0.239499,True,3.83641,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.803939,0.239499,True,3.83641,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.632928,0.254531,True,4.91041,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.632928,0.254531,True,4.91041,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.327157,0.100942,True,4.18745,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.327157,0.100942,True,4.18745,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.0748042,0.0291359,True,6.09142,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.0748042,0.0291359,True,6.09142,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.134662,0.273754,True,2.97167,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.134662,0.273754,True,2.97167,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,2.50279,0.770385,False,3.25396,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,2.50279,0.770385,False,3.25396,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.380947,0.163578,True,3.79514,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.380947,0.163578,True,3.79514,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,4,False,1.52287,0.701365,False,3.50067,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,4,False,1.52287,0.701365,False,3.50067,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,2,False,0.141256,0.736134,False,0.344324,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,2,False,0.141256,0.736134,False,0.344324,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.090419,0.0486889,True,3.78127,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.090419,0.0486889,True,3.78127,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,2,False,0.875938,0.999067,False,1.49076,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,2,False,0.875938,0.999067,False,1.49076,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.0643669,0.0843716,True,2.6454,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.0643669,0.0843716,True,2.6454,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.109168,0.0612059,True,4.87455,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.109168,0.0612059,True,4.87455,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.899827,0.634091,False,1.95903,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.899827,0.634091,False,1.95903,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.0544628,0.0339532,True,2.39789,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.0544628,0.0339532,True,2.39789,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.406477,0.381144,False,1.51627,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.406477,0.381144,False,1.51627,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,2,False,1.51732,1.18919,False,1.01341,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,2,False,1.51732,1.18919,False,1.01341,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.0287384,0.0115299,True,4.51336,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.0287384,0.0115299,True,4.51336,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.0612168,0.00959299,True,8.18017,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.0612168,0.00959299,True,8.18017,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,2,False,0.413685,0.661901,False,1.05418,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,1.78561,1.44391,False,1.05418,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.584513,0.307993,True,4.58861,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.584513,0.307993,True,4.58861,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.113814,0.0408605,True,6.63029,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.113814,0.0408605,True,6.63029,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.104779,0.0218144,True,4.20771,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.104779,0.0218144,True,4.20771,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.163868,0.0679833,True,4.32706,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.163868,0.0679833,True,4.32706,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.204121,0.158822,True,2.79696,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.204121,0.158822,True,2.79696,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.0001,ML + BIC,3,True,0.223017,0.161606,True,3.41743,cercle (projet) | ML + BIC
+cercle (projet),3,0.0001,ML + BIC + division,3,True,0.223017,0.161606,True,3.41743,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.178993,0.161248,True,2.925,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.178993,0.161248,True,2.925,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.67804,1.10451,False,2.09032,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.67804,1.10451,False,2.09032,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,1.90222,1.64977,False,1.77687,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,1.90222,1.64977,False,1.77687,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,1.85178,2.73542,False,2.83932,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,1.85178,2.73542,False,2.83932,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.387337,0.199616,False,4.6727,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.387337,0.199616,False,4.6727,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.550255,0.247313,False,3.4725,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.550255,0.247313,False,3.4725,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.0598035,0.0237062,True,2.85246,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.0598035,0.0237062,True,2.85246,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.173868,0.0387371,True,2.42783,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.173868,0.0387371,True,2.42783,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.0793341,0.050296,True,4.07339,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.0793341,0.050296,True,4.07339,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,1,False,0.205173,0.15336,False,1.82249,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,1,False,0.205173,0.15336,False,1.82249,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.79486,1.44952,False,4.22216,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.79486,1.44952,False,4.22216,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.219956,0.775463,False,0.745933,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.219956,0.775463,False,0.745933,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.108306,0.143237,True,8.5751,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.108306,0.143237,True,8.5751,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.80501,5.24032,False,0.971572,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.80501,5.24032,False,0.971572,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.825936,0.100165,False,3.70414,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.825936,0.100165,False,3.70414,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.800551,0.230009,False,6.08018,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.345312,0.181473,True,6.08018,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,1,False,0.821898,2.76535,False,1.62128,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.998648,0.986524,False,1.62128,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.083009,0.0448853,True,5.48805,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.083009,0.0448853,True,5.48805,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.73982,1.74547,False,2.83753,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.73982,1.74547,False,2.83753,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.318469,0.0891761,True,5.70011,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.318469,0.0891761,True,5.70011,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.484328,0.345399,False,3.48512,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.484328,0.345399,False,3.48512,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.165404,0.0506298,True,5.4402,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.165404,0.0506298,True,5.4402,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.54669,0.092983,False,2.69113,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.54669,0.092983,False,2.69113,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.59849,0.977141,False,1.58385,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.59849,0.977141,False,1.58385,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,0.0964551,0.024233,False,3.88663,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,0.0964551,0.024233,False,3.88663,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,1,False,0.036751,0.0245772,False,3.88521,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,1,False,0.036751,0.0245772,False,3.88521,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,0.242323,0.0617965,True,3.28425,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,0.242323,0.0617965,True,3.28425,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.23166,0.327588,False,3.91717,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.23166,0.327588,False,3.91717,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,3,True,1.33522,0.362918,False,4.70878,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,3,True,1.33522,0.362918,False,4.70878,cercle (projet) | ML + BIC + division
+cercle (projet),3,0.001,ML + BIC,2,False,1.82993,1.74526,False,3.5947,cercle (projet) | ML + BIC
+cercle (projet),3,0.001,ML + BIC + division,2,False,1.82993,1.74526,False,3.5947,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.949662,0.231989,False,2.51678,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.949662,0.231989,False,2.51678,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.799228,0.58232,False,1.39802,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.799228,0.58232,False,1.39802,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.188722,0.640792,False,0.587774,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.188722,0.640792,False,0.587774,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.307944,0.281565,False,1.5674,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.307944,0.281565,False,1.5674,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.0967247,0.16279,False,0.625607,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.0967247,0.16279,False,0.625607,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.270506,0.04424,False,1.96988,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.270506,0.04424,False,1.96988,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.180363,0.855471,False,0.872029,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.180363,0.855471,False,0.872029,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,1.44958,1.44601,False,0.932015,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,1.44958,1.44601,False,0.932015,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,2.22013,0.754482,False,1.78338,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,2.22013,0.754482,False,1.78338,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.0804973,0.00179778,True,2.52467,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.0804973,0.00179778,True,2.52467,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,1.351,0.613774,False,4.05486,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,1.351,0.613774,False,4.05486,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,3,False,1.52385,0.866621,False,3.99358,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,3,False,1.52385,0.866621,False,3.99358,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,1.37973,3.56391,False,1.28702,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,1.37973,3.56391,False,1.28702,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.0579073,0.0239664,True,4.37836,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.0579073,0.0239664,True,4.37836,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.707061,0.384165,False,2.60496,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.707061,0.384165,False,2.60496,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.548079,0.200735,False,3.72078,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.548079,0.200735,False,3.72078,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,3,False,1.07124,1.55208,False,2.38406,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,3,False,1.07124,1.55208,False,2.38406,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,3,False,0.855501,0.951753,False,1.8429,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,3,False,0.855501,0.951753,False,1.8429,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.154874,0.0758917,False,1.465,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.154874,0.0758917,False,1.465,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.328764,0.149704,False,4.13821,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.328764,0.149704,False,4.13821,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.439164,0.208825,True,4.10685,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.439164,0.208825,True,4.10685,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.40447,0.297821,False,0.673725,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.40447,0.297821,False,0.673725,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.171679,0.0649239,True,2.00109,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.171679,0.0649239,True,2.00109,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,1.98671,2.3726,False,2.95955,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.296719,0.29837,True,2.95955,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.625429,1.27752,False,1.92323,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.625429,1.27752,False,1.92323,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.146813,0.170123,False,1.06243,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.146813,0.170123,False,1.06243,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,2.83373,1.81487,False,1.96252,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,2.83373,1.81487,False,1.96252,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.276462,0.105776,False,2.5555,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,4,False,0.276462,0.105776,False,2.5555,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,4,False,0.909167,1.09121,False,1.8801,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.405999,0.185144,True,1.8801,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.0001,ML + BIC,5,True,0.306091,0.25062,True,3.76217,cercle (projet) | ML + BIC
+cercle (projet),5,0.0001,ML + BIC + division,5,True,0.306091,0.25062,True,3.76217,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,2.45559,1.74429,False,0.788315,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,2,False,2.45559,1.74429,False,0.788315,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,1.05731,0.675336,False,1.13669,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,1.10628,0.720667,False,1.13669,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,1.43468,0.749009,False,3.22524,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,1.43468,0.749009,False,3.22524,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,0.4278,1.51389,False,0.908749,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.4278,1.51389,False,0.908749,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.0936202,0.0818821,False,3.05658,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.0936202,0.0818821,False,3.05658,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,5,True,4.35989,1.16825,False,3.33251,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,5,True,4.35989,1.16825,False,3.33251,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,5,True,1.3697,1.17035,False,2.34406,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,5,True,1.3697,1.17035,False,2.34406,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.590147,0.139288,False,1.5137,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.590147,0.139288,False,1.5137,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,0.970168,0.950305,False,1.38895,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,2,False,0.970168,0.950305,False,1.38895,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,0.387294,0.407816,False,0.582275,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.387294,0.407816,False,0.582275,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,0.249295,0.160862,False,1.75068,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.249295,0.160862,False,1.75068,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,2.44348,0.693521,False,1.98583,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,2,False,2.44348,0.693521,False,1.98583,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.24045,0.102835,False,1.0122,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.24045,0.102835,False,1.0122,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,5,True,2.25427,0.387979,False,1.80659,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,5,True,2.25427,0.387979,False,1.80659,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,6.35379,6.06447,False,3.03753,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,6.35379,6.06447,False,3.03753,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.536486,0.536838,False,2.75348,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.536486,0.536838,False,2.75348,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.687895,0.568344,False,2.02487,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.687895,0.568344,False,2.02487,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,1.35665,1.89556,False,1.9725,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,2,False,1.35665,1.89556,False,1.9725,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,1.73336,2.47089,False,2.83455,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,1.73336,2.47089,False,2.83455,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.402197,0.129828,False,2.42732,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.402197,0.129828,False,2.42732,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,2.99642,1.20194,False,2.57164,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,2.99642,1.20194,False,2.57164,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,0.778998,1.13792,False,0.370865,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.778998,1.13792,False,0.370865,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,1.50097,0.651719,False,3.71511,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,1.50097,0.651719,False,3.71511,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,0.504242,0.575221,False,2.16823,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.504242,0.575221,False,2.16823,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,3.70001,1.21342,False,4.83454,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,1.31426,0.726173,False,4.83454,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,4,False,0.274276,0.0823397,False,3.86952,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,4,False,0.274276,0.0823397,False,3.86952,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,1.03662,0.616368,False,2.6141,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,1.03662,0.616368,False,2.6141,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,0.942793,0.533659,False,3.50251,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,2,False,0.942793,0.533659,False,3.50251,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,3,False,1.87736,0.659401,False,2.2841,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,1.87736,0.659401,False,2.2841,cercle (projet) | ML + BIC + division
+cercle (projet),5,0.001,ML + BIC,2,False,0.586879,3.64675,False,1.40104,cercle (projet) | ML + BIC
+cercle (projet),5,0.001,ML + BIC + division,3,False,0.803996,0.289764,False,1.40104,cercle (projet) | ML + BIC + division
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00536098,0.00850508,True,5.3067,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00536098,0.00850508,True,5.3067,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0665152,0.013659,True,10.8337,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0665152,0.013659,True,10.8337,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00310433,7.16521e-05,True,9.65745,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00310433,7.16522e-05,True,9.65745,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0219603,0.00366491,True,9.78972,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0219603,0.00366491,True,9.78972,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00176864,0.00195118,True,2.72439,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00176864,0.00195118,True,2.72439,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0041534,0.00160817,True,12.6363,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0041534,0.00160817,True,12.6363,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0132579,0.000296143,True,4.89122,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0132579,0.000296143,True,4.89122,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,3,False,0.0140273,0.00717569,False,6.29362,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,3,False,0.0140273,0.00717569,False,6.29362,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.398013,0.927069,False,0.844288,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.398013,0.927069,False,0.844288,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0434565,0.00473837,True,8.3758,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0434565,0.00473837,True,8.3758,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0458207,0.0147078,True,7.83433,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0458207,0.0147078,True,7.83433,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.000879049,0.000918239,True,12.3961,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.000879049,0.000918239,True,12.3961,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00129742,0.00136548,True,7.91402,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00129742,0.00136548,True,7.91402,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0135947,0.00342914,True,6.80128,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0135947,0.00342914,True,6.80128,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.000958958,0.000557296,True,6.17826,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.000958958,0.000557296,True,6.17826,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0016737,0.000378264,True,5.1826,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0016737,0.000378264,True,5.1826,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0264163,0.0110864,True,5.80939,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0264163,0.0110864,True,5.80939,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00706937,0.00564527,True,2.74467,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00706937,0.00564527,True,2.74467,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0172472,0.00644527,True,6.67872,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0172472,0.00644527,True,6.67872,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00992165,0.00346205,True,9.59565,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00992165,0.00346205,True,9.59565,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0504936,0.000727544,True,9.62921,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0504936,0.000727548,True,9.62921,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.001781,0.000599026,True,12.7839,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.001781,0.000599026,True,12.7839,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00331322,0.000536516,True,6.41878,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,3,False,0.0479632,0.0136072,False,6.41878,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.000267615,0.000365559,True,8.17382,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.000267615,0.000365559,True,8.17382,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00062174,0.000674512,True,8.5532,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00062174,0.000674512,True,8.5532,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00160956,0.000252413,True,19.8663,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00160956,0.000252413,True,19.8663,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.00355212,0.00231483,True,5.13793,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.00355212,0.00231483,True,5.13793,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0227424,0.00585496,True,2.2508,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0227424,0.00585496,True,2.2508,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0110791,0.00471319,True,4.99479,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0110791,0.0047132,True,4.99479,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC,2,True,0.0540785,0.0255403,True,3.76354,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.0001,ML + BIC + division,2,True,0.0540785,0.0255403,True,3.76354,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0679414,0.0370097,True,11.8143,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0679414,0.0370097,True,11.8143,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.040051,0.0129946,True,6.35529,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.040051,0.0129946,True,6.35529,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.124393,0.0397607,True,7.86007,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.124393,0.0397607,True,7.86007,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.378859,0.129582,True,7.90771,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.378859,0.129582,True,7.90771,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0101178,0.00834301,True,4.37814,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0101178,0.00834301,True,4.37814,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0205018,0.026623,True,2.78521,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0205018,0.026623,True,2.78521,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0479722,0.0224179,True,16.4811,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0479722,0.0224179,True,16.4811,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.429807,0.284627,True,4.15234,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.429807,0.284627,True,4.15234,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0767618,0.0464828,True,5.08639,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0767618,0.0464828,True,5.08639,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.00594712,0.00320441,True,2.50518,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.00594712,0.00320441,True,2.50518,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.00695225,0.0197088,True,10.1023,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.00695225,0.0197088,True,10.1023,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0455905,0.0139064,True,4.40909,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0455905,0.0139064,True,4.40909,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.200047,0.123388,True,3.46065,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.200047,0.123388,True,3.46065,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0490164,0.00416972,True,7.18131,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0490164,0.00416972,True,7.18131,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.053179,0.0102877,True,7.39959,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.053179,0.0102877,True,7.39959,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.00694912,0.0114214,True,11.3777,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.00694912,0.0114214,True,11.3777,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.941413,0.112706,False,2.24204,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.941413,0.112706,False,2.24204,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0124088,0.00384913,True,11.3128,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0124088,0.00384913,True,11.3128,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.564074,0.012175,True,4.79829,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.564074,0.012175,True,4.79829,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0038854,0.00187883,True,18.17,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0038854,0.00187883,True,18.17,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.588455,0.513595,True,2.52043,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.588455,0.513595,True,2.52043,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.300167,0.145291,True,4.50066,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.300167,0.145291,True,4.50066,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.17264,0.0527949,True,12.8193,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.17264,0.0527949,True,12.8193,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0645124,0.0137052,True,6.30592,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0645124,0.0137052,True,6.30592,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.109699,0.0416172,True,9.74221,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.109699,0.0416172,True,9.74221,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,3,False,0.0939659,0.0147141,False,9.91452,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,3,False,0.0939659,0.0147141,False,9.91452,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.723261,0.0962003,True,7.7567,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.723261,0.0962003,True,7.7567,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0133784,0.00774895,True,11.9197,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0133784,0.00774895,True,11.9197,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0515501,0.0409354,True,4.50236,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0515501,0.0409354,True,4.50236,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",2,0.001,ML + BIC,2,True,0.0498884,0.014255,True,10.0119,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",2,0.001,ML + BIC + division,2,True,0.0498884,0.014255,True,10.0119,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.600473,0.133035,True,6.81582,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.600473,0.133035,True,6.81582,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.035979,0.0274076,True,1.92701,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.035979,0.0274076,True,1.92701,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,2,False,0.0159505,0.0327554,False,0.737589,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,2,False,0.0159505,0.0327554,False,0.737589,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.051183,0.00190226,True,3.42333,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.051183,0.00190226,True,3.42333,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0466557,0.0185498,True,3.83641,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0466557,0.0185498,True,3.83641,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0144145,0.00962941,True,4.91041,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0144145,0.00962941,True,4.91041,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0116448,0.0104294,True,4.18745,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0116448,0.0104294,True,4.18745,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0158898,0.00509507,True,6.09142,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0158898,0.00509507,True,6.09142,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.817963,0.344942,False,2.97167,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.817963,0.344942,False,2.97167,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.190506,0.0819645,True,3.25396,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.190506,0.0819645,True,3.25396,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0174399,0.0107443,True,3.79514,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0174399,0.0107443,True,3.79514,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0673199,0.0244136,True,3.50067,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0673199,0.0244136,True,3.50067,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,3.12016,1.32501,False,0.344324,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,3.12016,1.32501,False,0.344324,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0955688,0.0228164,True,3.78127,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0955688,0.0228164,True,3.78127,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0504951,0.0686422,True,1.49076,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0504951,0.0686422,True,1.49076,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0033513,0.00860233,True,2.6454,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0033513,0.00860233,True,2.6454,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0100843,0.00578914,True,4.87455,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0100843,0.00578914,True,4.87455,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.00461308,0.00340016,True,1.95903,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.00461308,0.00340017,True,1.95903,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.145342,0.127225,True,2.39789,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.145342,0.127225,True,2.39789,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.146143,0.197946,True,1.51627,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.146143,0.197946,True,1.51627,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.370408,1.43417,False,1.01341,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.370408,1.43417,False,1.01341,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,4,False,0.0237994,0.00144422,False,4.51336,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,4,False,0.0237994,0.00144422,False,4.51336,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0183619,0.00114046,True,8.18017,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0183619,0.00114046,True,8.18017,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.500296,0.99199,False,1.05418,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.500296,0.99199,False,1.05418,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.133403,0.0734496,True,4.58861,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.133403,0.0734496,True,4.58861,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.00919477,0.00521709,True,6.63029,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.00919477,0.00521709,True,6.63029,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.0199545,0.00965243,True,4.20771,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.0199545,0.00965243,True,4.20771,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.105111,0.0639792,True,4.32706,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.105111,0.0639792,True,4.32706,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.136362,0.147062,True,2.79696,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.136362,0.147062,True,2.79696,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC,3,True,0.079359,0.0793968,True,3.41743,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.0001,ML + BIC + division,3,True,0.079359,0.0793968,True,3.41743,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0887057,0.0144761,True,2.925,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0887057,0.0144761,True,2.925,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,1.34967,0.833568,False,2.09032,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,1.34967,0.833568,False,2.09032,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,1.09787,1.40916,False,1.77687,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,1.09787,1.40916,False,1.77687,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.207142,0.0546715,True,2.83932,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.207142,0.0546715,True,2.83932,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.565674,0.291811,True,4.6727,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.565674,0.291811,True,4.6727,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.5415,0.226759,True,3.4725,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.5415,0.226759,True,3.4725,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0198636,0.0164211,True,2.85246,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0198636,0.0164211,True,2.85246,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.116526,0.069507,True,2.42783,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.116526,0.069507,True,2.42783,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.121027,0.0572568,True,4.07339,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.121027,0.0572568,True,4.07339,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.581585,1.37749,False,1.82249,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.581585,1.37749,False,1.82249,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.150293,0.0035218,True,4.22216,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.150293,0.0035218,True,4.22216,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.237097,0.879561,False,0.745933,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.237097,0.879561,False,0.745933,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.209912,0.174075,True,8.5751,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.209912,0.174075,True,8.5751,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.15049,0.0818152,False,0.971572,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.15049,0.0818152,False,0.971572,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.557256,0.025027,True,3.70414,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.557256,0.025027,True,3.70414,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0936455,0.0265102,True,6.08018,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0936455,0.0265102,True,6.08018,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.412698,0.372503,False,1.62128,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.412698,0.372503,False,1.62128,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.00298205,0.00832788,True,5.48805,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.00298205,0.00832787,True,5.48805,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0915161,0.0887758,True,2.83753,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0915161,0.0887758,True,2.83753,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0538717,0.0229531,True,5.70011,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0538717,0.0229531,True,5.70011,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.709086,0.135499,True,3.48512,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.709086,0.135499,True,3.48512,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.0407048,0.0133127,True,5.4402,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.0407048,0.0133127,True,5.4402,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.98795,0.524061,False,2.69113,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.98795,0.524061,False,2.69113,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.560429,0.775105,False,1.58385,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.560429,0.775105,False,1.58385,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.0169582,0.00537606,False,3.88663,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.0169582,0.00537606,False,3.88663,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.0414205,0.0108846,False,3.88521,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.0414205,0.0108846,False,3.88521,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.112691,0.0606808,True,3.28425,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.112691,0.0606808,True,3.28425,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,0.828918,0.18295,False,3.91717,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,0.828918,0.18295,False,3.91717,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,3,True,0.256474,0.0329862,True,4.70878,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,3,True,0.256474,0.0329862,True,4.70878,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",3,0.001,ML + BIC,2,False,1.68501,1.51186,False,3.5947,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",3,0.001,ML + BIC + division,2,False,1.68501,1.51186,False,3.5947,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.315919,0.371896,True,2.51678,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.315919,0.371896,True,2.51678,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.345342,1.03449,True,1.39802,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.345342,1.03449,True,1.39802,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,6,False,0.483272,0.470905,False,0.587774,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,6,False,0.483272,0.470905,False,0.587774,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,5.654,2.33949,False,1.5674,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.922922,0.105995,False,1.5674,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.62609,5.2913,False,0.625607,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.62609,5.2913,False,0.625607,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.23674,0.0349352,False,1.96988,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.23674,0.0349352,False,1.96988,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.0275937,0.0627344,False,0.872029,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.0275937,0.0627344,False,0.872029,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,6,False,1.70472,3.56436,False,0.932015,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.641278,0.194358,False,0.932015,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.23648,0.175121,True,1.78338,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.23648,0.175121,True,1.78338,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0290714,0.0127182,True,2.52467,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0290714,0.0127182,True,2.52467,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0813376,0.0645534,True,4.05486,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0813376,0.0645534,True,4.05486,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.155864,0.0466252,True,3.99358,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.155864,0.0466252,True,3.99358,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.0767166,0.0815837,False,1.28702,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.0767166,0.0815837,False,1.28702,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0774376,0.0692718,True,4.37836,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0774376,0.0692718,True,4.37836,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.252039,0.0322391,False,2.60496,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.252039,0.0322391,False,2.60496,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.237161,0.268451,True,3.72078,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.237161,0.268451,True,3.72078,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,1.0062,0.695082,False,2.38406,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,1.0062,0.695082,False,2.38406,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.643526,0.504589,False,1.8429,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.643526,0.504589,False,1.8429,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.125344,0.0994357,False,1.465,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,6,False,3.83101,1.09366,False,1.465,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,4,False,0.0476623,0.0203567,False,4.13821,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,4,False,0.0476622,0.0203567,False,4.13821,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0579503,0.0167439,True,4.10685,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,6,False,0.286075,0.135568,False,4.10685,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.165417,0.302861,True,0.673725,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.165417,0.302861,True,0.673725,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0298793,0.0326401,True,2.00109,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0298793,0.0326401,True,2.00109,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.580754,0.560148,True,2.95955,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.580754,0.560148,True,2.95955,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,1.81114,0.942214,False,1.92323,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,1.81114,0.942214,False,1.92323,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0466769,0.0845257,True,1.06243,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0466769,0.0845257,True,1.06243,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.190208,0.0964237,True,1.96252,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.190208,0.0964238,True,1.96252,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,5,True,0.0400714,0.0291867,True,2.5555,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,5,True,0.0400714,0.0291867,True,2.5555,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,7,False,0.236824,0.17799,False,1.8801,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,7,False,0.236824,0.17799,False,1.8801,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC,6,False,0.151082,0.361854,False,3.76217,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.0001,ML + BIC + division,6,False,0.151082,0.361854,False,3.76217,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.526637,2.07063,False,0.788315,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.526637,2.07063,False,0.788315,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.669972,0.818771,False,1.13669,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.669972,0.818771,False,1.13669,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,3.68709,0.736831,False,3.22524,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,3.68709,0.736831,False,3.22524,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.416811,0.633039,False,0.908749,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.730487,0.62376,False,0.908749,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.048128,0.0218996,False,3.05658,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.048128,0.0218996,False,3.05658,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.585489,0.260584,True,3.33251,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.585489,0.260584,True,3.33251,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.946107,0.484039,False,2.34406,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.946107,0.484039,False,2.34406,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.1463,0.0343673,False,1.5137,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.1463,0.0343673,False,1.5137,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.466756,2.58763,False,1.38895,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.466756,2.58763,False,1.38895,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.0690062,0.595604,False,0.582275,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.0690062,0.595604,False,0.582275,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.176925,0.175555,False,1.75068,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.176925,0.175555,False,1.75068,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.497747,0.243298,False,1.98583,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.497747,0.243298,False,1.98583,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.0306858,0.0746896,False,1.0122,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.0306858,0.0746896,False,1.0122,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.583706,0.427993,False,1.80659,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.583706,0.427993,False,1.80659,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.264787,0.385435,True,3.03753,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.264787,0.385435,True,3.03753,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.650575,0.789714,False,2.75348,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.650575,0.789714,False,2.75348,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,13.8449,0.904512,False,2.02487,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,13.8449,0.904512,False,2.02487,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.713444,0.517378,False,1.9725,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.713444,0.517378,False,1.9725,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,1.31377,1.12418,False,2.83455,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,1.31377,1.12418,False,2.83455,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.0452644,0.0641558,True,2.42732,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.0452644,0.0641558,True,2.42732,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,0.314545,0.0900773,True,2.57164,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,0.314545,0.0900773,True,2.57164,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.152719,0.631905,False,0.370865,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.152719,0.631905,False,0.370865,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,1.53101,0.449062,False,3.71511,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,1.53101,0.449062,False,3.71511,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,0.746108,0.567361,False,2.16823,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,0.746108,0.567361,False,2.16823,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.350604,0.231183,False,4.83454,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.350604,0.231183,False,4.83454,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.126834,0.0361034,False,3.86952,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.126834,0.0361034,False,3.86952,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,0.311779,0.107756,False,2.6141,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,0.311779,0.107756,False,2.6141,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,3,False,1.54003,0.755168,False,3.50251,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,3,False,1.54003,0.755168,False,3.50251,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,5,True,1.19047,0.520028,False,2.2841,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,5,True,1.19047,0.520028,False,2.2841,"bord de D (marge 0,5) | ML + BIC + division"
+"bord de D (marge 0,5)",5,0.001,ML + BIC,4,False,1.44017,0.790545,False,1.40104,"bord de D (marge 0,5) | ML + BIC"
+"bord de D (marge 0,5)",5,0.001,ML + BIC + division,4,False,1.44017,0.790545,False,1.40104,"bord de D (marge 0,5) | ML + BIC + division"
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0118545,0.0150389,True,5.3067,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0118545,0.0150389,True,5.3067,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0182171,0.00168585,True,10.8337,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0182171,0.00168585,True,10.8337,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00836564,0.00417348,True,9.65745,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00836564,0.00417348,True,9.65745,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0290565,0.00113821,True,9.78972,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0290565,0.00113821,True,9.78972,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00199009,0.00147963,True,2.72439,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00199009,0.00147963,True,2.72439,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00274001,0.000647025,True,12.6363,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00274001,0.000647025,True,12.6363,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0201315,0.00453977,True,4.89122,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0201315,0.00453977,True,4.89122,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00203023,0.00470838,True,6.29362,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00203023,0.00470838,True,6.29362,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.156789,0.384657,True,0.844288,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.156789,0.384657,True,0.844288,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0219311,0.000658038,True,8.3758,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0219311,0.000658038,True,8.3758,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0456823,0.00900329,True,7.83433,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0456823,0.00900329,True,7.83433,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00114935,0.000344099,True,12.3961,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00114935,0.000344099,True,12.3961,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00286867,0.00272579,True,7.91402,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00286867,0.00272579,True,7.91402,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0076171,0.00506677,True,6.80128,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0076171,0.00506677,True,6.80128,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00110998,0.000855174,True,6.17826,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00110998,0.000855174,True,6.17826,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00163634,0.00185341,True,5.1826,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00163634,0.00185341,True,5.1826,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0317406,0.00287208,True,5.80939,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0317406,0.00287208,True,5.80939,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0176884,0.0124619,True,2.74467,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0176884,0.0124619,True,2.74467,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00520874,0.00222076,True,6.67872,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00520874,0.00222076,True,6.67872,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00578027,0.00124737,True,9.59565,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00578027,0.00124737,True,9.59565,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0228994,0.00599801,True,9.62921,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0228994,0.00599801,True,9.62921,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00240421,0.000944332,True,12.7839,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00240421,0.000944332,True,12.7839,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00771915,0.00238084,True,6.41878,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00771915,0.00238084,True,6.41878,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.000550096,0.000197318,True,8.17382,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.000550096,0.000197318,True,8.17382,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.000286722,0.0002155,True,8.5532,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.000286722,0.0002155,True,8.5532,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.00286263,0.00143933,True,19.8663,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.00286263,0.00143933,True,19.8663,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0049017,0.00197196,True,5.13793,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0049017,0.00197196,True,5.13793,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0518749,0.0206626,True,2.2508,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0518749,0.0206626,True,2.2508,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0226882,0.00279626,True,4.99479,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0226882,0.00279626,True,4.99479,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.0001,ML + BIC,2,True,0.0429137,0.0435469,True,3.76354,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.0001,ML + BIC + division,2,True,0.0429137,0.0435469,True,3.76354,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0444516,0.00415824,True,11.8143,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0444516,0.00415824,True,11.8143,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0616561,0.0267081,True,6.35529,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0616561,0.0267081,True,6.35529,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.15047,0.00830243,True,7.86007,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.15047,0.00830243,True,7.86007,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.436585,0.00785051,True,7.90771,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.436585,0.00785051,True,7.90771,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.00720378,0.00886242,True,4.37814,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.00720378,0.00886242,True,4.37814,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0358746,0.020085,True,2.78521,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0358746,0.020085,True,2.78521,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.016536,0.00442418,True,16.4811,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.016536,0.00442418,True,16.4811,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.147445,0.0728091,True,4.15234,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.147445,0.0728091,True,4.15234,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.123567,0.0221001,True,5.08639,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.123567,0.0221001,True,5.08639,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.00675776,0.0121985,True,2.50518,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.00675776,0.0121985,True,2.50518,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.00751436,0.0105249,True,10.1023,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.00751436,0.0105249,True,10.1023,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.018493,0.00408976,True,4.40909,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.018493,0.00408976,True,4.40909,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0386609,0.0261217,True,3.46065,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0386609,0.0261217,True,3.46065,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0201298,0.00419199,True,7.18131,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0201298,0.00419199,True,7.18131,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0157482,0.0125269,True,7.39959,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0157482,0.0125269,True,7.39959,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.00679522,0.00847059,True,11.3777,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.00679522,0.00847059,True,11.3777,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.135959,0.299309,True,2.24204,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.135959,0.299309,True,2.24204,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0127279,0.00783489,True,11.3128,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0127279,0.00783489,True,11.3128,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,1,False,0.0295876,0.0150355,False,4.79829,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,1,False,0.0295876,0.0150355,False,4.79829,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0245598,0.0101224,True,18.17,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0245598,0.0101224,True,18.17,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0629118,0.0799914,True,2.52043,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0629118,0.0799914,True,2.52043,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.189173,0.0390108,True,4.50066,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.189173,0.0390108,True,4.50066,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0386503,0.010753,True,12.8193,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0386503,0.010753,True,12.8193,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0280372,0.0177495,True,6.30592,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0280372,0.0177495,True,6.30592,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0908956,0.0214363,True,9.74221,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0908956,0.0214363,True,9.74221,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0225015,0.0156221,True,9.91452,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0225015,0.0156221,True,9.91452,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,1.0586,0.324379,False,7.7567,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,1.0586,0.324379,False,7.7567,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0199127,0.0025832,True,11.9197,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0199127,0.0025832,True,11.9197,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.0490334,0.0518408,True,4.50236,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.0490334,0.0518408,True,4.50236,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,2,0.001,ML + BIC,2,True,0.049899,0.0138887,True,10.0119,D-optimal hors de D | ML + BIC
+D-optimal hors de D,2,0.001,ML + BIC + division,2,True,0.049899,0.0138887,True,10.0119,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.180448,0.0704261,True,6.81582,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.180448,0.0704261,True,6.81582,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0153593,0.0351124,True,1.92701,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0153593,0.0351124,True,1.92701,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,2,False,0.0161678,0.0301565,False,0.737589,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,2,False,0.0161678,0.0301565,False,0.737589,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0174693,0.00383693,True,3.42333,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0174693,0.00383693,True,3.42333,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0313746,0.0318731,True,3.83641,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0313746,0.0318732,True,3.83641,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0205516,0.0158128,True,4.91041,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0205516,0.0158128,True,4.91041,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.00649911,0.00243872,True,4.18745,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.00649911,0.00243872,True,4.18745,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0485722,0.00488708,True,6.09142,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0485722,0.00488708,True,6.09142,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.397395,0.221531,True,2.97167,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.397395,0.221531,True,2.97167,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.628535,0.668448,True,3.25396,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.628535,0.668448,True,3.25396,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0137815,0.0190984,True,3.79514,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0137815,0.0190984,True,3.79514,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.111588,0.0470499,True,3.50067,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.111588,0.0470499,True,3.50067,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,2.40089,1.32283,False,0.344324,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.453979,0.894442,False,0.344324,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0935419,0.0282108,True,3.78127,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0935419,0.0282108,True,3.78127,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.121187,0.238047,True,1.49076,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.121187,0.238047,True,1.49076,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.00212083,0.00410353,True,2.6454,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.00212082,0.00410353,True,2.6454,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0110441,0.00687064,True,4.87455,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0110441,0.00687064,True,4.87455,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0063843,0.00915664,True,1.95903,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0063843,0.00915664,True,1.95903,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.018226,0.018559,True,2.39789,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.018226,0.018559,True,2.39789,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0538341,0.0267506,True,1.51627,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0538341,0.0267506,True,1.51627,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.776835,0.752657,False,1.01341,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.525656,0.65001,False,1.01341,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0180791,0.0039534,True,4.51336,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0180791,0.0039534,True,4.51336,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0264968,0.00477498,True,8.18017,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0264968,0.00477498,True,8.18017,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.203462,0.387405,True,1.05418,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.203462,0.387405,True,1.05418,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0117431,0.00929049,True,4.58861,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0117431,0.00929049,True,4.58861,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.00972647,0.00434444,True,6.63029,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.00972647,0.00434444,True,6.63029,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0181867,0.00497558,True,4.20771,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0181867,0.00497558,True,4.20771,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0418208,0.0393332,True,4.32706,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0418208,0.0393332,True,4.32706,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0434931,0.0371248,True,2.79696,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0434931,0.0371248,True,2.79696,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.0001,ML + BIC,3,True,0.0550149,0.0470945,True,3.41743,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.0001,ML + BIC + division,3,True,0.0550149,0.0470945,True,3.41743,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.180146,0.180178,True,2.925,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.180146,0.180178,True,2.925,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,1.17033,0.676831,False,2.09032,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,1.17033,0.676831,False,2.09032,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0743589,0.0968965,True,1.77687,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0743589,0.0968965,True,1.77687,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.450083,0.174074,True,2.83932,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.450083,0.174074,True,2.83932,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.561898,0.226415,True,4.6727,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.561898,0.226415,True,4.6727,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,1.16998,0.486807,False,3.4725,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,1.16998,0.486807,False,3.4725,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0184649,0.0146486,True,2.85246,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0184649,0.0146486,True,2.85246,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.42218,0.108156,True,2.42783,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.42218,0.108156,True,2.42783,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.149403,0.0340908,True,4.07339,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.149403,0.0340908,True,4.07339,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.504304,1.15883,False,1.82249,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.504304,1.15883,False,1.82249,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.339426,0.174876,True,4.22216,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.339426,0.174876,True,4.22216,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.349826,0.910015,False,0.745933,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.349826,0.910015,False,0.745933,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.228399,0.0807255,True,8.5751,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.228399,0.0807255,True,8.5751,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.156074,0.139858,False,0.971572,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.156074,0.139858,False,0.971572,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,1.14742,0.496107,False,3.70414,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,1.14742,0.496107,False,3.70414,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0498972,0.0162552,True,6.08018,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0498972,0.0162552,True,6.08018,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,1.21004,1.22012,False,1.62128,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,1.21004,1.22012,False,1.62128,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.00681837,0.00887354,True,5.48805,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.00681837,0.00887354,True,5.48805,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,4,False,0.0256531,0.0295961,False,2.83753,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,4,False,0.0256531,0.0295961,False,2.83753,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0560454,0.0480636,True,5.70011,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0560454,0.0480636,True,5.70011,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.799883,0.0780701,True,3.48512,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.799883,0.0780701,True,3.48512,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0617143,0.0258267,True,5.4402,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0617143,0.0258267,True,5.4402,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.202532,0.0998943,False,2.69113,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.202532,0.0998943,False,2.69113,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.24446,0.25027,True,1.58385,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.24446,0.25027,True,1.58385,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.0177636,0.00880881,False,3.88663,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.0177636,0.00880881,False,3.88663,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,1.55774,0.0187268,False,3.88521,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,1.55774,0.0187268,False,3.88521,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.0822551,0.0332345,True,3.28425,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.0822551,0.0332345,True,3.28425,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,0.538093,0.18583,False,3.91717,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,2,False,0.538093,0.18583,False,3.91717,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,3,True,0.192758,0.0138115,True,4.70878,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,0.192758,0.0138115,True,4.70878,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,3,0.001,ML + BIC,2,False,1.68593,1.47449,False,3.5947,D-optimal hors de D | ML + BIC
+D-optimal hors de D,3,0.001,ML + BIC + division,3,True,1.59961,0.546261,False,3.5947,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.446185,0.362037,True,2.51678,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.446185,0.362037,True,2.51678,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,1.19319,4.47227,False,1.39802,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,1.19319,4.47227,False,1.39802,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.189965,0.626017,False,0.587774,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.189965,0.626017,False,0.587774,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0968947,0.077105,True,1.5674,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0968946,0.077105,True,1.5674,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.676059,0.852083,False,0.625607,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,6,False,0.592212,0.817387,False,0.625607,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.158498,0.0481033,False,1.96988,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.158498,0.0481033,False,1.96988,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.0353083,0.0344707,False,0.872029,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.0353083,0.0344707,False,0.872029,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.495095,0.411899,False,0.932015,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.495095,0.411899,False,0.932015,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0413436,0.0211068,True,1.78338,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0413436,0.0211068,True,1.78338,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0125434,0.00628927,True,2.52467,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0125434,0.00628927,True,2.52467,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0431054,0.0351072,True,4.05486,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0431054,0.0351072,True,4.05486,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.165015,0.119564,True,3.99358,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.165015,0.119564,True,3.99358,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.0983958,0.0974183,False,1.28702,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.0983958,0.0974183,False,1.28702,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0401819,0.0406322,True,4.37836,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0401819,0.0406322,True,4.37836,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.258442,0.0539088,False,2.60496,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.258442,0.0539088,False,2.60496,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.223798,0.407182,True,3.72078,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.223798,0.407182,True,3.72078,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,4.56823,4.43409,False,2.38406,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.261909,0.356378,True,2.38406,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.480206,0.30503,False,1.8429,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.480206,0.30503,False,1.8429,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,4,False,0.14176,0.0875842,False,1.465,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,4,False,0.14176,0.0875842,False,1.465,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,1.4178,0.857542,False,4.13821,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,1.4178,0.857542,False,4.13821,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0756817,0.0436386,True,4.10685,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0756817,0.0436386,True,4.10685,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,6,False,0.0440123,0.0855854,False,0.673725,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,6,False,0.0440123,0.0855854,False,0.673725,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.123463,0.0343422,True,2.00109,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.123463,0.0343422,True,2.00109,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.349093,0.221622,True,2.95955,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.349093,0.221622,True,2.95955,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,1.33247,0.826788,False,1.92323,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,2.14476,0.947731,False,1.92323,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0307394,0.0714916,True,1.06243,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0307393,0.0714916,True,1.06243,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.118908,0.05688,True,1.96252,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.118908,0.05688,True,1.96252,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.120056,0.125887,True,2.5555,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.120056,0.125887,True,2.5555,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.198731,0.185239,True,1.8801,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.198731,0.185239,True,1.8801,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.0001,ML + BIC,5,True,0.0232474,0.0117062,True,3.76217,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.0001,ML + BIC + division,5,True,0.0232474,0.0117062,True,3.76217,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.818453,4.32993,False,0.788315,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.472109,0.361105,False,0.788315,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.482846,2.26097,False,1.13669,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.482846,2.26097,False,1.13669,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,1.1578,0.6011,False,3.22524,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,1.1578,0.6011,False,3.22524,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,1.50021,0.910052,False,0.908749,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,1.50021,0.910052,False,0.908749,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.0359331,0.039255,False,3.05658,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.0359331,0.039255,False,3.05658,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.473061,0.281003,True,3.33251,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.473061,0.281003,True,3.33251,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.223532,0.0327911,True,2.34406,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.223532,0.0327911,True,2.34406,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.0451813,0.033968,False,1.5137,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.0451813,0.033968,False,1.5137,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.525699,2.90824,False,1.38895,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.525699,2.90824,False,1.38895,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,1.83738,0.795262,False,0.582275,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,1.83738,0.795262,False,0.582275,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.158543,0.158033,False,1.75068,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.158543,0.158033,False,1.75068,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.35292,0.364304,False,1.98583,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.35292,0.364304,False,1.98583,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.0530645,0.0566995,False,1.0122,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.627235,0.934548,False,1.0122,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.269612,0.170841,True,1.80659,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.269612,0.170841,True,1.80659,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.471673,0.63541,True,3.03753,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.471673,0.63541,True,3.03753,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.514941,0.629301,False,2.75348,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.514941,0.629301,False,2.75348,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.270814,0.173819,False,2.02487,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.270814,0.173819,False,2.02487,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.838465,1.14715,False,1.9725,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.838465,1.14715,False,1.9725,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.492009,0.350099,True,2.83455,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.492009,0.350099,True,2.83455,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.262569,0.272755,True,2.42732,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.262569,0.272755,True,2.42732,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,0.193677,0.0895476,True,2.57164,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,0.193677,0.0895476,True,2.57164,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.189137,1.7965,False,0.370865,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.189137,1.7965,False,0.370865,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,2.11466,0.159685,False,3.71511,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,2.11466,0.159685,False,3.71511,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,0.822671,0.564555,False,2.16823,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,0.822671,0.564555,False,2.16823,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.071004,0.043186,False,4.83454,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.071004,0.043186,False,4.83454,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.0725556,0.0536311,False,3.86952,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.0725556,0.0536311,False,3.86952,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.314117,0.071579,False,2.6141,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.314117,0.071579,False,2.6141,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,3,False,3.45654,0.951697,False,3.50251,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,3,False,2.38656,0.640643,False,3.50251,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,5,True,2.12488,0.722515,False,2.2841,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,5,True,1.86345,1.64559,False,2.2841,D-optimal hors de D | ML + BIC + division
+D-optimal hors de D,5,0.001,ML + BIC,4,False,0.97124,0.821019,False,1.40104,D-optimal hors de D | ML + BIC
+D-optimal hors de D,5,0.001,ML + BIC + division,4,False,0.97124,0.821019,False,1.40104,D-optimal hors de D | ML + BIC + division

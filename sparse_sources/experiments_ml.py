@@ -19,6 +19,14 @@ Expériences :
     capteurs     nombre M de capteurs sur le cercle du projet (32 à 1024).
     beaucoup     jusqu'à 50 sources : nombre de directions de l'espace des
                  paramètres que les capteurs mesurent, et ce que ML retrouve.
+    geometrie    où placer les capteurs (cercle agrandi, 1024 capteurs, grille
+                 dans D) : directions mesurables et borne de Cramér-Rao.
+    mobile       capteur mobile : 64 capteurs du cercle + N mesures placées
+                 où l'on veut (adaptatif A-optimal, au hasard, grille).
+    continu      capteur qui enregistre en continu le long d'un trajet en
+                 serpentin, 50 sources : CRB, puis ML + BIC (long, ~1 h).
+    frank_wolfe  Frank-Wolfe normalisé (réglage du projet et blanchi) avec 20 et
+                 50 sources et des capteurs dans D (~5 min).
 
 Sorties : sparse_sources/results/ml_*.csv et ml_*.png.
 """
@@ -357,17 +365,310 @@ def exp_many(n_seeds):
     save(fig, "ml_beaucoup.png")
 
 
+def interior_grid(nx, ny, box=None):
+    """Grille nx × ny de capteurs à l'intérieur de D (centres des cases, évite le centre de D)."""
+    box = box or SETUP.domain
+    lo, hi = np.asarray(box.lo, float), np.asarray(box.hi, float)
+    xs = lo[0] + (np.arange(nx) + 0.5) * (hi[0] - lo[0]) / nx
+    ys = lo[1] + (np.arange(ny) + 0.5) * (hi[1] - lo[1]) / ny
+    return np.stack(np.meshgrid(xs, ys), -1).reshape(-1, 2)
+
+
+def geometries():
+    """Dispositions de capteurs comparées par ``exp_geometry`` : nom -> (M, 2)."""
+    circle = SETUP.sensors
+    return {"cercle projet": circle,
+            "cercle rayon x2": make_setup(h=0.0, radius_factor=2.0).sensors,
+            "cercle 1024": make_setup(h=0.0, n_sensors=1024).sensors,
+            "cercle + grille 4x8": np.vstack([circle, interior_grid(4, 8)]),
+            "cercle + grille 8x16": np.vstack([circle, interior_grid(8, 16)]),
+            "cercle + grille 16x32": np.vstack([circle, interior_grid(16, 32)])}
+
+
+def exp_geometry(n_seeds):
+    """
+    Où placer les capteurs : cercle agrandi, plus de capteurs, capteurs dans D.
+    Pour K sources tirées comme dans config/ : directions mesurables (sans
+    bruit) et borne de Cramér-Rao avec le bruit du projet (source centrale).
+    """
+    from sparse_sources.kernel import Setup
+    print("\n[6] Disposition des capteurs")
+    lo, hi = SETUP.domain.lo, SETUP.domain.hi
+    rows = []
+    for name, sens in geometries().items():
+        raw = Setup(sens, SETUP.domain, 0.0)
+        central = I_CENTRAL * raw.phi(CENTER)[0]
+        for K in [3, 10, 20, 50]:
+            for seed in range(n_seeds):
+                r = np.random.default_rng(seed)
+                z = lo + (hi - lo) * r.random((K, 2))
+                I = 100.0 * r.dirichlet(np.ones(K))
+                y = raw.phi(z).T @ I + central
+                row = {"geometrie": name, "M": len(sens), "K": K, "seed": seed,
+                       "parametres": 3 * K,
+                       "directions_mesurables": measurable_directions(z, I, sens)[0]}
+                for sigma in [1e-4, 1e-3]:
+                    crb = cramer_rao(z, I, relative_noise_std(y, sigma), raw)["pos_std"]
+                    row[f"crb_mediane_{sigma:g}"] = float(np.median(crb))
+                    row[f"part_crb_0_1_{sigma:g}"] = float(np.mean(crb < 0.1))
+                rows.append(row)
+            sel = [x for x in rows if (x["geometrie"], x["K"]) == (name, K)]
+            med = lambda key: np.median([x[key] for x in sel])  # noqa: E731
+            print(f"  {name:22s} M = {len(sens):4d}, K = {K:2d} : directions "
+                  f"{med('directions_mesurables'):.0f} / {3 * K}, CRB médiane "
+                  f"{med('crb_mediane_0.0001'):.3g} (σ=1e-4), {med('crb_mediane_0.001'):.3g} "
+                  f"(σ=1e-3), sources à CRB < 0,1 : {100 * med('part_crb_0_1_0.001'):.0f} % "
+                  f"(σ=1e-3)")
+    write_csv(rows, OUT / "ml_geometrie.csv")
+
+    names = list(geometries())
+    Ks = [3, 10, 20, 50]
+    fig, ax = plt.subplots(figsize=(6.8, 4.0))
+    for k, name in enumerate(names):
+        g = [[x for x in rows if (x["geometrie"], x["K"]) == (name, K)] for K in Ks]
+        ax.plot(Ks, [np.median([x["directions_mesurables"] for x in y]) for y in g], "-o",
+                color=SERIES[k % len(SERIES)], lw=2, ms=5, label=name)
+    ax.plot(Ks, [3 * K for K in Ks], ":", color=INK_MUTED, lw=1.5, label="paramètres 3K")
+    ax.set_xlabel("nombre de sources K")
+    ax.set_ylabel("directions mesurables")
+    ax.legend(fontsize=8, frameon=False)
+    style_axes(ax)
+    ax.set_title("Directions mesurées selon la disposition des capteurs (sans bruit)",
+                 fontsize=10)
+    fig.tight_layout()
+    save(fig, "ml_geometrie.png")
+
+
+def exp_mobile(n_seeds, Ks=(10, 20), sigma=1e-3):
+    """
+    Capteur mobile : 64 capteurs du cercle + N mesures d'un capteur que l'on
+    place où l'on veut dans D. Trois façons de choisir les N positions :
+    adaptatif (A-optimal sur les sources estimées par ML + BIC, par paquets
+    de 8), au hasard, grille régulière. Positions prises parmi les mêmes
+    candidats (centres des cases de pas 0,25).
+    """
+    from sparse_sources.kernel import Setup
+    from sparse_sources.mobile import adaptive_ml, candidate_points
+    from sparse_sources.ml3d import match_nd, success_nd
+    print("\n[7] Capteur mobile")
+    box = SETUP.domain
+    lo, hi = np.asarray(box.lo, float), np.asarray(box.hi, float)
+    cand = candidate_points(box)
+    Ns = {8: (2, 4), 32: (4, 8), 72: (6, 12), 128: (8, 16)}
+    rows = []
+
+    def record(K, seed, strat, n, z, I, z_hat, I_hat, t):
+        res = match_nd(z, I, z_hat, I_hat)
+        rows.append({"K": K, "seed": seed, "strategie": strat, "n_mobile": n,
+                     "n_est": len(I_hat), "trouvees_0_5": found_within(z, z_hat, 0.5),
+                     "trouvees_0_1": found_within(z, z_hat, 0.1),
+                     "reussite": success_nd(res, z), "temps": t})
+
+    for K in Ks:
+        for seed in range(n_seeds):
+            r = np.random.default_rng(seed)
+            z = lo + (hi - lo) * r.random((K, 2))
+            I = 100.0 * r.dirichlet(np.ones(K))
+            noise = np.random.default_rng(1000 + seed)
+
+            def measure(pts):
+                raw = Setup(np.atleast_2d(pts), box, 0.0)
+                c = I_CENTRAL * raw.phi(CENTER)[0]
+                y = raw.phi(z).T @ I + c
+                return y * (1 + sigma * noise.standard_normal(len(y))) - c, y
+
+            m0, y0 = measure(SETUP.sensors)
+
+            def fit(sensors, m, y):
+                S = Setup(sensors, box, 0.0, normalize=True)
+                t0 = time.perf_counter()
+                out = greedy_ml(m, relative_noise_std(y, sigma), setup=S,
+                                grid=build_grid(step=0.25, setup=S), k_max=K + 15)
+                return out, time.perf_counter() - t0
+
+            res, t = fit(SETUP.sensors, m0, y0)
+            for strat in ["adaptatif", "hasard", "grille"]:
+                record(K, seed, strat, 0, z, I, res["z"], res["I"], t)
+            for st in adaptive_ml(measure, SETUP.sensors, m0, y0, box, sigma, max(Ns),
+                                  checkpoints=Ns, k_max=K + 15):
+                record(K, seed, "adaptatif", st["n_mobile"], z, I, st["z"], st["I"], st["time"])
+            for n, (nx, ny) in Ns.items():
+                pick = np.random.default_rng(2000 + seed).choice(len(cand), n, replace=False)
+                grid_pts = interior_grid(nx, ny)
+                snap = cand[np.argmin(np.linalg.norm(grid_pts[:, None] - cand[None], axis=-1), 1)]
+                for strat, pts in [("hasard", cand[pick]), ("grille", snap)]:
+                    m1, y1 = measure(pts)
+                    res, t = fit(np.vstack([SETUP.sensors, pts]), np.concatenate([m0, m1]),
+                                 np.concatenate([y0, y1]))
+                    record(K, seed, strat, n, z, I, res["z"], res["I"], t)
+            print(f"  K = {K}, tirage {seed} : " + ", ".join(
+                f"{x['strategie']} N={x['n_mobile']} -> {x['trouvees_0_1']}"
+                for x in rows if (x["K"], x["seed"]) == (K, seed) and x["n_mobile"] in (32, 128)),
+                flush=True)
+        for strat in ["adaptatif", "hasard", "grille"]:
+            line = []
+            for n in [0, *Ns]:
+                sel = [x for x in rows if (x["K"], x["strategie"], x["n_mobile"]) == (K, strat, n)]
+                line.append(f"N={n}: {np.mean([x['trouvees_0_1'] for x in sel]):.1f}")
+            print(f"  K = {K}, {strat:9s} : sources retrouvées à 0,1 près (moyenne) " + ", ".join(line))
+    write_csv(rows, OUT / "ml_mobile.csv")
+
+    fig, axes = plt.subplots(1, len(Ks), figsize=(4.2 * len(Ks), 3.6), squeeze=False)
+    for ax, K in zip(axes[0], Ks):
+        for k, strat in enumerate(["adaptatif", "hasard", "grille"]):
+            xs = [0, *Ns]
+            ys = [np.mean([x["trouvees_0_1"] for x in rows
+                           if (x["K"], x["strategie"], x["n_mobile"]) == (K, strat, n)]) for n in xs]
+            ax.plot(xs, ys, "-o", color=SERIES[k], lw=2, ms=5, label=strat)
+        ax.axhline(K, color=INK_MUTED, ls=":", lw=1.5)
+        ax.set_xlabel("mesures du capteur mobile N")
+        ax.set_ylabel("sources retrouvées à 0,1 près")
+        ax.set_title(f"{K} sources, σ = {sigma:g}", fontsize=10)
+        style_axes(ax)
+    axes[0][0].legend(fontsize=8, frameon=False)
+    fig.tight_layout()
+    save(fig, "ml_mobile.png")
+
+
+def exp_continuous(n_seeds, K=50, sigma=1e-3, ml_seeds=(0,)):
+    """
+    Capteur qui enregistre en continu le long d'un trajet en serpentin
+    (``mobile.serpentine``), en plus des 64 capteurs du cercle. Pour K
+    sources : directions mesurables et CRB (n_seeds tirages), puis ML + BIC
+    sur les tirages ``ml_seeds`` (long : 10 à 30 min par reconstruction).
+    """
+    from sparse_sources.kernel import Setup
+    from sparse_sources.mobile import serpentine
+    from sparse_sources.ml3d import match_nd, success_nd
+    print(f"\n[8] Capteur en enregistrement continu, {K} sources")
+    box = SETUP.domain
+    lo, hi = np.asarray(box.lo, float), np.asarray(box.hi, float)
+    paths = {"cercle seul": np.zeros((0, 2)),
+             "grille fixe 16x32": interior_grid(16, 32)}
+    for nl, st in [(4, 0.25), (8, 0.25), (8, 0.1), (16, 0.25)]:
+        paths[f"serpentin {nl} lignes, pas {st:g}"] = serpentine(box, nl, st)
+    rows = []
+    for name, pts in paths.items():
+        sens = np.vstack([SETUP.sensors, pts])
+        raw = Setup(sens, box, 0.0)
+        central = I_CENTRAL * raw.phi(CENTER)[0]
+        for seed in range(n_seeds):
+            r = np.random.default_rng(seed)
+            z = lo + (hi - lo) * r.random((K, 2))
+            I = 100.0 * r.dirichlet(np.ones(K))
+            y = raw.phi(z).T @ I + central
+            crb = cramer_rao(z, I, relative_noise_std(y, sigma), raw)["pos_std"]
+            rows.append({"trajet": name, "mesures_mobiles": len(pts),
+                         "longueur_trajet": float(np.sum(np.linalg.norm(np.diff(pts, axis=0), axis=1)))
+                         if len(pts) > 1 else 0.0,
+                         "seed": seed, "directions_mesurables": measurable_directions(z, I, sens)[0],
+                         "crb_mediane": float(np.nanmedian(crb)),
+                         "part_crb_0_1": float(np.mean(crb < 0.1))})
+        sel = [x for x in rows if x["trajet"] == name]
+        print(f"  {name:26s} {len(pts):5d} mesures, trajet {sel[0]['longueur_trajet']:5.0f} : "
+              f"directions {np.median([x['directions_mesurables'] for x in sel]):.0f} / {3 * K}, "
+              f"CRB médiane {np.median([x['crb_mediane'] for x in sel]):.3g}, sources à CRB < 0,1 : "
+              f"{100 * np.mean([x['part_crb_0_1'] for x in sel]):.0f} %", flush=True)
+    write_csv(rows, OUT / "ml_continu_crb.csv")
+
+    runs = []
+    for name in ["serpentin 4 lignes, pas 0.25", "serpentin 8 lignes, pas 0.25"]:
+        pts = paths[name]
+        sens = np.vstack([SETUP.sensors, pts])
+        S = Setup(sens, box, 0.0, normalize=True)
+        raw = S.with_power(0.0)
+        central = I_CENTRAL * raw.phi(CENTER)[0]
+        for seed in ml_seeds:
+            r = np.random.default_rng(seed)
+            z = lo + (hi - lo) * r.random((K, 2))
+            I = 100.0 * r.dirichlet(np.ones(K))
+            y = raw.phi(z).T @ I + central
+            m = y * (1 + sigma * r.standard_normal(len(y))) - central
+            s = relative_noise_std(y, sigma)
+            crb = cramer_rao(z, I, s, raw)["pos_std"]
+            res = greedy_ml(m, s, setup=S, grid=build_grid(step=0.25, setup=S), k_max=K + 15)
+            mt = match_nd(z, I, res["z"], res["I"])
+            runs.append({"trajet": name, "M": S.M, "seed": seed, "n_est": res["K"],
+                         "chi2_sur_M": res["chi2"] / S.M,
+                         "trouvees_0_5": found_within(z, res["z"], 0.5),
+                         "trouvees_0_1": found_within(z, res["z"], 0.1),
+                         "crb_inf_0_1": int(np.sum(crb < 0.1)),
+                         "reussite": success_nd(mt, z), "temps": res["time"]})
+            x = runs[-1]
+            print(f"  ML + BIC, {name}, tirage {seed} : K estimé {x['n_est']}, χ²/M "
+                  f"{x['chi2_sur_M']:.2f}, retrouvées à 0,5 : {x['trouvees_0_5']}, à 0,1 : "
+                  f"{x['trouvees_0_1']} (CRB < 0,1 : {x['crb_inf_0_1']}), {x['temps']:.0f} s",
+                  flush=True)
+    write_csv(runs, OUT / "ml_continu_ml.csv")
+
+
+def exp_fw_many(seeds=(0,), sigma=1e-3):
+    """
+    Frank-Wolfe glissant normalisé avec beaucoup de sources et des capteurs
+    dans D : réglage du projet (λ = 1,5 σ ||y||) et version blanchie
+    (capteurs divisés par s_i, λ = 1,5 √M). Mêmes tirages et même bruit que
+    les reconstructions ML + BIC de COMPTE_RENDU_CAPTEURS.md (graine 0).
+    """
+    import warnings
+    from sparse_sources import sliding_frank_wolfe
+    from sparse_sources.kernel import Setup
+    from sparse_sources.mobile import serpentine
+    print("\n[9] Frank-Wolfe normalisé, beaucoup de sources")
+    box = SETUP.domain
+    lo, hi = np.asarray(box.lo, float), np.asarray(box.hi, float)
+    cases = [(20, "grille 8x16", interior_grid(8, 16)), (50, "cercle seul", np.zeros((0, 2))),
+             (50, "grille 16x32", interior_grid(16, 32)),
+             (50, "serpentin 8 lignes", serpentine(box, 8, 0.25))]
+    rows = []
+    for K, name, pts in cases:
+        sens = np.vstack([SETUP.sensors, pts])
+        base = Setup(sens, box, 0.0, normalize=True)
+        raw = base.with_power(0.0)
+        for seed in seeds:
+            r = np.random.default_rng(seed)
+            z = lo + (hi - lo) * r.random((K, 2))
+            I = 100.0 * r.dirichlet(np.ones(K))
+            c = I_CENTRAL * raw.phi(CENTER)[0]
+            y = raw.phi(z).T @ I + c
+            m = y * (1 + sigma * r.standard_normal(len(y))) - c
+            s = relative_noise_std(y, sigma)
+            crb = cramer_rao(z, I, s, raw)["pos_std"]
+            for variant in ["projet", "blanchi"]:
+                if variant == "projet":
+                    S, mm, lam = base, m, 1.5 * sigma * float(np.linalg.norm(y))
+                else:
+                    S = Setup(sens, box, 0.0, normalize=True, weights=1.0 / s)
+                    mm, lam = S.whiten(m), 1.5 * np.sqrt(len(m))
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    fw = sliding_frank_wolfe(mm, lam, setup=S, grid=build_grid(step=0.25, setup=S),
+                                             tol=1e-5, max_iter=K + 30)
+                zf = np.atleast_2d(fw["z_debiased"]).reshape(-1, 2)
+                rows.append({"K": K, "capteurs": name, "M": len(sens), "seed": seed,
+                             "reglage": variant, "n_est": len(zf),
+                             "trouvees_0_5": found_within(z, zf, 0.5),
+                             "trouvees_0_1": found_within(z, zf, 0.1),
+                             "crb_inf_0_1": int(np.sum(crb < 0.1)), "temps": fw["time"]})
+                x = rows[-1]
+                print(f"  K = {K}, {name:18s}, {variant:7s} : K estimé {x['n_est']}, retrouvées à "
+                      f"0,5 : {x['trouvees_0_5']}, à 0,1 : {x['trouvees_0_1']} (CRB < 0,1 : "
+                      f"{x['crb_inf_0_1']}), {x['temps']:.0f} s", flush=True)
+    write_csv(rows, OUT / "ml_fw_beaucoup.csv")
+
+
 def main():
     """Lance les expériences demandées."""
     sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     p.add_argument("--rapide", action="store_true", help="moins de tirages")
     p.add_argument("--seulement", nargs="+", choices=["sigma_faux", "detection", "resolution", "capteurs",
-                                                  "beaucoup"])
+                                                  "beaucoup", "geometrie", "mobile", "continu",
+                                  "frank_wolfe"])
     args = p.parse_args()
     n = 4 if args.rapide else 20
     todo = set(args.seulement or ["sigma_faux", "detection", "resolution", "capteurs",
-                                  "beaucoup"])
+                                  "beaucoup", "geometrie", "mobile", "continu",
+                                  "frank_wolfe"])
     OUT.mkdir(exist_ok=True)
     t0 = time.perf_counter()
     if "sigma_faux" in todo:
@@ -380,6 +681,14 @@ def main():
         exp_sensors(n)
     if "beaucoup" in todo:
         exp_many(max(n // 4, 2))
+    if "geometrie" in todo:
+        exp_geometry(max(n // 4, 2))
+    if "mobile" in todo:
+        exp_mobile(max(n // 4, 2))
+    if "continu" in todo:
+        exp_continuous(max(n // 4, 2))
+    if "frank_wolfe" in todo:
+        exp_fw_many()
     print(f"\nTerminé en {time.perf_counter() - t0:.0f} s.")
 
 

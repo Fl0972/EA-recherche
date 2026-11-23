@@ -1,0 +1,20 @@
+[
+ {
+  "cadre": "orano",
+  "x": 1,
+  "tirage": 1,
+  "categorie_init_protocole": "budget épuisé"
+ },
+ {
+  "cadre": "orano",
+  "x": 30,
+  "tirage": 1,
+  "categorie_init_protocole": "budget épuisé"
+ },
+ {
+  "cadre": "projet",
+  "x": 1,
+  "tirage": 7,
+  "categorie_init_protocole": "budget épuisé"
+ }
+]

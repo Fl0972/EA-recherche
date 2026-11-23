@@ -13,3 +13,8 @@ venv/
 # Sorties générées
 outputs/
 *.png
+!rapport/images/*.png
+
+# Caches binaires régénérés par sparse_sources/apprentissage
+sparse_sources/apprentissage/results/*.pkl
+sparse_sources/apprentissage/results/*.pt

@@ -21,8 +21,9 @@ Aucun fichier existant n'a été modifié ; le noyau et ses dérivées viennent 
 | `blasso.py` | `sliding_frank_wolfe` |
 | `hypotheses.py` | `check_hypotheses`, `hypotheses_after_fit` |
 | `ml.py` | `greedy_ml` (maximum de vraisemblance glouton, K par BIC), `cramer_rao`, `relative_noise_std` |
+| `mobile.py` | capteur mobile : positions A-optimales choisies d'après ML + BIC (`adaptive_ml`), trajet en serpentin (`serpentine`) |
 | `ml3d.py` | `greedy_ml_nd`, `cramer_rao_nd` : la même méthode en dimension quelconque (sources en 3D) |
-| `tester_ml.py` | tester ML + BIC sur un tirage (2D ou 3D) : sources vraies / estimées, CRB, χ², figure |
+| `tester_ml.py` | tester ML + BIC sur un tirage (2D ou 3D) : sources vraies / estimées, CRB, χ², figure ; en 2D, capteurs au choix (cercle agrandi, grille dans D, fichier) et K imposé |
 | `plotting.py` | style des figures |
 | `experiments.py` | expériences → `results/` (PNG + CSV) |
 | `experiments_1r2.py` | étude du noyau 1/r² → `results/r2_*` |
@@ -32,6 +33,8 @@ Aucun fichier existant n'a été modifié ; le noyau et ses dérivées viennent 
 | `experiments_ml3d.py` | sources en 3D → `results/ml3d*` |
 | `RAPPORT_ML_BIC.md` | rapport complet sur le maximum de vraisemblance + BIC |
 | `COMPTE_RENDU_ML.md` | compte rendu court et pédagogique de ML + BIC (méthode, résultats, limites, 50 sources) |
+| `apprentissage/` | apprentissage automatique (classifieurs, régression, réseau de neurones), méthodes probabilistes (Laplace, MCMC, recherche stochastique), position des capteurs : voir `apprentissage/COMPTE_RENDU_APPRENTISSAGE.md` |
+| `COMPTE_RENDU_CAPTEURS.md` | où placer les capteurs pour retrouver beaucoup de sources : K imposé, cercle agrandi, capteurs dans D, capteur mobile (adaptatif, enregistrement continu), Frank-Wolfe |
 | `tests/` | pytest : `pytest sparse_sources/tests` |
 
 ## Appels
@@ -146,6 +149,10 @@ localement par `experiments.py` ; les CSV sont versionnés.
   `RAPPORT_ML_BIC.md`.
 - **Capteurs sur un cylindre** : n'aident pas le Frank-Wolfe, même avec le λ
   optimal pour un K connu et des sources espacées.
+- **Apprentissage automatique / probabiliste** (`apprentissage/`) : rien ne bat
+  nettement ML + BIC (oracle à 52 % contre 48,7 %) ; la recherche par division
+  atteint l'optimum global (50,0 %). Placer les capteurs au bord de D (plan
+  D-optimal) fait passer la réussite de 49 % à 69 %.
 
 ## Limites observées
 

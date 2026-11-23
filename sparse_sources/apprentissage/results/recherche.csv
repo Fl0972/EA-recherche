@@ -1,0 +1,1801 @@
+methode,i,n,sigma,n_est,exact,err_pos,err_int,reussite,sep_min,temps,ajustements,origine
+glouton+division,0,1,0.0001,2,False,0.00261752,0.000113985,False,inf,2.49862,16,glouton/glouton
+glouton+division,1,1,0.0001,1,True,0.000280735,0.000198009,True,inf,2.72856,9,glouton
+glouton+division,2,1,0.0001,1,True,0.00111636,9.58502e-05,True,inf,2.96789,9,glouton
+glouton+division,3,1,0.0001,1,True,0.000217531,0.000132777,True,inf,3.13622,9,glouton
+glouton+division,4,1,0.0001,1,True,0.00032071,0.000357673,True,inf,3.19844,9,glouton
+glouton+division,5,1,0.0001,1,True,0.00305654,0.000308978,True,inf,1.76672,9,glouton
+glouton+division,6,1,0.0001,1,True,0.000191635,0.000185949,True,inf,1.5203,9,glouton
+glouton+division,7,1,0.0001,1,True,0.000502688,0.00040354,True,inf,2.36518,9,glouton
+glouton+division,8,1,0.0001,1,True,0.00288123,0.00024836,True,inf,1.20013,9,glouton
+glouton+division,9,1,0.0001,1,True,0.00347973,0.000405669,True,inf,2.55753,9,glouton
+glouton+division,10,1,0.0001,1,True,0.000179867,0.00010882,True,inf,1.69622,9,glouton
+glouton+division,11,1,0.0001,1,True,0.000351269,8.69128e-05,True,inf,3.01897,9,glouton
+glouton+division,12,1,0.0001,1,True,0.00992286,0.000434337,True,inf,1.15964,9,glouton
+glouton+division,13,1,0.0001,1,True,0.000378086,0.000224658,True,inf,1.4605,9,glouton
+glouton+division,14,1,0.0001,1,True,0.00384117,0.000725623,True,inf,1.91811,9,glouton
+glouton+division,15,1,0.0001,1,True,0.0058733,8.85051e-05,True,inf,1.299,9,glouton
+glouton+division,16,1,0.0001,1,True,0.00598859,0.00152495,True,inf,0.946649,9,glouton
+glouton+division,17,1,0.0001,1,True,0.00231943,0.000207618,True,inf,1.44901,9,glouton
+glouton+division,18,1,0.0001,1,True,0.000159207,6.0762e-05,True,inf,1.90981,9,glouton
+glouton+division,19,1,0.0001,1,True,0.00272485,0.00109971,True,inf,1.03292,9,glouton
+glouton+division,20,1,0.0001,1,True,0.000165301,0.000177702,True,inf,1.68142,9,glouton
+glouton+division,21,1,0.0001,1,True,0.0037117,0.000771119,True,inf,1.25833,9,glouton
+glouton+division,22,1,0.0001,1,True,0.00512954,0.000680934,True,inf,1.34412,9,glouton
+glouton+division,23,1,0.0001,1,True,0.00465058,8.01282e-05,True,inf,1.23156,9,glouton
+glouton+division,24,1,0.0001,1,True,0.00169459,0.00056963,True,inf,1.33913,9,glouton
+glouton+division,25,1,0.0001,1,True,0.00245043,0.00051513,True,inf,0.963203,9,glouton
+glouton+division,26,1,0.0001,1,True,0.00141955,0.000378431,True,inf,1.54461,9,glouton
+glouton+division,27,1,0.0001,1,True,0.00848528,0.000925492,True,inf,1.54428,9,glouton
+glouton+division,28,1,0.0001,1,True,0.00465559,0.000213254,True,inf,1.67187,9,glouton
+glouton+division,29,1,0.0001,1,True,0.00364853,0.000696211,True,inf,2.22109,9,glouton
+glouton+division,30,1,0.0001,1,True,0.00505172,0.00120257,True,inf,1.32452,9,glouton
+glouton+division,31,1,0.0001,1,True,0.00126785,0.00029031,True,inf,2.86385,9,glouton
+glouton+division,32,1,0.0001,1,True,0.00477073,0.000323347,True,inf,1.46821,9,glouton
+glouton+division,33,1,0.0001,1,True,0.000239208,0.000200155,True,inf,1.46117,9,glouton
+glouton+division,34,1,0.0001,1,True,0.00447098,0.000465432,True,inf,1.66121,9,glouton
+glouton+division,35,1,0.0001,1,True,0.000251499,0.000180964,True,inf,3.41116,9,glouton
+glouton+division,36,1,0.0001,1,True,0.00218018,9.41165e-05,True,inf,1.79227,9,glouton
+glouton+division,37,1,0.0001,1,True,0.00379075,0.0013191,True,inf,1.82581,9,glouton
+glouton+division,38,1,0.0001,1,True,0.00021223,0.00019898,True,inf,3.80931,9,glouton
+glouton+division,39,1,0.0001,1,True,0.00109395,8.59615e-05,True,inf,1.75764,9,glouton
+glouton+division,40,1,0.001,1,True,0.0442753,0.00648846,True,inf,0.492221,9,glouton
+glouton+division,41,1,0.001,1,True,0.0351241,0.00252265,True,inf,0.480983,9,glouton
+glouton+division,42,1,0.001,1,True,0.00852931,0.00457436,True,inf,0.935762,9,glouton
+glouton+division,43,1,0.001,1,True,0.00664006,0.00707562,True,inf,0.748029,9,glouton
+glouton+division,44,1,0.001,1,True,0.00145504,2.06407e-05,True,inf,1.08696,9,glouton
+glouton+division,45,1,0.001,1,True,0.0120479,0.00344504,True,inf,0.520115,9,glouton
+glouton+division,46,1,0.001,1,True,0.0272957,0.000478248,True,inf,0.660908,9,glouton
+glouton+division,47,1,0.001,1,True,0.00993195,0.00448006,True,inf,0.699419,9,glouton
+glouton+division,48,1,0.001,1,True,0.0155376,0.0065498,True,inf,0.504775,9,glouton
+glouton+division,49,1,0.001,1,True,0.0421927,0.000813251,True,inf,0.51921,9,glouton
+glouton+division,50,1,0.001,1,True,0.00067468,0.00108881,True,inf,2.48779,9,glouton
+glouton+division,51,1,0.001,1,True,0.0135986,0.000602755,True,inf,0.459314,9,glouton
+glouton+division,52,1,0.001,1,True,0.0783305,0.00597595,True,inf,0.473139,9,glouton
+glouton+division,53,1,0.001,1,True,0.00223118,0.00362504,True,inf,0.95353,9,glouton
+glouton+division,54,1,0.001,1,True,0.0336757,0.00726652,True,inf,0.713046,9,glouton
+glouton+division,55,1,0.001,1,True,0.0225889,0.00478602,True,inf,0.873943,9,glouton
+glouton+division,56,1,0.001,1,True,0.0109515,0.0027732,True,inf,0.45531,9,glouton
+glouton+division,57,1,0.001,2,False,0.129106,0.0263997,False,inf,1.08013,16,glouton/division
+glouton+division,58,1,0.001,2,False,0.078651,0.0149997,False,inf,1.30321,16,glouton/glouton
+glouton+division,59,1,0.001,1,True,0.0388498,0.00984193,True,inf,0.808452,9,glouton
+glouton+division,60,1,0.001,1,True,0.0218001,0.00194186,True,inf,0.978836,9,glouton
+glouton+division,61,1,0.001,1,True,0.101105,0.00848206,True,inf,0.988093,9,glouton
+glouton+division,62,1,0.001,1,True,0.0657461,0.00680777,True,inf,0.696694,9,glouton
+glouton+division,63,1,0.001,1,True,0.0425115,0.00533145,True,inf,0.626447,9,glouton
+glouton+division,64,1,0.001,1,True,0.016103,0.00113341,True,inf,0.606955,9,glouton
+glouton+division,65,1,0.001,1,True,0.0357364,0.000812447,True,inf,0.635208,9,glouton
+glouton+division,66,1,0.001,2,False,0.0112904,0.00348477,False,inf,1.12133,16,glouton/glouton
+glouton+division,67,1,0.001,1,True,0.00446019,0.00148089,True,inf,0.868311,9,glouton
+glouton+division,68,1,0.001,1,True,0.005658,0.00367297,True,inf,1.12934,9,glouton
+glouton+division,69,1,0.001,1,True,0.00363445,0.00121319,True,inf,1.1134,9,glouton
+glouton+division,70,1,0.001,1,True,0.0296705,0.00667061,True,inf,0.834509,9,glouton
+glouton+division,71,1,0.001,1,True,0.0517957,0.0102601,True,inf,0.897438,9,glouton
+glouton+division,72,1,0.001,1,True,0.0104717,0.00308765,True,inf,0.750757,9,glouton
+glouton+division,73,1,0.001,1,True,0.0193069,0.00189352,True,inf,0.461693,9,glouton
+glouton+division,74,1,0.001,1,True,0.00279237,0.00277839,True,inf,0.824213,9,glouton
+glouton+division,75,1,0.001,1,True,0.0103532,0.00365309,True,inf,0.469476,9,glouton
+glouton+division,76,1,0.001,1,True,0.029672,0.00675465,True,inf,0.435572,9,glouton
+glouton+division,77,1,0.001,1,True,0.000323229,0.000574421,True,inf,0.70431,9,glouton
+glouton+division,78,1,0.001,1,True,0.0175383,0.00289683,True,inf,0.624885,9,glouton
+glouton+division,79,1,0.001,1,True,0.0131714,0.00686845,True,inf,0.729945,9,glouton
+glouton+division,80,1,0.003,1,True,0.0721268,0.0319072,True,inf,0.359016,9,glouton
+glouton+division,81,1,0.003,1,True,0.1423,0.0175079,True,inf,0.447459,9,glouton
+glouton+division,82,1,0.003,1,True,0.00259423,0.00325114,True,inf,1.62647,9,glouton
+glouton+division,83,1,0.003,1,True,0.0054381,0.00119761,True,inf,0.675985,9,glouton
+glouton+division,84,1,0.003,1,True,0.0342734,0.0273413,True,inf,0.703832,9,glouton
+glouton+division,85,1,0.003,1,True,0.0162153,0.00595919,True,inf,0.438773,9,glouton
+glouton+division,86,1,0.003,1,True,0.266264,0.0254264,True,inf,0.524449,9,glouton
+glouton+division,87,1,0.003,1,True,0.0904219,0.0137699,True,inf,0.638722,9,glouton
+glouton+division,88,1,0.003,1,True,0.0148985,0.0024618,True,inf,0.80957,9,glouton
+glouton+division,89,1,0.003,1,True,0.039479,0.0245063,True,inf,0.306691,9,glouton
+glouton+division,90,1,0.003,1,True,0.00618236,0.00292567,True,inf,0.856769,9,glouton
+glouton+division,91,1,0.003,1,True,0.0808072,0.0272538,True,inf,0.452272,9,glouton
+glouton+division,92,1,0.003,1,True,0.0857435,0.00167703,True,inf,0.289114,9,glouton
+glouton+division,93,1,0.003,1,True,0.00829298,0.0123199,True,inf,0.601569,9,glouton
+glouton+division,94,1,0.003,1,True,0.0235563,0.013492,True,inf,0.784774,9,glouton
+glouton+division,95,1,0.003,1,True,0.0582603,0.00486124,True,inf,0.414738,9,glouton
+glouton+division,96,1,0.003,1,True,0.0142022,0.00131077,True,inf,0.446147,9,glouton
+glouton+division,97,1,0.003,1,True,0.210328,0.0114818,True,inf,0.423079,9,glouton
+glouton+division,98,1,0.003,1,True,0.123407,0.00974577,True,inf,0.432639,9,glouton
+glouton+division,99,1,0.003,1,True,0.0552101,0.000268889,True,inf,0.699898,9,glouton
+glouton+division,100,1,0.003,1,True,0.00243264,0.00220573,True,inf,0.568349,9,glouton
+glouton+division,101,1,0.003,1,True,0.0942659,0.0198953,True,inf,0.666928,9,glouton
+glouton+division,102,1,0.003,1,True,0.177286,0.031209,True,inf,0.380131,9,glouton
+glouton+division,103,1,0.003,1,True,0.0382812,0.0198094,True,inf,0.816753,9,glouton
+glouton+division,104,1,0.003,1,True,0.12964,0.00243987,True,inf,0.445411,9,glouton
+glouton+division,105,1,0.003,1,True,0.00365163,0.00622337,True,inf,0.409011,9,glouton
+glouton+division,106,1,0.003,1,True,0.107188,0.000242313,True,inf,0.404506,9,glouton
+glouton+division,107,1,0.003,1,True,0.102671,0.0264719,True,inf,0.557687,9,glouton
+glouton+division,108,1,0.003,1,True,0.00593018,0.00564394,True,inf,0.507858,9,glouton
+glouton+division,109,1,0.003,1,True,0.00787228,0.0086159,True,inf,0.642254,9,glouton
+glouton+division,110,1,0.003,1,True,0.0384452,0.0141473,True,inf,0.72308,9,glouton
+glouton+division,111,1,0.003,1,True,0.182089,0.0098971,True,inf,0.366981,9,glouton
+glouton+division,112,1,0.003,1,True,0.00431147,0.00530401,True,inf,0.953576,9,glouton
+glouton+division,113,1,0.003,1,True,0.00311307,0.00352024,True,inf,0.412452,9,glouton
+glouton+division,114,1,0.003,1,True,0.0819334,0.0277285,True,inf,0.390262,9,glouton
+glouton+division,115,1,0.003,1,True,0.472835,0.0466607,True,inf,0.384325,9,glouton
+glouton+division,116,1,0.003,1,True,0.0176081,0.000285737,True,inf,0.661876,9,glouton
+glouton+division,117,1,0.003,1,True,0.0611313,0.0221624,True,inf,0.516287,9,glouton
+glouton+division,118,1,0.003,1,True,0.103608,0.023433,True,inf,0.415174,9,glouton
+glouton+division,119,1,0.003,1,True,0.042397,0.00911553,True,inf,0.637785,9,glouton
+glouton+division,120,2,0.0001,2,True,0.00604366,0.00131065,True,13.0187,4.03369,16,glouton/division
+glouton+division,121,2,0.0001,2,True,0.0534601,0.0310355,True,3.4702,3.85765,16,glouton/division
+glouton+division,122,2,0.0001,2,True,0.0141474,0.00139697,True,8.7519,7.34868,16,glouton/glouton
+glouton+division,123,2,0.0001,2,True,0.113963,0.0624104,True,5.45078,2.71716,16,glouton/glouton
+glouton+division,124,2,0.0001,2,True,0.00801489,0.00115014,True,14.9599,2.08868,16,glouton/division
+glouton+division,125,2,0.0001,2,True,0.0109497,0.011248,True,1.60781,7.66541,16,glouton/division
+glouton+division,126,2,0.0001,2,True,0.199487,0.0689988,True,6.89842,3.12375,16,glouton/glouton
+glouton+division,127,2,0.0001,2,True,0.0421918,0.0154061,True,5.20788,1.98206,16,glouton/division
+glouton+division,128,2,0.0001,2,True,0.0346457,0.0180196,True,8.96951,1.56246,16,glouton/division
+glouton+division,129,2,0.0001,2,True,0.0410417,0.0209959,True,7.2605,2.56918,16,glouton/division
+glouton+division,130,2,0.0001,2,True,0.00625868,0.00279694,True,13.2101,3.29207,16,glouton/division
+glouton+division,131,2,0.0001,2,True,0.252749,0.0380829,True,5.63085,3.08633,16,glouton/division
+glouton+division,132,2,0.0001,2,True,0.0555205,0.0147454,True,4.91723,4.05969,16,glouton/glouton
+glouton+division,133,2,0.0001,2,True,0.0113804,0.00179172,True,12.2824,2.23875,16,glouton/division
+glouton+division,134,2,0.0001,2,True,0.00363429,9.19837e-05,True,6.10618,5.17224,16,glouton/glouton
+glouton+division,135,2,0.0001,2,True,0.375033,0.333892,True,2.09779,4.74157,16,glouton/division
+glouton+division,136,2,0.0001,2,True,0.00582788,0.000614134,True,8.97495,3.82493,16,glouton/glouton
+glouton+division,137,2,0.0001,2,True,0.00400335,0.000864226,True,14.8431,2.42716,16,glouton/division
+glouton+division,138,2,0.0001,2,True,0.0131893,0.00237936,True,8.00827,2.24752,16,glouton/division
+glouton+division,139,2,0.0001,2,True,0.00600661,0.00546427,True,2.46442,3.70343,16,glouton/glouton
+glouton+division,140,2,0.0001,2,True,0.0161231,0.00874702,True,2.77051,3.08403,16,glouton/glouton
+glouton+division,141,2,0.0001,2,True,0.0283192,0.0105601,True,5.4071,2.87294,16,glouton/division
+glouton+division,142,2,0.0001,2,True,0.000625862,6.31752e-05,True,16.6512,4.13658,16,glouton/division
+glouton+division,143,2,0.0001,2,True,0.322497,0.315825,True,3.48684,3.82301,16,glouton/division
+glouton+division,144,2,0.0001,2,True,0.0184362,0.00568165,True,8.11239,3.16095,16,glouton/division
+glouton+division,145,2,0.0001,2,True,0.409208,0.0589212,True,7.86212,4.34055,16,glouton/glouton
+glouton+division,146,2,0.0001,2,True,0.0211072,0.0102196,True,7.71639,3.5062,16,glouton/division
+glouton+division,147,2,0.0001,2,True,0.00974595,0.00501642,True,10.065,2.3767,16,glouton/glouton
+glouton+division,148,2,0.0001,2,True,0.0307314,0.00478254,True,9.56185,3.17011,16,glouton/glouton
+glouton+division,149,2,0.0001,2,True,0.00162965,0.000634683,True,4.85707,2.947,16,glouton/glouton
+glouton+division,150,2,0.0001,2,True,0.0347963,0.0161554,True,5.20877,4.71463,16,glouton/glouton
+glouton+division,151,2,0.0001,2,True,0.119352,0.0206763,True,9.47959,2.80933,16,glouton/division
+glouton+division,152,2,0.0001,2,True,0.0190237,0.011449,True,5.9641,2.7695,16,glouton/division
+glouton+division,153,2,0.0001,2,True,0.0203066,0.00328985,True,5.89131,2.5263,16,glouton/glouton
+glouton+division,154,2,0.0001,2,True,0.0185942,0.00120321,True,5.72959,5.24002,16,glouton/division
+glouton+division,155,2,0.0001,3,False,0.214782,0.00177394,False,10.7686,5.16404,25,glouton/glouton/division
+glouton+division,156,2,0.0001,2,True,0.00450096,0.0021849,True,5.08915,2.06394,16,glouton/glouton
+glouton+division,157,2,0.0001,2,True,0.0831453,0.0167288,True,6.53737,3.02253,16,glouton/glouton
+glouton+division,158,2,0.0001,2,True,0.10077,0.119486,True,1.34136,3.66602,16,glouton/glouton
+glouton+division,159,2,0.0001,2,True,0.0169093,0.00033907,True,8.32164,8.40263,16,glouton/division
+glouton+division,160,2,0.001,2,True,1.10922,0.214118,False,10.0706,2.21549,16,glouton/glouton
+glouton+division,161,2,0.001,2,True,0.156335,0.113726,True,2.72434,2.11305,16,glouton/glouton
+glouton+division,162,2,0.001,2,True,0.0528091,0.00665397,True,16.2497,4.65528,16,glouton/glouton
+glouton+division,163,2,0.001,2,True,0.335659,0.166331,True,6.08584,1.25335,16,glouton/division
+glouton+division,164,2,0.001,2,True,0.0397148,0.0215697,True,12.154,1.13299,16,glouton/division
+glouton+division,165,2,0.001,2,True,0.45277,0.0261855,True,5.33071,1.36582,16,glouton/glouton
+glouton+division,166,2,0.001,2,True,0.0582105,0.0106619,True,6.88035,5.03167,16,glouton/division
+glouton+division,167,2,0.001,2,True,0.280878,0.0485953,True,13.4991,3.91172,16,glouton/division
+glouton+division,168,2,0.001,2,True,0.057929,0.0158461,True,9.09453,1.22044,16,glouton/glouton
+glouton+division,169,2,0.001,2,True,0.640801,0.251892,True,6.81251,1.3224,16,glouton/division
+glouton+division,170,2,0.001,2,True,0.0119724,0.00598872,True,5.49367,5.85334,16,glouton/division
+glouton+division,171,2,0.001,2,True,0.0852403,0.0150895,True,8.20336,1.69967,16,glouton/division
+glouton+division,172,2,0.001,1,False,0.0525752,0.00460615,False,6.17149,0.457007,9,glouton
+glouton+division,173,2,0.001,2,True,0.397316,0.0129303,True,5.8166,1.90131,16,glouton/division
+glouton+division,174,2,0.001,2,True,0.346679,0.214248,True,9.41913,1.17749,16,glouton/division
+glouton+division,175,2,0.001,2,True,0.123179,0.00867306,True,11.6946,1.5288,16,glouton/division
+glouton+division,176,2,0.001,2,True,0.147852,0.04086,True,5.82533,1.05667,16,glouton/division
+glouton+division,177,2,0.001,1,False,0.274537,0.213501,False,1.16712,0.835302,9,glouton
+glouton+division,178,2,0.001,2,True,0.0732819,0.00841456,True,11.6401,1.55626,16,glouton/glouton
+glouton+division,179,2,0.001,2,True,0.551212,0.250033,True,9.51079,1.86069,16,glouton/glouton
+glouton+division,180,2,0.001,2,True,0.0551669,0.00651239,True,6.65671,2.67508,16,glouton/division
+glouton+division,181,2,0.001,2,True,0.046554,0.0178529,True,9.40647,1.65957,16,glouton/glouton
+glouton+division,182,2,0.001,2,True,0.308818,0.0839602,True,5.60169,1.37528,16,glouton/division
+glouton+division,183,2,0.001,2,True,0.0686288,0.00977456,True,9.35308,1.16603,16,glouton/glouton
+glouton+division,184,2,0.001,2,True,0.190568,0.0624154,True,4.11639,1.37558,16,glouton/division
+glouton+division,185,2,0.001,2,True,0.09517,0.0316914,True,7.40844,1.15508,16,glouton/division
+glouton+division,186,2,0.001,2,True,0.0217577,0.0211246,True,8.21072,3.40343,16,glouton/division
+glouton+division,187,2,0.001,2,True,0.0823688,0.0123843,True,11.9373,2.25901,16,glouton/glouton
+glouton+division,188,2,0.001,2,True,0.445213,0.109558,True,7.14036,1.24006,16,glouton/glouton
+glouton+division,189,2,0.001,2,True,0.395382,0.0467861,True,6.76618,1.61228,16,glouton/division
+glouton+division,190,2,0.001,2,True,0.505964,0.542954,True,2.18607,2.80399,16,glouton/division
+glouton+division,191,2,0.001,2,True,2.3116,0.739143,False,6.87571,2.7456,16,glouton/glouton
+glouton+division,192,2,0.001,2,True,0.945834,0.032629,True,9.03813,1.70901,16,glouton/glouton
+glouton+division,193,2,0.001,1,False,0.0997852,0.0193405,False,3.07519,0.689041,9,glouton
+glouton+division,194,2,0.001,2,True,0.0717732,0.00547823,True,11.9613,1.51106,16,glouton/glouton
+glouton+division,195,2,0.001,2,True,0.0411861,0.0197664,True,5.95747,1.36621,16,glouton/glouton
+glouton+division,196,2,0.001,2,True,0.0989029,0.0288721,True,9.83961,1.44055,16,glouton/glouton
+glouton+division,197,2,0.001,1,False,1.15351,0.857323,False,2.36782,0.653269,9,glouton
+glouton+division,198,2,0.001,2,True,2.54386,0.726062,False,3.06053,1.30387,16,glouton/division
+glouton+division,199,2,0.001,2,True,0.0696952,0.00771281,True,13.3571,1.79389,16,glouton/division
+glouton+division,200,2,0.003,2,True,0.606235,0.227341,True,7.43959,0.91328,16,glouton/division
+glouton+division,201,2,0.003,1,False,0.70916,0.272355,False,3.54561,0.270446,9,glouton
+glouton+division,202,2,0.003,2,True,0.187721,0.0689682,True,9.26313,1.21411,16,glouton/glouton
+glouton+division,203,2,0.003,2,True,1.82843,0.353292,False,5.69702,0.877955,16,glouton/glouton
+glouton+division,204,2,0.003,2,True,0.293197,0.446187,True,4.6725,1.00522,16,glouton/glouton
+glouton+division,205,2,0.003,2,True,3.36471,0.612244,False,5.22872,0.743943,16,glouton/glouton
+glouton+division,206,2,0.003,2,True,0.772487,0.13145,True,9.10461,1.57787,16,glouton/glouton
+glouton+division,207,2,0.003,1,False,0.667912,0.193328,False,6.04886,0.366635,9,glouton
+glouton+division,208,2,0.003,2,True,0.385183,0.0378877,True,8.95239,1.19868,16,glouton/glouton
+glouton+division,209,2,0.003,2,True,0.578953,0.102786,True,11.5151,1.36375,16,glouton/glouton
+glouton+division,210,2,0.003,1,False,0.0207703,0.0145214,False,9.38492,0.753781,9,glouton
+glouton+division,211,2,0.003,1,False,0.370721,0.0673182,False,6.25765,0.684504,9,glouton
+glouton+division,212,2,0.003,2,True,0.140043,0.00817599,True,16.1492,1.98036,16,glouton/division
+glouton+division,213,2,0.003,1,False,0.667965,1.55664,False,1.37299,0.333936,9,glouton
+glouton+division,214,2,0.003,1,False,1.15318,0.635167,False,3.04511,0.820621,9,glouton
+glouton+division,215,2,0.003,1,False,0.199064,0.0725154,False,8.91953,0.67537,9,glouton
+glouton+division,216,2,0.003,2,True,0.064659,0.00856543,True,5.02508,1.00263,16,glouton/glouton
+glouton+division,217,2,0.003,2,True,0.181425,0.0865021,True,5.33536,1.59975,16,glouton/division
+glouton+division,218,2,0.003,1,False,0.247887,0.0948634,False,5.48855,0.964921,9,glouton
+glouton+division,219,2,0.003,2,True,0.510066,0.0724996,True,13.4149,1.59245,16,glouton/glouton
+glouton+division,220,2,0.003,2,True,0.142545,0.0869446,True,3.73957,1.36626,16,glouton/division
+glouton+division,221,2,0.003,2,True,4.96374,0.861702,False,7.03414,0.739293,16,glouton/division
+glouton+division,222,2,0.003,1,False,0.0409766,0.00525835,False,6.0778,0.327306,9,glouton
+glouton+division,223,2,0.003,2,True,1.1441,0.335336,False,3.8811,0.997696,16,glouton/glouton
+glouton+division,224,2,0.003,3,False,2.37413,0.771361,False,5.06722,1.54423,25,glouton/glouton/glouton
+glouton+division,225,2,0.003,2,True,2.45621,0.280786,False,7.27668,1.13438,16,glouton/division
+glouton+division,226,2,0.003,2,True,0.135508,0.0413512,True,11.726,1.15306,16,glouton/glouton
+glouton+division,227,2,0.003,2,True,0.904326,0.0449017,True,4.2139,1.81881,16,glouton/division
+glouton+division,228,2,0.003,2,True,2.54212,2.13212,False,4.24709,1.44095,16,glouton/division
+glouton+division,229,2,0.003,2,True,0.236753,0.048607,True,10.6592,0.608197,16,glouton/division
+glouton+division,230,2,0.003,2,True,0.358538,0.219798,True,8.50602,1.2305,16,glouton/division
+glouton+division,231,2,0.003,2,True,0.92753,0.638365,True,4.84739,0.93048,16,glouton/division
+glouton+division,232,2,0.003,1,False,1.66742,1.54181,False,3.36677,0.514476,9,glouton
+glouton+division,233,2,0.003,1,False,0.244873,0.0272019,False,9.88985,0.280989,9,glouton
+glouton+division,234,2,0.003,2,True,3.6664,0.555637,False,1.7603,1.45197,16,glouton/glouton
+glouton+division,235,2,0.003,2,True,1.53671,0.681828,False,7.19572,1.73655,16,glouton/division
+glouton+division,236,2,0.003,2,True,0.830512,0.455676,True,5.43922,1.27897,16,glouton/glouton
+glouton+division,237,2,0.003,1,False,0.00217949,0.00696739,False,5.15913,0.491297,9,glouton
+glouton+division,238,2,0.003,2,True,0.376419,0.0898211,True,6.98591,1.27503,16,glouton/glouton
+glouton+division,239,2,0.003,2,True,0.535944,0.0527349,True,8.71716,1.53902,16,glouton/division
+glouton+division,240,3,0.0001,3,True,0.0136925,0.00747477,True,3.11611,6.26752,25,glouton/glouton/division
+glouton+division,241,3,0.0001,3,True,0.0832736,0.0352412,True,6.63561,2.82873,25,glouton/division/glouton
+glouton+division,242,3,0.0001,3,True,0.0942097,0.00564761,True,6.71743,3.99193,25,glouton/glouton/division
+glouton+division,243,3,0.0001,3,True,0.00445192,0.000370392,True,5.962,5.3344,25,glouton/glouton/division
+glouton+division,244,3,0.0001,3,True,0.421646,0.212443,True,4.32849,4.07544,25,glouton/division/division
+glouton+division,245,3,0.0001,3,True,0.187151,0.0112401,True,4.3186,4.67506,25,glouton/glouton/division
+glouton+division,246,3,0.0001,3,True,0.0356213,0.0282892,True,4.89328,5.83678,25,glouton/glouton/glouton
+glouton+division,247,3,0.0001,3,True,0.0765381,0.0994094,True,2.42039,4.76185,25,glouton/division/glouton
+glouton+division,248,3,0.0001,3,True,0.0430832,0.0244248,True,3.75041,5.53544,25,glouton/glouton/division
+glouton+division,249,3,0.0001,2,False,0.210364,0.116242,False,2.00648,6.59204,16,glouton/glouton
+glouton+division,250,3,0.0001,3,True,0.0191096,0.00499547,True,8.84145,8.48234,25,glouton/glouton/division
+glouton+division,251,3,0.0001,3,True,0.769507,0.446983,True,3.14148,5.56538,25,glouton/division/division
+glouton+division,252,3,0.0001,3,True,0.486597,0.160627,True,2.16857,7.27234,25,glouton/division/division
+glouton+division,253,3,0.0001,3,True,0.0170782,0.00790156,True,4.71931,6.18536,25,glouton/glouton/glouton
+glouton+division,254,3,0.0001,3,True,0.0516069,0.0109849,True,5.7021,7.34249,25,glouton/division/division
+glouton+division,255,3,0.0001,3,True,0.0427609,0.00735024,True,8.05917,8.09106,25,glouton/division/division
+glouton+division,256,3,0.0001,3,True,0.222245,0.130245,True,3.73021,4.72307,25,glouton/division/division
+glouton+division,257,3,0.0001,3,True,0.0143577,0.000986364,True,3.45337,5.1657,25,glouton/division/division
+glouton+division,258,3,0.0001,3,True,0.011517,0.00290834,True,3.44102,6.80999,25,glouton/division/division
+glouton+division,259,3,0.0001,3,True,0.0343174,0.0105959,True,7.70245,4.98014,25,glouton/glouton/division
+glouton+division,260,3,0.0001,2,False,0.199244,0.121592,False,2.0011,2.16342,16,glouton/division
+glouton+division,261,3,0.0001,3,True,1.40455,1.62372,False,4.14098,5.07631,25,glouton/division/division
+glouton+division,262,3,0.0001,2,False,0.107119,0.0819787,False,1.79602,2.1614,16,glouton/division
+glouton+division,263,3,0.0001,3,True,4.00538,9.49375,False,2.87905,5.96331,25,glouton/division/glouton
+glouton+division,264,3,0.0001,3,True,0.0585858,0.00945878,True,7.21431,8.58748,25,glouton/division/division
+glouton+division,265,3,0.0001,3,True,0.0202947,0.0162443,True,6.44013,4.44358,25,glouton/division/glouton
+glouton+division,266,3,0.0001,2,False,0.438978,0.269552,False,1.92278,2.83343,16,glouton/glouton
+glouton+division,267,3,0.0001,3,True,0.398303,0.306142,True,2.37394,6.87918,25,glouton/glouton/glouton
+glouton+division,268,3,0.0001,3,True,0.0194081,0.00378661,True,6.30317,11.3611,25,glouton/division/division
+glouton+division,269,3,0.0001,3,True,0.101177,0.056392,True,2.03617,5.92642,25,glouton/division/division
+glouton+division,270,3,0.0001,3,True,2.52227,0.817861,False,2.06269,8.05001,25,glouton/division/division
+glouton+division,271,3,0.0001,3,True,0.0680805,0.0266927,True,5.51259,3.96493,25,glouton/division/glouton
+glouton+division,272,3,0.0001,3,True,0.0449905,0.00566311,True,6.70346,4.92132,25,glouton/glouton/division
+glouton+division,273,3,0.0001,3,True,0.186392,0.0211033,True,5.42625,4.92209,25,glouton/glouton/glouton
+glouton+division,274,3,0.0001,3,True,0.62882,0.255662,True,4.97025,6.59493,25,glouton/glouton/glouton
+glouton+division,275,3,0.0001,3,True,0.000814933,0.00147869,True,5.4099,13.3804,25,glouton/glouton/division
+glouton+division,276,3,0.0001,3,True,0.0420723,0.00218627,True,2.11688,23.4237,25,glouton/division/division
+glouton+division,277,3,0.0001,3,True,0.103079,0.0252662,True,5.66207,5.16219,25,glouton/division/division
+glouton+division,278,3,0.0001,3,True,0.946939,0.558946,True,4.89356,5.49009,25,glouton/glouton/division
+glouton+division,279,3,0.0001,2,False,0.289554,0.739024,False,0.667401,4.24547,16,glouton/division
+glouton+division,280,3,0.001,3,True,1.85717,0.85279,False,4.62427,2.79428,25,glouton/division/division
+glouton+division,281,3,0.001,2,False,0.237949,0.0563432,False,2.14463,1.45822,16,glouton/division
+glouton+division,282,3,0.001,3,True,0.219213,0.0364743,True,7.53026,4.44765,25,glouton/division/division
+glouton+division,283,3,0.001,3,True,0.0697638,0.0349215,True,4.52954,3.2738,25,glouton/division/glouton
+glouton+division,284,3,0.001,3,True,0.126342,0.173768,True,2.60936,3.12108,25,glouton/division/division
+glouton+division,285,3,0.001,3,True,0.255156,0.109228,True,7.45825,2.65332,25,glouton/division/division
+glouton+division,286,3,0.001,2,False,0.586187,0.257519,False,2.63162,5.63157,16,glouton/division
+glouton+division,287,3,0.001,2,False,0.645883,0.625034,False,2.74659,1.73102,16,glouton/glouton
+glouton+division,288,3,0.001,3,True,0.339659,0.062188,True,6.18571,3.6048,25,glouton/division/division
+glouton+division,289,3,0.001,3,True,3.89145,0.719769,False,2.64874,2.64853,25,glouton/division/glouton
+glouton+division,290,3,0.001,3,True,0.682928,0.354058,True,3.21704,5.94859,25,glouton/glouton/division
+glouton+division,291,3,0.001,3,True,0.836876,0.221737,True,5.49152,3.31947,25,glouton/division/division
+glouton+division,292,3,0.001,3,True,0.17427,0.0402648,True,3.92024,3.28041,25,glouton/division/division
+glouton+division,293,3,0.001,3,True,1.07913,0.281176,False,4.39496,2.22105,25,glouton/division/glouton
+glouton+division,294,3,0.001,2,False,0.0253167,0.023527,False,4.26865,1.66642,16,glouton/glouton
+glouton+division,295,3,0.001,3,True,1.87819,0.951974,False,3.78362,2.97419,25,glouton/division/division
+glouton+division,296,3,0.001,3,True,0.20385,0.168677,True,3.21937,3.18725,25,glouton/glouton/division
+glouton+division,297,3,0.001,3,True,2.33513,0.187139,False,4.15701,4.17468,25,glouton/division/division
+glouton+division,298,3,0.001,2,False,0.126566,0.0974867,False,3.1284,1.32491,16,glouton/division
+glouton+division,299,3,0.001,3,True,1.18133,2.32628,False,3.22593,4.74335,25,glouton/glouton/division
+glouton+division,300,3,0.001,2,False,0.139866,0.156035,False,3.381,1.16576,16,glouton/division
+glouton+division,301,3,0.001,3,True,1.38043,0.723684,False,3.56569,2.73025,25,glouton/division/glouton
+glouton+division,302,3,0.001,2,False,1.45784,0.267896,False,2.8796,2.02145,16,glouton/glouton
+glouton+division,303,3,0.001,2,False,0.404913,0.601382,False,0.898357,0.937083,16,glouton/glouton
+glouton+division,304,3,0.001,3,True,0.845991,0.216966,True,6.93765,2.05567,25,glouton/glouton/division
+glouton+division,305,3,0.001,3,True,0.185249,0.141847,True,6.58032,1.78481,25,glouton/division/division
+glouton+division,306,3,0.001,3,True,0.701138,0.154909,True,7.4472,2.72901,25,glouton/glouton/glouton
+glouton+division,307,3,0.001,3,True,0.689874,1.25246,False,2.57645,3.55852,25,glouton/division/division
+glouton+division,308,3,0.001,2,False,0.499757,0.723862,False,1.09132,1.10281,16,glouton/glouton
+glouton+division,309,3,0.001,3,True,0.123739,0.0657967,True,6.42807,1.89806,25,glouton/division/division
+glouton+division,310,3,0.001,3,True,1.06302,0.378941,False,3.69868,2.44361,25,glouton/division/division
+glouton+division,311,3,0.001,3,True,0.126218,0.0415307,True,3.89071,2.36857,25,glouton/glouton/division
+glouton+division,312,3,0.001,3,True,0.577939,0.123672,True,2.43767,3.0224,25,glouton/glouton/division
+glouton+division,313,3,0.001,4,False,1.94616,1.4523,False,1.49902,4.89251,36,glouton/division/division
+glouton+division,314,3,0.001,2,False,0.198585,0.594334,False,2.45191,1.4314,16,glouton/glouton
+glouton+division,315,3,0.001,1,False,0.441921,0.439194,False,1.69458,0.754898,9,glouton
+glouton+division,316,3,0.001,3,True,0.490242,0.0652934,True,7.92443,2.72139,25,glouton/glouton/division
+glouton+division,317,3,0.001,3,True,2.19579,0.29661,False,7.75976,1.92779,25,glouton/glouton/division
+glouton+division,318,3,0.001,3,True,0.464462,0.0358317,True,2.9368,4.92076,25,glouton/division/division
+glouton+division,319,3,0.001,3,True,0.244085,0.083254,True,7.6026,4.00616,25,glouton/glouton/division
+glouton+division,320,3,0.003,3,True,1.54488,1.60232,False,3.54388,1.83438,25,glouton/division/division
+glouton+division,321,3,0.003,2,False,0.612494,0.0422826,False,2.6009,1.04644,16,glouton/division
+glouton+division,322,3,0.003,2,False,1.16779,0.810654,False,3.98906,1.20343,16,glouton/division
+glouton+division,323,3,0.003,3,True,0.521812,0.0434333,True,4.40237,1.92194,25,glouton/glouton/division
+glouton+division,324,3,0.003,2,False,1.18742,0.14615,False,8.19243,1.00958,16,glouton/division
+glouton+division,325,3,0.003,3,True,0.472321,0.552312,True,1.94327,2.2285,25,glouton/glouton/division
+glouton+division,326,3,0.003,2,False,0.490796,0.178757,False,6.71007,1.36304,16,glouton/division
+glouton+division,327,3,0.003,3,True,2.35846,0.449971,False,3.33579,2.22725,25,glouton/division/division
+glouton+division,328,3,0.003,2,False,0.258218,0.460072,False,2.93338,0.941659,16,glouton/glouton
+glouton+division,329,3,0.003,3,True,0.839304,0.120584,True,5.67447,2.96428,25,glouton/division/division
+glouton+division,330,3,0.003,2,False,0.557568,0.130021,False,5.51221,1.21751,16,glouton/division
+glouton+division,331,3,0.003,2,False,0.172178,0.412259,False,0.528111,1.75559,16,glouton/division
+glouton+division,332,3,0.003,3,True,2.37999,0.296531,False,6.85585,1.78017,25,glouton/division/glouton
+glouton+division,333,3,0.003,2,False,0.751858,0.566042,False,3.75738,0.71825,16,glouton/glouton
+glouton+division,334,3,0.003,2,False,0.518434,0.802514,False,2.0742,0.956955,16,glouton/division
+glouton+division,335,3,0.003,3,True,1.1416,0.922184,False,3.12607,4.0133,25,glouton/division/division
+glouton+division,336,3,0.003,2,False,0.149293,0.0393692,False,0.813073,1.54938,16,glouton/division
+glouton+division,337,3,0.003,1,False,0.815224,0.628881,False,1.79646,0.660294,9,glouton
+glouton+division,338,3,0.003,2,False,0.650239,1.60489,False,1.42845,1.36498,16,glouton/division
+glouton+division,339,3,0.003,1,False,0.154336,0.116914,False,2.40008,0.337066,9,glouton
+glouton+division,340,3,0.003,2,False,1.17123,0.430438,False,3.13288,1.16746,16,glouton/division
+glouton+division,341,3,0.003,2,False,0.767456,0.569185,False,2.75274,0.85996,16,glouton/glouton
+glouton+division,342,3,0.003,2,False,0.656475,0.0867983,False,2.07242,1.20853,16,glouton/glouton
+glouton+division,343,3,0.003,2,False,0.668193,0.16624,False,4.03867,1.9889,16,glouton/division
+glouton+division,344,3,0.003,3,True,3.50303,0.680684,False,6.0816,3.30345,25,glouton/glouton/glouton
+glouton+division,345,3,0.003,3,True,1.21031,0.0337595,False,9.04714,1.86646,25,glouton/glouton/division
+glouton+division,346,3,0.003,2,False,1.02326,0.231984,False,4.26332,1.10602,16,glouton/division
+glouton+division,347,3,0.003,3,True,1.39808,0.330352,False,1.67089,4.06428,25,glouton/glouton/division
+glouton+division,348,3,0.003,2,False,0.845338,1.13821,False,1.77531,0.953369,16,glouton/glouton
+glouton+division,349,3,0.003,2,False,0.207418,0.170033,False,4.0289,0.908829,16,glouton/division
+glouton+division,350,3,0.003,2,False,0.661012,0.0709946,False,7.46197,0.93822,16,glouton/glouton
+glouton+division,351,3,0.003,2,False,0.427404,0.57873,False,1.85697,0.917793,16,glouton/division
+glouton+division,352,3,0.003,4,False,1.94709,0.464412,False,5.83847,3.58227,36,glouton/division/division/division
+glouton+division,353,3,0.003,3,True,0.469166,0.0828084,True,8.89738,1.54991,25,glouton/glouton/division
+glouton+division,354,3,0.003,3,True,0.214352,0.226928,True,3.78044,1.84184,25,glouton/division/division
+glouton+division,355,3,0.003,2,False,0.87045,0.493606,False,2.47973,0.631977,16,glouton/glouton
+glouton+division,356,3,0.003,3,True,0.33389,0.229049,True,1.65208,2.84408,25,glouton/division/glouton
+glouton+division,357,3,0.003,1,False,0.756557,0.27701,False,1.56282,0.466113,9,glouton
+glouton+division,358,3,0.003,2,False,0.9048,0.345645,False,6.40247,0.917633,16,glouton/glouton
+glouton+division,359,3,0.003,3,True,2.56309,0.744627,False,5.20348,2.29165,25,glouton/division/division
+glouton+division,360,4,0.0001,3,False,0.0871598,0.0449743,False,0.62179,5.37442,25,glouton/division/division
+glouton+division,361,4,0.0001,4,True,1.82292,1.42636,False,4.0191,9.38681,36,glouton/division/division/division
+glouton+division,362,4,0.0001,3,False,0.158453,0.0896551,False,3.75988,4.16332,25,glouton/glouton/division
+glouton+division,363,4,0.0001,4,True,2.51548,2.30253,False,1.29876,10.8514,36,glouton/glouton/glouton/division
+glouton+division,364,4,0.0001,3,False,0.398178,0.588033,False,0.961264,3.83607,25,glouton/glouton/division
+glouton+division,365,4,0.0001,4,True,0.0274869,0.0353106,True,1.06329,11.0222,36,glouton/glouton/division/glouton
+glouton+division,366,4,0.0001,4,True,0.679571,0.253613,True,2.77216,9.61655,36,glouton/glouton/division/division
+glouton+division,367,4,0.0001,4,True,2.01887,0.775877,False,1.73748,11.903,36,glouton/division/glouton/glouton
+glouton+division,368,4,0.0001,3,False,0.127437,0.0634377,False,2.68921,4.52637,25,glouton/glouton/division
+glouton+division,369,4,0.0001,3,False,0.248759,0.155961,False,1.07319,5.84964,25,glouton/division/division
+glouton+division,370,4,0.0001,4,True,1.91523,0.694612,False,3.92559,11.0162,36,glouton/glouton/division/division
+glouton+division,371,4,0.0001,3,False,0.0246982,0.0119928,False,5.02251,5.26431,25,glouton/division/glouton
+glouton+division,372,4,0.0001,3,False,0.393605,0.360477,False,2.96194,4.44869,25,glouton/division/glouton
+glouton+division,373,4,0.0001,3,False,0.322266,0.114888,False,1.16042,6.44652,25,glouton/division/glouton
+glouton+division,374,4,0.0001,4,True,3.5116,9.2414,False,2.91058,10.3162,36,glouton/glouton/division/division
+glouton+division,375,4,0.0001,4,True,0.989556,0.376681,False,3.90171,8.31477,36,glouton/division/glouton/division
+glouton+division,376,4,0.0001,4,True,0.269654,0.11968,True,4.32767,9.00168,36,glouton/division/division/division
+glouton+division,377,4,0.0001,4,True,1.29391,0.730147,False,1.27526,7.83126,36,glouton/glouton/division/division
+glouton+division,378,4,0.0001,4,True,13.2213,0.988256,False,1.96725,9.79184,36,glouton/division/division/division
+glouton+division,379,4,0.0001,4,True,0.219273,0.0671439,True,3.45651,12.118,36,glouton/glouton/division/glouton
+glouton+division,380,4,0.0001,4,True,0.0230049,0.011933,True,8.42911,18.2719,36,glouton/division/division/glouton
+glouton+division,381,4,0.0001,4,True,0.182496,0.0120848,True,4.31,14.2447,36,glouton/division/glouton/division
+glouton+division,382,4,0.0001,4,True,0.120845,0.0560793,True,4.02994,7.25971,36,glouton/glouton/division/division
+glouton+division,383,4,0.0001,3,False,0.11298,0.0550401,False,1.85334,6.33592,25,glouton/division/division
+glouton+division,384,4,0.0001,4,True,0.161493,0.112935,True,2.42757,9.95706,36,glouton/division/division/division
+glouton+division,385,4,0.0001,4,True,0.085391,0.0126558,True,3.05788,6.71548,36,glouton/glouton/glouton/glouton
+glouton+division,386,4,0.0001,4,True,0.489593,0.15633,True,3.5714,19.908,36,glouton/glouton/glouton/division
+glouton+division,387,4,0.0001,3,False,0.21072,0.042531,False,2.85691,6.34263,25,glouton/glouton/glouton
+glouton+division,388,4,0.0001,3,False,0.933287,1.67447,False,1.97217,6.88859,25,glouton/glouton/division
+glouton+division,389,4,0.0001,4,True,0.289334,0.165239,True,3.43523,9.64669,36,glouton/division/division/division
+glouton+division,390,4,0.0001,4,True,0.302044,0.278079,True,2.50917,16.9381,36,glouton/division/division/glouton
+glouton+division,391,4,0.0001,4,True,0.134427,0.11997,True,4.14572,9.80734,36,glouton/division/division/division
+glouton+division,392,4,0.0001,4,True,2.01811,0.847635,False,0.788936,14.0931,36,glouton/division/glouton/glouton
+glouton+division,393,4,0.0001,4,True,1.79579,0.593836,False,3.90217,8.17756,36,glouton/glouton/glouton/division
+glouton+division,394,4,0.0001,4,True,0.936219,0.42553,False,2.37698,27.2742,36,glouton/division/division/division
+glouton+division,395,4,0.0001,3,False,0.234108,0.180554,False,0.355147,6.53808,25,glouton/glouton/division
+glouton+division,396,4,0.0001,3,False,0.0548482,0.0778167,False,1.35499,5.30173,25,glouton/division/division
+glouton+division,397,4,0.0001,3,False,0.224767,0.841185,False,0.462378,5.95695,25,glouton/division/division
+glouton+division,398,4,0.0001,4,True,0.152079,0.0150134,True,7.02935,13.8023,36,glouton/glouton/glouton/division
+glouton+division,399,4,0.0001,4,True,1.01106,0.589733,False,1.33144,16.2305,36,glouton/division/division/division
+glouton+division,400,4,0.001,2,False,0.480892,0.176196,False,1.89044,2.0305,16,glouton/division
+glouton+division,401,4,0.001,3,False,0.15772,0.112377,False,2.34771,2.87906,25,glouton/glouton/glouton
+glouton+division,402,4,0.001,3,False,1.35928,2.37369,False,3.13721,2.81917,25,glouton/division/division
+glouton+division,403,4,0.001,4,True,0.729068,0.371343,True,3.37009,7.06869,36,glouton/division/glouton/division
+glouton+division,404,4,0.001,4,True,1.11671,0.777412,False,2.59041,6.72177,36,glouton/division/division/division
+glouton+division,405,4,0.001,3,False,1.33724,0.132011,False,2.54153,3.82502,25,glouton/glouton/division
+glouton+division,406,4,0.001,3,False,1.53894,0.618021,False,1.05215,4.29399,25,glouton/division/glouton
+glouton+division,407,4,0.001,3,False,1.12593,0.630542,False,2.92516,2.9999,25,glouton/division/glouton
+glouton+division,408,4,0.001,3,False,0.749337,0.222308,False,1.54294,3.92567,25,glouton/glouton/division
+glouton+division,409,4,0.001,4,True,0.707033,0.560299,True,3.55612,8.88548,36,glouton/glouton/division/division
+glouton+division,410,4,0.001,3,False,0.219042,0.306657,False,2.1442,2.40658,25,glouton/division/division
+glouton+division,411,4,0.001,3,False,0.701315,0.320691,False,2.0055,1.82618,25,glouton/glouton/division
+glouton+division,412,4,0.001,4,True,0.419659,0.163869,True,6.81912,3.23408,36,glouton/division/division/division
+glouton+division,413,4,0.001,3,False,1.15611,0.186456,False,3.77579,2.24798,25,glouton/glouton/division
+glouton+division,414,4,0.001,3,False,2.16336,2.9724,False,2.72179,3.37219,25,glouton/division/division
+glouton+division,415,4,0.001,4,True,0.337244,0.231549,True,2.9871,4.68185,36,glouton/division/division/division
+glouton+division,416,4,0.001,3,False,2.64175,3.01007,False,3.94319,2.53183,25,glouton/division/glouton
+glouton+division,417,4,0.001,3,False,0.315144,3.08484,False,0.789227,4.27985,25,glouton/glouton/division
+glouton+division,418,4,0.001,2,False,0.434634,0.321103,False,3.07053,2.19176,16,glouton/glouton
+glouton+division,419,4,0.001,4,True,0.653648,0.269927,True,2.84563,7.04418,36,glouton/division/division/division
+glouton+division,420,4,0.001,3,False,3.00249,1.96598,False,5.25862,3.01539,25,glouton/division/division
+glouton+division,421,4,0.001,3,False,1.06697,0.614855,False,4.12889,2.32901,25,glouton/division/division
+glouton+division,422,4,0.001,3,False,0.538633,0.598262,False,1.57671,4.01467,25,glouton/division/glouton
+glouton+division,423,4,0.001,3,False,0.332246,0.263543,False,3.62236,3.61637,25,glouton/glouton/division
+glouton+division,424,4,0.001,4,True,0.284791,0.0847912,True,3.27211,6.70863,36,glouton/division/division/division
+glouton+division,425,4,0.001,3,False,0.630133,0.671172,False,1.78301,2.49182,25,glouton/glouton/division
+glouton+division,426,4,0.001,2,False,0.844388,21.798,False,2.30405,1.72726,16,glouton/division
+glouton+division,427,4,0.001,3,False,2.31454,1.62122,False,3.19777,3.176,25,glouton/division/division
+glouton+division,428,4,0.001,3,False,0.361411,0.121486,False,2.78446,2.49826,25,glouton/division/division
+glouton+division,429,4,0.001,3,False,3.31863,0.325912,False,3.60242,2.62338,25,glouton/glouton/division
+glouton+division,430,4,0.001,4,True,0.517085,0.166052,True,2.72639,6.75385,36,glouton/division/division/division
+glouton+division,431,4,0.001,3,False,0.721475,1.43468,False,1.6276,1.78342,25,glouton/division/division
+glouton+division,432,4,0.001,3,False,1.83507,2.72468,False,3.56854,2.92455,25,glouton/division/glouton
+glouton+division,433,4,0.001,3,False,1.14831,0.631697,False,3.47759,2.14306,25,glouton/glouton/division
+glouton+division,434,4,0.001,4,True,0.58777,0.123017,True,3.3855,4.36726,36,glouton/glouton/division/division
+glouton+division,435,4,0.001,4,True,0.457027,0.610357,True,2.93602,5.34661,36,glouton/glouton/division/division
+glouton+division,436,4,0.001,3,False,0.402538,0.153243,False,4.24524,1.70896,25,glouton/glouton/glouton
+glouton+division,437,4,0.001,3,False,0.433708,0.226883,False,3.68105,2.09176,25,glouton/division/division
+glouton+division,438,4,0.001,3,False,0.734087,0.939664,False,1.68899,2.96896,25,glouton/division/glouton
+glouton+division,439,4,0.001,4,True,0.864172,0.371107,True,4.7108,5.26275,36,glouton/division/division/division
+glouton+division,440,4,0.003,3,False,0.66038,0.460001,False,1.9557,1.75602,25,glouton/glouton/division
+glouton+division,441,4,0.003,3,False,1.46766,0.367358,False,2.47302,1.63985,25,glouton/division/division
+glouton+division,442,4,0.003,3,False,0.47786,0.844394,False,0.970977,2.2401,25,glouton/division/glouton
+glouton+division,443,4,0.003,2,False,2.4954,1.23731,False,4.61646,1.25261,16,glouton/glouton
+glouton+division,444,4,0.003,3,False,1.47847,0.361597,False,1.04979,5.57138,25,glouton/glouton/division
+glouton+division,445,4,0.003,3,False,1.25713,0.43802,False,3.95331,2.22503,25,glouton/division/division
+glouton+division,446,4,0.003,2,False,0.641239,0.203668,False,3.0418,1.20065,16,glouton/glouton
+glouton+division,447,4,0.003,3,False,0.995377,0.251656,False,3.17421,2.55096,25,glouton/division/division
+glouton+division,448,4,0.003,3,False,2.20984,1.27933,False,2.64908,2.31195,25,glouton/glouton/glouton
+glouton+division,449,4,0.003,3,False,2.17397,0.126947,False,2.87273,2.70345,25,glouton/division/division
+glouton+division,450,4,0.003,2,False,3.14674,1.0229,False,0.683867,1.21536,16,glouton/glouton
+glouton+division,451,4,0.003,3,False,1.65898,1.43458,False,4.04178,2.89072,25,glouton/division/division
+glouton+division,452,4,0.003,2,False,2.2602,1.05919,False,5.29884,1.45797,16,glouton/division
+glouton+division,453,4,0.003,2,False,4.49948,0.318174,False,2.35828,1.23598,16,glouton/glouton
+glouton+division,454,4,0.003,4,True,0.555739,0.0710116,True,5.07648,3.68077,36,glouton/glouton/division/division
+glouton+division,455,4,0.003,4,True,1.41672,0.17132,False,4.48228,3.82122,36,glouton/division/division/division
+glouton+division,456,4,0.003,2,False,1.47579,3.53257,False,2.78624,0.920267,16,glouton/division
+glouton+division,457,4,0.003,2,False,0.24937,0.626051,False,1.05503,0.645454,16,glouton/division
+glouton+division,458,4,0.003,3,False,0.810635,0.871603,False,2.30855,2.40736,25,glouton/division/division
+glouton+division,459,4,0.003,1,False,2.07277,3.95476,False,3.37593,0.645963,9,glouton
+glouton+division,460,4,0.003,3,False,0.788913,0.372649,False,3.81299,1.91392,25,glouton/division/division
+glouton+division,461,4,0.003,2,False,1.85462,1.04222,False,3.45772,1.62999,16,glouton/division
+glouton+division,462,4,0.003,3,False,0.44421,0.167263,False,7.2043,3.31683,25,glouton/glouton/division
+glouton+division,463,4,0.003,3,False,0.139829,0.0733697,False,4.04906,2.3861,25,glouton/glouton/division
+glouton+division,464,4,0.003,2,False,0.88841,0.541504,False,3.27995,0.997948,16,glouton/division
+glouton+division,465,4,0.003,3,False,0.20274,0.150646,False,4.74292,2.12552,25,glouton/division/division
+glouton+division,466,4,0.003,3,False,5.31587,13.4424,False,5.61988,2.36978,25,glouton/glouton/division
+glouton+division,467,4,0.003,3,False,0.328076,0.286523,False,0.300028,2.09827,25,glouton/glouton/division
+glouton+division,468,4,0.003,2,False,1.35049,0.72391,False,3.31337,0.773135,16,glouton/glouton
+glouton+division,469,4,0.003,2,False,0.773329,0.444813,False,2.437,0.828145,16,glouton/division
+glouton+division,470,4,0.003,3,False,1.20467,0.841259,False,4.20728,2.04781,25,glouton/glouton/division
+glouton+division,471,4,0.003,3,False,2.18084,1.11955,False,4.46103,2.66869,25,glouton/division/division
+glouton+division,472,4,0.003,3,False,3.05056,1.95881,False,5.74958,1.69479,25,glouton/glouton/division
+glouton+division,473,4,0.003,3,False,1.63507,0.799064,False,6.55464,1.48486,25,glouton/division/glouton
+glouton+division,474,4,0.003,2,False,0.826633,0.119877,False,1.68813,1.70377,16,glouton/division
+glouton+division,475,4,0.003,3,False,0.968527,0.488372,False,2.06898,3.67331,25,glouton/glouton/glouton
+glouton+division,476,4,0.003,1,False,0.899327,1.41751,False,1.9116,0.484697,9,glouton
+glouton+division,477,4,0.003,4,True,1.03352,0.144452,False,6.16534,5.24309,36,glouton/glouton/glouton/division
+glouton+division,478,4,0.003,2,False,0.712552,0.551675,False,1.51586,1.31142,16,glouton/division
+glouton+division,479,4,0.003,2,False,2.44112,0.983879,False,7.07125,2.48761,16,glouton/glouton
+glouton+division,480,5,0.0001,4,False,2.8941,8.46294,False,0.75884,13.49,36,glouton/division/division/division
+glouton+division,481,5,0.0001,4,False,0.854225,0.916073,False,1.7304,13.5672,36,glouton/division/division/division
+glouton+division,482,5,0.0001,5,True,0.743413,0.245071,True,3.60563,26.8412,49,glouton/division/division/glouton/division
+glouton+division,483,5,0.0001,3,False,1.44092,2.13244,False,1.52271,6.587,25,glouton/glouton/glouton
+glouton+division,484,5,0.0001,4,False,0.164562,0.164923,False,1.43969,12.4644,36,glouton/division/division/division
+glouton+division,485,5,0.0001,3,False,0.611845,0.441073,False,2.74327,6.39388,25,glouton/division/glouton
+glouton+division,486,5,0.0001,5,True,3.10246,0.833595,False,3.9168,48.908,49,glouton/glouton/division/division/division
+glouton+division,487,5,0.0001,4,False,0.0652207,0.435417,False,0.197812,8.69559,36,glouton/division/division/division
+glouton+division,488,5,0.0001,2,False,0.0707134,0.583837,False,0.488202,2.07551,16,glouton/division
+glouton+division,489,5,0.0001,4,False,0.365998,0.229915,False,1.42464,9.25823,36,glouton/division/division/glouton
+glouton+division,490,5,0.0001,4,False,0.763868,0.541828,False,1.36573,10.2661,36,glouton/glouton/division/division
+glouton+division,491,5,0.0001,5,True,1.43336,2.47445,False,0.716321,34.2736,49,glouton/division/division/division/division
+glouton+division,492,5,0.0001,5,True,0.140531,0.0793881,True,3.91457,10.1444,49,glouton/division/division/division/division
+glouton+division,493,5,0.0001,5,True,0.475061,0.164916,False,1.18463,29.6738,49,glouton/glouton/glouton/division/division
+glouton+division,494,5,0.0001,4,False,0.265546,0.0628752,False,2.5953,24.7924,36,glouton/glouton/division/division
+glouton+division,495,5,0.0001,5,True,0.277887,0.121054,True,1.64429,15.951,49,glouton/glouton/division/division/division
+glouton+division,496,5,0.0001,3,False,0.332118,0.549475,False,0.911862,4.38113,25,glouton/glouton/glouton
+glouton+division,497,5,0.0001,5,True,0.479084,0.14844,True,3.96103,11.4594,49,glouton/glouton/division/division/division
+glouton+division,498,5,0.0001,4,False,0.240102,0.0887089,False,2.01871,7.79944,36,glouton/glouton/glouton/division
+glouton+division,499,5,0.0001,4,False,1.50282,1.46675,False,1.03837,8.85556,36,glouton/division/division/division
+glouton+division,500,5,0.0001,4,False,0.366788,0.165982,False,2.74046,7.15283,36,glouton/division/division/glouton
+glouton+division,501,5,0.0001,4,False,1.39236,1.4494,False,2.78586,12.9977,36,glouton/division/division/division
+glouton+division,502,5,0.0001,5,True,0.0700228,0.0252036,True,4.77356,16.2618,49,glouton/glouton/division/division/division
+glouton+division,503,5,0.0001,4,False,0.0770944,0.274933,False,0.29828,15.0005,36,glouton/glouton/glouton/division
+glouton+division,504,5,0.0001,5,True,2.05247,3.52168,False,3.13019,25.2197,49,glouton/glouton/glouton/division/division
+glouton+division,505,5,0.0001,5,True,3.52242,5.47775,False,2.02003,13.2074,49,glouton/division/division/division/glouton
+glouton+division,506,5,0.0001,4,False,0.461936,0.332131,False,3.95153,16.4553,36,glouton/division/division/division
+glouton+division,507,5,0.0001,4,False,0.764522,0.415277,False,2.2301,16.3444,36,glouton/division/division/glouton
+glouton+division,508,5,0.0001,5,True,0.556854,0.377805,True,2.45355,16.5697,49,glouton/division/glouton/division/division
+glouton+division,509,5,0.0001,4,False,0.515834,1.03484,False,1.07735,8.19922,36,glouton/division/division/division
+glouton+division,510,5,0.0001,5,True,0.276658,0.188457,True,3.20892,16.1281,49,glouton/division/division/division/division
+glouton+division,511,5,0.0001,5,True,1.15676,0.359007,False,2.46084,20.0665,49,glouton/glouton/division/division/glouton
+glouton+division,512,5,0.0001,5,True,0.11963,0.148588,True,1.70056,17.9186,49,glouton/division/division/division/division
+glouton+division,513,5,0.0001,4,False,0.138737,0.132416,False,1.57542,9.35628,36,glouton/division/division/division
+glouton+division,514,5,0.0001,4,False,0.116662,0.0181206,False,4.27129,7.6657,36,glouton/glouton/division/division
+glouton+division,515,5,0.0001,5,True,0.836263,0.458122,True,3.91081,13.5947,49,glouton/division/division/glouton/division
+glouton+division,516,5,0.0001,4,False,0.528227,0.994184,False,1.09939,6.3797,36,glouton/glouton/division/glouton
+glouton+division,517,5,0.0001,5,True,0.676464,0.327465,True,3.1399,11.1364,49,glouton/glouton/division/division/division
+glouton+division,518,5,0.0001,4,False,0.694404,0.198221,False,1.94105,11.5568,36,glouton/division/division/division
+glouton+division,519,5,0.0001,4,False,0.133238,0.0386177,False,2.49132,9.29678,36,glouton/glouton/division/glouton
+glouton+division,520,5,0.001,4,False,1.11116,0.402106,False,5.00037,5.3482,36,glouton/division/division/division
+glouton+division,521,5,0.001,3,False,1.67526,1.15885,False,1.53354,2.17424,25,glouton/division/division
+glouton+division,522,5,0.001,3,False,0.47948,0.100189,False,1.28646,3.52278,25,glouton/glouton/division
+glouton+division,523,5,0.001,2,False,2.26588,1.37228,False,1.30021,2.3361,16,glouton/glouton
+glouton+division,524,5,0.001,4,False,1.31764,0.638222,False,4.62602,4.61751,36,glouton/glouton/division/division
+glouton+division,525,5,0.001,3,False,0.707832,0.347367,False,3.07714,2.27899,25,glouton/division/division
+glouton+division,526,5,0.001,4,False,3.37371,4.78858,False,2.63744,7.12389,36,glouton/division/division/division
+glouton+division,527,5,0.001,4,False,1.92932,1.334,False,1.47555,6.22928,36,glouton/division/division/division
+glouton+division,528,5,0.001,4,False,1.54115,0.491923,False,1.89552,5.4866,36,glouton/glouton/glouton/division
+glouton+division,529,5,0.001,4,False,0.291696,0.162647,False,3.86824,6.88279,36,glouton/glouton/division/division
+glouton+division,530,5,0.001,4,False,2.0598,0.577932,False,1.6123,6.01869,36,glouton/division/division/division
+glouton+division,531,5,0.001,3,False,2.48259,1.4702,False,1.17568,3.26004,25,glouton/division/division
+glouton+division,532,5,0.001,2,False,1.50566,0.490094,False,1.67648,1.27123,16,glouton/glouton
+glouton+division,533,5,0.001,3,False,1.62285,0.835317,False,3.28956,2.69146,25,glouton/division/division
+glouton+division,534,5,0.001,5,True,3.42989,0.272626,False,4.21049,13.4492,49,glouton/glouton/division/division/division
+glouton+division,535,5,0.001,5,True,0.462575,0.437533,True,2.52726,7.46875,49,glouton/glouton/division/glouton/division
+glouton+division,536,5,0.001,3,False,0.805318,0.412042,False,2.96339,2.14304,25,glouton/division/division
+glouton+division,537,5,0.001,5,True,1.62139,0.45456,False,2.00379,10.3435,49,glouton/division/division/division/division
+glouton+division,538,5,0.001,3,False,1.74379,1.46679,False,2.189,3.66507,25,glouton/glouton/glouton
+glouton+division,539,5,0.001,5,True,0.254103,0.47437,True,1.43761,13.8008,49,glouton/division/division/division/division
+glouton+division,540,5,0.001,3,False,2.16462,1.83017,False,1.58388,2.53765,25,glouton/division/division
+glouton+division,541,5,0.001,3,False,1.30339,0.560316,False,4.38209,2.44704,25,glouton/division/division
+glouton+division,542,5,0.001,4,False,2.31164,0.615794,False,2.3619,4.69669,36,glouton/division/glouton/division
+glouton+division,543,5,0.001,3,False,2.47844,2.15021,False,0.855643,3.40317,25,glouton/division/division
+glouton+division,544,5,0.001,4,False,0.703709,0.197426,False,1.74842,6.47013,36,glouton/division/glouton/glouton
+glouton+division,545,5,0.001,5,True,2.93438,0.732024,False,4.40095,8.47976,49,glouton/glouton/division/division/division
+glouton+division,546,5,0.001,2,False,1.0472,1.31106,False,0.723024,2.13984,16,glouton/glouton
+glouton+division,547,5,0.001,4,False,1.05072,0.275406,False,3.61329,16.167,36,glouton/division/division/division
+glouton+division,548,5,0.001,3,False,2.42119,1.75174,False,3.62663,3.16818,25,glouton/glouton/division
+glouton+division,549,5,0.001,3,False,0.417685,0.245425,False,2.3205,2.5001,25,glouton/glouton/division
+glouton+division,550,5,0.001,3,False,0.44437,0.174399,False,1.66387,1.89795,25,glouton/glouton/glouton
+glouton+division,551,5,0.001,4,False,0.271881,0.320777,False,2.13863,5.10095,36,glouton/glouton/glouton/division
+glouton+division,552,5,0.001,3,False,0.470867,0.390167,False,1.40642,2.89495,25,glouton/division/division
+glouton+division,553,5,0.001,4,False,0.299687,0.145814,False,1.62133,3.56969,36,glouton/glouton/division/glouton
+glouton+division,554,5,0.001,4,False,0.178039,0.340152,False,0.567677,6.01897,36,glouton/division/division/division
+glouton+division,555,5,0.001,2,False,2.3158,3.31967,False,2.82314,1.81215,16,glouton/division
+glouton+division,556,5,0.001,4,False,4.78759,12.7625,False,2.77367,4.64645,36,glouton/division/division/glouton
+glouton+division,557,5,0.001,3,False,0.220416,0.23889,False,1.48015,3.04189,25,glouton/division/division
+glouton+division,558,5,0.001,3,False,1.07371,0.407764,False,4.26022,3.68467,25,glouton/division/glouton
+glouton+division,559,5,0.001,4,False,1.8601,0.898109,False,2.19626,6.13842,36,glouton/division/glouton/division
+glouton+division,560,5,0.003,3,False,2.56992,1.99636,False,4.16326,1.88858,25,glouton/glouton/glouton
+glouton+division,561,5,0.003,3,False,1.37977,1.47542,False,3.41219,1.86049,25,glouton/glouton/division
+glouton+division,562,5,0.003,4,False,1.44892,1.44648,False,3.08197,2.73984,36,glouton/glouton/division/glouton
+glouton+division,563,5,0.003,4,False,1.20678,1.3219,False,0.289232,4.40088,36,glouton/glouton/division/division
+glouton+division,564,5,0.003,4,False,0.891577,0.321416,False,1.4258,2.79696,36,glouton/division/division/division
+glouton+division,565,5,0.003,3,False,2.01007,0.83972,False,1.41065,1.63575,25,glouton/glouton/glouton
+glouton+division,566,5,0.003,3,False,1.19345,0.397268,False,3.79035,1.91187,25,glouton/division/division
+glouton+division,567,5,0.003,3,False,0.97521,15.6501,False,1.19773,1.80209,25,glouton/glouton/division
+glouton+division,568,5,0.003,4,False,1.5157,0.81025,False,2.04172,2.8253,36,glouton/division/glouton/glouton
+glouton+division,569,5,0.003,4,False,3.01584,2.6384,False,1.5409,3.30397,36,glouton/glouton/division/glouton
+glouton+division,570,5,0.003,3,False,0.865907,1.1667,False,1.68459,2.50536,25,glouton/division/division
+glouton+division,571,5,0.003,2,False,0.519871,3.0443,False,0.840447,2.007,16,glouton/glouton
+glouton+division,572,5,0.003,3,False,1.19298,2.20816,False,2.57054,2.72092,25,glouton/division/division
+glouton+division,573,5,0.003,3,False,1.50826,2.96131,False,2.47061,1.79905,25,glouton/division/division
+glouton+division,574,5,0.003,3,False,0.553777,0.326229,False,3.41212,2.19212,25,glouton/glouton/glouton
+glouton+division,575,5,0.003,3,False,1.84859,0.529897,False,2.42378,1.14095,25,glouton/division/glouton
+glouton+division,576,5,0.003,3,False,0.892921,0.743652,False,2.10059,2.22327,25,glouton/glouton/division
+glouton+division,577,5,0.003,2,False,2.81936,1.72784,False,3.91985,0.855811,16,glouton/division
+glouton+division,578,5,0.003,2,False,0.279946,0.939992,False,0.953566,1.53532,16,glouton/division
+glouton+division,579,5,0.003,2,False,1.19693,0.570173,False,2.77276,1.45005,16,glouton/division
+glouton+division,580,5,0.003,3,False,2.32933,0.745307,False,3.27897,1.35173,25,glouton/glouton/glouton
+glouton+division,581,5,0.003,2,False,2.2484,1.94052,False,3.82708,0.611945,16,glouton/glouton
+glouton+division,582,5,0.003,3,False,2.00208,0.897324,False,2.49569,1.85149,25,glouton/glouton/glouton
+glouton+division,583,5,0.003,3,False,1.77781,1.49415,False,4.09034,1.9495,25,glouton/division/division
+glouton+division,584,5,0.003,2,False,1.41816,5.28223,False,1.6576,0.861429,16,glouton/glouton
+glouton+division,585,5,0.003,3,False,1.95802,0.560077,False,1.78019,1.80371,25,glouton/division/division
+glouton+division,586,5,0.003,3,False,2.24098,1.19364,False,0.972937,2.13255,25,glouton/division/division
+glouton+division,587,5,0.003,3,False,1.53187,5.34099,False,2.2434,2.07011,25,glouton/division/division
+glouton+division,588,5,0.003,2,False,1.92528,1.25059,False,2.55889,0.714397,16,glouton/division
+glouton+division,589,5,0.003,2,False,1.58709,2.46502,False,1.63633,0.943469,16,glouton/division
+glouton+division,590,5,0.003,3,False,2.06753,0.662201,False,4.40935,2.1654,25,glouton/glouton/division
+glouton+division,591,5,0.003,2,False,1.00401,0.370627,False,1.99435,1.18439,16,glouton/glouton
+glouton+division,592,5,0.003,3,False,1.55333,0.656327,False,4.38777,2.44027,25,glouton/glouton/glouton
+glouton+division,593,5,0.003,3,False,2.712,1.9483,False,3.67784,2.16797,25,glouton/glouton/division
+glouton+division,594,5,0.003,3,False,0.755664,0.581625,False,1.19413,2.64895,25,glouton/division/division
+glouton+division,595,5,0.003,3,False,1.1027,0.838625,False,1.53849,1.59429,25,glouton/division/glouton
+glouton+division,596,5,0.003,2,False,2.3958,1.10996,False,1.20535,1.01349,16,glouton/division
+glouton+division,597,5,0.003,2,False,1.1971,7.12852,False,0.335541,1.30956,16,glouton/division
+glouton+division,598,5,0.003,2,False,0.842076,0.439523,False,2.9583,0.968913,16,glouton/glouton
+glouton+division,599,5,0.003,4,False,1.38683,0.295672,False,1.44823,1.82304,36,glouton/glouton/division/glouton
+glouton+reseau (R=8),0,1,0.0001,2,False,0.00261752,0.000113985,False,inf,4.87957,36,reseau/reseau
+glouton+reseau (R=8),1,1,0.0001,1,True,0.000280735,0.000198009,True,inf,4.77958,27,reseau
+glouton+reseau (R=8),2,1,0.0001,1,True,0.00111636,9.58502e-05,True,inf,5.03291,27,reseau
+glouton+reseau (R=8),3,1,0.0001,1,True,0.000217531,0.000132777,True,inf,4.05838,27,reseau
+glouton+reseau (R=8),4,1,0.0001,1,True,0.000320711,0.000357673,True,inf,4.91125,27,reseau
+glouton+reseau (R=8),5,1,0.0001,1,True,0.00305654,0.000308978,True,inf,4.35395,27,reseau
+glouton+reseau (R=8),6,1,0.0001,1,True,0.000191635,0.000185949,True,inf,8.254,27,glouton
+glouton+reseau (R=8),7,1,0.0001,1,True,0.000502688,0.00040354,True,inf,4.39193,27,reseau
+glouton+reseau (R=8),8,1,0.0001,1,True,0.00288123,0.00024836,True,inf,4.26101,27,reseau
+glouton+reseau (R=8),9,1,0.0001,1,True,0.00347973,0.000405669,True,inf,3.38404,27,reseau
+glouton+reseau (R=8),10,1,0.0001,1,True,0.000179867,0.00010882,True,inf,8.52372,27,reseau
+glouton+reseau (R=8),11,1,0.0001,1,True,0.000351269,8.69128e-05,True,inf,7.5941,27,reseau
+glouton+reseau (R=8),12,1,0.0001,1,True,0.00992286,0.000434337,True,inf,3.66448,27,glouton
+glouton+reseau (R=8),13,1,0.0001,1,True,0.000378086,0.000224658,True,inf,6.6735,27,reseau
+glouton+reseau (R=8),14,1,0.0001,1,True,0.00384117,0.000725623,True,inf,2.6103,27,reseau
+glouton+reseau (R=8),15,1,0.0001,1,True,0.0058733,8.85051e-05,True,inf,2.53906,27,reseau
+glouton+reseau (R=8),16,1,0.0001,1,True,0.00598859,0.00152495,True,inf,3.76816,27,reseau
+glouton+reseau (R=8),17,1,0.0001,1,True,0.00231943,0.000207618,True,inf,4.43185,27,glouton
+glouton+reseau (R=8),18,1,0.0001,1,True,0.000159207,6.07621e-05,True,inf,6.59886,27,reseau
+glouton+reseau (R=8),19,1,0.0001,1,True,0.00272485,0.00109971,True,inf,2.82905,27,reseau
+glouton+reseau (R=8),20,1,0.0001,1,True,0.000165301,0.000177702,True,inf,7.94639,27,reseau
+glouton+reseau (R=8),21,1,0.0001,1,True,0.0037117,0.000771119,True,inf,3.41233,27,reseau
+glouton+reseau (R=8),22,1,0.0001,1,True,0.00512954,0.000680934,True,inf,6.23799,27,reseau
+glouton+reseau (R=8),23,1,0.0001,1,True,0.00465059,8.01279e-05,True,inf,4.32912,27,reseau
+glouton+reseau (R=8),24,1,0.0001,1,True,0.00169459,0.00056963,True,inf,3.14536,27,reseau
+glouton+reseau (R=8),25,1,0.0001,1,True,0.00245043,0.00051513,True,inf,1.94274,27,glouton
+glouton+reseau (R=8),26,1,0.0001,1,True,0.00141955,0.000378431,True,inf,3.85241,27,reseau
+glouton+reseau (R=8),27,1,0.0001,1,True,0.00848528,0.000925492,True,inf,4.32839,27,reseau
+glouton+reseau (R=8),28,1,0.0001,1,True,0.00465559,0.000213254,True,inf,2.44386,27,reseau
+glouton+reseau (R=8),29,1,0.0001,1,True,0.00364853,0.000696211,True,inf,4.11879,27,reseau
+glouton+reseau (R=8),30,1,0.0001,1,True,0.00505172,0.00120257,True,inf,5.34294,27,glouton
+glouton+reseau (R=8),31,1,0.0001,1,True,0.00126785,0.00029031,True,inf,5.36063,27,reseau
+glouton+reseau (R=8),32,1,0.0001,1,True,0.00477073,0.000323347,True,inf,3.09442,27,reseau
+glouton+reseau (R=8),33,1,0.0001,1,True,0.000239208,0.000200155,True,inf,2.60394,27,reseau
+glouton+reseau (R=8),34,1,0.0001,1,True,0.00447098,0.000465432,True,inf,3.89496,27,glouton
+glouton+reseau (R=8),35,1,0.0001,1,True,0.000251499,0.000180964,True,inf,4.24386,27,reseau
+glouton+reseau (R=8),36,1,0.0001,1,True,0.00218018,9.41165e-05,True,inf,3.73233,27,reseau
+glouton+reseau (R=8),37,1,0.0001,1,True,0.00379075,0.0013191,True,inf,2.67922,27,reseau
+glouton+reseau (R=8),38,1,0.0001,1,True,0.00021223,0.00019898,True,inf,4.42456,27,reseau
+glouton+reseau (R=8),39,1,0.0001,1,True,0.00109395,8.59615e-05,True,inf,6.71957,27,reseau
+glouton+reseau (R=8),40,1,0.001,1,True,0.0442753,0.00648846,True,inf,1.37511,27,reseau
+glouton+reseau (R=8),41,1,0.001,1,True,0.0351241,0.00252265,True,inf,1.38689,27,reseau
+glouton+reseau (R=8),42,1,0.001,1,True,0.00852931,0.00457436,True,inf,1.96812,27,glouton
+glouton+reseau (R=8),43,1,0.001,1,True,0.00664006,0.00707562,True,inf,2.29218,27,reseau
+glouton+reseau (R=8),44,1,0.001,1,True,0.00145504,2.06409e-05,True,inf,4.4849,27,reseau
+glouton+reseau (R=8),45,1,0.001,1,True,0.0120479,0.00344504,True,inf,1.52769,27,reseau
+glouton+reseau (R=8),46,1,0.001,1,True,0.0272957,0.000478248,True,inf,1.71662,27,reseau
+glouton+reseau (R=8),47,1,0.001,1,True,0.00993195,0.00448006,True,inf,1.37549,27,glouton
+glouton+reseau (R=8),48,1,0.001,1,True,0.0155376,0.0065498,True,inf,1.6861,27,reseau
+glouton+reseau (R=8),49,1,0.001,1,True,0.0421927,0.000813251,True,inf,0.85266,27,reseau
+glouton+reseau (R=8),50,1,0.001,1,True,0.00067468,0.00108881,True,inf,6.28627,27,reseau
+glouton+reseau (R=8),51,1,0.001,1,True,0.0135986,0.000602755,True,inf,1.43947,27,reseau
+glouton+reseau (R=8),52,1,0.001,1,True,0.0783305,0.00597595,True,inf,1.2701,27,glouton
+glouton+reseau (R=8),53,1,0.001,1,True,0.00223118,0.00362504,True,inf,2.51453,27,reseau
+glouton+reseau (R=8),54,1,0.001,1,True,0.0336757,0.00726652,True,inf,1.50803,27,reseau
+glouton+reseau (R=8),55,1,0.001,1,True,0.0225889,0.00478602,True,inf,2.02933,27,reseau
+glouton+reseau (R=8),56,1,0.001,1,True,0.0109515,0.0027732,True,inf,2.27198,27,reseau
+glouton+reseau (R=8),57,1,0.001,2,False,0.129106,0.0263997,False,inf,3.33197,36,reseau/reseau
+glouton+reseau (R=8),58,1,0.001,2,False,0.078651,0.0149997,False,inf,1.97297,36,reseau/glouton
+glouton+reseau (R=8),59,1,0.001,1,True,0.0388498,0.00984193,True,inf,1.08131,27,reseau
+glouton+reseau (R=8),60,1,0.001,1,True,0.0218001,0.00194186,True,inf,1.8136,27,reseau
+glouton+reseau (R=8),61,1,0.001,1,True,0.101105,0.00848206,True,inf,1.95405,27,reseau
+glouton+reseau (R=8),62,1,0.001,1,True,0.0657461,0.00680777,True,inf,1.88992,27,reseau
+glouton+reseau (R=8),63,1,0.001,1,True,0.0425115,0.00533145,True,inf,1.96867,27,reseau
+glouton+reseau (R=8),64,1,0.001,1,True,0.016103,0.00113341,True,inf,2.732,27,glouton
+glouton+reseau (R=8),65,1,0.001,1,True,0.0357364,0.000812447,True,inf,1.20629,27,reseau
+glouton+reseau (R=8),66,1,0.001,2,False,0.0112904,0.00348477,False,inf,4.65513,36,reseau/glouton
+glouton+reseau (R=8),67,1,0.001,1,True,0.00446019,0.00148089,True,inf,1.96555,27,reseau
+glouton+reseau (R=8),68,1,0.001,1,True,0.005658,0.00367297,True,inf,2.55649,27,reseau
+glouton+reseau (R=8),69,1,0.001,1,True,0.00363445,0.00121319,True,inf,1.32889,27,reseau
+glouton+reseau (R=8),70,1,0.001,1,True,0.0296705,0.00667061,True,inf,1.56373,27,reseau
+glouton+reseau (R=8),71,1,0.001,1,True,0.0517957,0.0102601,True,inf,1.34469,27,reseau
+glouton+reseau (R=8),72,1,0.001,1,True,0.0104717,0.00308765,True,inf,2.23739,27,reseau
+glouton+reseau (R=8),73,1,0.001,1,True,0.0193069,0.00189352,True,inf,1.43552,27,reseau
+glouton+reseau (R=8),74,1,0.001,1,True,0.00279237,0.00277839,True,inf,2.20373,27,reseau
+glouton+reseau (R=8),75,1,0.001,1,True,0.0103532,0.00365309,True,inf,2.02783,27,reseau
+glouton+reseau (R=8),76,1,0.001,1,True,0.029672,0.00675465,True,inf,1.45485,27,reseau
+glouton+reseau (R=8),77,1,0.001,1,True,0.000323229,0.000574421,True,inf,2.73811,27,reseau
+glouton+reseau (R=8),78,1,0.001,1,True,0.0175383,0.00289683,True,inf,1.79991,27,reseau
+glouton+reseau (R=8),79,1,0.001,1,True,0.0131714,0.00686845,True,inf,1.86799,27,reseau
+glouton+reseau (R=8),80,1,0.003,1,True,0.0721268,0.0319072,True,inf,1.11444,27,reseau
+glouton+reseau (R=8),81,1,0.003,1,True,0.1423,0.0175079,True,inf,0.954794,27,reseau
+glouton+reseau (R=8),82,1,0.003,1,True,0.00259423,0.00325114,True,inf,2.15619,27,reseau
+glouton+reseau (R=8),83,1,0.003,1,True,0.0054381,0.00119761,True,inf,1.75224,27,reseau
+glouton+reseau (R=8),84,1,0.003,1,True,0.0342734,0.0273413,True,inf,1.36563,27,reseau
+glouton+reseau (R=8),85,1,0.003,1,True,0.0162153,0.00595919,True,inf,1.27429,27,reseau
+glouton+reseau (R=8),86,1,0.003,1,True,0.266264,0.0254264,True,inf,0.924534,27,reseau
+glouton+reseau (R=8),87,1,0.003,1,True,0.0904219,0.0137699,True,inf,1.42006,27,glouton
+glouton+reseau (R=8),88,1,0.003,1,True,0.0148985,0.00246179,True,inf,1.13996,27,reseau
+glouton+reseau (R=8),89,1,0.003,1,True,0.039479,0.0245063,True,inf,1.29377,27,reseau
+glouton+reseau (R=8),90,1,0.003,1,True,0.00618236,0.00292567,True,inf,2.29055,27,reseau
+glouton+reseau (R=8),91,1,0.003,1,True,0.0808072,0.0272538,True,inf,1.37943,27,reseau
+glouton+reseau (R=8),92,1,0.003,1,True,0.0857435,0.00167703,True,inf,0.811596,27,reseau
+glouton+reseau (R=8),93,1,0.003,1,True,0.00829298,0.0123199,True,inf,1.48103,27,reseau
+glouton+reseau (R=8),94,1,0.003,1,True,0.0235563,0.013492,True,inf,1.82211,27,reseau
+glouton+reseau (R=8),95,1,0.003,1,True,0.0582603,0.00486124,True,inf,1.25752,27,reseau
+glouton+reseau (R=8),96,1,0.003,1,True,0.0142022,0.00131077,True,inf,0.876057,27,glouton
+glouton+reseau (R=8),97,1,0.003,1,True,0.210328,0.0114818,True,inf,1.11663,27,reseau
+glouton+reseau (R=8),98,1,0.003,1,True,0.123407,0.00974577,True,inf,1.14174,27,reseau
+glouton+reseau (R=8),99,1,0.003,1,True,0.0552101,0.000268889,True,inf,1.00252,27,reseau
+glouton+reseau (R=8),100,1,0.003,1,True,0.00243264,0.00220573,True,inf,1.28302,27,reseau
+glouton+reseau (R=8),101,1,0.003,1,True,0.0942659,0.0198953,True,inf,1.25526,27,reseau
+glouton+reseau (R=8),102,1,0.003,1,True,0.177286,0.031209,True,inf,1.01378,27,reseau
+glouton+reseau (R=8),103,1,0.003,1,True,0.0382812,0.0198094,True,inf,0.991827,27,reseau
+glouton+reseau (R=8),104,1,0.003,1,True,0.12964,0.00243987,True,inf,1.17124,27,reseau
+glouton+reseau (R=8),105,1,0.003,1,True,0.00365163,0.00622337,True,inf,1.07414,27,reseau
+glouton+reseau (R=8),106,1,0.003,1,True,0.107188,0.000242313,True,inf,0.989872,27,reseau
+glouton+reseau (R=8),107,1,0.003,1,True,0.102671,0.0264719,True,inf,1.39426,27,reseau
+glouton+reseau (R=8),108,1,0.003,1,True,0.00593018,0.00564394,True,inf,2.34823,27,glouton
+glouton+reseau (R=8),109,1,0.003,1,True,0.00787228,0.0086159,True,inf,1.50553,27,glouton
+glouton+reseau (R=8),110,1,0.003,1,True,0.0384452,0.0141473,True,inf,1.03502,27,reseau
+glouton+reseau (R=8),111,1,0.003,1,True,0.182089,0.0098971,True,inf,1.09793,27,reseau
+glouton+reseau (R=8),112,1,0.003,1,True,0.00431147,0.00530401,True,inf,1.32615,27,reseau
+glouton+reseau (R=8),113,1,0.003,1,True,0.00311307,0.00352024,True,inf,1.25568,27,reseau
+glouton+reseau (R=8),114,1,0.003,1,True,0.0819334,0.0277285,True,inf,1.47641,27,reseau
+glouton+reseau (R=8),115,1,0.003,1,True,0.472835,0.0466607,True,inf,1.13736,27,reseau
+glouton+reseau (R=8),116,1,0.003,1,True,0.0176081,0.000285737,True,inf,1.03191,27,reseau
+glouton+reseau (R=8),117,1,0.003,1,True,0.0611313,0.0221624,True,inf,1.09994,27,reseau
+glouton+reseau (R=8),118,1,0.003,1,True,0.103608,0.023433,True,inf,1.32156,27,reseau
+glouton+reseau (R=8),119,1,0.003,1,True,0.042397,0.00911553,True,inf,0.729754,27,reseau
+glouton+reseau (R=8),120,2,0.0001,2,True,0.00604366,0.00131065,True,13.0187,2.7487,36,glouton/reseau
+glouton+reseau (R=8),121,2,0.0001,2,True,0.0534601,0.0310355,True,3.4702,5.52811,36,reseau/reseau
+glouton+reseau (R=8),122,2,0.0001,2,True,0.0141474,0.00139697,True,8.7519,4.09385,36,reseau/reseau
+glouton+reseau (R=8),123,2,0.0001,2,True,0.113963,0.0624104,True,5.45078,3.00175,36,reseau/reseau
+glouton+reseau (R=8),124,2,0.0001,2,True,0.00801489,0.00115014,True,14.9599,3.26084,36,glouton/reseau
+glouton+reseau (R=8),125,2,0.0001,2,True,0.0109497,0.011248,True,1.60781,5.63355,36,reseau/reseau
+glouton+reseau (R=8),126,2,0.0001,2,True,0.199487,0.0689988,True,6.89842,3.67948,36,reseau/reseau
+glouton+reseau (R=8),127,2,0.0001,2,True,0.0421918,0.0154061,True,5.20788,3.0988,36,reseau/reseau
+glouton+reseau (R=8),128,2,0.0001,2,True,0.0346457,0.0180196,True,8.96951,3.76412,36,reseau/reseau
+glouton+reseau (R=8),129,2,0.0001,2,True,0.0410417,0.0209959,True,7.2605,2.16787,36,reseau/reseau
+glouton+reseau (R=8),130,2,0.0001,2,True,0.00625868,0.00279694,True,13.2101,3.67623,36,reseau/glouton
+glouton+reseau (R=8),131,2,0.0001,2,True,0.252749,0.0380829,True,5.63085,4.43971,36,glouton/reseau
+glouton+reseau (R=8),132,2,0.0001,2,True,0.0555205,0.0147454,True,4.91723,3.20534,36,reseau/reseau
+glouton+reseau (R=8),133,2,0.0001,2,True,0.0113804,0.00179172,True,12.2824,2.50055,36,reseau/reseau
+glouton+reseau (R=8),134,2,0.0001,2,True,0.00363429,9.19837e-05,True,6.10618,2.69945,36,glouton/glouton
+glouton+reseau (R=8),135,2,0.0001,2,True,0.375033,0.333892,True,2.09779,4.49899,36,reseau/reseau
+glouton+reseau (R=8),136,2,0.0001,2,True,0.00582788,0.000614134,True,8.97495,3.18909,36,reseau/reseau
+glouton+reseau (R=8),137,2,0.0001,2,True,0.00400335,0.000864226,True,14.8431,3.4998,36,glouton/reseau
+glouton+reseau (R=8),138,2,0.0001,2,True,0.0131893,0.00237936,True,8.00827,3.81446,36,reseau/reseau
+glouton+reseau (R=8),139,2,0.0001,2,True,0.00600661,0.00546427,True,2.46442,5.14636,36,reseau/reseau
+glouton+reseau (R=8),140,2,0.0001,2,True,0.0161231,0.00874701,True,2.77051,5.50971,36,reseau/glouton
+glouton+reseau (R=8),141,2,0.0001,2,True,0.0283192,0.0105601,True,5.4071,5.03403,36,glouton/reseau
+glouton+reseau (R=8),142,2,0.0001,2,True,0.000625862,6.31751e-05,True,16.6512,3.11475,36,reseau/reseau
+glouton+reseau (R=8),143,2,0.0001,2,True,0.322497,0.315825,True,3.48684,5.8133,36,reseau/glouton
+glouton+reseau (R=8),144,2,0.0001,2,True,0.0184362,0.00568165,True,8.11239,3.44841,36,reseau/reseau
+glouton+reseau (R=8),145,2,0.0001,2,True,0.409208,0.0589212,True,7.86212,3.6944,36,reseau/glouton
+glouton+reseau (R=8),146,2,0.0001,2,True,0.0211072,0.0102196,True,7.71639,4.14722,36,reseau/reseau
+glouton+reseau (R=8),147,2,0.0001,2,True,0.00974595,0.00501642,True,10.065,4.10386,36,reseau/glouton
+glouton+reseau (R=8),148,2,0.0001,2,True,0.0307314,0.00478254,True,9.56185,5.01359,36,glouton/glouton
+glouton+reseau (R=8),149,2,0.0001,2,True,0.00162965,0.000634683,True,4.85707,2.04757,36,glouton/glouton
+glouton+reseau (R=8),150,2,0.0001,2,True,0.0347963,0.0161554,True,5.20877,3.86283,36,reseau/reseau
+glouton+reseau (R=8),151,2,0.0001,2,True,0.119352,0.0206763,True,9.47959,7.38836,36,reseau/glouton
+glouton+reseau (R=8),152,2,0.0001,2,True,0.0190237,0.011449,True,5.9641,2.57911,36,reseau/reseau
+glouton+reseau (R=8),153,2,0.0001,2,True,0.0203066,0.00328985,True,5.89131,4.05938,36,reseau/reseau
+glouton+reseau (R=8),154,2,0.0001,2,True,0.0185942,0.00120321,True,5.72959,3.29304,36,reseau/reseau
+glouton+reseau (R=8),155,2,0.0001,3,False,0.214782,0.00177394,False,10.7686,8.23182,45,reseau/reseau/glouton
+glouton+reseau (R=8),156,2,0.0001,2,True,0.00450096,0.0021849,True,5.08915,2.71511,36,glouton/reseau
+glouton+reseau (R=8),157,2,0.0001,2,True,0.0831453,0.0167288,True,6.53737,3.08522,36,reseau/reseau
+glouton+reseau (R=8),158,2,0.0001,2,True,0.10077,0.119486,True,1.34136,4.27317,36,reseau/reseau
+glouton+reseau (R=8),159,2,0.0001,2,True,0.0169093,0.00033907,True,8.32164,8.96432,36,reseau/reseau
+glouton+reseau (R=8),160,2,0.001,2,True,1.10922,0.214118,False,10.0706,2.47128,36,reseau/reseau
+glouton+reseau (R=8),161,2,0.001,2,True,0.156335,0.113726,True,2.72434,3.21757,36,reseau/reseau
+glouton+reseau (R=8),162,2,0.001,2,True,0.0528091,0.00665397,True,16.2497,2.53939,36,glouton/reseau
+glouton+reseau (R=8),163,2,0.001,2,True,0.335659,0.166331,True,6.08584,2.87438,36,reseau/reseau
+glouton+reseau (R=8),164,2,0.001,2,True,0.0397148,0.0215697,True,12.154,1.2397,36,reseau/glouton
+glouton+reseau (R=8),165,2,0.001,2,True,0.45277,0.0261855,True,5.33071,2.26775,36,reseau/reseau
+glouton+reseau (R=8),166,2,0.001,2,True,0.0582105,0.0106619,True,6.88035,2.95262,36,glouton/reseau
+glouton+reseau (R=8),167,2,0.001,2,True,0.280878,0.0485953,True,13.4991,3.84538,36,glouton/reseau
+glouton+reseau (R=8),168,2,0.001,2,True,0.057929,0.0158461,True,9.09453,2.13862,36,glouton/reseau
+glouton+reseau (R=8),169,2,0.001,2,True,0.640801,0.251892,True,6.81251,3.80885,36,reseau/reseau
+glouton+reseau (R=8),170,2,0.001,2,True,0.0119724,0.00598872,True,5.49367,2.44098,36,reseau/glouton
+glouton+reseau (R=8),171,2,0.001,2,True,0.0852403,0.0150895,True,8.20336,1.44577,36,reseau/reseau
+glouton+reseau (R=8),172,2,0.001,1,False,0.0525752,0.00460616,False,6.17149,1.06616,27,reseau
+glouton+reseau (R=8),173,2,0.001,2,True,0.397316,0.0129303,True,5.8166,2.42709,36,reseau/reseau
+glouton+reseau (R=8),174,2,0.001,2,True,0.346679,0.214248,True,9.41913,1.85665,36,reseau/reseau
+glouton+reseau (R=8),175,2,0.001,2,True,0.123179,0.00867306,True,11.6946,2.71341,36,reseau/reseau
+glouton+reseau (R=8),176,2,0.001,2,True,0.147852,0.04086,True,5.82533,2.21368,36,reseau/reseau
+glouton+reseau (R=8),177,2,0.001,1,False,0.274537,0.213501,False,1.16712,1.49336,27,reseau
+glouton+reseau (R=8),178,2,0.001,2,True,0.0732819,0.00841456,True,11.6401,1.29093,36,glouton/glouton
+glouton+reseau (R=8),179,2,0.001,2,True,0.551212,0.250033,True,9.51079,2.55861,36,reseau/reseau
+glouton+reseau (R=8),180,2,0.001,2,True,0.055167,0.0065124,True,6.65671,2.89573,36,reseau/reseau
+glouton+reseau (R=8),181,2,0.001,2,True,0.046554,0.0178529,True,9.40647,2.32788,36,glouton/reseau
+glouton+reseau (R=8),182,2,0.001,2,True,0.308818,0.0839602,True,5.60169,2.71009,36,reseau/glouton
+glouton+reseau (R=8),183,2,0.001,2,True,0.0686288,0.00977456,True,9.35308,2.06444,36,glouton/glouton
+glouton+reseau (R=8),184,2,0.001,2,True,0.190568,0.0624154,True,4.11639,2.47529,36,reseau/reseau
+glouton+reseau (R=8),185,2,0.001,2,True,0.09517,0.0316914,True,7.40844,2.31261,36,reseau/reseau
+glouton+reseau (R=8),186,2,0.001,2,True,0.0217577,0.0211246,True,8.21072,2.57078,36,glouton/reseau
+glouton+reseau (R=8),187,2,0.001,2,True,0.0823688,0.0123843,True,11.9373,2.04913,36,reseau/reseau
+glouton+reseau (R=8),188,2,0.001,2,True,0.445213,0.109558,True,7.14036,2.01093,36,reseau/reseau
+glouton+reseau (R=8),189,2,0.001,2,True,0.395382,0.0467861,True,6.76618,2.34061,36,reseau/glouton
+glouton+reseau (R=8),190,2,0.001,2,True,0.505964,0.542954,True,2.18607,2.99886,36,reseau/reseau
+glouton+reseau (R=8),191,2,0.001,2,True,2.3116,0.739143,False,6.87571,4.02171,36,reseau/reseau
+glouton+reseau (R=8),192,2,0.001,2,True,0.945834,0.032629,True,9.03813,2.70439,36,reseau/reseau
+glouton+reseau (R=8),193,2,0.001,1,False,0.0997852,0.0193405,False,3.07519,1.08699,27,reseau
+glouton+reseau (R=8),194,2,0.001,2,True,0.0717732,0.00547823,True,11.9613,1.47315,36,reseau/glouton
+glouton+reseau (R=8),195,2,0.001,2,True,0.0411861,0.0197664,True,5.95747,2.34135,36,reseau/glouton
+glouton+reseau (R=8),196,2,0.001,2,True,0.0989029,0.0288721,True,9.83961,1.88721,36,glouton/glouton
+glouton+reseau (R=8),197,2,0.001,1,False,1.15351,0.857323,False,2.36782,1.29669,27,reseau
+glouton+reseau (R=8),198,2,0.001,2,True,2.54386,0.726062,False,3.06053,2.76888,36,reseau/reseau
+glouton+reseau (R=8),199,2,0.001,2,True,0.0696952,0.00771281,True,13.3571,1.63397,36,reseau/reseau
+glouton+reseau (R=8),200,2,0.003,2,True,0.606235,0.227341,True,7.43959,1.45934,36,reseau/reseau
+glouton+reseau (R=8),201,2,0.003,1,False,0.70916,0.272355,False,3.54561,0.875389,27,reseau
+glouton+reseau (R=8),202,2,0.003,2,True,0.187721,0.0689682,True,9.26313,1.48777,36,glouton/glouton
+glouton+reseau (R=8),203,2,0.003,2,True,1.82843,0.353292,False,5.69702,1.60032,36,reseau/reseau
+glouton+reseau (R=8),204,2,0.003,2,True,0.293197,0.446187,True,4.6725,1.97678,36,reseau/reseau
+glouton+reseau (R=8),205,2,0.003,2,True,3.36471,0.612244,False,5.22872,1.47505,36,glouton/reseau
+glouton+reseau (R=8),206,2,0.003,2,True,0.772487,0.13145,True,9.10461,2.07373,36,glouton/reseau
+glouton+reseau (R=8),207,2,0.003,1,False,0.667912,0.193328,False,6.04886,1.40338,27,reseau
+glouton+reseau (R=8),208,2,0.003,2,True,0.385183,0.0378877,True,8.95239,1.49274,36,reseau/reseau
+glouton+reseau (R=8),209,2,0.003,2,True,0.578953,0.102786,True,11.5151,1.69634,36,reseau/reseau
+glouton+reseau (R=8),210,2,0.003,1,False,0.0207703,0.0145214,False,9.38492,1.33331,27,reseau
+glouton+reseau (R=8),211,2,0.003,1,False,0.370721,0.0673182,False,6.25765,1.37986,27,glouton
+glouton+reseau (R=8),212,2,0.003,2,True,0.140043,0.00817599,True,16.1492,1.65628,36,reseau/reseau
+glouton+reseau (R=8),213,2,0.003,1,False,0.667965,1.55664,False,1.37299,0.963211,27,reseau
+glouton+reseau (R=8),214,2,0.003,1,False,1.15318,0.635167,False,3.04511,1.01227,27,reseau
+glouton+reseau (R=8),215,2,0.003,1,False,0.199064,0.0725154,False,8.91953,1.03094,27,reseau
+glouton+reseau (R=8),216,2,0.003,2,True,0.064659,0.00856542,True,5.02508,1.27161,36,reseau/reseau
+glouton+reseau (R=8),217,2,0.003,2,True,0.181425,0.0865021,True,5.33536,4.30368,36,reseau/glouton
+glouton+reseau (R=8),218,2,0.003,1,False,0.247887,0.0948634,False,5.48855,1.03619,27,reseau
+glouton+reseau (R=8),219,2,0.003,2,True,0.510066,0.0724996,True,13.4149,1.45211,36,reseau/reseau
+glouton+reseau (R=8),220,2,0.003,2,True,0.142545,0.0869446,True,3.73957,1.64271,36,reseau/reseau
+glouton+reseau (R=8),221,2,0.003,2,True,4.96374,0.861702,False,7.03414,1.70179,36,glouton/reseau
+glouton+reseau (R=8),222,2,0.003,1,False,0.0409766,0.00525835,False,6.0778,1.06956,27,reseau
+glouton+reseau (R=8),223,2,0.003,2,True,1.1441,0.335336,False,3.8811,1.74849,36,reseau/reseau
+glouton+reseau (R=8),224,2,0.003,3,False,2.37413,0.771361,False,5.06722,2.70576,45,glouton/glouton/glouton
+glouton+reseau (R=8),225,2,0.003,2,True,2.45621,0.280786,False,7.27668,1.81522,36,glouton/reseau
+glouton+reseau (R=8),226,2,0.003,2,True,0.135508,0.0413512,True,11.726,2.29338,36,reseau/reseau
+glouton+reseau (R=8),227,2,0.003,2,True,0.904326,0.0449017,True,4.2139,2.82385,36,reseau/reseau
+glouton+reseau (R=8),228,2,0.003,2,True,2.54212,2.13212,False,4.24709,2.7424,36,reseau/reseau
+glouton+reseau (R=8),229,2,0.003,2,True,0.236753,0.048607,True,10.6592,1.0386,36,glouton/reseau
+glouton+reseau (R=8),230,2,0.003,2,True,0.358538,0.219798,True,8.50602,1.67479,36,reseau/reseau
+glouton+reseau (R=8),231,2,0.003,2,True,0.92753,0.638365,True,4.84739,2.2997,36,reseau/reseau
+glouton+reseau (R=8),232,2,0.003,1,False,1.66742,1.54181,False,3.36677,0.948392,27,reseau
+glouton+reseau (R=8),233,2,0.003,1,False,0.244873,0.0272019,False,9.88985,0.92033,27,reseau
+glouton+reseau (R=8),234,2,0.003,2,True,3.6664,0.555637,False,1.7603,2.22914,36,reseau/reseau
+glouton+reseau (R=8),235,2,0.003,2,True,1.53671,0.681828,False,7.19572,2.78368,36,reseau/reseau
+glouton+reseau (R=8),236,2,0.003,2,True,0.830512,0.455676,True,5.43922,1.39333,36,reseau/reseau
+glouton+reseau (R=8),237,2,0.003,1,False,0.00217949,0.00696739,False,5.15913,0.963189,27,reseau
+glouton+reseau (R=8),238,2,0.003,2,True,0.376419,0.0898211,True,6.98591,1.51684,36,reseau/glouton
+glouton+reseau (R=8),239,2,0.003,2,True,0.535944,0.0527349,True,8.71716,1.42147,36,reseau/reseau
+glouton+reseau (R=8),240,3,0.0001,3,True,0.0136925,0.00747477,True,3.11611,5.48152,45,reseau/reseau/reseau
+glouton+reseau (R=8),241,3,0.0001,3,True,0.0832736,0.0352412,True,6.63561,2.97801,45,reseau/reseau/reseau
+glouton+reseau (R=8),242,3,0.0001,3,True,0.0942097,0.00564761,True,6.71743,6.46028,45,reseau/glouton/glouton
+glouton+reseau (R=8),243,3,0.0001,3,True,0.00445192,0.000370392,True,5.962,3.39927,45,glouton/reseau/reseau
+glouton+reseau (R=8),244,3,0.0001,3,True,0.421646,0.212443,True,4.32849,7.30187,45,reseau/reseau/reseau
+glouton+reseau (R=8),245,3,0.0001,3,True,0.187151,0.0112401,True,4.3186,5.53198,45,reseau/reseau/reseau
+glouton+reseau (R=8),246,3,0.0001,3,True,0.0356213,0.0282892,True,4.89328,5.85292,45,reseau/glouton/reseau
+glouton+reseau (R=8),247,3,0.0001,3,True,0.0765381,0.0994094,True,2.42039,5.2195,45,glouton/reseau/reseau
+glouton+reseau (R=8),248,3,0.0001,3,True,0.0430832,0.0244248,True,3.75041,7.01918,45,reseau/reseau/reseau
+glouton+reseau (R=8),249,3,0.0001,2,False,0.210364,0.116242,False,2.00648,3.6489,36,reseau/reseau
+glouton+reseau (R=8),250,3,0.0001,3,True,0.0191096,0.00499547,True,8.84145,4.71066,45,reseau/reseau/reseau
+glouton+reseau (R=8),251,3,0.0001,3,True,0.769507,0.446983,True,3.14148,7.66351,45,glouton/reseau/reseau
+glouton+reseau (R=8),252,3,0.0001,3,True,0.486597,0.160627,True,2.16857,7.92847,45,glouton/reseau/reseau
+glouton+reseau (R=8),253,3,0.0001,3,True,0.0170782,0.00790156,True,4.71931,7.32387,45,reseau/reseau/reseau
+glouton+reseau (R=8),254,3,0.0001,3,True,0.0516069,0.0109849,True,5.7021,5.91776,45,reseau/reseau/reseau
+glouton+reseau (R=8),255,3,0.0001,3,True,0.042761,0.00735025,True,8.05917,4.9499,45,glouton/reseau/reseau
+glouton+reseau (R=8),256,3,0.0001,3,True,0.222245,0.130245,True,3.73021,5.36477,45,reseau/reseau/reseau
+glouton+reseau (R=8),257,3,0.0001,3,True,0.0143577,0.000986364,True,3.45337,5.15074,45,reseau/reseau/reseau
+glouton+reseau (R=8),258,3,0.0001,3,True,0.011517,0.00290834,True,3.44102,4.16144,45,reseau/glouton/reseau
+glouton+reseau (R=8),259,3,0.0001,3,True,0.0343174,0.0105959,True,7.70245,5.41729,45,glouton/reseau/glouton
+glouton+reseau (R=8),260,3,0.0001,2,False,0.199244,0.121592,False,2.0011,2.84262,36,reseau/reseau
+glouton+reseau (R=8),261,3,0.0001,3,True,1.40455,1.62372,False,4.14098,6.93904,45,reseau/reseau/reseau
+glouton+reseau (R=8),262,3,0.0001,2,False,0.107119,0.0819787,False,1.79602,3.3992,36,glouton/reseau
+glouton+reseau (R=8),263,3,0.0001,3,True,4.00538,9.49374,False,2.87905,8.32198,45,reseau/reseau/reseau
+glouton+reseau (R=8),264,3,0.0001,3,True,0.0585858,0.00945878,True,7.21431,4.795,45,reseau/reseau/reseau
+glouton+reseau (R=8),265,3,0.0001,3,True,0.0202947,0.0162443,True,6.44013,4.09974,45,reseau/reseau/reseau
+glouton+reseau (R=8),266,3,0.0001,2,False,0.438978,0.269552,False,1.92278,5.25816,36,reseau/reseau
+glouton+reseau (R=8),267,3,0.0001,3,True,0.398303,0.306142,True,2.37394,7.14088,45,reseau/reseau/reseau
+glouton+reseau (R=8),268,3,0.0001,3,True,0.0194081,0.00378661,True,6.30317,5.55166,45,reseau/glouton/reseau
+glouton+reseau (R=8),269,3,0.0001,3,True,0.101177,0.0563921,True,2.03617,6.22131,45,reseau/reseau/reseau
+glouton+reseau (R=8),270,3,0.0001,3,True,2.52227,0.817861,False,2.06269,8.65342,45,reseau/reseau/reseau
+glouton+reseau (R=8),271,3,0.0001,3,True,0.0680805,0.0266927,True,5.51259,5.06444,45,reseau/reseau/reseau
+glouton+reseau (R=8),272,3,0.0001,3,True,0.0449905,0.00566311,True,6.70346,5.88969,45,reseau/reseau/reseau
+glouton+reseau (R=8),273,3,0.0001,3,True,0.186392,0.0211033,True,5.42625,5.16707,45,glouton/glouton/reseau
+glouton+reseau (R=8),274,3,0.0001,3,True,0.62882,0.255662,True,4.97025,8.37897,45,reseau/reseau/reseau
+glouton+reseau (R=8),275,3,0.0001,3,True,0.000814933,0.00147869,True,5.4099,2.8417,45,glouton/reseau/reseau
+glouton+reseau (R=8),276,3,0.0001,3,True,0.0420723,0.00218627,True,2.11688,8.44558,45,reseau/reseau/reseau
+glouton+reseau (R=8),277,3,0.0001,3,True,0.103079,0.0252662,True,5.66207,6.02648,45,glouton/reseau/reseau
+glouton+reseau (R=8),278,3,0.0001,3,True,0.946939,0.558946,True,4.89356,7.08385,45,reseau/glouton/glouton
+glouton+reseau (R=8),279,3,0.0001,2,False,0.289554,0.739024,False,0.667401,4.28137,36,glouton/reseau
+glouton+reseau (R=8),280,3,0.001,3,True,1.85717,0.85279,False,4.62427,4.59844,45,reseau/reseau/reseau
+glouton+reseau (R=8),281,3,0.001,2,False,0.237949,0.0563432,False,2.14463,2.45832,36,reseau/reseau
+glouton+reseau (R=8),282,3,0.001,3,True,0.219213,0.0364743,True,7.53026,5.56978,45,reseau/reseau/reseau
+glouton+reseau (R=8),283,3,0.001,3,True,0.0697638,0.0349215,True,4.52954,2.60596,45,reseau/reseau/reseau
+glouton+reseau (R=8),284,3,0.001,3,True,0.126342,0.173768,True,2.60936,1.76822,45,reseau/reseau/glouton
+glouton+reseau (R=8),285,3,0.001,3,True,0.255156,0.109228,True,7.45825,2.95447,45,reseau/reseau/glouton
+glouton+reseau (R=8),286,3,0.001,2,False,0.586187,0.257519,False,2.63162,4.48837,36,reseau/reseau
+glouton+reseau (R=8),287,3,0.001,2,False,0.645883,0.625034,False,2.74659,2.96064,36,reseau/reseau
+glouton+reseau (R=8),288,3,0.001,3,True,0.339659,0.062188,True,6.18571,3.38535,45,reseau/reseau/reseau
+glouton+reseau (R=8),289,3,0.001,3,True,3.89145,0.719769,False,2.64874,3.18952,45,reseau/reseau/reseau
+glouton+reseau (R=8),290,3,0.001,3,True,0.682928,0.354058,True,3.21704,6.0109,45,glouton/reseau/glouton
+glouton+reseau (R=8),291,3,0.001,3,True,0.836876,0.221737,True,5.49152,3.12087,45,reseau/reseau/glouton
+glouton+reseau (R=8),292,3,0.001,3,True,0.17427,0.0402648,True,3.92024,2.48552,45,glouton/reseau/reseau
+glouton+reseau (R=8),293,3,0.001,3,True,1.07913,0.281176,False,4.39496,3.07514,45,reseau/reseau/reseau
+glouton+reseau (R=8),294,3,0.001,2,False,0.0253167,0.023527,False,4.26865,2.10011,36,glouton/glouton
+glouton+reseau (R=8),295,3,0.001,3,True,1.87819,0.951974,False,3.78362,5.35245,45,reseau/glouton/reseau
+glouton+reseau (R=8),296,3,0.001,3,True,0.20385,0.168677,True,3.21937,3.48359,45,reseau/reseau/glouton
+glouton+reseau (R=8),297,3,0.001,3,True,2.33513,0.187139,False,4.15701,5.84102,45,reseau/reseau/reseau
+glouton+reseau (R=8),298,3,0.001,2,False,0.126566,0.0974867,False,3.1284,1.40906,36,glouton/glouton
+glouton+reseau (R=8),299,3,0.001,3,True,1.18133,2.32628,False,3.22593,5.05791,45,reseau/reseau/reseau
+glouton+reseau (R=8),300,3,0.001,2,False,0.139866,0.156035,False,3.381,1.49945,36,glouton/reseau
+glouton+reseau (R=8),301,3,0.001,3,True,1.38043,0.723684,False,3.56569,3.44284,45,reseau/reseau/glouton
+glouton+reseau (R=8),302,3,0.001,2,False,1.45784,0.267896,False,2.8796,3.63849,36,reseau/reseau
+glouton+reseau (R=8),303,3,0.001,2,False,0.404913,0.601382,False,0.898357,1.83922,36,reseau/reseau
+glouton+reseau (R=8),304,3,0.001,3,True,0.845991,0.216966,True,6.93765,2.23948,45,reseau/glouton/glouton
+glouton+reseau (R=8),305,3,0.001,3,True,0.185249,0.141847,True,6.58032,2.36951,45,reseau/glouton/reseau
+glouton+reseau (R=8),306,3,0.001,3,True,0.701138,0.154909,True,7.4472,4.59118,45,reseau/reseau/reseau
+glouton+reseau (R=8),307,3,0.001,3,True,0.689874,1.25246,False,2.57645,5.34901,45,reseau/reseau/glouton
+glouton+reseau (R=8),308,3,0.001,2,False,0.499757,0.723862,False,1.09132,2.69025,36,reseau/reseau
+glouton+reseau (R=8),309,3,0.001,3,True,0.123739,0.0657967,True,6.42807,2.91339,45,reseau/reseau/reseau
+glouton+reseau (R=8),310,3,0.001,3,True,1.06302,0.378941,False,3.69868,3.30169,45,reseau/reseau/reseau
+glouton+reseau (R=8),311,3,0.001,3,True,0.126218,0.0415307,True,3.89071,2.14747,45,reseau/reseau/reseau
+glouton+reseau (R=8),312,3,0.001,3,True,0.577939,0.123672,True,2.43767,3.39995,45,reseau/reseau/reseau
+glouton+reseau (R=8),313,3,0.001,4,False,1.94616,1.4523,False,1.49902,6.22369,54,reseau/reseau/glouton
+glouton+reseau (R=8),314,3,0.001,2,False,0.198585,0.594334,False,2.45191,2.42605,36,reseau/reseau
+glouton+reseau (R=8),315,3,0.001,1,False,0.441921,0.439194,False,1.69458,1.29692,27,reseau
+glouton+reseau (R=8),316,3,0.001,3,True,0.490242,0.0652934,True,7.92443,3.05912,45,reseau/reseau/reseau
+glouton+reseau (R=8),317,3,0.001,3,True,2.19579,0.29661,False,7.75976,2.41477,45,reseau/reseau/reseau
+glouton+reseau (R=8),318,3,0.001,3,True,0.464462,0.0358317,True,2.9368,3.35362,45,reseau/reseau/glouton
+glouton+reseau (R=8),319,3,0.001,3,True,0.244085,0.083254,True,7.6026,2.44664,45,reseau/reseau/reseau
+glouton+reseau (R=8),320,3,0.003,3,True,1.54488,1.60232,False,3.54388,2.54804,45,reseau/reseau/reseau
+glouton+reseau (R=8),321,3,0.003,2,False,0.612494,0.0422826,False,2.6009,1.4887,36,reseau/reseau
+glouton+reseau (R=8),322,3,0.003,2,False,1.16779,0.810654,False,3.98906,2.04725,36,reseau/reseau
+glouton+reseau (R=8),323,3,0.003,3,True,0.521812,0.0434333,True,4.40237,2.20669,45,glouton/reseau/reseau
+glouton+reseau (R=8),324,3,0.003,2,False,1.18742,0.14615,False,8.19243,1.90078,36,reseau/glouton
+glouton+reseau (R=8),325,3,0.003,3,True,0.472321,0.552312,True,1.94327,3.1886,45,reseau/reseau/glouton
+glouton+reseau (R=8),326,3,0.003,2,False,0.490796,0.178757,False,6.71007,1.37305,36,reseau/reseau
+glouton+reseau (R=8),327,3,0.003,3,True,2.35846,0.449971,False,3.33579,2.7336,45,reseau/reseau/reseau
+glouton+reseau (R=8),328,3,0.003,2,False,0.258218,0.460072,False,2.93338,1.99332,36,reseau/reseau
+glouton+reseau (R=8),329,3,0.003,3,True,0.839304,0.120584,True,5.67447,4.005,45,glouton/reseau/reseau
+glouton+reseau (R=8),330,3,0.003,2,False,0.557568,0.130021,False,5.51221,2.26984,36,reseau/reseau
+glouton+reseau (R=8),331,3,0.003,2,False,0.172178,0.412259,False,0.528111,1.72646,36,reseau/reseau
+glouton+reseau (R=8),332,3,0.003,3,True,2.37999,0.296531,False,6.85585,2.80132,45,glouton/reseau/glouton
+glouton+reseau (R=8),333,3,0.003,2,False,0.751858,0.566042,False,3.75738,1.0017,36,reseau/reseau
+glouton+reseau (R=8),334,3,0.003,2,False,0.518434,0.802514,False,2.0742,1.76798,36,reseau/reseau
+glouton+reseau (R=8),335,3,0.003,3,True,1.1416,0.922184,False,3.12607,2.85677,45,reseau/reseau/reseau
+glouton+reseau (R=8),336,3,0.003,2,False,0.149293,0.0393692,False,0.813073,1.81346,36,reseau/reseau
+glouton+reseau (R=8),337,3,0.003,1,False,0.815224,0.628881,False,1.79646,0.964307,27,reseau
+glouton+reseau (R=8),338,3,0.003,2,False,0.650239,1.60489,False,1.42845,1.77493,36,glouton/reseau
+glouton+reseau (R=8),339,3,0.003,1,False,0.154336,0.116914,False,2.40008,0.893534,27,reseau
+glouton+reseau (R=8),340,3,0.003,2,False,1.17123,0.430438,False,3.13288,1.38854,36,reseau/reseau
+glouton+reseau (R=8),341,3,0.003,2,False,0.767456,0.569185,False,2.75274,1.3892,36,reseau/reseau
+glouton+reseau (R=8),342,3,0.003,2,False,0.656475,0.0867983,False,2.07242,1.88287,36,reseau/reseau
+glouton+reseau (R=8),343,3,0.003,2,False,0.668193,0.16624,False,4.03867,1.66868,36,reseau/reseau
+glouton+reseau (R=8),344,3,0.003,3,True,3.50303,0.680684,False,6.0816,3.08666,45,reseau/reseau/reseau
+glouton+reseau (R=8),345,3,0.003,3,True,1.21031,0.0337595,False,9.04714,1.81645,45,glouton/glouton/reseau
+glouton+reseau (R=8),346,3,0.003,2,False,1.02326,0.231984,False,4.26332,1.64342,36,reseau/glouton
+glouton+reseau (R=8),347,3,0.003,3,True,1.39808,0.330352,False,1.67089,3.58586,45,reseau/reseau/reseau
+glouton+reseau (R=8),348,3,0.003,2,False,0.845338,1.13821,False,1.77531,1.77554,36,reseau/reseau
+glouton+reseau (R=8),349,3,0.003,2,False,0.207418,0.170033,False,4.0289,1.43044,36,reseau/reseau
+glouton+reseau (R=8),350,3,0.003,2,False,0.661012,0.0709946,False,7.46197,1.61484,36,reseau/glouton
+glouton+reseau (R=8),351,3,0.003,2,False,0.427404,0.57873,False,1.85697,2.35304,36,reseau/reseau
+glouton+reseau (R=8),352,3,0.003,4,False,1.94709,0.464412,False,5.83847,3.90813,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),353,3,0.003,3,True,0.469166,0.0828084,True,8.89738,2.10267,45,glouton/glouton/reseau
+glouton+reseau (R=8),354,3,0.003,3,True,0.214352,0.226928,True,3.78044,2.54903,45,reseau/reseau/reseau
+glouton+reseau (R=8),355,3,0.003,2,False,0.87045,0.493606,False,2.47973,1.32976,36,reseau/reseau
+glouton+reseau (R=8),356,3,0.003,3,True,0.33389,0.229049,True,1.65208,2.40084,45,reseau/reseau/reseau
+glouton+reseau (R=8),357,3,0.003,1,False,0.756557,0.27701,False,1.56282,0.994069,27,reseau
+glouton+reseau (R=8),358,3,0.003,2,False,0.9048,0.345645,False,6.40247,1.60192,36,reseau/reseau
+glouton+reseau (R=8),359,3,0.003,3,True,2.56309,0.744627,False,5.20348,2.81054,45,reseau/reseau/reseau
+glouton+reseau (R=8),360,4,0.0001,3,False,0.0871598,0.0449743,False,0.62179,6.88614,45,glouton/reseau/reseau
+glouton+reseau (R=8),361,4,0.0001,4,True,1.82292,1.42636,False,4.0191,11.6722,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),362,4,0.0001,3,False,0.158453,0.0896551,False,3.75988,5.90482,45,reseau/glouton/reseau
+glouton+reseau (R=8),363,4,0.0001,4,True,2.51548,2.30253,False,1.29876,13.6312,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),364,4,0.0001,3,False,0.398178,0.588033,False,0.961264,4.68871,45,reseau/reseau/reseau
+glouton+reseau (R=8),365,4,0.0001,4,True,0.0274868,0.0353106,True,1.06329,5.44469,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),366,4,0.0001,4,True,0.679571,0.253613,True,2.77216,6.5598,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),367,4,0.0001,4,True,2.01887,0.775877,False,1.73748,7.27338,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),368,4,0.0001,3,False,0.127437,0.0634377,False,2.68921,3.52951,45,glouton/glouton/reseau
+glouton+reseau (R=8),369,4,0.0001,3,False,0.248759,0.155961,False,1.07319,10.0032,45,reseau/reseau/reseau
+glouton+reseau (R=8),370,4,0.0001,4,True,1.91523,0.694612,False,3.92559,7.22806,54,reseau/glouton/reseau/glouton
+glouton+reseau (R=8),371,4,0.0001,3,False,0.0246982,0.0119928,False,5.02251,3.37083,45,glouton/reseau/reseau
+glouton+reseau (R=8),372,4,0.0001,3,False,0.393605,0.360477,False,2.96194,5.79672,45,reseau/reseau/reseau
+glouton+reseau (R=8),373,4,0.0001,3,False,0.322266,0.114888,False,1.16042,5.05165,45,glouton/reseau/glouton
+glouton+reseau (R=8),374,4,0.0001,4,True,3.5116,9.2414,False,2.91058,15.7963,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),375,4,0.0001,4,True,0.989556,0.376681,False,3.90171,10.5975,54,reseau/reseau/glouton/glouton
+glouton+reseau (R=8),376,4,0.0001,4,True,0.269654,0.11968,True,4.32767,7.40674,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),377,4,0.0001,4,True,1.29391,0.730147,False,1.27526,11.2076,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),378,4,0.0001,4,True,13.2213,0.988256,False,1.96725,8.90994,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),379,4,0.0001,4,True,0.219273,0.0671439,True,3.45651,6.91282,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),380,4,0.0001,4,True,0.0230049,0.011933,True,8.42911,17.3318,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),381,4,0.0001,4,True,0.182496,0.0120848,True,4.31,12.2244,54,glouton/reseau/reseau/glouton
+glouton+reseau (R=8),382,4,0.0001,4,True,0.120845,0.0560793,True,4.02994,7.12736,54,reseau/glouton/glouton/reseau
+glouton+reseau (R=8),383,4,0.0001,3,False,0.11298,0.0550401,False,1.85334,7.20307,45,reseau/reseau/glouton
+glouton+reseau (R=8),384,4,0.0001,4,True,0.161493,0.112935,True,2.42757,7.93659,54,reseau/glouton/reseau/reseau
+glouton+reseau (R=8),385,4,0.0001,4,True,0.085391,0.0126558,True,3.05788,4.6935,54,reseau/glouton/reseau/reseau
+glouton+reseau (R=8),386,4,0.0001,4,True,0.489593,0.15633,True,3.5714,21.9103,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),387,4,0.0001,3,False,0.21072,0.042531,False,2.85691,7.22788,45,glouton/glouton/reseau
+glouton+reseau (R=8),388,4,0.0001,3,False,0.933287,1.67447,False,1.97217,5.5836,45,reseau/reseau/reseau
+glouton+reseau (R=8),389,4,0.0001,4,True,0.289334,0.165239,True,3.43523,7.27607,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),390,4,0.0001,4,True,0.302044,0.278079,True,2.50917,12.3432,54,glouton/reseau/glouton/reseau
+glouton+reseau (R=8),391,4,0.0001,4,True,0.134427,0.11997,True,4.14572,8.35866,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),392,4,0.0001,4,True,2.01811,0.847635,False,0.788936,8.45592,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),393,4,0.0001,4,True,1.79579,0.593836,False,3.90217,8.17969,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),394,4,0.0001,4,True,0.936219,0.42553,False,2.37698,19.2475,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),395,4,0.0001,3,False,0.234108,0.180554,False,0.355147,7.73656,45,reseau/reseau/reseau
+glouton+reseau (R=8),396,4,0.0001,3,False,0.0548482,0.0778167,False,1.35499,3.59691,45,reseau/reseau/reseau
+glouton+reseau (R=8),397,4,0.0001,3,False,0.224767,0.841185,False,0.462378,4.70638,45,reseau/reseau/reseau
+glouton+reseau (R=8),398,4,0.0001,4,True,0.152079,0.0150134,True,7.02935,14.6207,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),399,4,0.0001,4,True,1.01106,0.589733,False,1.33144,12.4112,54,reseau/glouton/reseau/reseau
+glouton+reseau (R=8),400,4,0.001,2,False,0.480892,0.176196,False,1.89044,1.653,36,reseau/reseau
+glouton+reseau (R=8),401,4,0.001,3,False,0.15772,0.112377,False,2.34771,3.0476,45,reseau/glouton/reseau
+glouton+reseau (R=8),402,4,0.001,3,False,1.35928,2.37369,False,3.13721,2.87091,45,reseau/reseau/reseau
+glouton+reseau (R=8),403,4,0.001,4,True,0.729068,0.371343,True,3.37009,7.84239,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),404,4,0.001,4,True,1.11671,0.777412,False,2.59041,4.9982,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),405,4,0.001,3,False,1.33724,0.132011,False,2.54153,4.35077,45,reseau/reseau/glouton
+glouton+reseau (R=8),406,4,0.001,3,False,1.53894,0.618021,False,1.05215,4.22044,45,reseau/reseau/glouton
+glouton+reseau (R=8),407,4,0.001,3,False,1.12593,0.630542,False,2.92516,3.58514,45,glouton/reseau/reseau
+glouton+reseau (R=8),408,4,0.001,3,False,0.749337,0.222308,False,1.54294,3.15302,45,glouton/glouton/reseau
+glouton+reseau (R=8),409,4,0.001,4,True,0.707033,0.560299,True,3.55612,5.43429,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),410,4,0.001,3,False,0.219042,0.306657,False,2.1442,4.04841,45,reseau/reseau/reseau
+glouton+reseau (R=8),411,4,0.001,3,False,0.701315,0.320691,False,2.0055,3.21776,45,glouton/reseau/reseau
+glouton+reseau (R=8),412,4,0.001,4,True,0.419659,0.163869,True,6.81912,4.9593,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),413,4,0.001,3,False,1.15611,0.186456,False,3.77579,2.97809,45,reseau/reseau/reseau
+glouton+reseau (R=8),414,4,0.001,3,False,2.16336,2.9724,False,2.72179,3.66673,45,glouton/reseau/reseau
+glouton+reseau (R=8),415,4,0.001,4,True,0.337244,0.231549,True,2.9871,5.13962,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),416,4,0.001,3,False,2.64175,3.01007,False,3.94319,3.32989,45,reseau/glouton/reseau
+glouton+reseau (R=8),417,4,0.001,3,False,0.315144,3.08484,False,0.789227,2.89951,45,reseau/reseau/reseau
+glouton+reseau (R=8),418,4,0.001,2,False,0.434634,0.321103,False,3.07053,2.78138,36,reseau/glouton
+glouton+reseau (R=8),419,4,0.001,4,True,0.653648,0.269927,True,2.84563,8.14012,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),420,4,0.001,3,False,3.00249,1.96598,False,5.25862,3.64587,45,reseau/reseau/reseau
+glouton+reseau (R=8),421,4,0.001,3,False,1.06697,0.614855,False,4.12889,2.68622,45,reseau/reseau/glouton
+glouton+reseau (R=8),422,4,0.001,3,False,0.538633,0.598262,False,1.57671,3.26102,45,reseau/reseau/reseau
+glouton+reseau (R=8),423,4,0.001,3,False,0.332246,0.263543,False,3.62236,2.68596,45,reseau/glouton/glouton
+glouton+reseau (R=8),424,4,0.001,4,True,0.284791,0.0847912,True,3.27211,4.34329,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),425,4,0.001,3,False,0.630133,0.671172,False,1.78301,2.4586,45,glouton/reseau/reseau
+glouton+reseau (R=8),426,4,0.001,2,False,0.844388,21.798,False,2.30405,2.32509,36,reseau/reseau
+glouton+reseau (R=8),427,4,0.001,3,False,2.31454,1.62122,False,3.19777,3.60201,45,reseau/reseau/reseau
+glouton+reseau (R=8),428,4,0.001,3,False,0.361411,0.121486,False,2.78446,2.70255,45,glouton/reseau/reseau
+glouton+reseau (R=8),429,4,0.001,3,False,3.31863,0.325912,False,3.60242,2.87749,45,glouton/reseau/reseau
+glouton+reseau (R=8),430,4,0.001,4,True,0.517085,0.166052,True,2.72639,4.52435,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),431,4,0.001,3,False,0.721475,1.43468,False,1.6276,2.3897,45,reseau/reseau/reseau
+glouton+reseau (R=8),432,4,0.001,3,False,1.83507,2.72468,False,3.56854,3.14059,45,reseau/reseau/reseau
+glouton+reseau (R=8),433,4,0.001,3,False,1.14831,0.631697,False,3.47759,2.98087,45,reseau/reseau/reseau
+glouton+reseau (R=8),434,4,0.001,4,True,0.58777,0.123017,True,3.3855,5.20594,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),435,4,0.001,4,True,0.457027,0.610357,True,2.93602,5.88525,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),436,4,0.001,3,False,0.402538,0.153243,False,4.24524,2.06295,45,reseau/glouton/reseau
+glouton+reseau (R=8),437,4,0.001,3,False,0.433708,0.226883,False,3.68105,2.70998,45,reseau/reseau/reseau
+glouton+reseau (R=8),438,4,0.001,3,False,0.734087,0.939664,False,1.68899,2.94272,45,reseau/reseau/glouton
+glouton+reseau (R=8),439,4,0.001,4,True,0.864172,0.371107,True,4.7108,5.07927,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),440,4,0.003,3,False,0.66038,0.460001,False,1.9557,2.31572,45,reseau/glouton/reseau
+glouton+reseau (R=8),441,4,0.003,3,False,1.46766,0.367358,False,2.47302,2.82312,45,reseau/reseau/glouton
+glouton+reseau (R=8),442,4,0.003,3,False,0.47786,0.844394,False,0.970977,2.23477,45,reseau/reseau/reseau
+glouton+reseau (R=8),443,4,0.003,2,False,2.4954,1.23731,False,4.61646,1.28851,36,reseau/reseau
+glouton+reseau (R=8),444,4,0.003,3,False,1.47847,0.361597,False,1.04979,4.07278,45,reseau/reseau/reseau
+glouton+reseau (R=8),445,4,0.003,3,False,1.25713,0.43802,False,3.95331,2.04537,45,glouton/reseau/glouton
+glouton+reseau (R=8),446,4,0.003,2,False,0.641239,0.203668,False,3.0418,1.43971,36,glouton/reseau
+glouton+reseau (R=8),447,4,0.003,3,False,0.995377,0.251656,False,3.17421,3.14765,45,reseau/reseau/reseau
+glouton+reseau (R=8),448,4,0.003,3,False,2.20984,1.27933,False,2.64908,2.89309,45,reseau/reseau/reseau
+glouton+reseau (R=8),449,4,0.003,3,False,2.17397,0.126947,False,2.87273,3.54748,45,reseau/reseau/reseau
+glouton+reseau (R=8),450,4,0.003,2,False,3.14674,1.0229,False,0.683867,1.65995,36,reseau/reseau
+glouton+reseau (R=8),451,4,0.003,3,False,1.65898,1.43458,False,4.04178,3.3829,45,reseau/glouton/reseau
+glouton+reseau (R=8),452,4,0.003,2,False,2.2602,1.05919,False,5.29884,1.43975,36,reseau/reseau
+glouton+reseau (R=8),453,4,0.003,2,False,4.49948,0.318174,False,2.35828,2.41129,36,reseau/reseau
+glouton+reseau (R=8),454,4,0.003,4,True,0.555739,0.0710116,True,5.07648,3.20803,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),455,4,0.003,4,True,1.41672,0.17132,False,4.48228,3.53391,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),456,4,0.003,2,False,1.47579,3.53257,False,2.78624,1.51481,36,reseau/reseau
+glouton+reseau (R=8),457,4,0.003,2,False,0.249371,0.626051,False,1.05503,1.27157,36,reseau/reseau
+glouton+reseau (R=8),458,4,0.003,3,False,0.810635,0.871603,False,2.30855,2.17197,45,reseau/reseau/reseau
+glouton+reseau (R=8),459,4,0.003,1,False,2.07277,3.95476,False,3.37593,0.900994,27,reseau
+glouton+reseau (R=8),460,4,0.003,3,False,0.788913,0.372649,False,3.81299,2.08046,45,glouton/reseau/reseau
+glouton+reseau (R=8),461,4,0.003,2,False,1.85462,1.04222,False,3.45772,1.56129,36,reseau/glouton
+glouton+reseau (R=8),462,4,0.003,3,False,0.44421,0.167263,False,7.2043,3.43714,45,glouton/glouton/reseau
+glouton+reseau (R=8),463,4,0.003,3,False,0.139829,0.0733697,False,4.04906,2.71307,45,reseau/reseau/reseau
+glouton+reseau (R=8),464,4,0.003,2,False,0.88841,0.541504,False,3.27995,1.57721,36,reseau/reseau
+glouton+reseau (R=8),465,4,0.003,3,False,0.20274,0.150646,False,4.74292,1.78889,45,glouton/glouton/reseau
+glouton+reseau (R=8),466,4,0.003,3,False,5.31587,13.4424,False,5.61988,2.24655,45,reseau/reseau/reseau
+glouton+reseau (R=8),467,4,0.003,3,False,0.328076,0.286523,False,0.300028,1.83675,45,glouton/reseau/glouton
+glouton+reseau (R=8),468,4,0.003,2,False,1.35049,0.72391,False,3.31337,1.22597,36,glouton/reseau
+glouton+reseau (R=8),469,4,0.003,2,False,0.773329,0.444813,False,2.437,1.59656,36,reseau/reseau
+glouton+reseau (R=8),470,4,0.003,3,False,1.20467,0.841259,False,4.20728,2.44581,45,glouton/glouton/reseau
+glouton+reseau (R=8),471,4,0.003,3,False,2.18084,1.11955,False,4.46103,2.54215,45,glouton/reseau/reseau
+glouton+reseau (R=8),472,4,0.003,3,False,3.05056,1.95881,False,5.74958,2.15418,45,reseau/reseau/reseau
+glouton+reseau (R=8),473,4,0.003,3,False,1.63507,0.799064,False,6.55464,2.24387,45,reseau/reseau/reseau
+glouton+reseau (R=8),474,4,0.003,2,False,0.826633,0.119877,False,1.68813,1.65503,36,reseau/reseau
+glouton+reseau (R=8),475,4,0.003,3,False,0.968527,0.488372,False,2.06898,2.77656,45,reseau/reseau/reseau
+glouton+reseau (R=8),476,4,0.003,1,False,0.899327,1.41751,False,1.9116,0.833158,27,reseau
+glouton+reseau (R=8),477,4,0.003,4,True,1.03352,0.144452,False,6.16534,3.55654,54,glouton/glouton/reseau/reseau
+glouton+reseau (R=8),478,4,0.003,2,False,0.712552,0.551675,False,1.51586,1.78185,36,reseau/reseau
+glouton+reseau (R=8),479,4,0.003,2,False,2.44112,0.983879,False,7.07125,2.17064,36,reseau/reseau
+glouton+reseau (R=8),480,5,0.0001,4,False,2.8941,8.46294,False,0.75884,9.32976,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),481,5,0.0001,4,False,0.854225,0.916073,False,1.7304,7.07814,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),482,5,0.0001,5,True,0.743413,0.245071,True,3.60563,11.338,63,glouton/reseau/reseau/glouton/reseau
+glouton+reseau (R=8),483,5,0.0001,3,False,1.44092,2.13244,False,1.52271,7.3307,45,reseau/glouton/reseau
+glouton+reseau (R=8),484,5,0.0001,4,False,0.164562,0.164923,False,1.43969,10.34,54,glouton/reseau/glouton/reseau
+glouton+reseau (R=8),485,5,0.0001,3,False,0.611845,0.441073,False,2.74327,3.02165,45,reseau/glouton/reseau
+glouton+reseau (R=8),486,5,0.0001,5,True,3.10246,0.833595,False,3.9168,20.4005,63,reseau/reseau/reseau/glouton/reseau
+glouton+reseau (R=8),487,5,0.0001,4,False,0.0652207,0.435417,False,0.197812,8.21759,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),488,5,0.0001,2,False,0.0707134,0.583837,False,0.488202,4.48838,36,reseau/reseau
+glouton+reseau (R=8),489,5,0.0001,4,False,0.365998,0.229915,False,1.42464,12.4771,54,reseau/glouton/reseau/reseau
+glouton+reseau (R=8),490,5,0.0001,4,False,0.763868,0.541828,False,1.36573,8.59727,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),491,5,0.0001,5,True,1.39775,0.964724,False,0.716321,25.9819,63,reseau/reseau/reseau/glouton/glouton
+glouton+reseau (R=8),492,5,0.0001,5,True,0.140531,0.0793881,True,3.91457,10.5093,63,reseau/reseau/reseau/reseau/glouton
+glouton+reseau (R=8),493,5,0.0001,5,True,0.475061,0.164916,False,1.18463,15.4659,63,reseau/reseau/reseau/glouton/reseau
+glouton+reseau (R=8),494,5,0.0001,4,False,0.265546,0.0628752,False,2.5953,10.8494,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),495,5,0.0001,5,True,0.277887,0.121054,True,1.64429,10.9053,63,reseau/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),496,5,0.0001,3,False,0.332118,0.549475,False,0.911862,3.99918,45,glouton/reseau/reseau
+glouton+reseau (R=8),497,5,0.0001,5,True,0.479084,0.14844,True,3.96103,9.85662,63,reseau/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),498,5,0.0001,4,False,0.240102,0.0887089,False,2.01871,6.98311,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),499,5,0.0001,4,False,1.50282,1.46675,False,1.03837,8.98202,54,glouton/glouton/glouton/reseau
+glouton+reseau (R=8),500,5,0.0001,4,False,0.366788,0.165982,False,2.74046,5.9894,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),501,5,0.0001,4,False,1.39236,1.4494,False,2.78586,6.11622,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),502,5,0.0001,5,True,0.0700227,0.0252036,True,4.77356,9.50543,63,reseau/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),503,5,0.0001,4,False,0.0770944,0.274933,False,0.29828,9.38833,54,reseau/glouton/reseau/glouton
+glouton+reseau (R=8),504,5,0.0001,5,True,2.05247,3.52168,False,3.13019,19.0552,63,reseau/reseau/reseau/glouton/reseau
+glouton+reseau (R=8),505,5,0.0001,5,True,3.52242,5.47775,False,2.02003,12.0916,63,reseau/glouton/reseau/reseau/glouton
+glouton+reseau (R=8),506,5,0.0001,4,False,0.461936,0.332131,False,3.95153,9.48579,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),507,5,0.0001,4,False,0.764522,0.415277,False,2.2301,14.9974,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),508,5,0.0001,5,True,0.556854,0.377805,True,2.45355,9.56846,63,glouton/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),509,5,0.0001,4,False,0.515834,1.03484,False,1.07735,6.07929,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),510,5,0.0001,5,True,0.276658,0.188457,True,3.20892,14.8499,63,glouton/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),511,5,0.0001,5,True,1.15676,0.359007,False,2.46084,10.5146,63,reseau/glouton/glouton/reseau/reseau
+glouton+reseau (R=8),512,5,0.0001,5,True,0.11963,0.148588,True,1.70056,11.4888,63,glouton/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),513,5,0.0001,4,False,0.138737,0.132416,False,1.57542,6.89665,54,reseau/glouton/reseau/glouton
+glouton+reseau (R=8),514,5,0.0001,4,False,0.116662,0.0181206,False,4.27129,8.17181,54,reseau/glouton/reseau/glouton
+glouton+reseau (R=8),515,5,0.0001,5,True,0.836263,0.458122,True,3.91081,9.34484,63,glouton/reseau/glouton/reseau/glouton
+glouton+reseau (R=8),516,5,0.0001,4,False,0.528227,0.994184,False,1.09939,5.65999,54,glouton/reseau/glouton/reseau
+glouton+reseau (R=8),517,5,0.0001,5,True,0.676464,0.327465,True,3.1399,8.26546,63,reseau/reseau/glouton/reseau/reseau
+glouton+reseau (R=8),518,5,0.0001,4,False,0.694404,0.198221,False,1.94105,6.886,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),519,5,0.0001,4,False,0.133238,0.0386177,False,2.49132,12.6892,54,glouton/glouton/reseau/reseau
+glouton+reseau (R=8),520,5,0.001,4,False,1.11116,0.402106,False,5.00037,4.7016,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),521,5,0.001,3,False,1.67526,1.15885,False,1.53354,2.99293,45,reseau/reseau/glouton
+glouton+reseau (R=8),522,5,0.001,3,False,0.47948,0.100189,False,1.28646,3.44969,45,reseau/reseau/glouton
+glouton+reseau (R=8),523,5,0.001,2,False,2.26588,1.37228,False,1.30021,3.38358,36,glouton/reseau
+glouton+reseau (R=8),524,5,0.001,4,False,1.31764,0.638222,False,4.62602,4.27136,54,glouton/reseau/reseau/glouton
+glouton+reseau (R=8),525,5,0.001,3,False,0.707832,0.347367,False,3.07714,4.08736,45,glouton/reseau/reseau
+glouton+reseau (R=8),526,5,0.001,4,False,3.37371,4.78858,False,2.63744,5.2779,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),527,5,0.001,4,False,1.92932,1.334,False,1.47555,6.11767,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),528,5,0.001,4,False,1.54115,0.491923,False,1.89552,4.27527,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),529,5,0.001,4,False,0.291696,0.162647,False,3.86824,5.75219,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),530,5,0.001,4,False,2.0598,0.577932,False,1.6123,5.38991,54,glouton/reseau/reseau/glouton
+glouton+reseau (R=8),531,5,0.001,3,False,2.48259,1.4702,False,1.17568,3.65281,45,reseau/glouton/reseau
+glouton+reseau (R=8),532,5,0.001,2,False,1.50566,0.490094,False,1.67648,2.0811,36,reseau/glouton
+glouton+reseau (R=8),533,5,0.001,3,False,1.62285,0.835317,False,3.28956,3.20706,45,reseau/reseau/reseau
+glouton+reseau (R=8),534,5,0.001,5,True,4.42622,0.893147,False,4.21049,9.45163,63,reseau/reseau/reseau/reseau/glouton
+glouton+reseau (R=8),535,5,0.001,5,True,0.462575,0.437533,True,2.52726,7.24745,63,glouton/reseau/glouton/reseau/reseau
+glouton+reseau (R=8),536,5,0.001,3,False,0.805318,0.412042,False,2.96339,2.88461,45,reseau/reseau/reseau
+glouton+reseau (R=8),537,5,0.001,6,False,2.06523,0.685325,False,2.00379,10.2422,72,reseau/reseau/reseau/reseau/reseau
+glouton+reseau (R=8),538,5,0.001,3,False,1.74379,1.46679,False,2.189,4.03431,45,reseau/reseau/reseau
+glouton+reseau (R=8),539,5,0.001,5,True,0.254103,0.47437,True,1.43761,12.9733,63,reseau/reseau/reseau/glouton/reseau
+glouton+reseau (R=8),540,5,0.001,3,False,2.16462,1.83017,False,1.58388,3.60008,45,reseau/reseau/glouton
+glouton+reseau (R=8),541,5,0.001,3,False,1.30339,0.560316,False,4.38209,3.17501,45,reseau/reseau/reseau
+glouton+reseau (R=8),542,5,0.001,4,False,2.31164,0.615794,False,2.3619,6.80284,54,reseau/reseau/glouton/glouton
+glouton+reseau (R=8),543,5,0.001,3,False,2.47844,2.15021,False,0.855643,3.98225,45,reseau/glouton/glouton
+glouton+reseau (R=8),544,5,0.001,4,False,0.703709,0.197426,False,1.74842,4.36552,54,reseau/reseau/glouton/reseau
+glouton+reseau (R=8),545,5,0.001,5,True,2.93438,0.732024,False,4.40095,6.55726,63,glouton/reseau/reseau/reseau/glouton
+glouton+reseau (R=8),546,5,0.001,2,False,1.0472,1.31106,False,0.723024,1.84918,36,reseau/reseau
+glouton+reseau (R=8),547,5,0.001,4,False,1.05072,0.275406,False,3.61329,11.1315,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),548,5,0.001,3,False,2.42119,1.75174,False,3.62663,3.03729,45,reseau/reseau/reseau
+glouton+reseau (R=8),549,5,0.001,3,False,0.417685,0.245425,False,2.3205,2.54067,45,reseau/reseau/reseau
+glouton+reseau (R=8),550,5,0.001,3,False,0.44437,0.174399,False,1.66387,3.5287,45,reseau/reseau/glouton
+glouton+reseau (R=8),551,5,0.001,4,False,0.271881,0.320777,False,2.13863,5.57665,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),552,5,0.001,3,False,0.470867,0.390167,False,1.40642,3.67883,45,reseau/reseau/reseau
+glouton+reseau (R=8),553,5,0.001,4,False,0.299687,0.145814,False,1.62133,3.21511,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),554,5,0.001,4,False,0.178039,0.340152,False,0.567677,4.6556,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),555,5,0.001,2,False,2.3158,3.31967,False,2.82314,2.80797,36,reseau/reseau
+glouton+reseau (R=8),556,5,0.001,4,False,4.78759,12.7625,False,2.77367,5.23777,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),557,5,0.001,3,False,0.220416,0.23889,False,1.48015,2.26053,45,reseau/glouton/glouton
+glouton+reseau (R=8),558,5,0.001,3,False,1.07371,0.407764,False,4.26022,3.42884,45,glouton/reseau/reseau
+glouton+reseau (R=8),559,5,0.001,4,False,1.12256,1.41375,False,2.19626,7.11203,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),560,5,0.003,3,False,2.56992,1.99636,False,4.16326,2.39105,45,reseau/glouton/reseau
+glouton+reseau (R=8),561,5,0.003,3,False,1.37977,1.47542,False,3.41219,2.29829,45,reseau/reseau/glouton
+glouton+reseau (R=8),562,5,0.003,4,False,1.44892,1.44648,False,3.08197,4.25307,54,glouton/reseau/reseau/reseau
+glouton+reseau (R=8),563,5,0.003,4,False,1.20678,1.3219,False,0.289232,5.91871,54,glouton/glouton/reseau/reseau
+glouton+reseau (R=8),564,5,0.003,4,False,0.891577,0.321416,False,1.4258,2.85164,54,reseau/reseau/reseau/reseau
+glouton+reseau (R=8),565,5,0.003,3,False,2.01007,0.83972,False,1.41065,1.80553,45,reseau/reseau/glouton
+glouton+reseau (R=8),566,5,0.003,3,False,1.19345,0.397268,False,3.79035,2.56559,45,glouton/reseau/reseau
+glouton+reseau (R=8),567,5,0.003,3,False,0.97521,15.6501,False,1.19773,3.24939,45,reseau/glouton/reseau
+glouton+reseau (R=8),568,5,0.003,4,False,1.5157,0.81025,False,2.04172,4.15454,54,reseau/reseau/reseau/glouton
+glouton+reseau (R=8),569,5,0.003,4,False,3.01584,2.6384,False,1.5409,3.75549,54,reseau/glouton/reseau/reseau
+glouton+reseau (R=8),570,5,0.003,3,False,0.865907,1.1667,False,1.68459,2.09756,45,glouton/reseau/reseau
+glouton+reseau (R=8),571,5,0.003,2,False,0.519871,3.0443,False,0.840447,3.0771,36,reseau/reseau
+glouton+reseau (R=8),572,5,0.003,3,False,1.19298,2.20816,False,2.57054,2.45345,45,reseau/reseau/reseau
+glouton+reseau (R=8),573,5,0.003,3,False,1.50826,2.96131,False,2.47061,2.50518,45,reseau/reseau/reseau
+glouton+reseau (R=8),574,5,0.003,3,False,0.553777,0.326229,False,3.41212,2.66533,45,glouton/reseau/reseau
+glouton+reseau (R=8),575,5,0.003,3,False,1.84859,0.529897,False,2.42378,2.57667,45,reseau/reseau/reseau
+glouton+reseau (R=8),576,5,0.003,3,False,0.892921,0.743652,False,2.10059,2.80046,45,reseau/reseau/reseau
+glouton+reseau (R=8),577,5,0.003,2,False,2.81936,1.72784,False,3.91985,1.51904,36,reseau/reseau
+glouton+reseau (R=8),578,5,0.003,2,False,0.279946,0.939992,False,0.953566,1.74393,36,reseau/reseau
+glouton+reseau (R=8),579,5,0.003,2,False,1.19693,0.570173,False,2.77276,2.34812,36,reseau/reseau
+glouton+reseau (R=8),580,5,0.003,3,False,2.32933,0.745307,False,3.27897,2.11769,45,reseau/glouton/reseau
+glouton+reseau (R=8),581,5,0.003,2,False,2.2484,1.94052,False,3.82708,1.6076,36,reseau/reseau
+glouton+reseau (R=8),582,5,0.003,3,False,2.00208,0.897324,False,2.49569,2.06286,45,reseau/glouton/reseau
+glouton+reseau (R=8),583,5,0.003,3,False,1.77781,1.49415,False,4.09034,2.2187,45,reseau/reseau/reseau
+glouton+reseau (R=8),584,5,0.003,2,False,1.41816,5.28223,False,1.6576,1.65906,36,reseau/reseau
+glouton+reseau (R=8),585,5,0.003,3,False,1.95802,0.560077,False,1.78019,2.52181,45,reseau/reseau/glouton
+glouton+reseau (R=8),586,5,0.003,3,False,2.24098,1.19364,False,0.972937,2.32077,45,glouton/reseau/reseau
+glouton+reseau (R=8),587,5,0.003,3,False,1.53187,5.34099,False,2.2434,2.66513,45,reseau/reseau/reseau
+glouton+reseau (R=8),588,5,0.003,2,False,1.92528,1.25059,False,2.55889,1.14115,36,glouton/reseau
+glouton+reseau (R=8),589,5,0.003,2,False,1.58709,2.46502,False,1.63633,1.45963,36,reseau/reseau
+glouton+reseau (R=8),590,5,0.003,3,False,2.06753,0.662201,False,4.40935,2.77491,45,glouton/reseau/reseau
+glouton+reseau (R=8),591,5,0.003,2,False,1.00401,0.370627,False,1.99435,1.51446,36,reseau/reseau
+glouton+reseau (R=8),592,5,0.003,3,False,1.55333,0.656327,False,4.38777,2.39858,45,reseau/reseau/reseau
+glouton+reseau (R=8),593,5,0.003,3,False,2.712,1.9483,False,3.67784,3.64358,45,glouton/glouton/reseau
+glouton+reseau (R=8),594,5,0.003,3,False,0.755664,0.581625,False,1.19413,2.12315,45,reseau/reseau/reseau
+glouton+reseau (R=8),595,5,0.003,3,False,1.1027,0.838625,False,1.53849,2.01202,45,glouton/reseau/reseau
+glouton+reseau (R=8),596,5,0.003,2,False,2.3958,1.10996,False,1.20535,1.23379,36,reseau/reseau
+glouton+reseau (R=8),597,5,0.003,2,False,1.1971,7.12852,False,0.335541,1.50968,36,reseau/reseau
+glouton+reseau (R=8),598,5,0.003,2,False,0.842076,0.439523,False,2.9583,1.41582,36,glouton/glouton
+glouton+reseau (R=8),599,5,0.003,4,False,1.38683,0.295672,False,1.44823,3.40323,54,glouton/reseau/reseau/reseau
+tout,0,1,0.0001,2,False,0.00261752,0.000113985,False,inf,9.2698,80,reseau/a priori
+tout,1,1,0.0001,1,True,0.000280735,0.000198009,True,inf,6.36366,57,reseau
+tout,2,1,0.0001,1,True,0.00111636,9.58502e-05,True,inf,6.53131,57,reseau
+tout,3,1,0.0001,1,True,0.000217531,0.000132777,True,inf,4.77524,57,reseau
+tout,4,1,0.0001,1,True,0.00032071,0.000357673,True,inf,6.48903,57,a priori
+tout,5,1,0.0001,1,True,0.00305654,0.000308978,True,inf,4.7537,57,a priori
+tout,6,1,0.0001,1,True,0.000191635,0.000185949,True,inf,9.09265,57,a priori
+tout,7,1,0.0001,1,True,0.000502688,0.00040354,True,inf,6.43504,57,reseau
+tout,8,1,0.0001,1,True,0.00288123,0.00024836,True,inf,5.66767,57,reseau
+tout,9,1,0.0001,1,True,0.00347973,0.000405669,True,inf,6.8632,57,reseau
+tout,10,1,0.0001,1,True,0.000179867,0.00010882,True,inf,8.26472,57,reseau
+tout,11,1,0.0001,1,True,0.000351269,8.69128e-05,True,inf,12.2149,57,reseau
+tout,12,1,0.0001,1,True,0.00992286,0.000434337,True,inf,5.74172,57,a priori
+tout,13,1,0.0001,1,True,0.000378086,0.000224658,True,inf,11.3736,57,reseau
+tout,14,1,0.0001,1,True,0.00384117,0.000725623,True,inf,7.20912,57,a priori
+tout,15,1,0.0001,1,True,0.0058733,8.85051e-05,True,inf,5.65603,57,reseau
+tout,16,1,0.0001,1,True,0.00598859,0.00152495,True,inf,4.84287,57,reseau
+tout,17,1,0.0001,1,True,0.00231943,0.000207618,True,inf,6.64313,57,glouton
+tout,18,1,0.0001,1,True,0.000159207,6.07621e-05,True,inf,8.12022,57,reseau
+tout,19,1,0.0001,1,True,0.00272485,0.00109971,True,inf,4.7544,57,a priori
+tout,20,1,0.0001,1,True,0.000165301,0.000177702,True,inf,8.00663,57,a priori
+tout,21,1,0.0001,1,True,0.0037117,0.000771119,True,inf,6.15955,57,reseau
+tout,22,1,0.0001,1,True,0.00512954,0.000680934,True,inf,7.90193,57,reseau
+tout,23,1,0.0001,1,True,0.00465059,8.01279e-05,True,inf,6.6878,57,reseau
+tout,24,1,0.0001,1,True,0.00169459,0.00056963,True,inf,5.16944,57,reseau
+tout,25,1,0.0001,1,True,0.00245043,0.00051513,True,inf,4.90812,57,reseau
+tout,26,1,0.0001,1,True,0.00141955,0.000378431,True,inf,6.62285,57,reseau
+tout,27,1,0.0001,1,True,0.00848528,0.000925492,True,inf,7.69664,57,reseau
+tout,28,1,0.0001,1,True,0.00465559,0.000213254,True,inf,5.13652,57,reseau
+tout,29,1,0.0001,1,True,0.00364853,0.000696211,True,inf,5.43644,57,a priori
+tout,30,1,0.0001,1,True,0.00505172,0.00120257,True,inf,6.31742,57,glouton
+tout,31,1,0.0001,1,True,0.00126785,0.00029031,True,inf,12.8752,57,reseau
+tout,32,1,0.0001,1,True,0.00477073,0.000323347,True,inf,7.05357,57,reseau
+tout,33,1,0.0001,1,True,0.000239208,0.000200155,True,inf,8.98081,57,a priori
+tout,34,1,0.0001,1,True,0.00447098,0.000465432,True,inf,5.84232,57,glouton
+tout,35,1,0.0001,1,True,0.000251499,0.000180964,True,inf,8.88502,57,a priori
+tout,36,1,0.0001,1,True,0.00218018,9.41165e-05,True,inf,3.2818,57,reseau
+tout,37,1,0.0001,1,True,0.00379075,0.0013191,True,inf,4.91099,57,a priori
+tout,38,1,0.0001,1,True,0.00021223,0.00019898,True,inf,12.5131,57,a priori
+tout,39,1,0.0001,1,True,0.00109395,8.59615e-05,True,inf,8.90599,57,a priori
+tout,40,1,0.001,1,True,0.0442753,0.00648846,True,inf,2.27355,57,a priori
+tout,41,1,0.001,1,True,0.0351241,0.00252265,True,inf,2.35737,57,reseau
+tout,42,1,0.001,1,True,0.00852931,0.00457436,True,inf,3.39842,57,reseau
+tout,43,1,0.001,1,True,0.00664006,0.00707562,True,inf,3.20568,57,a priori
+tout,44,1,0.001,1,True,0.00145504,2.06408e-05,True,inf,4.72258,57,reseau
+tout,45,1,0.001,1,True,0.0120479,0.00344504,True,inf,3.01136,57,a priori
+tout,46,1,0.001,1,True,0.0272957,0.000478248,True,inf,3.57781,57,reseau
+tout,47,1,0.001,1,True,0.00993195,0.00448006,True,inf,3.41156,57,glouton
+tout,48,1,0.001,1,True,0.0155376,0.0065498,True,inf,3.42071,57,a priori
+tout,49,1,0.001,1,True,0.0421927,0.000813251,True,inf,2.27096,57,glouton
+tout,50,1,0.001,1,True,0.00067468,0.00108881,True,inf,7.12748,57,reseau
+tout,51,1,0.001,1,True,0.0135986,0.000602755,True,inf,2.22103,57,glouton
+tout,52,1,0.001,1,True,0.0783305,0.00597595,True,inf,2.75036,57,reseau
+tout,53,1,0.001,1,True,0.00223118,0.00362504,True,inf,3.15942,57,a priori
+tout,54,1,0.001,1,True,0.0336757,0.00726652,True,inf,2.59274,57,a priori
+tout,55,1,0.001,1,True,0.0225889,0.00478602,True,inf,3.80728,57,a priori
+tout,56,1,0.001,1,True,0.0109515,0.0027732,True,inf,3.54114,57,a priori
+tout,57,1,0.001,2,False,0.129106,0.0263997,False,inf,4.51363,80,reseau/reseau
+tout,58,1,0.001,2,False,0.078651,0.0149997,False,inf,3.24698,80,a priori/a priori
+tout,59,1,0.001,1,True,0.0388498,0.00984193,True,inf,2.1685,57,a priori
+tout,60,1,0.001,1,True,0.0218001,0.00194186,True,inf,3.0256,57,a priori
+tout,61,1,0.001,1,True,0.101105,0.00848206,True,inf,3.11047,57,a priori
+tout,62,1,0.001,1,True,0.0657461,0.00680777,True,inf,3.46961,57,a priori
+tout,63,1,0.001,1,True,0.0425115,0.00533145,True,inf,3.43013,57,reseau
+tout,64,1,0.001,1,True,0.016103,0.00113341,True,inf,3.91319,57,a priori
+tout,65,1,0.001,1,True,0.0357364,0.000812447,True,inf,3.09602,57,reseau
+tout,66,1,0.001,2,False,0.0112904,0.00348477,False,inf,6.04377,80,reseau/a priori
+tout,67,1,0.001,1,True,0.00446019,0.00148089,True,inf,3.21479,57,reseau
+tout,68,1,0.001,1,True,0.005658,0.00367297,True,inf,3.95651,57,reseau
+tout,69,1,0.001,1,True,0.00363445,0.00121319,True,inf,3.30812,57,a priori
+tout,70,1,0.001,1,True,0.0296705,0.00667061,True,inf,3.33384,57,a priori
+tout,71,1,0.001,1,True,0.0517957,0.0102601,True,inf,2.77865,57,a priori
+tout,72,1,0.001,1,True,0.0104717,0.00308765,True,inf,3.88755,57,a priori
+tout,73,1,0.001,1,True,0.0193069,0.00189352,True,inf,2.33491,57,reseau
+tout,74,1,0.001,1,True,0.00279237,0.00277839,True,inf,3.91639,57,reseau
+tout,75,1,0.001,1,True,0.0103532,0.00365309,True,inf,2.64868,57,a priori
+tout,76,1,0.001,1,True,0.029672,0.00675465,True,inf,2.23751,57,a priori
+tout,77,1,0.001,1,True,0.000323229,0.000574421,True,inf,3.53637,57,reseau
+tout,78,1,0.001,1,True,0.0175382,0.00289683,True,inf,3.46791,57,a priori
+tout,79,1,0.001,1,True,0.0131714,0.00686845,True,inf,3.02813,57,a priori
+tout,80,1,0.003,1,True,0.0721268,0.0319072,True,inf,1.77661,57,reseau
+tout,81,1,0.003,1,True,0.1423,0.0175079,True,inf,1.98457,57,reseau
+tout,82,1,0.003,1,True,0.00259423,0.00325114,True,inf,4.20662,57,reseau
+tout,83,1,0.003,1,True,0.0054381,0.00119761,True,inf,2.75803,57,a priori
+tout,84,1,0.003,1,True,0.0342734,0.0273413,True,inf,3.04566,57,a priori
+tout,85,1,0.003,1,True,0.0162153,0.00595919,True,inf,2.1096,57,reseau
+tout,86,1,0.003,1,True,0.266264,0.0254264,True,inf,1.96418,57,a priori
+tout,87,1,0.003,1,True,0.0904219,0.0137699,True,inf,3.09155,57,reseau
+tout,88,1,0.003,1,True,0.0148985,0.00246179,True,inf,2.53604,57,reseau
+tout,89,1,0.003,1,True,0.039479,0.0245063,True,inf,2.86411,57,reseau
+tout,90,1,0.003,1,True,0.00618236,0.00292567,True,inf,3.40403,57,reseau
+tout,91,1,0.003,1,True,0.0808072,0.0272538,True,inf,2.39352,57,a priori
+tout,92,1,0.003,1,True,0.0857435,0.00167703,True,inf,1.69769,57,a priori
+tout,93,1,0.003,1,True,0.00829297,0.0123199,True,inf,2.51636,57,reseau
+tout,94,1,0.003,1,True,0.0235563,0.013492,True,inf,2.25626,57,a priori
+tout,95,1,0.003,1,True,0.0582603,0.00486124,True,inf,1.7885,57,a priori
+tout,96,1,0.003,1,True,0.0142022,0.00131077,True,inf,1.88572,57,reseau
+tout,97,1,0.003,1,True,0.210328,0.0114818,True,inf,2.10727,57,a priori
+tout,98,1,0.003,1,True,0.123407,0.00974577,True,inf,1.9678,57,a priori
+tout,99,1,0.003,1,True,0.0552101,0.000268889,True,inf,1.75785,57,a priori
+tout,100,1,0.003,1,True,0.00243264,0.00220573,True,inf,2.08756,57,a priori
+tout,101,1,0.003,1,True,0.0942659,0.0198953,True,inf,2.31193,57,a priori
+tout,102,1,0.003,1,True,0.177286,0.031209,True,inf,1.85796,57,a priori
+tout,103,1,0.003,1,True,0.0382812,0.0198094,True,inf,2.74399,57,reseau
+tout,104,1,0.003,1,True,0.12964,0.00243987,True,inf,1.47198,57,a priori
+tout,105,1,0.003,1,True,0.00365163,0.00622337,True,inf,1.68944,57,a priori
+tout,106,1,0.003,1,True,0.107188,0.000242313,True,inf,2.1216,57,a priori
+tout,107,1,0.003,1,True,0.102671,0.0264719,True,inf,2.33362,57,a priori
+tout,108,1,0.003,1,True,0.00593018,0.00564394,True,inf,2.88597,57,a priori
+tout,109,1,0.003,1,True,0.00787228,0.0086159,True,inf,3.15281,57,glouton
+tout,110,1,0.003,1,True,0.0384452,0.0141473,True,inf,2.43173,57,reseau
+tout,111,1,0.003,1,True,0.182089,0.0098971,True,inf,2.48297,57,a priori
+tout,112,1,0.003,1,True,0.00431147,0.00530401,True,inf,3.94857,57,reseau
+tout,113,1,0.003,1,True,0.00311307,0.00352024,True,inf,2.11419,57,reseau
+tout,114,1,0.003,1,True,0.0819334,0.0277285,True,inf,1.94723,57,reseau
+tout,115,1,0.003,1,True,0.472835,0.0466607,True,inf,2.08544,57,a priori
+tout,116,1,0.003,1,True,0.0176081,0.000285737,True,inf,1.87002,57,reseau
+tout,117,1,0.003,1,True,0.0611313,0.0221624,True,inf,2.0016,57,a priori
+tout,118,1,0.003,1,True,0.103608,0.023433,True,inf,2.14922,57,a priori
+tout,119,1,0.003,1,True,0.042397,0.00911553,True,inf,2.38155,57,a priori
+tout,120,2,0.0001,2,True,0.00604366,0.00131065,True,13.0187,8.27613,80,reseau/a priori
+tout,121,2,0.0001,2,True,0.0534601,0.0310355,True,3.4702,12.2755,80,reseau/glouton
+tout,122,2,0.0001,2,True,0.0141474,0.00139697,True,8.7519,12.7633,80,reseau/a priori
+tout,123,2,0.0001,2,True,0.113963,0.0624104,True,5.45078,6.45457,80,a priori/reseau
+tout,124,2,0.0001,2,True,0.00801489,0.00115014,True,14.9599,6.29958,80,glouton/a priori
+tout,125,2,0.0001,2,True,0.0109497,0.011248,True,1.60781,15.2537,80,a priori/glouton
+tout,126,2,0.0001,2,True,0.199487,0.0689988,True,6.89842,7.63004,80,reseau/reseau
+tout,127,2,0.0001,2,True,0.0421918,0.0154061,True,5.20788,6.44263,80,reseau/division
+tout,128,2,0.0001,2,True,0.0346457,0.0180196,True,8.96951,5.70783,80,reseau/division
+tout,129,2,0.0001,2,True,0.0410417,0.0209959,True,7.2605,7.26069,80,a priori/reseau
+tout,130,2,0.0001,2,True,0.00625867,0.00279694,True,13.2101,9.35869,80,reseau/a priori
+tout,131,2,0.0001,2,True,0.252749,0.0380829,True,5.63085,8.97472,80,glouton/reseau
+tout,132,2,0.0001,2,True,0.0555205,0.0147454,True,4.91723,9.05833,80,reseau/reseau
+tout,133,2,0.0001,2,True,0.0113804,0.00179172,True,12.2824,7.36743,80,a priori/division
+tout,134,2,0.0001,2,True,0.00363429,9.19836e-05,True,6.10618,7.11087,80,reseau/reseau
+tout,135,2,0.0001,2,True,0.375033,0.333892,True,2.09779,11.8877,80,reseau/reseau
+tout,136,2,0.0001,2,True,0.00582788,0.000614134,True,8.97495,7.8048,80,reseau/reseau
+tout,137,2,0.0001,2,True,0.00400335,0.000864226,True,14.8431,8.6584,80,glouton/reseau
+tout,138,2,0.0001,2,True,0.0131893,0.00237936,True,8.00827,6.88443,80,a priori/a priori
+tout,139,2,0.0001,2,True,0.00600661,0.00546427,True,2.46442,9.67902,80,a priori/reseau
+tout,140,2,0.0001,2,True,0.0161231,0.00874701,True,2.77051,8.00654,80,a priori/reseau
+tout,141,2,0.0001,2,True,0.0283192,0.0105601,True,5.4071,7.34913,80,glouton/division
+tout,142,2,0.0001,2,True,0.000625862,6.31751e-05,True,16.6512,8.84606,80,a priori/reseau
+tout,143,2,0.0001,2,True,0.322497,0.315825,True,3.48684,10.0011,80,reseau/division
+tout,144,2,0.0001,2,True,0.0184362,0.00568165,True,8.11239,8.6314,80,reseau/division
+tout,145,2,0.0001,2,True,0.409208,0.0589212,True,7.86212,11.4244,80,a priori/reseau
+tout,146,2,0.0001,2,True,0.0211072,0.0102196,True,7.71639,8.90935,80,a priori/reseau
+tout,147,2,0.0001,2,True,0.00974595,0.00501642,True,10.065,5.48473,80,a priori/reseau
+tout,148,2,0.0001,2,True,0.0307314,0.00478254,True,9.56185,8.0857,80,glouton/a priori
+tout,149,2,0.0001,2,True,0.00162965,0.000634683,True,4.85707,5.67278,80,glouton/a priori
+tout,150,2,0.0001,2,True,0.0347963,0.0161554,True,5.20877,12.0227,80,a priori/reseau
+tout,151,2,0.0001,2,True,0.119352,0.0206763,True,9.47959,12.1989,80,a priori/a priori
+tout,152,2,0.0001,2,True,0.0190237,0.011449,True,5.9641,9.40977,80,reseau/reseau
+tout,153,2,0.0001,2,True,0.0203066,0.00328985,True,5.89131,11.4572,80,a priori/a priori
+tout,154,2,0.0001,2,True,0.0185942,0.00120321,True,5.72959,7.76464,80,reseau/reseau
+tout,155,2,0.0001,3,False,0.214782,0.00177394,False,10.7686,12.7281,105,a priori/a priori/division
+tout,156,2,0.0001,2,True,0.00450096,0.0021849,True,5.08915,4.94561,80,reseau/reseau
+tout,157,2,0.0001,2,True,0.0831453,0.0167288,True,6.53737,7.8479,80,a priori/a priori
+tout,158,2,0.0001,2,True,0.10077,0.119486,True,1.34136,7.39472,80,a priori/reseau
+tout,159,2,0.0001,2,True,0.0169093,0.00033907,True,8.32164,11.2445,80,reseau/a priori
+tout,160,2,0.001,2,True,1.10922,0.214118,False,10.0706,4.98981,80,reseau/reseau
+tout,161,2,0.001,2,True,0.156335,0.113726,True,2.72434,5.33419,80,reseau/glouton
+tout,162,2,0.001,2,True,0.0528091,0.00665397,True,16.2497,7.28172,80,glouton/a priori
+tout,163,2,0.001,2,True,0.335659,0.166331,True,6.08584,3.83268,80,a priori/division
+tout,164,2,0.001,2,True,0.0397148,0.0215697,True,12.154,3.09415,80,a priori/division
+tout,165,2,0.001,2,True,0.45277,0.0261855,True,5.33071,6.14874,80,a priori/reseau
+tout,166,2,0.001,2,True,0.0582105,0.0106619,True,6.88035,10.4635,80,reseau/a priori
+tout,167,2,0.001,2,True,0.280878,0.0485953,True,13.4991,7.10098,80,a priori/a priori
+tout,168,2,0.001,2,True,0.057929,0.0158461,True,9.09453,3.27679,80,glouton/a priori
+tout,169,2,0.001,2,True,0.640801,0.251892,True,6.81251,4.97172,80,reseau/a priori
+tout,170,2,0.001,2,True,0.0119724,0.00598872,True,5.49367,7.32449,80,a priori/a priori
+tout,171,2,0.001,2,True,0.0852403,0.0150895,True,8.20336,3.50019,80,a priori/reseau
+tout,172,2,0.001,1,False,0.0525752,0.00460615,False,6.17149,2.08626,57,reseau
+tout,173,2,0.001,2,True,0.397316,0.0129303,True,5.8166,5.39817,80,reseau/a priori
+tout,174,2,0.001,2,True,0.346679,0.214248,True,9.41913,4.83616,80,a priori/reseau
+tout,175,2,0.001,2,True,0.123179,0.00867306,True,11.6946,5.73091,80,reseau/a priori
+tout,176,2,0.001,2,True,0.147852,0.04086,True,5.82533,4.40968,80,a priori/reseau
+tout,177,2,0.001,1,False,0.274537,0.213501,False,1.16712,2.56007,57,reseau
+tout,178,2,0.001,2,True,0.0732819,0.00841456,True,11.6401,3.64733,80,reseau/division
+tout,179,2,0.001,2,True,0.551212,0.250033,True,9.51079,4.27481,80,a priori/a priori
+tout,180,2,0.001,2,True,0.055167,0.0065124,True,6.65671,4.76924,80,a priori/reseau
+tout,181,2,0.001,2,True,0.046554,0.0178529,True,9.40647,4.66573,80,a priori/division
+tout,182,2,0.001,2,True,0.308818,0.0839602,True,5.60169,5.18809,80,reseau/a priori
+tout,183,2,0.001,2,True,0.0686288,0.00977456,True,9.35308,4.00651,80,glouton/glouton
+tout,184,2,0.001,2,True,0.190568,0.0624154,True,4.11639,4.33501,80,a priori/glouton
+tout,185,2,0.001,2,True,0.09517,0.0316914,True,7.40844,3.98469,80,a priori/reseau
+tout,186,2,0.001,2,True,0.0217577,0.0211246,True,8.21072,5.12255,80,a priori/a priori
+tout,187,2,0.001,2,True,0.0823688,0.0123843,True,11.9373,6.55535,80,reseau/division
+tout,188,2,0.001,2,True,0.445213,0.109558,True,7.14036,3.82673,80,a priori/reseau
+tout,189,2,0.001,2,True,0.395382,0.0467861,True,6.76618,4.49096,80,a priori/glouton
+tout,190,2,0.001,2,True,0.505964,0.542954,True,2.18607,5.42109,80,a priori/reseau
+tout,191,2,0.001,2,True,2.3116,0.739143,False,6.87571,7.98091,80,reseau/reseau
+tout,192,2,0.001,2,True,0.945834,0.032629,True,9.03813,5.52783,80,reseau/reseau
+tout,193,2,0.001,1,False,0.0997852,0.0193405,False,3.07519,2.39125,57,reseau
+tout,194,2,0.001,2,True,0.0717732,0.00547823,True,11.9613,3.72704,80,a priori/a priori
+tout,195,2,0.001,2,True,0.0411861,0.0197664,True,5.95747,5.93915,80,reseau/a priori
+tout,196,2,0.001,2,True,0.0989029,0.0288721,True,9.83961,3.62857,80,a priori/division
+tout,197,2,0.001,1,False,1.15351,0.857323,False,2.36782,2.31299,57,a priori
+tout,198,2,0.001,2,True,2.54386,0.726062,False,3.06053,5.11552,80,a priori/reseau
+tout,199,2,0.001,2,True,0.0696952,0.00771281,True,13.3571,5.23685,80,a priori/a priori
+tout,200,2,0.003,2,True,0.606235,0.227341,True,7.43959,4.51435,80,a priori/glouton
+tout,201,2,0.003,1,False,0.70916,0.272355,False,3.54561,2.24933,57,a priori
+tout,202,2,0.003,2,True,0.187721,0.0689682,True,9.26313,3.51014,80,a priori/a priori
+tout,203,2,0.003,2,True,1.82843,0.353292,False,5.69702,3.49799,80,a priori/reseau
+tout,204,2,0.003,2,True,0.293197,0.446187,True,4.6725,3.48926,80,reseau/division
+tout,205,2,0.003,2,True,3.36471,0.612244,False,5.22872,2.70596,80,glouton/a priori
+tout,206,2,0.003,2,True,0.772487,0.13145,True,9.10461,5.09056,80,a priori/a priori
+tout,207,2,0.003,1,False,0.667912,0.193328,False,6.04886,2.19946,57,reseau
+tout,208,2,0.003,2,True,0.385183,0.0378877,True,8.95239,3.34563,80,a priori/reseau
+tout,209,2,0.003,2,True,0.578953,0.102786,True,11.5151,3.21487,80,a priori/reseau
+tout,210,2,0.003,1,False,0.0207703,0.0145214,False,9.38492,2.02856,57,a priori
+tout,211,2,0.003,1,False,0.370721,0.0673182,False,6.25765,1.59912,57,reseau
+tout,212,2,0.003,2,True,0.140043,0.00817599,True,16.1492,3.96102,80,a priori/a priori
+tout,213,2,0.003,1,False,0.667965,1.55664,False,1.37299,1.48858,57,reseau
+tout,214,2,0.003,1,False,1.15318,0.635167,False,3.04511,2.11242,57,a priori
+tout,215,2,0.003,1,False,0.199064,0.0725154,False,8.91953,1.9914,57,a priori
+tout,216,2,0.003,2,True,0.064659,0.00856543,True,5.02508,3.19947,80,a priori/a priori
+tout,217,2,0.003,2,True,0.181425,0.0865021,True,5.33536,5.60796,80,reseau/a priori
+tout,218,2,0.003,1,False,0.247887,0.0948634,False,5.48855,2.25305,57,reseau
+tout,219,2,0.003,2,True,0.510066,0.0724996,True,13.4149,3.13707,80,reseau/division
+tout,220,2,0.003,2,True,0.142545,0.0869446,True,3.73957,3.44412,80,reseau/reseau
+tout,221,2,0.003,2,True,4.96374,0.861702,False,7.03414,2.90692,80,a priori/a priori
+tout,222,2,0.003,1,False,0.0409766,0.00525835,False,6.0778,2.14888,57,a priori
+tout,223,2,0.003,2,True,1.1441,0.335336,False,3.8811,3.52044,80,reseau/a priori
+tout,224,2,0.003,3,False,2.37413,0.771361,False,5.06722,5.31264,105,glouton/glouton/reseau
+tout,225,2,0.003,2,True,2.45621,0.280786,False,7.27668,3.40686,80,a priori/reseau
+tout,226,2,0.003,2,True,0.135508,0.0413512,True,11.726,3.79435,80,a priori/reseau
+tout,227,2,0.003,2,True,0.904326,0.0449017,True,4.2139,5.50857,80,a priori/a priori
+tout,228,2,0.003,2,True,2.54212,2.13212,False,4.24709,4.60444,80,reseau/reseau
+tout,229,2,0.003,2,True,0.236753,0.048607,True,10.6592,2.13013,80,glouton/division
+tout,230,2,0.003,2,True,0.358538,0.219798,True,8.50602,4.10145,80,a priori/glouton
+tout,231,2,0.003,2,True,0.92753,0.638365,True,4.84739,3.88191,80,a priori/reseau
+tout,232,2,0.003,1,False,1.66742,1.54181,False,3.36677,2.23551,57,reseau
+tout,233,2,0.003,1,False,0.244873,0.0272019,False,9.88985,1.84774,57,a priori
+tout,234,2,0.003,2,True,3.6664,0.555637,False,1.7603,4.14996,80,reseau/reseau
+tout,235,2,0.003,2,True,1.53671,0.681828,False,7.19572,4.76933,80,reseau/a priori
+tout,236,2,0.003,2,True,0.830512,0.455676,True,5.43922,3.03342,80,reseau/reseau
+tout,237,2,0.003,1,False,0.00217949,0.00696739,False,5.15913,1.49573,57,reseau
+tout,238,2,0.003,2,True,0.376419,0.0898211,True,6.98591,3.72503,80,a priori/reseau
+tout,239,2,0.003,2,True,0.535944,0.0527349,True,8.71716,2.99979,80,a priori/a priori
+tout,240,3,0.0001,3,True,0.0136925,0.00747477,True,3.11611,12.5081,105,a priori/reseau/a priori
+tout,241,3,0.0001,3,True,0.0832736,0.0352412,True,6.63561,8.69537,105,a priori/a priori/a priori
+tout,242,3,0.0001,3,True,0.0942097,0.00564761,True,6.71743,10.9731,105,a priori/division/reseau
+tout,243,3,0.0001,3,True,0.00445192,0.000370392,True,5.962,9.17013,105,glouton/a priori/a priori
+tout,244,3,0.0001,3,True,0.421646,0.212443,True,4.32849,14.284,105,reseau/a priori/division
+tout,245,3,0.0001,3,True,0.187151,0.0112401,True,4.3186,12.5067,105,a priori/reseau/reseau
+tout,246,3,0.0001,3,True,0.0356213,0.0282892,True,4.89328,13.8963,105,a priori/a priori/a priori
+tout,247,3,0.0001,3,True,0.0765381,0.0994094,True,2.42039,11.7812,105,glouton/a priori/division
+tout,248,3,0.0001,3,True,0.0430832,0.0244248,True,3.75041,9.95015,105,reseau/division/a priori
+tout,249,3,0.0001,2,False,0.210364,0.116242,False,2.00648,9.91833,80,a priori/reseau
+tout,250,3,0.0001,3,True,0.0191096,0.00499547,True,8.84145,10.679,105,a priori/a priori/a priori
+tout,251,3,0.0001,3,True,0.769507,0.446983,True,3.14148,12.6734,105,a priori/a priori/a priori
+tout,252,3,0.0001,3,True,0.486597,0.160627,True,2.16857,20.1521,105,glouton/a priori/division
+tout,253,3,0.0001,3,True,0.0170782,0.00790156,True,4.71931,15.5539,105,a priori/a priori/division
+tout,254,3,0.0001,3,True,0.0516069,0.0109849,True,5.7021,11.121,105,a priori/a priori/division
+tout,255,3,0.0001,3,True,0.0427609,0.00735024,True,8.05917,12.4934,105,reseau/a priori/division
+tout,256,3,0.0001,3,True,0.222245,0.130245,True,3.73021,12.5834,105,glouton/a priori/division
+tout,257,3,0.0001,3,True,0.0143577,0.000986364,True,3.45337,11.9322,105,reseau/division/a priori
+tout,258,3,0.0001,3,True,0.011517,0.00290834,True,3.44102,11.9516,105,a priori/a priori/glouton
+tout,259,3,0.0001,3,True,0.0343174,0.0105959,True,7.70245,13.2352,105,a priori/a priori/glouton
+tout,260,3,0.0001,2,False,0.199244,0.121592,False,2.0011,7.56041,80,a priori/reseau
+tout,261,3,0.0001,3,True,1.40455,1.62372,False,4.14098,15.3692,105,reseau/a priori/reseau
+tout,262,3,0.0001,2,False,0.107119,0.0819787,False,1.79602,7.93062,80,reseau/division
+tout,263,3,0.0001,3,True,4.00538,9.49375,False,2.87905,18.5351,105,a priori/a priori/a priori
+tout,264,3,0.0001,3,True,0.0585858,0.00945878,True,7.21431,12.4128,105,a priori/reseau/a priori
+tout,265,3,0.0001,3,True,0.0202947,0.0162443,True,6.44013,11.0103,105,a priori/a priori/division
+tout,266,3,0.0001,2,False,0.438978,0.269552,False,1.92278,11.6607,80,a priori/a priori
+tout,267,3,0.0001,3,True,0.398303,0.306142,True,2.37394,17.8165,105,a priori/a priori/a priori
+tout,268,3,0.0001,3,True,0.0194081,0.00378661,True,6.30317,17.4138,105,glouton/division/reseau
+tout,269,3,0.0001,3,True,0.101177,0.0563921,True,2.03617,13.5042,105,a priori/glouton/a priori
+tout,270,3,0.0001,3,True,2.52227,0.817861,False,2.06269,17.6107,105,reseau/glouton/reseau
+tout,271,3,0.0001,3,True,0.0680805,0.0266927,True,5.51259,9.73697,105,a priori/reseau/a priori
+tout,272,3,0.0001,3,True,0.0449905,0.00566311,True,6.70346,11.0216,105,a priori/glouton/reseau
+tout,273,3,0.0001,3,True,0.186392,0.0211033,True,5.42625,14.693,105,glouton/glouton/a priori
+tout,274,3,0.0001,3,True,0.62882,0.255662,True,4.97025,16.7842,105,reseau/reseau/division
+tout,275,3,0.0001,3,True,0.000814933,0.00147869,True,5.4099,25.7998,105,glouton/a priori/a priori
+tout,276,3,0.0001,3,True,0.0420723,0.00218627,True,2.11688,28.8523,105,a priori/a priori/division
+tout,277,3,0.0001,3,True,0.103079,0.0252662,True,5.66207,14.8971,105,glouton/a priori/division
+tout,278,3,0.0001,3,True,0.946939,0.558946,True,4.89356,15.5844,105,glouton/a priori/glouton
+tout,279,3,0.0001,2,False,0.289554,0.739024,False,0.667401,10.9733,80,glouton/reseau
+tout,280,3,0.001,3,True,1.85717,0.85279,False,4.62427,8.59512,105,a priori/reseau/division
+tout,281,3,0.001,2,False,0.237949,0.0563432,False,2.14463,5.89001,80,reseau/division
+tout,282,3,0.001,3,True,0.219213,0.0364743,True,7.53026,11.0219,105,a priori/reseau/division
+tout,283,3,0.001,3,True,0.0697638,0.0349215,True,4.52954,5.60405,105,reseau/a priori/a priori
+tout,284,3,0.001,3,True,0.126342,0.173768,True,2.60936,4.55121,105,reseau/reseau/reseau
+tout,285,3,0.001,3,True,0.255156,0.109228,True,7.45825,6.99324,105,glouton/division/a priori
+tout,286,3,0.001,2,False,0.586187,0.257519,False,2.63162,13.0305,80,reseau/a priori
+tout,287,3,0.001,2,False,0.645883,0.625034,False,2.74659,6.25137,80,a priori/a priori
+tout,288,3,0.001,3,True,0.339659,0.062188,True,6.18571,7.69892,105,glouton/a priori/division
+tout,289,3,0.001,3,True,3.89145,0.719769,False,2.64874,7.13829,105,reseau/reseau/a priori
+tout,290,3,0.001,3,True,0.682928,0.354058,True,3.21704,14.5862,105,a priori/reseau/glouton
+tout,291,3,0.001,3,True,0.836876,0.221737,True,5.49152,8.55803,105,a priori/reseau/division
+tout,292,3,0.001,3,True,0.17427,0.0402648,True,3.92024,8.83145,105,glouton/a priori/a priori
+tout,293,3,0.001,3,True,1.07913,0.281176,False,4.39496,9.42053,105,a priori/a priori/a priori
+tout,294,3,0.001,2,False,0.0253167,0.023527,False,4.26865,4.3156,80,glouton/glouton
+tout,295,3,0.001,3,True,1.87819,0.951974,False,3.78362,8.25677,105,a priori/reseau/reseau
+tout,296,3,0.001,3,True,0.20385,0.168677,True,3.21937,6.6511,105,reseau/reseau/division
+tout,297,3,0.001,3,True,2.33513,0.187139,False,4.15701,10.8668,105,reseau/a priori/division
+tout,298,3,0.001,2,False,0.126566,0.0974867,False,3.1284,3.396,80,reseau/reseau
+tout,299,3,0.001,3,True,1.18133,2.32628,False,3.22593,14.2156,105,a priori/a priori/division
+tout,300,3,0.001,2,False,0.139866,0.156035,False,3.381,3.95364,80,glouton/division
+tout,301,3,0.001,3,True,1.38043,0.723684,False,3.56569,9.17204,105,reseau/reseau/a priori
+tout,302,3,0.001,2,False,1.45784,0.267896,False,2.8796,6.8503,80,reseau/a priori
+tout,303,3,0.001,2,False,0.404913,0.601382,False,0.898357,3.50035,80,reseau/division
+tout,304,3,0.001,3,True,0.845991,0.216966,True,6.93765,5.76246,105,a priori/a priori/reseau
+tout,305,3,0.001,3,True,0.185249,0.141847,True,6.58032,5.4562,105,reseau/a priori/a priori
+tout,306,3,0.001,3,True,0.701138,0.154909,True,7.4472,7.89992,105,reseau/a priori/a priori
+tout,307,3,0.001,3,True,0.689874,1.25246,False,2.57645,10.9485,105,reseau/division/a priori
+tout,308,3,0.001,2,False,0.499757,0.723862,False,1.09132,3.66352,80,a priori/a priori
+tout,309,3,0.001,3,True,0.123739,0.0657967,True,6.42807,5.2757,105,a priori/division/reseau
+tout,310,3,0.001,3,True,1.06302,0.378941,False,3.69868,6.61364,105,a priori/reseau/a priori
+tout,311,3,0.001,3,True,0.126218,0.0415307,True,3.89071,5.44548,105,glouton/reseau/division
+tout,312,3,0.001,3,True,0.577939,0.123672,True,2.43767,7.56971,105,a priori/glouton/reseau
+tout,313,3,0.001,4,False,1.94616,1.4523,False,1.49902,13.043,132,reseau/division/a priori
+tout,314,3,0.001,2,False,0.198585,0.594334,False,2.45191,5.31026,80,a priori/reseau
+tout,315,3,0.001,1,False,0.441921,0.439194,False,1.69458,3.16098,57,reseau
+tout,316,3,0.001,3,True,0.490242,0.0652934,True,7.92443,7.88152,105,reseau/reseau/glouton
+tout,317,3,0.001,3,True,2.19579,0.29661,False,7.75976,6.10049,105,a priori/reseau/a priori
+tout,318,3,0.001,3,True,0.464462,0.0358317,True,2.9368,14.2645,105,a priori/a priori/a priori
+tout,319,3,0.001,3,True,0.244085,0.083254,True,7.6026,6.97052,105,glouton/a priori/reseau
+tout,320,3,0.003,3,True,1.54488,1.60232,False,3.54388,4.98501,105,reseau/reseau/division
+tout,321,3,0.003,2,False,0.612494,0.0422826,False,2.6009,3.63358,80,a priori/reseau
+tout,322,3,0.003,2,False,1.16779,0.810654,False,3.98906,2.9563,80,reseau/division
+tout,323,3,0.003,3,True,0.521812,0.0434333,True,4.40237,4.37538,105,glouton/a priori/division
+tout,324,3,0.003,2,False,1.18742,0.14615,False,8.19243,3.38305,80,a priori/a priori
+tout,325,3,0.003,3,True,0.472321,0.552312,True,1.94327,6.62825,105,a priori/reseau/division
+tout,326,3,0.003,2,False,0.490796,0.178757,False,6.71007,3.5051,80,glouton/division
+tout,327,3,0.003,3,True,2.35846,0.449971,False,3.33579,6.91904,105,a priori/a priori/a priori
+tout,328,3,0.003,2,False,0.258218,0.460072,False,2.93338,3.98977,80,a priori/a priori
+tout,329,3,0.003,3,True,0.839304,0.120584,True,5.67447,7.89678,105,reseau/a priori/division
+tout,330,3,0.003,2,False,0.557568,0.130021,False,5.51221,4.29939,80,a priori/reseau
+tout,331,3,0.003,2,False,0.172178,0.412259,False,0.528111,4.22667,80,a priori/reseau
+tout,332,3,0.003,3,True,2.37999,0.296531,False,6.85585,7.03247,105,glouton/reseau/a priori
+tout,333,3,0.003,2,False,0.751858,0.566042,False,3.75738,2.95477,80,a priori/reseau
+tout,334,3,0.003,2,False,0.518434,0.802514,False,2.0742,3.41031,80,a priori/a priori
+tout,335,3,0.003,3,True,1.1416,0.922184,False,3.12607,7.63465,105,a priori/a priori/a priori
+tout,336,3,0.003,2,False,0.149293,0.0393692,False,0.813073,4.07844,80,a priori/a priori
+tout,337,3,0.003,1,False,0.815224,0.628881,False,1.79646,1.97191,57,a priori
+tout,338,3,0.003,2,False,0.650239,1.60489,False,1.42845,4.19531,80,glouton/reseau
+tout,339,3,0.003,1,False,0.154336,0.116914,False,2.40008,1.81904,57,a priori
+tout,340,3,0.003,2,False,1.17123,0.430438,False,3.13288,4.68379,80,a priori/a priori
+tout,341,3,0.003,2,False,0.767456,0.569185,False,2.75274,3.46904,80,a priori/glouton
+tout,342,3,0.003,2,False,0.656475,0.0867983,False,2.07242,4.78995,80,glouton/reseau
+tout,343,3,0.003,2,False,0.668193,0.16624,False,4.03867,3.80175,80,a priori/a priori
+tout,344,3,0.003,3,True,3.50303,0.680684,False,6.0816,6.69752,105,a priori/division/division
+tout,345,3,0.003,3,True,1.21031,0.0337595,False,9.04714,4.46298,105,glouton/glouton/reseau
+tout,346,3,0.003,2,False,1.02326,0.231984,False,4.26332,3.10134,80,a priori/reseau
+tout,347,3,0.003,3,True,1.39808,0.330352,False,1.67089,8.65315,105,a priori/reseau/a priori
+tout,348,3,0.003,2,False,0.845338,1.13821,False,1.77531,3.6021,80,a priori/reseau
+tout,349,3,0.003,2,False,0.207418,0.170033,False,4.0289,2.88622,80,a priori/division
+tout,350,3,0.003,2,False,0.661012,0.0709946,False,7.46197,3.91032,80,a priori/glouton
+tout,351,3,0.003,2,False,0.427404,0.57873,False,1.85697,3.47969,80,glouton/division
+tout,352,3,0.003,4,False,1.94709,0.464412,False,5.83847,9.99363,132,glouton/division/reseau/a priori
+tout,353,3,0.003,3,True,0.469166,0.0828084,True,8.89738,5.34561,105,reseau/a priori/a priori
+tout,354,3,0.003,3,True,0.214352,0.226928,True,3.78044,5.9347,105,reseau/division/a priori
+tout,355,3,0.003,2,False,0.87045,0.493606,False,2.47973,3.16997,80,a priori/glouton
+tout,356,3,0.003,3,True,0.33389,0.229049,True,1.65208,8.59659,105,reseau/a priori/reseau
+tout,357,3,0.003,1,False,0.756557,0.27701,False,1.56282,2.48635,57,a priori
+tout,358,3,0.003,2,False,0.9048,0.345645,False,6.40247,3.03009,80,a priori/reseau
+tout,359,3,0.003,3,True,2.56309,0.744627,False,5.20348,5.37907,105,a priori/reseau/reseau
+tout,360,4,0.0001,3,False,0.0871598,0.0449743,False,0.62179,13.9021,105,a priori/a priori/reseau
+tout,361,4,0.0001,4,True,1.82292,1.42636,False,4.0191,27.8256,132,reseau/a priori/a priori/division
+tout,362,4,0.0001,3,False,0.158453,0.0896551,False,3.75988,13.7552,105,a priori/reseau/reseau
+tout,363,4,0.0001,4,True,2.51548,2.30253,False,1.29876,19.9159,132,reseau/a priori/a priori/a priori
+tout,364,4,0.0001,3,False,0.398178,0.588033,False,0.961264,8.83326,105,a priori/reseau/a priori
+tout,365,4,0.0001,4,True,0.0274869,0.0353106,True,1.06329,15.1056,132,reseau/a priori/glouton/a priori
+tout,366,4,0.0001,4,True,0.679571,0.253613,True,2.77216,17.6541,132,a priori/glouton/a priori/a priori
+tout,367,4,0.0001,4,True,2.01887,0.775877,False,1.73748,19.7702,132,a priori/a priori/division/a priori
+tout,368,4,0.0001,3,False,0.127437,0.0634377,False,2.68921,8.97976,105,glouton/a priori/reseau
+tout,369,4,0.0001,3,False,0.248759,0.155961,False,1.07319,18.1617,105,a priori/reseau/reseau
+tout,370,4,0.0001,4,True,1.91523,0.694612,False,3.92559,20.2278,132,a priori/a priori/reseau/a priori
+tout,371,4,0.0001,3,False,0.0246982,0.0119928,False,5.02251,10.7505,105,glouton/a priori/a priori
+tout,372,4,0.0001,3,False,0.393605,0.360477,False,2.96194,9.58783,105,reseau/glouton/division
+tout,373,4,0.0001,3,False,0.322266,0.114888,False,1.16042,11.7644,105,glouton/division/reseau
+tout,374,4,0.0001,4,True,3.5116,9.2414,False,2.91058,30.0182,132,reseau/reseau/reseau/division
+tout,375,4,0.0001,4,True,0.989556,0.376681,False,3.90171,21.0658,132,a priori/a priori/reseau/glouton
+tout,376,4,0.0001,4,True,0.269654,0.11968,True,4.32767,21.5645,132,a priori/division/reseau/reseau
+tout,377,4,0.0001,4,True,1.29391,0.730147,False,1.27526,24.5297,132,reseau/reseau/division/division
+tout,378,4,0.0001,4,True,13.2213,0.988256,False,1.96725,14.9943,132,a priori/division/division/glouton
+tout,379,4,0.0001,4,True,0.219273,0.0671439,True,3.45651,16.294,132,glouton/reseau/a priori/division
+tout,380,4,0.0001,4,True,0.0230049,0.011933,True,8.42911,24.4168,132,reseau/a priori/division/division
+tout,381,4,0.0001,4,True,0.182496,0.0120848,True,4.31,29.4071,132,reseau/reseau/reseau/a priori
+tout,382,4,0.0001,4,True,0.120845,0.0560793,True,4.02994,15.4148,132,reseau/a priori/reseau/a priori
+tout,383,4,0.0001,3,False,0.11298,0.0550401,False,1.85334,16.2908,105,reseau/glouton/a priori
+tout,384,4,0.0001,4,True,0.161493,0.112935,True,2.42757,26.2453,132,a priori/a priori/a priori/a priori
+tout,385,4,0.0001,4,True,0.085391,0.0126558,True,3.05788,17.2333,132,glouton/glouton/a priori/glouton
+tout,386,4,0.0001,4,True,0.489593,0.15633,True,3.5714,48.3278,132,reseau/a priori/glouton/division
+tout,387,4,0.0001,3,False,0.21072,0.042531,False,2.85691,15.4432,105,a priori/a priori/reseau
+tout,388,4,0.0001,3,False,0.933287,1.67447,False,1.97217,18.0181,105,a priori/a priori/a priori
+tout,389,4,0.0001,4,True,0.289334,0.165239,True,3.43523,17.9582,132,reseau/a priori/reseau/division
+tout,390,4,0.0001,4,True,0.302044,0.278079,True,2.50917,36.0836,132,glouton/a priori/a priori/division
+tout,391,4,0.0001,4,True,0.134427,0.11997,True,4.14572,25.9996,132,a priori/a priori/a priori/division
+tout,392,4,0.0001,4,True,2.01811,0.847635,False,0.788936,28.8981,132,glouton/a priori/a priori/a priori
+tout,393,4,0.0001,4,True,1.79579,0.593836,False,3.90217,22.0558,132,reseau/a priori/reseau/glouton
+tout,394,4,0.0001,4,True,0.936219,0.42553,False,2.37698,38.2658,132,a priori/reseau/a priori/a priori
+tout,395,4,0.0001,3,False,0.234108,0.180554,False,0.355147,15.3421,105,a priori/reseau/reseau
+tout,396,4,0.0001,3,False,0.0548482,0.0778167,False,1.35499,9.44499,105,a priori/division/a priori
+tout,397,4,0.0001,3,False,0.224767,0.841185,False,0.462378,10.9287,105,a priori/reseau/a priori
+tout,398,4,0.0001,4,True,0.152079,0.0150134,True,7.02935,22.1914,132,a priori/a priori/division/division
+tout,399,4,0.0001,4,True,1.01106,0.589733,False,1.33144,22.1526,132,a priori/a priori/a priori/reseau
+tout,400,4,0.001,2,False,0.480892,0.176196,False,1.89044,3.53712,80,a priori/a priori
+tout,401,4,0.001,3,False,0.15772,0.112377,False,2.34771,5.74954,105,reseau/glouton/reseau
+tout,402,4,0.001,3,False,1.35928,2.37369,False,3.13721,6.74017,105,glouton/a priori/division
+tout,403,4,0.001,4,True,0.729068,0.371343,True,3.37009,15.1231,132,a priori/a priori/reseau/division
+tout,404,4,0.001,4,True,1.11671,0.777412,False,2.59041,12.4472,132,a priori/division/reseau/reseau
+tout,405,4,0.001,3,False,1.33724,0.132011,False,2.54153,7.15636,105,a priori/a priori/reseau
+tout,406,4,0.001,3,False,1.53894,0.618021,False,1.05215,8.3425,105,a priori/a priori/reseau
+tout,407,4,0.001,3,False,1.12593,0.630542,False,2.92516,6.22921,105,reseau/reseau/a priori
+tout,408,4,0.001,3,False,0.749337,0.222308,False,1.54294,6.08434,105,reseau/a priori/glouton
+tout,409,4,0.001,4,True,0.707033,0.560299,True,3.55612,12.8188,132,glouton/a priori/reseau/glouton
+tout,410,4,0.001,3,False,0.219042,0.306657,False,2.1442,8.58449,105,a priori/division/a priori
+tout,411,4,0.001,3,False,0.701315,0.320691,False,2.0055,5.92773,105,reseau/glouton/reseau
+tout,412,4,0.001,4,True,0.419659,0.163869,True,6.81912,9.89702,132,glouton/reseau/division/division
+tout,413,4,0.001,3,False,1.15611,0.186456,False,3.77579,7.37794,105,a priori/a priori/a priori
+tout,414,4,0.001,3,False,2.16336,2.9724,False,2.72179,10.2086,105,glouton/division/division
+tout,415,4,0.001,4,True,0.337244,0.231549,True,2.9871,11.7345,132,reseau/division/reseau/a priori
+tout,416,4,0.001,3,False,2.64175,3.01007,False,3.94319,6.17076,105,reseau/division/glouton
+tout,417,4,0.001,3,False,0.315144,3.08484,False,0.789227,6.18019,105,a priori/reseau/reseau
+tout,418,4,0.001,2,False,0.434634,0.321103,False,3.07053,3.52011,80,a priori/division
+tout,419,4,0.001,4,True,0.653648,0.269927,True,2.84563,13.9307,132,a priori/a priori/reseau/division
+tout,420,4,0.001,3,False,3.00249,1.96598,False,5.25862,9.62189,105,reseau/a priori/reseau
+tout,421,4,0.001,3,False,1.06697,0.614855,False,4.12889,5.16767,105,a priori/reseau/division
+tout,422,4,0.001,3,False,0.538633,0.598262,False,1.57671,6.03637,105,reseau/reseau/a priori
+tout,423,4,0.001,3,False,0.332246,0.263543,False,3.62236,5.86576,105,a priori/division/a priori
+tout,424,4,0.001,4,True,0.284791,0.0847912,True,3.27211,9.6358,132,a priori/a priori/division/reseau
+tout,425,4,0.001,3,False,0.630133,0.671172,False,1.78301,5.07374,105,reseau/reseau/division
+tout,426,4,0.001,2,False,0.844388,21.798,False,2.30405,5.15573,80,a priori/a priori
+tout,427,4,0.001,3,False,2.31454,1.62122,False,3.19777,9.90597,105,a priori/a priori/reseau
+tout,428,4,0.001,3,False,0.361411,0.121486,False,2.78446,5.7514,105,glouton/reseau/reseau
+tout,429,4,0.001,3,False,3.31863,0.325912,False,3.60242,7.21032,105,glouton/a priori/a priori
+tout,430,4,0.001,4,True,0.517085,0.166052,True,2.72639,11.8291,132,a priori/reseau/a priori/a priori
+tout,431,4,0.001,3,False,0.721475,1.43468,False,1.6276,4.6721,105,glouton/reseau/division
+tout,432,4,0.001,3,False,1.83507,2.72468,False,3.56854,6.86824,105,a priori/a priori/a priori
+tout,433,4,0.001,3,False,1.14831,0.631697,False,3.47759,6.05929,105,glouton/reseau/division
+tout,434,4,0.001,4,True,0.58777,0.123017,True,3.3855,10.8676,132,a priori/a priori/reseau/division
+tout,435,4,0.001,4,True,0.457027,0.610357,True,2.93602,10.1361,132,reseau/reseau/division/a priori
+tout,436,4,0.001,3,False,0.402538,0.153243,False,4.24524,4.0122,105,reseau/reseau/division
+tout,437,4,0.001,3,False,0.433708,0.226883,False,3.68105,6.02182,105,a priori/reseau/reseau
+tout,438,4,0.001,3,False,0.734087,0.939664,False,1.68899,5.73238,105,a priori/division/a priori
+tout,439,4,0.001,4,True,0.864172,0.371107,True,4.7108,7.99924,132,a priori/division/a priori/division
+tout,440,4,0.003,3,False,0.66038,0.460001,False,1.9557,4.33439,105,a priori/reseau/division
+tout,441,4,0.003,3,False,1.46766,0.367358,False,2.47302,4.35528,105,reseau/reseau/reseau
+tout,442,4,0.003,3,False,0.47786,0.844394,False,0.970977,5.28071,105,a priori/a priori/division
+tout,443,4,0.003,2,False,2.4954,1.23731,False,4.61646,2.3965,80,a priori/a priori
+tout,444,4,0.003,3,False,1.47847,0.361597,False,1.04979,9.21861,105,reseau/division/division
+tout,445,4,0.003,3,False,1.25713,0.43802,False,3.95331,4.94808,105,glouton/a priori/division
+tout,446,4,0.003,2,False,0.641239,0.203668,False,3.0418,3.08776,80,a priori/reseau
+tout,447,4,0.003,3,False,0.995377,0.251656,False,3.17421,7.99736,105,a priori/a priori/division
+tout,448,4,0.003,3,False,2.20984,1.27933,False,2.64908,8.18245,105,a priori/a priori/reseau
+tout,449,4,0.003,3,False,2.17397,0.126947,False,2.87273,6.82694,105,a priori/a priori/a priori
+tout,450,4,0.003,2,False,3.14674,1.0229,False,0.683867,2.85941,80,a priori/reseau
+tout,451,4,0.003,3,False,1.65898,1.43458,False,4.04178,5.29278,105,reseau/a priori/division
+tout,452,4,0.003,2,False,2.2602,1.05919,False,5.29884,2.82497,80,a priori/reseau
+tout,453,4,0.003,2,False,4.49948,0.318174,False,2.35828,2.81726,80,reseau/glouton
+tout,454,4,0.003,4,True,0.555739,0.0710115,True,5.07648,8.13174,132,a priori/a priori/division/a priori
+tout,455,4,0.003,4,True,1.41672,0.17132,False,4.48228,8.25948,132,a priori/glouton/a priori/reseau
+tout,456,4,0.003,2,False,1.47579,3.53257,False,2.78624,2.95816,80,a priori/division
+tout,457,4,0.003,2,False,0.24937,0.626051,False,1.05503,2.57296,80,a priori/a priori
+tout,458,4,0.003,3,False,0.810635,0.871603,False,2.30855,5.96189,105,glouton/reseau/division
+tout,459,4,0.003,1,False,2.07277,3.95476,False,3.37593,1.9648,57,a priori
+tout,460,4,0.003,3,False,0.788913,0.372649,False,3.81299,5.80645,105,glouton/division/a priori
+tout,461,4,0.003,2,False,1.85462,1.04222,False,3.45772,3.91711,80,a priori/reseau
+tout,462,4,0.003,3,False,0.44421,0.167263,False,7.2043,5.76842,105,glouton/glouton/division
+tout,463,4,0.003,3,False,0.139829,0.0733697,False,4.04906,4.85271,105,a priori/reseau/reseau
+tout,464,4,0.003,2,False,0.88841,0.541504,False,3.27995,2.86861,80,a priori/a priori
+tout,465,4,0.003,3,False,0.20274,0.150646,False,4.74292,4.86408,105,glouton/division/division
+tout,466,4,0.003,3,False,5.31587,13.4424,False,5.61988,4.22425,105,reseau/a priori/a priori
+tout,467,4,0.003,3,False,0.328076,0.286523,False,0.300028,4.35076,105,a priori/reseau/reseau
+tout,468,4,0.003,2,False,1.35049,0.72391,False,3.31337,2.45325,80,glouton/a priori
+tout,469,4,0.003,2,False,0.773329,0.444813,False,2.437,2.63783,80,glouton/a priori
+tout,470,4,0.003,3,False,1.20467,0.841259,False,4.20728,5.16521,105,glouton/reseau/division
+tout,471,4,0.003,3,False,2.18084,1.11955,False,4.46103,6.04363,105,a priori/a priori/division
+tout,472,4,0.003,3,False,3.05056,1.95881,False,5.74958,4.83924,105,a priori/reseau/division
+tout,473,4,0.003,3,False,1.63507,0.799064,False,6.55464,3.90441,105,reseau/division/a priori
+tout,474,4,0.003,2,False,0.826633,0.119877,False,1.68813,3.3856,80,reseau/glouton
+tout,475,4,0.003,3,False,0.968527,0.488372,False,2.06898,6.35106,105,a priori/a priori/reseau
+tout,476,4,0.003,1,False,0.899327,1.41751,False,1.9116,1.25279,57,reseau
+tout,477,4,0.003,4,True,1.03352,0.144452,False,6.16534,7.44918,132,a priori/division/division/division
+tout,478,4,0.003,2,False,0.712552,0.551675,False,1.51586,2.45686,80,a priori/glouton
+tout,479,4,0.003,2,False,2.44112,0.983879,False,7.07125,4.76447,80,a priori/a priori
+tout,480,5,0.0001,4,False,2.8941,8.46293,False,0.75884,19.1059,132,a priori/a priori/glouton/division
+tout,481,5,0.0001,4,False,0.854225,0.916073,False,1.7304,15.6118,132,a priori/a priori/division/reseau
+tout,482,5,0.0001,5,True,0.743413,0.245071,True,3.60563,29.4862,161,glouton/a priori/division/reseau/division
+tout,483,5,0.0001,3,False,1.44092,2.13244,False,1.52271,14.085,105,a priori/reseau/reseau
+tout,484,5,0.0001,4,False,0.164562,0.164923,False,1.43969,17.0321,132,a priori/glouton/division/a priori
+tout,485,5,0.0001,3,False,0.611845,0.441073,False,2.74327,8.8181,105,reseau/glouton/glouton
+tout,486,5,0.0001,5,True,3.10246,0.833595,False,3.9168,72.1586,161,a priori/a priori/division/division/a priori
+tout,487,5,0.0001,4,False,0.0652207,0.435417,False,0.197812,19.4739,132,a priori/glouton/a priori/division
+tout,488,5,0.0001,2,False,0.0707134,0.583837,False,0.488202,6.82328,80,a priori/a priori
+tout,489,5,0.0001,4,False,0.365998,0.229915,False,1.42464,21.0619,132,reseau/a priori/reseau/division
+tout,490,5,0.0001,4,False,0.763868,0.541828,False,1.36573,30.035,132,glouton/reseau/reseau/division
+tout,491,5,0.0001,5,True,1.43336,2.47445,False,0.716321,76.3632,161,glouton/a priori/a priori/glouton/reseau
+tout,492,5,0.0001,5,True,0.140531,0.0793881,True,3.91457,19.5836,161,a priori/reseau/division/a priori/division
+tout,493,5,0.0001,5,True,0.475061,0.164916,False,1.18463,40.5596,161,a priori/reseau/a priori/division/a priori
+tout,494,5,0.0001,4,False,0.265546,0.0628752,False,2.5953,33.7274,132,reseau/division/division/division
+tout,495,5,0.0001,5,True,0.277887,0.121054,True,1.64429,31.6085,161,glouton/glouton/reseau/a priori/division
+tout,496,5,0.0001,3,False,0.332118,0.549475,False,0.911862,9.81777,105,glouton/reseau/reseau
+tout,497,5,0.0001,5,True,0.479084,0.14844,True,3.96103,26.3222,161,reseau/division/a priori/division/reseau
+tout,498,5,0.0001,4,False,0.240102,0.0887089,False,2.01871,15.364,132,a priori/reseau/reseau/reseau
+tout,499,5,0.0001,4,False,1.50282,1.46675,False,1.03837,16.7748,132,glouton/division/a priori/division
+tout,500,5,0.0001,4,False,0.366789,0.165982,False,2.74046,14.8784,132,glouton/reseau/a priori/division
+tout,501,5,0.0001,4,False,1.39236,1.4494,False,2.78586,15.2973,132,a priori/reseau/reseau/division
+tout,502,5,0.0001,5,True,0.0700227,0.0252036,True,4.77356,25.7863,161,a priori/reseau/reseau/division/division
+tout,503,5,0.0001,4,False,0.0770944,0.274933,False,0.29828,27.0499,132,reseau/glouton/reseau/division
+tout,504,5,0.0001,5,True,2.05247,3.52168,False,3.13019,54.3508,161,reseau/a priori/glouton/reseau/division
+tout,505,5,0.0001,5,True,3.52242,5.47775,False,2.02003,42.8901,161,a priori/reseau/reseau/a priori/a priori
+tout,506,5,0.0001,4,False,0.461936,0.332131,False,3.95153,21.1914,132,reseau/reseau/a priori/reseau
+tout,507,5,0.0001,4,False,0.764522,0.415277,False,2.2301,23.3342,132,a priori/reseau/reseau/glouton
+tout,508,5,0.0001,5,True,0.556854,0.377805,True,2.45355,35.9259,161,glouton/a priori/a priori/division/division
+tout,509,5,0.0001,4,False,0.515834,1.03484,False,1.07735,16.5507,132,reseau/a priori/reseau/division
+tout,510,5,0.0001,5,True,0.276658,0.188457,True,3.20892,34.1355,161,reseau/a priori/a priori/division/division
+tout,511,5,0.0001,5,True,1.15676,0.359007,False,2.46084,26.4471,161,reseau/reseau/division/division/glouton
+tout,512,5,0.0001,5,True,0.11963,0.148588,True,1.70056,25.5945,161,glouton/division/a priori/a priori/glouton
+tout,513,5,0.0001,4,False,0.138737,0.132416,False,1.57542,18.073,132,reseau/reseau/a priori/a priori
+tout,514,5,0.0001,4,False,0.116662,0.0181206,False,4.27129,19.9158,132,a priori/division/reseau/division
+tout,515,5,0.0001,5,True,0.836263,0.458122,True,3.91081,22.4175,161,glouton/division/division/reseau/a priori
+tout,516,5,0.0001,4,False,0.528227,0.994184,False,1.09939,15.1776,132,glouton/a priori/glouton/reseau
+tout,517,5,0.0001,5,True,0.676464,0.327465,True,3.1399,18.8099,161,a priori/a priori/a priori/division/division
+tout,518,5,0.0001,4,False,0.694404,0.198221,False,1.94105,18.8562,132,a priori/a priori/reseau/glouton
+tout,519,5,0.0001,4,False,0.133238,0.0386177,False,2.49132,19.6408,132,a priori/glouton/division/division
+tout,520,5,0.001,4,False,1.11116,0.402106,False,5.00037,16.0549,132,reseau/a priori/a priori/reseau
+tout,521,5,0.001,3,False,1.67526,1.15885,False,1.53354,7.82482,105,glouton/reseau/reseau
+tout,522,5,0.001,3,False,0.47948,0.100189,False,1.28646,7.56375,105,a priori/glouton/a priori
+tout,523,5,0.001,2,False,2.26588,1.37228,False,1.30021,6.03942,80,reseau/a priori
+tout,524,5,0.001,4,False,1.31764,0.638222,False,4.62602,9.712,132,glouton/reseau/reseau/a priori
+tout,525,5,0.001,3,False,0.707832,0.347367,False,3.07714,6.03615,105,glouton/a priori/reseau
+tout,526,5,0.001,4,False,3.37371,4.78858,False,2.63744,12.8991,132,reseau/a priori/a priori/division
+tout,527,5,0.001,4,False,1.92932,1.334,False,1.47555,11.6726,132,a priori/reseau/a priori/reseau
+tout,528,5,0.001,4,False,1.54115,0.491923,False,1.89552,9.71234,132,a priori/a priori/reseau/a priori
+tout,529,5,0.001,4,False,0.291696,0.162647,False,3.86824,12.9136,132,a priori/a priori/reseau/division
+tout,530,5,0.001,4,False,2.0598,0.577932,False,1.6123,9.61671,132,glouton/reseau/division/division
+tout,531,5,0.001,3,False,2.48259,1.4702,False,1.17568,7.96471,105,reseau/reseau/division
+tout,532,5,0.001,2,False,1.50566,0.490094,False,1.67648,4.28382,80,a priori/reseau
+tout,533,5,0.001,3,False,1.62285,0.835317,False,3.28956,6.28366,105,reseau/division/reseau
+tout,534,5,0.001,5,True,3.42989,0.272626,False,4.21049,21.9425,161,a priori/division/division/division/reseau
+tout,535,5,0.001,5,True,0.462576,0.437533,True,2.52726,15.0034,161,glouton/glouton/a priori/a priori/division
+tout,536,5,0.001,3,False,0.805318,0.412042,False,2.96339,6.21281,105,a priori/division/reseau
+tout,537,5,0.001,5,True,1.62139,0.45456,False,2.00379,18.2204,161,a priori/reseau/a priori/division/glouton
+tout,538,5,0.001,3,False,1.74379,1.46679,False,2.189,7.3721,105,a priori/reseau/reseau
+tout,539,5,0.001,5,True,0.254103,0.47437,True,1.43761,26.4798,161,reseau/a priori/reseau/a priori/division
+tout,540,5,0.001,3,False,2.16462,1.83017,False,1.58388,7.04146,105,a priori/a priori/glouton
+tout,541,5,0.001,3,False,1.30339,0.560316,False,4.38209,6.01714,105,a priori/reseau/division
+tout,542,5,0.001,4,False,2.31164,0.615794,False,2.3619,11.6626,132,a priori/reseau/division/reseau
+tout,543,5,0.001,3,False,2.47844,2.15021,False,0.855643,6.81512,105,a priori/a priori/reseau
+tout,544,5,0.001,4,False,0.703709,0.197426,False,1.74842,10.5913,132,a priori/a priori/division/a priori
+tout,545,5,0.001,5,True,2.93438,0.732024,False,4.40095,17.03,161,glouton/reseau/a priori/a priori/reseau
+tout,546,5,0.001,2,False,1.0472,1.31106,False,0.723024,5.76373,80,a priori/glouton
+tout,547,5,0.001,4,False,1.05072,0.275406,False,3.61329,26.4073,132,a priori/reseau/a priori/a priori
+tout,548,5,0.001,3,False,2.42119,1.75174,False,3.62663,6.55037,105,a priori/reseau/reseau
+tout,549,5,0.001,3,False,0.417685,0.245425,False,2.3205,5.56838,105,a priori/a priori/a priori
+tout,550,5,0.001,3,False,0.44437,0.174399,False,1.66387,7.59713,105,a priori/reseau/glouton
+tout,551,5,0.001,4,False,0.271881,0.320777,False,2.13863,14.2165,132,a priori/reseau/division/division
+tout,552,5,0.001,3,False,0.470867,0.390167,False,1.40642,9.22976,105,a priori/reseau/reseau
+tout,553,5,0.001,4,False,0.299687,0.145814,False,1.62133,8.05152,132,glouton/a priori/division/reseau
+tout,554,5,0.001,4,False,0.178039,0.340152,False,0.567677,11.519,132,reseau/glouton/reseau/reseau
+tout,555,5,0.001,2,False,2.3158,3.31967,False,2.82314,4.37096,80,a priori/division
+tout,556,5,0.001,4,False,4.78759,12.7625,False,2.77367,13.9282,132,a priori/a priori/a priori/reseau
+tout,557,5,0.001,3,False,0.220416,0.23889,False,1.48015,7.20344,105,a priori/reseau/division
+tout,558,5,0.001,3,False,1.07371,0.407764,False,4.26022,7.48483,105,glouton/a priori/a priori
+tout,559,5,0.001,4,False,1.12256,1.41375,False,2.19626,15.5241,132,reseau/reseau/glouton/reseau
+tout,560,5,0.003,3,False,2.56992,1.99636,False,4.16326,4.61516,105,reseau/a priori/reseau
+tout,561,5,0.003,3,False,1.37977,1.47542,False,3.41219,5.97511,105,a priori/a priori/division
+tout,562,5,0.003,4,False,1.44892,1.44648,False,3.08197,7.66818,132,a priori/division/a priori/division
+tout,563,5,0.003,4,False,1.20678,1.3219,False,0.289232,10.78,132,reseau/a priori/a priori/reseau
+tout,564,5,0.003,4,False,0.891577,0.321416,False,1.4258,6.0284,132,a priori/division/a priori/division
+tout,565,5,0.003,3,False,2.01007,0.83972,False,1.41065,4.27894,105,a priori/reseau/division
+tout,566,5,0.003,3,False,1.19345,0.397268,False,3.79035,4.98631,105,glouton/reseau/reseau
+tout,567,5,0.003,3,False,0.97521,15.6501,False,1.19773,4.75316,105,reseau/glouton/a priori
+tout,568,5,0.003,4,False,1.5157,0.81025,False,2.04172,7.29475,132,a priori/reseau/division/division
+tout,569,5,0.003,4,False,3.01584,2.6384,False,1.5409,7.54716,132,a priori/glouton/a priori/a priori
+tout,570,5,0.003,3,False,0.865907,1.1667,False,1.68459,5.76232,105,reseau/division/reseau
+tout,571,5,0.003,2,False,0.519871,3.0443,False,0.840447,6.51692,80,reseau/reseau
+tout,572,5,0.003,3,False,1.19298,2.20816,False,2.57054,5.08654,105,reseau/reseau/reseau
+tout,573,5,0.003,3,False,1.50826,2.96131,False,2.47061,4.77559,105,a priori/a priori/reseau
+tout,574,5,0.003,3,False,0.553777,0.326229,False,3.41212,5.5833,105,glouton/reseau/reseau
+tout,575,5,0.003,3,False,1.84859,0.529897,False,2.42378,4.79284,105,a priori/a priori/division
+tout,576,5,0.003,3,False,0.892921,0.743652,False,2.10059,5.64042,105,a priori/a priori/reseau
+tout,577,5,0.003,2,False,2.81936,1.72784,False,3.91985,3.26526,80,reseau/a priori
+tout,578,5,0.003,2,False,0.279946,0.939992,False,0.953566,2.80994,80,reseau/a priori
+tout,579,5,0.003,2,False,1.19693,0.570173,False,2.77276,4.04975,80,reseau/a priori
+tout,580,5,0.003,3,False,2.32933,0.745307,False,3.27897,4.86331,105,a priori/a priori/reseau
+tout,581,5,0.003,2,False,2.2484,1.94052,False,3.82708,3.23362,80,reseau/a priori
+tout,582,5,0.003,3,False,2.00208,0.897324,False,2.49569,5.71924,105,a priori/division/glouton
+tout,583,5,0.003,3,False,1.77781,1.49415,False,4.09034,4.89261,105,a priori/glouton/a priori
+tout,584,5,0.003,2,False,1.41816,5.28223,False,1.6576,3.93116,80,reseau/reseau
+tout,585,5,0.003,3,False,1.95802,0.560077,False,1.78019,5.8901,105,a priori/a priori/a priori
+tout,586,5,0.003,3,False,2.24098,1.19364,False,0.972937,6.7204,105,glouton/division/a priori
+tout,587,5,0.003,3,False,1.53187,5.34099,False,2.2434,6.5412,105,a priori/glouton/reseau
+tout,588,5,0.003,2,False,1.92528,1.25059,False,2.55889,2.85562,80,glouton/reseau
+tout,589,5,0.003,2,False,1.58709,2.46502,False,1.63633,3.03229,80,a priori/reseau
+tout,590,5,0.003,3,False,2.06753,0.662201,False,4.40935,4.345,105,glouton/a priori/a priori
+tout,591,5,0.003,2,False,1.00401,0.370627,False,1.99435,2.75862,80,a priori/reseau
+tout,592,5,0.003,3,False,1.55333,0.656327,False,4.38777,5.23743,105,a priori/a priori/reseau
+tout,593,5,0.003,3,False,2.712,1.9483,False,3.67784,6.94189,105,glouton/reseau/a priori
+tout,594,5,0.003,3,False,0.755664,0.581625,False,1.19413,4.96303,105,reseau/glouton/division
+tout,595,5,0.003,3,False,1.1027,0.838625,False,1.53849,4.60395,105,glouton/a priori/a priori
+tout,596,5,0.003,2,False,2.3958,1.10996,False,1.20535,2.3428,80,a priori/reseau
+tout,597,5,0.003,2,False,1.1971,7.12852,False,0.335541,3.4948,80,reseau/a priori
+tout,598,5,0.003,2,False,0.842076,0.439523,False,2.9583,3.00331,80,glouton/reseau
+tout,599,5,0.003,4,False,1.38683,0.295672,False,1.44823,5.71749,132,glouton/reseau/division/division

@@ -1,0 +1,2161 @@
+geometrie,n,sigma,n_est,exact,err_pos,err_int,reussite,sep_min,temps
+cercle (projet),2,0.0001,2,True,0.00653924,0.000777456,True,5.3067,0.389122
+cercle (projet),2,0.0001,2,True,0.0017848,0.00109151,True,10.8337,0.423516
+cercle (projet),2,0.0001,2,True,0.0177334,0.0092679,True,9.65745,0.624575
+cercle (projet),2,0.0001,2,True,0.0290066,0.00782272,True,9.78972,0.198443
+cercle (projet),2,0.0001,2,True,0.0138817,0.00743927,True,2.72439,0.513362
+cercle (projet),2,0.0001,2,True,0.00606184,0.000671199,True,12.6363,0.349441
+cercle (projet),2,0.0001,2,True,0.169552,0.0535955,True,4.89122,0.488502
+cercle (projet),2,0.0001,2,True,0.0902577,0.0523302,True,6.29362,0.497587
+cercle (projet),2,0.0001,2,True,0.125012,0.275203,True,0.844288,0.799026
+cercle (projet),2,0.0001,2,True,0.115762,0.00994557,True,8.3758,0.25327
+cercle (projet),2,0.0001,2,True,0.0975975,0.00571915,True,7.83433,0.490105
+cercle (projet),2,0.0001,2,True,0.00267669,0.000710381,True,12.3961,0.488187
+cercle (projet),2,0.0001,2,True,0.00924608,0.00207232,True,7.91402,0.296795
+cercle (projet),2,0.0001,2,True,0.0186908,0.00532031,True,6.80128,0.390328
+cercle (projet),2,0.0001,2,True,0.0147667,0.00255779,True,6.17826,0.418123
+cercle (projet),2,0.0001,2,True,0.00541164,0.00509267,True,5.1826,0.512925
+cercle (projet),2,0.0001,2,True,0.0819719,0.030845,True,5.80939,0.538328
+cercle (projet),2,0.0001,2,True,0.131044,0.108728,True,2.74467,0.877327
+cercle (projet),2,0.0001,2,True,0.0240007,0.00125979,True,6.67872,0.35534
+cercle (projet),2,0.0001,2,True,0.0107481,0.00351727,True,9.59565,0.422848
+cercle (projet),2,0.0001,2,True,0.0706825,0.00872976,True,9.62921,0.476664
+cercle (projet),2,0.0001,2,True,0.00420357,0.00035381,True,12.7839,0.410457
+cercle (projet),2,0.0001,2,True,0.0240873,0.0102386,True,6.41878,0.208185
+cercle (projet),2,0.0001,2,True,0.000454535,0.000362055,True,8.17382,0.200946
+cercle (projet),2,0.0001,2,True,0.00202518,0.000960525,True,8.5532,0.210201
+cercle (projet),2,0.0001,2,True,0.00543082,0.00495716,True,19.8663,0.246724
+cercle (projet),2,0.0001,2,True,0.00932569,0.00650479,True,5.13793,0.224058
+cercle (projet),2,0.0001,2,True,0.0754632,0.0317651,True,2.2508,0.277695
+cercle (projet),2,0.0001,2,True,0.029706,0.00795279,True,4.99479,0.212913
+cercle (projet),2,0.0001,2,True,0.0956943,0.016477,True,3.76354,0.265123
+cercle (projet),2,0.001,2,True,0.118404,0.0412037,True,11.8143,0.150478
+cercle (projet),2,0.001,2,True,0.238387,0.0185581,True,6.35529,0.156874
+cercle (projet),2,0.001,2,True,0.252098,0.0121757,True,7.86007,0.197455
+cercle (projet),2,0.001,2,True,0.544464,0.101974,True,7.90771,0.22178
+cercle (projet),2,0.001,2,True,0.156483,0.0131898,True,4.37814,0.38236
+cercle (projet),2,0.001,2,True,0.337024,0.134181,True,2.78521,0.36068
+cercle (projet),2,0.001,2,True,0.0426386,0.00639133,True,16.4811,0.191668
+cercle (projet),2,0.001,2,True,0.454163,0.191024,True,4.15234,0.169111
+cercle (projet),2,0.001,2,True,0.184516,0.0935332,True,5.08639,0.312889
+cercle (projet),2,0.001,2,True,0.0920198,0.0516141,True,2.50518,0.266518
+cercle (projet),2,0.001,2,True,0.200894,0.0450065,True,10.1023,0.124357
+cercle (projet),2,0.001,2,True,0.118188,0.0357337,True,4.40909,0.157468
+cercle (projet),2,0.001,2,True,1.03089,0.362329,False,3.46065,0.382606
+cercle (projet),2,0.001,2,True,0.307503,0.0589784,True,7.18131,0.340855
+cercle (projet),2,0.001,2,True,0.307858,0.196688,True,7.39959,0.286113
+cercle (projet),2,0.001,2,True,0.177008,0.00918503,True,11.3777,0.183428
+cercle (projet),2,0.001,1,False,0.170938,0.112336,False,2.24204,0.238985
+cercle (projet),2,0.001,2,True,0.139662,0.0114374,True,11.3128,0.421531
+cercle (projet),2,0.001,1,False,0.0704334,0.0133301,False,4.79829,0.242879
+cercle (projet),2,0.001,2,True,0.0145818,0.00149891,True,18.17,0.320822
+cercle (projet),2,0.001,2,True,0.126181,0.066953,True,2.52043,0.335971
+cercle (projet),2,0.001,2,True,0.568341,0.21527,True,4.50066,0.367657
+cercle (projet),2,0.001,2,True,1.21491,0.335452,False,12.8193,0.400422
+cercle (projet),2,0.001,2,True,0.12845,0.00783444,True,6.30592,0.372791
+cercle (projet),2,0.001,2,True,0.160658,0.0502477,True,9.74221,0.358958
+cercle (projet),2,0.001,2,True,0.0517676,0.0186196,True,9.91452,0.155159
+cercle (projet),2,0.001,2,True,0.420742,0.377576,True,7.7567,0.204633
+cercle (projet),2,0.001,2,True,0.143721,0.0213163,True,11.9197,0.147179
+cercle (projet),2,0.001,2,True,0.167594,0.067955,True,4.50236,0.346937
+cercle (projet),2,0.001,2,True,0.154699,0.00473619,True,10.0119,0.354194
+cercle (projet),3,0.0001,3,True,1.0977,0.261764,False,6.81582,0.911789
+cercle (projet),3,0.0001,3,True,0.614614,0.923646,False,1.92701,0.930073
+cercle (projet),3,0.0001,2,False,0.0183936,0.0381536,False,0.737589,0.499832
+cercle (projet),3,0.0001,3,True,0.114867,0.0226841,True,3.42333,0.759632
+cercle (projet),3,0.0001,3,True,0.803939,0.239499,True,3.83641,0.898904
+cercle (projet),3,0.0001,3,True,0.632928,0.254531,True,4.91041,0.607279
+cercle (projet),3,0.0001,3,True,0.327157,0.100942,True,4.18745,0.48402
+cercle (projet),3,0.0001,3,True,0.0748042,0.0291359,True,6.09142,0.423997
+cercle (projet),3,0.0001,3,True,0.134662,0.273754,True,2.97167,0.412817
+cercle (projet),3,0.0001,3,True,2.50279,0.770385,False,3.25396,0.463421
+cercle (projet),3,0.0001,3,True,0.380947,0.163578,True,3.79514,0.555251
+cercle (projet),3,0.0001,4,False,1.52287,0.701365,False,3.50067,0.796484
+cercle (projet),3,0.0001,2,False,0.141256,0.736134,False,0.344324,0.214275
+cercle (projet),3,0.0001,3,True,0.090419,0.0486889,True,3.78127,0.487456
+cercle (projet),3,0.0001,2,False,0.875938,0.999067,False,1.49076,0.591332
+cercle (projet),3,0.0001,3,True,0.0643669,0.0843716,True,2.6454,0.574679
+cercle (projet),3,0.0001,3,True,0.109168,0.0612059,True,4.87455,0.672395
+cercle (projet),3,0.0001,3,True,0.899827,0.634091,False,1.95903,0.735987
+cercle (projet),3,0.0001,3,True,0.0544628,0.0339532,True,2.39789,0.890153
+cercle (projet),3,0.0001,3,True,0.406477,0.381144,False,1.51627,1.22444
+cercle (projet),3,0.0001,2,False,1.51732,1.18919,False,1.01341,0.556798
+cercle (projet),3,0.0001,3,True,0.0287384,0.0115299,True,4.51336,0.704598
+cercle (projet),3,0.0001,3,True,0.0612168,0.00959299,True,8.18017,0.616615
+cercle (projet),3,0.0001,2,False,0.413685,0.661901,False,1.05418,0.383588
+cercle (projet),3,0.0001,3,True,0.584513,0.307993,True,4.58861,0.392615
+cercle (projet),3,0.0001,3,True,0.113814,0.0408605,True,6.63029,0.636163
+cercle (projet),3,0.0001,3,True,0.104779,0.0218144,True,4.20771,0.878484
+cercle (projet),3,0.0001,3,True,0.163868,0.0679833,True,4.32706,0.501741
+cercle (projet),3,0.0001,3,True,0.204121,0.158822,True,2.79696,0.464157
+cercle (projet),3,0.0001,3,True,0.223017,0.161606,True,3.41743,0.410687
+cercle (projet),3,0.001,3,True,0.178993,0.161248,True,2.925,0.684814
+cercle (projet),3,0.001,2,False,1.67804,1.10451,False,2.09032,0.419864
+cercle (projet),3,0.001,3,True,1.90222,1.64977,False,1.77687,0.575066
+cercle (projet),3,0.001,3,True,1.85178,2.73542,False,2.83932,0.887267
+cercle (projet),3,0.001,2,False,0.387337,0.199616,False,4.6727,0.424846
+cercle (projet),3,0.001,2,False,0.550255,0.247313,False,3.4725,0.378133
+cercle (projet),3,0.001,3,True,0.0598035,0.0237062,True,2.85246,0.583067
+cercle (projet),3,0.001,3,True,0.173868,0.0387371,True,2.42783,0.409333
+cercle (projet),3,0.001,3,True,0.0793341,0.050296,True,4.07339,0.589669
+cercle (projet),3,0.001,1,False,0.205173,0.15336,False,1.82249,0.259781
+cercle (projet),3,0.001,2,False,1.79486,1.44952,False,4.22216,0.492472
+cercle (projet),3,0.001,2,False,0.219956,0.775463,False,0.745933,0.267338
+cercle (projet),3,0.001,3,True,0.108306,0.143237,True,8.5751,0.448404
+cercle (projet),3,0.001,2,False,1.80501,5.24032,False,0.971572,0.180886
+cercle (projet),3,0.001,2,False,0.825936,0.100165,False,3.70414,0.175162
+cercle (projet),3,0.001,2,False,0.800551,0.230009,False,6.08018,0.179274
+cercle (projet),3,0.001,1,False,0.821898,2.76535,False,1.62128,0.275258
+cercle (projet),3,0.001,3,True,0.083009,0.0448853,True,5.48805,0.591631
+cercle (projet),3,0.001,2,False,1.73982,1.74547,False,2.83753,0.395988
+cercle (projet),3,0.001,3,True,0.318469,0.0891761,True,5.70011,0.362562
+cercle (projet),3,0.001,2,False,0.484328,0.345399,False,3.48512,0.334487
+cercle (projet),3,0.001,3,True,0.165404,0.0506298,True,5.4402,0.312105
+cercle (projet),3,0.001,2,False,0.54669,0.092983,False,2.69113,0.176197
+cercle (projet),3,0.001,2,False,0.59849,0.977141,False,1.58385,0.206978
+cercle (projet),3,0.001,2,False,0.0964551,0.024233,False,3.88663,0.460567
+cercle (projet),3,0.001,1,False,0.036751,0.0245772,False,3.88521,0.261841
+cercle (projet),3,0.001,3,True,0.242323,0.0617965,True,3.28425,0.581722
+cercle (projet),3,0.001,2,False,1.23166,0.327588,False,3.91717,0.385491
+cercle (projet),3,0.001,3,True,1.33522,0.362918,False,4.70878,0.560419
+cercle (projet),3,0.001,2,False,1.82993,1.74526,False,3.5947,0.377842
+cercle (projet),5,0.0001,4,False,0.949662,0.231989,False,2.51678,1.54994
+cercle (projet),5,0.0001,4,False,0.799228,0.58232,False,1.39802,0.876764
+cercle (projet),5,0.0001,4,False,0.188722,0.640792,False,0.587774,1.37125
+cercle (projet),5,0.0001,4,False,0.307944,0.281565,False,1.5674,1.35131
+cercle (projet),5,0.0001,4,False,0.0967247,0.16279,False,0.625607,1.312
+cercle (projet),5,0.0001,4,False,0.270506,0.04424,False,1.96988,1.86334
+cercle (projet),5,0.0001,4,False,0.180363,0.855471,False,0.872029,0.966402
+cercle (projet),5,0.0001,4,False,1.44958,1.44601,False,0.932015,0.592355
+cercle (projet),5,0.0001,5,True,2.22013,0.754482,False,1.78338,10.6761
+cercle (projet),5,0.0001,5,True,0.0804973,0.00179778,True,2.52467,0.736972
+cercle (projet),5,0.0001,4,False,1.351,0.613774,False,4.05486,1.30074
+cercle (projet),5,0.0001,3,False,1.52385,0.866621,False,3.99358,0.469249
+cercle (projet),5,0.0001,4,False,1.37973,3.56391,False,1.28702,0.933717
+cercle (projet),5,0.0001,5,True,0.0579073,0.0239664,True,4.37836,0.911807
+cercle (projet),5,0.0001,4,False,0.707061,0.384165,False,2.60496,1.40883
+cercle (projet),5,0.0001,4,False,0.548079,0.200735,False,3.72078,2.5748
+cercle (projet),5,0.0001,3,False,1.07124,1.55208,False,2.38406,0.97475
+cercle (projet),5,0.0001,3,False,0.855501,0.951753,False,1.8429,0.79631
+cercle (projet),5,0.0001,4,False,0.154874,0.0758917,False,1.465,1.08225
+cercle (projet),5,0.0001,4,False,0.328764,0.149704,False,4.13821,1.57332
+cercle (projet),5,0.0001,5,True,0.439164,0.208825,True,4.10685,6.937
+cercle (projet),5,0.0001,5,True,0.40447,0.297821,False,0.673725,3.28832
+cercle (projet),5,0.0001,5,True,0.171679,0.0649239,True,2.00109,2.49113
+cercle (projet),5,0.0001,4,False,1.98671,2.3726,False,2.95955,1.47813
+cercle (projet),5,0.0001,4,False,0.625429,1.27752,False,1.92323,1.49401
+cercle (projet),5,0.0001,4,False,0.146813,0.170123,False,1.06243,1.29736
+cercle (projet),5,0.0001,5,True,2.83373,1.81487,False,1.96252,1.31253
+cercle (projet),5,0.0001,4,False,0.276462,0.105776,False,2.5555,0.580024
+cercle (projet),5,0.0001,4,False,0.909167,1.09121,False,1.8801,0.506518
+cercle (projet),5,0.0001,5,True,0.306091,0.25062,True,3.76217,0.848138
+cercle (projet),5,0.001,2,False,2.45559,1.74429,False,0.788315,0.449298
+cercle (projet),5,0.001,2,False,1.05731,0.675336,False,1.13669,0.458158
+cercle (projet),5,0.001,4,False,1.43468,0.749009,False,3.22524,1.07068
+cercle (projet),5,0.001,3,False,0.4278,1.51389,False,0.908749,0.759249
+cercle (projet),5,0.001,4,False,0.0936202,0.0818821,False,3.05658,0.714539
+cercle (projet),5,0.001,5,True,4.35989,1.16825,False,3.33251,1.02872
+cercle (projet),5,0.001,5,True,1.3697,1.17035,False,2.34406,0.70314
+cercle (projet),5,0.001,4,False,0.590147,0.139288,False,1.5137,0.366987
+cercle (projet),5,0.001,2,False,0.970168,0.950305,False,1.38895,0.323947
+cercle (projet),5,0.001,3,False,0.387294,0.407816,False,0.582275,0.548151
+cercle (projet),5,0.001,3,False,0.249295,0.160862,False,1.75068,0.47061
+cercle (projet),5,0.001,2,False,2.44348,0.693521,False,1.98583,0.388914
+cercle (projet),5,0.001,4,False,0.24045,0.102835,False,1.0122,0.855795
+cercle (projet),5,0.001,5,True,2.25427,0.387979,False,1.80659,1.41835
+cercle (projet),5,0.001,4,False,6.35379,6.06447,False,3.03753,0.512727
+cercle (projet),5,0.001,4,False,0.536486,0.536838,False,2.75348,0.489023
+cercle (projet),5,0.001,4,False,0.687895,0.568344,False,2.02487,0.923714
+cercle (projet),5,0.001,2,False,1.35665,1.89556,False,1.9725,0.336472
+cercle (projet),5,0.001,3,False,1.73336,2.47089,False,2.83455,0.526139
+cercle (projet),5,0.001,4,False,0.402197,0.129828,False,2.42732,0.861979
+cercle (projet),5,0.001,3,False,2.99642,1.20194,False,2.57164,0.548971
+cercle (projet),5,0.001,3,False,0.778998,1.13792,False,0.370865,0.568699
+cercle (projet),5,0.001,4,False,1.50097,0.651719,False,3.71511,0.846489
+cercle (projet),5,0.001,3,False,0.504242,0.575221,False,2.16823,0.249081
+cercle (projet),5,0.001,3,False,3.70001,1.21342,False,4.83454,0.431588
+cercle (projet),5,0.001,4,False,0.274276,0.0823397,False,3.86952,1.03105
+cercle (projet),5,0.001,3,False,1.03662,0.616368,False,2.6141,0.611105
+cercle (projet),5,0.001,2,False,0.942793,0.533659,False,3.50251,0.292473
+cercle (projet),5,0.001,3,False,1.87736,0.659401,False,2.2841,0.702182
+cercle (projet),5,0.001,2,False,0.586879,3.64675,False,1.40104,0.3088
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.000229454,0.00149659,True,5.3067,0.482919
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0126713,0.00450142,True,10.8337,0.432751
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00568396,0.00396466,True,9.65745,0.436843
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0177532,0.00617146,True,9.78972,0.454097
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.297364,0.0339113,True,2.72439,0.16883
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00229898,0.000268086,True,12.6363,0.201152
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0791125,0.0247572,True,4.89122,0.400389
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0228127,0.0180444,True,6.29362,0.493481
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0354538,0.0731118,True,0.844288,2.18784
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.059477,0.00519128,True,8.3758,0.366763
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0370123,0.00399269,True,7.83433,0.538514
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00577333,0.00663228,True,12.3961,0.263802
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00627365,0.0015502,True,7.91402,0.368156
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00689819,0.000153908,True,6.80128,0.501831
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.892344,0.09465,True,6.17826,0.248445
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.998736,0.118574,True,5.1826,0.212504
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0430359,0.0130646,True,5.80939,0.240269
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0328156,0.0268185,True,2.74467,0.298378
+cercle x0.8 (coupe les coins),2,0.0001,2,True,2.00822,0.251219,False,6.67872,0.411504
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00372994,0.00166928,True,9.59565,0.391303
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0509594,0.00161526,True,9.62921,0.234962
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.004035,0.000889853,True,12.7839,0.218472
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00589412,0.00313307,True,6.41878,0.485783
+cercle x0.8 (coupe les coins),2,0.0001,2,True,1.7472,0.176899,False,8.17382,0.459464
+cercle x0.8 (coupe les coins),2,0.0001,2,True,1.29308,0.134691,False,8.5532,0.432284
+cercle x0.8 (coupe les coins),2,0.0001,2,True,2.08718,0.2078,False,19.8663,0.387439
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00367629,0.00180046,True,5.13793,0.384089
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.062481,0.0326722,True,2.2508,0.183666
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.00365502,0.00316996,True,4.99479,0.188419
+cercle x0.8 (coupe les coins),2,0.0001,2,True,0.0667272,0.0271758,True,3.76354,0.197194
+cercle x0.8 (coupe les coins),2,0.001,2,True,1.63073,0.211775,False,11.8143,0.260308
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.13042,0.0184579,True,6.35529,0.446891
+cercle x0.8 (coupe les coins),2,0.001,2,True,2.46755,0.313837,False,7.86007,0.489764
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.565298,0.117545,True,7.90771,0.447707
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.0224317,0.0194472,True,4.37814,0.340779
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.121202,0.0278983,True,2.78521,0.299964
+cercle x0.8 (coupe les coins),2,0.001,2,True,3.17569,0.307666,False,16.4811,0.527537
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.274955,0.102362,True,4.15234,0.363962
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.164364,0.010068,True,5.08639,0.193264
+cercle x0.8 (coupe les coins),2,0.001,2,True,2.40261,0.257318,False,2.50518,0.155456
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.093151,0.0327562,True,10.1023,0.126178
+cercle x0.8 (coupe les coins),2,0.001,2,True,1.59232,0.168796,False,4.40909,0.145558
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.110336,0.039836,True,3.46065,0.314388
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.221419,0.0291096,True,7.18131,0.253528
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.208445,0.143647,True,7.39959,0.201794
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.0887459,0.0114019,True,11.3777,0.161648
+cercle x0.8 (coupe les coins),2,0.001,1,False,0.138032,0.108849,False,2.24204,0.221344
+cercle x0.8 (coupe les coins),2,0.001,2,True,1.26853,0.130844,False,11.3128,0.356138
+cercle x0.8 (coupe les coins),2,0.001,2,True,4.27892,0.0942957,False,4.79829,0.171449
+cercle x0.8 (coupe les coins),2,0.001,2,True,2.38165,0.233874,False,18.17,0.140012
+cercle x0.8 (coupe les coins),2,0.001,4,False,2.91473,0.832833,False,2.52043,1.46007
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.201296,0.0609836,True,4.50066,0.388112
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.228184,0.088374,True,12.8193,0.449867
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.347358,0.0429925,True,6.30592,0.476515
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.0449949,0.0208523,True,9.74221,0.180586
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.0359619,0.0122029,True,9.91452,0.242008
+cercle x0.8 (coupe les coins),2,0.001,2,True,1.11804,0.0650889,False,7.7567,0.261761
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.033097,0.0108772,True,11.9197,0.19433
+cercle x0.8 (coupe les coins),2,0.001,2,True,0.0504445,0.00462222,True,4.50236,0.398728
+cercle x0.8 (coupe les coins),2,0.001,2,True,2.4529,0.240092,False,10.0119,0.294616
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.569979,0.166118,True,6.81582,0.427148
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.173074,0.165861,True,1.92701,0.42806
+cercle x0.8 (coupe les coins),3,0.0001,2,False,0.0206587,0.0325691,False,0.737589,0.454764
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0241867,0.00218594,True,3.42333,0.765803
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.17694,0.0263162,True,3.83641,0.75879
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0423544,0.0236392,True,4.91041,0.691641
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.131373,0.0478147,True,4.18745,0.489244
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.033713,0.0155935,True,6.09142,0.444297
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.192304,0.17812,True,2.97167,0.385703
+cercle x0.8 (coupe les coins),3,0.0001,3,True,1.27897,0.566724,False,3.25396,0.34196
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.070386,0.0278567,True,3.79514,0.798109
+cercle x0.8 (coupe les coins),3,0.0001,4,False,0.156142,0.0738838,False,3.50067,1.50883
+cercle x0.8 (coupe les coins),3,0.0001,2,False,0.505655,0.74032,False,0.344324,0.503324
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.025889,0.0150261,True,3.78127,0.418812
+cercle x0.8 (coupe les coins),3,0.0001,2,False,0.697077,0.899529,False,1.49076,0.488421
+cercle x0.8 (coupe les coins),3,0.0001,3,True,1.13214,0.134517,False,2.6454,0.50434
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.593752,0.0643716,True,4.87455,0.580684
+cercle x0.8 (coupe les coins),3,0.0001,3,True,1.97361,0.358127,False,1.95903,0.906826
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0666827,0.0746081,True,2.39789,0.821917
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0307983,0.0240865,True,1.51627,0.484303
+cercle x0.8 (coupe les coins),3,0.0001,2,False,0.970213,0.619491,False,1.01341,0.226112
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0181698,0.00706529,True,4.51336,0.352573
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0329858,0.00214288,True,8.18017,0.281886
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.50515,1.01266,False,1.05418,0.451056
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.122545,0.0412646,True,4.58861,0.461422
+cercle x0.8 (coupe les coins),3,0.0001,3,True,1.01954,0.120908,False,6.63029,0.257961
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0612739,0.0101365,True,4.20771,0.787022
+cercle x0.8 (coupe les coins),3,0.0001,5,False,3.99829,0.886803,False,4.32706,0.869672
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0590277,0.049262,True,2.79696,0.329512
+cercle x0.8 (coupe les coins),3,0.0001,3,True,0.0137227,0.00225043,True,3.41743,0.686281
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.0252643,0.0082021,True,2.925,0.574307
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.769842,0.330402,False,2.09032,0.755621
+cercle x0.8 (coupe les coins),3,0.001,5,False,2.13638,1,False,1.77687,0.9735
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.420444,0.165007,True,2.83932,0.326706
+cercle x0.8 (coupe les coins),3,0.001,3,True,1.20196,0.191674,False,4.6727,0.679418
+cercle x0.8 (coupe les coins),3,0.001,3,True,4.36792,0.936303,False,3.4725,0.547529
+cercle x0.8 (coupe les coins),3,0.001,3,True,3.47847,0.281122,False,2.85246,0.817198
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.376804,0.0412609,True,2.42783,0.577487
+cercle x0.8 (coupe les coins),3,0.001,3,True,1.74433,0.21324,False,4.07339,0.442154
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.572831,0.604835,False,1.82249,0.544455
+cercle x0.8 (coupe les coins),3,0.001,3,True,1.40438,0.663164,False,4.22216,0.621979
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.253966,0.837426,False,0.745933,0.348471
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.189157,0.0226527,True,8.5751,0.479552
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.669295,11.166,False,0.971572,0.346081
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.92459,0.341159,False,3.70414,0.358592
+cercle x0.8 (coupe les coins),3,0.001,3,True,1.9855,0.211587,False,6.08018,0.397351
+cercle x0.8 (coupe les coins),3,0.001,2,False,1.62081,0.254978,False,1.62128,0.439612
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.0259781,0.0189224,True,5.48805,0.307301
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.183755,0.12266,True,2.83753,0.254522
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.0874543,0.0361426,True,5.70011,0.264036
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.376574,0.231887,True,3.48512,0.753072
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.0586604,0.0364621,True,5.4402,0.688948
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.279424,0.0649295,False,2.69113,0.396321
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.224649,0.16339,True,1.58385,0.59127
+cercle x0.8 (coupe les coins),3,0.001,2,False,0.0513574,0.0185094,False,3.88663,0.53275
+cercle x0.8 (coupe les coins),3,0.001,2,False,1.30057,0.0509371,False,3.88521,0.387105
+cercle x0.8 (coupe les coins),3,0.001,3,True,1.32122,0.137498,False,3.28425,0.272367
+cercle x0.8 (coupe les coins),3,0.001,2,False,1.4025,0.374335,False,3.91717,0.192988
+cercle x0.8 (coupe les coins),3,0.001,3,True,0.33979,0.0682095,True,4.70878,0.292292
+cercle x0.8 (coupe les coins),3,0.001,2,False,1.69235,1.63263,False,3.5947,0.233334
+cercle x0.8 (coupe les coins),5,0.0001,4,False,0.783216,0.175571,False,2.51678,2.02016
+cercle x0.8 (coupe les coins),5,0.0001,5,True,1.33599,0.463514,False,1.39802,0.733645
+cercle x0.8 (coupe les coins),5,0.0001,6,False,3.96246,1.37689,False,0.587774,4.03471
+cercle x0.8 (coupe les coins),5,0.0001,4,False,1.60127,0.282498,False,1.5674,0.742801
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.107901,0.757474,True,0.625607,0.988705
+cercle x0.8 (coupe les coins),5,0.0001,4,False,3.04728,0.288154,False,1.96988,0.581673
+cercle x0.8 (coupe les coins),5,0.0001,4,False,0.151318,0.129851,False,0.872029,1.14245
+cercle x0.8 (coupe les coins),5,0.0001,5,True,1.66629,0.214525,False,0.932015,0.884753
+cercle x0.8 (coupe les coins),5,0.0001,5,True,1.23685,0.159949,False,1.78338,0.961661
+cercle x0.8 (coupe les coins),5,0.0001,5,True,3.20689,0.302711,False,2.52467,0.608649
+cercle x0.8 (coupe les coins),5,0.0001,4,False,1.19009,0.604081,False,4.05486,1.27298
+cercle x0.8 (coupe les coins),5,0.0001,3,False,1.59976,0.940445,False,3.99358,0.827348
+cercle x0.8 (coupe les coins),5,0.0001,6,False,4.9398,1,False,1.28702,1.44933
+cercle x0.8 (coupe les coins),5,0.0001,5,True,2.42552,0.233151,False,4.37836,1.38105
+cercle x0.8 (coupe les coins),5,0.0001,4,False,0.119014,0.0708863,False,2.60496,0.871435
+cercle x0.8 (coupe les coins),5,0.0001,5,True,1.80333,0.637378,False,3.72078,2.97227
+cercle x0.8 (coupe les coins),5,0.0001,6,False,9.44684,3044.86,False,2.38406,2.68464
+cercle x0.8 (coupe les coins),5,0.0001,4,False,1.5364,0.664481,False,1.8429,2.70395
+cercle x0.8 (coupe les coins),5,0.0001,4,False,2.33333,0.228952,False,1.465,1.09529
+cercle x0.8 (coupe les coins),5,0.0001,4,False,0.22053,0.139386,False,4.13821,1.57639
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.30892,0.0605977,True,4.10685,8.02446
+cercle x0.8 (coupe les coins),5,0.0001,5,True,1.77141,0.259952,False,0.673725,0.914824
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.102945,0.0648209,True,2.00109,2.80345
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.26298,0.0481497,True,2.95955,1.00163
+cercle x0.8 (coupe les coins),5,0.0001,5,True,2.42911,0.271969,False,1.92323,1.046
+cercle x0.8 (coupe les coins),5,0.0001,4,False,1.92374,0.194589,False,1.06243,0.483122
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.929361,0.438498,False,1.96252,1.6933
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.320121,0.552432,True,2.5555,4.78416
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.173237,0.167973,True,1.8801,5.39924
+cercle x0.8 (coupe les coins),5,0.0001,5,True,0.209374,0.0383435,True,3.76217,0.903604
+cercle x0.8 (coupe les coins),5,0.001,3,False,1.63568,1.24082,False,0.788315,0.547035
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.560661,0.78003,False,1.13669,5.15391
+cercle x0.8 (coupe les coins),5,0.001,4,False,1.47122,0.696533,False,3.22524,1.35327
+cercle x0.8 (coupe les coins),5,0.001,4,False,1.24116,0.825647,False,0.908749,1.02055
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.149446,0.0219818,False,3.05658,0.948362
+cercle x0.8 (coupe les coins),5,0.001,5,True,0.251719,0.0775724,True,3.33251,0.649312
+cercle x0.8 (coupe les coins),5,0.001,5,True,2.61871,0.22511,False,2.34406,0.577439
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.220467,0.0175697,False,1.5137,0.361692
+cercle x0.8 (coupe les coins),5,0.001,3,False,0.967826,3.71432,False,1.38895,0.474166
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.62953,4.61683,False,0.582275,1.29893
+cercle x0.8 (coupe les coins),5,0.001,3,False,2.09579,0.317018,False,1.75068,0.53182
+cercle x0.8 (coupe les coins),5,0.001,4,False,8.43902,0.960587,False,1.98583,0.707151
+cercle x0.8 (coupe les coins),5,0.001,4,False,2.32322,0.25027,False,1.0122,0.790848
+cercle x0.8 (coupe les coins),5,0.001,5,True,2.3524,0.954608,False,1.80659,2.01983
+cercle x0.8 (coupe les coins),5,0.001,5,True,6.15529,5.72547,False,3.03753,1.78503
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.727663,0.633358,False,2.75348,0.818896
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.365858,0.0327505,False,2.02487,0.992218
+cercle x0.8 (coupe les coins),5,0.001,4,False,3.52388,1.64714,False,1.9725,0.768502
+cercle x0.8 (coupe les coins),5,0.001,5,True,4.63239,1.74472,False,2.83455,1.28411
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.492374,0.116575,False,2.42732,1.54742
+cercle x0.8 (coupe les coins),5,0.001,4,False,8.43374,1.23303,False,2.57164,0.988418
+cercle x0.8 (coupe les coins),5,0.001,3,False,0.392568,1.46911,False,0.370865,0.415061
+cercle x0.8 (coupe les coins),5,0.001,4,False,1.74025,0.373838,False,3.71511,0.934936
+cercle x0.8 (coupe les coins),5,0.001,3,False,1.16061,0.591934,False,2.16823,0.585359
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.680987,0.402876,False,4.83454,1.32989
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.717038,0.0739882,False,3.86952,0.893921
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.730023,0.305804,False,2.6141,0.649183
+cercle x0.8 (coupe les coins),5,0.001,3,False,2.0583,0.672338,False,3.50251,0.999543
+cercle x0.8 (coupe les coins),5,0.001,4,False,2.37226,1.03028,False,2.2841,1.13639
+cercle x0.8 (coupe les coins),5,0.001,4,False,0.281782,0.585121,False,1.40104,0.855439
+cercle x1.5,2,0.0001,2,True,0.555406,0.271063,True,5.3067,0.284285
+cercle x1.5,2,0.0001,2,True,0.0236937,0.00471586,True,10.8337,0.212675
+cercle x1.5,2,0.0001,2,True,0.0827705,0.0276029,True,9.65745,0.404528
+cercle x1.5,2,0.0001,2,True,0.0859277,0.0198649,True,9.78972,0.486184
+cercle x1.5,2,0.0001,2,True,0.0779892,0.0546946,True,2.72439,0.573456
+cercle x1.5,2,0.0001,2,True,0.0191718,0.00438476,True,12.6363,0.427456
+cercle x1.5,2,0.0001,2,True,0.514306,0.154729,True,4.89122,1.03943
+cercle x1.5,2,0.0001,2,True,0.264892,0.0158979,True,6.29362,0.434239
+cercle x1.5,2,0.0001,1,False,0.358381,0.725144,False,0.844288,0.854339
+cercle x1.5,2,0.0001,2,True,0.219739,0.0160522,True,8.3758,0.476904
+cercle x1.5,2,0.0001,2,True,0.83546,0.147326,True,7.83433,0.520796
+cercle x1.5,2,0.0001,2,True,0.0126678,0.00767266,True,12.3961,0.47133
+cercle x1.5,2,0.0001,2,True,0.118471,0.0638322,True,7.91402,0.456513
+cercle x1.5,2,0.0001,2,True,0.072219,0.0292303,True,6.80128,0.505435
+cercle x1.5,2,0.0001,2,True,0.0149606,0.00312155,True,6.17826,0.31641
+cercle x1.5,2,0.0001,2,True,0.035426,0.0104791,True,5.1826,0.415229
+cercle x1.5,2,0.0001,2,True,0.403643,0.120467,True,5.80939,0.570663
+cercle x1.5,2,0.0001,2,True,0.697586,0.620008,False,2.74467,0.640254
+cercle x1.5,2,0.0001,2,True,0.0431136,0.00243852,True,6.67872,0.417475
+cercle x1.5,2,0.0001,2,True,0.0388212,0.0104373,True,9.59565,0.487017
+cercle x1.5,2,0.0001,2,True,0.197598,0.0426455,True,9.62921,0.526301
+cercle x1.5,2,0.0001,2,True,0.0179901,0.00336492,True,12.7839,0.371973
+cercle x1.5,2,0.0001,2,True,0.0962074,0.0324119,True,6.41878,0.369359
+cercle x1.5,2,0.0001,2,True,0.0500257,0.0203783,True,8.17382,0.161418
+cercle x1.5,2,0.0001,2,True,0.0124346,0.00202743,True,8.5532,0.195623
+cercle x1.5,2,0.0001,2,True,0.138964,0.0244448,True,19.8663,0.595872
+cercle x1.5,2,0.0001,2,True,0.109325,0.0699052,True,5.13793,0.530779
+cercle x1.5,2,0.0001,2,True,0.113865,0.0109556,True,2.2508,0.837107
+cercle x1.5,2,0.0001,2,True,0.280675,0.102353,True,4.99479,0.529338
+cercle x1.5,2,0.0001,2,True,0.626604,0.567926,True,3.76354,0.578556
+cercle x1.5,2,0.001,2,True,1.6551,0.351859,False,11.8143,0.280655
+cercle x1.5,2,0.001,2,True,0.491484,0.0355466,True,6.35529,0.186127
+cercle x1.5,2,0.001,2,True,0.487934,0.110332,True,7.86007,0.210702
+cercle x1.5,2,0.001,2,True,0.784674,0.126662,True,7.90771,0.21918
+cercle x1.5,2,0.001,2,True,0.452008,0.00571245,True,4.37814,0.367319
+cercle x1.5,2,0.001,1,False,1.38369,1.50204,False,2.78521,0.264713
+cercle x1.5,2,0.001,2,True,0.145581,0.0459389,True,16.4811,0.318866
+cercle x1.5,2,0.001,1,False,1.03498,0.313894,False,4.15234,0.274329
+cercle x1.5,2,0.001,2,True,0.952267,0.504441,True,5.08639,0.46623
+cercle x1.5,2,0.001,2,True,0.804705,0.844579,False,2.50518,0.187774
+cercle x1.5,2,0.001,2,True,0.30416,0.0632344,True,10.1023,0.188977
+cercle x1.5,2,0.001,2,True,0.766369,0.362319,True,4.40909,0.171021
+cercle x1.5,2,0.001,1,False,0.753129,0.343842,False,3.46065,0.290664
+cercle x1.5,2,0.001,2,True,0.664277,0.159749,True,7.18131,0.443157
+cercle x1.5,2,0.001,2,True,0.569797,0.349605,True,7.39959,0.373264
+cercle x1.5,2,0.001,2,True,0.425536,0.0555532,True,11.3777,0.400343
+cercle x1.5,2,0.001,1,False,0.208781,0.113094,False,2.24204,0.161213
+cercle x1.5,2,0.001,2,True,0.326855,0.00609183,True,11.3128,0.381712
+cercle x1.5,2,0.001,1,False,0.112547,0.00719655,False,4.79829,0.262163
+cercle x1.5,2,0.001,2,True,0.105082,0.0136015,True,18.17,0.315524
+cercle x1.5,2,0.001,1,False,0.738283,0.335288,False,2.52043,0.241404
+cercle x1.5,2,0.001,2,True,3.41607,0.701019,False,4.50066,0.379536
+cercle x1.5,2,0.001,2,True,3.44966,0.539199,False,12.8193,0.298679
+cercle x1.5,2,0.001,2,True,0.626672,0.220157,True,6.30592,0.246658
+cercle x1.5,2,0.001,2,True,0.801427,0.164374,True,9.74221,0.284288
+cercle x1.5,2,0.001,2,True,0.235692,0.0199219,True,9.91452,0.29175
+cercle x1.5,2,0.001,2,True,3.87196,5.37232,False,7.7567,0.441826
+cercle x1.5,2,0.001,2,True,0.634582,0.102166,True,11.9197,0.335386
+cercle x1.5,2,0.001,2,True,0.962145,0.325729,True,4.50236,0.379437
+cercle x1.5,2,0.001,2,True,0.283854,0.0499713,True,10.0119,0.147778
+cercle x1.5,3,0.0001,3,True,2.96285,0.489536,False,6.81582,0.412879
+cercle x1.5,3,0.0001,2,False,0.495219,0.362831,False,1.92701,0.525996
+cercle x1.5,3,0.0001,2,False,0.0892567,0.0539768,False,0.737589,0.476499
+cercle x1.5,3,0.0001,3,True,0.190171,0.0346586,True,3.42333,0.640832
+cercle x1.5,3,0.0001,2,False,0.225771,0.110349,False,3.83641,0.450694
+cercle x1.5,3,0.0001,3,True,2.83012,0.739741,False,4.91041,0.495347
+cercle x1.5,3,0.0001,3,True,1.31695,0.440836,False,4.18745,0.926557
+cercle x1.5,3,0.0001,3,True,0.393796,0.143927,True,6.09142,0.822225
+cercle x1.5,3,0.0001,2,False,0.150712,0.0873223,False,2.97167,0.524167
+cercle x1.5,3,0.0001,2,False,1.14217,0.200794,False,3.25396,0.449729
+cercle x1.5,3,0.0001,2,False,0.187538,0.0896352,False,3.79514,0.865206
+cercle x1.5,3,0.0001,3,True,5.45481,1.60514,False,3.50067,0.956138
+cercle x1.5,3,0.0001,2,False,0.127095,0.738495,False,0.344324,0.446786
+cercle x1.5,3,0.0001,3,True,0.126443,0.00734731,True,3.78127,1.43853
+cercle x1.5,3,0.0001,2,False,1.10663,1.07225,False,1.49076,0.863734
+cercle x1.5,3,0.0001,2,False,0.221037,0.116165,False,2.6454,0.394558
+cercle x1.5,3,0.0001,3,True,0.753346,0.400275,True,4.87455,0.939273
+cercle x1.5,3,0.0001,2,False,0.650561,0.377783,False,1.95903,0.260547
+cercle x1.5,3,0.0001,3,True,0.355167,0.41714,True,2.39789,0.960239
+cercle x1.5,3,0.0001,2,False,1.12286,0.321694,False,1.51627,0.529582
+cercle x1.5,3,0.0001,2,False,1.01537,4.4044,False,1.01341,1.20674
+cercle x1.5,3,0.0001,3,True,0.32074,0.168387,True,4.51336,0.820594
+cercle x1.5,3,0.0001,3,True,0.0788562,0.0278808,True,8.18017,1.10537
+cercle x1.5,3,0.0001,2,False,0.424916,0.656809,False,1.05418,0.591825
+cercle x1.5,3,0.0001,3,True,1.58713,1.06596,False,4.58861,0.529962
+cercle x1.5,3,0.0001,3,True,0.571769,0.197801,True,6.63029,0.823865
+cercle x1.5,3,0.0001,3,True,0.452644,0.190503,True,4.20771,1.11283
+cercle x1.5,3,0.0001,3,True,3.19012,0.748655,False,4.32706,2.14494
+cercle x1.5,3,0.0001,3,True,1.26319,1.18569,False,2.79696,1.65071
+cercle x1.5,3,0.0001,3,True,2.96011,0.825661,False,3.41743,0.954276
+cercle x1.5,3,0.001,2,False,0.488238,0.263319,False,2.925,0.448641
+cercle x1.5,3,0.001,1,False,1.0577,1.04499,False,2.09032,0.202326
+cercle x1.5,3,0.001,2,False,0.603932,0.509612,False,1.77687,0.446295
+cercle x1.5,3,0.001,2,False,3.98699,1.29349,False,2.83932,0.466141
+cercle x1.5,3,0.001,2,False,0.387117,0.160521,False,4.6727,0.189922
+cercle x1.5,3,0.001,2,False,0.666272,0.266815,False,3.4725,0.220301
+cercle x1.5,3,0.001,3,True,2.19823,0.806635,False,2.85246,0.329617
+cercle x1.5,3,0.001,2,False,1.11374,0.968405,False,2.42783,0.180381
+cercle x1.5,3,0.001,3,True,0.73784,0.431254,True,4.07339,0.728892
+cercle x1.5,3,0.001,1,False,0.276967,0.157603,False,1.82249,0.196337
+cercle x1.5,3,0.001,2,False,1.94174,1.41714,False,4.22216,0.401895
+cercle x1.5,3,0.001,2,False,0.664317,0.590012,False,0.745933,0.195111
+cercle x1.5,3,0.001,3,True,1.81548,0.974286,False,8.5751,0.524033
+cercle x1.5,3,0.001,1,False,0.745664,0.311031,False,0.971572,0.080914
+cercle x1.5,3,0.001,2,False,4.90981,0.707944,False,3.70414,0.158997
+cercle x1.5,3,0.001,2,False,0.797764,0.216631,False,6.08018,0.201348
+cercle x1.5,3,0.001,1,False,0.731575,2.74787,False,1.62128,0.183388
+cercle x1.5,3,0.001,3,True,1.72183,1.18732,False,5.48805,0.576317
+cercle x1.5,3,0.001,2,False,1.7406,0.97824,False,2.83753,0.365162
+cercle x1.5,3,0.001,3,True,1.42106,0.281808,False,5.70011,0.664068
+cercle x1.5,3,0.001,2,False,0.589689,0.437503,False,3.48512,0.28212
+cercle x1.5,3,0.001,3,True,0.695887,0.257209,True,5.4402,0.323828
+cercle x1.5,3,0.001,2,False,1.77493,0.267376,False,2.69113,0.185355
+cercle x1.5,3,0.001,2,False,0.702656,1.33079,False,1.58385,0.187321
+cercle x1.5,3,0.001,2,False,0.54197,0.133294,False,3.88663,0.429465
+cercle x1.5,3,0.001,1,False,0.107314,0.0375757,False,3.88521,0.32042
+cercle x1.5,3,0.001,2,False,0.541023,0.203012,False,3.28425,0.414381
+cercle x1.5,3,0.001,2,False,1.66306,0.463303,False,3.91717,0.475178
+cercle x1.5,3,0.001,2,False,1.60862,0.757433,False,4.70878,0.398042
+cercle x1.5,3,0.001,2,False,1.37771,0.43784,False,3.5947,0.216685
+cercle x1.5,5,0.0001,4,False,2.63404,0.702425,False,2.51678,0.977694
+cercle x1.5,5,0.0001,3,False,0.512552,0.0901367,False,1.39802,0.392
+cercle x1.5,5,0.0001,4,False,0.526297,0.718346,False,0.587774,1.82226
+cercle x1.5,5,0.0001,3,False,2.21113,5.18793,False,1.5674,0.666961
+cercle x1.5,5,0.0001,3,False,1.42986,0.416024,False,0.625607,0.537335
+cercle x1.5,5,0.0001,4,False,2.10577,2.89202,False,1.96988,1.40235
+cercle x1.5,5,0.0001,3,False,0.392456,0.208493,False,0.872029,0.627611
+cercle x1.5,5,0.0001,4,False,1.43734,2.37427,False,0.932015,1.1035
+cercle x1.5,5,0.0001,4,False,10.9394,14.1338,False,1.78338,1.09541
+cercle x1.5,5,0.0001,5,True,2.9374,1.44697,False,2.52467,1.10268
+cercle x1.5,5,0.0001,3,False,1.68697,0.438372,False,4.05486,1.17306
+cercle x1.5,5,0.0001,3,False,2.58017,1.87399,False,3.99358,1.18944
+cercle x1.5,5,0.0001,2,False,0.940389,0.569671,False,1.28702,0.445047
+cercle x1.5,5,0.0001,4,False,0.552581,0.128344,False,4.37836,1.04921
+cercle x1.5,5,0.0001,2,False,1.00894,0.827243,False,2.60496,0.39191
+cercle x1.5,5,0.0001,3,False,1.29738,1.49501,False,3.72078,1.06831
+cercle x1.5,5,0.0001,3,False,3.13008,1.78063,False,2.38406,1.74111
+cercle x1.5,5,0.0001,3,False,0.846245,0.941779,False,1.8429,0.691774
+cercle x1.5,5,0.0001,4,False,1.0895,0.48874,False,1.465,1.60039
+cercle x1.5,5,0.0001,4,False,0.455399,0.070057,False,4.13821,1.71438
+cercle x1.5,5,0.0001,4,False,2.20659,1.92813,False,4.10685,0.832748
+cercle x1.5,5,0.0001,3,False,0.31956,0.910178,False,0.673725,0.593763
+cercle x1.5,5,0.0001,4,False,2.74111,4.55811,False,2.00109,2.76641
+cercle x1.5,5,0.0001,4,False,4.92088,1.10884,False,2.95955,3.21431
+cercle x1.5,5,0.0001,4,False,2.06806,1.36363,False,1.92323,1.33569
+cercle x1.5,5,0.0001,4,False,1.60261,1.38185,False,1.06243,0.870174
+cercle x1.5,5,0.0001,3,False,1.50079,1.63968,False,1.96252,0.89338
+cercle x1.5,5,0.0001,3,False,1.74582,1.03213,False,2.5555,0.877313
+cercle x1.5,5,0.0001,4,False,0.857322,0.824037,False,1.8801,2.09509
+cercle x1.5,5,0.0001,4,False,1.53669,1.57626,False,3.76217,1.95729
+cercle x1.5,5,0.001,2,False,1.36482,0.597333,False,0.788315,0.561432
+cercle x1.5,5,0.001,2,False,1.18786,0.711221,False,1.13669,0.312792
+cercle x1.5,5,0.001,2,False,3.363,1.37054,False,3.22524,0.496327
+cercle x1.5,5,0.001,2,False,2.76123,2.36058,False,0.908749,0.315728
+cercle x1.5,5,0.001,3,False,1.41619,0.492196,False,3.05658,0.530361
+cercle x1.5,5,0.001,3,False,2.3454,1.52401,False,3.33251,0.656136
+cercle x1.5,5,0.001,3,False,1.20261,0.409975,False,2.34406,0.796672
+cercle x1.5,5,0.001,4,False,1.06847,0.24402,False,1.5137,0.4561
+cercle x1.5,5,0.001,2,False,0.922224,1.81486,False,1.38895,0.182291
+cercle x1.5,5,0.001,3,False,1.8489,0.189375,False,0.582275,0.367743
+cercle x1.5,5,0.001,2,False,1.56413,0.428035,False,1.75068,0.203233
+cercle x1.5,5,0.001,1,False,0.515808,0.633306,False,1.98583,0.103688
+cercle x1.5,5,0.001,3,False,1.45552,0.875593,False,1.0122,0.375225
+cercle x1.5,5,0.001,3,False,3.50081,1.42439,False,1.80659,0.27502
+cercle x1.5,5,0.001,3,False,1.39354,0.693722,False,3.03753,0.270709
+cercle x1.5,5,0.001,3,False,3.9643,4.90713,False,2.75348,0.282722
+cercle x1.5,5,0.001,2,False,1.90962,27.4244,False,2.02487,0.341951
+cercle x1.5,5,0.001,2,False,1.23685,3.0398,False,1.9725,0.397719
+cercle x1.5,5,0.001,2,False,2.78039,2.38794,False,2.83455,0.20627
+cercle x1.5,5,0.001,2,False,3.13981,32.2558,False,2.42732,0.164571
+cercle x1.5,5,0.001,2,False,1.84471,1.18599,False,2.57164,0.508959
+cercle x1.5,5,0.001,2,False,1.59802,0.874195,False,0.370865,0.340547
+cercle x1.5,5,0.001,2,False,2.54975,1.96322,False,3.71511,0.202992
+cercle x1.5,5,0.001,3,False,0.779731,0.617008,False,2.16823,0.359186
+cercle x1.5,5,0.001,2,False,2.24287,1.09144,False,4.83454,0.365966
+cercle x1.5,5,0.001,3,False,1.23339,0.6484,False,3.86952,0.685041
+cercle x1.5,5,0.001,3,False,5.9213,1.30465,False,2.6141,0.660978
+cercle x1.5,5,0.001,2,False,0.813044,0.457112,False,3.50251,0.424944
+cercle x1.5,5,0.001,2,False,2.04891,0.757832,False,2.2841,0.321265
+cercle x1.5,5,0.001,2,False,0.560622,3.72607,False,1.40104,0.28515
+cercle x2,2,0.0001,2,True,1.76738,0.546934,False,5.3067,0.28672
+cercle x2,2,0.0001,2,True,0.102816,0.0184365,True,10.8337,0.372031
+cercle x2,2,0.0001,2,True,0.157411,0.0467415,True,9.65745,0.575096
+cercle x2,2,0.0001,2,True,0.216881,0.0474033,True,9.78972,0.341191
+cercle x2,2,0.0001,2,True,0.325852,0.274531,True,2.72439,0.607349
+cercle x2,2,0.0001,2,True,0.0370586,0.00780972,True,12.6363,0.464649
+cercle x2,2,0.0001,2,True,1.07983,0.292461,False,4.89122,0.844324
+cercle x2,2,0.0001,2,True,0.53793,0.0385712,True,6.29362,0.482285
+cercle x2,2,0.0001,1,False,0.359208,0.724099,False,0.844288,0.235041
+cercle x2,2,0.0001,2,True,0.0553122,0.0441745,True,8.3758,0.69788
+cercle x2,2,0.0001,2,True,1.98137,0.319649,False,7.83433,0.502728
+cercle x2,2,0.0001,2,True,0.0637407,0.00270705,True,12.3961,0.257124
+cercle x2,2,0.0001,2,True,0.918853,0.428694,True,7.91402,0.302623
+cercle x2,2,0.0001,2,True,0.11464,0.0410253,True,6.80128,0.573665
+cercle x2,2,0.0001,2,True,0.0262116,0.00675297,True,6.17826,0.551085
+cercle x2,2,0.0001,2,True,0.180963,0.0452501,True,5.1826,0.466369
+cercle x2,2,0.0001,2,True,0.759558,0.200241,True,5.80939,0.389809
+cercle x2,2,0.0001,2,True,2.34706,1.19787,False,2.74467,0.725537
+cercle x2,2,0.0001,2,True,0.114384,0.0311891,True,6.67872,0.547209
+cercle x2,2,0.0001,2,True,0.081777,0.0207032,True,9.59565,0.444864
+cercle x2,2,0.0001,2,True,0.477459,0.107902,True,9.62921,0.939207
+cercle x2,2,0.0001,2,True,0.0529655,0.00921451,True,12.7839,0.230155
+cercle x2,2,0.0001,2,True,0.152438,0.0457108,True,6.41878,0.636676
+cercle x2,2,0.0001,2,True,0.110049,0.0372764,True,8.17382,0.370268
+cercle x2,2,0.0001,2,True,0.0275084,0.00409544,True,8.5532,0.416845
+cercle x2,2,0.0001,2,True,0.189189,0.00908226,True,19.8663,0.635996
+cercle x2,2,0.0001,2,True,0.511863,0.230035,True,5.13793,0.598201
+cercle x2,2,0.0001,2,True,0.191141,0.00675309,True,2.2508,0.805125
+cercle x2,2,0.0001,2,True,0.707916,0.240417,True,4.99479,0.58865
+cercle x2,2,0.0001,2,True,2.07814,3.89303,False,3.76354,0.662084
+cercle x2,2,0.001,2,True,1.8687,0.331872,False,11.8143,0.314855
+cercle x2,2,0.001,1,False,1.92393,0.546023,False,6.35529,0.248129
+cercle x2,2,0.001,2,True,3.32502,0.504044,False,7.86007,0.450109
+cercle x2,2,0.001,1,False,0.608741,0.12761,False,7.90771,0.278519
+cercle x2,2,0.001,1,False,0.984339,0.296682,False,4.37814,0.362653
+cercle x2,2,0.001,1,False,1.38439,0.632551,False,2.78521,0.185326
+cercle x2,2,0.001,2,True,0.310416,0.072628,True,16.4811,0.22315
+cercle x2,2,0.001,1,False,1.06357,0.307348,False,4.15234,0.118393
+cercle x2,2,0.001,1,False,1.78823,0.620829,False,5.08639,0.197831
+cercle x2,2,0.001,1,False,0.704882,0.432749,False,2.50518,0.106193
+cercle x2,2,0.001,2,True,0.257698,0.10844,True,10.1023,0.182183
+cercle x2,2,0.001,2,True,4.8918,0.716502,False,4.40909,0.180212
+cercle x2,2,0.001,1,False,0.811455,0.339438,False,3.46065,0.410086
+cercle x2,2,0.001,2,True,3.90803,0.595149,False,7.18131,0.380383
+cercle x2,2,0.001,2,True,0.946767,0.584213,True,7.39959,0.304411
+cercle x2,2,0.001,2,True,0.901732,0.00792347,True,11.3777,0.320578
+cercle x2,2,0.001,1,False,0.225824,0.112673,False,2.24204,0.179615
+cercle x2,2,0.001,2,True,0.560821,0.0146613,True,11.3128,0.432087
+cercle x2,2,0.001,1,False,0.141791,0.00703067,False,4.79829,0.310378
+cercle x2,2,0.001,2,True,0.208722,0.0248252,True,18.17,0.541322
+cercle x2,2,0.001,1,False,0.741677,0.331287,False,2.52043,0.246791
+cercle x2,2,0.001,1,False,1.7081,0.736755,False,4.50066,0.120424
+cercle x2,2,0.001,1,False,0.379065,0.0471867,False,12.8193,0.0998039
+cercle x2,2,0.001,2,True,0.321027,0.11929,True,6.30592,0.227258
+cercle x2,2,0.001,2,True,1.9576,0.316525,False,9.74221,0.432506
+cercle x2,2,0.001,2,True,2.06882,0.580773,False,9.91452,0.176025
+cercle x2,2,0.001,2,True,5.41836,13.3137,False,7.7567,0.229827
+cercle x2,2,0.001,2,True,1.56911,0.281958,False,11.9197,0.198121
+cercle x2,2,0.001,1,False,1.08753,0.267891,False,4.50236,0.338191
+cercle x2,2,0.001,2,True,1.24945,0.233767,False,10.0119,0.351407
+cercle x2,3,0.0001,2,False,0.363275,0.144155,False,6.81582,0.762813
+cercle x2,3,0.0001,2,False,0.50759,0.364854,False,1.92701,0.950569
+cercle x2,3,0.0001,2,False,0.120006,0.050192,False,0.737589,0.586749
+cercle x2,3,0.0001,3,True,0.953936,0.269261,False,3.42333,0.615167
+cercle x2,3,0.0001,2,False,0.30794,0.126203,False,3.83641,0.306682
+cercle x2,3,0.0001,3,True,1.45267,0.690339,False,4.91041,1.02833
+cercle x2,3,0.0001,3,True,2.99968,0.367601,False,4.18745,1.8303
+cercle x2,3,0.0001,2,False,2.60241,1.0431,False,6.09142,0.74726
+cercle x2,3,0.0001,2,False,0.126217,0.0792631,False,2.97167,0.524274
+cercle x2,3,0.0001,2,False,1.6405,0.10333,False,3.25396,1.29603
+cercle x2,3,0.0001,2,False,0.234564,0.12298,False,3.79514,0.46295
+cercle x2,3,0.0001,2,False,1.39739,0.69954,False,3.50067,0.22023
+cercle x2,3,0.0001,2,False,0.138421,0.728894,False,0.344324,0.246203
+cercle x2,3,0.0001,2,False,1.65252,0.491163,False,3.78127,0.466877
+cercle x2,3,0.0001,1,False,0.646281,0.719466,False,1.49076,0.762851
+cercle x2,3,0.0001,2,False,0.214936,0.110136,False,2.6454,0.63239
+cercle x2,3,0.0001,3,True,1.00184,0.504519,False,4.87455,0.618073
+cercle x2,3,0.0001,2,False,0.57826,0.39921,False,1.95903,0.20471
+cercle x2,3,0.0001,2,False,0.483361,0.211394,False,2.39789,1.21254
+cercle x2,3,0.0001,2,False,1.43581,0.318479,False,1.51627,0.460167
+cercle x2,3,0.0001,2,False,3.52556,6.66668,False,1.01341,0.447138
+cercle x2,3,0.0001,2,False,0.559447,0.170716,False,4.51336,0.453702
+cercle x2,3,0.0001,3,True,0.311388,0.0770837,True,8.18017,1.25671
+cercle x2,3,0.0001,2,False,0.430835,0.644278,False,1.05418,1.30944
+cercle x2,3,0.0001,3,True,2.49304,1.40447,False,4.58861,1.34089
+cercle x2,3,0.0001,3,True,2.03025,0.908715,False,6.63029,0.743121
+cercle x2,3,0.0001,3,True,0.839941,0.285541,True,4.20771,1.29283
+cercle x2,3,0.0001,2,False,0.988285,0.461808,False,4.32706,0.51942
+cercle x2,3,0.0001,2,False,1.44094,1.38715,False,2.79696,0.289724
+cercle x2,3,0.0001,2,False,0.332401,0.166221,False,3.41743,0.29787
+cercle x2,3,0.001,2,False,1.33867,0.280876,False,2.925,0.341288
+cercle x2,3,0.001,1,False,1.15223,1.03611,False,2.09032,0.170992
+cercle x2,3,0.001,2,False,0.712435,0.516382,False,1.77687,0.477429
+cercle x2,3,0.001,1,False,0.974304,0.473635,False,2.83932,0.271353
+cercle x2,3,0.001,2,False,0.482361,0.249108,False,4.6727,0.509393
+cercle x2,3,0.001,2,False,2.28305,0.369145,False,3.4725,0.517719
+cercle x2,3,0.001,2,False,1.43089,0.325748,False,2.85246,0.432299
+cercle x2,3,0.001,2,False,1.13549,0.754157,False,2.42783,0.348271
+cercle x2,3,0.001,2,False,2.13485,0.930664,False,4.07339,0.506946
+cercle x2,3,0.001,1,False,0.316136,0.158292,False,1.82249,0.268564
+cercle x2,3,0.001,1,False,1.43857,1.33282,False,4.22216,0.232121
+cercle x2,3,0.001,2,False,1.31218,0.421418,False,0.745933,0.406994
+cercle x2,3,0.001,2,False,1.92753,0.417737,False,8.5751,0.514918
+cercle x2,3,0.001,1,False,0.72125,0.306163,False,0.971572,0.126192
+cercle x2,3,0.001,2,False,7.18961,0.80493,False,3.70414,0.383294
+cercle x2,3,0.001,2,False,0.72241,0.188557,False,6.08018,0.380857
+cercle x2,3,0.001,1,False,0.711564,2.73678,False,1.62128,0.229509
+cercle x2,3,0.001,2,False,0.992662,0.310819,False,5.48805,0.369151
+cercle x2,3,0.001,1,False,1.16582,1.39139,False,2.83753,0.302177
+cercle x2,3,0.001,2,False,1.40008,0.44239,False,5.70011,0.235395
+cercle x2,3,0.001,2,False,0.724374,0.386107,False,3.48512,0.204426
+cercle x2,3,0.001,2,False,2.06515,0.452341,False,5.4402,0.165021
+cercle x2,3,0.001,2,False,3.2281,0.41844,False,2.69113,0.163262
+cercle x2,3,0.001,2,False,1.23764,1.9157,False,1.58385,0.190267
+cercle x2,3,0.001,2,False,0.988858,0.232822,False,3.88663,0.363379
+cercle x2,3,0.001,1,False,0.148433,0.04051,False,3.88521,0.154222
+cercle x2,3,0.001,2,False,1.83308,0.157738,False,3.28425,0.232517
+cercle x2,3,0.001,1,False,1.00414,0.263627,False,3.91717,0.219515
+cercle x2,3,0.001,2,False,1.88098,0.871311,False,4.70878,0.433041
+cercle x2,3,0.001,2,False,5.64887,0.413401,False,3.5947,0.326569
+cercle x2,5,0.0001,3,False,1.12087,3.87687,False,2.51678,1.19231
+cercle x2,5,0.0001,3,False,0.865414,3.76773,False,1.39802,0.863328
+cercle x2,5,0.0001,3,False,1.09697,2.74032,False,0.587774,1.50714
+cercle x2,5,0.0001,3,False,3.43336,6.87466,False,1.5674,1.2983
+cercle x2,5,0.0001,3,False,2.30612,0.600261,False,0.625607,1.75179
+cercle x2,5,0.0001,3,False,1.30306,3.89309,False,1.96988,0.723667
+cercle x2,5,0.0001,3,False,1.02769,1.65011,False,0.872029,0.933665
+cercle x2,5,0.0001,2,False,2.04959,4.86917,False,0.932015,0.413493
+cercle x2,5,0.0001,3,False,2.78311,14.8922,False,1.78338,0.424789
+cercle x2,5,0.0001,4,False,1.92372,0.684461,False,2.52467,0.868204
+cercle x2,5,0.0001,3,False,1.69802,0.496271,False,4.05486,1.47938
+cercle x2,5,0.0001,2,False,2.46944,6.53865,False,3.99358,0.582038
+cercle x2,5,0.0001,2,False,1.11742,0.702867,False,1.28702,0.67247
+cercle x2,5,0.0001,4,False,1.22849,2.07883,False,4.37836,1.32926
+cercle x2,5,0.0001,2,False,1.00497,0.782498,False,2.60496,0.584287
+cercle x2,5,0.0001,3,False,1.08229,1.43478,False,3.72078,0.609927
+cercle x2,5,0.0001,3,False,4.72676,1.83924,False,2.38406,0.82181
+cercle x2,5,0.0001,3,False,0.979554,1.027,False,1.8429,0.631485
+cercle x2,5,0.0001,3,False,1.13553,0.744666,False,1.465,1.10416
+cercle x2,5,0.0001,3,False,2.4292,1.49474,False,4.13821,1.96117
+cercle x2,5,0.0001,3,False,2.49884,0.840184,False,4.10685,1.40317
+cercle x2,5,0.0001,3,False,0.380008,0.866648,False,0.673725,1.68194
+cercle x2,5,0.0001,3,False,2.37131,0.677076,False,2.00109,1.28511
+cercle x2,5,0.0001,3,False,1.63275,0.686623,False,2.95955,1.77765
+cercle x2,5,0.0001,3,False,4.90315,1.55787,False,1.92323,1.3503
+cercle x2,5,0.0001,3,False,0.81027,0.202284,False,1.06243,1.17606
+cercle x2,5,0.0001,3,False,3.50387,0.852031,False,1.96252,1.251
+cercle x2,5,0.0001,3,False,2.20265,0.902369,False,2.5555,0.952555
+cercle x2,5,0.0001,4,False,6.17799,2.82265,False,1.8801,1.11749
+cercle x2,5,0.0001,4,False,1.77597,1.86498,False,3.76217,0.926428
+cercle x2,5,0.001,1,False,0.635748,1.63168,False,0.788315,0.440776
+cercle x2,5,0.001,2,False,1.51828,2.83545,False,1.13669,0.4245
+cercle x2,5,0.001,2,False,2.95274,1.22229,False,3.22524,0.745788
+cercle x2,5,0.001,2,False,2.48406,0.86584,False,0.908749,0.364112
+cercle x2,5,0.001,2,False,2.38978,0.758179,False,3.05658,0.37542
+cercle x2,5,0.001,3,False,1.95075,1.35621,False,3.33251,0.860656
+cercle x2,5,0.001,3,False,3.24829,0.296929,False,2.34406,0.509166
+cercle x2,5,0.001,3,False,2.50039,243.199,False,1.5137,0.626161
+cercle x2,5,0.001,2,False,0.797936,2.0701,False,1.38895,0.408632
+cercle x2,5,0.001,3,False,2.78782,38.6773,False,0.582275,0.796853
+cercle x2,5,0.001,2,False,1.31087,0.339858,False,1.75068,0.267568
+cercle x2,5,0.001,1,False,0.543527,0.619552,False,1.98583,0.136741
+cercle x2,5,0.001,3,False,2.23966,1.83954,False,1.0122,0.659714
+cercle x2,5,0.001,2,False,4.35417,4.78902,False,1.80659,0.291848
+cercle x2,5,0.001,2,False,2.75655,0.775793,False,3.03753,0.445944
+cercle x2,5,0.001,2,False,2.00571,5.14861,False,2.75348,0.494084
+cercle x2,5,0.001,2,False,1.95119,29.3489,False,2.02487,0.451921
+cercle x2,5,0.001,2,False,0.688095,2.75611,False,1.9725,0.454225
+cercle x2,5,0.001,2,False,2.60169,2.45628,False,2.83455,0.481035
+cercle x2,5,0.001,1,False,2.89931,32.65,False,2.42732,0.333806
+cercle x2,5,0.001,1,False,1.95656,1.36069,False,2.57164,0.239203
+cercle x2,5,0.001,1,False,2.64479,1.37178,False,0.370865,0.187947
+cercle x2,5,0.001,2,False,1.90317,1.47585,False,3.71511,0.453042
+cercle x2,5,0.001,1,False,3.45221,2.3386,False,2.16823,0.422822
+cercle x2,5,0.001,2,False,2.30585,1.01614,False,4.83454,0.179061
+cercle x2,5,0.001,2,False,2.5196,1.37416,False,3.86952,0.184846
+cercle x2,5,0.001,2,False,1.73368,0.56231,False,2.6141,0.184519
+cercle x2,5,0.001,2,False,1.03284,0.534291,False,3.50251,0.215186
+cercle x2,5,0.001,2,False,2.15109,0.803184,False,2.2841,0.309717
+cercle x2,5,0.001,2,False,0.732294,3.72882,False,1.40104,0.185018
+ellipse par les coins,2,0.0001,2,True,0.0466621,0.0414583,True,5.3067,0.233574
+ellipse par les coins,2,0.0001,2,True,0.0486775,0.0101097,True,10.8337,0.220675
+ellipse par les coins,2,0.0001,2,True,0.00875991,0.000466973,True,9.65745,0.493116
+ellipse par les coins,2,0.0001,2,True,0.0260845,0.00542182,True,9.78972,0.46916
+ellipse par les coins,2,0.0001,2,True,0.00983921,0.0106597,True,2.72439,0.424523
+ellipse par les coins,2,0.0001,2,True,0.0073477,0.000843661,True,12.6363,0.360018
+ellipse par les coins,2,0.0001,2,True,0.0306975,0.000970008,True,4.89122,0.331961
+ellipse par les coins,2,0.0001,2,True,0.00788642,0.00181887,True,6.29362,0.487453
+ellipse par les coins,2,0.0001,2,True,0.319138,0.560363,False,0.844288,0.77645
+ellipse par les coins,2,0.0001,2,True,0.0984373,0.00872657,True,8.3758,0.141003
+ellipse par les coins,2,0.0001,2,True,0.0117189,0.00915892,True,7.83433,0.375698
+ellipse par les coins,2,0.0001,2,True,0.000842926,0.00114903,True,12.3961,0.461991
+ellipse par les coins,2,0.0001,2,True,0.0251924,0.0139815,True,7.91402,0.351344
+ellipse par les coins,2,0.0001,2,True,0.0150383,0.00545292,True,6.80128,0.174713
+ellipse par les coins,2,0.0001,2,True,0.00795504,0.00215606,True,6.17826,0.230952
+ellipse par les coins,2,0.0001,2,True,0.00471212,0.000569949,True,5.1826,0.209546
+ellipse par les coins,2,0.0001,2,True,0.0514934,0.0242364,True,5.80939,0.212295
+ellipse par les coins,2,0.0001,2,True,0.0684511,0.0621428,True,2.74467,0.229525
+ellipse par les coins,2,0.0001,2,True,0.0153311,0.000811683,True,6.67872,0.408893
+ellipse par les coins,2,0.0001,2,True,0.0146549,0.00377314,True,9.59565,0.249049
+ellipse par les coins,2,0.0001,2,True,0.0612678,0.00470482,True,9.62921,0.210975
+ellipse par les coins,2,0.0001,2,True,0.00546343,0.00102992,True,12.7839,0.193953
+ellipse par les coins,2,0.0001,2,True,0.010492,0.00183398,True,6.41878,0.356974
+ellipse par les coins,2,0.0001,3,False,0.000493893,0.000345281,False,8.17382,0.687372
+ellipse par les coins,2,0.0001,2,True,0.000377119,0.000323901,True,8.5532,0.321948
+ellipse par les coins,2,0.0001,2,True,0.0218462,0.00847623,True,19.8663,0.30733
+ellipse par les coins,2,0.0001,2,True,0.0084045,0.00702146,True,5.13793,0.39198
+ellipse par les coins,2,0.0001,2,True,0.145201,0.0849645,True,2.2508,0.545684
+ellipse par les coins,2,0.0001,2,True,0.0285104,0.00895598,True,4.99479,0.153792
+ellipse par les coins,2,0.0001,2,True,0.0276837,0.031759,True,3.76354,0.207618
+ellipse par les coins,2,0.001,2,True,0.0334347,0.00478383,True,11.8143,0.309735
+ellipse par les coins,2,0.001,2,True,0.265385,0.090905,True,6.35529,0.161546
+ellipse par les coins,2,0.001,2,True,0.196786,0.0667297,True,7.86007,0.188771
+ellipse par les coins,2,0.001,2,True,0.572414,0.0407193,True,7.90771,0.154312
+ellipse par les coins,2,0.001,2,True,0.0389332,0.0599845,True,4.37814,0.263674
+ellipse par les coins,2,0.001,2,True,0.315601,0.336984,True,2.78521,0.385108
+ellipse par les coins,2,0.001,2,True,0.014366,0.00349409,True,16.4811,0.397516
+ellipse par les coins,2,0.001,2,True,0.406248,0.27292,True,4.15234,0.321284
+ellipse par les coins,2,0.001,2,True,0.192786,0.0437705,True,5.08639,0.415797
+ellipse par les coins,2,0.001,2,True,0.00608775,0.00396258,True,2.50518,0.34314
+ellipse par les coins,2,0.001,2,True,0.0443379,0.0518828,True,10.1023,0.380552
+ellipse par les coins,2,0.001,2,True,0.218848,0.0840794,True,4.40909,0.334645
+ellipse par les coins,2,0.001,2,True,0.633786,0.476706,True,3.46065,0.38543
+ellipse par les coins,2,0.001,2,True,0.17842,0.0313766,True,7.18131,0.358756
+ellipse par les coins,2,0.001,2,True,0.0613997,0.00508074,True,7.39959,0.231707
+ellipse par les coins,2,0.001,2,True,0.0373425,0.0182219,True,11.3777,0.354532
+ellipse par les coins,2,0.001,1,False,0.101613,0.103541,False,2.24204,0.211275
+ellipse par les coins,2,0.001,2,True,0.0576055,0.0149514,True,11.3128,0.19573
+ellipse par les coins,2,0.001,1,False,0.0478543,0.0144164,False,4.79829,0.0890754
+ellipse par les coins,2,0.001,2,True,0.0157209,0.00487252,True,18.17,0.135933
+ellipse par les coins,2,0.001,2,True,0.204333,0.235607,True,2.52043,0.38664
+ellipse par les coins,2,0.001,2,True,0.623544,0.221661,True,4.50066,0.333026
+ellipse par les coins,2,0.001,2,True,0.268857,0.0448549,True,12.8193,0.376188
+ellipse par les coins,2,0.001,2,True,0.0722972,0.0452056,True,6.30592,0.375232
+ellipse par les coins,2,0.001,2,True,0.275862,0.0594518,True,9.74221,0.153907
+ellipse par les coins,2,0.001,2,True,0.036952,0.00577299,True,9.91452,0.138141
+ellipse par les coins,2,0.001,3,False,1.20145,1.09824,False,7.7567,0.357633
+ellipse par les coins,2,0.001,2,True,0.0358996,0.0363622,True,11.9197,0.139435
+ellipse par les coins,2,0.001,2,True,0.143326,0.0810616,True,4.50236,0.286678
+ellipse par les coins,2,0.001,2,True,0.0203639,0.0261996,True,10.0119,0.160632
+ellipse par les coins,3,0.0001,3,True,1.03377,0.29285,False,6.81582,0.378553
+ellipse par les coins,3,0.0001,3,True,0.601212,0.847449,False,1.92701,0.333858
+ellipse par les coins,3,0.0001,2,False,0.0162234,0.0323022,False,0.737589,0.410669
+ellipse par les coins,3,0.0001,3,True,0.0335967,0.0083497,True,3.42333,0.436846
+ellipse par les coins,3,0.0001,3,True,0.0678759,0.0579227,True,3.83641,0.270036
+ellipse par les coins,3,0.0001,3,True,0.0278836,0.0038944,True,4.91041,0.42686
+ellipse par les coins,3,0.0001,3,True,0.106368,0.0193376,True,4.18745,0.800458
+ellipse par les coins,3,0.0001,3,True,0.0478697,0.00853549,True,6.09142,0.617715
+ellipse par les coins,3,0.0001,3,True,0.15866,0.181198,True,2.97167,0.829632
+ellipse par les coins,3,0.0001,3,True,0.361485,0.185492,True,3.25396,0.53125
+ellipse par les coins,3,0.0001,3,True,0.0389486,0.0228404,True,3.79514,0.643357
+ellipse par les coins,3,0.0001,3,True,0.159346,0.0483938,True,3.50067,0.837285
+ellipse par les coins,3,0.0001,2,False,0.152212,0.736523,False,0.344324,0.346456
+ellipse par les coins,3,0.0001,3,True,0.042175,0.0178613,True,3.78127,0.555197
+ellipse par les coins,3,0.0001,2,False,0.723769,0.862904,False,1.49076,0.430913
+ellipse par les coins,3,0.0001,3,True,0.0265656,0.0408202,True,2.6454,0.628733
+ellipse par les coins,3,0.0001,3,True,0.0502876,0.00921172,True,4.87455,0.467447
+ellipse par les coins,3,0.0001,3,True,0.112328,0.159925,True,1.95903,0.91382
+ellipse par les coins,3,0.0001,3,True,0.0381044,0.0186334,True,2.39789,0.599769
+ellipse par les coins,3,0.0001,3,True,0.207998,0.238938,True,1.51627,0.540382
+ellipse par les coins,3,0.0001,3,True,0.751409,0.644953,False,1.01341,0.837348
+ellipse par les coins,3,0.0001,3,True,0.00840737,0.000985858,True,4.51336,0.311279
+ellipse par les coins,3,0.0001,3,True,0.0583638,0.00808487,True,8.18017,0.661104
+ellipse par les coins,3,0.0001,3,True,1.36311,1.37614,False,1.05418,0.411352
+ellipse par les coins,3,0.0001,3,True,0.0762785,0.0347211,True,4.58861,0.435631
+ellipse par les coins,3,0.0001,3,True,0.00867702,0.00155601,True,6.63029,0.257394
+ellipse par les coins,3,0.0001,3,True,0.0761559,0.0333077,True,4.20771,0.684143
+ellipse par les coins,3,0.0001,3,True,0.0398655,0.033516,True,4.32706,0.844418
+ellipse par les coins,3,0.0001,3,True,0.179826,0.119403,True,2.79696,0.652731
+ellipse par les coins,3,0.0001,3,True,0.135526,0.115129,True,3.41743,0.380114
+ellipse par les coins,3,0.001,3,True,0.0968704,0.0239498,True,2.925,0.517676
+ellipse par les coins,3,0.001,2,False,1.0666,0.785273,False,2.09032,0.462773
+ellipse par les coins,3,0.001,3,True,0.530884,0.694373,False,1.77687,0.542139
+ellipse par les coins,3,0.001,3,True,0.692263,0.588742,True,2.83932,0.700967
+ellipse par les coins,3,0.001,3,True,0.994181,0.172143,True,4.6727,0.646087
+ellipse par les coins,3,0.001,2,False,0.705531,0.33657,False,3.4725,0.342672
+ellipse par les coins,3,0.001,3,True,0.0702598,0.0165194,True,2.85246,0.625668
+ellipse par les coins,3,0.001,3,True,0.2933,0.111723,True,2.42783,0.355263
+ellipse par les coins,3,0.001,3,True,0.161075,0.0523753,True,4.07339,0.354232
+ellipse par les coins,3,0.001,2,False,0.463622,1.11551,False,1.82249,0.3504
+ellipse par les coins,3,0.001,3,True,0.320962,0.0845394,True,4.22216,0.234267
+ellipse par les coins,3,0.001,2,False,0.350252,0.902748,False,0.745933,0.139338
+ellipse par les coins,3,0.001,3,True,0.553909,0.255356,True,8.5751,0.583761
+ellipse par les coins,3,0.001,2,False,0.148182,0.0119751,False,0.971572,0.384043
+ellipse par les coins,3,0.001,2,False,1.15849,0.488323,False,3.70414,0.392973
+ellipse par les coins,3,0.001,3,True,0.0966024,0.0186409,True,6.08018,0.566297
+ellipse par les coins,3,0.001,2,False,0.90659,0.532792,False,1.62128,0.409664
+ellipse par les coins,3,0.001,3,True,0.0585349,0.0210906,True,5.48805,0.349255
+ellipse par les coins,3,0.001,3,True,0.355652,0.108287,True,2.83753,0.281782
+ellipse par les coins,3,0.001,3,True,0.0941143,0.00833614,True,5.70011,0.207491
+ellipse par les coins,3,0.001,2,False,0.638463,0.267679,False,3.48512,0.306951
+ellipse par les coins,3,0.001,3,True,0.109508,0.0154034,True,5.4402,0.585625
+ellipse par les coins,3,0.001,2,False,0.443384,0.132449,False,2.69113,0.174181
+ellipse par les coins,3,0.001,2,False,0.576032,0.95364,False,1.58385,0.149147
+ellipse par les coins,3,0.001,2,False,0.0338647,0.0143044,False,3.88663,0.405266
+ellipse par les coins,3,0.001,2,False,0.664446,0.219264,False,3.88521,0.345037
+ellipse par les coins,3,0.001,3,True,0.522198,0.136361,True,3.28425,0.347899
+ellipse par les coins,3,0.001,2,False,0.787985,0.205531,False,3.91717,0.192592
+ellipse par les coins,3,0.001,3,True,0.0461955,0.0118294,True,4.70878,0.518144
+ellipse par les coins,3,0.001,2,False,1.46068,0.798835,False,3.5947,0.373511
+ellipse par les coins,5,0.0001,5,True,5.30071,5.93145,False,2.51678,0.94673
+ellipse par les coins,5,0.0001,4,False,0.200912,0.503373,False,1.39802,0.64131
+ellipse par les coins,5,0.0001,4,False,0.179974,0.619714,False,0.587774,1.11065
+ellipse par les coins,5,0.0001,4,False,0.322087,0.275817,False,1.5674,1.43733
+ellipse par les coins,5,0.0001,4,False,0.213515,0.16458,False,0.625607,1.483
+ellipse par les coins,5,0.0001,4,False,0.183361,0.0455681,False,1.96988,0.690464
+ellipse par les coins,5,0.0001,3,False,0.222544,0.327202,False,0.872029,0.839562
+ellipse par les coins,5,0.0001,5,True,0.688904,0.194236,False,0.932015,2.56828
+ellipse par les coins,5,0.0001,5,True,1.18035,0.636491,False,1.78338,2.05903
+ellipse par les coins,5,0.0001,5,True,0.149641,0.0667095,True,2.52467,0.991344
+ellipse par les coins,5,0.0001,5,True,0.485605,0.336951,True,4.05486,1.91439
+ellipse par les coins,5,0.0001,5,True,1.55379,1.2725,False,3.99358,1.46377
+ellipse par les coins,5,0.0001,4,False,1.33568,1.251,False,1.28702,0.632474
+ellipse par les coins,5,0.0001,5,True,0.449252,0.230884,True,4.37836,0.865268
+ellipse par les coins,5,0.0001,4,False,0.143595,0.0932657,False,2.60496,1.60399
+ellipse par les coins,5,0.0001,4,False,0.763253,0.238328,False,3.72078,1.22412
+ellipse par les coins,5,0.0001,4,False,6.79635,1.54406,False,2.38406,1.10676
+ellipse par les coins,5,0.0001,4,False,0.707017,0.651419,False,1.8429,0.68059
+ellipse par les coins,5,0.0001,4,False,0.116895,0.0782369,False,1.465,0.39328
+ellipse par les coins,5,0.0001,4,False,0.0524338,0.0218633,False,4.13821,0.403348
+ellipse par les coins,5,0.0001,5,True,0.203362,0.0641941,True,4.10685,0.889116
+ellipse par les coins,5,0.0001,4,False,0.28316,0.88248,False,0.673725,0.560677
+ellipse par les coins,5,0.0001,5,True,0.388215,0.341193,True,2.00109,3.22126
+ellipse par les coins,5,0.0001,5,True,0.762835,0.379469,False,2.95955,1.70845
+ellipse par les coins,5,0.0001,4,False,0.867641,1.45378,False,1.92323,1.55849
+ellipse par les coins,5,0.0001,5,True,0.834869,6.21786,False,1.06243,1.38392
+ellipse par les coins,5,0.0001,6,False,0.416031,0.124346,False,1.96252,3.38347
+ellipse par les coins,5,0.0001,5,True,1.16147,0.847301,False,2.5555,2.20918
+ellipse par les coins,5,0.0001,5,True,5.50673,1.07462,False,1.8801,1.205
+ellipse par les coins,5,0.0001,5,True,0.0771795,0.0155488,True,3.76217,0.676781
+ellipse par les coins,5,0.001,3,False,2.02857,1.78527,False,0.788315,0.637401
+ellipse par les coins,5,0.001,4,False,0.495677,0.897301,False,1.13669,1.93949
+ellipse par les coins,5,0.001,3,False,1.41229,1.20336,False,3.22524,0.301458
+ellipse par les coins,5,0.001,3,False,0.37269,0.636336,False,0.908749,0.225931
+ellipse par les coins,5,0.001,4,False,0.631273,0.499563,False,3.05658,1.08701
+ellipse par les coins,5,0.001,5,True,3.86264,1.76384,False,3.33251,1.49124
+ellipse par les coins,5,0.001,5,True,2.54896,2.339,False,2.34406,1.23153
+ellipse par les coins,5,0.001,4,False,0.340398,0.0497409,False,1.5137,0.867754
+ellipse par les coins,5,0.001,3,False,2.57424,0.804872,False,1.38895,0.4855
+ellipse par les coins,5,0.001,3,False,0.230538,0.551991,False,0.582275,0.549763
+ellipse par les coins,5,0.001,3,False,0.216711,0.171838,False,1.75068,0.511285
+ellipse par les coins,5,0.001,3,False,0.987615,0.483974,False,1.98583,0.683461
+ellipse par les coins,5,0.001,4,False,0.183539,0.179023,False,1.0122,0.954176
+ellipse par les coins,5,0.001,4,False,0.463998,0.169139,False,1.80659,0.501202
+ellipse par les coins,5,0.001,5,True,1.27966,0.355874,False,3.03753,0.731083
+ellipse par les coins,5,0.001,4,False,0.478845,0.461918,False,2.75348,0.435923
+ellipse par les coins,5,0.001,4,False,0.243106,0.172994,False,2.02487,1.07257
+ellipse par les coins,5,0.001,2,False,1.18121,2.47712,False,1.9725,0.139792
+ellipse par les coins,5,0.001,4,False,2.89341,2.08751,False,2.83455,0.431995
+ellipse par les coins,5,0.001,4,False,0.121725,0.113735,False,2.42732,0.459201
+ellipse par les coins,5,0.001,3,False,1.16819,0.962023,False,2.57164,0.68774
+ellipse par les coins,5,0.001,3,False,0.187243,1.74859,False,0.370865,0.493714
+ellipse par les coins,5,0.001,4,False,0.707603,0.538965,False,3.71511,0.889741
+ellipse par les coins,5,0.001,3,False,0.650435,0.533418,False,2.16823,0.46582
+ellipse par les coins,5,0.001,4,False,0.244107,0.140411,False,4.83454,0.974927
+ellipse par les coins,5,0.001,4,False,0.245882,0.206858,False,3.86952,0.71656
+ellipse par les coins,5,0.001,4,False,0.313827,0.168,False,2.6141,1.18957
+ellipse par les coins,5,0.001,2,False,0.934898,0.576014,False,3.50251,0.30999
+ellipse par les coins,5,0.001,4,False,1.99458,3.65338,False,2.2841,0.79367
+ellipse par les coins,5,0.001,3,False,0.602278,3.993,False,1.40104,0.303066
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00536098,0.00850508,True,5.3067,0.185382
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0665152,0.013659,True,10.8337,0.23484
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00310433,7.16521e-05,True,9.65745,0.422668
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0219603,0.00366491,True,9.78972,0.440717
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00176864,0.00195118,True,2.72439,0.27547
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0041534,0.00160817,True,12.6363,0.355368
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0132579,0.000296143,True,4.89122,0.527062
+"bord de D (marge 0,5)",2,0.0001,3,False,0.0140273,0.00717569,False,6.29362,0.767702
+"bord de D (marge 0,5)",2,0.0001,2,True,0.398013,0.927069,False,0.844288,0.621694
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0434565,0.00473837,True,8.3758,0.496908
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0458207,0.0147078,True,7.83433,0.520823
+"bord de D (marge 0,5)",2,0.0001,2,True,0.000879049,0.000918239,True,12.3961,0.266079
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00129742,0.00136548,True,7.91402,0.203434
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0135947,0.00342914,True,6.80128,0.206831
+"bord de D (marge 0,5)",2,0.0001,2,True,0.000958958,0.000557296,True,6.17826,0.298627
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0016737,0.000378264,True,5.1826,0.178469
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0264163,0.0110864,True,5.80939,0.262489
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00706937,0.00564527,True,2.74467,0.240314
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0172472,0.00644527,True,6.67872,0.38047
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00992165,0.00346205,True,9.59565,0.437491
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0504936,0.000727544,True,9.62921,0.249381
+"bord de D (marge 0,5)",2,0.0001,2,True,0.001781,0.000599026,True,12.7839,0.229902
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00331322,0.000536516,True,6.41878,0.507604
+"bord de D (marge 0,5)",2,0.0001,2,True,0.000267615,0.000365559,True,8.17382,0.293481
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00062174,0.000674512,True,8.5532,0.151312
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00160956,0.000252413,True,19.8663,0.1688
+"bord de D (marge 0,5)",2,0.0001,2,True,0.00355212,0.00231483,True,5.13793,0.437399
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0227424,0.00585496,True,2.2508,0.395201
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0110791,0.00471319,True,4.99479,0.474665
+"bord de D (marge 0,5)",2,0.0001,2,True,0.0540785,0.0255403,True,3.76354,0.461279
+"bord de D (marge 0,5)",2,0.001,2,True,0.0679414,0.0370097,True,11.8143,0.309675
+"bord de D (marge 0,5)",2,0.001,2,True,0.040051,0.0129946,True,6.35529,0.244607
+"bord de D (marge 0,5)",2,0.001,2,True,0.124393,0.0397607,True,7.86007,0.203336
+"bord de D (marge 0,5)",2,0.001,2,True,0.378859,0.129582,True,7.90771,0.219117
+"bord de D (marge 0,5)",2,0.001,2,True,0.0101178,0.00834301,True,4.37814,0.298481
+"bord de D (marge 0,5)",2,0.001,2,True,0.0205018,0.026623,True,2.78521,0.348806
+"bord de D (marge 0,5)",2,0.001,2,True,0.0479722,0.0224179,True,16.4811,0.461893
+"bord de D (marge 0,5)",2,0.001,2,True,0.429807,0.284627,True,4.15234,0.153048
+"bord de D (marge 0,5)",2,0.001,2,True,0.0767618,0.0464828,True,5.08639,0.400211
+"bord de D (marge 0,5)",2,0.001,2,True,0.00594712,0.00320441,True,2.50518,0.338105
+"bord de D (marge 0,5)",2,0.001,2,True,0.00695225,0.0197088,True,10.1023,0.417821
+"bord de D (marge 0,5)",2,0.001,2,True,0.0455905,0.0139064,True,4.40909,0.495417
+"bord de D (marge 0,5)",2,0.001,2,True,0.200047,0.123388,True,3.46065,0.242449
+"bord de D (marge 0,5)",2,0.001,2,True,0.0490164,0.00416972,True,7.18131,0.181197
+"bord de D (marge 0,5)",2,0.001,2,True,0.053179,0.0102877,True,7.39959,0.194531
+"bord de D (marge 0,5)",2,0.001,2,True,0.00694912,0.0114214,True,11.3777,0.175725
+"bord de D (marge 0,5)",2,0.001,2,True,0.941413,0.112706,False,2.24204,0.514969
+"bord de D (marge 0,5)",2,0.001,2,True,0.0124088,0.00384913,True,11.3128,0.362494
+"bord de D (marge 0,5)",2,0.001,2,True,0.564074,0.012175,True,4.79829,0.448191
+"bord de D (marge 0,5)",2,0.001,2,True,0.0038854,0.00187883,True,18.17,0.323745
+"bord de D (marge 0,5)",2,0.001,2,True,0.588455,0.513595,True,2.52043,0.238069
+"bord de D (marge 0,5)",2,0.001,2,True,0.300167,0.145291,True,4.50066,0.165032
+"bord de D (marge 0,5)",2,0.001,2,True,0.17264,0.0527949,True,12.8193,0.188987
+"bord de D (marge 0,5)",2,0.001,2,True,0.0645124,0.0137052,True,6.30592,0.167204
+"bord de D (marge 0,5)",2,0.001,2,True,0.109699,0.0416172,True,9.74221,0.324399
+"bord de D (marge 0,5)",2,0.001,3,False,0.0939659,0.0147141,False,9.91452,0.312531
+"bord de D (marge 0,5)",2,0.001,2,True,0.723261,0.0962003,True,7.7567,0.235135
+"bord de D (marge 0,5)",2,0.001,2,True,0.0133784,0.00774895,True,11.9197,0.1312
+"bord de D (marge 0,5)",2,0.001,2,True,0.0515501,0.0409354,True,4.50236,0.361106
+"bord de D (marge 0,5)",2,0.001,2,True,0.0498884,0.014255,True,10.0119,0.441942
+"bord de D (marge 0,5)",3,0.0001,3,True,0.600473,0.133035,True,6.81582,0.869213
+"bord de D (marge 0,5)",3,0.0001,3,True,0.035979,0.0274076,True,1.92701,0.782412
+"bord de D (marge 0,5)",3,0.0001,2,False,0.0159505,0.0327554,False,0.737589,0.336286
+"bord de D (marge 0,5)",3,0.0001,3,True,0.051183,0.00190226,True,3.42333,0.302746
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0466557,0.0185498,True,3.83641,0.330943
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0144145,0.00962941,True,4.91041,0.299556
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0116448,0.0104294,True,4.18745,0.715475
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0158898,0.00509507,True,6.09142,0.649929
+"bord de D (marge 0,5)",3,0.0001,3,True,0.817963,0.344942,False,2.97167,0.907461
+"bord de D (marge 0,5)",3,0.0001,3,True,0.190506,0.0819645,True,3.25396,0.783346
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0174399,0.0107443,True,3.79514,0.528575
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0673199,0.0244136,True,3.50067,0.370351
+"bord de D (marge 0,5)",3,0.0001,3,True,3.12016,1.32501,False,0.344324,0.429115
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0955688,0.0228164,True,3.78127,0.388498
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0504951,0.0686422,True,1.49076,0.702406
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0033513,0.00860233,True,2.6454,0.652659
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0100843,0.00578914,True,4.87455,0.339897
+"bord de D (marge 0,5)",3,0.0001,3,True,0.00461308,0.00340016,True,1.95903,0.358957
+"bord de D (marge 0,5)",3,0.0001,3,True,0.145342,0.127225,True,2.39789,0.758828
+"bord de D (marge 0,5)",3,0.0001,3,True,0.146143,0.197946,True,1.51627,0.502458
+"bord de D (marge 0,5)",3,0.0001,3,True,0.370408,1.43417,False,1.01341,0.671964
+"bord de D (marge 0,5)",3,0.0001,4,False,0.0237994,0.00144422,False,4.51336,0.591786
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0183619,0.00114046,True,8.18017,0.71999
+"bord de D (marge 0,5)",3,0.0001,3,True,0.500296,0.99199,False,1.05418,0.893062
+"bord de D (marge 0,5)",3,0.0001,3,True,0.133403,0.0734496,True,4.58861,0.797044
+"bord de D (marge 0,5)",3,0.0001,3,True,0.00919477,0.00521709,True,6.63029,0.58165
+"bord de D (marge 0,5)",3,0.0001,3,True,0.0199545,0.00965243,True,4.20771,0.625182
+"bord de D (marge 0,5)",3,0.0001,3,True,0.105111,0.0639792,True,4.32706,0.706578
+"bord de D (marge 0,5)",3,0.0001,3,True,0.136362,0.147062,True,2.79696,0.541167
+"bord de D (marge 0,5)",3,0.0001,3,True,0.079359,0.0793968,True,3.41743,0.387666
+"bord de D (marge 0,5)",3,0.001,3,True,0.0887057,0.0144761,True,2.925,0.520149
+"bord de D (marge 0,5)",3,0.001,3,True,1.34967,0.833568,False,2.09032,0.621036
+"bord de D (marge 0,5)",3,0.001,3,True,1.09787,1.40916,False,1.77687,0.275623
+"bord de D (marge 0,5)",3,0.001,3,True,0.207142,0.0546715,True,2.83932,0.331925
+"bord de D (marge 0,5)",3,0.001,3,True,0.565674,0.291811,True,4.6727,0.57928
+"bord de D (marge 0,5)",3,0.001,3,True,0.5415,0.226759,True,3.4725,0.58636
+"bord de D (marge 0,5)",3,0.001,3,True,0.0198636,0.0164211,True,2.85246,0.396276
+"bord de D (marge 0,5)",3,0.001,3,True,0.116526,0.069507,True,2.42783,0.342922
+"bord de D (marge 0,5)",3,0.001,3,True,0.121027,0.0572568,True,4.07339,0.513917
+"bord de D (marge 0,5)",3,0.001,2,False,0.581585,1.37749,False,1.82249,0.371445
+"bord de D (marge 0,5)",3,0.001,3,True,0.150293,0.0035218,True,4.22216,0.544523
+"bord de D (marge 0,5)",3,0.001,2,False,0.237097,0.879561,False,0.745933,0.366669
+"bord de D (marge 0,5)",3,0.001,3,True,0.209912,0.174075,True,8.5751,0.515738
+"bord de D (marge 0,5)",3,0.001,2,False,0.15049,0.0818152,False,0.971572,0.171001
+"bord de D (marge 0,5)",3,0.001,3,True,0.557256,0.025027,True,3.70414,0.346691
+"bord de D (marge 0,5)",3,0.001,3,True,0.0936455,0.0265102,True,6.08018,0.268992
+"bord de D (marge 0,5)",3,0.001,2,False,0.412698,0.372503,False,1.62128,0.357118
+"bord de D (marge 0,5)",3,0.001,3,True,0.00298205,0.00832788,True,5.48805,0.434334
+"bord de D (marge 0,5)",3,0.001,3,True,0.0915161,0.0887758,True,2.83753,0.533334
+"bord de D (marge 0,5)",3,0.001,3,True,0.0538717,0.0229531,True,5.70011,0.533527
+"bord de D (marge 0,5)",3,0.001,3,True,0.709086,0.135499,True,3.48512,0.519716
+"bord de D (marge 0,5)",3,0.001,3,True,0.0407048,0.0133127,True,5.4402,0.301161
+"bord de D (marge 0,5)",3,0.001,3,True,0.98795,0.524061,False,2.69113,0.335504
+"bord de D (marge 0,5)",3,0.001,3,True,0.560429,0.775105,False,1.58385,0.302645
+"bord de D (marge 0,5)",3,0.001,2,False,0.0169582,0.00537606,False,3.88663,0.364616
+"bord de D (marge 0,5)",3,0.001,2,False,0.0414205,0.0108846,False,3.88521,0.364422
+"bord de D (marge 0,5)",3,0.001,3,True,0.112691,0.0606808,True,3.28425,0.561068
+"bord de D (marge 0,5)",3,0.001,2,False,0.828918,0.18295,False,3.91717,0.46359
+"bord de D (marge 0,5)",3,0.001,3,True,0.256474,0.0329862,True,4.70878,0.586276
+"bord de D (marge 0,5)",3,0.001,2,False,1.68501,1.51186,False,3.5947,0.204765
+"bord de D (marge 0,5)",5,0.0001,5,True,0.315919,0.371896,True,2.51678,0.970503
+"bord de D (marge 0,5)",5,0.0001,5,True,0.345342,1.03449,True,1.39802,0.990026
+"bord de D (marge 0,5)",5,0.0001,6,False,0.483272,0.470905,False,0.587774,3.59116
+"bord de D (marge 0,5)",5,0.0001,5,True,5.654,2.33949,False,1.5674,1.66889
+"bord de D (marge 0,5)",5,0.0001,5,True,0.62609,5.2913,False,0.625607,1.40936
+"bord de D (marge 0,5)",5,0.0001,4,False,0.23674,0.0349352,False,1.96988,0.647716
+"bord de D (marge 0,5)",5,0.0001,4,False,0.0275937,0.0627344,False,0.872029,1.33364
+"bord de D (marge 0,5)",5,0.0001,6,False,1.70472,3.56436,False,0.932015,1.95668
+"bord de D (marge 0,5)",5,0.0001,5,True,0.23648,0.175121,True,1.78338,0.881719
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0290714,0.0127182,True,2.52467,0.702359
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0813376,0.0645534,True,4.05486,1.07186
+"bord de D (marge 0,5)",5,0.0001,5,True,0.155864,0.0466252,True,3.99358,1.23377
+"bord de D (marge 0,5)",5,0.0001,4,False,0.0767166,0.0815837,False,1.28702,0.543778
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0774376,0.0692718,True,4.37836,0.741054
+"bord de D (marge 0,5)",5,0.0001,4,False,0.252039,0.0322391,False,2.60496,0.969507
+"bord de D (marge 0,5)",5,0.0001,5,True,0.237161,0.268451,True,3.72078,1.48221
+"bord de D (marge 0,5)",5,0.0001,4,False,1.0062,0.695082,False,2.38406,2.37021
+"bord de D (marge 0,5)",5,0.0001,4,False,0.643526,0.504589,False,1.8429,1.27287
+"bord de D (marge 0,5)",5,0.0001,4,False,0.125344,0.0994357,False,1.465,0.900678
+"bord de D (marge 0,5)",5,0.0001,4,False,0.0476623,0.0203567,False,4.13821,1.05608
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0579503,0.0167439,True,4.10685,1.34298
+"bord de D (marge 0,5)",5,0.0001,5,True,0.165417,0.302861,True,0.673725,0.883401
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0298793,0.0326401,True,2.00109,1.70389
+"bord de D (marge 0,5)",5,0.0001,5,True,0.580754,0.560148,True,2.95955,1.89932
+"bord de D (marge 0,5)",5,0.0001,5,True,1.81114,0.942214,False,1.92323,1.39629
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0466769,0.0845257,True,1.06243,0.897801
+"bord de D (marge 0,5)",5,0.0001,5,True,0.190208,0.0964237,True,1.96252,1.58896
+"bord de D (marge 0,5)",5,0.0001,5,True,0.0400714,0.0291867,True,2.5555,1.47981
+"bord de D (marge 0,5)",5,0.0001,7,False,0.236824,0.17799,False,1.8801,5.53829
+"bord de D (marge 0,5)",5,0.0001,6,False,0.151082,0.361854,False,3.76217,1.27084
+"bord de D (marge 0,5)",5,0.001,3,False,0.526637,2.07063,False,0.788315,0.716127
+"bord de D (marge 0,5)",5,0.001,4,False,0.669972,0.818771,False,1.13669,1.18866
+"bord de D (marge 0,5)",5,0.001,5,True,3.68709,0.736831,False,3.22524,1.08225
+"bord de D (marge 0,5)",5,0.001,3,False,0.416811,0.633039,False,0.908749,0.437862
+"bord de D (marge 0,5)",5,0.001,4,False,0.048128,0.0218996,False,3.05658,0.689496
+"bord de D (marge 0,5)",5,0.001,5,True,0.585489,0.260584,True,3.33251,1.06337
+"bord de D (marge 0,5)",5,0.001,5,True,0.946107,0.484039,False,2.34406,1.04083
+"bord de D (marge 0,5)",5,0.001,4,False,0.1463,0.0343673,False,1.5137,0.373994
+"bord de D (marge 0,5)",5,0.001,3,False,0.466756,2.58763,False,1.38895,0.549491
+"bord de D (marge 0,5)",5,0.001,3,False,0.0690062,0.595604,False,0.582275,0.522485
+"bord de D (marge 0,5)",5,0.001,3,False,0.176925,0.175555,False,1.75068,0.471375
+"bord de D (marge 0,5)",5,0.001,3,False,0.497747,0.243298,False,1.98583,0.544459
+"bord de D (marge 0,5)",5,0.001,4,False,0.0306858,0.0746896,False,1.0122,0.817706
+"bord de D (marge 0,5)",5,0.001,5,True,0.583706,0.427993,False,1.80659,1.46053
+"bord de D (marge 0,5)",5,0.001,5,True,0.264787,0.385435,True,3.03753,1.41281
+"bord de D (marge 0,5)",5,0.001,4,False,0.650575,0.789714,False,2.75348,0.645625
+"bord de D (marge 0,5)",5,0.001,5,True,13.8449,0.904512,False,2.02487,0.963699
+"bord de D (marge 0,5)",5,0.001,4,False,0.713444,0.517378,False,1.9725,0.467393
+"bord de D (marge 0,5)",5,0.001,5,True,1.31377,1.12418,False,2.83455,0.609135
+"bord de D (marge 0,5)",5,0.001,5,True,0.0452644,0.0641558,True,2.42732,0.592607
+"bord de D (marge 0,5)",5,0.001,5,True,0.314545,0.0900773,True,2.57164,1.57287
+"bord de D (marge 0,5)",5,0.001,3,False,0.152719,0.631905,False,0.370865,0.35338
+"bord de D (marge 0,5)",5,0.001,5,True,1.53101,0.449062,False,3.71511,1.25249
+"bord de D (marge 0,5)",5,0.001,3,False,0.746108,0.567361,False,2.16823,0.412634
+"bord de D (marge 0,5)",5,0.001,4,False,0.350604,0.231183,False,4.83454,0.896335
+"bord de D (marge 0,5)",5,0.001,4,False,0.126834,0.0361034,False,3.86952,0.823929
+"bord de D (marge 0,5)",5,0.001,4,False,0.311779,0.107756,False,2.6141,1.04459
+"bord de D (marge 0,5)",5,0.001,3,False,1.54003,0.755168,False,3.50251,0.512921
+"bord de D (marge 0,5)",5,0.001,5,True,1.19047,0.520028,False,2.2841,1.98304
+"bord de D (marge 0,5)",5,0.001,4,False,1.44017,0.790545,False,1.40104,0.641596
+bord de D (marge 2),2,0.0001,2,True,0.0143207,0.0144916,True,5.3067,0.213222
+bord de D (marge 2),2,0.0001,2,True,0.0829409,0.0149753,True,10.8337,0.226704
+bord de D (marge 2),2,0.0001,2,True,0.00847851,0.00164282,True,9.65745,0.388527
+bord de D (marge 2),2,0.0001,2,True,0.0163752,0.000536682,True,9.78972,0.653874
+bord de D (marge 2),2,0.0001,2,True,0.00727861,0.00615985,True,2.72439,0.429163
+bord de D (marge 2),2,0.0001,2,True,0.0106554,0.00304302,True,12.6363,0.440394
+bord de D (marge 2),2,0.0001,2,True,0.0253182,0.00191395,True,4.89122,0.478344
+bord de D (marge 2),2,0.0001,3,False,0.0174852,0.00606002,False,6.29362,0.969305
+bord de D (marge 2),2,0.0001,2,True,0.910119,1.21744,False,0.844288,0.873858
+bord de D (marge 2),2,0.0001,2,True,0.0687468,0.00850324,True,8.3758,0.455764
+bord de D (marge 2),2,0.0001,2,True,0.102933,0.0306926,True,7.83433,0.506903
+bord de D (marge 2),2,0.0001,2,True,0.00306015,0.00119769,True,12.3961,0.364731
+bord de D (marge 2),2,0.0001,2,True,0.0242255,0.0178782,True,7.91402,0.408982
+bord de D (marge 2),2,0.0001,2,True,0.0216796,0.00514986,True,6.80128,0.333895
+bord de D (marge 2),2,0.0001,2,True,0.00159216,0.000622383,True,6.17826,0.402917
+bord de D (marge 2),2,0.0001,2,True,0.004003,0.000161556,True,5.1826,1.08329
+bord de D (marge 2),2,0.0001,2,True,0.0432521,0.00848055,True,5.80939,0.50389
+bord de D (marge 2),2,0.0001,2,True,0.0920947,0.0686106,True,2.74467,0.375152
+bord de D (marge 2),2,0.0001,2,True,0.0270961,0.0108608,True,6.67872,0.414052
+bord de D (marge 2),2,0.0001,2,True,0.020535,0.00638021,True,9.59565,0.405065
+bord de D (marge 2),2,0.0001,2,True,0.0579421,0.00523847,True,9.62921,0.497506
+bord de D (marge 2),2,0.0001,2,True,0.00334694,0.00113034,True,12.7839,0.393743
+bord de D (marge 2),2,0.0001,2,True,0.011967,0.00407065,True,6.41878,0.180415
+bord de D (marge 2),2,0.0001,2,True,0.00231527,0.0017103,True,8.17382,0.219701
+bord de D (marge 2),2,0.0001,2,True,0.0022974,0.00124457,True,8.5532,0.204143
+bord de D (marge 2),2,0.0001,2,True,0.0286177,0.00350529,True,19.8663,0.17316
+bord de D (marge 2),2,0.0001,2,True,0.00626572,0.00546441,True,5.13793,0.324688
+bord de D (marge 2),2,0.0001,2,True,0.055103,0.0189899,True,2.2508,0.22985
+bord de D (marge 2),2,0.0001,2,True,0.00840777,0.00142053,True,4.99479,0.186511
+bord de D (marge 2),2,0.0001,2,True,0.0518238,0.0267786,True,3.76354,0.23655
+bord de D (marge 2),2,0.001,2,True,0.221413,0.0786273,True,11.8143,0.30158
+bord de D (marge 2),2,0.001,2,True,0.101316,0.0333701,True,6.35529,0.320917
+bord de D (marge 2),2,0.001,2,True,0.223675,0.072715,True,7.86007,0.379343
+bord de D (marge 2),2,0.001,2,True,0.615597,0.0967753,True,7.90771,0.35835
+bord de D (marge 2),2,0.001,2,True,0.0300749,0.022594,True,4.37814,0.329866
+bord de D (marge 2),2,0.001,2,True,0.0730385,0.0179322,True,2.78521,0.287649
+bord de D (marge 2),2,0.001,2,True,0.0880171,0.0299627,True,16.4811,0.170835
+bord de D (marge 2),2,0.001,2,True,0.867538,0.442746,True,4.15234,0.156361
+bord de D (marge 2),2,0.001,2,True,0.350888,0.125733,True,5.08639,0.226791
+bord de D (marge 2),2,0.001,2,True,0.0656034,0.04753,True,2.50518,0.152027
+bord de D (marge 2),2,0.001,2,True,0.0501801,0.0457347,True,10.1023,0.177618
+bord de D (marge 2),2,0.001,2,True,0.0504376,0.00935831,True,4.40909,0.142991
+bord de D (marge 2),2,0.001,2,True,0.687006,0.502588,True,3.46065,0.354554
+bord de D (marge 2),2,0.001,2,True,0.0312483,0.0286442,True,7.18131,0.324966
+bord de D (marge 2),2,0.001,2,True,0.145038,0.0817846,True,7.39959,0.365119
+bord de D (marge 2),2,0.001,2,True,0.0246649,0.0189764,True,11.3777,0.379557
+bord de D (marge 2),2,0.001,2,True,0.247344,0.399678,True,2.24204,0.427179
+bord de D (marge 2),2,0.001,2,True,0.0167158,0.00626333,True,11.3128,0.473566
+bord de D (marge 2),2,0.001,1,False,0.068306,0.0159214,False,4.79829,0.24749
+bord de D (marge 2),2,0.001,2,True,0.00874045,0.00392874,True,18.17,0.362805
+bord de D (marge 2),2,0.001,2,True,1.61483,0.799036,False,2.52043,0.464566
+bord de D (marge 2),2,0.001,2,True,0.659693,0.329638,True,4.50066,0.139277
+bord de D (marge 2),2,0.001,2,True,0.837925,0.210723,True,12.8193,0.149538
+bord de D (marge 2),2,0.001,2,True,0.0893576,0.00944689,True,6.30592,0.160065
+bord de D (marge 2),2,0.001,2,True,0.232672,0.0841467,True,9.74221,0.281131
+bord de D (marge 2),2,0.001,2,True,0.054074,0.00880309,True,9.91452,0.146305
+bord de D (marge 2),2,0.001,2,True,0.891915,0.0833674,True,7.7567,0.189552
+bord de D (marge 2),2,0.001,2,True,0.0768737,0.0671163,True,11.9197,0.13655
+bord de D (marge 2),2,0.001,2,True,0.303692,0.240329,True,4.50236,0.389564
+bord de D (marge 2),2,0.001,2,True,0.0594613,0.00874939,True,10.0119,0.370478
+bord de D (marge 2),3,0.0001,3,True,0.849377,0.185334,True,6.81582,0.728032
+bord de D (marge 2),3,0.0001,3,True,0.128385,0.145993,True,1.92701,0.795184
+bord de D (marge 2),3,0.0001,2,False,0.0193666,0.0324332,False,0.737589,0.380039
+bord de D (marge 2),3,0.0001,3,True,0.0760979,0.00556393,True,3.42333,0.456357
+bord de D (marge 2),3,0.0001,3,True,0.169477,0.0755375,True,3.83641,0.359694
+bord de D (marge 2),3,0.0001,3,True,0.082519,0.0480567,True,4.91041,0.38597
+bord de D (marge 2),3,0.0001,3,True,0.0380189,0.0316488,True,4.18745,0.661544
+bord de D (marge 2),3,0.0001,3,True,0.0271521,0.00577338,True,6.09142,0.342529
+bord de D (marge 2),3,0.0001,3,True,3.23942,0.653371,False,2.97167,0.394411
+bord de D (marge 2),3,0.0001,3,True,0.515036,0.227103,True,3.25396,0.51981
+bord de D (marge 2),3,0.0001,3,True,0.0813787,0.0408608,True,3.79514,0.602028
+bord de D (marge 2),3,0.0001,3,True,0.124336,0.0830463,True,3.50067,0.849895
+bord de D (marge 2),3,0.0001,3,True,4.74142,1.32725,False,0.344324,0.703924
+bord de D (marge 2),3,0.0001,3,True,0.186835,0.0454846,True,3.78127,0.47535
+bord de D (marge 2),3,0.0001,2,False,0.308727,0.576325,False,1.49076,0.510719
+bord de D (marge 2),3,0.0001,3,True,0.013053,0.0287026,True,2.6454,0.740248
+bord de D (marge 2),3,0.0001,3,True,0.0278246,0.0126786,True,4.87455,0.700927
+bord de D (marge 2),3,0.0001,3,True,0.0382607,0.0704801,True,1.95903,0.771306
+bord de D (marge 2),3,0.0001,3,True,0.149229,0.160653,True,2.39789,0.752202
+bord de D (marge 2),3,0.0001,3,True,0.427226,0.77938,False,1.51627,1.08606
+bord de D (marge 2),3,0.0001,3,True,0.842998,0.736487,False,1.01341,1.38817
+bord de D (marge 2),3,0.0001,3,True,0.0277462,0.0171162,True,4.51336,0.725906
+bord de D (marge 2),3,0.0001,3,True,0.04083,0.00501065,True,8.18017,0.526541
+bord de D (marge 2),3,0.0001,3,True,0.821613,1.20891,False,1.05418,0.530627
+bord de D (marge 2),3,0.0001,3,True,0.206967,0.0884627,True,4.58861,0.337206
+bord de D (marge 2),3,0.0001,3,True,0.0129343,0.00514911,True,6.63029,0.27474
+bord de D (marge 2),3,0.0001,3,True,0.0554058,0.0411528,True,4.20771,0.484211
+bord de D (marge 2),3,0.0001,3,True,0.464865,0.2746,True,4.32706,0.377076
+bord de D (marge 2),3,0.0001,3,True,0.18184,0.179536,True,2.79696,0.438353
+bord de D (marge 2),3,0.0001,3,True,0.180826,0.162831,True,3.41743,0.386851
+bord de D (marge 2),3,0.001,3,True,0.327581,0.318511,True,2.925,0.562252
+bord de D (marge 2),3,0.001,3,True,3.50035,3.42738,False,2.09032,0.889035
+bord de D (marge 2),3,0.001,2,False,0.680172,0.49389,False,1.77687,0.348157
+bord de D (marge 2),3,0.001,3,True,0.816567,0.286268,False,2.83932,0.565474
+bord de D (marge 2),3,0.001,3,True,1.03304,0.775306,False,4.6727,0.945329
+bord de D (marge 2),3,0.001,2,False,0.523792,0.241364,False,3.4725,0.42138
+bord de D (marge 2),3,0.001,3,True,0.0336568,0.0572339,True,2.85246,0.545959
+bord de D (marge 2),3,0.001,3,True,0.197382,0.128439,True,2.42783,0.625462
+bord de D (marge 2),3,0.001,3,True,0.299757,0.141698,True,4.07339,0.659692
+bord de D (marge 2),3,0.001,1,False,0.173573,0.15361,False,1.82249,0.234996
+bord de D (marge 2),3,0.001,3,True,0.207232,0.118023,True,4.22216,0.584039
+bord de D (marge 2),3,0.001,2,False,0.153961,0.843276,False,0.745933,0.39199
+bord de D (marge 2),3,0.001,3,True,0.360061,0.184416,True,8.5751,0.261126
+bord de D (marge 2),3,0.001,2,False,1.26781,1.59076,False,0.971572,0.190092
+bord de D (marge 2),3,0.001,2,False,1.47281,0.600876,False,3.70414,0.197156
+bord de D (marge 2),3,0.001,3,True,0.273218,0.043869,True,6.08018,0.228821
+bord de D (marge 2),3,0.001,2,False,0.525379,0.435908,False,1.62128,0.159919
+bord de D (marge 2),3,0.001,3,True,0.0426258,0.0238743,True,5.48805,0.224612
+bord de D (marge 2),3,0.001,3,True,0.275499,0.250278,True,2.83753,0.250142
+bord de D (marge 2),3,0.001,3,True,0.185911,0.0610617,True,5.70011,0.250594
+bord de D (marge 2),3,0.001,3,True,0.82318,1.18144,True,3.48512,0.485071
+bord de D (marge 2),3,0.001,3,True,0.110521,0.0273552,True,5.4402,0.47776
+bord de D (marge 2),3,0.001,3,True,1.77364,0.426829,False,2.69113,0.56736
+bord de D (marge 2),3,0.001,2,False,0.787604,1.21475,False,1.58385,0.192161
+bord de D (marge 2),3,0.001,2,False,0.0538762,0.0114309,False,3.88663,0.177567
+bord de D (marge 2),3,0.001,1,False,0.0601162,0.029719,False,3.88521,0.118965
+bord de D (marge 2),3,0.001,3,True,0.239477,0.283811,True,3.28425,0.247064
+bord de D (marge 2),3,0.001,2,False,0.717044,0.098936,False,3.91717,0.171264
+bord de D (marge 2),3,0.001,3,True,0.764074,0.188717,True,4.70878,0.319685
+bord de D (marge 2),3,0.001,2,False,1.73452,1.56437,False,3.5947,0.178643
+bord de D (marge 2),5,0.0001,5,True,8.77035,1.05872,False,2.51678,1.13661
+bord de D (marge 2),5,0.0001,4,False,1.6947,0.945886,False,1.39802,0.944748
+bord de D (marge 2),5,0.0001,4,False,0.205953,0.649844,False,0.587774,0.881125
+bord de D (marge 2),5,0.0001,4,False,0.323066,0.289307,False,1.5674,0.642422
+bord de D (marge 2),5,0.0001,4,False,0.103969,0.160884,False,0.625607,1.05752
+bord de D (marge 2),5,0.0001,4,False,0.23257,0.0392312,False,1.96988,0.805358
+bord de D (marge 2),5,0.0001,4,False,0.425005,1.32085,False,0.872029,1.35256
+bord de D (marge 2),5,0.0001,5,True,1.09255,0.254171,False,0.932015,2.52973
+bord de D (marge 2),5,0.0001,5,True,2.40063,0.830015,False,1.78338,0.913434
+bord de D (marge 2),5,0.0001,5,True,0.0517957,0.0223151,True,2.52467,0.705979
+bord de D (marge 2),5,0.0001,5,True,0.645714,0.822093,True,4.05486,1.81061
+bord de D (marge 2),5,0.0001,5,True,1.29531,1.55694,False,3.99358,1.63481
+bord de D (marge 2),5,0.0001,4,False,0.675672,0.447174,False,1.28702,0.5895
+bord de D (marge 2),5,0.0001,5,True,0.152124,0.163641,True,4.37836,0.781729
+bord de D (marge 2),5,0.0001,4,False,0.105144,0.0517207,False,2.60496,1.24457
+bord de D (marge 2),5,0.0001,4,False,0.885894,0.376566,False,3.72078,1.13831
+bord de D (marge 2),5,0.0001,3,False,0.990383,1.56156,False,2.38406,0.598657
+bord de D (marge 2),5,0.0001,4,False,0.751452,0.499735,False,1.8429,0.726912
+bord de D (marge 2),5,0.0001,4,False,0.10552,0.102175,False,1.465,0.924263
+bord de D (marge 2),5,0.0001,4,False,0.182101,0.102286,False,4.13821,1.08862
+bord de D (marge 2),5,0.0001,5,True,0.167997,0.0952103,True,4.10685,1.80435
+bord de D (marge 2),5,0.0001,4,False,0.843631,0.901545,False,0.673725,0.97703
+bord de D (marge 2),5,0.0001,5,True,0.214298,0.127698,True,2.00109,2.52706
+bord de D (marge 2),5,0.0001,5,True,1.10836,0.998481,False,2.95955,2.01139
+bord de D (marge 2),5,0.0001,4,False,0.898771,0.79394,False,1.92323,1.634
+bord de D (marge 2),5,0.0001,5,True,0.562126,0.556589,False,1.06243,1.86113
+bord de D (marge 2),5,0.0001,5,True,0.752089,0.42712,False,1.96252,1.85341
+bord de D (marge 2),5,0.0001,5,True,0.584409,0.639177,True,2.5555,1.8049
+bord de D (marge 2),5,0.0001,5,True,5.19139,1.08643,False,1.8801,0.794083
+bord de D (marge 2),5,0.0001,5,True,0.0702513,0.027455,True,3.76217,0.750834
+bord de D (marge 2),5,0.001,2,False,0.964185,0.781516,False,0.788315,0.319707
+bord de D (marge 2),5,0.001,3,False,0.638797,0.214008,False,1.13669,0.654249
+bord de D (marge 2),5,0.001,4,False,0.844845,0.743808,False,3.22524,0.808864
+bord de D (marge 2),5,0.001,3,False,0.395068,0.624634,False,0.908749,0.319778
+bord de D (marge 2),5,0.001,4,False,0.300954,0.249878,False,3.05658,0.910249
+bord de D (marge 2),5,0.001,5,True,1.00879,0.451806,False,3.33251,1.56566
+bord de D (marge 2),5,0.001,5,True,2.52749,0.78771,False,2.34406,0.716685
+bord de D (marge 2),5,0.001,4,False,0.433994,0.114674,False,1.5137,0.303043
+bord de D (marge 2),5,0.001,3,False,2.50425,0.833976,False,1.38895,0.600433
+bord de D (marge 2),5,0.001,3,False,0.207956,0.581609,False,0.582275,0.466969
+bord de D (marge 2),5,0.001,3,False,0.203724,0.170044,False,1.75068,0.496742
+bord de D (marge 2),5,0.001,2,False,1.6946,0.856694,False,1.98583,0.417694
+bord de D (marge 2),5,0.001,4,False,0.244624,0.133487,False,1.0122,0.688508
+bord de D (marge 2),5,0.001,4,False,1.7577,0.813714,False,1.80659,0.901564
+bord de D (marge 2),5,0.001,4,False,0.922629,0.229841,False,3.03753,0.855589
+bord de D (marge 2),5,0.001,4,False,0.592535,0.655682,False,2.75348,0.743951
+bord de D (marge 2),5,0.001,4,False,0.532125,0.335087,False,2.02487,1.77661
+bord de D (marge 2),5,0.001,2,False,1.27221,1.51065,False,1.9725,0.46453
+bord de D (marge 2),5,0.001,4,False,1.37,1.71506,False,2.83455,0.925463
+bord de D (marge 2),5,0.001,4,False,0.138339,0.110643,False,2.42732,0.383772
+bord de D (marge 2),5,0.001,3,False,0.941922,0.894662,False,2.57164,0.315979
+bord de D (marge 2),5,0.001,3,False,0.204499,0.643973,False,0.370865,0.19385
+bord de D (marge 2),5,0.001,4,False,0.784384,0.529549,False,3.71511,0.382222
+bord de D (marge 2),5,0.001,3,False,0.70129,0.527945,False,2.16823,0.310744
+bord de D (marge 2),5,0.001,4,False,0.570736,0.210875,False,4.83454,0.872896
+bord de D (marge 2),5,0.001,4,False,0.206387,0.227148,False,3.86952,0.366402
+bord de D (marge 2),5,0.001,4,False,1.71122,0.316459,False,2.6141,0.463291
+bord de D (marge 2),5,0.001,2,False,0.945521,0.559051,False,3.50251,0.160027
+bord de D (marge 2),5,0.001,3,False,1.75946,0.791989,False,2.2841,0.465602
+bord de D (marge 2),5,0.001,3,False,2.22629,0.743453,False,1.40104,0.24346
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00864062,0.00287878,True,5.3067,0.186499
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0807173,0.0102632,True,10.8337,0.263699
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0244062,0.00676578,True,9.65745,0.489771
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0424221,0.0104208,True,9.78972,0.44534
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00247261,0.000944915,True,2.72439,0.514036
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00821608,0.00236519,True,12.6363,0.421616
+deux cercles x1 et x1.5,2,0.0001,2,True,0.065087,0.0161207,True,4.89122,0.381244
+deux cercles x1 et x1.5,2,0.0001,2,True,0.134097,0.0562198,True,6.29362,0.56393
+deux cercles x1 et x1.5,2,0.0001,2,True,0.784148,1.13014,False,0.844288,1.01413
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0438933,0.00195631,True,8.3758,0.515676
+deux cercles x1 et x1.5,2,0.0001,2,True,0.165451,0.0122107,True,7.83433,0.300658
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00487399,0.000500051,True,12.3961,0.193961
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0115438,0.00813632,True,7.91402,0.222143
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0192462,0.00436259,True,6.80128,0.184799
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0183341,0.00111745,True,6.17826,0.399358
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0126021,0.00957067,True,5.1826,0.434232
+deux cercles x1 et x1.5,2,0.0001,2,True,0.261705,0.0576732,True,5.80939,0.531042
+deux cercles x1 et x1.5,2,0.0001,2,True,0.176202,0.162107,True,2.74467,0.62426
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00727932,0.00161225,True,6.67872,0.445927
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00939381,0.00107219,True,9.59565,0.437932
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0881021,0.0172943,True,9.62921,0.609316
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00550141,0.00216095,True,12.7839,0.548747
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0134301,0.00023013,True,6.41878,0.318763
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00404767,0.00191981,True,8.17382,0.240916
+deux cercles x1 et x1.5,2,0.0001,2,True,0.00299471,0.00195354,True,8.5532,0.22702
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0171157,0.0123913,True,19.8663,0.215334
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0206227,0.011308,True,5.13793,0.302829
+deux cercles x1 et x1.5,2,0.0001,2,True,0.108625,0.0801483,True,2.2508,0.317023
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0235945,0.0184825,True,4.99479,0.274182
+deux cercles x1 et x1.5,2,0.0001,2,True,0.0346901,0.0173422,True,3.76354,0.261609
+deux cercles x1 et x1.5,2,0.001,2,True,0.245718,0.0884809,True,11.8143,0.28778
+deux cercles x1 et x1.5,2,0.001,2,True,0.561459,0.103541,True,6.35529,0.33081
+deux cercles x1 et x1.5,2,0.001,2,True,0.220818,0.0210151,True,7.86007,0.420213
+deux cercles x1 et x1.5,2,0.001,2,True,0.832431,0.198004,True,7.90771,0.47866
+deux cercles x1 et x1.5,2,0.001,2,True,0.163525,0.0341614,True,4.37814,0.36918
+deux cercles x1 et x1.5,2,0.001,2,True,0.284329,0.171965,True,2.78521,0.701363
+deux cercles x1 et x1.5,2,0.001,2,True,0.0426452,0.00899919,True,16.4811,0.346604
+deux cercles x1 et x1.5,2,0.001,2,True,0.628852,0.564695,True,4.15234,0.203275
+deux cercles x1 et x1.5,2,0.001,2,True,1.16087,0.439601,False,5.08639,0.391254
+deux cercles x1 et x1.5,2,0.001,2,True,0.126039,0.0625523,True,2.50518,0.230423
+deux cercles x1 et x1.5,2,0.001,2,True,0.257322,0.0175684,True,10.1023,0.206506
+deux cercles x1 et x1.5,2,0.001,2,True,0.309705,0.0745483,True,4.40909,0.251718
+deux cercles x1 et x1.5,2,0.001,2,True,1.29653,0.46323,False,3.46065,0.496563
+deux cercles x1 et x1.5,2,0.001,2,True,0.151721,0.0161945,True,7.18131,0.331495
+deux cercles x1 et x1.5,2,0.001,2,True,0.311614,0.188161,True,7.39959,0.347249
+deux cercles x1 et x1.5,2,0.001,2,True,0.119042,0.0192898,True,11.3777,0.318616
+deux cercles x1 et x1.5,2,0.001,1,False,0.141441,0.109717,False,2.24204,0.258207
+deux cercles x1 et x1.5,2,0.001,2,True,0.0363392,0.00776419,True,11.3128,0.493608
+deux cercles x1 et x1.5,2,0.001,1,False,0.012083,0.00840942,False,4.79829,0.298468
+deux cercles x1 et x1.5,2,0.001,2,True,0.0190827,0.00687273,True,18.17,0.239984
+deux cercles x1 et x1.5,2,0.001,2,True,0.519996,0.794273,True,2.52043,0.433568
+deux cercles x1 et x1.5,2,0.001,2,True,0.806638,0.248974,True,4.50066,0.346988
+deux cercles x1 et x1.5,2,0.001,2,True,1.11829,0.0913207,False,12.8193,0.382114
+deux cercles x1 et x1.5,2,0.001,2,True,0.242162,0.0540132,True,6.30592,0.394773
+deux cercles x1 et x1.5,2,0.001,2,True,0.112932,0.0219325,True,9.74221,0.364912
+deux cercles x1 et x1.5,2,0.001,2,True,0.0700997,0.0141633,True,9.91452,0.263197
+deux cercles x1 et x1.5,2,0.001,2,True,1.99073,0.301321,False,7.7567,0.537161
+deux cercles x1 et x1.5,2,0.001,2,True,0.168239,0.108469,True,11.9197,0.430724
+deux cercles x1 et x1.5,2,0.001,2,True,0.0829364,0.0761917,True,4.50236,0.202145
+deux cercles x1 et x1.5,2,0.001,2,True,0.198434,0.0233255,True,10.0119,0.186551
+deux cercles x1 et x1.5,3,0.0001,3,True,0.530671,0.296866,True,6.81582,0.374047
+deux cercles x1 et x1.5,3,0.0001,3,True,0.126416,0.255702,True,1.92701,0.432269
+deux cercles x1 et x1.5,3,0.0001,2,False,0.0942031,0.0316335,False,0.737589,0.457475
+deux cercles x1 et x1.5,3,0.0001,3,True,0.0384291,0.00886531,True,3.42333,0.964156
+deux cercles x1 et x1.5,3,0.0001,3,True,0.37696,0.127971,True,3.83641,1.31736
+deux cercles x1 et x1.5,3,0.0001,3,True,0.236944,0.0928814,True,4.91041,0.867045
+deux cercles x1 et x1.5,3,0.0001,3,True,0.315059,0.16882,True,4.18745,1.02718
+deux cercles x1 et x1.5,3,0.0001,3,True,0.226477,0.0765112,True,6.09142,0.402895
+deux cercles x1 et x1.5,3,0.0001,3,True,0.606703,0.125302,True,2.97167,0.719926
+deux cercles x1 et x1.5,3,0.0001,3,True,3.21822,0.737453,False,3.25396,0.532196
+deux cercles x1 et x1.5,3,0.0001,3,True,0.133187,0.0845581,True,3.79514,0.993279
+deux cercles x1 et x1.5,3,0.0001,3,True,0.293036,0.206768,True,3.50067,1.09412
+deux cercles x1 et x1.5,3,0.0001,2,False,0.136929,0.737317,False,0.344324,0.524546
+deux cercles x1 et x1.5,3,0.0001,3,True,0.109166,0.0349512,True,3.78127,1.29516
+deux cercles x1 et x1.5,3,0.0001,2,False,0.364665,0.660387,False,1.49076,0.786356
+deux cercles x1 et x1.5,3,0.0001,3,True,0.0981365,0.134863,True,2.6454,0.868857
+deux cercles x1 et x1.5,3,0.0001,3,True,0.143485,0.064514,True,4.87455,0.739633
+deux cercles x1 et x1.5,3,0.0001,3,True,0.589243,0.971392,False,1.95903,0.949708
+deux cercles x1 et x1.5,3,0.0001,3,True,0.416098,0.286391,True,2.39789,1.05607
+deux cercles x1 et x1.5,3,0.0001,3,True,0.405837,0.375699,False,1.51627,0.983687
+deux cercles x1 et x1.5,3,0.0001,2,False,0.286653,0.230537,False,1.01341,0.554468
+deux cercles x1 et x1.5,3,0.0001,3,True,0.028347,0.00470069,True,4.51336,0.382888
+deux cercles x1 et x1.5,3,0.0001,3,True,0.03878,0.00660282,True,8.18017,0.843422
+deux cercles x1 et x1.5,3,0.0001,3,True,4.68451,1.51307,False,1.05418,0.829841
+deux cercles x1 et x1.5,3,0.0001,3,True,0.375623,0.163389,True,4.58861,0.901982
+deux cercles x1 et x1.5,3,0.0001,4,False,0.145002,0.0815652,False,6.63029,1.62169
+deux cercles x1 et x1.5,3,0.0001,3,True,0.26234,0.128215,True,4.20771,1.74813
+deux cercles x1 et x1.5,3,0.0001,3,True,0.284487,0.311223,True,4.32706,0.439587
+deux cercles x1 et x1.5,3,0.0001,3,True,0.354133,0.336482,True,2.79696,0.496696
+deux cercles x1 et x1.5,3,0.0001,3,True,0.464574,0.282365,True,3.41743,0.431466
+deux cercles x1 et x1.5,3,0.001,3,True,0.827573,1.00358,False,2.925,0.682669
+deux cercles x1 et x1.5,3,0.001,2,False,3.45915,0.794233,False,2.09032,0.415841
+deux cercles x1 et x1.5,3,0.001,3,True,0.0885905,0.0611855,True,1.77687,0.66462
+deux cercles x1 et x1.5,3,0.001,3,True,1.15376,1.24002,False,2.83932,0.391762
+deux cercles x1 et x1.5,3,0.001,3,True,1.55628,0.734354,False,4.6727,0.540861
+deux cercles x1 et x1.5,3,0.001,2,False,0.390903,0.30279,False,3.4725,0.161619
+deux cercles x1 et x1.5,3,0.001,3,True,0.155854,0.134618,True,2.85246,0.394091
+deux cercles x1 et x1.5,3,0.001,3,True,0.536182,0.0964169,True,2.42783,0.330087
+deux cercles x1 et x1.5,3,0.001,3,True,0.217769,0.0956354,True,4.07339,0.532174
+deux cercles x1 et x1.5,3,0.001,1,False,0.182861,0.153831,False,1.82249,0.210469
+deux cercles x1 et x1.5,3,0.001,2,False,2.00476,0.221638,False,4.22216,0.418135
+deux cercles x1 et x1.5,3,0.001,2,False,0.303408,0.939782,False,0.745933,0.381423
+deux cercles x1 et x1.5,3,0.001,3,True,0.807932,0.114955,True,8.5751,0.709385
+deux cercles x1 et x1.5,3,0.001,1,False,0.81228,0.319979,False,0.971572,0.213709
+deux cercles x1 et x1.5,3,0.001,2,False,0.584054,0.121453,False,3.70414,0.147816
+deux cercles x1 et x1.5,3,0.001,2,False,0.840847,0.210522,False,6.08018,0.179656
+deux cercles x1 et x1.5,3,0.001,1,False,0.804261,2.75753,False,1.62128,0.227892
+deux cercles x1 et x1.5,3,0.001,3,True,0.194233,0.0371105,True,5.48805,0.575969
+deux cercles x1 et x1.5,3,0.001,2,False,0.825459,0.842254,False,2.83753,0.404465
+deux cercles x1 et x1.5,3,0.001,3,True,0.469964,0.103173,True,5.70011,0.424486
+deux cercles x1 et x1.5,3,0.001,3,True,2.4655,2.59133,False,3.48512,0.550032
+deux cercles x1 et x1.5,3,0.001,3,True,0.216549,0.0785861,True,5.4402,0.266761
+deux cercles x1 et x1.5,3,0.001,2,False,0.923187,0.102117,False,2.69113,0.177432
+deux cercles x1 et x1.5,3,0.001,2,False,0.503749,0.81336,False,1.58385,0.150862
+deux cercles x1 et x1.5,3,0.001,2,False,0.121143,0.0219232,False,3.88663,0.313842
+deux cercles x1 et x1.5,3,0.001,2,False,3.09917,7.43187,False,3.88521,0.254978
+deux cercles x1 et x1.5,3,0.001,3,True,0.286008,0.16998,True,3.28425,0.268669
+deux cercles x1 et x1.5,3,0.001,2,False,1.02691,0.174027,False,3.91717,0.160699
+deux cercles x1 et x1.5,3,0.001,3,True,0.837051,0.228899,True,4.70878,0.551962
+deux cercles x1 et x1.5,3,0.001,2,False,1.48463,0.605795,False,3.5947,0.443028
+deux cercles x1 et x1.5,5,0.0001,4,False,0.599286,0.172441,False,2.51678,1.93777
+deux cercles x1 et x1.5,5,0.0001,4,False,1.47089,0.649073,False,1.39802,1.38791
+deux cercles x1 et x1.5,5,0.0001,4,False,0.232252,0.582661,False,0.587774,1.10327
+deux cercles x1 et x1.5,5,0.0001,4,False,0.700154,0.470158,False,1.5674,2.55949
+deux cercles x1 et x1.5,5,0.0001,4,False,0.127337,0.170638,False,0.625607,1.40212
+deux cercles x1 et x1.5,5,0.0001,4,False,0.566717,0.129122,False,1.96988,0.930374
+deux cercles x1 et x1.5,5,0.0001,4,False,2.97887,2.97648,False,0.872029,0.694069
+deux cercles x1 et x1.5,5,0.0001,4,False,1.02692,0.250973,False,0.932015,0.58403
+deux cercles x1 et x1.5,5,0.0001,5,True,0.490137,0.505582,False,1.78338,1.18719
+deux cercles x1 et x1.5,5,0.0001,5,True,0.145424,0.0406289,True,2.52467,0.874186
+deux cercles x1 et x1.5,5,0.0001,5,True,1.14762,0.453675,False,4.05486,8.85957
+deux cercles x1 et x1.5,5,0.0001,3,False,1.74668,0.982452,False,3.99358,0.553271
+deux cercles x1 et x1.5,5,0.0001,4,False,0.439865,0.253211,False,1.28702,0.639335
+deux cercles x1 et x1.5,5,0.0001,4,False,1.02463,0.125631,False,4.37836,0.638923
+deux cercles x1 et x1.5,5,0.0001,4,False,1.24034,0.158169,False,2.60496,2.01427
+deux cercles x1 et x1.5,5,0.0001,4,False,0.563227,0.230872,False,3.72078,1.40217
+deux cercles x1 et x1.5,5,0.0001,3,False,1.10273,0.443538,False,2.38406,0.668964
+deux cercles x1 et x1.5,5,0.0001,3,False,0.879003,0.932556,False,1.8429,0.529714
+deux cercles x1 et x1.5,5,0.0001,4,False,0.0792575,0.091959,False,1.465,0.643941
+deux cercles x1 et x1.5,5,0.0001,4,False,0.434141,0.233262,False,4.13821,0.609062
+deux cercles x1 et x1.5,5,0.0001,5,True,0.39003,0.153907,True,4.10685,1.09486
+deux cercles x1 et x1.5,5,0.0001,5,True,2.59563,0.993652,False,0.673725,1.21831
+deux cercles x1 et x1.5,5,0.0001,5,True,1.32401,1.00755,False,2.00109,2.7617
+deux cercles x1 et x1.5,5,0.0001,5,True,0.625428,0.460896,True,2.95955,2.06035
+deux cercles x1 et x1.5,5,0.0001,4,False,0.74328,1.23349,False,1.92323,1.23796
+deux cercles x1 et x1.5,5,0.0001,4,False,0.124311,0.161742,False,1.06243,0.677437
+deux cercles x1 et x1.5,5,0.0001,5,True,0.845086,0.125166,False,1.96252,2.36709
+deux cercles x1 et x1.5,5,0.0001,4,False,0.468992,0.176034,False,2.5555,1.3317
+deux cercles x1 et x1.5,5,0.0001,4,False,0.910545,0.814496,False,1.8801,1.05359
+deux cercles x1 et x1.5,5,0.0001,5,True,0.256249,0.121752,True,3.76217,1.68393
+deux cercles x1 et x1.5,5,0.001,2,False,1.25399,0.805215,False,0.788315,0.487867
+deux cercles x1 et x1.5,5,0.001,2,False,1.27197,0.637017,False,1.13669,0.365542
+deux cercles x1 et x1.5,5,0.001,4,False,1.883,1.07053,False,3.22524,1.05545
+deux cercles x1 et x1.5,5,0.001,3,False,0.444226,1.55681,False,0.908749,0.515502
+deux cercles x1 et x1.5,5,0.001,4,False,0.0882789,0.139339,False,3.05658,0.818434
+deux cercles x1 et x1.5,5,0.001,5,True,1.54019,0.701976,False,3.33251,1.89931
+deux cercles x1 et x1.5,5,0.001,5,True,1.82798,0.661175,False,2.34406,1.60393
+deux cercles x1 et x1.5,5,0.001,4,False,0.334134,0.185331,False,1.5137,0.733783
+deux cercles x1 et x1.5,5,0.001,3,False,1.44354,5.46961,False,1.38895,0.755919
+deux cercles x1 et x1.5,5,0.001,3,False,0.162832,0.493018,False,0.582275,0.378577
+deux cercles x1 et x1.5,5,0.001,3,False,0.311191,0.158982,False,1.75068,0.254263
+deux cercles x1 et x1.5,5,0.001,1,False,0.362282,0.657561,False,1.98583,0.106047
+deux cercles x1 et x1.5,5,0.001,4,False,0.976787,0.262816,False,1.0122,0.83671
+deux cercles x1 et x1.5,5,0.001,5,True,1.29576,0.252075,False,1.80659,1.31859
+deux cercles x1 et x1.5,5,0.001,4,False,1.01776,1.56466,False,3.03753,0.407319
+deux cercles x1 et x1.5,5,0.001,4,False,1.62528,1.30153,False,2.75348,0.458805
+deux cercles x1 et x1.5,5,0.001,4,False,0.687696,1.04311,False,2.02487,1.10142
+deux cercles x1 et x1.5,5,0.001,2,False,0.939565,1.05861,False,1.9725,0.326698
+deux cercles x1 et x1.5,5,0.001,3,False,1.71671,2.48434,False,2.83455,1.28851
+deux cercles x1 et x1.5,5,0.001,4,False,0.786248,0.405329,False,2.42732,0.91712
+deux cercles x1 et x1.5,5,0.001,3,False,1.32309,0.624656,False,2.57164,0.752362
+deux cercles x1 et x1.5,5,0.001,3,False,0.593489,1.55112,False,0.370865,0.701927
+deux cercles x1 et x1.5,5,0.001,4,False,1.48529,0.638027,False,3.71511,1.06012
+deux cercles x1 et x1.5,5,0.001,3,False,0.628654,0.592137,False,2.16823,0.255488
+deux cercles x1 et x1.5,5,0.001,3,False,3.94398,1.83748,False,4.83454,0.650942
+deux cercles x1 et x1.5,5,0.001,4,False,0.249728,0.23211,False,3.86952,0.919327
+deux cercles x1 et x1.5,5,0.001,3,False,1.09334,0.803491,False,2.6141,0.417898
+deux cercles x1 et x1.5,5,0.001,2,False,0.96788,0.518707,False,3.50251,0.149413
+deux cercles x1 et x1.5,5,0.001,3,False,1.73946,0.643976,False,2.2841,0.607071
+deux cercles x1 et x1.5,5,0.001,2,False,0.655814,3.52399,False,1.40104,0.307395
+grille 8x8 dans D,2,0.0001,2,True,0.00132642,0.000333735,True,5.3067,0.368095
+grille 8x8 dans D,2,0.0001,2,True,0.0080489,0.00430845,True,10.8337,0.58103
+grille 8x8 dans D,2,0.0001,2,True,0.000624507,0.0017143,True,9.65745,0.483885
+grille 8x8 dans D,2,0.0001,2,True,0.00442999,0.00261404,True,9.78972,0.49454
+grille 8x8 dans D,2,0.0001,2,True,0.000908916,0.000511637,True,2.72439,1.04638
+grille 8x8 dans D,2,0.0001,2,True,0.00296917,0.00033314,True,12.6363,0.178854
+grille 8x8 dans D,2,0.0001,2,True,0.00304828,0.000574327,True,4.89122,0.451608
+grille 8x8 dans D,2,0.0001,2,True,0.0151527,0.00447579,True,6.29362,0.342616
+grille 8x8 dans D,2,0.0001,2,True,0.00093698,0.00273758,True,0.844288,1.79788
+grille 8x8 dans D,2,0.0001,2,True,0.00400637,0.00506989,True,8.3758,0.281068
+grille 8x8 dans D,2,0.0001,2,True,0.0198628,0.00344699,True,7.83433,0.512971
+grille 8x8 dans D,2,0.0001,2,True,0.000255938,0.000430621,True,12.3961,0.355975
+grille 8x8 dans D,2,0.0001,3,False,0.00531271,0.00593966,False,7.91402,0.744143
+grille 8x8 dans D,2,0.0001,2,True,0.00131494,0.00016175,True,6.80128,0.454046
+grille 8x8 dans D,2,0.0001,2,True,0.00319515,0.0026231,True,6.17826,0.625708
+grille 8x8 dans D,2,0.0001,2,True,0.000230594,0.000469382,True,5.1826,0.500882
+grille 8x8 dans D,2,0.0001,2,True,0.00287508,0.000947194,True,5.80939,0.444468
+grille 8x8 dans D,2,0.0001,2,True,0.000561631,0.000370157,True,2.74467,0.235008
+grille 8x8 dans D,2,0.0001,2,True,0.00131375,0.000473497,True,6.67872,0.46307
+grille 8x8 dans D,2,0.0001,2,True,0.000182916,0.000559747,True,9.59565,0.491752
+grille 8x8 dans D,2,0.0001,2,True,0.00812007,0.00209055,True,9.62921,0.425563
+grille 8x8 dans D,2,0.0001,2,True,0.000194255,0.000279936,True,12.7839,0.345081
+grille 8x8 dans D,2,0.0001,2,True,0.00533821,0.00230077,True,6.41878,0.363682
+grille 8x8 dans D,2,0.0001,10,False,1.75434,0.715261,False,8.17382,12.7005
+grille 8x8 dans D,2,0.0001,2,True,0.00174653,0.000664498,True,8.5532,0.449282
+grille 8x8 dans D,2,0.0001,2,True,0.00846179,0.0111949,True,19.8663,0.236984
+grille 8x8 dans D,2,0.0001,2,True,0.000557588,8.28981e-05,True,5.13793,0.439714
+grille 8x8 dans D,2,0.0001,2,True,0.00329633,0.00086247,True,2.2508,0.394889
+grille 8x8 dans D,2,0.0001,2,True,0.000981576,0.000712586,True,4.99479,0.240616
+grille 8x8 dans D,2,0.0001,2,True,0.00199088,0.00197323,True,3.76354,0.297559
+grille 8x8 dans D,2,0.001,2,True,0.0091175,0.0153084,True,11.8143,0.284043
+grille 8x8 dans D,2,0.001,2,True,0.0211347,0.00634492,True,6.35529,0.340607
+grille 8x8 dans D,2,0.001,2,True,0.0335233,0.0253471,True,7.86007,0.433042
+grille 8x8 dans D,2,0.001,2,True,0.00487322,0.106752,True,7.90771,0.374795
+grille 8x8 dans D,2,0.001,2,True,0.0250648,0.0248073,True,4.37814,0.402423
+grille 8x8 dans D,2,0.001,2,True,0.00850163,0.00975265,True,2.78521,0.845352
+grille 8x8 dans D,2,0.001,2,True,0.00589517,0.00696773,True,16.4811,0.387737
+grille 8x8 dans D,2,0.001,2,True,0.0286819,0.0041143,True,4.15234,0.445404
+grille 8x8 dans D,2,0.001,2,True,0.0306366,0.0107364,True,5.08639,0.371798
+grille 8x8 dans D,2,0.001,2,True,0.0353625,0.0379943,True,2.50518,1.46803
+grille 8x8 dans D,2,0.001,2,True,0.0420651,0.0115348,True,10.1023,0.447034
+grille 8x8 dans D,2,0.001,2,True,0.00229645,0.00102801,True,4.40909,0.403784
+grille 8x8 dans D,2,0.001,2,True,0.00756435,0.00710077,True,3.46065,0.334559
+grille 8x8 dans D,2,0.001,2,True,0.0253651,0.0101492,True,7.18131,0.192069
+grille 8x8 dans D,2,0.001,2,True,0.116964,0.047895,True,7.39959,0.196062
+grille 8x8 dans D,2,0.001,2,True,0.0423238,0.0160148,True,11.3777,0.175449
+grille 8x8 dans D,2,0.001,2,True,0.00259866,0.0114848,True,2.24204,1.04113
+grille 8x8 dans D,2,0.001,2,True,0.00239535,0.0016877,True,11.3128,0.418361
+grille 8x8 dans D,2,0.001,2,True,0.201483,0.218799,True,4.79829,0.520902
+grille 8x8 dans D,2,0.001,2,True,0.00310722,0.00380508,True,18.17,0.369732
+grille 8x8 dans D,2,0.001,2,True,0.0271267,0.0125097,True,2.52043,0.417819
+grille 8x8 dans D,2,0.001,2,True,0.055435,0.0257158,True,4.50066,0.298925
+grille 8x8 dans D,2,0.001,2,True,0.00771934,0.0131963,True,12.8193,0.228358
+grille 8x8 dans D,2,0.001,2,True,0.0129437,0.00513782,True,6.30592,0.206861
+grille 8x8 dans D,2,0.001,2,True,0.00329423,0.00416859,True,9.74221,0.400601
+grille 8x8 dans D,2,0.001,4,False,0.46493,0.00155107,False,9.91452,1.72261
+grille 8x8 dans D,2,0.001,2,True,0.482775,0.181217,True,7.7567,0.193246
+grille 8x8 dans D,2,0.001,2,True,0.0176487,0.015352,True,11.9197,0.259976
+grille 8x8 dans D,2,0.001,2,True,0.00461454,0.00731474,True,4.50236,0.899946
+grille 8x8 dans D,2,0.001,2,True,0.00345027,0.00843909,True,10.0119,0.291622
+grille 8x8 dans D,3,0.0001,3,True,0.00374154,0.00242339,True,6.81582,0.934972
+grille 8x8 dans D,3,0.0001,3,True,0.00674,0.00619189,True,1.92701,7.71575
+grille 8x8 dans D,3,0.0001,5,False,5.71252,0.302673,False,0.737589,2.82035
+grille 8x8 dans D,3,0.0001,9,False,1.35192,0.683994,False,3.42333,6.73277
+grille 8x8 dans D,3,0.0001,3,True,0.00157879,0.00475328,True,3.83641,0.967395
+grille 8x8 dans D,3,0.0001,3,True,0.00104039,0.00221114,True,4.91041,1.17589
+grille 8x8 dans D,3,0.0001,3,True,0.00137616,0.00240783,True,4.18745,0.973508
+grille 8x8 dans D,3,0.0001,3,True,0.00782727,0.00808999,True,6.09142,0.838253
+grille 8x8 dans D,3,0.0001,3,True,0.0194851,0.00264559,True,2.97167,0.645187
+grille 8x8 dans D,3,0.0001,3,True,0.00667293,0.0103355,True,3.25396,0.719793
+grille 8x8 dans D,3,0.0001,3,True,0.0019442,0.00158662,True,3.79514,0.963638
+grille 8x8 dans D,3,0.0001,3,True,0.00908011,0.00374147,True,3.50067,0.369039
+grille 8x8 dans D,3,0.0001,3,True,0.788187,1.29077,False,0.344324,1.29244
+grille 8x8 dans D,3,0.0001,3,True,0.00701044,0.0032187,True,3.78127,0.458886
+grille 8x8 dans D,3,0.0001,3,True,1.63272,0.776156,False,1.49076,7.11236
+grille 8x8 dans D,3,0.0001,3,True,0.0152824,0.00152708,True,2.6454,5.46877
+grille 8x8 dans D,3,0.0001,3,True,0.00730301,0.00314699,True,4.87455,0.397592
+grille 8x8 dans D,3,0.0001,3,True,0.144589,0.162702,True,1.95903,2.71093
+grille 8x8 dans D,3,0.0001,3,True,0.0023134,0.00131588,True,2.39789,2.23257
+grille 8x8 dans D,3,0.0001,3,True,0.0037252,0.00721934,True,1.51627,1.59485
+grille 8x8 dans D,3,0.0001,3,True,0.0110633,0.0370836,True,1.01341,0.768324
+grille 8x8 dans D,3,0.0001,3,True,0.00724863,0.000984364,True,4.51336,0.71277
+grille 8x8 dans D,3,0.0001,3,True,0.00504648,0.000146402,True,8.18017,0.687126
+grille 8x8 dans D,3,0.0001,3,True,0.00247057,0.000705598,True,1.05418,0.66061
+grille 8x8 dans D,3,0.0001,3,True,0.00344742,0.00586189,True,4.58861,0.498528
+grille 8x8 dans D,3,0.0001,3,True,0.00136819,0.00129186,True,6.63029,0.436514
+grille 8x8 dans D,3,0.0001,3,True,0.00154883,0.00140837,True,4.20771,0.613037
+grille 8x8 dans D,3,0.0001,3,True,0.00236978,0.00369842,True,4.32706,0.87719
+grille 8x8 dans D,3,0.0001,3,True,0.00371724,0.000353997,True,2.79696,0.490261
+grille 8x8 dans D,3,0.0001,3,True,0.00623058,0.00470033,True,3.41743,1.62218
+grille 8x8 dans D,3,0.001,5,False,0.587535,0.354828,False,2.925,9.41794
+grille 8x8 dans D,3,0.001,4,False,0.414791,0.0696835,False,2.09032,1.51617
+grille 8x8 dans D,3,0.001,3,True,0.00743265,0.00989778,True,1.77687,0.364588
+grille 8x8 dans D,3,0.001,3,True,0.0554201,0.0307028,True,2.83932,0.32391
+grille 8x8 dans D,3,0.001,3,True,0.0243152,0.0182544,True,4.6727,0.525965
+grille 8x8 dans D,3,0.001,3,True,0.0735933,0.0630146,True,3.4725,0.758278
+grille 8x8 dans D,3,0.001,3,True,0.159985,0.0416382,True,2.85246,1.62893
+grille 8x8 dans D,3,0.001,3,True,0.233735,0.121555,True,2.42783,0.654902
+grille 8x8 dans D,3,0.001,3,True,0.00629443,0.00535259,True,4.07339,0.521581
+grille 8x8 dans D,3,0.001,3,True,1.7451,0.714847,False,1.82249,0.776313
+grille 8x8 dans D,3,0.001,3,True,0.0287583,0.0278182,True,4.22216,1.06982
+grille 8x8 dans D,3,0.001,3,True,0.753091,1,False,0.745933,0.565593
+grille 8x8 dans D,3,0.001,3,True,0.0811614,0.0422421,True,8.5751,0.639428
+grille 8x8 dans D,3,0.001,2,False,0.101134,0.129966,False,0.971572,0.687878
+grille 8x8 dans D,3,0.001,3,True,0.0971508,0.069364,True,3.70414,0.525163
+grille 8x8 dans D,3,0.001,3,True,0.0799523,0.0374229,True,6.08018,0.543375
+grille 8x8 dans D,3,0.001,5,False,1.58389,1,False,1.62128,1.88641
+grille 8x8 dans D,3,0.001,3,True,0.0463709,0.0297919,True,5.48805,1.1881
+grille 8x8 dans D,3,0.001,4,False,0.242397,0.0609212,False,2.83753,1.62227
+grille 8x8 dans D,3,0.001,3,True,0.00325739,0.00695853,True,5.70011,1.46205
+grille 8x8 dans D,3,0.001,3,True,0.0195612,0.0147208,True,3.48512,0.425825
+grille 8x8 dans D,3,0.001,3,True,0.15068,0.122034,True,5.4402,0.691974
+grille 8x8 dans D,3,0.001,3,True,0.161739,0.115692,True,2.69113,0.323839
+grille 8x8 dans D,3,0.001,3,True,0.0317169,0.0232405,True,1.58385,0.702944
+grille 8x8 dans D,3,0.001,3,True,0.168983,0.0701761,True,3.88663,0.606295
+grille 8x8 dans D,3,0.001,2,False,0.782051,0.0012214,False,3.88521,0.537255
+grille 8x8 dans D,3,0.001,3,True,0.063177,0.0392305,True,3.28425,0.60902
+grille 8x8 dans D,3,0.001,3,True,0.235337,0.0853471,True,3.91717,0.748476
+grille 8x8 dans D,3,0.001,3,True,0.134462,0.0226467,True,4.70878,0.816465
+grille 8x8 dans D,3,0.001,3,True,0.0697629,0.052712,True,3.5947,0.669081
+grille 8x8 dans D,5,0.0001,5,True,0.0327357,0.0330892,True,2.51678,4.26515
+grille 8x8 dans D,5,0.0001,5,True,0.0820643,0.0249002,True,1.39802,2.44554
+grille 8x8 dans D,5,0.0001,5,True,0.00667847,0.0128447,True,0.587774,11.2128
+grille 8x8 dans D,5,0.0001,5,True,0.00614441,0.00876244,True,1.5674,2.95197
+grille 8x8 dans D,5,0.0001,10,False,1.53699,5.25936,False,0.625607,7.87179
+grille 8x8 dans D,5,0.0001,7,False,1.29015,0.958959,False,1.96988,10.512
+grille 8x8 dans D,5,0.0001,4,False,0.0312303,0.0652037,False,0.872029,3.04111
+grille 8x8 dans D,5,0.0001,10,False,3.88638,0.989342,False,0.932015,16.0667
+grille 8x8 dans D,5,0.0001,5,True,0.0437642,0.103745,True,1.78338,1.45563
+grille 8x8 dans D,5,0.0001,5,True,0.00521441,0.00971589,True,2.52467,0.508369
+grille 8x8 dans D,5,0.0001,5,True,0.00697797,0.00906237,True,4.05486,2.57745
+grille 8x8 dans D,5,0.0001,7,False,0.742975,0.031357,False,3.99358,4.69537
+grille 8x8 dans D,5,0.0001,5,True,0.018823,0.047205,True,1.28702,1.88529
+grille 8x8 dans D,5,0.0001,5,True,0.0195187,0.0127702,True,4.37836,9.15944
+grille 8x8 dans D,5,0.0001,5,True,0.602765,0.833072,True,2.60496,1.07896
+grille 8x8 dans D,5,0.0001,5,True,0.0344739,0.0092437,True,3.72078,0.711911
+grille 8x8 dans D,5,0.0001,4,False,0.00628812,0.00627464,False,2.38406,0.417778
+grille 8x8 dans D,5,0.0001,5,True,0.0927452,0.0557996,True,1.8429,0.806234
+grille 8x8 dans D,5,0.0001,5,True,0.0148168,0.0964299,True,1.465,1.18113
+grille 8x8 dans D,5,0.0001,5,True,0.161072,0.00602149,True,4.13821,1.7823
+grille 8x8 dans D,5,0.0001,5,True,0.00363093,0.00694829,True,4.10685,1.54878
+grille 8x8 dans D,5,0.0001,5,True,0.00531408,0.0119815,True,0.673725,7.51421
+grille 8x8 dans D,5,0.0001,5,True,0.018107,0.00919395,True,2.00109,4.15566
+grille 8x8 dans D,5,0.0001,5,True,0.00520105,0.003683,True,2.95955,1.30837
+grille 8x8 dans D,5,0.0001,5,True,0.0116851,0.0125516,True,1.92323,2.14072
+grille 8x8 dans D,5,0.0001,5,True,0.0547703,0.0381024,True,1.06243,3.37588
+grille 8x8 dans D,5,0.0001,5,True,0.0244591,0.0254271,True,1.96252,2.61626
+grille 8x8 dans D,5,0.0001,5,True,0.00233014,0.011548,True,2.5555,3.11054
+grille 8x8 dans D,5,0.0001,5,True,0.00536212,0.00323749,True,1.8801,3.1434
+grille 8x8 dans D,5,0.0001,5,True,0.0220875,0.0104739,True,3.76217,5.695
+grille 8x8 dans D,5,0.001,4,False,0.47261,0.208857,False,0.788315,0.583426
+grille 8x8 dans D,5,0.001,4,False,0.0591882,0.207627,False,1.13669,0.76132
+grille 8x8 dans D,5,0.001,5,True,0.0535771,0.0340489,True,3.22524,0.544221
+grille 8x8 dans D,5,0.001,6,False,7.01907,1,False,0.908749,1.17924
+grille 8x8 dans D,5,0.001,4,False,0.0364651,0.0146883,False,3.05658,0.758988
+grille 8x8 dans D,5,0.001,6,False,1.84502,0.10703,False,3.33251,1.88916
+grille 8x8 dans D,5,0.001,5,True,0.0409821,0.0640339,True,2.34406,1.61373
+grille 8x8 dans D,5,0.001,5,True,0.40705,0.798669,False,1.5137,3.31677
+grille 8x8 dans D,5,0.001,4,False,0.254584,0.211362,False,1.38895,1.01399
+grille 8x8 dans D,5,0.001,4,False,0.710155,1.22764,False,0.582275,0.910716
+grille 8x8 dans D,5,0.001,5,True,0.136982,0.103972,True,1.75068,1.10199
+grille 8x8 dans D,5,0.001,5,True,0.0922353,0.507807,True,1.98583,4.53985
+grille 8x8 dans D,5,0.001,5,True,3.30416,0.55447,False,1.0122,5.18081
+grille 8x8 dans D,5,0.001,5,True,0.245424,0.0722512,True,1.80659,1.5667
+grille 8x8 dans D,5,0.001,5,True,0.219177,0.155768,True,3.03753,1.86124
+grille 8x8 dans D,5,0.001,5,True,0.0589752,0.0758538,True,2.75348,1.99257
+grille 8x8 dans D,5,0.001,5,True,0.852603,0.54044,False,2.02487,2.25336
+grille 8x8 dans D,5,0.001,4,False,0.212222,0.23983,False,1.9725,1.76539
+grille 8x8 dans D,5,0.001,5,True,0.0720561,0.0303792,True,2.83455,0.904022
+grille 8x8 dans D,5,0.001,5,True,0.795146,0.54647,False,2.42732,1.10021
+grille 8x8 dans D,5,0.001,5,True,0.113876,0.15929,True,2.57164,1.74412
+grille 8x8 dans D,5,0.001,4,False,0.541386,0.656859,False,0.370865,0.768539
+grille 8x8 dans D,5,0.001,6,False,0.834248,0.547095,False,3.71511,4.26857
+grille 8x8 dans D,5,0.001,5,True,0.0522596,0.0611995,True,2.16823,1.40111
+grille 8x8 dans D,5,0.001,5,True,9.32542,0.681776,False,4.83454,1.37893
+grille 8x8 dans D,5,0.001,5,True,0.330341,0.0675568,True,3.86952,1.38937
+grille 8x8 dans D,5,0.001,5,True,0.204407,0.420668,True,2.6141,1.3401
+grille 8x8 dans D,5,0.001,6,False,1.41432,0.596264,False,3.50251,3.17475
+grille 8x8 dans D,5,0.001,5,True,0.883641,1,False,2.2841,1.35964
+grille 8x8 dans D,5,0.001,5,True,0.131999,0.337607,True,1.40104,0.885386
+aleatoire dans D,2,0.0001,2,True,0.001004,0.00112162,True,5.3067,0.212
+aleatoire dans D,2,0.0001,2,True,0.0170879,0.00863143,True,10.8337,0.235782
+aleatoire dans D,2,0.0001,2,True,0.000606219,0.000540907,True,9.65745,0.382217
+aleatoire dans D,2,0.0001,2,True,0.00600356,0.00347866,True,9.78972,0.532336
+aleatoire dans D,2,0.0001,2,True,0.00114185,0.000372769,True,2.72439,0.399744
+aleatoire dans D,2,0.0001,2,True,0.000767617,0.00144592,True,12.6363,0.327017
+aleatoire dans D,2,0.0001,2,True,0.000422371,0.00179698,True,4.89122,0.493518
+aleatoire dans D,2,0.0001,2,True,0.00906619,0.00341127,True,6.29362,0.651397
+aleatoire dans D,2,0.0001,2,True,0.00540064,0.0126492,True,0.844288,0.591577
+aleatoire dans D,2,0.0001,2,True,0.00633118,0.0049526,True,8.3758,0.621372
+aleatoire dans D,2,0.0001,2,True,0.00697738,0.0149446,True,7.83433,0.415563
+aleatoire dans D,2,0.0001,2,True,0.000625406,0.000787801,True,12.3961,0.500447
+aleatoire dans D,2,0.0001,2,True,0.0121652,0.00152237,True,7.91402,0.522191
+aleatoire dans D,2,0.0001,2,True,0.00264607,0.00157753,True,6.80128,0.393544
+aleatoire dans D,2,0.0001,2,True,0.00200927,0.00313967,True,6.17826,0.392422
+aleatoire dans D,2,0.0001,2,True,0.000892837,0.000634209,True,5.1826,0.626761
+aleatoire dans D,2,0.0001,2,True,0.00188034,0.0060824,True,5.80939,0.554045
+aleatoire dans D,2,0.0001,2,True,0.000927833,0.000704303,True,2.74467,0.647282
+aleatoire dans D,2,0.0001,2,True,0.00111779,0.00140425,True,6.67872,0.494258
+aleatoire dans D,2,0.0001,2,True,0.00227299,0.000730477,True,9.59565,0.402196
+aleatoire dans D,2,0.0001,2,True,0.00598872,0.0026392,True,9.62921,0.530162
+aleatoire dans D,2,0.0001,2,True,0.0016929,0.000851011,True,12.7839,0.57006
+aleatoire dans D,2,0.0001,2,True,0.0118644,0.000497252,True,6.41878,0.438216
+aleatoire dans D,2,0.0001,2,True,0.00260499,0.00333131,True,8.17382,5.52631
+aleatoire dans D,2,0.0001,2,True,0.000995951,0.000679763,True,8.5532,1.01973
+aleatoire dans D,2,0.0001,2,True,0.00487276,0.00353049,True,19.8663,0.569962
+aleatoire dans D,2,0.0001,2,True,0.000470282,0.000242646,True,5.13793,0.591926
+aleatoire dans D,2,0.0001,2,True,0.00148361,0.00147955,True,2.2508,0.876958
+aleatoire dans D,2,0.0001,2,True,0.00510764,0.00135726,True,4.99479,2.2038
+aleatoire dans D,2,0.0001,2,True,0.00550211,0.000691049,True,3.76354,0.20776
+aleatoire dans D,2,0.001,2,True,0.0509985,0.018721,True,11.8143,0.668285
+aleatoire dans D,2,0.001,2,True,0.00392067,0.0119953,True,6.35529,0.45547
+aleatoire dans D,2,0.001,2,True,0.0535399,0.023121,True,7.86007,0.253787
+aleatoire dans D,2,0.001,2,True,0.352302,0.165935,True,7.90771,0.241764
+aleatoire dans D,2,0.001,2,True,0.150129,0.0448375,True,4.37814,0.695692
+aleatoire dans D,2,0.001,2,True,0.00650112,0.00404289,True,2.78521,0.573287
+aleatoire dans D,2,0.001,2,True,0.0104314,0.00352605,True,16.4811,0.343843
+aleatoire dans D,2,0.001,2,True,0.0236106,0.0140964,True,4.15234,0.191209
+aleatoire dans D,2,0.001,3,False,0.0634234,0.00836391,False,5.08639,0.92912
+aleatoire dans D,2,0.001,2,True,0.0792981,0.0912705,True,2.50518,2.06845
+aleatoire dans D,2,0.001,2,True,0.328347,0.0901747,True,10.1023,0.23107
+aleatoire dans D,2,0.001,2,True,0.00623369,0.00402723,True,4.40909,0.179689
+aleatoire dans D,2,0.001,2,True,0.00921615,0.00619096,True,3.46065,0.414364
+aleatoire dans D,2,0.001,2,True,0.0212326,0.0210706,True,7.18131,0.608328
+aleatoire dans D,2,0.001,2,True,0.111969,0.00541179,True,7.39959,0.479673
+aleatoire dans D,2,0.001,2,True,0.0482782,0.00716329,True,11.3777,0.458292
+aleatoire dans D,2,0.001,2,True,0.123964,0.042891,True,2.24204,0.685696
+aleatoire dans D,2,0.001,2,True,0.00245464,0.00430878,True,11.3128,0.598841
+aleatoire dans D,2,0.001,2,True,0.040297,0.0376131,True,4.79829,0.590733
+aleatoire dans D,2,0.001,2,True,0.0135854,0.00802886,True,18.17,0.393754
+aleatoire dans D,2,0.001,2,True,0.0120404,0.0153077,True,2.52043,0.460598
+aleatoire dans D,2,0.001,2,True,0.0327685,0.00302453,True,4.50066,0.417954
+aleatoire dans D,2,0.001,2,True,0.300015,0.029281,True,12.8193,0.410176
+aleatoire dans D,2,0.001,2,True,0.00755765,0.00202362,True,6.30592,0.446812
+aleatoire dans D,2,0.001,2,True,0.00485491,0.00927492,True,9.74221,0.33992
+aleatoire dans D,2,0.001,2,True,0.0048925,0.00722471,True,9.91452,0.296716
+aleatoire dans D,2,0.001,2,True,0.242516,0.183782,True,7.7567,0.82868
+aleatoire dans D,2,0.001,2,True,0.0289526,0.00430826,True,11.9197,0.817299
+aleatoire dans D,2,0.001,2,True,0.005148,0.00467728,True,4.50236,0.354625
+aleatoire dans D,2,0.001,2,True,0.0221445,0.0125742,True,10.0119,0.446444
+aleatoire dans D,3,0.0001,3,True,0.0599498,0.0440422,True,6.81582,1.04209
+aleatoire dans D,3,0.0001,3,True,0.0300726,0.0178847,True,1.92701,2.48512
+aleatoire dans D,3,0.0001,2,False,0.0235008,0.0283549,False,0.737589,0.420257
+aleatoire dans D,3,0.0001,3,True,0.00854411,0.0013093,True,3.42333,12.8949
+aleatoire dans D,3,0.0001,3,True,0.0432509,0.0280426,True,3.83641,0.353808
+aleatoire dans D,3,0.0001,3,True,0.00492892,0.00182979,True,4.91041,0.386458
+aleatoire dans D,3,0.0001,3,True,0.00142025,0.00216771,True,4.18745,1.0853
+aleatoire dans D,3,0.0001,3,True,0.00217105,0.00105417,True,6.09142,7.36053
+aleatoire dans D,3,0.0001,3,True,0.00487019,0.00340728,True,2.97167,0.355445
+aleatoire dans D,3,0.0001,3,True,0.139173,0.0596576,True,3.25396,0.619149
+aleatoire dans D,3,0.0001,3,True,0.0864812,0.0331044,True,3.79514,3.15559
+aleatoire dans D,3,0.0001,3,True,0.0140724,0.00421548,True,3.50067,0.500073
+aleatoire dans D,3,0.0001,2,False,0.117037,0.721212,False,0.344324,0.499425
+aleatoire dans D,3,0.0001,3,True,0.00970846,0.00532175,True,3.78127,0.580901
+aleatoire dans D,3,0.0001,3,True,0.371086,0.520368,True,1.49076,1.33457
+aleatoire dans D,3,0.0001,3,True,0.0192615,0.0363563,True,2.6454,6.00802
+aleatoire dans D,3,0.0001,3,True,0.000333647,0.000892425,True,4.87455,0.299193
+aleatoire dans D,3,0.0001,3,True,0.00996155,0.00821069,True,1.95903,9.91774
+aleatoire dans D,3,0.0001,3,True,0.00757512,0.00128249,True,2.39789,0.981749
+aleatoire dans D,3,0.0001,3,True,0.016005,0.0123696,True,1.51627,1.04799
+aleatoire dans D,3,0.0001,5,False,3.1865,1,False,1.01341,1.42599
+aleatoire dans D,3,0.0001,4,False,0.00147978,0.00186239,False,4.51336,1.31193
+aleatoire dans D,3,0.0001,3,True,0.00266171,0.00179364,True,8.18017,1.09979
+aleatoire dans D,3,0.0001,3,True,0.0230779,0.0179998,True,1.05418,0.903058
+aleatoire dans D,3,0.0001,3,True,0.00175365,0.00716318,True,4.58861,5.14609
+aleatoire dans D,3,0.0001,3,True,0.00563107,0.000772791,True,6.63029,0.363079
+aleatoire dans D,3,0.0001,3,True,0.00294498,0.00235616,True,4.20771,1.06349
+aleatoire dans D,3,0.0001,3,True,0.00870462,0.0127076,True,4.32706,0.89922
+aleatoire dans D,3,0.0001,3,True,0.00322633,0.00147058,True,2.79696,0.835747
+aleatoire dans D,3,0.0001,3,True,0.00700191,0.00232752,True,3.41743,0.72698
+aleatoire dans D,3,0.001,3,True,0.0399339,0.0138396,True,2.925,0.418183
+aleatoire dans D,3,0.001,3,True,0.139157,0.0765055,True,2.09032,2.91053
+aleatoire dans D,3,0.001,3,True,0.00639076,0.00932561,True,1.77687,5.22699
+aleatoire dans D,3,0.001,3,True,0.0307163,0.0747197,True,2.83932,2.08739
+aleatoire dans D,3,0.001,3,True,0.051373,0.0324191,True,4.6727,0.651831
+aleatoire dans D,3,0.001,3,True,0.0653401,0.0114671,True,3.4725,0.592365
+aleatoire dans D,3,0.001,3,True,0.122979,0.00790573,True,2.85246,2.3862
+aleatoire dans D,3,0.001,4,False,0.241255,0.0853276,False,2.42783,1.33356
+aleatoire dans D,3,0.001,4,False,0.00673472,0.00874538,False,4.07339,0.920884
+aleatoire dans D,3,0.001,3,True,0.274746,0.381694,True,1.82249,3.67016
+aleatoire dans D,3,0.001,6,False,1.99151,1,False,4.22216,1.40184
+aleatoire dans D,3,0.001,3,True,4.10814,0.958865,False,0.745933,0.739054
+aleatoire dans D,3,0.001,3,True,0.0365834,0.0116639,True,8.5751,0.781299
+aleatoire dans D,3,0.001,2,False,0.0406878,0.0805842,False,0.971572,0.379259
+aleatoire dans D,3,0.001,3,True,0.08355,0.108306,True,3.70414,0.341497
+aleatoire dans D,3,0.001,3,True,0.80333,0.0403486,True,6.08018,1.19645
+aleatoire dans D,3,0.001,4,False,2.2283,0.846018,False,1.62128,1.68402
+aleatoire dans D,3,0.001,3,True,0.39439,0.0658518,True,5.48805,0.777246
+aleatoire dans D,3,0.001,3,True,0.168535,0.0857045,True,2.83753,0.618725
+aleatoire dans D,3,0.001,3,True,0.0346067,0.0155081,True,5.70011,0.768373
+aleatoire dans D,3,0.001,3,True,0.0141056,0.0115892,True,3.48512,0.766341
+aleatoire dans D,3,0.001,3,True,0.101249,0.0530343,True,5.4402,0.542659
+aleatoire dans D,3,0.001,2,False,0.102217,0.0470282,False,2.69113,0.404498
+aleatoire dans D,3,0.001,3,True,0.019541,0.0115832,True,1.58385,0.749108
+aleatoire dans D,3,0.001,3,True,0.083809,0.081515,True,3.88663,0.747932
+aleatoire dans D,3,0.001,3,True,0.329222,0.468494,True,3.88521,0.988274
+aleatoire dans D,3,0.001,4,False,1.69044,0.799601,False,3.28425,0.997034
+aleatoire dans D,3,0.001,3,True,0.132926,0.17553,True,3.91717,2.44757
+aleatoire dans D,3,0.001,3,True,0.051797,0.0179628,True,4.70878,0.962178
+aleatoire dans D,3,0.001,3,True,0.0997434,0.0267461,True,3.5947,0.846294
+aleatoire dans D,5,0.0001,6,False,0.0639427,0.0373801,False,2.51678,2.043
+aleatoire dans D,5,0.0001,5,True,0.00993748,0.0206105,True,1.39802,1.8851
+aleatoire dans D,5,0.0001,5,True,0.010705,0.0268739,True,0.587774,2.2315
+aleatoire dans D,5,0.0001,9,False,1.47101,1.01628,False,1.5674,6.28667
+aleatoire dans D,5,0.0001,5,True,0.0486583,0.0664512,True,0.625607,3.11918
+aleatoire dans D,5,0.0001,5,True,0.118212,0.100947,True,1.96988,1.09719
+aleatoire dans D,5,0.0001,4,False,0.0944338,0.0346107,False,0.872029,3.15304
+aleatoire dans D,5,0.0001,4,False,0.106961,0.16399,False,0.932015,3.07301
+aleatoire dans D,5,0.0001,5,True,0.109296,0.235728,True,1.78338,1.11323
+aleatoire dans D,5,0.0001,5,True,0.0461149,0.00361586,True,2.52467,0.802008
+aleatoire dans D,5,0.0001,5,True,0.00247342,0.00122087,True,4.05486,1.67754
+aleatoire dans D,5,0.0001,5,True,0.0656536,0.0834493,True,3.99358,2.986
+aleatoire dans D,5,0.0001,5,True,0.0366484,0.0117385,True,1.28702,2.01799
+aleatoire dans D,5,0.0001,5,True,0.00972411,0.00486672,True,4.37836,1.49275
+aleatoire dans D,5,0.0001,5,True,0.0360514,0.0625865,True,2.60496,1.98903
+aleatoire dans D,5,0.0001,5,True,0.238066,0.248827,True,3.72078,0.735316
+aleatoire dans D,5,0.0001,4,False,0.00662377,0.00840526,False,2.38406,0.858464
+aleatoire dans D,5,0.0001,5,True,0.220423,0.106622,True,1.8429,1.19537
+aleatoire dans D,5,0.0001,5,True,0.0391487,0.108705,True,1.465,6.12618
+aleatoire dans D,5,0.0001,5,True,0.280653,0.128073,True,4.13821,1.15965
+aleatoire dans D,5,0.0001,5,True,0.0143938,0.00645947,True,4.10685,4.41869
+aleatoire dans D,5,0.0001,5,True,0.0198016,0.0616511,True,0.673725,4.20061
+aleatoire dans D,5,0.0001,5,True,0.141606,0.0363151,True,2.00109,1.97016
+aleatoire dans D,5,0.0001,5,True,0.0128873,0.0216598,True,2.95955,2.02982
+aleatoire dans D,5,0.0001,8,False,1.05816,0.577774,False,1.92323,8.43553
+aleatoire dans D,5,0.0001,5,True,0.243292,0.373876,True,1.06243,11.3972
+aleatoire dans D,5,0.0001,5,True,0.0255515,0.0228442,True,1.96252,5.40625
+aleatoire dans D,5,0.0001,5,True,0.0134207,0.00605345,True,2.5555,0.924493
+aleatoire dans D,5,0.0001,7,False,0.0347998,0.019379,False,1.8801,2.82669
+aleatoire dans D,5,0.0001,5,True,0.0232596,0.0107116,True,3.76217,0.758763
+aleatoire dans D,5,0.001,4,False,0.345962,0.172224,False,0.788315,0.850255
+aleatoire dans D,5,0.001,3,False,0.0792738,0.177242,False,1.13669,0.882523
+aleatoire dans D,5,0.001,5,True,0.0313932,0.00604395,True,3.22524,1.11675
+aleatoire dans D,5,0.001,4,False,2.36318,0.967478,False,0.908749,0.979845
+aleatoire dans D,5,0.001,4,False,0.00797241,0.00476626,False,3.05658,0.868296
+aleatoire dans D,5,0.001,5,True,0.298673,0.312889,True,3.33251,2.13194
+aleatoire dans D,5,0.001,5,True,0.129599,0.0180373,True,2.34406,1.58418
+aleatoire dans D,5,0.001,5,True,0.595684,1.66468,False,1.5137,2.18405
+aleatoire dans D,5,0.001,4,False,0.245202,0.589235,False,1.38895,2.2496
+aleatoire dans D,5,0.001,3,False,0.168697,0.607934,False,0.582275,0.646254
+aleatoire dans D,5,0.001,5,True,0.907658,0.185873,False,1.75068,1.99395
+aleatoire dans D,5,0.001,4,False,0.254585,0.333388,False,1.98583,1.08558
+aleatoire dans D,5,0.001,4,False,0.178414,0.0884899,False,1.0122,0.832982
+aleatoire dans D,5,0.001,4,False,0.171697,0.105181,False,1.80659,1.10291
+aleatoire dans D,5,0.001,5,True,0.253435,0.107422,True,3.03753,1.2002
+aleatoire dans D,5,0.001,5,True,0.555171,0.198573,True,2.75348,2.40396
+aleatoire dans D,5,0.001,5,True,1.26064,1,False,2.02487,0.647387
+aleatoire dans D,5,0.001,5,True,0.418646,0.151,True,1.9725,1.4988
+aleatoire dans D,5,0.001,5,True,0.0929688,0.0256462,True,2.83455,2.48537
+aleatoire dans D,5,0.001,5,True,0.584006,0.16581,True,2.42732,1.49417
+aleatoire dans D,5,0.001,4,False,0.181173,0.385527,False,2.57164,0.775957
+aleatoire dans D,5,0.001,4,False,0.51947,1,False,0.370865,0.718244
+aleatoire dans D,5,0.001,5,True,0.283825,0.0980961,True,3.71511,1.69698
+aleatoire dans D,5,0.001,5,True,1.52305,2.76893,False,2.16823,0.88833
+aleatoire dans D,5,0.001,4,False,0.0172078,0.0510334,False,4.83454,0.737794
+aleatoire dans D,5,0.001,5,True,0.526126,0.646597,True,3.86952,0.834689
+aleatoire dans D,5,0.001,5,True,0.496766,0.118752,True,2.6141,0.723411
+aleatoire dans D,5,0.001,5,True,0.806075,0.533232,True,3.50251,0.940925
+aleatoire dans D,5,0.001,4,False,0.164176,0.110935,False,2.2841,1.80185
+aleatoire dans D,5,0.001,5,True,0.219804,0.115219,True,1.40104,2.65392
+D-optimal hors de D,2,0.0001,2,True,0.0118545,0.0150389,True,5.3067,0.256975
+D-optimal hors de D,2,0.0001,2,True,0.0182171,0.00168585,True,10.8337,0.247392
+D-optimal hors de D,2,0.0001,2,True,0.00836564,0.00417348,True,9.65745,0.432527
+D-optimal hors de D,2,0.0001,2,True,0.0290565,0.00113821,True,9.78972,0.446175
+D-optimal hors de D,2,0.0001,2,True,0.00199009,0.00147963,True,2.72439,0.325202
+D-optimal hors de D,2,0.0001,2,True,0.00274001,0.000647025,True,12.6363,0.363988
+D-optimal hors de D,2,0.0001,2,True,0.0201315,0.00453977,True,4.89122,0.377261
+D-optimal hors de D,2,0.0001,2,True,0.00203023,0.00470838,True,6.29362,0.307166
+D-optimal hors de D,2,0.0001,2,True,0.156789,0.384657,True,0.844288,0.674784
+D-optimal hors de D,2,0.0001,2,True,0.0219311,0.000658038,True,8.3758,0.405633
+D-optimal hors de D,2,0.0001,2,True,0.0456823,0.00900329,True,7.83433,0.497405
+D-optimal hors de D,2,0.0001,2,True,0.00114935,0.000344099,True,12.3961,0.481186
+D-optimal hors de D,2,0.0001,2,True,0.00286867,0.00272579,True,7.91402,0.415957
+D-optimal hors de D,2,0.0001,2,True,0.0076171,0.00506677,True,6.80128,0.221959
+D-optimal hors de D,2,0.0001,2,True,0.00110998,0.000855174,True,6.17826,0.460836
+D-optimal hors de D,2,0.0001,2,True,0.00163634,0.00185341,True,5.1826,0.235295
+D-optimal hors de D,2,0.0001,2,True,0.0317406,0.00287208,True,5.80939,0.223522
+D-optimal hors de D,2,0.0001,2,True,0.0176884,0.0124619,True,2.74467,0.231458
+D-optimal hors de D,2,0.0001,2,True,0.00520874,0.00222076,True,6.67872,0.298391
+D-optimal hors de D,2,0.0001,2,True,0.00578027,0.00124737,True,9.59565,0.186409
+D-optimal hors de D,2,0.0001,2,True,0.0228994,0.00599801,True,9.62921,0.205038
+D-optimal hors de D,2,0.0001,2,True,0.00240421,0.000944332,True,12.7839,0.201867
+D-optimal hors de D,2,0.0001,2,True,0.00771915,0.00238084,True,6.41878,0.442798
+D-optimal hors de D,2,0.0001,2,True,0.000550096,0.000197318,True,8.17382,0.473282
+D-optimal hors de D,2,0.0001,2,True,0.000286722,0.0002155,True,8.5532,0.407719
+D-optimal hors de D,2,0.0001,2,True,0.00286263,0.00143933,True,19.8663,0.264178
+D-optimal hors de D,2,0.0001,2,True,0.0049017,0.00197196,True,5.13793,0.392861
+D-optimal hors de D,2,0.0001,2,True,0.0518749,0.0206626,True,2.2508,0.55842
+D-optimal hors de D,2,0.0001,2,True,0.0226882,0.00279626,True,4.99479,0.447327
+D-optimal hors de D,2,0.0001,2,True,0.0429137,0.0435469,True,3.76354,0.428705
+D-optimal hors de D,2,0.001,2,True,0.0444516,0.00415824,True,11.8143,0.328842
+D-optimal hors de D,2,0.001,2,True,0.0616561,0.0267081,True,6.35529,0.294788
+D-optimal hors de D,2,0.001,2,True,0.15047,0.00830243,True,7.86007,0.355607
+D-optimal hors de D,2,0.001,2,True,0.436585,0.00785051,True,7.90771,0.42567
+D-optimal hors de D,2,0.001,2,True,0.00720378,0.00886242,True,4.37814,0.320667
+D-optimal hors de D,2,0.001,2,True,0.0358746,0.020085,True,2.78521,0.366121
+D-optimal hors de D,2,0.001,2,True,0.016536,0.00442418,True,16.4811,0.251594
+D-optimal hors de D,2,0.001,2,True,0.147445,0.0728091,True,4.15234,0.157192
+D-optimal hors de D,2,0.001,2,True,0.123567,0.0221001,True,5.08639,0.320016
+D-optimal hors de D,2,0.001,2,True,0.00675776,0.0121985,True,2.50518,0.354518
+D-optimal hors de D,2,0.001,2,True,0.00751436,0.0105249,True,10.1023,0.308292
+D-optimal hors de D,2,0.001,2,True,0.018493,0.00408976,True,4.40909,0.379165
+D-optimal hors de D,2,0.001,2,True,0.0386609,0.0261217,True,3.46065,0.33508
+D-optimal hors de D,2,0.001,2,True,0.0201298,0.00419199,True,7.18131,0.22636
+D-optimal hors de D,2,0.001,2,True,0.0157482,0.0125269,True,7.39959,0.219139
+D-optimal hors de D,2,0.001,2,True,0.00679522,0.00847059,True,11.3777,0.183142
+D-optimal hors de D,2,0.001,2,True,0.135959,0.299309,True,2.24204,0.342608
+D-optimal hors de D,2,0.001,2,True,0.0127279,0.00783489,True,11.3128,0.171508
+D-optimal hors de D,2,0.001,1,False,0.0295876,0.0150355,False,4.79829,0.145939
+D-optimal hors de D,2,0.001,2,True,0.0245598,0.0101224,True,18.17,0.197129
+D-optimal hors de D,2,0.001,2,True,0.0629118,0.0799914,True,2.52043,0.248102
+D-optimal hors de D,2,0.001,2,True,0.189173,0.0390108,True,4.50066,0.166949
+D-optimal hors de D,2,0.001,2,True,0.0386503,0.010753,True,12.8193,0.233292
+D-optimal hors de D,2,0.001,2,True,0.0280372,0.0177495,True,6.30592,0.162106
+D-optimal hors de D,2,0.001,2,True,0.0908956,0.0214363,True,9.74221,0.259617
+D-optimal hors de D,2,0.001,2,True,0.0225015,0.0156221,True,9.91452,0.266544
+D-optimal hors de D,2,0.001,2,True,1.0586,0.324379,False,7.7567,0.47249
+D-optimal hors de D,2,0.001,2,True,0.0199127,0.0025832,True,11.9197,0.310291
+D-optimal hors de D,2,0.001,2,True,0.0490334,0.0518408,True,4.50236,0.363318
+D-optimal hors de D,2,0.001,2,True,0.049899,0.0138887,True,10.0119,0.511833
+D-optimal hors de D,3,0.0001,3,True,0.180448,0.0704261,True,6.81582,0.903961
+D-optimal hors de D,3,0.0001,3,True,0.0153593,0.0351124,True,1.92701,0.811407
+D-optimal hors de D,3,0.0001,2,False,0.0161678,0.0301565,False,0.737589,0.434117
+D-optimal hors de D,3,0.0001,3,True,0.0174693,0.00383693,True,3.42333,0.537825
+D-optimal hors de D,3,0.0001,3,True,0.0313746,0.0318731,True,3.83641,0.75611
+D-optimal hors de D,3,0.0001,3,True,0.0205516,0.0158128,True,4.91041,0.553316
+D-optimal hors de D,3,0.0001,3,True,0.00649911,0.00243872,True,4.18745,0.794451
+D-optimal hors de D,3,0.0001,3,True,0.0485722,0.00488708,True,6.09142,0.590341
+D-optimal hors de D,3,0.0001,3,True,0.397395,0.221531,True,2.97167,0.562838
+D-optimal hors de D,3,0.0001,3,True,0.628535,0.668448,True,3.25396,0.468822
+D-optimal hors de D,3,0.0001,3,True,0.0137815,0.0190984,True,3.79514,0.445354
+D-optimal hors de D,3,0.0001,3,True,0.111588,0.0470499,True,3.50067,0.383152
+D-optimal hors de D,3,0.0001,3,True,2.40089,1.32283,False,0.344324,0.427808
+D-optimal hors de D,3,0.0001,3,True,0.0935419,0.0282108,True,3.78127,0.32199
+D-optimal hors de D,3,0.0001,3,True,0.121187,0.238047,True,1.49076,0.817298
+D-optimal hors de D,3,0.0001,3,True,0.00212083,0.00410353,True,2.6454,0.576452
+D-optimal hors de D,3,0.0001,3,True,0.0110441,0.00687064,True,4.87455,0.452341
+D-optimal hors de D,3,0.0001,3,True,0.0063843,0.00915664,True,1.95903,0.404254
+D-optimal hors de D,3,0.0001,3,True,0.018226,0.018559,True,2.39789,0.856146
+D-optimal hors de D,3,0.0001,3,True,0.0538341,0.0267506,True,1.51627,1.15894
+D-optimal hors de D,3,0.0001,3,True,0.776835,0.752657,False,1.01341,1.13988
+D-optimal hors de D,3,0.0001,3,True,0.0180791,0.0039534,True,4.51336,0.70187
+D-optimal hors de D,3,0.0001,3,True,0.0264968,0.00477498,True,8.18017,0.484865
+D-optimal hors de D,3,0.0001,3,True,0.203462,0.387405,True,1.05418,0.861652
+D-optimal hors de D,3,0.0001,3,True,0.0117431,0.00929049,True,4.58861,0.773644
+D-optimal hors de D,3,0.0001,3,True,0.00972647,0.00434444,True,6.63029,0.471098
+D-optimal hors de D,3,0.0001,3,True,0.0181867,0.00497558,True,4.20771,0.885128
+D-optimal hors de D,3,0.0001,3,True,0.0418208,0.0393332,True,4.32706,0.63189
+D-optimal hors de D,3,0.0001,3,True,0.0434931,0.0371248,True,2.79696,0.511849
+D-optimal hors de D,3,0.0001,3,True,0.0550149,0.0470945,True,3.41743,0.479439
+D-optimal hors de D,3,0.001,3,True,0.180146,0.180178,True,2.925,0.346457
+D-optimal hors de D,3,0.001,3,True,1.17033,0.676831,False,2.09032,0.34042
+D-optimal hors de D,3,0.001,3,True,0.0743589,0.0968965,True,1.77687,0.26301
+D-optimal hors de D,3,0.001,3,True,0.450083,0.174074,True,2.83932,0.3
+D-optimal hors de D,3,0.001,3,True,0.561898,0.226415,True,4.6727,0.639483
+D-optimal hors de D,3,0.001,3,True,1.16998,0.486807,False,3.4725,0.533821
+D-optimal hors de D,3,0.001,3,True,0.0184649,0.0146486,True,2.85246,0.376206
+D-optimal hors de D,3,0.001,3,True,0.42218,0.108156,True,2.42783,0.383462
+D-optimal hors de D,3,0.001,3,True,0.149403,0.0340908,True,4.07339,0.623349
+D-optimal hors de D,3,0.001,2,False,0.504304,1.15883,False,1.82249,0.330789
+D-optimal hors de D,3,0.001,3,True,0.339426,0.174876,True,4.22216,0.400405
+D-optimal hors de D,3,0.001,2,False,0.349826,0.910015,False,0.745933,0.18515
+D-optimal hors de D,3,0.001,3,True,0.228399,0.0807255,True,8.5751,0.411056
+D-optimal hors de D,3,0.001,2,False,0.156074,0.139858,False,0.971572,0.283731
+D-optimal hors de D,3,0.001,2,False,1.14742,0.496107,False,3.70414,0.446828
+D-optimal hors de D,3,0.001,3,True,0.0498972,0.0162552,True,6.08018,0.576836
+D-optimal hors de D,3,0.001,2,False,1.21004,1.22012,False,1.62128,0.291329
+D-optimal hors de D,3,0.001,3,True,0.00681837,0.00887354,True,5.48805,0.523093
+D-optimal hors de D,3,0.001,4,False,0.0256531,0.0295961,False,2.83753,0.654116
+D-optimal hors de D,3,0.001,3,True,0.0560454,0.0480636,True,5.70011,0.272928
+D-optimal hors de D,3,0.001,3,True,0.799883,0.0780701,True,3.48512,0.599438
+D-optimal hors de D,3,0.001,3,True,0.0617143,0.0258267,True,5.4402,0.474525
+D-optimal hors de D,3,0.001,2,False,0.202532,0.0998943,False,2.69113,0.398171
+D-optimal hors de D,3,0.001,3,True,0.24446,0.25027,True,1.58385,0.311803
+D-optimal hors de D,3,0.001,2,False,0.0177636,0.00880881,False,3.88663,0.256955
+D-optimal hors de D,3,0.001,2,False,1.55774,0.0187268,False,3.88521,0.209912
+D-optimal hors de D,3,0.001,3,True,0.0822551,0.0332345,True,3.28425,0.280248
+D-optimal hors de D,3,0.001,2,False,0.538093,0.18583,False,3.91717,0.21582
+D-optimal hors de D,3,0.001,3,True,0.192758,0.0138115,True,4.70878,0.501868
+D-optimal hors de D,3,0.001,2,False,1.68593,1.47449,False,3.5947,0.399798
+D-optimal hors de D,5,0.0001,5,True,0.446185,0.362037,True,2.51678,2.13081
+D-optimal hors de D,5,0.0001,5,True,1.19319,4.47227,False,1.39802,2.2137
+D-optimal hors de D,5,0.0001,4,False,0.189965,0.626017,False,0.587774,1.03048
+D-optimal hors de D,5,0.0001,5,True,0.0968947,0.077105,True,1.5674,1.22704
+D-optimal hors de D,5,0.0001,5,True,0.676059,0.852083,False,0.625607,0.905722
+D-optimal hors de D,5,0.0001,4,False,0.158498,0.0481033,False,1.96988,2.81173
+D-optimal hors de D,5,0.0001,4,False,0.0353083,0.0344707,False,0.872029,1.39658
+D-optimal hors de D,5,0.0001,5,True,0.495095,0.411899,False,0.932015,2.4382
+D-optimal hors de D,5,0.0001,5,True,0.0413436,0.0211068,True,1.78338,1.89534
+D-optimal hors de D,5,0.0001,5,True,0.0125434,0.00628927,True,2.52467,1.17314
+D-optimal hors de D,5,0.0001,5,True,0.0431054,0.0351072,True,4.05486,1.54394
+D-optimal hors de D,5,0.0001,5,True,0.165015,0.119564,True,3.99358,2.33651
+D-optimal hors de D,5,0.0001,4,False,0.0983958,0.0974183,False,1.28702,0.675372
+D-optimal hors de D,5,0.0001,5,True,0.0401819,0.0406322,True,4.37836,0.706663
+D-optimal hors de D,5,0.0001,4,False,0.258442,0.0539088,False,2.60496,0.715041
+D-optimal hors de D,5,0.0001,5,True,0.223798,0.407182,True,3.72078,0.725808
+D-optimal hors de D,5,0.0001,5,True,4.56823,4.43409,False,2.38406,1.04839
+D-optimal hors de D,5,0.0001,5,True,0.480206,0.30503,False,1.8429,1.21565
+D-optimal hors de D,5,0.0001,4,False,0.14176,0.0875842,False,1.465,1.41933
+D-optimal hors de D,5,0.0001,5,True,1.4178,0.857542,False,4.13821,1.58309
+D-optimal hors de D,5,0.0001,5,True,0.0756817,0.0436386,True,4.10685,1.62438
+D-optimal hors de D,5,0.0001,6,False,0.0440123,0.0855854,False,0.673725,2.82817
+D-optimal hors de D,5,0.0001,5,True,0.123463,0.0343422,True,2.00109,1.81111
+D-optimal hors de D,5,0.0001,5,True,0.349093,0.221622,True,2.95955,1.63661
+D-optimal hors de D,5,0.0001,5,True,1.33247,0.826788,False,1.92323,1.73247
+D-optimal hors de D,5,0.0001,5,True,0.0307394,0.0714916,True,1.06243,0.959069
+D-optimal hors de D,5,0.0001,5,True,0.118908,0.05688,True,1.96252,1.40457
+D-optimal hors de D,5,0.0001,5,True,0.120056,0.125887,True,2.5555,0.722926
+D-optimal hors de D,5,0.0001,5,True,0.198731,0.185239,True,1.8801,1.10768
+D-optimal hors de D,5,0.0001,5,True,0.0232474,0.0117062,True,3.76217,0.556114
+D-optimal hors de D,5,0.001,3,False,0.818453,4.32993,False,0.788315,0.575212
+D-optimal hors de D,5,0.001,4,False,0.482846,2.26097,False,1.13669,1.06462
+D-optimal hors de D,5,0.001,5,True,1.1578,0.6011,False,3.22524,1.01957
+D-optimal hors de D,5,0.001,4,False,1.50021,0.910052,False,0.908749,0.934702
+D-optimal hors de D,5,0.001,4,False,0.0359331,0.039255,False,3.05658,0.655365
+D-optimal hors de D,5,0.001,5,True,0.473061,0.281003,True,3.33251,0.65275
+D-optimal hors de D,5,0.001,5,True,0.223532,0.0327911,True,2.34406,0.740007
+D-optimal hors de D,5,0.001,4,False,0.0451813,0.033968,False,1.5137,0.333773
+D-optimal hors de D,5,0.001,3,False,0.525699,2.90824,False,1.38895,0.568274
+D-optimal hors de D,5,0.001,4,False,1.83738,0.795262,False,0.582275,0.504048
+D-optimal hors de D,5,0.001,3,False,0.158543,0.158033,False,1.75068,0.292748
+D-optimal hors de D,5,0.001,3,False,0.35292,0.364304,False,1.98583,0.320434
+D-optimal hors de D,5,0.001,4,False,0.0530645,0.0566995,False,1.0122,0.696513
+D-optimal hors de D,5,0.001,5,True,0.269612,0.170841,True,1.80659,0.882314
+D-optimal hors de D,5,0.001,5,True,0.471673,0.63541,True,3.03753,0.604262
+D-optimal hors de D,5,0.001,4,False,0.514941,0.629301,False,2.75348,0.396044
+D-optimal hors de D,5,0.001,4,False,0.270814,0.173819,False,2.02487,0.716841
+D-optimal hors de D,5,0.001,4,False,0.838465,1.14715,False,1.9725,0.784614
+D-optimal hors de D,5,0.001,5,True,0.492009,0.350099,True,2.83455,1.10727
+D-optimal hors de D,5,0.001,5,True,0.262569,0.272755,True,2.42732,0.565809
+D-optimal hors de D,5,0.001,5,True,0.193677,0.0895476,True,2.57164,1.37282
+D-optimal hors de D,5,0.001,3,False,0.189137,1.7965,False,0.370865,0.223874
+D-optimal hors de D,5,0.001,5,True,2.11466,0.159685,False,3.71511,0.593691
+D-optimal hors de D,5,0.001,3,False,0.822671,0.564555,False,2.16823,0.243431
+D-optimal hors de D,5,0.001,4,False,0.071004,0.043186,False,4.83454,0.654881
+D-optimal hors de D,5,0.001,4,False,0.0725556,0.0536311,False,3.86952,0.449193
+D-optimal hors de D,5,0.001,4,False,0.314117,0.071579,False,2.6141,0.633527
+D-optimal hors de D,5,0.001,3,False,3.45654,0.951697,False,3.50251,0.344162
+D-optimal hors de D,5,0.001,5,True,2.12488,0.722515,False,2.2841,1.54184
+D-optimal hors de D,5,0.001,4,False,0.97124,0.821019,False,1.40104,0.798223
+D-optimal partout,2,0.0001,2,True,0.00246619,0.00244716,True,5.3067,0.248694
+D-optimal partout,2,0.0001,2,True,0.0055219,0.00322145,True,10.8337,0.198749
+D-optimal partout,2,0.0001,2,True,0.000876121,0.000936521,True,9.65745,0.441403
+D-optimal partout,2,0.0001,2,True,0.00151487,0.000229448,True,9.78972,0.412985
+D-optimal partout,2,0.0001,2,True,0.000259469,0.000306795,True,2.72439,0.403834
+D-optimal partout,2,0.0001,2,True,0.00142908,0.00196563,True,12.6363,0.431128
+D-optimal partout,2,0.0001,2,True,0.000375802,0.00126899,True,4.89122,0.395137
+D-optimal partout,2,0.0001,2,True,0.00465663,0.000968912,True,6.29362,0.43608
+D-optimal partout,2,0.0001,2,True,0.00615553,0.0182339,True,0.844288,0.596668
+D-optimal partout,2,0.0001,2,True,0.0133932,0.00317941,True,8.3758,0.527342
+D-optimal partout,2,0.0001,2,True,0.00261297,0.0037018,True,7.83433,0.417034
+D-optimal partout,2,0.0001,2,True,0.00174006,0.001187,True,12.3961,0.636235
+D-optimal partout,2,0.0001,2,True,0.00632325,0.00121858,True,7.91402,0.478303
+D-optimal partout,2,0.0001,2,True,0.00055885,0.00076614,True,6.80128,0.43678
+D-optimal partout,2,0.0001,2,True,0.00158101,0.000448894,True,6.17826,0.469808
+D-optimal partout,2,0.0001,2,True,0.000292891,0.000101785,True,5.1826,0.612059
+D-optimal partout,2,0.0001,2,True,0.00328109,0.0079032,True,5.80939,0.185514
+D-optimal partout,2,0.0001,2,True,0.000421015,0.000183267,True,2.74467,0.47802
+D-optimal partout,2,0.0001,2,True,0.00105656,0.00122856,True,6.67872,0.411259
+D-optimal partout,2,0.0001,3,False,0.000516395,0.0016787,False,9.59565,1.13773
+D-optimal partout,2,0.0001,2,True,0.00671179,0.00406944,True,9.62921,0.276791
+D-optimal partout,2,0.0001,2,True,0.000316203,6.4994e-05,True,12.7839,0.133711
+D-optimal partout,2,0.0001,2,True,0.000283423,0.000149221,True,6.41878,4.12624
+D-optimal partout,2,0.0001,3,False,0.00554588,0.00371623,False,8.17382,0.571508
+D-optimal partout,2,0.0001,2,True,0.0006117,0.000235434,True,8.5532,0.230431
+D-optimal partout,2,0.0001,2,True,0.00535599,0.00299807,True,19.8663,0.312879
+D-optimal partout,2,0.0001,2,True,0.000220273,0.000211326,True,5.13793,0.427501
+D-optimal partout,2,0.0001,2,True,0.00274041,0.000316382,True,2.2508,0.305706
+D-optimal partout,2,0.0001,2,True,0.00171308,0.000311371,True,4.99479,0.196746
+D-optimal partout,2,0.0001,2,True,0.00106267,0.00254073,True,3.76354,0.21154
+D-optimal partout,2,0.001,2,True,0.0141536,0.0225836,True,11.8143,0.383584
+D-optimal partout,2,0.001,2,True,0.0160992,0.0194956,True,6.35529,0.497313
+D-optimal partout,2,0.001,2,True,0.0314554,0.0129555,True,7.86007,0.346881
+D-optimal partout,2,0.001,2,True,0.351632,0.0868637,True,7.90771,0.373298
+D-optimal partout,2,0.001,2,True,0.0203463,0.00524268,True,4.37814,0.366265
+D-optimal partout,2,0.001,2,True,0.0145811,0.011756,True,2.78521,0.340201
+D-optimal partout,2,0.001,2,True,0.0209281,0.00873764,True,16.4811,0.1728
+D-optimal partout,2,0.001,2,True,0.0198263,0.0434969,True,4.15234,0.660806
+D-optimal partout,2,0.001,2,True,0.0573816,0.00370128,True,5.08639,0.334814
+D-optimal partout,2,0.001,3,False,2.04869,0.881414,False,2.50518,1.07218
+D-optimal partout,2,0.001,2,True,0.0859537,0.0982128,True,10.1023,0.206147
+D-optimal partout,2,0.001,2,True,0.00163812,0.0014008,True,4.40909,0.260515
+D-optimal partout,2,0.001,2,True,0.0137904,0.00420554,True,3.46065,0.420757
+D-optimal partout,2,0.001,2,True,0.00478479,0.00641492,True,7.18131,0.254789
+D-optimal partout,2,0.001,2,True,0.01764,0.00786524,True,7.39959,0.152421
+D-optimal partout,2,0.001,2,True,0.0121943,0.01241,True,11.3777,0.239678
+D-optimal partout,2,0.001,2,True,0.020374,0.0276585,True,2.24204,2.23119
+D-optimal partout,2,0.001,2,True,0.00675049,0.00492018,True,11.3128,0.550623
+D-optimal partout,2,0.001,2,True,0.0195886,0.00846135,True,4.79829,0.426779
+D-optimal partout,2,0.001,2,True,0.00445044,0.00638161,True,18.17,0.375435
+D-optimal partout,2,0.001,2,True,0.00523917,0.00538686,True,2.52043,1.95433
+D-optimal partout,2,0.001,2,True,0.00428808,0.0131645,True,4.50066,0.210641
+D-optimal partout,2,0.001,2,True,0.0817992,0.0429284,True,12.8193,0.27123
+D-optimal partout,2,0.001,2,True,0.0161919,0.00813985,True,6.30592,0.265047
+D-optimal partout,2,0.001,2,True,0.00390149,0.00604836,True,9.74221,0.330766
+D-optimal partout,2,0.001,2,True,0.00108518,0.00181404,True,9.91452,0.480034
+D-optimal partout,2,0.001,2,True,0.291932,0.236776,True,7.7567,0.361685
+D-optimal partout,2,0.001,2,True,0.155125,0.0605096,True,11.9197,0.390867
+D-optimal partout,2,0.001,2,True,0.00273655,0.00453846,True,4.50236,0.235027
+D-optimal partout,2,0.001,2,True,0.0220677,0.0112457,True,10.0119,0.186357
+D-optimal partout,3,0.0001,3,True,0.0267272,0.0199262,True,6.81582,0.444036
+D-optimal partout,3,0.0001,3,True,0.0125244,0.0022679,True,1.92701,0.34267
+D-optimal partout,3,0.0001,3,True,0.907202,1,False,0.737589,0.634039
+D-optimal partout,3,0.0001,3,True,0.0116398,0.00500925,True,3.42333,0.915161
+D-optimal partout,3,0.0001,3,True,0.00254821,0.00198577,True,3.83641,0.574098
+D-optimal partout,3,0.0001,3,True,0.00110066,0.00080956,True,4.91041,1.96831
+D-optimal partout,3,0.0001,3,True,0.00273303,0.000782114,True,4.18745,0.78456
+D-optimal partout,3,0.0001,3,True,0.00580873,0.00517447,True,6.09142,0.99627
+D-optimal partout,3,0.0001,3,True,0.0205718,0.00675939,True,2.97167,0.694606
+D-optimal partout,3,0.0001,3,True,0.0177027,0.010057,True,3.25396,2.77121
+D-optimal partout,3,0.0001,3,True,0.00913354,0.00536177,True,3.79514,0.674633
+D-optimal partout,3,0.0001,3,True,0.00426148,0.00544361,True,3.50067,0.798018
+D-optimal partout,3,0.0001,3,True,0.00514009,0.0324119,True,0.344324,2.35123
+D-optimal partout,3,0.0001,3,True,0.0109758,0.0048041,True,3.78127,0.410825
+D-optimal partout,3,0.0001,3,True,0.0417667,0.0559539,True,1.49076,1.3809
+D-optimal partout,3,0.0001,3,True,0.00617783,0.00703671,True,2.6454,0.320004
+D-optimal partout,3,0.0001,3,True,0.00394237,0.00230697,True,4.87455,0.379298
+D-optimal partout,3,0.0001,3,True,0.0105761,0.0107597,True,1.95903,0.375114
+D-optimal partout,3,0.0001,3,True,0.00139599,0.000773794,True,2.39789,1.71262
+D-optimal partout,3,0.0001,3,True,0.0124411,0.00195849,True,1.51627,0.636239
+D-optimal partout,3,0.0001,3,True,0.0225449,0.0185253,True,1.01341,4.94596
+D-optimal partout,3,0.0001,3,True,0.0128521,0.0140789,True,4.51336,0.34024
+D-optimal partout,3,0.0001,3,True,0.0110368,0.000982653,True,8.18017,0.835891
+D-optimal partout,3,0.0001,3,True,0.0207713,0.0277029,True,1.05418,0.610548
+D-optimal partout,3,0.0001,3,True,0.00424516,0.00196741,True,4.58861,0.81002
+D-optimal partout,3,0.0001,3,True,0.00190865,0.00164959,True,6.63029,0.81359
+D-optimal partout,3,0.0001,3,True,0.00149314,0.000958064,True,4.20771,0.544389
+D-optimal partout,3,0.0001,3,True,0.00282654,0.00127303,True,4.32706,0.588257
+D-optimal partout,3,0.0001,3,True,0.00430711,0.00413332,True,2.79696,1.7091
+D-optimal partout,3,0.0001,3,True,0.00967409,0.00490407,True,3.41743,0.370288
+D-optimal partout,3,0.001,3,True,0.013823,0.00269559,True,2.925,0.763488
+D-optimal partout,3,0.001,3,True,0.0958048,0.0240063,True,2.09032,0.608635
+D-optimal partout,3,0.001,3,True,0.0170914,0.0137964,True,1.77687,0.945858
+D-optimal partout,3,0.001,3,True,0.0588851,0.011552,True,2.83932,0.371679
+D-optimal partout,3,0.001,3,True,0.203699,0.0520348,True,4.6727,0.468822
+D-optimal partout,3,0.001,3,True,0.0742246,0.0746827,True,3.4725,0.538326
+D-optimal partout,3,0.001,5,False,3.09653,0.936619,False,2.85246,1.48747
+D-optimal partout,3,0.001,3,True,0.0132831,0.0516547,True,2.42783,0.488494
+D-optimal partout,3,0.001,3,True,0.00573159,0.0128139,True,4.07339,0.470294
+D-optimal partout,3,0.001,2,False,0.23225,0.773502,False,1.82249,0.519307
+D-optimal partout,3,0.001,3,True,0.0902508,0.0134524,True,4.22216,0.29363
+D-optimal partout,3,0.001,3,True,0.656813,1.10248,False,0.745933,0.49009
+D-optimal partout,3,0.001,5,False,1.72821,0.795228,False,8.5751,1.33624
+D-optimal partout,3,0.001,3,True,1.47088,0.593977,False,0.971572,0.33589
+D-optimal partout,3,0.001,3,True,0.154797,0.0812399,True,3.70414,0.339768
+D-optimal partout,3,0.001,3,True,0.31048,0.125534,True,6.08018,0.246029
+D-optimal partout,3,0.001,3,True,0.474863,0.0386205,False,1.62128,0.619846
+D-optimal partout,3,0.001,3,True,0.00555297,0.0162966,True,5.48805,0.442529
+D-optimal partout,3,0.001,3,True,0.10684,0.0220645,True,2.83753,1.57425
+D-optimal partout,3,0.001,3,True,0.0134615,0.0142163,True,5.70011,0.255104
+D-optimal partout,3,0.001,3,True,0.0902485,0.0746922,True,3.48512,0.796599
+D-optimal partout,3,0.001,5,False,1.49825,0.83365,False,5.4402,1.78933
+D-optimal partout,3,0.001,3,True,0.0881448,0.0936699,True,2.69113,0.75567
+D-optimal partout,3,0.001,3,True,0.0162016,0.0326595,True,1.58385,1.33049
+D-optimal partout,3,0.001,3,True,0.0542888,0.0640724,True,3.88663,0.673762
+D-optimal partout,3,0.001,2,False,0.366423,0.344877,False,3.88521,0.546073
+D-optimal partout,3,0.001,3,True,0.0228412,0.0197341,True,3.28425,0.660135
+D-optimal partout,3,0.001,3,True,0.314621,0.118961,True,3.91717,0.568162
+D-optimal partout,3,0.001,5,False,0.563211,0.463367,False,4.70878,3.41095
+D-optimal partout,3,0.001,3,True,0.0860667,0.0424113,True,3.5947,0.848552
+D-optimal partout,5,0.0001,5,True,0.041228,0.0118341,True,2.51678,2.09885
+D-optimal partout,5,0.0001,5,True,0.0764991,0.0143707,True,1.39802,1.08296
+D-optimal partout,5,0.0001,6,False,0.517206,0.839221,False,0.587774,2.05687
+D-optimal partout,5,0.0001,9,False,1.38857,3.54014,False,1.5674,4.16063
+D-optimal partout,5,0.0001,5,True,0.148062,0.118674,True,0.625607,3.48298
+D-optimal partout,5,0.0001,5,True,0.14754,0.0611523,True,1.96988,6.09872
+D-optimal partout,5,0.0001,4,False,0.0286386,0.0357363,False,0.872029,3.30888
+D-optimal partout,5,0.0001,5,True,0.0709966,0.0192252,True,0.932015,8.71107
+D-optimal partout,5,0.0001,5,True,0.0113772,0.0445702,True,1.78338,1.39793
+D-optimal partout,5,0.0001,5,True,0.00365493,0.00197688,True,2.52467,1.37507
+D-optimal partout,5,0.0001,5,True,0.00127401,0.00209387,True,4.05486,4.18531
+D-optimal partout,5,0.0001,5,True,0.0105456,0.0158538,True,3.99358,7.13427
+D-optimal partout,5,0.0001,5,True,0.0794746,0.181627,True,1.28702,2.6452
+D-optimal partout,5,0.0001,5,True,0.00672359,0.0244753,True,4.37836,1.11958
+D-optimal partout,5,0.0001,5,True,0.393568,0.134014,True,2.60496,14.3558
+D-optimal partout,5,0.0001,5,True,0.0574337,0.0100649,True,3.72078,1.4041
+D-optimal partout,5,0.0001,4,False,0.0124538,0.0167351,False,2.38406,0.683331
+D-optimal partout,5,0.0001,5,True,0.42025,0.123885,True,1.8429,5.2521
+D-optimal partout,5,0.0001,5,True,0.00986238,0.0491864,True,1.465,1.54841
+D-optimal partout,5,0.0001,5,True,0.085523,0.0973359,True,4.13821,1.32804
+D-optimal partout,5,0.0001,5,True,0.00343983,0.00207582,True,4.10685,2.31623
+D-optimal partout,5,0.0001,5,True,0.0161634,0.0569692,True,0.673725,9.55795
+D-optimal partout,5,0.0001,8,False,1.01429,0.417108,False,2.00109,6.6491
+D-optimal partout,5,0.0001,5,True,0.0062364,0.00771922,True,2.95955,4.57248
+D-optimal partout,5,0.0001,5,True,0.0268523,0.0257389,True,1.92323,5.22033
+D-optimal partout,5,0.0001,5,True,0.0278241,0.0333447,True,1.06243,2.98431
+D-optimal partout,5,0.0001,5,True,0.0115956,0.0102656,True,1.96252,0.941353
+D-optimal partout,5,0.0001,5,True,0.0225584,0.00561918,True,2.5555,1.05025
+D-optimal partout,5,0.0001,10,False,2.46914,0.98062,False,1.8801,5.29504
+D-optimal partout,5,0.0001,5,True,0.0124447,0.00460685,True,3.76217,1.26424
+D-optimal partout,5,0.001,4,False,0.0562613,0.082849,False,0.788315,0.749753
+D-optimal partout,5,0.001,4,False,0.487061,1.43401,False,1.13669,5.25491
+D-optimal partout,5,0.001,5,True,0.0775917,0.0273311,True,3.22524,2.02506
+D-optimal partout,5,0.001,4,False,0.0380583,0.0969476,False,0.908749,1.545
+D-optimal partout,5,0.001,4,False,0.030294,0.0254343,False,3.05658,0.987413
+D-optimal partout,5,0.001,5,True,0.132607,0.15,True,3.33251,0.620355
+D-optimal partout,5,0.001,5,True,0.315202,0.68802,True,2.34406,0.731755
+D-optimal partout,5,0.001,4,False,0.0661282,0.0318149,False,1.5137,0.316599
+D-optimal partout,5,0.001,4,False,0.319502,0.550106,False,1.38895,2.69947
+D-optimal partout,5,0.001,5,True,0.227124,1,False,0.582275,2.45167
+D-optimal partout,5,0.001,5,True,1.26395,0.580779,False,1.75068,0.881607
+D-optimal partout,5,0.001,5,True,0.598244,0.425317,False,1.98583,1.88253
+D-optimal partout,5,0.001,7,False,4.16635,0.941796,False,1.0122,2.30085
+D-optimal partout,5,0.001,5,True,0.540886,0.404764,False,1.80659,2.70567
+D-optimal partout,5,0.001,5,True,0.394865,0.117838,True,3.03753,1.14396
+D-optimal partout,5,0.001,5,True,0.0177674,0.0584389,True,2.75348,1.08496
+D-optimal partout,5,0.001,5,True,0.0326996,0.0268451,True,2.02487,1.1811
+D-optimal partout,5,0.001,5,True,1.71158,4.75219,False,1.9725,4.34863
+D-optimal partout,5,0.001,5,True,0.0719389,0.021395,True,2.83455,1.08505
+D-optimal partout,5,0.001,5,True,0.0632831,0.04068,True,2.42732,1.09342
+D-optimal partout,5,0.001,5,True,0.220083,0.492189,True,2.57164,1.45352
+D-optimal partout,5,0.001,3,False,0.140024,0.632347,False,0.370865,0.65932
+D-optimal partout,5,0.001,5,True,0.0699236,0.0490695,True,3.71511,1.61448
+D-optimal partout,5,0.001,5,True,0.981729,0.659679,False,2.16823,1.05301
+D-optimal partout,5,0.001,5,True,0.258034,0.40453,True,4.83454,0.893223
+D-optimal partout,5,0.001,5,True,1.10133,1.57475,False,3.86952,0.780311
+D-optimal partout,5,0.001,5,True,1.26861,0.564691,False,2.6141,2.83716
+D-optimal partout,5,0.001,5,True,0.18738,0.202562,True,3.50251,1.07504
+D-optimal partout,5,0.001,5,True,0.889517,0.43052,False,2.2841,0.816798
+D-optimal partout,5,0.001,4,False,0.201679,0.374433,False,1.40104,0.737133
