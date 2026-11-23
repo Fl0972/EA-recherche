@@ -4,7 +4,7 @@ Figures de la synthèse « cas test à deux sources » (synthese_deux_sources.ty
 Refait le cas fixe (~1 min) pour les trajectoires ; les essais aléatoires
 (~16 min) sont relus dans outputs/two_sources/random_trials.csv, produit par
 scripts/two_sources.py. Les chiffres cités dans le texte sont enregistrés
-dans figures/deux_sources.json.
+dans figures_deux_sources/deux_sources.json.
 
     python presentation/figures_two_sources.py
     python presentation/figures_two_sources.py --noise-only   # figure avec bruit seule
@@ -16,6 +16,7 @@ produit par scripts/two_sources_noise.py.
 import argparse
 import csv
 import json
+from pathlib import Path
 
 import matplotlib
 
@@ -30,7 +31,13 @@ from particle_sources.model import Sources
 from particle_sources.visualization import intensity_ratio_plot as P
 from particle_sources.visualization.two_sources_noise_plot import plot_faint_error
 
-from figures import FIG_DIR, _save
+FIG_DIR = Path(__file__).resolve().parent / "figures_deux_sources"
+
+
+def _save(fig, name):
+    FIG_DIR.mkdir(parents=True, exist_ok=True)
+    fig.savefig(FIG_DIR / name, dpi=150, bbox_inches="tight")
+    plt.close(fig)
 
 plt.rcParams.update({"font.size": 11, "axes.titlesize": 12})
 

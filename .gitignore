@@ -16,3 +16,5 @@ outputs/
 
 # Jeux de données générés
 data/
+# ... sauf les figures de la synthèse deux sources (nécessaires pour compiler le .typ)
+!presentation/figures_deux_sources/*.png

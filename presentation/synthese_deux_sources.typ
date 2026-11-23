@@ -26,7 +26,7 @@ L'équipe industrielle a proposé un cas test simple et parlant : deux sources, 
 #encadre[*Cadre de l'étude : mesures sans bruit.* Les sections 1 à 4 utilisent des mesures exactes ; la section 5 donne un bref aperçu avec bruit. Les difficultés observées viennent donc uniquement de l'optimisation, pas d'un manque d'information dans les mesures. Pas de source centrale non plus, comme dans le cas test d'origine.]
 
 #figure(
-  image("figures/deux_sources_schema.png", width: 40%),
+  image("figures_deux_sources/deux_sources_schema.png", width: 40%),
   caption: [Le cas test : 64 capteurs sur le cercle circonscrit au domaine $10 times 20$ (pointillés), une source forte d'intensité $x I$ en $(3, 6)$, une source faible d'intensité $I$ en $(6,5 ; 15)$, intensité totale fixée. Les croix marquent l'initialisation commune à toutes les méthodes.],
 )
 
@@ -54,7 +54,7 @@ avec un déplacement limité à 5 % du domaine par itération. Budget : 20 000 i
 Le constat de l'équipe industrielle se retrouve : pour $x = 10$, la descente retrouve les deux sources (erreur de position $< 10^(-7)$) ; pour $x = 100$, la source forte est retrouvée à 0,4 près, mais la source faible reste collée à la forte, à 8,8 de sa vraie position.
 
 #figure(
-  image("figures/deux_sources_trajectoires.png", width: 82%),
+  image("figures_deux_sources/deux_sources_trajectoires.png", width: 82%),
   caption: [Trajectoires de la descente de gradient sur la carte de l'intensité, depuis la même initialisation (croix). Blanc : source forte ; orange : source faible ; étoiles : vraies sources ; cercles : fin de la descente.],
 )
 
@@ -92,7 +92,7 @@ _Idée de la preuve._ D'après le gradient ci-dessus, les colonnes de $J$ associ
 Autrement dit, la perte est presque plate dans les directions qui déplacent la source faible : la déplacer ne modifie les mesures que d'un facteur $1 \/ x$, donc la perte d'un facteur $1 \/ x^2$. Le gradient ne la guide presque plus.
 
 #figure(
-  image("figures/deux_sources_paysage.png", width: 55%),
+  image("figures_deux_sources/deux_sources_paysage.png", width: 55%),
   caption: [Perte en fonction de la position supposée de la source faible, la source forte étant fixée à sa vraie place (étoile blanche). Pour $x = 100$, la vallée autour de la vraie position (étoile orange) est environ 100 fois moins profonde : partout dans le domaine, la perte reste faible.],
 )
 
@@ -101,7 +101,7 @@ Autrement dit, la perte est presque plate dans les directions qui déplacent la 
 - de $x = 10$ à $x = 100$ : $kappa$ multiplié par 76, soit environ 800 000 itérations attendues, cohérent avec la non-convergence observée à 400 000.
 
 #figure(
-  image("figures/deux_sources_reussite.png", width: 82%),
+  image("figures_deux_sources/deux_sources_reussite.png", width: 82%),
   caption: [À gauche : taux de réussite sur 20 situations aléatoires par rapport $x$ (mêmes situations et mêmes initialisations pour toutes les méthodes). À droite : conditionnement $kappa$ de la perte à la solution, cas fixe ; pointillés : pente $x^2$.],
 )
 
@@ -128,6 +128,6 @@ Même cas test, avec un bruit gaussien relatif $y_k (1 + sigma epsilon_k)$, $eps
 - Cette borne, pour la source faible, vaut environ 0,77 $x sigma$ dans cette géométrie (contre 1,8 $sigma$ pour la source forte). À $x = 100$, la source faible est localisée à 0,1 près dans 84 % des cas pour $sigma$ = 0,1 %, et 2 % pour $sigma$ = 1 %.
 
 #figure(
-  image("figures/deux_sources_bruit.png", width: 62%),
+  image("figures_deux_sources/deux_sources_bruit.png", width: 62%),
   caption: [Erreur de position médiane sur la source faible (Prony + maximum de vraisemblance) selon le bruit, pour $x = 50, 100, 200$. Pointillés : borne de Cramér-Rao ; croix : descente de gradient à $x = 100$.],
 )
