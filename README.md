@@ -86,6 +86,14 @@ initialisation et avec Prony + maximum de vraisemblance. Paramètres dans
 `config/two_sources.yaml` ; sorties dans `outputs/two_sources/` :
 `fixed_case.csv`, `random_trials.csv`, `two_sources.png`, `config.yaml`.
 
+Même cas test avec bruit gaussien relatif, x autour de 100, comparé à la
+borne de Cramér-Rao (paramètres dans `config/two_sources_noise.yaml`, sorties
+dans `outputs/two_sources_noise/`) :
+
+```bash
+python scripts/two_sources_noise.py
+```
+
 ## Configuration
 
 Tous les paramètres sont dans le dossier `config/`, un fichier par étape :
@@ -97,6 +105,7 @@ Tous les paramètres sont dans le dossier `config/`, un fichier par étape :
 | `reconstruction.yaml` | méthode d'inversion et ses paramètres |
 | `visualization.yaml` | options d'affichage, chemin d'enregistrement de la figure |
 | `two_sources.yaml` | cas test à deux sources (scripts/two_sources.py) |
+| `two_sources_noise.yaml` | même cas test avec bruit (scripts/two_sources_noise.py) |
 
 Chaque loi ou méthode s'écrit `{name: ..., params: {...}}` ; les noms
 disponibles sont listés en commentaire dans chaque fichier (et dans
@@ -145,13 +154,15 @@ src/particle_sources/
 │   ├── metrics.py       association des sources, OSPA, erreurs
 │   ├── crb.py           borne de Cramér-Rao
 │   ├── runner.py        balayage d'un paramètre, comparaison des méthodes
-│   └── intensity_ratio.py cas test à deux sources de rapport d'intensité x
+│   ├── intensity_ratio.py cas test à deux sources de rapport d'intensité x
+│   └── two_sources_noise.py même cas test avec bruit (borne de Cramér-Rao)
 ├── dataset/           Jeux de données pour l'apprentissage
 └── visualization/     Affichage uniquement (matplotlib)
     ├── field_map.py     carte de Phi, sources, domaine
     ├── sensors_plot.py  capteurs et profil sur le cercle
     ├── figures.py       figures complètes
-    └── intensity_ratio_plot.py figures du cas test à deux sources
+    ├── intensity_ratio_plot.py figures du cas test à deux sources
+    └── two_sources_noise_plot.py figures du cas test à deux sources avec bruit
 scripts/               Points d'entrée : expériences reproductibles
 tests/                 Tests unitaires (pytest)
 ```

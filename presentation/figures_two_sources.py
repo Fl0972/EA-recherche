@@ -7,8 +7,13 @@ scripts/two_sources.py. Les chiffres cités dans le texte sont enregistrés
 dans figures/deux_sources.json.
 
     python presentation/figures_two_sources.py
+    python presentation/figures_two_sources.py --noise-only   # figure avec bruit seule
+
+La figure avec bruit relit outputs/two_sources_noise/fixed_geometry.csv,
+produit par scripts/two_sources_noise.py.
 """
 
+import argparse
 import csv
 import json
 
@@ -23,6 +28,7 @@ from particle_sources.config.cli import DEFAULT_CONFIG_DIR, resolve_output
 from particle_sources.generation import bright_and_faint
 from particle_sources.model import Sources
 from particle_sources.visualization import intensity_ratio_plot as P
+from particle_sources.visualization.two_sources_noise_plot import plot_faint_error
 
 from figures import FIG_DIR, _save
 
@@ -41,8 +47,25 @@ def _read_random_rows(spec, cfg):
                 for r in csv.DictReader(f)]
 
 
+def noise_figure(cfg):
+    """Erreur sur la source faible avec bruit, comparée à la borne de Cramér-Rao."""
+    path = resolve_output(cfg.raw["two_sources_noise"]["output_dir"]) / "fixed_geometry.csv"
+    with open(path, encoding="utf-8") as f:
+        rows = [{**r, **{k: float(r[k]) for k in ("ratio", "sigma", "err_faint", "crb_faint")}}
+                for r in csv.DictReader(f)]
+    fig, ax = plt.subplots(figsize=(6.5, 4.3))
+    plot_faint_error(ax, rows, TwoSourcesSpec.from_raw(cfg.raw).success_tol)
+    _save(fig, "deux_sources_bruit.png")
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--noise-only", action="store_true")
+    args = parser.parse_args()
     cfg = load_config(DEFAULT_CONFIG_DIR)
+    noise_figure(cfg)
+    if args.noise_only:
+        return
     spec = TwoSourcesSpec.from_raw(cfg.raw)
     box, sensors = cfg.box, cfg.sensors
 

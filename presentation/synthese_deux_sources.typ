@@ -23,7 +23,7 @@ Novembre 2026 · Florian Guillaumey
 
 L'équipe industrielle a proposé un cas test simple et parlant : deux sources, l'une $x$ fois plus intense que l'autre, retrouvées par descente de gradient. Leur constat : la méthode fonctionne pour $x = 10$, plus pour $x = 100$. Nous avons reproduit ce cas test sur notre simulateur pour disposer d'un point de comparaison commun. Le constat se retrouve à l'identique, et l'analyse montre qu'il tient à une propriété mathématique du problème, son conditionnement, et non à la mise en œuvre.
 
-#encadre[*Cadre de l'étude : mesures sans bruit.* Toutes les simulations de cette fiche utilisent des mesures exactes. Les difficultés observées viennent donc uniquement de l'optimisation, pas d'un manque d'information dans les mesures. Pas de source centrale non plus, comme dans le cas test d'origine.]
+#encadre[*Cadre de l'étude : mesures sans bruit.* Les sections 1 à 4 utilisent des mesures exactes ; la section 5 donne un bref aperçu avec bruit. Les difficultés observées viennent donc uniquement de l'optimisation, pas d'un manque d'information dans les mesures. Pas de source centrale non plus, comme dans le cas test d'origine.]
 
 #figure(
   image("figures/deux_sources_schema.png", width: 40%),
@@ -117,3 +117,17 @@ La descente de gradient, elle, n'a pas cette invariance : son pas se transforme 
 *Prony + maximum de vraisemblance.* Notre méthode précédente obtient un point de départ par une formule directe (méthode de Prony), sans initialisation, puis l'affine par Gauss-Newton. Elle retrouve les deux sources dans 100 % des situations testées, jusqu'à $x = 300$, en 10 à 25 ms.
 
 *Limite commune.* La perte n'étant pas convexe, toute méthode locale peut s'arrêter sur un point stationnaire, typiquement les deux sources fusionnées en une seule. C'est ce qui arrive à Gauss-Newton pour $x = 300$ dans le cas fixe, et dans 25 % des situations aléatoires.
+
+#pagebreak()
+== 5. Aperçu avec bruit
+
+Même cas test, avec un bruit gaussien relatif $y_k (1 + sigma epsilon_k)$, $epsilon_k tilde cal(N)(0, 1)$, pour $x$ autour de 100 (50 tirages de bruit par point).
+
+- La descente de gradient reste bloquée comme sans bruit : à $x = 100$, la source faible finit à environ 8,8 de sa position, quel que soit $sigma$.
+- Gauss-Newton et Prony + maximum de vraisemblance atteignent la borne de Cramér-Rao : la limite devient l'information contenue dans les mesures.
+- Cette borne, pour la source faible, vaut environ 0,77 $x sigma$ dans cette géométrie (contre 1,8 $sigma$ pour la source forte). À $x = 100$, la source faible est localisée à 0,1 près dans 84 % des cas pour $sigma$ = 0,1 %, et 2 % pour $sigma$ = 1 %.
+
+#figure(
+  image("figures/deux_sources_bruit.png", width: 62%),
+  caption: [Erreur de position médiane sur la source faible (Prony + maximum de vraisemblance) selon le bruit, pour $x = 50, 100, 200$. Pointillés : borne de Cramér-Rao ; croix : descente de gradient à $x = 100$.],
+)

@@ -1,0 +1,25 @@
+# Cas test à deux sources AVEC bruit (scripts/two_sources_noise.py).
+# Géométrie, initialisation, budget de la descente et seuil de réussite :
+# section two_sources (two_sources.yaml). Bruit : gaussien relatif,
+# y * (1 + sigma * N(0, 1)). Pas de source centrale.
+
+two_sources_noise:
+  # Rapports d'intensité forte / faible (géométrie fixe)
+  ratios: [50, 100, 200]
+
+  # Niveaux de bruit relatif
+  sigmas: [1.0e-5, 1.0e-4, 1.0e-3, 3.0e-3, 1.0e-2, 3.0e-2]
+
+  # Tirages de bruit par (x, sigma) en géométrie fixe
+  n_realizations: 50
+
+  # Descente de gradient : lente (~10 s par run), peu de tirages, un seul x
+  descent_realizations: 3
+  descent_ratio: 100
+
+  # Géométries aléatoires (positions et initialisation uniformes), rapport x
+  geometry_ratio: 100
+  n_geometries: 100
+
+  seed: 0
+  output_dir: outputs/two_sources_noise
