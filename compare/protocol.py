@@ -69,6 +69,7 @@ CENTRE = 0.5 * (LO + HI)
 RAYON = float(np.linalg.norm(HI - LO) / 2)        # cercle passant par les coins de D
 S_TOTAL = 100.0
 DELTA_DEF = 0.1                                    # rayon de fusion des sources (métrique)
+SEUIL_DETECTION = 0.1                              # une vraie source est détectée si d_i < seuil
 D_MAX, R_MAX = 5.0, 1.0                           # plafonds de d_i et r_i
 N_CERCLE = 64
 GRILLE = (16, 32)
@@ -262,7 +263,7 @@ def fusion(z, I, delta=DELTA_DEF):
     return np.array(zf).reshape(-1, 2), np.array(If)
 
 
-def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25, delta=DELTA_DEF):
+def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25, delta=DELTA_DEF, seuil=SEUIL_DETECTION):
     """
     Métrique avec fusion : les sources estimées et les vraies sources sont fusionnées
     (fusion, même delta), puis appariées par l'algorithme hongrois. Sur les N' vraies
@@ -285,7 +286,12 @@ def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25, delta=DELTA_DEF):
         r[a] = np.minimum(np.abs(Ie[b] - It[a]) / It[a], R_MAX)
         apparie[b] = True
     S = float(np.sum(I))
+    det = d < seuil                              # vraies sources détectées (appariées à < seuil)
     return {"E": float(np.mean(alpha * d + beta * r)), "d_moy": float(d.mean()),
+            "taux_detection": float(det.mean()) if N else np.nan,
+            "d_toutes": d.tolist(),                # distance de chaque vraie source (plafonnée)
+            "d_det": float(d[det].mean()) if det.any() else np.nan,
+            "r_det": float(r[det].mean()) if det.any() else np.nan,
             "d_max": float(d.max()), "r_moy": float(r.mean()),
             "masse_parasite": float(np.clip(Ie[~apparie], 0, None).sum() / S) if S > 0 else 0.0,
             "n_est": int(len(np.asarray(I_est).reshape(-1))), "n_fusion": n, "N_fusion": N,
@@ -295,6 +301,7 @@ def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25, delta=DELTA_DEF):
 def erreur_timeout(N, alpha=0.75, beta=0.25):
     """Tirage en timeout : toutes les sources manquées."""
     return {"E": alpha * D_MAX + beta * R_MAX, "d_moy": D_MAX, "d_max": D_MAX, "r_moy": R_MAX,
+            "taux_detection": 0.0, "d_det": np.nan, "r_det": np.nan,
             "n_est": 0, "fausses": 0, "manquees": int(N)}
 
 

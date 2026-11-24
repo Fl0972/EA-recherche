@@ -158,6 +158,12 @@ def ic(r, base="E"):
     return f"{nb(r[base + '_moyenne'])} [{nb(r[base + '_ic95_bas'])} ; {nb(r[base + '_ic95_haut'])}]"
 
 
+def icm(r, base="E"):
+    """médiane [IC 95 %]"""
+    lo, hi = ("E_med_ic95_bas", "E_med_ic95_haut") if base == "E" else (base + "_ic95_bas", base + "_ic95_haut")
+    return f"{nb(r[base + '_mediane'])} [{nb(r[lo])} ; {nb(r[hi])}]"
+
+
 def lire_agrege(b, c):
     p = RDIR / f"agrege_{b}_{c}.csv"
     if not p.exists():
@@ -185,16 +191,18 @@ def section_balayage(d, b, xs, titre_fig, titre_x):
                     if not v:
                         continue
                     r = v[0]
-                    lignes.append([str(N), nb(x), NOM[m], ic(r), nb(r["E_mediane"]), ic(r, "masse_parasite"),
-                                   pc(r["N_exact"]), nb(r["E_ancienne_mediane"])])
-        d.table(["N", titre_x, "Méthode", "E moyenne [IC 95 %]", "E médiane", "masse parasite [IC 95 %]",
-                 "N̂ = N", "E ancienne (médiane)"], lignes, ["r", "r", "l"] + ["r"] * 5)
+                    lignes.append([str(N), nb(x), NOM[m], icm(r), pc(r["detection_moyenne"]),
+                                   nb(r["d_det_mediane"]), nb(r["masse_parasite_moyenne"]),
+                                   pc(r["N_exact"]), nb(r["E_moyenne"]), nb(r["E_ancienne_mediane"])])
+        d.table(["N", titre_x, "Méthode", "E médiane [IC 95 %]", "détection", "précision d",
+                 "masse parasite", "N̂ = N", "E moyenne", "E ancienne (médiane)"], lignes, ["r", "r", "l"] + ["r"] * 7)
 
 
 def section_nsources(d):
     d.titre(2, "A.4 Nombre de sources (fig_nsources)")
-    d.texte("Cadre par défaut (σ = 10⁻³, I_c = 50 S). d et r : moyennes après fusion ; fausses : nombre moyen "
-            "de sources estimées (après fusion) non appariées ; N̂ = N : nombre brut de sources estimées égal à N.")
+    d.texte("Cadre par défaut (σ = 10⁻³, I_c = 50 S). Précision d et r : médianes sur les tirages des erreurs "
+            "moyennes de position et d'intensité relative des sources détectées ; fausses : nombre moyen de sources "
+            "estimées (après fusion) non appariées ; N̂ = N : nombre brut de sources estimées égal à N.")
     for c in P.CONFIGS:
         rows = lire_agrege("nsources", c)
         d.titre(3, "cercle" if c == "cercle" else "cercle + grille")
@@ -205,11 +213,12 @@ def section_nsources(d):
                 if not v:
                     continue
                 r = v[0]
-                lignes.append([NOM[m], str(N), ic(r), nb(r["E_mediane"]), nb(r["d_moy_moyenne"]),
-                               nb(r["r_moy_moyenne"]), ic(r, "masse_parasite"), nb(r["fausses_moyenne"], 2),
-                               pc(r["N_exact"]), str(int(r["timeouts"]))])
-        d.table(["Méthode", "N", "E moyenne [IC 95 %]", "E médiane", "d", "r", "masse parasite [IC 95 %]",
-                 "fausses", "N̂ = N", "timeouts"], lignes, ["l"] + ["r"] * 9)
+                lignes.append([NOM[m], str(N), icm(r), ic(r, "detection"), icm(r, "d_det"),
+                               nb(r["r_det_mediane"]), ic(r, "masse_parasite"), nb(r["fausses_moyenne"], 2),
+                               pc(r["N_exact"]), nb(r["E_moyenne"]), str(int(r["timeouts"]))])
+        d.table(["Méthode", "N", "E médiane [IC 95 %]", "détection [IC 95 %]", "précision d [IC 95 %]",
+                 "précision r", "masse parasite [IC 95 %]", "fausses", "N̂ = N", "E moyenne", "timeouts"],
+                lignes, ["l"] + ["r"] * 10)
 
 
 def section_delta(d):
@@ -228,10 +237,10 @@ def section_delta(d):
                 if k != "methode":
                     r[k] = float(r[k])
         d.titre(3, "cercle" if c == "cercle" else "cercle + grille")
-        lignes = [[nb(r["delta"]), str(int(r["N"])), NOM[r["methode"]], ic(r), nb(r["E_mediane"]),
+        lignes = [[nb(r["delta"]), str(int(r["N"])), NOM[r["methode"]], icm(r), nb(r["E_moyenne"]),
                    ic(r, "masse_parasite")]
                   for r in sorted(rows, key=lambda r: (r["N"], METHODES.index(r["methode"]), r["delta"]))]
-        d.table(["δ", "N", "Méthode", "E moyenne [IC 95 %]", "E médiane", "masse parasite [IC 95 %]"],
+        d.table(["δ", "N", "Méthode", "E médiane [IC 95 %]", "E moyenne", "masse parasite [IC 95 %]"],
                 lignes, ["r", "r", "l", "r", "r", "r"])
 
 
@@ -419,10 +428,13 @@ def construire():
             "pondéré par les intensités) ; appariement hongrois ; E = (1/N') Σ (0,75 d_i + 0,25 r_i) sur les N' "
             "vraies sources fusionnées, d_i ≤ 5, r_i ≤ 1, source manquée = (5, 1) ; le nombre de sources estimé "
             "n'entre pas dans E. Masse parasite (à part) = somme des intensités des sources estimées non "
-            "appariées / S. Agrégation : moyenne sur les 100 tirages et intervalle de confiance à 95 % par "
-            "bootstrap (2 000 rééchantillonnages) ; la médiane est donnée à titre de comparaison, ainsi que "
-            "la médiane de l'ancienne métrique (sans fusion, médiane). « N̂ = N » : proportion de tirages où le "
-            "nombre brut de sources estimées vaut N. Médiane [Q1 ; Q3] : temps et conditionnement.")
+            "appariées / S. Détection : part des vraies sources (fusionnées) appariées à moins de "
+            f"{nb(P.SEUIL_DETECTION)}, moyenne sur les tirages. Précision : erreur moyenne de position d (et "
+            "d'intensité relative r) sur les seules sources détectées, médiane sur les tirages. Agrégation de E : "
+            "médiane sur les 100 tirages et intervalle de confiance à 95 % par bootstrap (2 000 "
+            "rééchantillonnages) ; la moyenne est donnée à titre de comparaison, ainsi que la médiane de "
+            "l'ancienne métrique (sans fusion). « N̂ = N » : proportion de tirages où le nombre brut de sources "
+            "estimées vaut N. Médiane [Q1 ; Q3] : temps et conditionnement.")
     section_parametres(d)
     d.titre(2, "A.2 Balayage en bruit (fig_balayages, ligne du haut)")
     d.texte("I_c = 50 S.")

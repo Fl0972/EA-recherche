@@ -197,7 +197,7 @@ def ligne_metrique(r, alpha, beta, delta, cache_verite):
 
 
 CHAMPS_LIGNE = ["balayage", "config", "N", "sigma", "ic_ratio", "tirage", "methode", "statut", "temps",
-                "delta", "E", "d_moy", "d_max", "r_moy", "masse_parasite", "n_est", "n_fusion",
+                "delta", "E", "d_moy", "d_max", "r_moy", "taux_detection", "d_det", "r_det", "masse_parasite", "n_est", "n_fusion",
                 "N_fusion", "fausses", "manquees", "N_exact", "E_ancienne", "d_moy_ancienne",
                 "r_moy_ancienne", "fausses_ancienne", "iterations", "perte", "chi2", "message"]
 
@@ -213,6 +213,17 @@ def bootstrap_moyenne(v, n_boot=N_BOOT, graine=0):
     return float(v.mean()), float(np.percentile(m, 2.5)), float(np.percentile(m, 97.5))
 
 
+def bootstrap_mediane(v, n_boot=N_BOOT, graine=0):
+    """Médiane et intervalle de confiance à 95 % (bootstrap percentile) ; ignore les nan."""
+    v = np.asarray(v, float)
+    v = v[~np.isnan(v)]
+    if v.size == 0:
+        return np.nan, np.nan, np.nan
+    rng = np.random.default_rng(graine)
+    m = np.median(v[rng.integers(0, v.size, (n_boot, v.size))], axis=1)
+    return float(np.median(v)), float(np.percentile(m, 2.5)), float(np.percentile(m, 97.5))
+
+
 def agreger(rows, xkey):
     """Une ligne par (N, x, méthode) : moyenne [IC 95 %], médiane, quartiles, etc."""
     groupes = {}
@@ -226,9 +237,18 @@ def agreger(rows, xkey):
         Ea = np.array([r["E_ancienne"] for r in v], float)
         Em, Eb, Eh = bootstrap_moyenne(E)
         Mm, Mb, Mh = bootstrap_moyenne(mp)
+        Ed, Edb, Edh = bootstrap_mediane(E)
+        Tm, Tb, Th = bootstrap_moyenne([r["taux_detection"] for r in v])
+        dd = np.array([r["d_det"] for r in v], float)
+        Dm, Db, Dh = bootstrap_mediane(dd)
+        rd = np.array([r["r_det"] for r in v], float)
         out.append({"N": N, "x": x, "methode": m, "tirages": len(v),
                     "E_moyenne": Em, "E_ic95_bas": Eb, "E_ic95_haut": Eh,
-                    "E_mediane": float(np.median(E)), "E_q1": float(np.percentile(E, 25)),
+                    "E_mediane": Ed, "E_med_ic95_bas": Edb, "E_med_ic95_haut": Edh,
+                    "detection_moyenne": Tm, "detection_ic95_bas": Tb, "detection_ic95_haut": Th,
+                    "d_det_mediane": Dm, "d_det_ic95_bas": Db, "d_det_ic95_haut": Dh,
+                    "r_det_mediane": float(np.nanmedian(rd)) if np.isfinite(rd).any() else np.nan,
+                    "E_q1": float(np.percentile(E, 25)),
                     "E_q3": float(np.percentile(E, 75)),
                     "masse_parasite_moyenne": Mm, "masse_parasite_ic95_bas": Mb,
                     "masse_parasite_ic95_haut": Mh,
