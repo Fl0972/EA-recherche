@@ -30,12 +30,19 @@ Méthodes (code inchangé du dépôt)
                N connu, positions initiales uniformes dans D, intensités S/N,
                20 000 itérations au plus.
 
-Erreur d'un tirage
-    Appariement hongrois sur la distance euclidienne. Pour chaque vraie
-    source i : d_i = ||ẑ_i − z_i||, r_i = |Î_i − I_i| / I_i, plafonnés à
-    d_max = 5 et r_max = 1 ; une vraie source manquée compte (5, 1).
-    E = (1/N) Σ_i (α d_i + β r_i). Les sources en trop (fausses) ne changent
-    pas E et sont comptées à part.
+Erreur d'un tirage (``erreur``)
+    Les sources estimées, puis les vraies sources, sont fusionnées (``fusion`` :
+    regroupement hiérarchique à lien simple au seuil delta = 0,1 ; intensité =
+    somme, position = barycentre pondéré par les intensités). Appariement
+    hongrois sur la distance euclidienne. Pour chaque vraie source fusionnée i :
+    d_i = ||ẑ_i − z_i||, r_i = |Î_i − I_i| / I_i, plafonnés à d_max = 5 et
+    r_max = 1 ; une vraie source manquée compte (5, 1).
+    E = (1/N') Σ_i (α d_i + β r_i) sur les N' vraies sources fusionnées ; le
+    nombre de sources estimé n'entre pas dans E. À part : masse parasite =
+    somme des intensités des sources estimées non appariées / S.
+    L'ancienne métrique (sans fusion) reste disponible : ``erreur_ancienne``.
+    Les sources estimées de chaque tirage sont enregistrées (results/sources/),
+    ce qui permet de recalculer toute métrique sans relancer les méthodes.
 """
 
 from __future__ import annotations
@@ -53,6 +60,7 @@ for p in (str(ROOT), str(ROOT / "src")):
         sys.path.insert(0, p)
 
 import numpy as np  # noqa: E402
+from scipy.cluster.hierarchy import fcluster, linkage  # noqa: E402
 from scipy.optimize import linear_sum_assignment  # noqa: E402
 
 LO = np.array([0.0, 0.0])
@@ -60,6 +68,7 @@ HI = np.array([10.0, 20.0])
 CENTRE = 0.5 * (LO + HI)
 RAYON = float(np.linalg.norm(HI - LO) / 2)        # cercle passant par les coins de D
 S_TOTAL = 100.0
+DELTA_DEF = 0.1                                    # rayon de fusion des sources (métrique)
 D_MAX, R_MAX = 5.0, 1.0                           # plafonds de d_i et r_i
 N_CERCLE = 64
 GRILLE = (16, 32)
@@ -210,10 +219,10 @@ def lancer(methode: str, sit: Situation, config: str):
 
 
 # ---- erreur -----------------------------------------------------------------------------
-def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25):
+def erreur_ancienne(z, I, z_est, I_est, alpha=0.75, beta=0.25):
     """
-    Appariement hongrois, erreurs plafonnées. Renvoie un dict :
-    E, d_moy, d_max, r_moy, n_est, fausses, manquees.
+    Ancienne métrique (sans fusion) : appariement hongrois direct, erreurs plafonnées.
+    Renvoie un dict : E, d_moy, d_max, r_moy, n_est, fausses, manquees.
     """
     z = np.asarray(z, float).reshape(-1, 2)
     z_est = np.asarray(z_est, float).reshape(-1, 2)
@@ -229,6 +238,58 @@ def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25):
     E = float(np.mean(alpha * d + beta * r))
     return {"E": E, "d_moy": float(d.mean()), "d_max": float(d.max()), "r_moy": float(r.mean()),
             "n_est": n, "fausses": max(n - N, 0), "manquees": max(N - n, 0)}
+
+
+def fusion(z, I, delta=DELTA_DEF):
+    """
+    Regroupement hiérarchique à lien simple (scipy, method="single", fcluster avec
+    criterion="distance", t = delta) : deux sources à moins de delta sont dans le même
+    groupe, de proche en proche. Chaque groupe devient une source d'intensité la somme
+    des intensités, placée au barycentre des positions pondéré par les intensités.
+    delta = 0 : pas de fusion.
+    """
+    z = np.asarray(z, float).reshape(-1, 2)
+    I = np.asarray(I, float).reshape(-1)
+    if len(z) <= 1 or delta <= 0:
+        return z, I
+    lab = fcluster(linkage(z, method="single"), t=delta, criterion="distance")
+    zf, If = [], []
+    for g in np.unique(lab):
+        k = lab == g
+        w = np.clip(I[k], 0.0, None)
+        zf.append((w @ z[k]) / w.sum() if w.sum() > 0 else z[k].mean(0))
+        If.append(I[k].sum())
+    return np.array(zf).reshape(-1, 2), np.array(If)
+
+
+def erreur(z, I, z_est, I_est, alpha=0.75, beta=0.25, delta=DELTA_DEF):
+    """
+    Métrique avec fusion : les sources estimées et les vraies sources sont fusionnées
+    (fusion, même delta), puis appariées par l'algorithme hongrois. Sur les N' vraies
+    sources fusionnées : E = (1/N') Σ (α d_i + β r_i), d_i ≤ 5, r_i ≤ 1, source manquée
+    = (5, 1). Le nombre de sources estimé n'entre pas dans E. À part : masse parasite =
+    somme des intensités des sources estimées (fusionnées) non appariées / S.
+    Renvoie : E, d_moy, d_max, r_moy, masse_parasite, n_est (brut), n_fusion, N_fusion,
+    fausses (estimées non appariées), manquees (vraies non appariées).
+    """
+    zt, It = fusion(z, I, delta)
+    ze, Ie = fusion(z_est, I_est, delta)
+    N, n = len(zt), len(ze)
+    d = np.full(N, D_MAX)
+    r = np.full(N, R_MAX)
+    apparie = np.zeros(n, bool)
+    if n and N:
+        C = np.linalg.norm(zt[:, None] - ze[None], axis=-1)
+        a, b = linear_sum_assignment(C)
+        d[a] = np.minimum(C[a, b], D_MAX)
+        r[a] = np.minimum(np.abs(Ie[b] - It[a]) / It[a], R_MAX)
+        apparie[b] = True
+    S = float(np.sum(I))
+    return {"E": float(np.mean(alpha * d + beta * r)), "d_moy": float(d.mean()),
+            "d_max": float(d.max()), "r_moy": float(r.mean()),
+            "masse_parasite": float(np.clip(Ie[~apparie], 0, None).sum() / S) if S > 0 else 0.0,
+            "n_est": int(len(np.asarray(I_est).reshape(-1))), "n_fusion": n, "N_fusion": N,
+            "fausses": int(n - apparie.sum()), "manquees": int(max(N - n, 0))}
 
 
 def erreur_timeout(N, alpha=0.75, beta=0.25):
@@ -254,8 +315,13 @@ def tache(t: dict) -> dict:
     dt = time.perf_counter() - t0
     row = {**{k: t[k] for k in ("config", "N", "sigma", "ic_ratio", "tirage", "methode")},
            "statut": statut, "temps": dt,
-           **erreur(sit.z, sit.I, z, I, t["alpha"], t["beta"])}
+           **erreur(sit.z, sit.I, z, I, t["alpha"], t["beta"], t.get("delta", DELTA_DEF))}
     row["N_exact"] = bool(row["n_est"] == t["N"])
+    # sources vraies et estimées, pour recalculer toute métrique sans relancer les méthodes
+    row["z_vrai"] = np.round(sit.z, 10).tolist()
+    row["I_vrai"] = np.round(sit.I, 10).tolist()
+    row["z_est"] = np.asarray(z, float).reshape(-1, 2).tolist()
+    row["I_est"] = np.asarray(I, float).reshape(-1).tolist()
     for k in ("iterations", "perte", "chi2"):
         if k in info:
             row[k] = info[k]

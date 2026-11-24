@@ -373,3 +373,10 @@ Options : `--n-trials` (100 par défaut), `--alpha`, `--beta` (0,75 et 0,25), `-
 - `figures/comparaison/synthese.typ` : tableau de synthèse ;
 - `rapport/comparaison.typ` : squelette de la partie « Comparaison » (titres, figures, légendes et chiffres en commentaire) ;
 - ce compte rendu, `rapport/compte_rendu_comparaison.typ`.
+
+// Annexe : valeurs numériques de toutes les figures (générée par python -m compare.annexe)
+#pagebreak()
+#[
+  #set heading(numbering: none)
+  #include "annexe_donnees.typ"
+]

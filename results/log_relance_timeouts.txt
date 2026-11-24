@@ -1,0 +1,71 @@
+
+[cercle] 48 points × 100 tirages × 3 méthodes : 2 tâches à faire (14400 déjà faites)
+    1/2 tâches, 0.6 min écoulées, reste ~ 0.6 min
+    2/2 tâches, 0.6 min écoulées, reste ~ 0.0 min
+[cercle] terminé en 0.6 min ; timeouts : {'prony': 0, 'ml_bic': 0, 'fw': 0}
+
+[grille] 48 points × 100 tirages × 3 méthodes : 103 tâches à faire (14400 déjà faites)
+    2/103 tâches, 1.5 min écoulées, reste ~ 76.9 min
+    4/103 tâches, 2.1 min écoulées, reste ~ 52.3 min
+    6/103 tâches, 2.8 min écoulées, reste ~ 44.8 min
+    8/103 tâches, 3.5 min écoulées, reste ~ 41.5 min
+    10/103 tâches, 4.9 min écoulées, reste ~ 45.8 min
+    12/103 tâches, 6.2 min écoulées, reste ~ 46.8 min
+    14/103 tâches, 6.8 min écoulées, reste ~ 43.0 min
+    16/103 tâches, 7.6 min écoulées, reste ~ 41.1 min
+    18/103 tâches, 7.9 min écoulées, reste ~ 37.3 min
+    20/103 tâches, 8.4 min écoulées, reste ~ 34.9 min
+    22/103 tâches, 9.2 min écoulées, reste ~ 33.7 min
+    24/103 tâches, 9.7 min écoulées, reste ~ 31.9 min
+    26/103 tâches, 10.3 min écoulées, reste ~ 30.4 min
+    28/103 tâches, 11.4 min écoulées, reste ~ 30.5 min
+    30/103 tâches, 11.7 min écoulées, reste ~ 28.6 min
+    32/103 tâches, 13.0 min écoulées, reste ~ 28.7 min
+    34/103 tâches, 13.8 min écoulées, reste ~ 28.1 min
+    36/103 tâches, 14.2 min écoulées, reste ~ 26.3 min
+    38/103 tâches, 15.2 min écoulées, reste ~ 25.9 min
+    40/103 tâches, 15.7 min écoulées, reste ~ 24.8 min
+    42/103 tâches, 16.5 min écoulées, reste ~ 24.0 min
+    44/103 tâches, 17.5 min écoulées, reste ~ 23.4 min
+    46/103 tâches, 18.5 min écoulées, reste ~ 22.9 min
+    48/103 tâches, 19.6 min écoulées, reste ~ 22.5 min
+    50/103 tâches, 19.8 min écoulées, reste ~ 21.0 min
+    52/103 tâches, 20.3 min écoulées, reste ~ 20.0 min
+    54/103 tâches, 21.0 min écoulées, reste ~ 19.0 min
+    56/103 tâches, 21.3 min écoulées, reste ~ 17.9 min
+    58/103 tâches, 21.8 min écoulées, reste ~ 16.9 min
+    60/103 tâches, 22.4 min écoulées, reste ~ 16.1 min
+    62/103 tâches, 23.2 min écoulées, reste ~ 15.4 min
+    64/103 tâches, 24.0 min écoulées, reste ~ 14.6 min
+    66/103 tâches, 24.3 min écoulées, reste ~ 13.6 min
+    68/103 tâches, 25.5 min écoulées, reste ~ 13.1 min
+    70/103 tâches, 26.2 min écoulées, reste ~ 12.3 min
+    72/103 tâches, 27.7 min écoulées, reste ~ 11.9 min
+    74/103 tâches, 29.0 min écoulées, reste ~ 11.4 min
+    76/103 tâches, 30.5 min écoulées, reste ~ 10.8 min
+    78/103 tâches, 31.3 min écoulées, reste ~ 10.0 min
+    80/103 tâches, 31.6 min écoulées, reste ~ 9.1 min
+    82/103 tâches, 32.6 min écoulées, reste ~ 8.4 min
+    84/103 tâches, 32.7 min écoulées, reste ~ 7.4 min
+    86/103 tâches, 33.2 min écoulées, reste ~ 6.6 min
+    88/103 tâches, 33.8 min écoulées, reste ~ 5.8 min
+    90/103 tâches, 34.2 min écoulées, reste ~ 4.9 min
+    92/103 tâches, 34.5 min écoulées, reste ~ 4.1 min
+    94/103 tâches, 34.9 min écoulées, reste ~ 3.3 min
+    96/103 tâches, 35.6 min écoulées, reste ~ 2.6 min
+    98/103 tâches, 35.9 min écoulées, reste ~ 1.8 min
+    100/103 tâches, 36.4 min écoulées, reste ~ 1.1 min
+    102/103 tâches, 36.8 min écoulées, reste ~ 0.4 min
+[grille] terminé en 37.0 min ; timeouts : {'prony': 0, 'ml_bic': 2, 'fw': 0}
+  figures écrites dans C:\Users\cyril\OneDrive\Bureau\3A\ea collaborative ml\EA-recherche\figures\comparaison
+  Typst : rapport/comparaison.typ, figures\comparaison/synthese.typ
+  figures de synthèse dans C:\Users\cyril\OneDrive\Bureau\3A\ea collaborative ml\EA-recherche\rapport\images
+annexe écrite : rapport/annexe_donnees.typ et rapport/compte_rendu_comparaison.md
+
+Durée totale : 39.2 min
+  figures écrites dans C:\Users\cyril\OneDrive\Bureau\3A\ea collaborative ml\EA-recherche\figures\comparaison
+  Typst : rapport/comparaison.typ, figures\comparaison/synthese.typ
+  figures de synthèse dans C:\Users\cyril\OneDrive\Bureau\3A\ea collaborative ml\EA-recherche\rapport\images
+annexe écrite : rapport/annexe_donnees.typ et rapport/compte_rendu_comparaison.md
+
+Durée totale : 1.5 min

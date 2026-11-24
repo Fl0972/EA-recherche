@@ -25,10 +25,10 @@
   $y_k^"brut" (1 + sigma epsilon_k)$, source centrale retirée ; $sigma_k = sigma y_k^"brut"$.
 - Cadre par défaut : $I_c = 50 S$, $sigma = 10^(-3)$.
 - Appariement des sources estimées et vraies par l'algorithme hongrois sur la distance euclidienne.
-- Erreur d'un tirage : $E = 1/N sum_i (alpha d_i + beta r_i)$, $alpha = 0,75$, $beta = 0,25$,
+- Erreur d'un tirage : $E = 1/N sum_i (alpha d_i + beta r_i)$, $alpha = 0","75$, $beta = 0","25$,
   $d_i = norm(hat(z)_i - z_i)$, $r_i = abs(hat(I)_i - I_i) \/ I_i$ ; source manquée : $d_i = 5$,
   $r_i = 1$ (plafonds) ; les fausses sources sont comptées à part.
-- Prony, ML + BIC et Frank–Wolfe estiment $N$. La descente de gradient d'Orano (20 000 itérations, $N$ connu) est trop lente pour ces balayages ; elle est étudiée à part dans le cas à 2 sources (@fig:ds-reussite).
+- Prony, ML + BIC et Frank–Wolfe estiment $N$. La descente de gradient d'Orano (20 000 itérations, $N$ connu) est trop lente pour ces balayages ; elle est étudiée à part dans le cas à 2 sources.
 - 10 tirages par point ; timeout de 60 s par tirage et par méthode (compté comme échec).
 
 == Capteurs sur le cercle
@@ -67,9 +67,9 @@
   caption: [Temps de calcul par tirage (médiane et quartiles, génération des données exclue) en fonction de $N$, cadre par défaut ; 64 capteurs $s_k$ sur le cercle de centre $c$ passant par les coins de $D$.],
 ) <fig:temps-cercle>
 // À rédiger :
-//   - Prony : temps médian 0,0014 s (N = 2), 0,0012 s (N = 4), 0,0013 s (N = 6), 0,0013 s (N = 10)
-//   - ML + BIC : temps médian 0,18 s (N = 2), 0,43 s (N = 4), 0,48 s (N = 6), 0,83 s (N = 10)
-//   - Frank–Wolfe glissant : temps médian 0,06 s (N = 2), 0,12 s (N = 4), 0,12 s (N = 6), 0,16 s (N = 10)
+//   - Prony : temps médian 0,0015 s (N = 2), 0,0012 s (N = 4), 0,0013 s (N = 6), 0,0011 s (N = 10)
+//   - ML + BIC : temps médian 0,19 s (N = 2), 0,39 s (N = 4), 0,57 s (N = 6), 0,75 s (N = 10)
+//   - Frank–Wolfe glissant : temps médian 0,068 s (N = 2), 0,11 s (N = 4), 0,13 s (N = 6), 0,15 s (N = 10)
 //   - tirages en timeout (cadre par défaut) : Prony 0, ML + BIC 0, Frank–Wolfe glissant 0
 
 == Cercle et grille de capteurs
@@ -80,7 +80,7 @@
 ) <fig:bruit-grille>
 // À rédiger :
 //   - N = 2, σ = 10^-3 : meilleure E médiane = 0,000404 (ML + BIC) ; Prony 1,29, Frank–Wolfe glissant 0,000713
-//   - N = 10, σ = 10^-3 : meilleure E médiane = 0,0132 (ML + BIC) ; Prony 2,6, Frank–Wolfe glissant 0,0963
+//   - N = 10, σ = 10^-3 : meilleure E médiane = 0,0132 (ML + BIC) ; Prony 2,6, Frank–Wolfe glissant 0,095
 //   - ML + BIC, N = 4 : proportion N̂ = N de 80 % → 80 % → 70 % quand σ va de 0,0001 à 0,01
 //   - N = 2, E médiane à σ = 0,0001 et σ = 0,01 : Prony 0,0194 → 2,76 ; ML + BIC 4,06 × 10^-5 → 0,00385 ; Frank–Wolfe glissant 7,17 × 10^-5 → 0,00678
 
@@ -100,7 +100,7 @@
 // À rédiger :
 //   - Prony : E médiane 1,29 (N = 2), 1,34 (N = 4), 2,34 (N = 6), 2,6 (N = 10) ; N̂ = N : 10 %, 10 %, 20 %, 20 %
 //   - ML + BIC : E médiane 0,000404 (N = 2), 0,00104 (N = 4), 0,0031 (N = 6), 0,0132 (N = 10) ; N̂ = N : 100 %, 80 %, 90 %, 70 %
-//   - Frank–Wolfe glissant : E médiane 0,000713 (N = 2), 0,00521 (N = 4), 0,0329 (N = 6), 0,0963 (N = 10) ; N̂ = N : 90 %, 80 %, 20 %, 30 %
+//   - Frank–Wolfe glissant : E médiane 0,000713 (N = 2), 0,00521 (N = 4), 0,0304 (N = 6), 0,095 (N = 10) ; N̂ = N : 90 %, 80 %, 20 %, 30 %
 //   - Prony : nombre moyen de fausses sources 3,5 (N = 2), 1,8 (N = 4), 0,8 (N = 6), 0 (N = 10)
 
 #figure(
@@ -108,9 +108,9 @@
   caption: [Temps de calcul par tirage (médiane et quartiles, génération des données exclue) en fonction de $N$, cadre par défaut ; 64 capteurs sur le cercle et 512 capteurs en grille $16 times 32$ dans $D$ (Prony n'utilise que les capteurs du cercle).],
 ) <fig:temps-grille>
 // À rédiger :
-//   - Prony : temps médian 0,0015 s (N = 2), 0,0013 s (N = 4), 0,0014 s (N = 6), 0,0013 s (N = 10)
-//   - ML + BIC : temps médian 0,54 s (N = 2), 0,98 s (N = 4), 1,8 s (N = 6), 5,6 s (N = 10)
-//   - Frank–Wolfe glissant : temps médian 0,37 s (N = 2), 0,58 s (N = 4), 1,2 s (N = 6), 3 s (N = 10)
+//   - Prony : temps médian 0,0014 s (N = 2), 0,0013 s (N = 4), 0,0015 s (N = 6), 0,0015 s (N = 10)
+//   - ML + BIC : temps médian 0,45 s (N = 2), 0,9 s (N = 4), 1,7 s (N = 6), 6 s (N = 10)
+//   - Frank–Wolfe glissant : temps médian 0,3 s (N = 2), 0,5 s (N = 4), 1,2 s (N = 6), 3,3 s (N = 10)
 //   - tirages en timeout (cadre par défaut) : Prony 0, ML + BIC 0, Frank–Wolfe glissant 0
 
 === Cercle contre cercle et grille
@@ -119,27 +119,27 @@
   caption: [Balayage en bruit : cercle seul (traits pleins) et cercle + grille (pointillés), mêmes tirages.],
 ) <fig:synthese-bruit>
 // À rédiger :
-//   - ML + BIC, N = 2 : E médiane 0,185 (cercle) → 0,000404 (cercle + grille)
-//   - ML + BIC, N = 10 : E médiane 2,53 (cercle) → 0,0132 (cercle + grille)
-//   - Frank–Wolfe glissant, N = 2 : E médiane 0,43 (cercle) → 0,000713 (cercle + grille)
-//   - Frank–Wolfe glissant, N = 10 : E médiane 2,79 (cercle) → 0,0963 (cercle + grille)
+//   - ML + BIC, N = 2, σ = 0,001 : E médiane 0,185 (cercle) → 0,000404 (cercle + grille)
+//   - ML + BIC, N = 10, σ = 0,001 : E médiane 2,53 (cercle) → 0,0132 (cercle + grille)
+//   - Frank–Wolfe glissant, N = 2, σ = 0,001 : E médiane 0,43 (cercle) → 0,000713 (cercle + grille)
+//   - Frank–Wolfe glissant, N = 10, σ = 0,001 : E médiane 2,79 (cercle) → 0,095 (cercle + grille)
 #figure(
   image("../figures/comparaison/quick/synthese_centrale.pdf", width: 100%),
   caption: [Balayage en source centrale : cercle seul (traits pleins) et cercle + grille (pointillés).],
 ) <fig:synthese-centrale>
 // À rédiger :
-//   - ML + BIC, N = 2 : E médiane 0,00748 (cercle) → 0,000101 (cercle + grille)
-//   - ML + BIC, N = 10 : E médiane 1,53 (cercle) → 0,000301 (cercle + grille)
-//   - Frank–Wolfe glissant, N = 2 : E médiane 0,0154 (cercle) → 0,000481 (cercle + grille)
-//   - Frank–Wolfe glissant, N = 10 : E médiane 1,94 (cercle) → 0,00271 (cercle + grille)
+//   - ML + BIC, N = 2, I_c/S = 0 : E médiane 0,00748 (cercle) → 0,000101 (cercle + grille)
+//   - ML + BIC, N = 10, I_c/S = 0 : E médiane 1,53 (cercle) → 0,000301 (cercle + grille)
+//   - Frank–Wolfe glissant, N = 2, I_c/S = 0 : E médiane 0,0154 (cercle) → 0,000481 (cercle + grille)
+//   - Frank–Wolfe glissant, N = 10, I_c/S = 0 : E médiane 1,94 (cercle) → 0,00271 (cercle + grille)
 #figure(
   image("../figures/comparaison/quick/synthese_nsources_temps.pdf", width: 100%),
   caption: [Erreur $E$, proportion de $hat(N) = N$ et temps médian en fonction de $N$, cadre par défaut : cercle seul (traits pleins) et cercle + grille (pointillés).],
 ) <fig:synthese-nsources>
 // À rédiger :
-//   - Prony : E médiane à N = 10 2,6 (cercle) → 2,6 (grille) ; temps médian 0,0013 s → 0,0013 s
-//   - ML + BIC : E médiane à N = 10 2,53 (cercle) → 0,0132 (grille) ; temps médian 0,83 s → 5,6 s
-//   - Frank–Wolfe glissant : E médiane à N = 10 2,79 (cercle) → 0,0963 (grille) ; temps médian 0,16 s → 3 s
+//   - Prony : E médiane à N = 10 2,6 (cercle) → 2,6 (grille) ; temps médian 0,0011 s → 0,0015 s
+//   - ML + BIC : E médiane à N = 10 2,53 (cercle) → 0,0132 (grille) ; temps médian 0,75 s → 6 s
+//   - Frank–Wolfe glissant : E médiane à N = 10 2,79 (cercle) → 0,095 (grille) ; temps médian 0,15 s → 3,3 s
 
 == Synthèse
 
