@@ -1,0 +1,43 @@
+{
+ "preset": "bruit",
+ "methodes": [
+  "prony",
+  "ml_bic",
+  "blasso"
+ ],
+ "N": [
+  2,
+  4,
+  6,
+  10
+ ],
+ "sigma": [
+  0.0001,
+  0.000215443,
+  0.000464159,
+  0.001,
+  0.00215443,
+  0.00464159,
+  0.01
+ ],
+ "ic": [
+  50.0
+ ],
+ "capteurs": [
+  "cercle",
+  "grille"
+ ],
+ "x": [
+  null
+ ],
+ "tirages": 100,
+ "axe": "sigma",
+ "nom": "bruit",
+ "sources": "resultats/sources/comparaison.jsonl",
+ "processus": 7,
+ "timeout": 300.0,
+ "relancer_timeouts": false,
+ "seuil": 0.1,
+ "delta": 0.1,
+ "dossier": "resultats/etudes/bruit"
+}

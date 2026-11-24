@@ -1,7 +1,0 @@
-cle,n=2_sigma=0.0001,n=2_sigma=0.001,n=3_sigma=0.0001,n=3_sigma=0.001,n=5_sigma=0.0001,n=5_sigma=0.001,moyenne
-cercle (projet) | ML + BIC,1,0.866667,0.633333,0.3,0.166667,0,0.494444
-cercle (projet) | ML + BIC + division,1,0.866667,0.633333,0.333333,0.233333,0,0.511111
-"bord de D (marge 0,5) | ML + BIC",0.933333,0.933333,0.8,0.6,0.5,0.133333,0.65
-"bord de D (marge 0,5) | ML + BIC + division",0.9,0.933333,0.8,0.6,0.466667,0.133333,0.638889
-D-optimal hors de D | ML + BIC,1,0.933333,0.9,0.566667,0.533333,0.233333,0.694444
-D-optimal hors de D | ML + BIC + division,1,0.933333,0.9,0.566667,0.566667,0.233333,0.7

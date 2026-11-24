@@ -3,18 +3,18 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "particle-sources"
-version = "0.1.0"
-description = "Localisation de sources de particules à partir de mesures d'intensité"
+name = "localisation-sources"
+version = "1.0.0"
+description = "Localisation de sources ponctuelles (noyau 1/r²) : Prony, ML + BIC, BLASSO, descente de gradient"
 requires-python = ">=3.10"
-dependencies = ["numpy", "scipy", "matplotlib", "pyyaml"]
+dependencies = ["numpy", "scipy", "matplotlib"]
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["localisation"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["."]

@@ -10,11 +10,11 @@ venv/
 .vscode/
 .idea/
 
-# Sorties générées
-outputs/
+# Sorties de main.py et main_test.py (régénérables)
+resultats/simulations/
+resultats/tests/
+
+# Images : seules celles du rapport et les 3 de resultats/images sont suivies
 *.png
 !rapport/images/*.png
-
-# Caches binaires régénérés par sparse_sources/apprentissage
-sparse_sources/apprentissage/results/*.pkl
-sparse_sources/apprentissage/results/*.pt
+!resultats/images/*.png

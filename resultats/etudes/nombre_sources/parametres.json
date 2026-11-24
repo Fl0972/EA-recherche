@@ -1,0 +1,37 @@
+{
+ "preset": "nombre_sources",
+ "methodes": [
+  "prony",
+  "ml_bic",
+  "blasso"
+ ],
+ "N": [
+  2,
+  4,
+  6,
+  10
+ ],
+ "sigma": [
+  0.001
+ ],
+ "ic": [
+  50.0
+ ],
+ "capteurs": [
+  "cercle",
+  "grille"
+ ],
+ "x": [
+  null
+ ],
+ "tirages": 100,
+ "axe": "N",
+ "nom": "nombre_sources",
+ "sources": "resultats/sources/comparaison.jsonl",
+ "processus": 7,
+ "timeout": 300.0,
+ "relancer_timeouts": false,
+ "seuil": 0.1,
+ "delta": 0.1,
+ "dossier": "resultats/etudes/nombre_sources"
+}

@@ -1,9 +1,0 @@
-K,capteurs,M,seed,reglage,n_est,trouvees_0_5,trouvees_0_1,crb_inf_0_1,temps
-20,grille 8x16,192,0,projet,12,7,1,13,1.1719167999981437
-20,grille 8x16,192,0,blanchi,19,13,9,13,3.7121710999999777
-50,cercle seul,64,0,projet,6,3,0,0,0.14447929999732878
-50,cercle seul,64,0,blanchi,6,3,0,0,0.14758769999752985
-50,grille 16x32,576,0,projet,16,14,1,42,1.107641100003093
-50,grille 16x32,576,0,blanchi,44,33,26,42,44.83378739999898
-50,serpentin 8 lignes,704,0,projet,22,19,9,43,6.68471330000466
-50,serpentin 8 lignes,704,0,blanchi,45,32,19,43,112.37712230000034

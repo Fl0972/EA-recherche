@@ -1,0 +1,40 @@
+{
+ "preset": "deux_sources_orano",
+ "methodes": [
+  "descente",
+  "gauss_newton",
+  "ml_bic",
+  "blasso",
+  "prony"
+ ],
+ "N": [
+  2
+ ],
+ "sigma": [
+  0.0
+ ],
+ "ic": [
+  0.0
+ ],
+ "capteurs": [
+  "cercle"
+ ],
+ "x": [
+  1.0,
+  3.0,
+  10.0,
+  30.0,
+  100.0,
+  300.0
+ ],
+ "tirages": 100,
+ "axe": "x",
+ "nom": "deux_sources_orano",
+ "sources": "resultats/sources/deux_sources.jsonl",
+ "processus": 7,
+ "timeout": 300.0,
+ "relancer_timeouts": false,
+ "seuil": 0.1,
+ "delta": 0.1,
+ "dossier": "resultats/etudes/deux_sources_orano"
+}

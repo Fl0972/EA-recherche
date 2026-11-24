@@ -1,13 +1,11 @@
 // Compte rendu détaillé : comparaison des méthodes (Prony, ML + BIC, Frank–Wolfe glissant,
 // descente de gradient d'Orano) et analyse du cas à deux sources.
 // Compiler depuis le dossier rapport/ :  typst compile compte_rendu_comparaison.typ
-// Les figures sont lues dans ../figures/ ; elles sont produites par
-//     python -m compare.run --all            (comparaison générale)
-//     python -m compare.deux_sources --all   (cas à deux sources)
+// Les figures sont lues dans images/ (PNG). Pour refaire les études : main_test.py --preset …
 // Typst ≥ 0.14 sait inclure des PDF ; avec une version plus ancienne, mettre ext = "png".
 
 #let ext = "pdf"
-#let fig(chemin, largeur: 100%) = image("../figures/" + chemin + "." + ext, width: largeur)
+#let fig(chemin, largeur: 100%) = image("images/" + chemin.split("/").last() + ".png", width: largeur)
 
 #set document(title: "Comparaison des méthodes et cas à deux sources", author: "Cyril Flury-Hérard")
 #set page(paper: "a4", margin: (x: 2.2cm, y: 2.3cm), numbering: "1 / 1")
@@ -35,7 +33,7 @@
   #text(size: 12.5pt)[Prony, ML + BIC, Frank–Wolfe glissant et descente de gradient d'Orano, \ et pourquoi la descente échoue déjà à deux sources]
   #v(0.5em)
   Cyril Flury-Hérard — EA recherche — novembre 2026 \
-  #text(size: 9pt)[Branche `travail-sur-le-probleme-inverse`, dossiers `compare/`, `results/`, `figures/`. Tous les chiffres viennent des CSV de `results/` ; aucune méthode n'a été modifiée.]
+  #text(size: 9pt)[Branche `travail-sur-le-probleme-inverse`. Code dans `localisation/`, points d'entrée `main.py` et `main_test.py`. Tous les chiffres viennent de `resultats/` ; aucune méthode n'a été modifiée.]
 ]
 
 #v(0.6em)
@@ -107,9 +105,9 @@ Deux dispositions de capteurs sont comparées :
 Les méthodes sont utilisées *sans modification*, avec les réglages déjà présents dans le dépôt.
 
 - *Prony* (`src/particle_sources/inversion/prony.py`, `prony_circle`). Les mesures du cercle sont vues comme une fonction sur le cercle ; ses coefficients de Fourier forment une matrice de Hankel dont le rang est le nombre de sources, et les sources sont les racines d'un polynôme. Le rang est lu avec le seuil relatif `rank_tol = 0.005` de `config/reconstruction.yaml`. *Prony n'utilise que les capteurs du cercle*, y compris dans la configuration cercle + grille.
-- *ML + BIC* (`sparse_sources`, `greedy_ml`). Maximum de vraisemblance : moindres carrés pondérés par $1 \/ sigma_k^2$, résolus par L-BFGS-B (et non par Gauss–Newton), en ajoutant les sources une par une à partir d'une recherche exhaustive sur une grille de positions candidates ; le nombre de sources est choisi par le critère BIC ($k_max = 20$).
-- *Frank–Wolfe glissant* (`sliding_frank_wolfe`). Problème BLASSO sur les mesures, capteurs blanchis (divisés par $sigma_k$) et noyau normalisé, pénalité $lambda = 1","5 sqrt(M)$ ($M$ = nombre de capteurs), 40 itérations au plus, comme dans `sparse_sources/tester_fw.py`.
-- *Descente de gradient d'Orano* (`sparse_sources/orano.py`, `descente_projetee`). Descente de gradient sur $theta = (z_i, I_i)$ normalisés, pas d'Armijo (le pas est doublé à chaque itération puis divisé par 2 jusqu'à décroissance suffisante), déplacement limité à 5 % du domaine, projection des positions sur $D$ et des intensités sur $RR_+$, 20 000 itérations au plus. Le critère est la somme des carrés des résidus *non pondérée*, divisée par $norm(y)^2$. Elle reçoit le vrai $N$ ; les positions de départ sont tirées uniformément dans $D$ et les intensités de départ valent $S \/ N$.
+- *ML + BIC* (`localisation/ml_bic.py`, `greedy_ml`). Maximum de vraisemblance : moindres carrés pondérés par $1 \/ sigma_k^2$, résolus par L-BFGS-B (et non par Gauss–Newton), en ajoutant les sources une par une à partir d'une recherche exhaustive sur une grille de positions candidates ; le nombre de sources est choisi par le critère BIC ($k_max = 20$).
+- *Frank–Wolfe glissant* (`localisation/blasso.py`, `sliding_frank_wolfe`). Problème BLASSO sur les mesures, capteurs blanchis (divisés par $sigma_k$) et noyau normalisé, pénalité $lambda = 1","5 sqrt(M)$ ($M$ = nombre de capteurs), 40 itérations au plus.
+- *Descente de gradient d'Orano* (`localisation/descente.py`, `descente_projetee`). Descente de gradient sur $theta = (z_i, I_i)$ normalisés, pas d'Armijo (le pas est doublé à chaque itération puis divisé par 2 jusqu'à décroissance suffisante), déplacement limité à 5 % du domaine, projection des positions sur $D$ et des intensités sur $RR_+$, 20 000 itérations au plus. Le critère est la somme des carrés des résidus *non pondérée*, divisée par $norm(y)^2$. Elle reçoit le vrai $N$ ; les positions de départ sont tirées uniformément dans $D$ et les intensités de départ valent $S \/ N$.
 - *Gauss–Newton* (`orano.gauss_newton`, région de confiance de `scipy.optimize.least_squares`) : même critère que la descente, même point de départ, même $N$. Il sert de *témoin* dans le cas à deux sources : il permet de séparer ce qui vient du critère et ce qui vient de l'algorithme.
 
 = Protocole de comparaison
@@ -350,31 +348,30 @@ Dans le cadre bruité du projet sur le cercle, la limite n'est plus l'algorithme
 - *Temps sous charge* : 8 processus sur 4 cœurs physiques (voir les durées). Les temps absolus sont surestimés d'un facteur 1,5 à 2 environ ; les rapports entre méthodes sont fiables.
 - *Timeouts* : 3 (cercle) et 93 (cercle + grille, dont 88 pour ML + BIC) sur 14 400 calculs par disposition, comptés comme des échecs complets.
 - *Échelle des figures* : l'axe des erreurs est en échelle log avec un plancher à $10^(-4)$ ; à $N = 2$ avec la grille et $sigma = 10^(-4)$, la médiane de ML + BIC ($5","9 dot 10^(-5)$) est sous ce plancher et apparaît à $10^(-4)$.
-- *Aucun bug évident* n'a été trouvé dans les méthodes : en particulier, le blanchiment du noyau du Frank–Wolfe (`sparse_sources/kernel.py`) est cohérent avec la conversion des intensités en unités physiques.
+- *Aucun bug évident* n'a été trouvé dans les méthodes : en particulier, le blanchiment du noyau du Frank–Wolfe (`localisation/noyau.py`) est cohérent avec la conversion des intensités en unités physiques.
 - *Compilation Typst* : ce document et le squelette `rapport/comparaison.typ` compilent sans erreur ni avertissement avec Typst 0.15.1.
 
 = Reproduire les résultats
 
 ```
-python -m compare.run --all                 # comparaison complète (≈ 1 h 30 ici)
-python -m compare.run --all --quick         # essai rapide, 10 tirages (≈ 15 min)
-python -m compare.run --figures             # retracer figures, tableau et squelette depuis les CSV
-python -m compare.run --all --methodes prony ml_bic fw descente   # avec la descente (≈ 6 h)
-python -m compare.deux_sources --all        # cas à deux sources (≈ 2 h avec 2 processus)
+python main_test.py --preset nombre_sources       # relit resultats/sources/ : CSV en quelques secondes
+python main_test.py --preset bruit
+python main_test.py --preset source_centrale
+python main_test.py --preset deux_sources
+python main_test.py --preset deux_sources_orano
+python main_test.py --N 2 4 6 10 --tirages 100 --nom refaire   # tout recalculer (≈ 1 h 30 par disposition)
+python main.py --N 6 --tirage 21                      # une simulation et son image
 ```
 
-Options : `--n-trials` (100 par défaut), `--alpha`, `--beta` (0,75 et 0,25), `--timeout` (60 s), `--n-proc`. Les calculs reprennent où ils s'étaient arrêtés : `results/brut_<config>.csv` est écrit au fil de l'eau.
+*Fichiers.* Le code est dans `localisation/` (un fichier par méthode : `prony.py`, `ml_bic.py`, `blasso.py`, `descente.py`) ; le mode d'emploi de `main.py` et `main_test.py` est dans le `README.md` du dépôt.
+- `resultats/sources/comparaison.jsonl`, `resultats/sources/deux_sources.jsonl` : vraies sources et sources estimées de chaque tirage ;
+- `resultats/etudes/<étude>/tirages.csv` : une ligne par tirage ; `resume.csv` : médiane de $E$ avec IC 95 %, moyenne, détection, précision, masse parasite, temps ;
+- `rapport/images/` : toutes les images du rapport ;
+- `rapport/synthese_resultats.typ` (aperçu : `rapport/apercu_synthese.typ`), `rapport/annexe_donnees.typ`, et ce fichier.
 
-*Fichiers produits.*
-- `results/brut_cercle.csv`, `results/brut_grille.csv` : une ligne par (point, tirage, méthode) ;
-- `results/<balayage>_<config>.csv` : lignes de chaque balayage, avec $E$ ;
-- `results/deux_sources/rapport.csv`, `bassins.csv`, `bassins_situations.json` ;
-- `figures/comparaison/*.pdf|png`, `figures/deux_sources/*.pdf|png` ;
-- `figures/comparaison/synthese.typ` : tableau de synthèse ;
-- `rapport/comparaison.typ` : squelette de la partie « Comparaison » (titres, figures, légendes et chiffres en commentaire) ;
-- ce compte rendu, `rapport/compte_rendu_comparaison.typ`.
+Les calculs reprennent où ils s'étaient arrêtés : les sources estimées sont écrites au fil de l'eau. Les fichiers de l'ancienne organisation (`compare/`, `sparse_sources/`, `results/`) restent dans l'historique git (commit `e384cec`).
 
-// Annexe : valeurs numériques de toutes les figures (générée par python -m compare.annexe)
+// Annexe : valeurs numériques de toutes les figures (générée par l'ancien script compare/annexe.py)
 #pagebreak()
 #[
   #set heading(numbering: none)

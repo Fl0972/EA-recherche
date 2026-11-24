@@ -1,5 +1,5 @@
-// Partie « Comparaison » du rapport — squelette généré par python -m compare.run
-// (compare/typst_out.py). Les observations « À rédiger » sont calculées depuis results/*.csv.
+// Partie « Comparaison » du rapport — squelette généré par l'ancien script compare/typst_out.py
+// (historique git). Les chiffres correspondent à resultats/etudes/*/resume.csv.
 // Les figures sont en PDF (Typst ≥ 0.14 sait inclure des PDF ; sinon remplacer .pdf par .png).
 
 == Le cas test d'Orano
@@ -19,7 +19,7 @@
 == Le cas à deux sources
 
 #figure(
-  image("../figures/deux_sources/ds_reussite_rapport.pdf", width: 100%),
+  image("images/ds_reussite_rapport.png", width: 100%),
   caption: [Réussite à 2 sources ($hat(N) = 2$ et chaque source à moins de 0,1) en fonction du rapport d'intensité $x = I_1 \/ I_2$, 100 tirages par point. Gauss–Newton et la descente reçoivent $N = 2$ et partent du même point. Croix : valeurs de la synthèse Orano.],
 ) <fig:ds-reussite>
 // À rédiger :
@@ -29,7 +29,7 @@
 //   - synthèse Orano (descente) : 95/85/55/20/5 % pour x = 1, 3, 10, 30, 100
 
 #figure(
-  image("../figures/deux_sources/ds_causes.pdf", width: 100%),
+  image("images/ds_causes.png", width: 100%),
   caption: [Issue de chaque descente : réussite, source éteinte (intensité projetée à 0), budget de 20 000 itérations épuisé, limite statistique (perte finale au plus égale à celle du minimum voisin de la vérité), source bloquée au bord de $D$, minimum local.],
 ) <fig:ds-causes>
 // À rédiger :
@@ -39,7 +39,7 @@
 //   - cas test d'Orano, itérations de la descente (médiane) : 20000 (x = 1), 20000 (x = 3), 20000 (x = 10), 20000 (x = 30), 20000 (x = 100), 20000 (x = 300)
 
 #figure(
-  image("../figures/deux_sources/ds_conditionnement.pdf", width: 100%),
+  image("images/ds_conditionnement.png", width: 100%),
   caption: [À gauche : conditionnement $kappa$ de $J^top J$ (perte d'Orano, paramètres normalisés) aux vraies sources, en fonction de $x$. À droite : itérations de la descente en fonction de $kappa$, cas test d'Orano.],
 ) <fig:ds-conditionnement>
 // À rédiger :
@@ -48,14 +48,14 @@
 //   - descente réussie : itérations médianes 10890 ; budget de 20 000 atteint dans 69 % des tirages
 
 #figure(
-  image("../figures/deux_sources/ds_paysage.pdf", width: 100%),
+  image("images/ds_paysage.png", width: 100%),
   caption: [Perte d'Orano en fonction de la position de la source faible (l'autre source et les intensités à leur vraie valeur) et trajectoire de la descente, sur le cercle et sur cercle + grille ; à droite, distance de chaque source estimée à la vraie source la plus proche au fil des itérations.],
 ) <fig:ds-paysage>
 // À rédiger :
 //   - carte : perte d'Orano quand la source faible est déplacée (le reste à la vérité) ; sur le cercle la perte varie lentement (vallée large et plate), la descente s'approche vite puis rampe (budget de 20 000 itérations atteint) ; sur cercle + grille la perte est hérissée d'un pic sur chaque capteur de la grille (singularité en 1/r²) avec un plateau entre les pics : la descente s'arrête au bout de quelques centaines d'itérations, loin des vraies sources
 
 #figure(
-  image("../figures/deux_sources/ds_bassins.pdf", width: 100%),
+  image("images/ds_bassins.png", width: 100%),
   caption: [Bassins d'attraction : issue de la descente selon la position de départ de la source 1 (la source 2 part toujours du même point) ; croix : départs depuis lesquels Gauss–Newton échoue.],
 ) <fig:ds-bassins>
 // À rédiger :
@@ -64,7 +64,7 @@
 //   - projet, x = 1, tirage 7 : la descente réussit depuis 32 % des départs, Gauss–Newton depuis 100 %
 
 #figure(
-  image("../figures/deux_sources/ds_separation.pdf", width: 100%),
+  image("images/ds_separation.png", width: 100%),
   caption: [Réussite en fonction de la distance entre les deux sources, cas test d'Orano, $x = 1$ et $x = 30$.],
 ) <fig:ds-separation>
 // À rédiger :
@@ -72,7 +72,7 @@
 //   - x = 30, descente : réussite 0 % (distance [0, 2)), 0 % (distance [2, 4)), 27 % (distance [4, 8)), 48 % (distance [8, 23))
 
 #figure(
-  image("../figures/deux_sources/ds_temps.pdf", width: 100%),
+  image("images/ds_temps.png", width: 100%),
   caption: [Temps de calcul médian par tirage en fonction de $x$.],
 ) <fig:ds-temps>
 // À rédiger :
@@ -96,7 +96,7 @@
 == Capteurs sur le cercle
 
 #figure(
-  image("../figures/comparaison/bruit_cercle.pdf", width: 100%),
+  image("images/bruit_cercle.png", width: 100%),
   caption: [Erreur $E$ (médiane et quartiles, échelle log) et proportion de tirages où $hat(N) = N$ en fonction du bruit relatif $sigma$, pour $I_c = 50 S$ ; 64 capteurs $s_k$ sur le cercle de centre $c$ passant par les coins de $D$. 100 tirages par point.],
 ) <fig:bruit-cercle>
 // À rédiger :
@@ -106,7 +106,7 @@
 //   - N = 2, E médiane à σ = 0,0001 et σ = 0,01 : Prony 0,017 → 2,14 ; ML + BIC 0,00927 → 2,05 ; Frank–Wolfe glissant 0,0301 → 2,19
 
 #figure(
-  image("../figures/comparaison/centrale_cercle.pdf", width: 100%),
+  image("images/centrale_cercle.png", width: 100%),
   caption: [Erreur $E$ et proportion de $hat(N) = N$ en fonction de l'intensité de la source centrale $I_c \/ S$ (0 : pas de source centrale), $sigma = 10^(-3)$ ; 64 capteurs $s_k$ sur le cercle de centre $c$ passant par les coins de $D$.],
 ) <fig:centrale-cercle>
 // À rédiger :
@@ -115,7 +115,7 @@
 //   - N = 4, proportion N̂ = N pour I_c/S = 0, 10, 25, 50, 100, 200 : ML + BIC 84 %/51 %/37 %/23 %/13 %/7 % ; Frank–Wolfe glissant 33 %/28 %/23 %/17 %/9 %/3 % ; Prony 17 %/28 %/20 %/19 %/14 %/11 %
 
 #figure(
-  image("../figures/comparaison/nsources_cercle.pdf", width: 100%),
+  image("images/nsources_cercle.png", width: 100%),
   caption: [Erreur $E$ et proportion de $hat(N) = N$ en fonction du nombre de sources $N$, cadre par défaut ($I_c = 50 S$, $sigma = 10^(-3)$) ; 64 capteurs $s_k$ sur le cercle de centre $c$ passant par les coins de $D$.],
 ) <fig:nsources-cercle>
 // À rédiger :
@@ -125,7 +125,7 @@
 //   - Prony : nombre moyen de fausses sources 2,6 (N = 2), 1,4 (N = 4), 0,66 (N = 6), 0 (N = 10)
 
 #figure(
-  image("../figures/comparaison/temps_cercle.pdf", width: 100%),
+  image("images/temps_cercle.png", width: 100%),
   caption: [Temps de calcul par tirage (médiane et quartiles, génération des données exclue) en fonction de $N$, cadre par défaut ; 64 capteurs $s_k$ sur le cercle de centre $c$ passant par les coins de $D$.],
 ) <fig:temps-cercle>
 // À rédiger :
@@ -137,7 +137,7 @@
 == Cercle et grille de capteurs
 
 #figure(
-  image("../figures/comparaison/bruit_grille.pdf", width: 100%),
+  image("images/bruit_grille.png", width: 100%),
   caption: [Erreur $E$ (médiane et quartiles, échelle log) et proportion de tirages où $hat(N) = N$ en fonction du bruit relatif $sigma$, pour $I_c = 50 S$ ; 64 capteurs sur le cercle et 512 capteurs en grille $16 times 32$ dans $D$ (Prony n'utilise que les capteurs du cercle). 100 tirages par point.],
 ) <fig:bruit-grille>
 // À rédiger :
@@ -147,7 +147,7 @@
 //   - N = 2, E médiane à σ = 0,0001 et σ = 0,01 : Prony 0,017 → 2,14 ; ML + BIC 5,92 × 10^-5 → 0,00595 ; Frank–Wolfe glissant 9,54 × 10^-5 → 0,00957
 
 #figure(
-  image("../figures/comparaison/centrale_grille.pdf", width: 100%),
+  image("images/centrale_grille.png", width: 100%),
   caption: [Erreur $E$ et proportion de $hat(N) = N$ en fonction de l'intensité de la source centrale $I_c \/ S$ (0 : pas de source centrale), $sigma = 10^(-3)$ ; 64 capteurs sur le cercle et 512 capteurs en grille $16 times 32$ dans $D$ (Prony n'utilise que les capteurs du cercle).],
 ) <fig:centrale-grille>
 // À rédiger :
@@ -156,7 +156,7 @@
 //   - N = 4, proportion N̂ = N pour I_c/S = 0, 10, 25, 50, 100, 200 : ML + BIC 98 %/94 %/94 %/93 %/93 %/90 % ; Frank–Wolfe glissant 79 %/57 %/59 %/57 %/46 %/45 % ; Prony 17 %/28 %/20 %/19 %/14 %/11 %
 
 #figure(
-  image("../figures/comparaison/nsources_grille.pdf", width: 100%),
+  image("images/nsources_grille.png", width: 100%),
   caption: [Erreur $E$ et proportion de $hat(N) = N$ en fonction du nombre de sources $N$, cadre par défaut ($I_c = 50 S$, $sigma = 10^(-3)$) ; 64 capteurs sur le cercle et 512 capteurs en grille $16 times 32$ dans $D$ (Prony n'utilise que les capteurs du cercle).],
 ) <fig:nsources-grille>
 // À rédiger :
@@ -166,7 +166,7 @@
 //   - Prony : nombre moyen de fausses sources 2,6 (N = 2), 1,4 (N = 4), 0,66 (N = 6), 0 (N = 10)
 
 #figure(
-  image("../figures/comparaison/temps_grille.pdf", width: 100%),
+  image("images/temps_grille.png", width: 100%),
   caption: [Temps de calcul par tirage (médiane et quartiles, génération des données exclue) en fonction de $N$, cadre par défaut ; 64 capteurs sur le cercle et 512 capteurs en grille $16 times 32$ dans $D$ (Prony n'utilise que les capteurs du cercle).],
 ) <fig:temps-grille>
 // À rédiger :
@@ -177,7 +177,7 @@
 
 === Cercle contre cercle et grille
 #figure(
-  image("../figures/comparaison/synthese_bruit.pdf", width: 100%),
+  image("images/synthese_bruit.png", width: 100%),
   caption: [Balayage en bruit : cercle seul (traits pleins) et cercle + grille (pointillés), mêmes tirages.],
 ) <fig:synthese-bruit>
 // À rédiger :
@@ -186,7 +186,7 @@
 //   - Frank–Wolfe glissant, N = 2, σ = 0,001 : E médiane 0,302 (cercle) → 0,000938 (cercle + grille)
 //   - Frank–Wolfe glissant, N = 10, σ = 0,001 : E médiane 2,76 (cercle) → 0,0678 (cercle + grille)
 #figure(
-  image("../figures/comparaison/synthese_centrale.pdf", width: 100%),
+  image("images/synthese_centrale.png", width: 100%),
   caption: [Balayage en source centrale : cercle seul (traits pleins) et cercle + grille (pointillés).],
 ) <fig:synthese-centrale>
 // À rédiger :
@@ -195,7 +195,7 @@
 //   - Frank–Wolfe glissant, N = 2, I_c/S = 0 : E médiane 0,00671 (cercle) → 0,00027 (cercle + grille)
 //   - Frank–Wolfe glissant, N = 10, I_c/S = 0 : E médiane 1,88 (cercle) → 0,003 (cercle + grille)
 #figure(
-  image("../figures/comparaison/synthese_nsources_temps.pdf", width: 100%),
+  image("images/synthese_nsources_temps.png", width: 100%),
   caption: [Erreur $E$, proportion de $hat(N) = N$ et temps médian en fonction de $N$, cadre par défaut : cercle seul (traits pleins) et cercle + grille (pointillés).],
 ) <fig:synthese-nsources>
 // À rédiger :
@@ -205,4 +205,4 @@
 
 == Synthèse
 
-#include "../figures/comparaison/synthese.typ"
+#include "tableau_synthese.typ"

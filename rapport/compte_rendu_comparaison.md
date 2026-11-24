@@ -4,7 +4,7 @@
 
 Cyril Flury-Hérard — EA recherche — novembre 2026
 
-Branche `travail-sur-le-probleme-inverse`, dossiers `compare/`, `results/`, `figures/`. Tous les chiffres viennent de `results/` ; aucune méthode n'a été modifiée. Les sources estimées de chaque tirage sont sauvegardées dans `results/sources/`, ce qui permet de recalculer n'importe quelle métrique sans relancer les méthodes. Toutes les images sont dans `rapport/images/`.
+Branche `travail-sur-le-probleme-inverse`. Code dans `localisation/`, points d'entrée `main.py` et `main_test.py` (voir le README). Tous les chiffres viennent de `resultats/` ; aucune méthode n'a été modifiée. Les sources estimées de chaque tirage sont sauvegardées dans `resultats/sources/`, ce qui permet de recalculer n'importe quelle métrique sans relancer les méthodes. Toutes les images sont dans `rapport/images/`.
 
 ---
 
@@ -48,7 +48,7 @@ Tous les calculs ont été faits sur mon ordinateur portable :
 | Relance des 105 tirages en timeout, limite portée à 300 s | 38 min | 6 |
 | Cas à deux sources : réussite, causes, conditionnement (1 800 tirages) | 80,4 min | 2 |
 | Cas à deux sources : bassins d'attraction (864 départs) | 35,7 min | 2 |
-| Recalcul de toutes les métriques et figures depuis `results/sources/` | 2 min | 1 |
+| Recalcul de toutes les métriques depuis les sources enregistrées | quelques secondes | 1 |
 
 Les deux premiers gros calculs ont tourné en même temps : 8 processus sur 4 cœurs physiques. **Les temps de calcul mesurés par tirage sont donc des temps « sous charge »**, plus longs (d'environ un facteur 1,5 à 2) que sur une machine au repos ; les comparaisons entre méthodes restent valables, car toutes ont subi la même charge.
 
@@ -73,9 +73,9 @@ Deux dispositions de capteurs sont comparées :
 Les méthodes sont utilisées **sans modification**, avec les réglages déjà présents dans le dépôt.
 
 - **Prony** (`src/particle_sources/inversion/prony.py`, `prony_circle`). Les mesures du cercle sont vues comme une fonction sur le cercle ; ses coefficients de Fourier forment une matrice de Hankel dont le rang est le nombre de sources, et les sources sont les racines d'un polynôme. Le rang est lu avec le seuil relatif `rank_tol = 0.005` de `config/reconstruction.yaml`. **Prony n'utilise que les capteurs du cercle**, y compris dans la configuration cercle + grille.
-- **ML + BIC** (`sparse_sources`, `greedy_ml`). Maximum de vraisemblance : moindres carrés pondérés par $1/\sigma_k^2$, résolus par L-BFGS-B, en ajoutant les sources une par une à partir d'une recherche exhaustive sur une grille de positions candidates ; le nombre de sources est choisi par le critère BIC ($k_{\max} = 20$).
-- **Frank–Wolfe glissant** (`sliding_frank_wolfe`). Problème BLASSO sur les mesures, capteurs blanchis (divisés par $\sigma_k$) et noyau normalisé, pénalité $\lambda = 1{,}5 \sqrt{M}$ ($M$ = nombre de capteurs), 40 itérations au plus, comme dans `sparse_sources/tester_fw.py`.
-- **Descente de gradient d'Orano** (`sparse_sources/orano.py`, `descente_projetee`). Descente de gradient sur $\theta = (z_i, I_i)$ normalisés, pas d'Armijo, déplacement limité à 5 % du domaine, projection des positions sur $D$ et des intensités sur $\mathbb R_+$, 20 000 itérations au plus. Le critère est la somme des carrés des résidus **non pondérée**, divisée par $\lVert y \rVert^2$. Elle reçoit le vrai $N$ ; les positions de départ sont tirées uniformément dans $D$ et les intensités de départ valent $S/N$.
+- **ML + BIC** (`localisation/ml_bic.py`, `greedy_ml`). Maximum de vraisemblance : moindres carrés pondérés par $1/\sigma_k^2$, résolus par L-BFGS-B, en ajoutant les sources une par une à partir d'une recherche exhaustive sur une grille de positions candidates ; le nombre de sources est choisi par le critère BIC ($k_{\max} = 20$).
+- **Frank–Wolfe glissant** (`localisation/blasso.py`, `sliding_frank_wolfe`). Problème BLASSO sur les mesures, capteurs blanchis (divisés par $\sigma_k$) et noyau normalisé, pénalité $\lambda = 1{,}5 \sqrt{M}$ ($M$ = nombre de capteurs), 40 itérations au plus.
+- **Descente de gradient d'Orano** (`localisation/descente.py`, `descente_projetee`). Descente de gradient sur $\theta = (z_i, I_i)$ normalisés, pas d'Armijo, déplacement limité à 5 % du domaine, projection des positions sur $D$ et des intensités sur $\mathbb R_+$, 20 000 itérations au plus. Le critère est la somme des carrés des résidus **non pondérée**, divisée par $\lVert y \rVert^2$. Elle reçoit le vrai $N$ ; les positions de départ sont tirées uniformément dans $D$ et les intensités de départ valent $S/N$.
 - **Gauss–Newton** (`orano.gauss_newton`, région de confiance de `scipy.optimize.least_squares`) : même critère que la descente, même point de départ, même $N$. Il sert de **témoin** dans le cas à deux sources : il permet de séparer ce qui vient du critère et ce qui vient de l'algorithme.
 
 ## 3. Protocole de comparaison
@@ -301,40 +301,36 @@ Dans le cas test d'Orano, les temps médians sont de 7,3 à 8,8 s pour la descen
 - **Temps sous charge** : 8 processus sur 4 cœurs physiques. Les temps absolus sont surestimés d'un facteur 1,5 à 2 environ ; les rapports entre méthodes sont fiables.
 - **Précision sur le cercle biaisée** : elle n'est calculée que sur les sources détectées, donc déjà à moins de 0,1 ; elle vaut mécaniquement 0,02 à 0,05.
 - **Timeouts** : il en reste 2 sur 28 800 calculs (ML + BIC, tirage 67), comptés comme des échecs complets ; ils ne changent pas les médianes.
-- **Aucun bug évident** n'a été trouvé dans les méthodes : en particulier, le blanchiment du noyau du Frank–Wolfe (`sparse_sources/kernel.py`) est cohérent avec la conversion des intensités en unités physiques.
+- **Aucun bug évident** n'a été trouvé dans les méthodes : en particulier, le blanchiment du noyau du Frank–Wolfe (`localisation/noyau.py`) est cohérent avec la conversion des intensités en unités physiques.
 
 ## 9. Reproduire les résultats
 
 ```
-python -m compare.run --all                 # comparaison complète (≈ 1 h 30 ici)
-python -m compare.run --all --relancer-timeouts --timeout 300   # relancer les tirages en timeout
-python -m compare.run --figures             # recalculer métriques, figures et annexe depuis results/sources/ (≈ 2 min)
-python -m compare.run --figures --delta 0.2 # idem avec un autre rayon de fusion
-python -m compare.deux_sources --all        # cas à deux sources (≈ 2 h avec 2 processus)
-python -m compare.figures_synthese          # figures de rapport/images/ seulement
-python -m compare.annexe                    # annexe chiffrée (Typst et Markdown)
-typst compile --root . rapport/compte_rendu_comparaison.typ   # PDF du compte rendu
+python main_test.py --preset nombre_sources       # relit resultats/sources/ : CSV en quelques secondes
+python main_test.py --preset bruit
+python main_test.py --preset source_centrale
+python main_test.py --preset deux_sources
+python main_test.py --preset deux_sources_orano
+python main_test.py --N 2 4 6 10 --tirages 100 --nom refaire   # tout recalculer (≈ 1 h 30 par disposition)
+python main.py --N 6 --tirage 21                      # une simulation et son image
 ```
 
-Les calculs reprennent où ils s'étaient arrêtés : les sources estimées sont écrites au fil de l'eau dans `results/sources/`.
-
-**Fichiers produits.**
-- `results/sources/comparaison_<config>.jsonl`, `results/sources/deux_sources.jsonl` : vraies sources et sources estimées de chaque tirage ;
-- `results/<balayage>_<config>.csv` : une ligne par tirage (nouvelle et ancienne métrique) ;
-- `results/agrege_<balayage>_<config>.csv` : médiane et moyenne de $E$ avec IC 95 %, détection, précision, masse parasite, temps ;
-- `results/delta_<config>.csv` : sensibilité au rayon de fusion ;
-- `results/archive_metrique_ancienne/` : résultats avec l'ancienne métrique ;
-- `rapport/images/` : toutes les images ;
+**Fichiers.** Le code est dans `localisation/` (un fichier par méthode : `prony.py`, `ml_bic.py`, `blasso.py`, `descente.py`) ; le mode d'emploi de `main.py` et `main_test.py` est dans le `README.md` du dépôt.
+- `resultats/sources/comparaison.jsonl`, `resultats/sources/deux_sources.jsonl` : vraies sources et sources estimées de chaque tirage ;
+- `resultats/etudes/<étude>/tirages.csv` : une ligne par tirage ; `resume.csv` : médiane de $E$ avec IC 95 %, moyenne, détection, précision, masse parasite, temps ;
+- `rapport/images/` : toutes les images du rapport ;
 - `rapport/synthese_resultats.typ` (aperçu : `rapport/apercu_synthese.typ`), `rapport/annexe_donnees.typ`, et ce fichier.
+
+Les calculs reprennent où ils s'étaient arrêtés : les sources estimées sont écrites au fil de l'eau. Les fichiers de l'ancienne organisation (`compare/`, `sparse_sources/`, `results/`) restent dans l'historique git (commit `e384cec`).
 
 ---
 
 
-<!-- ANNEXE : début (généré par python -m compare.annexe) -->
+<!-- ANNEXE : début (généré par l'ancien script compare/annexe.py) -->
 
 ## Annexe : valeurs numériques des figures
 
-Toutes les valeurs ci-dessous sont recalculées depuis results/ (sources estimées de chaque tirage dans results/sources/) par python -m compare.annexe ; ce sont exactement celles qui sont tracées.
+Toutes les valeurs ci-dessous sont recalculées depuis les sources estimées de chaque tirage (aujourd'hui resultats/sources/) ; ce sont exactement celles qui sont tracées.
 
 Métrique (δ = 0,1) : les sources estimées, puis les vraies sources, sont fusionnées par regroupement hiérarchique à lien simple au seuil δ (intensité = somme, position = barycentre pondéré par les intensités) ; appariement hongrois ; E = (1/N') Σ (0,75 d_i + 0,25 r_i) sur les N' vraies sources fusionnées, d_i ≤ 5, r_i ≤ 1, source manquée = (5, 1) ; le nombre de sources estimé n'entre pas dans E. Masse parasite (à part) = somme des intensités des sources estimées non appariées / S. Détection : part des vraies sources (fusionnées) appariées à moins de 0,1, moyenne sur les tirages. Précision : erreur moyenne de position d (et d'intensité relative r) sur les seules sources détectées, médiane sur les tirages. Agrégation de E : médiane sur les 100 tirages et intervalle de confiance à 95 % par bootstrap (2 000 rééchantillonnages) ; la moyenne est donnée à titre de comparaison, ainsi que la médiane de l'ancienne métrique (sans fusion). « N̂ = N » : proportion de tirages où le nombre brut de sources estimées vaut N. Médiane [Q1 ; Q3] : temps et conditionnement.
 
